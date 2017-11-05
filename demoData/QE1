@@ -491,7 +491,7 @@ cwrc:CharlotteMontefioreFather
 
 # VIRGINIA WOOLF
 <http://www.cwrc.ca/cwrcdata/VirginiaWoolf>
-    cwrc:hasGender cwrc:woman ;
+    cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasSocialRankSelfReported cwrc:professional ;
     cwrc:hasReligion cwrc:societyOfFriends, cwrc:quakers, cwrc:agnosticism ;
 # add cwrc:evangelical once in dataset KM
@@ -539,7 +539,7 @@ cwrc:CharlotteMontefioreFather
 
 # ELIZABETH I
 <http://www.cwrc.ca/cwrcdata/QueenElizabethI>
-    cwrc:hasGender cwrc:woman ;
+    cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasNationalitySelfDefined cwrc:englishNationality ;
     cwrc:hasReligion cwrc:Protestantism ;
     cwrc:hasReligion cwrc:Anglicanism ;
@@ -547,21 +547,21 @@ cwrc:CharlotteMontefioreFather
     a foaf:Person ;
     foaf:name "Queen Elizbeth I" .
     
-<http://www.cwrc.ca/cwrcdata/QueenElizabethILife>
+<http://www.cwrc.ca/cwrcdata/QueenElizabethIGender>
     a cwrc:CulturalFormationContext ;
     rdfs:label "Gender Context for QueenElizabethI"@en ;
-    oa:hasBody cwrc:woman ;
+    oa:hasBody cwrc:genderWomanFemale ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/QueenElizabethI> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/QE1> .    
     
-<http://www.cwrc.ca/cwrcdata/QueenElizabethILife>
+<http://www.cwrc.ca/cwrcdata/QueenElizabethINationalityContext>
     a cwrc:NationalityContext ;
     rdfs:label "Nationality Self-Defined for QueenElizabethI"@en ;
     oa:hasBody cwrc:englishNationality ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/QueenElizabethI> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/QE1> .
         
-<http://www.cwrc.ca/cwrcdata/QueenElizabethILife>
+<http://www.cwrc.ca/cwrcdata/QueenElizabethIReligionContext>
     a cwrc:ReligionContext ;
     rdfs:label "Religion for QueenElizabethI"@en ;
     oa:hasBody cwrc:Protestantism ;
