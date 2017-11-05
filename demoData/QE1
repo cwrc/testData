@@ -570,11 +570,11 @@ cwrc:CharlotteMontefioreFather
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/QueenElizabethI> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/QE1> . 
     
-<http://www.cwrc.ca/cwrcdata/QueenElizabethI>
-    owl:sameAs <https://viaf.org/viaf/97107753/#Elizabeth_I,_Queen_of_England,_1533-1603> ;
-    a foaf:Person ;
-    foaf:name "Queen Elizabeth I" . 
-    
+<http://www.cwrc.ca/cwrcdata/Queen_Elizabeth_I_Main_Document>
+    a foaf:Document;
+    rdfs:label "Orlando Markup on Queen Elizabeth I"@en ;
+    dcterms:creator cwrc:originalOrlandoAuthor .
+
  #Works go here   
 
 <http://www.cwrc.ca/cwrcdata/Orlando>
