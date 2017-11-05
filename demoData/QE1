@@ -491,7 +491,7 @@ cwrc:CharlotteMontefioreFather
 
 # VIRGINIA WOOLF
 <http://www.cwrc.ca/cwrcdata/VirginiaWoolf>
-    cwrc:hasGender cwrc:genderWomanFemale ;
+    cwrc:hasGender cwrc:woman ;
     cwrc:hasSocialRankSelfReported cwrc:professional ;
     cwrc:hasReligion cwrc:societyOfFriends, cwrc:quakers, cwrc:agnosticism ;
 # add cwrc:evangelical once in dataset KM
@@ -534,47 +534,7 @@ cwrc:CharlotteMontefioreFather
     a foaf:Document;
     rdfs:label "Orlando Markup on Virginia Woolf"@en ;
     dcterms:creator cwrc:originalOrlandoAuthor .
-
-#Elizabeth goes here
-
-# ELIZABETH I
-<http://www.cwrc.ca/cwrcdata/QueenElizabethI>
-    cwrc:hasGender cwrc:genderWomanFemale ;
-    cwrc:hasNationalitySelfDefined cwrc:englishNationality ;
-    cwrc:hasReligion cwrc:Protestantism ;
-    cwrc:hasReligion cwrc:Anglicanism ;
-    cwrc:hasReligion cwrc:Catholicism ;
-    a foaf:Person ;
-    foaf:name "Queen Elizbeth I" .
     
-<http://www.cwrc.ca/cwrcdata/QueenElizabethIGender>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Gender Context for QueenElizabethI"@en ;
-    oa:hasBody cwrc:genderWomanFemale ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/QueenElizabethI> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/QE1> .    
-    
-<http://www.cwrc.ca/cwrcdata/QueenElizabethINationalityContext>
-    a cwrc:NationalityContext ;
-    rdfs:label "Nationality Self-Defined for QueenElizabethI"@en ;
-    oa:hasBody cwrc:englishNationality ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/QueenElizabethI> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/QE1> .
-        
-<http://www.cwrc.ca/cwrcdata/QueenElizabethIReligionContext>
-    a cwrc:ReligionContext ;
-    rdfs:label "Religion for QueenElizabethI"@en ;
-    oa:hasBody cwrc:Protestantism ;
-    oa:hasBody cwrc:Anglicanism ;
-    oa:hasBody cwrc:Catholicism ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/QueenElizabethI> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/QE1> . 
-    
-<http://www.cwrc.ca/cwrcdata/Queen_Elizabeth_I_Main_Document>
-    a foaf:Document;
-    rdfs:label "Orlando Markup on Queen Elizabeth I"@en ;
-    dcterms:creator cwrc:originalOrlandoAuthor .
-
  #Works go here   
 
 <http://www.cwrc.ca/cwrcdata/Orlando>
@@ -825,12 +785,6 @@ cwrc:CharlotteMontefioreFather
     foaf:name "H D" .        
 
 #snippets go here
-
-<http://www.cwrc.ca/cwrcdata/QE1>
-  rdfs:label """This is the place that the information on Queen Elizabeth I will go"""@en ;
-a nif:Context, nif:Sentence ;
-  dcterms:partOf <http://www.cwrc.ca/cwrcdata/queenElizabethI_Main_Document> ;
-  prov:createdBy cwrc:originalOrlandoAuthoer .
 
 <http://www.cwrc.ca/cwrcdata/sophiaKing1>
     rdfs:label """SK's Sephardic Jewish Portuguese birth, her early years in Judaism, and her father's boyhood as a street urchin and his high-profile but scandalous career (associating with political radicals while lending money to socialites and eventually marrying into the English nobility), made her an outsider in English society."""@en ;
@@ -4560,4 +4514,295 @@ cwrc:tractarianMovement
     rdfs:label "Tractarian Movement"@en, "tractarianisme"@fr ;
     rdfs:subClassOf dbpedia:Oxford_Movement ;
     skos:broaderTransitive cwrc:churchOfEngland ;
-    skos:definition ""@fr, "The Oxford Movement was a movement of High Church members of the Church of England which eventually developed into Anglo-Catholicism. The movement, whose original devotees were mostly associated with the Un
+    skos:definition ""@fr, "The Oxford Movement was a movement of High Church members of the Church of England which eventually developed into Anglo-Catholicism. The movement, whose original devotees were mostly associated with the University of Oxford, argued for the reinstatement of some older Christian traditions of faith and their inclusion into Anglican liturgy and theology. They thought of Anglicanism as one of three branches of the One, Holy, Catholic, and Apostolic Church. The movement's philosophy was known as Tractarianism after its series of publications, the Tracts for the Times, published from 1833 to 1841. Tractarians were also disparagingly referred to as \"Newmanites\" (before 1845) and \"Puseyites\" (after 1845) after two prominent Tractarians, John Henry Newman and Edward Bouverie Pusey. Other well-known Tractarians included John Keble, Charles Marriott, Richard Froude, Robert Wilberforce, Isaac Williams and William Palmer.<a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
+    skos:inScheme cwrc:Religion ;
+    prov:derivedFrom dbpedia:Oxford_Movement .
+
+cwrc:tradeUnionism
+    void:inDataset cwrc:datasetdefinition ;
+    a cwrc:PoliticalAffiliation, skos:Concept ;
+    rdf:value "trade unionist", "union movement", "unionism" ;
+    rdfs:comment "The description for this term is indebted to DBpedia."@en ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label ""@fr, "trade unionism"@en ;
+    skos:broaderTransitive cwrc:socialReform ;
+    skos:definition ""@fr, "In support of the formation of a trade union. See <a href=\"https://en.wikipedia.org/wiki/Trade_union\">https://en.wikipedia.org/wiki/Trade_union</a>"@en ;
+    skos:inScheme cwrc:PoliticalAffiliation ;
+    prov:derivedFrom dbpedia:Trade_union .
+
+cwrc:transMan
+    void:inDataset cwrc:datasetdefinition ;
+    a cwrc:Gender, skos:Concept ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label "homme trans"@fr, "transman/transmale"@en ;
+    skos:definition ""@en ;
+    foaf:name "transman/transmale (gender)"@en .
+
+cwrc:transWoman
+    void:inDataset cwrc:datasetdefinition ;
+    a cwrc:Gender, skos:Concept ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label "femme trans"@fr, "transwoman/transfemale"@en ;
+    skos:definition ""@en ;
+    foaf:name "transwoman/transfemale (gender)"@en .
+
+cwrc:uncleOf
+    void:inDataset cwrc:datasetdefinition ;
+    a owl:ObjectProperty ;
+    rdf:value "UNCLE" ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label "oncle de"@fr, "uncle of"@en ;
+    rdfs:subPropertyOf cwrc:relativeOf .
+
+cwrc:unitarianChurch
+    dcterms:isReplacedBy cwrc:unitarianism ;
+    void:inDataset cwrc:datasetdefinition ;
+    a skos:Concept ;
+    rdf:value "unitarianChurch" ;
+    rdfs:comment "Deprecated in favour of instance #unitarianism."@en, "Désapprouver en faveur de l'instance #unitarianism."@fr, "La description de ce terme est basée sur celle de DBPedia."@fr ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label "Unitarian Church"@en, "Église unitarienne"@fr ;
+    owl:deprecated true ;
+    vs:term_status "deprecated"@en ;
+    skos:broaderTransitive cwrc:christianity ;
+    skos:definition ""@fr, "Unitarian church usually refers to a church (either a single church or a group of churches and/or its followers) which follows Unitarianism, a Christian theology. It can also more broadly refer to a church which is a member of an umbrella group with \"Unitarian\" in its title, such as the Unitarian Universalist Association in the U.S., the Canadian Unitarian Council, and similar bodies. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
+    prov:derivedFrom dbpedia:Unitarian_church .
+
+cwrc:unitarianism
+    void:inDataset cwrc:datasetdefinition ;
+    a cwrc:Religion, skos:Concept ;
+    rdf:value "unitarianMovement" ;
+    rdfs:comment "La description de ce terme est basée sur celle de DBPedia."@fr, "The description for this term is indebted to the Getty Art & Architecture Thesaurus."@en ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label "Unitarianism"@en, "unitarios"@es, "unitarisme"@fr, "unitarisme"@nl, "unitarismo"@es ;
+    rdfs:subClassOf dbpedia:Unitarianism ;
+    skos:altLabel "Unitarian"@en, "Unitarian Church"@en, "Unitarian Movement"@en ;
+    skos:broaderTransitive cwrc:protestantism ;
+    skos:definition "In het bijzonder te gebruiken voor de vrijzinnig protestantse beweging die in Europa opkwam tijdens de Reformatie in de 16de eeuw, werd belichaamd door een kerk in Transsylvanië en een confessionele status verkreeg in Groot-Brittannië, de Verenigde Staten en Canada tijdens de 19de eeuw. De beweging wordt gekenmerkt door de afwijzing van de orthodox christelijke leer van de Drie-eenheid en de goddelijke Christus, het vrije gebruik van de rede in religieuze zaken en het geloof dat God bestaat in één persoon. In 1961 fuseerde deze beweging in de Verenigde Staten en Canada met de universalistische beweging, waardoor het ‘unitaristisch universalisme’ ontstond. Ook in het algemeen te gebruiken voor de theologische leer van de eenheid van God en het mens-zijn van Jezus, zoals voor het eerst verwoord in het monarchisme van de 2de en 3de eeuw en in de leer van Arius in de 3de en 4de eeuw, en later in de leer van de radicale neoplatonisten uit de Reformatie zoals Michael Servetus, Faustus Socinus en Ferenc David. <a href=\"#_getty_2017\">(Getty, 2017)</a>"@nl, "L’unitarisme est une doctrine qui affirme que le Dieu du christianisme est une seule personne, et non pas une seule nature ou \"ousie\" en trois hypostases comme l'affirme le dogme de la Trinité : Père, Fils et Esprit. Selon le dogme de la Trinité, ces trois personnes divines participent d'une seule nature divine unique . Le « trinitarisme » est la doctrine officielle du christianisme depuis le premier concile de Nicée (325) et le concile de Chalcédoine (451). <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr, "The liberal Protestant movement that arose in Europe during the 16th century Reformation, was embodied in a church in Transylvania, and achieved denominational status in the 19th century in the United Kingdom, the United States, and Canada. It is characterized by a denial of the orthodox Christian doctrines of the Trinity and the divinity of Jesus, the free use of reason in religion, and the belief that God exists in one person. In 1961, in the United States and Canada, it merged with the Universalist denomination to form \"Unitarian Universalism.\"  Use also generally for the theological doctrines of the unified nature of God and the humanity of Jesus, first expressed in second- and third-century monarchism and in the teachings of Arius in the third and fourth centuries, and later in the radical Neoplatonist thinkers of the Reformation such as Michael Servetus, Faustus Socinus, and Ferenc David. <a href=\"#_getty_2017\">(Getty, 2017)</a>"@en, "Úsese específicamente para el movimiento protestante liberal que surgió en Europa durante la Reforma del siglo XVI, que tuvo su manifestación en una iglesia en Transilvania, y que logró un estatus confesional en el siglo XIX en el Reino Unido, los Estados Unidos y Canadá. Es caracterizado por una desaprobación de las doctrinas cristianas ortodoxas de la Trinidad y la divinidad de Jesús, el libre uso de la razón en la religión y la creencia que Dios existe en una persona. En 1961, en los Estados Unidos y Canadá s <a href=\"#_getty_2017\">(Getty, 2017)</a>"@es ;
+    skos:inScheme cwrc:Religion ;
+    prov:derivedFrom dbpedia:Unitarianism, <http://vocab.getty.edu/aat/300263305> .
+
+cwrc:unknownSex
+    void:inDataset cwrc:datasetdefinition ;
+    a skos:Concept ;
+    rdfs:comment "Deprecated with no current equivalence."@en ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label "Inconnue"@fr, "Unknown"@en ;
+    owl:deprecated true ;
+    vs:term_status "deprecated"@en ;
+    skos:definition ""@en, ""@fr ;
+    foaf:name "Unknown (Sex)"@en .
+
+cwrc:upper-middleClass
+    void:inDataset cwrc:datasetdefinition ;
+    a cwrc:SocialClass, skos:Concept ;
+    rdfs:comment "This term is a CWRC specific addition not in the original Orlando tag set."@en ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label "classe moyenne supérieure"@fr, "upper-middle class"@en ;
+    skos:definition ""@en, ""@fr ;
+    skos:inScheme cwrc:SocialClass .
+
+cwrc:urban-industrialUnskilled
+    void:inDataset cwrc:datasetdefinition ;
+    a cwrc:SocialClass, skos:Concept ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label "ouvrier non qualifié"@fr, "urban unskilled"@en ;
+    skos:definition ""@fr, "This category includes factory workers and workers in urban or large-scale industries without defined trades or professional qualifications, and those in low-wage and low-status service sector jobs, such as the restaurant or fast-food industry, in industrial or post-industrial societies."@en ;
+    skos:inScheme cwrc:SocialClass .
+
+cwrc:urbanReform
+    void:inDataset cwrc:datasetdefinition ;
+    a cwrc:PoliticalAffiliation, skos:Concept ;
+    rdf:value "urban reformer" ;
+    rdfs:comment "The description for this term is indebted to DBpedia."@en ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label ""@fr, "urban reform"@en ;
+    skos:broaderTransitive cwrc:socialReform ;
+    skos:definition ""@fr, "Advocacy or activism in support of reforming the urban environment, often in support of alleviating poverty. See <a href=\"https://en.wikipedia.org/wiki/Urban_renewal\">https://en.wikipedia.org/wiki/Urban_renewal</a>"@en ;
+    skos:inScheme cwrc:PoliticalAffiliation ;
+    prov:derivedFrom dbpedia:Urban_renewal .
+
+cwrc:vegetarianism
+    void:inDataset cwrc:datasetdefinition ;
+    a cwrc:PoliticalAffiliation, skos:Concept ;
+    rdf:value "vegetarian" ;
+    rdfs:comment "La description de ce terme est basée sur celle de DBPedia."@fr, "The description for this term is indebted to DBpedia."@en ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label "Végétarisme"@fr, "vegetarianism"@en ;
+    skos:definition "Le végétarisme est une pratique alimentaire qui exclut la consommation de chair animale. Sa définition la plus large correspond à l'ovo-lacto-végétarisme, qui consiste à consommer des végétaux, des champignons et des aliments d'origine animale (comme le miel, les œufs, le lait ainsi que leurs produits dérivés). Il s'agit du végétarisme occidental classique dont les pratiquants étaient appelés « pythagoréens / pythagoriciens » jusqu'en 1847. Le végétarisme indien (hindou et sikh), basé sur l'ahimsâ, autorise la consommation de produits laitiers mais exclut les œufs (les Lois de Manu excluent aussi la consommation des champignons). Le végétarisme est adopté pour des motivations diverses. Certains deviennent végétariens pour des raisons éthiques, religieuses, culturelles ou liées à la santé. D'autres facteurs peuvent motiver l'adoption d'un régime végétarien : la critique des méthodes de traçabilité, d'élevage et d'abattage, l'accès aux denrées alimentaires, l'impact environnemental des modes de production et de prélèvement de ces dernières (les économies d'énergies et d'eau) ou encore le refus par principe de l'exploitation animale. Plusieurs études tendent à montrer qu'une alimentation végétarienne aurait un effet bénéfique sur la santé — diminution des risques de maladies cardiovasculaires et de diabète notamment — et sur l'espérance de vie. Pour autant, cet avantage des régimes sans viande est moins important lorsqu'on les compare avec des régimes omnivores sains. Dans le langage courant, toutes les pratiques alimentaires excluant la chair animale mais incluant la consommation d'autres produits d'origine animale sont appelées « végétarisme » et leurs pratiquants « végétariens ». D'autres pratiques alimentaires influencées par le végétarisme existent, comme le pesco-végétarisme (ou « pescétarisme ») qui inclut la consommation de poisson, de mollusques et de crustacés aquatiques, ou le flexitarisme, souvent qualifié de « semi-végétarisme », qui inclut une consommation de viande occasionnelle. Le végétalisme quant à lui exclut la totalité des produits d'origine animale. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr, "Vegetarianism /vɛdʒɪˈtɛəriənɪzəm/ is the practice of abstaining from the consumption of meat (red meat, poultry, seafood, and the flesh of any other animal), and may also include abstention from by-products of animal slaughter. Vegetarianism can be adopted for different reasons. Many object to eating meat out of respect for sentient life. Such ethical motivations have been codified under various religious beliefs, along with animal rights. Other motivations for vegetarianism are health-related, political, environmental, cultural, aesthetic, economic, or personal preference. There are varieties of the diet as well: an ovo-vegetarian diet includes eggs but not dairy products, a lacto-vegetarian diet includes dairy products but not eggs, and an ovo-lacto vegetarian diet includes both eggs and dairy products. A vegan diet excludes all animal products, including eggs, dairy, and honey. Some vegans also avoid other animal products such as beeswax, leather or silk clothing, and goose-fat shoe polish. Various packaged or processed foods, including cake, cookies, candies, chocolate, yogurt and marshmallows, often contain unfamiliar animal ingredients, and may be a special concern for vegetarians due to the likelihood of such additions. Often, products are reviewed by vegetarians for animal-derived ingredients prior to purchase or consumption. Vegetarians vary in their feelings regarding these ingredients, however. For example, while some vegetarians may be unaware of animal-derived rennet's role in the usual production of cheese and may therefore unknowingly consume the product, other vegetarians may not take issue with its consumption. Semi-vegetarian diets consist largely of vegetarian foods, but may include fish or poultry, or sometimes other meats, on an infrequent basis. Those with diets containing fish or poultry may define meat only as mammalian flesh and may identify with vegetarianism. This is because earlier dictionaries included fish as part of the definition whereas the current versions do not. A pescetarian diet has been described as \"fish but no other meat\". The common use association between such diets and vegetarianism has led vegetarian groups such as the Vegetarian Society to state that diets containing these ingredients are not vegetarian, because fish and birds are also animals. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
+    skos:inScheme cwrc:PoliticalAffiliation ;
+    skos:related cwrc:animalWelfareAdvocacy ;
+    prov:derivedFrom dbpedia:Vegetarianism .
+
+cwrc:welshNationalHeritage
+    void:inDataset cwrc:datasetdefinition ;
+    a cwrc:NationalHeritage, skos:Concept ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label "Gallois"@fr, "Welsh"@en ;
+    owl:sameAs <http://sws.geonames.org/2634895/> ;
+    skos:broader cwrc:welshLabel ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:welshNationalism
+    void:inDataset cwrc:datasetdefinition ;
+    a cwrc:PoliticalAffiliation, skos:Concept ;
+    rdf:value "welsh nationalist" ;
+    rdfs:comment "La description de ce terme est basée sur celle de DBPedia."@fr, "The description for this term is indebted to DBpedia."@en ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label "Nationalisme gallois"@fr, "Welsh nationalism"@en ;
+    skos:broaderTransitive cwrc:nationalism ;
+    skos:definition """Le nationalisme gallois consiste dans le projet de défense de l'identité du Pays de Galles, de la culture et de la langue galloise. Ses revendications vont de l'autonomisme, visant à obtenir des pouvoirs accrus pour l'Assemblée nationale du Pays de Galles et le gouvernement gallois, à l'indépendantisme, défendu notamment par le parti Plaid Cymru. 
+  * Portail de la politique britannique Portail de la politique britannique   
+  * Portail du pays de Galles Portail du pays de Galles <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"""@fr, "Welsh nationalism (Welsh: Cenedlaetholdeb Cymreig) emphasises the distinctiveness of Welsh language, culture, and history, and calls for more self-determination for Wales, which might include more devolved powers for the Welsh Assembly or full independence from the United Kingdom. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
+    skos:inScheme cwrc:PoliticalAffiliation ;
+    prov:derivedFrom dbpedia:Welsh_nationalism .
+
+cwrc:whiggism
+    void:inDataset cwrc:datasetdefinition ;
+    a cwrc:PoliticalAffiliation, skos:Concept ;
+    rdf:value "dissident whig", "foxite whig", "opposition whig", "pittite whig", "whig", "whigs", "williamite" ;
+    rdfs:comment "The description for this term is indebted to DBpedia."@en ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label ""@fr, "whiggism"@en ;
+    skos:definition ""@fr, "Whiggism, sometimes spelled Whigism, is a historical political philosophy that grew out of the Parliamentarian faction in the Wars of the Three Kingdoms (1639–1651). The whigs' key policy positions were the supremacy of Parliament (as opposed to that of the king), tolerance of Protestant dissenters, and opposition to a Catholic (especially a Stuart) on the throne. After the huge success of the Glorious Revolution of 1688–1689, Whiggism dominated English and British politics until about 1760, although in practice it splintered into different factions. After 1760 the Whigs lost power, apart from sharing it in a few short-lived coalitions, but Whiggism fashioned itself into a generalized belief system that emphasized innovation and liberty and was strongly held by about half of the leading families in England and Scotland, as well as most merchants, Dissenters and professionals. The opposing Tory position was held by the other great families, the Church of England, and most of the landed gentry and officers of the army and the navy. Whigs who opposed Robert Walpole often called themselves \"Old Whigs\" and comprised part of the Country Party. Whiggism referred originally to the Whigs of the British Isles, but in its \"Old Whig\" form was largely adopted by the American Patriots in the Thirteen Colonies. American Whiggism was known as republicanism. One meaning of 'whiggism' given by the Oxford English Dictionary is \"moderate or antiquated Liberalism\". <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
+    skos:inScheme cwrc:PoliticalAffiliation ;
+    skos:related cwrc:left-Wing, cwrc:liberalism ;
+    prov:derivedFrom dbpedia:Whiggism .
+
+cwrc:whiteEthnicity
+    void:inDataset cwrc:datasetdefinition ;
+    a cwrc:Ethnicity, owl:Thing ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label "blanc"@fr, "white"@en ;
+    skos:broader cwrc:whiteLabel ;
+    skos:definition ""@en, ""@fr ;
+    foaf:name "white (ethnicity)"@en .
+
+cwrc:whiteLabel
+    void:inDataset cwrc:datasetdefinition ;
+    a skos:Concept, skosxl:Label ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label "blanc"@fr, "white"@en ;
+    owl:oneOf (cwrc:whiteEthnicity
+        cwrc:whiteRace
+    ) ;
+    skos:definition ""@en, ""@fr ;
+    skos:inScheme cwrc:TextLabels ;
+    foaf:name "white"@en .
+
+cwrc:whiteRace
+    dcterms:isReplacedBy cwrc:whiteRaceColour ;
+    void:inDataset cwrc:datasetdefinition ;
+    a owl:Thing, skos:Concept ;
+    rdfs:comment "Deprecated in favour of instance #whiteRaceColour."@en, "Désapprouver en faveur de l'instance #whiteRaceColour."@fr ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label "blanc"@fr, "white"@en ;
+    rdfs:subClassOf cwrc:whiteLabel ;
+    owl:deprecated true ;
+    vs:term_status "deprecated"@en ;
+    skos:definition ""@en, ""@fr ;
+    foaf:name "White (Race Colour)"@en .
+
+cwrc:whiteRaceColour
+    void:inDataset cwrc:datasetdefinition ;
+    a cwrc:RaceColour, skos:Concept ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label "blanc"@fr, "white"@en ;
+    skos:broader <http://rdf.muninn-project.org/ontologies/appearances#SkinColorSimpleWhite>, cwrc:whiteLabel ;
+    skos:definition ""@en, ""@fr ;
+    foaf:name "white (race colour)"@en .
+
+cwrc:wilkite
+    void:inDataset cwrc:datasetdefinition ;
+    a cwrc:PoliticalAffiliation, skos:Concept ;
+    rdfs:comment "The description for this term is indebted to DBpedia."@en ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label ""@fr, "Wilkite"@en ;
+    skos:broaderTransitive cwrc:socialReform ;
+    skos:definition ""@fr, "A view of the law, in support of John Wilkes. Focused on government accountability and right to trial by jury. See: <a href=\"https://en.wikipedia.org/wiki/John_Wilkes\">https://en.wikipedia.org/wiki/John_Wilkes</a>"@en ;
+    skos:inScheme cwrc:PoliticalAffiliation ;
+    prov:derivedFrom dbpedia:John_Wilkes .
+
+cwrc:woman
+    void:inDataset cwrc:datasetdefinition ;
+    a cwrc:Gender, owl:Thing, skos:Concept ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label "femme"@fr, "woman"@en ;
+    skos:definition ""@en ;
+    foaf:name "woman (gender)"@en .
+
+cwrc:womanLabel
+    void:inDataset cwrc:datasetdefinition ;
+    a skos:Concept, skosxl:Label ;
+    rdf:value "woman" ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label "femme"@fr, "woman"@en ;
+    owl:oneOf (cwrc:woman
+    ) ;
+    skos:definition ""@en, ""@fr ;
+    skos:inScheme cwrc:TextLabels ;
+    foaf:name "Woman (Label)"@en .
+
+cwrc:womanism
+    void:inDataset cwrc:datasetdefinition ;
+    cwrc:contraryTo cwrc:anti-feminism ;
+    a cwrc:PoliticalAffiliation, skos:Concept ;
+    rdf:value "womanist" ;
+    rdfs:comment "The description for this term is indebted to DBpedia."@en ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label ""@fr, "womanism"@en ;
+    skos:broaderTransitive cwrc:feminism ;
+    skos:definition ""@fr, "Womanism is a social theory deeply rooted in the racial and gender-based oppression of black women. There are varying interpretations on what the term \"womanist\" means, and efforts to provide a concise and all encompassing definition have only been marginally successful. The ambiguity within the theory allows for its continuous expansion of its basic tenets, though this ambiguity is also widely considered its greatest weakness. At its core, womanism is a social change perspective based upon the everyday problems and experiences of black women and other women of minority demographics, but more broadly seeks methods to eradicate inequalities not just for black women, but for all people. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
+    skos:inScheme cwrc:PoliticalAffiliation ;
+    prov:derivedFrom dbpedia:Womanism .
+
+cwrc:womensEducationReform
+    void:inDataset cwrc:datasetdefinition ;
+    cwrc:contraryTo cwrc:anti-feminism ;
+    a cwrc:PoliticalAffiliation, skos:Concept ;
+    rdf:value "activist for women's education", "campaigner for women's education", "female education", "female education advocate", "women's education reformer", "women's higher education", "women's medical education" ;
+    rdfs:comment "The description for this term is indebted to DBpedia."@en ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label ""@fr, "women's education reform"@en ;
+    skos:broaderTransitive cwrc:educationReform ;
+    skos:definition ""@fr, "Reform of education for women. See <a href=\"https://en.wikipedia.org/wiki/Female_education\">https://en.wikipedia.org/wiki/Female_education</a>; <a href=\"https://en.wikipedia.org/wiki/Category:Women_and_education\">https://en.wikipedia.org/wiki/Category:Women_and_education</a>"@en ;
+    skos:inScheme cwrc:PoliticalAffiliation ;
+    prov:derivedFrom <http://dbpedia.org/resource/Category:Women_and_education>, dbpedia:Female_education .
+
+cwrc:womensEmploymentReform
+    void:inDataset cwrc:datasetdefinition ;
+    cwrc:contraryTo cwrc:anti-feminism ;
+    a cwrc:PoliticalAffiliation, skos:Concept ;
+    rdf:value "employment activist", "equal rights in the work place", "female employment", "women's employment reformer" ;
+    rdfs:comment "The description for this term is indebted to DBpedia."@en ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label ""@fr, "women's employment reform"@en ;
+    skos:broaderTransitive cwrc:feminism, cwrc:socialReform ;
+    skos:definition ""@fr, "Advocacy or activism related to women's employment including training, opportunities, wages, and working conditions. See <a href=\"https://en.wikipedia.org/wiki/Women_in_the_workforce\">https://en.wikipedia.org/wiki/Women_in_the_workforce</a>"@en ;
+    skos:inScheme cwrc:PoliticalAffiliation ;
+    prov:derivedFrom dbpedia:Women_in_the_workforce .
+
+cwrc:yeoman-farmer
+    void:inDataset cwrc:datasetdefinition ;
+    a cwrc:SocialClass, skos:Concept ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label "agriculteur vivrier"@fr, "yeoman farmer"@en ;
+    skos:definition ""@fr, "Own just enough land to support themselves if they do most of the work themselves (ie Elizabeth Ham, Mary Webb)."@en ;
+    skos:inScheme cwrc:SocialClass .
+
+cwrc:zionism
+    void:inDataset cwrc:datasetdefinition ;
+    a cwrc:PoliticalAffiliation, skos:Concept ;
+    rdf:value "zionist" ;
+    rdfs:comment "La description de ce terme est basée sur celle de DBPedia."@fr, "The description for this term is indebted to DBpedia."@en ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label "Sionisme"@fr, "Zionism"@en ;
+    skos:broaderTransitive cwrc:nationalism ;
+    skos:definition "Le sionisme est une idéologie politique fondée sur un sentiment national juif, décrite comme nationaliste par les uns et comme émancipatrice par les autres, prônant l'existence d'un centre territorial ou étatique peuplé par les Juifs en Terre d'Israël (Eretz Israël). À la naissance du mouvement, à la fin du XIXe siècle, ce territoire correspondait à la Palestine ottomane, puis après la Première Guerre mondiale à la partie occidentale de la Palestine mandataire. Sur un plan idéologique et institutionnel, le sionisme entend œuvrer à donner ou redonner aux Juifs un statut perdu depuis l'annexion du Royaume d'Israël par l'Empire assyrien en -720, à savoir celui d'un peuple disposant d'un territoire. Il faut le différencier du post-sionisme, qui veut donner une orientation laïque à l'État d'Israël, normaliser les relations avec les Palestiniens, et du néo-sionisme, qui milite pour la migration des Palestiniens et des Arabes israéliens vers les autres pays arabes. Le mouvement sioniste est né parmi les communautés ashkénazes d'Europe centrale et orientale sous la pression des pogroms, mais aussi en Europe occidentale, à la suite du choc causé par l'affaire Dreyfus – qui compte parmi les motifs du lancement du Congrès sioniste par Theodor Herzl. Bien qu'ayant des caractères spécifiques du fait de la dispersion des Juifs, cette idéologie est contemporaine de l'affirmation d'autres nationalismes en Europe. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr, "Zionism is a nationalist political movement of Jews and Jewish culture that supports the re-establishment of a Jewish homeland in the territory defined as the historic Land of Israel (roughly corresponding to Palestine, Canaan or the Holy Land). Zionism emerged in the late 19th century in central and eastern Europe as a national revival movement, in reaction to anti-Semitic and exclusionary nationalist movements in Europe. Soon after this, most leaders of the movement associated the main goal with creating the desired state in Palestine, then an area controlled by the Ottoman Empire. Until 1948, the primary goals of Zionism were the re-establishment of Jewish sovereignty in the Land of Israel, ingathering of the exiles, and liberation of Jews from the antisemitic discrimination and persecution that they experienced during their diaspora. Since the establishment of the State of Israel in 1948, Zionism continues primarily to advocate on behalf of Israel and address threats to its continued existence and security. A religious variety of Zionism supports Jews upholding their Jewish identity defined as adherence to religious Judaism, opposes the assimilation of Jews into other societies, and has advocated the return of Jews to Israel as a means for Jews to be a majority nation in their own state. A variety of Zionism, called cultural Zionism, founded and represented most prominently by Ahad Ha'am, fostered a secular vision of a Jewish \"spiritual center\" in Israel. Unlike Herzl, the founder of political Zionism, Ahad Ha'am strived for Israel to be \"a Jewish state and not merely a state of Jews\". Advocates of Zionism view it as a national liberation movement for the repatriation of a persecuted people residing as minorities in a variety of nations to their ancestral homeland. Critics of Zionism view it as a colonialist, racist and exceptionalist ideology that led advocates to violence during Mandatory Palestine, followed by the forced exodus of Palestinians, and the subsequent denial of their human rights. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
+    skos:inScheme cwrc:PoliticalAffiliation ;
+    skos:related cwrc:anti-Antisemitism ;
+    prov:derivedFrom dbpedia:Zionism .
+
+prov:derivedFrom
+    rdfs:range cwrc:Context .
+
