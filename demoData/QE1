@@ -826,6 +826,12 @@ cwrc:CharlotteMontefioreFather
 
 #snippets go here
 
+<http://www.cwrc.ca/cwrcdata/QE1>
+  rdfs:label """This is the place that the information on Queen Elizabeth I will go"""@en ;
+a nif:Context, nif:Sentence ;
+  dcterms:partOf <http://www.cwrc.ca/cwrcdata/queenElizabethI_Main_Document> ;
+  prov:createdBy cwrc:originalOrlandoAuthoer .
+
 <http://www.cwrc.ca/cwrcdata/sophiaKing1>
     rdfs:label """SK's Sephardic Jewish Portuguese birth, her early years in Judaism, and her father's boyhood as a street urchin and his high-profile but scandalous career (associating with political radicals while lending money to socialites and eventually marrying into the English nobility), made her an outsider in English society."""@en ;
 a nif:Context, nif:Sentence ;
