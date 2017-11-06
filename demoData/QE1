@@ -3788,6 +3788,7 @@ cwrc:multiculturalism
   *  et aujourd’hui le multiculturalisme se centre sur le thème religieux (pluralisme). Multiculturalisme s’oppose à interculturalisme. Dans une société interculturelle les immigrés ou leurs descendants participent à l’ensemble des activités de la société d’accueil. Une intégration culturelle réussie nécessite l’abandon d’une partie de la culture d’origine qui ne serait pas compatible avec les valeurs de la société d’accueil. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"""@fr, "Multiculturalism describes the existence, acceptance, and/or promotion of multiple cultural traditions within a single jurisdiction, usually considered in terms of the culture associated with an aboriginal ethnic group and foreigner ethnic groups. This can happen when a jurisdiction is created or expanded by amalgamating areas with two or more different cultures (e.g. French Canada and English Canada) or through immigration from different jurisdictions around the world (e.g. Australia, Canada, United States, United Kingdom, and many other countries). Multicultural ideologies and policies vary widely, ranging from the advocacy of equal respect to the various cultures in a society, to a policy of promoting the maintenance of cultural diversity, to policies in which people of various ethnic and religious groups are addressed by the authorities as defined by the group to which they belong. Multiculturalism that promotes maintaining the distinctiveness of multiple cultures is often contrasted to other settlement policies such as social integration, cultural assimilation and racial segregation. Multiculturalism has been described as a \"salad bowl\" and \"cultural mosaic\". Two different and seemingly inconsistent strategies have developed through different government policies and strategies. The first focuses on interaction and communication between different cultures; this approach is also often known as interculturalism. The second centers on diversity and cultural uniqueness which can sometimes result in intercultural competition over jobs among other things and may lead to ethnic conflict. Cultural isolation can protect the uniqueness of the local culture of a nation or area and also contribute to global cultural diversity. A common aspect of many policies following the second approach is that they avoid presenting any specific ethnic, religious, or cultural community values as central. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Multiculturalism .
+
 cwrc:multiracialism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -3798,6 +3799,7 @@ cwrc:multiracialism
     skos:definition ""@fr, "Multiracialism is a concept or ideology that promotes a society composed of various races, while accepting and respecting different cultural backgrounds. It is a society that consists of a diverse mix of people, whether it be relative to their ethnicity, language, culture, religion, or traditions. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Multiracialism .
+
 cwrc:nationalism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -3807,6 +3809,7 @@ cwrc:nationalism
     skos:definition "Le nationalisme est un principe politique, né à la fin du XVIIIe siècle, tendant à légitimer l'existence d'un État-nation pour chaque peuple (initialement par opposition à la royauté, régime politique qui en France sera ensuite nommé Ancien Régime). Ce principe politique s'est progressivement imposé en Europe au cours du XIXe siècle et au début du XXe siècle. Les historiens ne présentent pas ce nationalisme, en général, comme une idéologie, car il est peu et mal argumenté ou justifié par des intellectuels. Depuis son avènement il est en revanche facilement présenté comme une évidence dans la vie politique et sociale. Ce terme désigne aussi des mouvements politiques déclarant vouloir exalter une nation sous toutes ses formes (État, culture, religion, traditions, préférence nationale pour l'emploi...), par opposition aux autres nations et populations. Cette deuxième variante du mouvement s'est développée à partir de la fin du XIXe siècle, vers 1870 : chauvine et xénophobe, elle trouvait alors ses militants principalement dans la petite bourgeoisie. Le nationalisme apparaît aussi, à partir du milieu du XIXe siècle, comme un sentiment national plus ou moins répandu et exalté au sein de la population d'un pays, et s'invitant (surtout au XXe siècle) au sein de multiples doctrines ou idéologies politiques, allant du communisme (par exemple le concept de Patriotisme anti-impérialiste de Mao Zedong) et du fascisme (concept de Totalitarisme anticapitaliste de Benito Mussolini) jusqu'aux démocraties parlementaires, en passant par la Troisième Internationale léniniste. Ainsi il a souvent servi de justification aux épurations ethniques du XXe siècle, peut-être parce que le sentiment national est devenu « puissamment mobilisateur », comme l'avaient compris dès le printemps des peuples de 1848 certains conseillers de dynasties européennes. On distingue en général trois formes principales de nationalisme, le nationalisme ethnique, ou ethnonationalisme, qui est la forme de nationalisme dans lequel la « nation » est défini en termes d'appartenance ethnique (« biologique »), le nationalisme civique, le plus souvent inspiré par des notions issues du droit du sol et le nationalisme culturel, position intermédiaire entres les deux autres formes et dans lequel la nation est définie par une culture commune. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr, "Nationalism is a shared group feeling in the significance of a geographical and sometimes demographic region seeking independence for its culture or ethnicity that holds that group together. This can be expressed as a belief or political ideology that involves an individual identifying with or becoming attached to one's nation. Nationalism involves national identity, by contrast with the related concept of patriotism, which involves the social conditioning and personal behaviours that support a state's decisions and actions. From a political or sociological perspective, there are two main perspectives on the origins and basis of nationalism. One is the primordialist perspective that describes nationalism as a reflection of the ancient and perceived evolutionary tendency of humans to organize into distinct groupings based on an affinity of birth. The other is the modernist perspective that describes nationalism as a recent phenomenon that requires the structural conditions of modern society in order to exist. An alternative perspective to both of these lineages comes out of engaged theory, and argues that while the form of nationalism is modern, the content and subjective reach of nationalism depends upon 'primordial' sentiments. There are various definitions for what constitutes a nation, however, which leads to several different strands of nationalism. It can be a belief that citizenship in a state should be limited to one ethnic, cultural, religious, or identity group, or that multinationality in a single state should necessarily comprise the right to express and exercise national identity even by minorities.The adoption of national identity in terms of historical development has commonly been the result of a response by influential groups unsatisfied with traditional identities due to inconsistency between their defined social order and the experience of that social order by its members, resulting in a situation of anomie that nationalists seek to resolve. This anomie results in a society or societies reinterpreting identity, retaining elements that are deemed acceptable and removing elements deemed unacceptable, in order to create a unified community. This development may be the result of internal structural issues or the result of resentment by an existing group or groups towards other communities, especially foreign powers that are or are deemed to be controlling them. National flags, national anthems and other symbols of national identity are commonly considered highly important symbols of the national community. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Nationalism .
+
 cwrc:nazism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -3817,6 +3820,7 @@ cwrc:nazism
     skos:definition "Le national-socialisme (en allemand : Nationalsozialismus), plus couramment désigné en français sous l'abréviation nazisme, est l'idéologie politique du Parti national-socialiste des travailleurs allemands (NSDAP), parti politique d'extrême droite fondé en Allemagne en 1920 et dirigé par Adolf Hitler. Cette idéologie théorise une hiérarchie au sein d'une espèce humaine divisée en « races », au sommet de laquelle elle place la « race aryenne ». Le nazisme est le seul type de fascisme incorporant à la fois racisme biologique et antisémitisme. Par extension, le terme nazisme désigne le régime politique inspiré de cette idéologie, dictature totalitaire et expansionniste dirigée par Adolf Hitler de 1933 à 1945 et connue sous les noms de Troisième Reich et d'Allemagne nazie. En tant que sujet de science politique, les définitions du nazisme varient selon les historiens. En particulier, reste ouverte la question de savoir si le nazisme ne fut que l'une des formes du fascisme ou, parce qu'ayant fait du racisme une doctrine d'État, le nazisme doit être considéré comme un phénomène historique unique. En effet, l'antisémitisme officiel du régime nazi, dès 1933, l'élimination des personnes handicapées et la persécution des opposants politiques, des Juifs, des homosexuels, des Roms, etc., se concrétisèrent par la mise en place, dès 1933, des premiers camps de concentration en Allemagne. Cette politique ne fit que s'amplifier du début de la Seconde Guerre mondiale, qui vit la création des camps d’extermination nazis, jusqu'à la défaite militaire du nazisme en 1945. Ainsi près de six millions de personnes, dont une majorité de Juifs, périrent dans les camps de concentration et d'extermination nazi ou par la Shoah par balles (voir Shoah). Le régime nazi, censé « durer mille ans », en dura douze et laissa l'Allemagne en ruine. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr, "National Socialism (German: Nationalsozialismus), more commonly known as Nazism (/ˈnɑːtsɪzəm, ˈnæ-/), is the ideology and practice associated with the 20th-century German Nazi Party and Nazi state, as well as other far-right groups. Usually characterized as a form of fascism that incorporates scientific racism and antisemitism, Nazism developed out of the influences of Pan-Germanism, the Völkisch German nationalist movement and the anti-communist Freikorps paramilitary groups that emerged during the Weimar Republic after German defeat in World War I. Nazism subscribed to theories of racial hierarchy and Social Darwinism, identifying Germans as part of what Nazis regarded as an Aryan or Nordic master race. It aimed to overcome social divisions and create a homogeneous society, unified on the basis of \"racial purity\" (Volksgemeinschaft). The Nazis aimed to unite all Germans living in historically German territory, as well as gain additional lands for German expansion under the doctrine of Lebensraum, while excluding those deemed either to be community aliens or belonging to an \"inferior\" race. The term \"National Socialism\" arose out of attempts to create a nationalist redefinition of \"socialism\", as an alternative to both international socialism and free market capitalism. Nazism rejected the Marxist concept of class struggle, opposed cosmopolitan internationalism, and sought to convince all parts of a new German society to subordinate their personal interests to the \"common good\" and to accept the priority of political interests in economic organisation. The Nazi Party was founded as the Pan-German nationalist and antisemitic German Workers' Party on 5 January 1919. By the early 1920s, Adolf Hitler assumed control of the organization and renamed it the National Socialist German Workers' Party (Nationalsozialistische Deutsche Arbeiterpartei, NSDAP) to broaden its appeal. The National Socialist Program, adopted in 1920, called for a united Greater Germany that would deny citizenship to Jews or those of Jewish descent, while also supporting land reform and the nationalization of some industries. In Mein Kampf, written in 1924, Hitler outlined the antisemitism and anti-communism at the heart of his political philosophy, as well as his disdain for parliamentary democracy and his belief in Germany’s right to territorial expansion. In 1933, with the support of traditional conservative nationalists, Hitler was appointed Chancellor of Germany and the Nazis gradually established a one-party state, under which Jews, political opponents and other \"undesirable\" elements were marginalized, with several millions eventually imprisoned and killed. Hitler purged the party’s more socially and economically radical factions in the mid-1934 Night of the Long Knives and, after the death of President Hindenburg, political power was concentrated in his hands, as Führer or \"leader\". Following the Holocaust and German defeat in World War II, only a few fringe racist groups, usually referred to as neo-Nazis, still describe themselves as following National Socialism. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Nazism .
+
 cwrc:neo-Conservatism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -3827,6 +3831,7 @@ cwrc:neo-Conservatism
     skos:definition "Le néo-conservatisme ou néoconservatisme est un courant de pensée politique d'origine américaine apparu à la fin du XXe siècle. Il s'agit d'une conception qui a émergé aux États-Unis par opposition au relativisme culturel et à la contre-culture de la Nouvelle gauche (« New Left ») des années 1960. Cette philosophie a influencé les politiques menées par George W. Bush, signifiant un réalignement de la politique américaine, et le passage de quelques libéraux sociaux à la droite du spectre politique, d'où le terme qui fait référence aux « nouveaux » conservateurs. À l'origine, le terme néo-conservateur était utilisé pour critiquer les sociaux-libéraux qui sont passés du côté du Parti républicain. Michael Harrington, un social-démocrate, a forgé l'usage du mot néo-conservateur en 1973 dans Dissent, un magazine sur les politiques de protection sociale. Selon E. J. Dionne, le néo-conservatisme est né sur le principe que le social-libéralisme a échoué. Le premier théoricien néo-conservateur à avoir adopté ce mot et qui est considéré comme le fondateur de cette idéologie est Irving Kristol et père de William Kristol, fondateur du think-tank « néo-conservateur » Project for the New American Century. Irving Kristol a été un militant trotskyste actif pendant sa jeunesse et a exposé ses vues néoconservatrices en 1979 dans l'article Confessions of a True, Self-Confessed 'Neoconservative'. Les idées de Kristol sont influentes depuis les années 1950 quand il a cofondé et édité le magazine Encounter. Un autre idéologue de ce mouvement était Norman Podhoretz, éditeur au magazine Commentary de 1960 à 1995. En 1982, Podhoretz se désignait déjà comme un néo-conservateur dans un article du New York Times Magazine intitulé The Neoconservative Anguish over Reagan's Foreign Policy. La doctrine Reagan était considérée comme anticommuniste et en opposition avec l'influence mondiale de l'URSS. Elle était au centre de la politique étrangère américaine jusqu'à la fin de la Guerre froide, un peu avant que Clinton ne devienne président. L'influence néo-conservatrice sur la politique étrangère américaine sera un peu plus tard au premier plan de la doctrine Bush. Les journaux néo-conservateurs prééminents sont Commentary et The Weekly Standard. Il existe aussi des cercles de réflexion néo-conservateurs sur la politique étrangère dont notamment American Enterprise Institute (AEI), le The Heritage Foundation, JINSA (Jewish Institute for National Security Affairs) et enfin Project for the New American Century (PNAC). <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr, "Neoconservatism (commonly shortened to neocon) is a political movement born in the United States during the 1960s among conservative leaning Democrats who became disenchanted with the party's foreign policy. Many of its adherents became politically famous during the Republican presidential administrations of the 1970s, 1980s, 1990s and 2000s. Neoconservatives peaked in influence during the administration of George W. Bush, when they played a major role in promoting and planning the 2003 invasion of Iraq. Prominent neoconservatives in the George W. Bush administration included Paul Wolfowitz, John Bolton, Elliott Abrams, Richard Perle and Paul Bremer. Senior officials Vice President Dick Cheney and Secretary of Defense Donald Rumsfeld, while not identifying as neoconservatives, listened closely to neoconservative advisers regarding foreign policy, especially the defense of Israel and the promotion of democracy in the Middle East. The term \"neoconservative\" refers to those who made the ideological journey from the anti-Stalinist Left to the camp of American conservatism. Neoconservatives typically advocate the promotion of democracy and promotion of American national interest in international affairs, including by means of military force and are known for espousing disdain for communism and for political radicalism. The movement had its intellectual roots in the Jewish monthly review magazine Commentary, published by the American Jewish Committee. They spoke out against the New Left and in that way helped define the movement. C. Bradley Thompson, a professor at Clemson University, claims that most influential neoconservatives refer explicitly to the theoretical ideas in the philosophy of Leo Strauss (1899–1973),though in doing so they may draw upon meaning that Strauss himself did not endorse. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Neoconservatism .
+
 cwrc:neo-thomism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:Religion, skos:Concept ;
@@ -3837,6 +3842,7 @@ cwrc:neo-thomism
     skos:definition "\"Courant de pensée philosophico-théologique de type thomiste, développé à partir XIXe siècle pour répondre aux objections posées au christianisme catholique par la modernité.\"<a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr, "Neo-Scholasticism (also known as neo-scholastic Thomism or neo-Thomism because of the great influence of the writings of St. Thomas Aquinas on the movement), is a revival and development of medieval scholasticism in Roman Catholic theology and philosophy which began in the second half of the 19th century.<a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:Religion ;
     prov:derivedFrom dbpedia:Neo-Scholasticism .
+
 cwrc:newDealer
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -3846,6 +3852,7 @@ cwrc:newDealer
     skos:definition ""@fr, "Supporter of New Deal policies. See <a href=\"https://en.wikipedia.org/wiki/New_Deal\">https://en.wikipedia.org/wiki/New_Deal</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:New_Deal .
+
 cwrc:nihilism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -3856,6 +3863,7 @@ cwrc:nihilism
     skos:definition "Le nihilisme (du latin nihil, « rien ») est une doctrine ou attitude, fondée sur la négation de toutes valeurs, croyances ou réalités substantielles. Souvent associé au pessimisme ou au scepticisme radical, le nihilisme nie ou émet des doutes, quant aux causalités, intentionnalités et normativités de l'existence. Cette notion est applicable à différents domaines : politique, littéraire, religieux et philosophique. Un mouvement révolutionnaire nihiliste et anarchiste apparut en Russie dans la seconde moitié du XIXe siècle. Il rejetait l'autorité de l'État, de l'Église orthodoxe et de la famille et revendiquait une organisation de la société basée sur le rationalisme et le matérialisme. Il aboutit vers 1870 au terrorisme radical. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr, "Nihilism is a philosophical doctrine that suggests the lack of belief in one or more reputedly meaningful aspects of life. Most commonly, nihilism is presented in the form of existential nihilism, which argues that life is without objective meaning, purpose, or intrinsic value. Moral nihilists assert that morality does not inherently exist, and that any established moral values are abstractly contrived. Nihilism can also take epistemological, ontological, or metaphysical forms, meaning respectively that, in some aspect, knowledge is not possible, or that reality does not actually exist. The term is sometimes used in association with anomie to explain the general mood of despair at a perceived pointlessness of existence that one may develop upon realising there are no necessary norms, rules, or laws. Movements such as Futurism and deconstruction, among others, have been identified by commentators as \"nihilistic\". Nihilism is also a characteristic that has been ascribed to time periods: for example, Jean Baudrillard and others have called postmodernity a nihilistic epoch, and some Christian theologians and figures of religious authority have asserted that postmodernity and many aspects of modernity represent a rejection of theism, and that such rejection of their theistic doctrine entails nihilism. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Nihilism .
+
 cwrc:nobility
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:SocialClass, skos:Concept ;
@@ -3863,6 +3871,7 @@ cwrc:nobility
     rdfs:label "nobility"@en, "noblesse"@fr ;
     skos:definition ""@fr, "This group refers to those holding a title or of close family relation to someone holding a title (such as Lady Mary Wortley Montagu, Lord Byron, or Nancy Mitford)."@en ;
     skos:inScheme cwrc:SocialClass .
+
 cwrc:nonjurorsMovement
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -3873,6 +3882,7 @@ cwrc:nonjurorsMovement
     skos:definition ""@fr, "The nonjuring schism was a split in the Anglican churches of England, Scotland and Ireland in the aftermath of the Glorious Revolution of 1688, over whether William III and Mary II could legally be recognised as sovereigns. The word \"nonjuring\" means \"not swearing [an oath]\", from the Latin word iuro or juro meaning \"to swear an oath\". Many of the Anglican clergy felt legally bound by their previous oaths of allegiance to James II and, though they could accept William as regent, they could not accept him as king. It was not necessarily a split on matters of religious doctrine, but more of a political issue and a matter of conscience, though most of the nonjurors were high church Anglicans. Thus, latitudinarian Anglicans were handed control of the Church of England, while Presbyterians took control of the Church of Scotland. The nonjurors thus were nominally Jacobite, although they generally did not actively support the Jacobite rebellions in 1715 or 1745. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Nonjuring_schism .
+
 cwrc:occultism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:Religion, skos:Concept ;
@@ -3881,6 +3891,7 @@ cwrc:occultism
     skos:definition ""@fr, "Any religious or philosophic ideology based on mystical insight into the nature of God and/or divine truth. This insight is attained only through direct experience of the divine. The term is sometimes used to specifically refer to the principles of the Theosophical Society founded in New York in 1875 by Madame Blavatsky and H. S. Olcott which incorporated aspects of Buddhism and Brahmanism.<a href=\"#_getty_2017\">(Getty, 2017)</a>"@en ;
     skos:inScheme cwrc:Religion ;
     prov:derivedFrom <http://vocab.getty.edu/aat/300056000> .
+
 cwrc:originalOrlandoAuthor
     void:inDataset cwrc:datasetdefinition ;
     a skos:Concept, foaf:Group ;
@@ -3889,6 +3900,7 @@ cwrc:originalOrlandoAuthor
     skos:definition "La collection de tous les auteurs du Projet Orlando."@fr, "The collection of all persons having written entries for The Orlando Project."@en ;
     foaf:homepage <http://orlando.cambridge.org/public/svDocumentation?formname=t&d_id=CREDITSANDACKNOWLEDGEMENTS> ;
     foaf:name "Les membres du projet Orlando"@fr, "Members of the Orlando Project."@en .
+
 cwrc:pacifism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -3899,6 +3911,7 @@ cwrc:pacifism
     skos:definition "Le pacifisme possède deux acceptions possibles incluant l'action des partisans de la paix, ou une doctrine de la non-violence. Bien que reliés, les deux concepts se distinguent du point de vue de la théorie et de la pratique. Le pacifisme est la doctrine et l'action des partisans de la paix ou du rétablissement de la paix. Les socialistes d'avant 1914 (Jean Jaurès), les Zimmerwaldiens durant la Première Guerre mondiale, les opposants aux guerres coloniales ou les partisans de la paix professent un pacifisme qui n'est pas toujours assimilable à la non-violence. La vision du pacifisme associé à une personne refusant le recours à toutes formes de violence est par contre beaucoup plus répandue. La doctrine de la non-violence voit de nombreux courants philosophiques bannir le recours à toute forme de violence en vertu d'un pacifisme radical. Vision portée par de nombreux mouvements et courants de pensée à vocation générale (courants de pensée humaniste, plusieurs tendances inspirées de l'hindouisme, courants chrétiens, etc.). <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr, "Pacifism is opposition to war, militarism, or violence. The word pacifism was coined by the French peace campaigner Émile Arnaud (1864–1921) and adopted by other peace activists at the tenth Universal Peace Congress in Glasgow in 1901. A related term is ahimsa (to do no harm), which is a core philosophy in Buddhism, Jainism, and Hinduism. While modern connotations are recent, having been explicated since the 19th century, ancient references abound. In Christianity, Jesus Christ's injunction to \"love your enemies\" and asking for forgiveness for his crucifiers \"for they know not what they do\" have been interpreted as calling for pacifism. In modern times, interest was revived by Leo Tolstoy in his late works, particularly in The Kingdom of God Is Within You. Mohandas Gandhi (1869–1948) propounded the practice of steadfast nonviolent opposition which he called \"satyagraha\", instrumental in its role in the Indian Independence Movement. Its effectiveness served as inspiration to Martin Luther King Jr., James Lawson, James Bevel, Thich Nhat Hanh and many others in the Civil Rights Movement. Pacifism was widely associated with the much publicized image of Tiananmen Square Protests of 1989 with the \"Tank Man\", where one protester stood in nonviolent opposition to a column of tanks. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Pacifism .
+
 cwrc:pagan
     dcterms:isReplacedBy cwrc:paganism ;
     void:inDataset cwrc:datasetdefinition ;
@@ -3911,6 +3924,7 @@ cwrc:pagan
     skos:broaderTransitive cwrc:occultism ;
     skos:definition "Paganism is a term that developed among the Christian community of southern Europe during late antiquity to describe religions other than their own, Judaism, or Islam–the three Abrahamic religions. Throughout Christendom, it continued to be used, typically in a derogatory sense. In the 19th century, it was re-adopted as a self-descriptor by members of various artistic groups inspired by the ancient world. In the 20th century, it came to be applied as a self-description by practitioners of contemporary pagan, or neo-pagan, religious movements. There has been much scholarly argument as to the origin of the term paganism. Paganism has also been understood by some[who?] to include any non-Abrahamic religions, but this is generally[who?] seen as insulting by adherents of those religions. While paganism is often considered to exclude monotheism and to express a worldview that is pantheistic, polytheistic, or animistic, there are some monotheistic pagans. Once monotheistic religions, such as Christianity and Islam, started to become more prominent (in processes known as Christianization and Islamization), names to encompass polytheistic worshipers started to develop; some of these include Hellene, pagan, and heathen, and at times these names were used as slurs. Modern knowledge of old pagan religions comes from several sources, including: anthropological field research records, the evidence of archaeological artifacts, and the historical accounts of ancient writers regarding cultures known to the classical world. Before the rise of monotheistic religions, most people practiced some type of polytheism. Many of these religions started to die out, and eventually they became extinct. In some cases, elements of polytheistic belief systems continued to exist in folklore. Paganism would later be studied during the Renaissance and Romantic era. Forms of these religions, influenced by various historical pagan beliefs of pre-modern Europe, exist today and are known as contemporary or modern paganism, also referred to as Neo-paganism. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en, "Paganisme est un terme générique employé depuis le VIe siècle par des chrétiens pour désigner la religion de ceux qui ne sont ni chrétiens, ni juifs, ni musulmans. Il remonte au latin paganus (païen). Au VIe siècle, ce mot pouvait servir à désigner les habitants des campagnes par opposition à ceux des villes ou bien les civils par opposition aux militaires. D'abord employé comme sobriquet populaire par des chrétiens pour désigner ceux qui ne sont pas baptisés, le terme a ensuite été adopté dans la littérature chrétienne. Même s'il y désigne toujours ceux qui ne sont pas chrétiens, son acception y est cependant ambiguë. Il est parfois employé de façon péjorative pour désigner ceux qui sont tenus pour être des ignorants, parfois de façon neutre pour désigner les philosophes grecs, parfois encore pour désigner des chrétiens jugés mal convertis ou tièdes dans leur foi. À partir de 370, des lois impériales regroupées au Ve siècle dans le code théodosien emploient le terme paganus pour désigner ceux qui pratiquent la magie, ceux qui sont considérés comme superstitieux ou dans l'erreur. Le terme a depuis conservé une connotation péjorative. De nombreux Pères de l'Église ayant écrit « contre les païens », le paganisme a eu une première existence sous forme de fiction littéraire, comme s'il s'agissait de la religion de ceux qui ne sont pas chrétiens. Le paganisme tel qu'il a été exposé par les Pères de l'Église n'était cependant pas à proprement parler une religion, il s'agit plutôt de l'ensemble sans homogénéité des positions philosophiques et des croyances rejetées par les Pères de l'Église. Le paganisme est ainsi, dans l'antiquité tardive, une attitude combattue par des chrétiens puis par les autorités, mais elle n'est revendiquée par personne. C'est surtout à l'époque moderne, avec l'essor de l'histoire des religions que le paganisme commence à être perçu et étudié comme une religion parmi d'autres. Le paganisme peut aujourd'hui être revendiqué sous forme de néo-paganisme, ou bien comme une position philosophique tel que l'a fait Marc Augé dans Le génie du paganisme. Le mot paganus n'a pas son correspondant chez les écrivains chrétiens de langue grecque qui utilisent le terme moins péjoratif de « nations » ou « religions nationales » (ethnikoï) (décalque de l'hébreu). <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr ;
     skos:inScheme cwrc:Religion .
+
 cwrc:paganism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:Religion, skos:Concept ;
@@ -3918,6 +3932,7 @@ cwrc:paganism
     rdfs:label "Paganism"@en, "Paganisme"@fr ;
     skos:definition "Paganism is a term that developed among the Christian community of southern Europe during late antiquity to describe religions other than their own, Judaism, or Islam–the three Abrahamic religions. Throughout Christendom, it continued to be used, typically in a derogatory sense. In the 19th century, it was re-adopted as a self-descriptor by members of various artistic groups inspired by the ancient world. In the 20th century, it came to be applied as a self-description by practitioners of contemporary pagan, or neo-pagan, religious movements. There has been much scholarly argument as to the origin of the term paganism. Paganism has also been understood by some[who?] to include any non-Abrahamic religions, but this is generally[who?] seen as insulting by adherents of those religions. While paganism is often considered to exclude monotheism and to express a worldview that is pantheistic, polytheistic, or animistic, there are some monotheistic pagans. Once monotheistic religions, such as Christianity and Islam, started to become more prominent (in processes known as Christianization and Islamization), names to encompass polytheistic worshipers started to develop; some of these include Hellene, pagan, and heathen, and at times these names were used as slurs. Modern knowledge of old pagan religions comes from several sources, including: anthropological field research records, the evidence of archaeological artifacts, and the historical accounts of ancient writers regarding cultures known to the classical world. Before the rise of monotheistic religions, most people practiced some type of polytheism. Many of these religions started to die out, and eventually they became extinct. In some cases, elements of polytheistic belief systems continued to exist in folklore. Paganism would later be studied during the Renaissance and Romantic era. Forms of these religions, influenced by various historical pagan beliefs of pre-modern Europe, exist today and are known as contemporary or modern paganism, also referred to as Neo-paganism. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en, "Paganisme est un terme générique employé depuis le VIe siècle par des chrétiens pour désigner la religion de ceux qui ne sont ni chrétiens, ni juifs, ni musulmans. Il remonte au latin paganus (païen). Au VIe siècle, ce mot pouvait servir à désigner les habitants des campagnes par opposition à ceux des villes ou bien les civils par opposition aux militaires. D'abord employé comme sobriquet populaire par des chrétiens pour désigner ceux qui ne sont pas baptisés, le terme a ensuite été adopté dans la littérature chrétienne. Même s'il y désigne toujours ceux qui ne sont pas chrétiens, son acception y est cependant ambiguë. Il est parfois employé de façon péjorative pour désigner ceux qui sont tenus pour être des ignorants, parfois de façon neutre pour désigner les philosophes grecs, parfois encore pour désigner des chrétiens jugés mal convertis ou tièdes dans leur foi. À partir de 370, des lois impériales regroupées au Ve siècle dans le code théodosien emploient le terme paganus pour désigner ceux qui pratiquent la magie, ceux qui sont considérés comme superstitieux ou dans l'erreur. Le terme a depuis conservé une connotation péjorative. De nombreux Pères de l'Église ayant écrit « contre les païens », le paganisme a eu une première existence sous forme de fiction littéraire, comme s'il s'agissait de la religion de ceux qui ne sont pas chrétiens. Le paganisme tel qu'il a été exposé par les Pères de l'Église n'était cependant pas à proprement parler une religion, il s'agit plutôt de l'ensemble sans homogénéité des positions philosophiques et des croyances rejetées par les Pères de l'Église. Le paganisme est ainsi, dans l'antiquité tardive, une attitude combattue par des chrétiens puis par les autorités, mais elle n'est revendiquée par personne. C'est surtout à l'époque moderne, avec l'essor de l'histoire des religions que le paganisme commence à être perçu et étudié comme une religion parmi d'autres. Le paganisme peut aujourd'hui être revendiqué sous forme de néo-paganisme, ou bien comme une position philosophique tel que l'a fait Marc Augé dans Le génie du paganisme. Le mot paganus n'a pas son correspondant chez les écrivains chrétiens de langue grecque qui utilisent le terme moins péjoratif de « nations » ou « religions nationales » (ethnikoï) (décalque de l'hébreu). <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr ;
     skos:inScheme cwrc:Religion .
+
 cwrc:parentOf
     void:inDataset cwrc:datasetdefinition ;
     a owl:ObjectProperty ;
@@ -3925,6 +3940,7 @@ cwrc:parentOf
     rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
     rdfs:label "parent de"@fr, "parent of"@en ;
     rdfs:subPropertyOf cwrc:relativeOf .
+
 cwrc:parliamentarianism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -3935,6 +3951,7 @@ cwrc:parliamentarianism
     skos:definition ""@fr, "Advocacy for parliamentary systems in government. See: <a href=\"https://en.wikipedia.org/wiki/Parliamentary_system\">https://en.wikipedia.org/wiki/Parliamentary_system</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Parliamentary_system .
+
 cwrc:parliamentaryReform
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -3945,6 +3962,7 @@ cwrc:parliamentaryReform
     skos:definition ""@fr, "Support for reform of the parliamentary system of the United Kingdom. See <a href=\"https://en.wikipedia.org/wiki/Reform_Bills\">https://en.wikipedia.org/wiki/Reform_Bills</a>; <a href=\"https://en.wikipedia.org/wiki/Category:Representation_of_the_People_Acts\">https://en.wikipedia.org/wiki/Category:Representation_of_the_People_Acts</a>; <a href=\"https://en.wikipedia.org/wiki/Electoral_reform\">https://en.wikipedia.org/wiki/Electoral_reform</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom <http://dbpedia.org/resource/Category:Representation_of_the_People_Acts>, dbpedia:Electoral_reform, dbpedia:Reform_Bills .
+
 cwrc:patriotism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -3955,12 +3973,14 @@ cwrc:patriotism
     skos:definition "Le patriotisme désigne le dévouement d'un individu envers son pays qu'il reconnait comme étant sa patrie. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr, "Patriotism is an emotional attachment to a nation which an individual recognizes as their homeland. This attachment, also known as national feeling or national pride, can be viewed in terms of different features relating to one's own nation, including ethnic, cultural, political or historical aspects. It encompasses a set of concepts closely related to those of nationalism. An excess of patriotism in the defense of a nation is called chauvinism; another related term is jingoism. The English term patriot is first attested in the Elizabethan era, via Middle French from Late Latin (6th century) patriota, meaning \"countryman\", ultimately from Greek  πατριώτης (patriōtēs), meaning \"from the same country\", from  πατρίς (patris), meaning \"fatherland\". The abstract noun patriotism appears in the early 18th century. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Patriotism .
+
 cwrc:personalProperty
     void:inDataset cwrc:datasetdefinition ;
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
     rdfs:label "personal property"@en, "propriété de la personne"@fr ;
     skos:definition ""@en, ""@fr .
+
 cwrc:personalPropertySelfDeclared
     dcterms:isReplacedBy cwrc:personalPropertySelfReported ;
     void:inDataset cwrc:datasetdefinition ;
@@ -3970,12 +3990,14 @@ cwrc:personalPropertySelfDeclared
     rdfs:subPropertyOf cwrc:personalProperty ;
     owl:deprecated true ;
     vs:term_status "deprecated"@en .
+
 cwrc:personalPropertySelfReported
     void:inDataset cwrc:datasetdefinition ;
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
     rdfs:label "personal property (self reported)"@en, "propriété de la personne (autodéclarée)"@fr ;
     rdfs:subPropertyOf cwrc:personalProperty .
+
 cwrc:plymouthBrethren
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:Religion, skos:Concept ;
@@ -3986,6 +4008,7 @@ cwrc:plymouthBrethren
     skos:definition "Le courant des Assemblées de Frères ou Plymouth Brethren ou encore Frères de Plymouth constitue l'une des branches du protestantisme évangélique. Ce mouvement est né à Dublin et en Grande-Bretagne vers 1830 et a connu une importante scission en 1848 qui a abouti à distinguer un courant « ouvert » d'une part, les « Open Brethren », et un courant « exclusif » d'autre part, appelé aussi « darbyste ». La branche la plus « étroite » a suivi John Nelson Darby et la branche plus ouverte des leaders comme George Müller et Henry Craik. Ces deux courants se sont développés dans le monde et notamment en France pour faire partie des cinq principales dénominations évangéliques sur quarante-trois significatives. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr, "The Plymouth Brethren are a conservative, low church, nonconformist, Evangelical Christian movement whose history can be traced to Dublin, Ireland in the late 1820s, originating from Anglicanism. Among other beliefs, the group emphasizes sola scriptura, the belief that the Bible is the supreme authority for church doctrine and practice over and above \"the [mere] tradition of men\" (Mark 7:8). Brethren generally see themselves not as a denomination but as a network, or even as a collection of overlapping networks, of like-minded independent churches. (The Brethren would generally prefer that their gatherings be referred to as \"assemblies\" rather than \"churches\" but, in the interests of simplicity, this article uses both terms interchangeably.) The movement refused for many years to take any denominational name to itself, a stance that some still maintain. The title \"The Brethren,\" however, is one that many of their number are comfortable with, in that the Bible designates all believers as \"brethren\". (\"[O]ne is your Master, even Christ; and all ye are brethren.\" Matthew 23:8)<a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:Religion ;
     prov:derivedFrom dbpedia:Plymouth_Brethren .
+
 cwrc:polishNationalism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -3997,6 +4020,7 @@ cwrc:polishNationalism
     skos:definition ""@fr, "Polish nationalism is the nationalism that asserts that Poles are a Polish nation, and promotes the cultural unity of Poles. Norman Davies, in the context of Polish nationalism, defined nationalism in general as \"a doctrine ... to create a nation by arousing people's awareness of their nationality, and to mobilize their feelings into a vehicle for political action\". The old Polish protonationalism of the Polish-Lithuanian Commonwealth based on the Polish-Lithuanian identity was multi-ethnic and multi-religious. The nationalist ideology developed soon after the Partitions was initially free of \"ethnic nationalism\" of any kind. It was a Romantic movement for the restoration of the Polish sovereign state. Polish Romantic nationalism was described by Maurycy Mochnacki as \"the essence of the nation\" no longer defined by borders but by ideas, feelings, and thoughts resulting from the past. The birth of modern nationalism under foreign rule coincided with the November Uprising of 1830 and the subsequent Spring of Nations. However, the defeat suffered by the Poles also broke the Polish revolutionary spirit. Many intellectuals turned to social Darwinism of Herbert Spencer, blaming the Romantic philosophy for the loss of their property, mass destruction, and ultimately the loss of the nation. With the advent of Positivism between 1860 and 1890 Polish nationalism became an elitist cause. Because the partitioning powers could not have identified themselves with the Polish nation, therefore the ideology became more restrictive in terms of ethnicity and religion. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Polish_nationalism .
+
 cwrc:poorAdvocacy
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4006,6 +4030,7 @@ cwrc:poorAdvocacy
     rdfs:label ""@fr, "poor advocacy"@en ;
     skos:definition ""@fr, "Advocacy for the poor."@en ;
     skos:inScheme cwrc:PoliticalAffiliation .
+
 cwrc:poorLawReform
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4016,6 +4041,7 @@ cwrc:poorLawReform
     skos:definition ""@fr, "From the reign of Elizabeth I until the passage of the Poor Law Amendment Act in 1834 relief of the poor in England was administered on the basis of a Poor Law enacted in 1601. From the start of the nineteenth century the basic concept of providing poor relief was criticised as misguided by leading political economists and in southern agricultural counties the burden of poor-rates was felt to be excessive (especially where poor-rates were used to supplement low wages (the 'allowance' or Speenhamland system)). Opposition to the Elizabethan Poor Law led to a Royal Commission on poor relief, which recommended that poor relief could not in the short term be abolished; however it should be curtailed, and administered on such terms that none but the desperate would claim it. Relief should only be administered in workhouses, whose inhabitants were to be confined, 'classified' (men, women, boys, girls) and segregated. The Poor Law Amendment Act allowed these changes to be implemented by a Poor Law Commission largely unaccountable to Parliament. The Act was passed by large majorities in Parliament, but the regime it was intended to bring about was denounced by its critics as (variously) un-Christian, un-English, unconstitutional, and impracticable for the great manufacturing districts of Northern England. The Act itself did not introduce the regime, but introduced a framework by which it might easily be brought in. Opposition to the New Poor Law strictly speaking was resistance to the introduction of the New Poor Law administrative framework; this was chiefly encountered in the industrial North in 1837–9 and overcome after a few riots by a judicious mixture of legal threats and deployment of the military. Opposition to the New Poor Law in the looser sense of resistance to (and criticism of) key features of the regime recommended by the Royal Commission persisted and eventually became orthodoxy: for example outdoor relief was never abolished in much of the industrial North. When a prominent West Riding opponent of the New Poor Law died in 1858, the Huddersfield Chronicle wrote \"..the controversy closed and English common sense has settled down on the poor-law question somewhat nearer to the views of Oastler and Pitkethly than those of their opponents.\" <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Opposition_to_the_English_Poor_Laws .
+
 cwrc:presbyterianism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:Religion, skos:Concept ;
@@ -4026,6 +4052,7 @@ cwrc:presbyterianism
     skos:definition "Een van de belangrijkste protestantse groeperingen die voortkwamen uit de 16de-eeuwse Reformatie. In het algemeen hebben moderne presbyteriaanse kerken hun oorsprong in de calvinistische kerken op de Britse eilanden, waarvan de Europese tegenhangers bekend zijn geworden onder de meer algemene naam 'gereformeerden'. De term 'presbyteriaans' verwijst ook naar een collegiaal type kerkbestuur onder leiding van pastors en leken die ouderlingen of presbyters worden genoemd. Strikt genomen maken alle presbyteriaanse kerken deel uit van de gereformeerde of calvinistische traditie, maar zijn niet alle gereformeerde kerken presbyteriaans in hun bestuursvorm. <a href=\"#_getty_2017\">(Getty, 2017)</a>"@nl, "Le presbytérianisme est une forme du protestantisme liée à l'Écosse. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr, "One of the main Protestant groups that arose out of the 16th-century Reformation. Generally speaking, modern Presbyterian churches trace their origins to the Calvinist churches of the British Isles, the European counterparts of which came to be known by the more inclusive name of Reformed. The term presbyterian also denotes a collegiate type of church government led by pastors and lay leaders called elders or presbyters. Strictly speaking, all Presbyterian churches are a part of the Reformed, or Calvinist, tradition, although not all Reformed churches are presbyterian in their form of government. <a href=\"#_getty_2017\">(Getty, 2017)</a>"@en, "Uno de los principales grupos protestantes que surgió de la Reforma del siglo XVI. Hablando en general, las Iglesias Presbiterianas modernas señalan sus orígenes en las iglesias calvinistas de las Islas Británicas, la contraparte Europea la que fue conocida por el nombre más global de \"Reformada\". El término presbiterianismo también denota un tipo colegiado de gobierno de iglesia liderado por el pastor y lideres laicos llamados ancianos o presbiteros. Estrictamente hablando, todas las iglesias presbiterianas son parte de la Iglesia .El término presbiterianismo también denota un tipo colegiado de gobierno de iglesia liderado por el pastor y lideres laicos llamados ancianos o presbiteros. Estrictamente hablando, todas las iglesias presbiterianas son parte de la Reforma o Calvinismo, tradición, aunque no todas las iglesias Reformadas son presbiterianas en su gubernamentalidad. <a href=\"#_getty_2017\">(Getty, 2017)</a>"@es, "自十六世紀宗教改革興起的主要新教團體的一派。一般說來，現代的長老教會可追溯至不列顛群島的喀爾文(Calvinis)教派，其在歐洲的對應教派則被稱為較具涵蓋性的歸正派(Reformed)。長老教會一詞，亦表示其管理方式如同大學，由稱作長老或教士的牧師及信徒領導。嚴格來說，所有長老教會皆為歸正派或喀爾文教派傳統的一部分，但並非所有歸正教會的管理方式皆如同長老教會一般。 <a href=\"#_getty_2017\">(Getty, 2017)</a>"@zh-hant ;
     skos:inScheme cwrc:Religion ;
     prov:derivedFrom dbpedia:Presbyterianism, <http://vocab.getty.edu/aat/300153854> .
+
 cwrc:prisonReform
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4036,6 +4063,7 @@ cwrc:prisonReform
     skos:definition ""@fr, "Prison reform is the attempt to improve conditions inside prisons, establish a more effective penal system, or implement alternatives to incarceration. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Prison_reform .
+
 cwrc:pro-American
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4045,6 +4073,7 @@ cwrc:pro-American
     skos:definition ""@en, ""@fr ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     skos:related cwrc:nationalism .
+
 cwrc:pro-BoerWar
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4054,6 +4083,7 @@ cwrc:pro-BoerWar
     skos:definition ""@fr, "Support of the First or Second Boer War. See <a href=\"https://en.wikipedia.org/wiki/First_Boer_War\">https://en.wikipedia.org/wiki/First_Boer_War</a>; <a href=\"https://en.wikipedia.org/wiki/Second_Boer_War\">https://en.wikipedia.org/wiki/Second_Boer_War</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:First_Boer_War, dbpedia:Second_Boer_War .
+
 cwrc:pro-Catholicism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4064,6 +4094,7 @@ cwrc:pro-Catholicism
     skos:definition ""@fr, "Favouring the political re-establishment of Catholicism as a component of the state or the extension of civil rights to Catholics. See <a href=\"https://en.wikipedia.org/wiki/Category:Catholicism-related_controversies\">https://en.wikipedia.org/wiki/Category:Catholicism-related_controversies</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom <http://dbpedia.org/resource/Category:Catholicism-related_controversies> .
+
 cwrc:pro-Choice
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4073,6 +4104,7 @@ cwrc:pro-Choice
     skos:definition " Pour l’article homonyme, voir ProChoix. Le mouvement pro-choix (en anglais pro-choice, c'est-à-dire « pour le choix ») désigne en Amérique du Nord l'ensemble des mouvements qui défendent l'idée politique et éthique que les femmes devraient avoir le contrôle de leur grossesse et de leur fertilité. S'y ajoutent notamment la liberté sexuelle, le droit au recours à l'avortement légal et encadré, et le libre choix de la contraception. On l'oppose dans ce contexte aux mouvements pro-vie, pour lesquels la liberté des femmes ne peut pas être utilisée comme argument pour contester le droit à la vie de l'embryon. Par extension, on utilise pro-choix pour évoquer tous les mouvements de défense des libertés individuelles, telles que la liberté de culte et l'euthanasie. Ce terme provient d'une justification des actes en fonction de leurs modalités d'exécution (choisi/imposé). <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr, "Abortion-rights movements advocate for legal access to induced abortion services. The issue of induced abortion remains divisive in public life, with recurring arguments to liberalize or to restrict access to legal abortion services. Abortion-rights supporters themselves are frequently divided as to the types of abortion services that should be available and to the circumstances, for example different periods in the pregnancy such as late term abortions, in which access may be restricted. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Abortion-rights_movements .
+
 cwrc:pro-European
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4082,6 +4114,7 @@ cwrc:pro-European
     skos:definition ""@fr, "Supportive of the existence, policies, or influence of the European Union. See <a href=\"https://en.wikipedia.org/wiki/Pro-Europeanism\">https://en.wikipedia.org/wiki/Pro-Europeanism</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Pro-Europeanism .
+
 cwrc:pro-Slavery
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4091,6 +4124,7 @@ cwrc:pro-Slavery
     skos:definition ""@fr, "Proslavery is an ideology that perceives slavery as a positive good. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Proslavery .
+
 cwrc:professional
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:SocialClass, skos:Concept ;
@@ -4098,6 +4132,7 @@ cwrc:professional
     rdfs:label "professional"@en, "professionnel"@fr ;
     skos:definition ""@fr, "Includes doctors, lawyers, guild members, and those of high calling such as members of the clergy (Church of England). It implies social respect and intellectual requirements. Examples are Ann Hunter, who was married to a surgeon, and Virginia Woolf, daughter of an intellectual."@en ;
     skos:inScheme cwrc:SocialClass .
+
 cwrc:propertyLawReform
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4108,6 +4143,7 @@ cwrc:propertyLawReform
     skos:definition ""@fr, "Support for reform of the laws regarding real or personal property. See <a href=\"https://en.wikipedia.org/wiki/Property_law\">https://en.wikipedia.org/wiki/Property_law</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Property_law .
+
 cwrc:protestantRule
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4118,6 +4154,7 @@ cwrc:protestantRule
     skos:definition ""@fr, "Support for protestant rule in the United Kingdom. See <a href=\"https://en.wikipedia.org/wiki/English_Reformation\">https://en.wikipedia.org/wiki/English_Reformation</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:English_Reformation .
+
 cwrc:protestantism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:Religion, skos:Concept ;
@@ -4128,6 +4165,7 @@ cwrc:protestantism
     skos:definition "De algemene term voor typen christelijk geloof die zijn ontstaan tijdens de Reformatie. Hoewel de vroegste vormen van protestantisme werden beoefend door de volgelingen van Luther, Calvijn en Zwingli, wordt de term tegenwoordig gebruikt voor de meeste overtuigingen die niet rooms-katholiek of orthodox zijn. Protestanten willen dichter bij de geloofsstijl van de vroege kerk staan, die volgens hen in de katholieke praktijk overschaduwd is geraakt. De term is afkomstig van het woord 'protestari', wat niet alleen 'protesteren' betekent, maar ook 'belijden'. Enkele algemene kenmerken van het protestantisme zijn: rechtvaardiging door het geloof alleen, de berusting van alle gezag bij de Bijbel en de leer dat alle gelovigen zelf hun zonden aan God kunnen belijden, waarbij het aanhoren van de biecht niet alleen aan priesters is voorbehouden. <a href=\"#_getty_2017\">(Getty, 2017)</a>"@nl, "El término general para tipos de fe cristiana originadas a partir de la Reforma. Aunque las formas tempranas del protestantismo fueron aquellas que obedecían a Lutero, Calvino y Zwinglio, el término ahora incluye la mayoría de las denominaciones no Romanas o no Ortodoxas. El caracter común de los protestantes incluye la justificación de la fe por la fe, la autoridad de la sagrada escritura  y el sacerdocio de todos los fieles, por el que cada creyente puede oir la confesión de los pecados, no siendo exclusivo del clero. protestantes quieren estar cerca al estilo de fe de la primera Iglesia el cual sienten ha sido opacado en las prácticas católicas. El término deriva desde la palabra \"protestari\" que significa no sólo protestar sino que reconocer o confesar. Característica común. <a href=\"#_getty_2017\">(Getty, 2017)</a>"@es, "Le protestantisme est l'une des principales branches du christianisme avec le catholicisme et l'orthodoxie. Entendu largement, le protestantisme est l'ensemble des groupements « issus, directement ou non, de la Réforme et qui rejettent l'autorité du pape ». Selon cette perspective, le protestantisme englobe des mouvements variés allant des luthériens passant par les évangéliques, jusqu'aux quakers. <a href=\"#_getty_2017\">(DBpedia, 2017)</a>"@fr, "The general term for types of Christian faith originating from the Reformation. Although the early forms of Protestantism were those who followed Luther, Calvin, and Zwingli, the term now includes most non-Roman Catholic or non-Orthodox denominations. Protestants want to be closer to the style of faith of the early Church which they feel has been obscured in Catholic practices. The term derives from the word 'protestari' which means not only to protest but to avow or confess. Common characteristics of Protestantism include the justification by faith alone, the authority of scripture, and the priesthood of all believers, in which not only the clergy are able to hear the confession of sin. <a href=\"#_getty_2017\">(Getty, 2017)</a>"@en, "泛稱源自宗教改革的各式基督信仰。雖然早期的新教形式是指遵循路德(Luther)、喀爾文(Calvin)，以及茨溫利(Zwingli)的派別，但現在新教這個詞彙包含了大部分非羅馬天主教或非正教的派別。新教徒希望能更接近早期教會信仰，認為天主教將之變得晦澀難解。本詞彙衍生自”protestari”，不僅意指抗議，更要坦白或懺悔。新教的常見特色包括因純信而稱義、經典的權威性、信徒皆牧師，所以不是只有牧師才能聽取認罪懺悔。 <a href=\"#_getty_2017\">(Getty, 2017)</a>"@zh-hant ;
     skos:inScheme cwrc:Religion ;
     prov:derivedFrom dbpedia:Protestantism, <http://vocab.getty.edu/aat/300073735> .
+
 cwrc:quakerism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:Religion, skos:Concept ;
@@ -4138,6 +4176,7 @@ cwrc:quakerism
     skos:definition "Het Religieus Genootschap der Vrienden, beter bekend als quakers, verouderd Nederlands kwakers, vormt een groep ondogmatische gelovigen, die zijn wortels vindt in de christelijke traditie. Het leven en de overgeleverde uitspraken van Jezus vormen een belangrijke inspiratiebron. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@nl, "La Société religieuse des Amis est un mouvement religieux fondé en Angleterre au XVIIe siècle par des dissidents de l'Église anglicane. Les membres de ce mouvement sont communément connus sous le nom de quakers () mais ils se nomment entre eux « Amis » et « Amies ». Le mouvement est souvent nommé simplement Société des Amis et le surnom de « quaker » apparaît le plus souvent dans la dénomination officielle, sous la forme Société religieuse des Amis (quakers). Les historiens s'accordent à désigner George Fox comme le principal fondateur ou le plus important meneur des débuts du mouvement. Depuis sa création en Angleterre, le mouvement s'est d'abord répandu dans les pays de colonisation anglo-saxonne. Au XXe siècle, des missionnaires quakers ont propagé leur religion en Amérique latine et en Afrique. Aujourd'hui, les quakers déclarent être au nombre d'environ 350 000 dans le monde. La Société des Amis se différencie de la plupart des autres groupes issus du christianisme par l'absence de credo et de toute structure hiérarchique. Pour les quakers, la croyance religieuse appartient à la sphère personnelle et chacun est libre de ses convictions. Le concept de « lumière intérieure » (inner light) est cependant partagé par la plupart d'entre eux, quelle que soit la signification donnée à ces mots. De nombreux quakers reconnaissent le christianisme mais ne ressentent pas leur foi comme entrant dans les catégories chrétiennes traditionnelles. On trouve aujourd'hui dans la Société des Amis des pratiques très diverses, y compris un large courant évangélique. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr, "Quakers (or Friends) are members of a group of religious Christian movements which is known as the Religious Society of Friends in Europe, Australia, New Zealand and parts of North America; and known as the Friends Church in Africa, Asia, South America and parts of the US. The movements were originally, and are still predominantly based on Christianity. Members of the movements profess the priesthood of all believers, a doctrine derived from the First Epistle of Peter. They include those with evangelical, holiness, liberal, and traditional Quaker understandings of Christianity. To differing extents, the different movements that make up the Religious Society of Friends/Friends Church avoid creeds and hierarchical structures. In 2007, there were approximately 359,000 adult Quakers. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:Religion ;
     prov:derivedFrom dbpedia:Quakers .
+
 cwrc:quakers
     dcterms:isReplacedBy cwrc:quakerism ;
     void:inDataset cwrc:datasetdefinition ;
@@ -4151,6 +4190,7 @@ cwrc:quakers
     skos:definition "Het Religieus Genootschap der Vrienden, beter bekend als quakers, verouderd Nederlands kwakers, vormt een groep ondogmatische gelovigen, die zijn wortels vindt in de christelijke traditie. Het leven en de overgeleverde uitspraken van Jezus vormen een belangrijke inspiratiebron. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@nl, "La Société religieuse des Amis est un mouvement religieux fondé en Angleterre au XVIIe siècle par des dissidents de l'Église anglicane. Les membres de ce mouvement sont communément connus sous le nom de quakers () mais ils se nomment entre eux « Amis » et « Amies ». Le mouvement est souvent nommé simplement Société des Amis et le surnom de « quaker » apparaît le plus souvent dans la dénomination officielle, sous la forme Société religieuse des Amis (quakers). Les historiens s'accordent à désigner George Fox comme le principal fondateur ou le plus important meneur des débuts du mouvement. Depuis sa création en Angleterre, le mouvement s'est d'abord répandu dans les pays de colonisation anglo-saxonne. Au XXe siècle, des missionnaires quakers ont propagé leur religion en Amérique latine et en Afrique. Aujourd'hui, les quakers déclarent être au nombre d'environ 350 000 dans le monde. La Société des Amis se différencie de la plupart des autres groupes issus du christianisme par l'absence de credo et de toute structure hiérarchique. Pour les quakers, la croyance religieuse appartient à la sphère personnelle et chacun est libre de ses convictions. Le concept de « lumière intérieure » (inner light) est cependant partagé par la plupart d'entre eux, quelle que soit la signification donnée à ces mots. De nombreux quakers reconnaissent le christianisme mais ne ressentent pas leur foi comme entrant dans les catégories chrétiennes traditionnelles. On trouve aujourd'hui dans la Société des Amis des pratiques très diverses, y compris un large courant évangélique. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr, "Quakers (or Friends) are members of a group of religious Christian movements which is known as the Religious Society of Friends in Europe, Australia, New Zealand and parts of North America; and known as the Friends Church in Africa, Asia, South America and parts of the US. The movements were originally, and are still predominantly based on Christianity. Members of the movements profess the priesthood of all believers, a doctrine derived from the First Epistle of Peter. They include those with evangelical, holiness, liberal, and traditional Quaker understandings of Christianity. To differing extents, the different movements that make up the Religious Society of Friends/Friends Church avoid creeds and hierarchical structures. In 2007, there were approximately 359,000 adult Quakers. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:Religion ;
     prov:derivedFrom dbpedia:Quakers .
+
 cwrc:racialEquality
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4161,6 +4201,7 @@ cwrc:racialEquality
     skos:definition ""@fr, "Racial equality is an equal regard to all races. It can refer to a belief in biological equality of all human races, and it can also refer to social equality for people of different races. Racial equality is a stated goal of most current political movements. The divergence of any particular society from a state of racial equality is often contested by members of that society of different races. In today's society, there is more diversity and more integration among races. However, attaining equality has been difficult for African Americans, Asians, and Latinos, especially in schools. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Racial_equality .
+
 cwrc:racism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4171,6 +4212,7 @@ cwrc:racism
     skos:definition "Le racisme est une idéologie qui, partant du postulat de l'existence de races au sein de l'espèce humaine, considère que certaines catégories de personnes sont intrinsèquement supérieures à d'autres. Cette idéologie peut entraîner une attitude d'hostilité ou de sympathie systématique à l'égard d'une catégorie déterminée de personnes. Cette hostilité envers une autre appartenance culturelle et ethnique se traduit par des formes de xénophobie ou d'ethnocentrisme. Certaines formes d'expression du racisme, comme les injures racistes, la diffamation raciale, la discrimination, sont considérées comme des délits dans un certain nombre de pays. Les idéologies racistes ont servi de fondement à des doctrines politiques conduisant à pratiquer des discriminations raciales, des ségrégations ethniques et à commettre des injustices et des violences, allant jusqu'au génocide. Le Petit Larousse définit aussi le racisme comme « une attitude d'hostilité répétée voire systématique à l'égard d'une catégorie déterminée de personnes ». <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr, "Racism is a product of the complex interaction in a given society of a race-based worldview with prejudice, stereotyping, and discrimination. Racism can be present in social actions, practices, or political systems (e.g., apartheid) that support the expression of prejudice or aversion in discriminatory practices. The ideology underlying racist practices often includes the idea that humans can be subdivided into distinct groups that are different in their social behavior and innate capacities and that can be ranked as inferior or superior. Racist ideology can become manifest in many aspects of social life. Associated social actions may include xenophobia, otherness, segregation, hierarchical ranking, supremacism, and related social phenomena. While race and ethnicity are considered to be separate in contemporary social science, the two terms have a long history of equivalence in popular usage and older social science literature. \"Ethnicity\" is often used in a sense close to one traditionally attributed to \"race\": the division of human groups based on qualities assumed to be essential or innate to the group (e.g. shared ancestry or shared behavior). Racism and racial discrimination are often used to describe discrimination on an ethnic or cultural basis, independent of whether these differences are described as racial. According to a United Nations convention, there is no distinction between the terms \"racial\" and \"ethnic\" discrimination. The UN convention further concludes that superiority based on racial differentiation is scientifically false, morally condemnable, socially unjust and dangerous, and there is no justification for racial discrimination, anywhere, in theory or in practice. Today, the use of the term \"racism\" does not easily fall under a single definition. It is usually found in, but usage is not limited to, law, the social and behavioral sciences, humanities, and popular culture. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Racism .
+
 cwrc:radicalism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4181,6 +4223,7 @@ cwrc:radicalism
     skos:definition ""@fr, "The term political radicalism (or simply, in political science, radicalism) denotes political principles focused on altering social structures through revolutionary means and changing value systems in fundamental ways. Derived from the Latin radix (root), the denotation of radical has changed since its eighteenth-century coinage to comprehend the entire political spectrum—yet retains the \"change at the root\" connotation fundamental to revolutionary societal change. Historically, radicalism has referred exclusively to the radical left (under the single category of far-left politics) and rarely incorporating far-right politics, though these may have revolutionary elements; the prominent exception is in the United States where some consider radicalism to include both political extremes of the radical left and the radical right. In traditional labels of the spectrum of political thought, the opposite of radical on the \"right\" of the political spectrum is termed reactionary. The nineteenth-century Cyclopaedia of Political Science (1881, 1889) reports that \"radicalism is characterized less by its principles than by the manner of their application\". Conservatives often used the term radical pejoratively, whereas contemporary left radicals used the term conservative derogatorily; thus contemporary denotations of radical, radicalism, and political radicalism comprehend far left (hard left, radical left), and far right (hard right, radical right). The Encyclopædia Britannica records the first political usage of radical as ascribed to the British Whig Party parliamentarian Charles James Fox, who, in 1797, proposed a \"radical reform\" of the electoral system, franchise to provide universal manhood suffrage, thereby, idiomatically establishing radical to denote supporters of the reformation of the British Parliament. Throughout the nineteenth century, the term was combined with political notions and doctrines, thus working class radicalism, middle class-, philosophic-, democratic- bourgeois-, Tory-, and plebeian radicalism. In the event, politically influential radical leaders give rise to their own trend of political radicalism, e.g. Spencean radicalism and Carlilean radicalism. Philosophically, the French political scientist Jean-Jacques Rousseau (1712–78), is the principal theoretician proposing political radicalism as feasible in republican political philosophy, viz the French Revolution (1789–99), and other modern revolutions—the antithesis to the liberalism of John Locke. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Political_radicalism .
+
 cwrc:rationalDissenter
     dcterms:isReplacedBy cwrc:dissentingChristianity ;
     void:inDataset cwrc:datasetdefinition ;
@@ -4194,6 +4237,7 @@ cwrc:rationalDissenter
     skos:definition ""@fr, "An 18th-century, group much \"closer to the Anglicanism of their day than other Dissenting sects; however, they believed that state religions impinged on the freedom of conscience. They were fiercely opposed to the hierarchical structure of the Established Church and the financial ties between it and the government.\"<a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:Religion ;
     prov:derivedFrom <http://dbpedia.org/resource/English_Dissenters#Rational_Dissenters> .
+
 cwrc:rationalism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4204,12 +4248,14 @@ cwrc:rationalism
     skos:definition "In epistemology, rationalism is the view that \"regards reason as the chief source and test of knowledge\" or \"any view appealing to reason as a source of knowledge or justification\". More formally, rationalism is defined as a methodology or a theory \"in which the criterion of the truth is not sensory but intellectual and deductive\". In an old controversy, rationalism was opposed to empiricism, where the rationalists believed that reality has an intrinsically logical structure. Because of this, the rationalists argued that certain truths exist and that the intellect can directly grasp these truths. That is to say, rationalists asserted that certain rational principles exist in logic, mathematics, ethics, and metaphysics that are so fundamentally true that denying them causes one to fall into contradiction. The rationalists had such a high confidence in reason that empirical proof and physical evidence were regarded as unnecessary to ascertain certain truths – in other words, \"there are significant ways in which our concepts and knowledge are gained independently of sense experience\". Different degrees of emphasis on this method or theory lead to a range of rationalist standpoints, from the moderate position \"that reason has precedence over other ways of acquiring knowledge\" to the more extreme position that reason is \"the unique path to knowledge\". Given a pre-modern understanding of reason, rationalism is identical to philosophy, the Socratic life of inquiry, or the zetetic (skeptical) clear interpretation of authority (open to the underlying or essential cause of things as they appear to our sense of certainty). In recent decades, Leo Strauss sought to revive \"Classical Political Rationalism\" as a discipline that understands the task of reasoning, not as foundational, but as maieutic. In politics, Rationalism, since the Enlightenment, historically emphasized a \"politics of reason\" centered upon rational choice, utilitarianism, secularism, and irreligion – the latter aspect's antitheism later ameliorated by utilitarian adoption of pluralistic rationalist methods practicable regardless of religious or irreligious ideology. In this regard, the philosopher John Cottingham noted how rationalism, a methodology, became socially conflated with atheism, a worldview: In the past, particularly in the 17th and 18th centuries, the term 'rationalist' was often used to refer to free thinkers of an anti-clerical and anti-religious outlook, and for a time the word acquired a distinctly pejorative force (thus in 1670 Sanderson spoke disparagingly of 'a mere rationalist, that is to say in plain English an atheist of the late edition...'). The use of the label 'rationalist' to characterize a world outlook which has no place for the supernatural is becoming less popular today; terms like 'humanist' or 'materialist' seem largely to have taken its place. But the old usage still survives. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en, "Le rationalisme est la doctrine qui pose la raison discursive comme seule source possible de toute connaissance réelle. Autrement dit, le réel ne serait connaissable qu'en vertu d'une explication par la raison déterminante, suffisante et nécessaire. Ainsi, le rationalisme s'entend de toute doctrine qui attribue à la seule raison humaine la capacité de connaître et d'établir la vérité. Dans son acception classique, il s'agit de postuler que le raisonnement consiste à déterminer que certains effets résultent de certaines causes, uniquement à partir de principes logiques ; à la manière dont les théorèmes mathématiques résultent des hypothèses admises au départ. De plus, et en particulier, les principes logiques eux-mêmes utilisés dans le raisonnement ont été connus par déduction. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Rationalism .
+
 cwrc:relativeOf
     void:inDataset cwrc:datasetdefinition ;
     a owl:ObjectProperty ;
     rdf:value "FAMILY" ;
     rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
     rdfs:label "liens de famille"@fr, "relative of"@en .
+
 cwrc:republicanism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4219,6 +4265,7 @@ cwrc:republicanism
     skos:definition "Le républicanisme est une idéologie politique selon laquelle l'objectif d'un État et le sens de son existence, comme de ses décisions, doivent être le bien commun (en latin, res publica : « la chose publique »). Selon le républicanisme, les détenteurs du pouvoir doivent être nommés par d'autres moyens que l'hérédité, c'est-à-dire être élus par le peuple ou par une partie de celui-ci. La notion de souveraineté populaire découle donc en partie de cette idéologie, mais elle ne lui est pas nécessairement attachée. La notion de « république » remonte à l'Antiquité grecque et romaine, et l'idéologie républicaine moderne a pris des formes légèrement différentes selon qu'elle a été développée aux États-Unis, en France ou en Irlande. À l'époque moderne, le républicanisme s'oppose à d'autres idéologies politiques telles que le monarchisme, l'autoritarisme ou le despotisme. Dans les débats contemporains, c'est principalement au libéralisme politique qu'il s'oppose. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr, "Republicanism is an ideology of being a citizen in a state as a republic under which the people hold popular sovereignty. Many countries are \"republics\" in the sense that they are not monarchies. However, this article covers only the ideology of republicanism. The word, republic, derives from the Latin, res publica, which referred to the system of government that emerged in the 6th century BCE following the expulsion of the kings from Rome by Lucius Junius Brutus and Collatinus. This form of government collapsed in the latter part of the 1st century BCE, giving way to what was a monarchy in form, if not in name. Republics revived subsequently, with, for example, Renaissance Florence or early modern Britain. The concept of a republic became a powerful force in Britain's North American colonies where it led to the American Revolution. In Europe it gained enormous influence through the French Revolution. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Republicanism .
+
 cwrc:revolutionaryPolitics
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4229,6 +4276,7 @@ cwrc:revolutionaryPolitics
     skos:definition ""@fr, "A revolutionary is a person who either actively participates in, or advocates revolution. Also, when used as an adjective, the term revolutionary refers to something that has a major, sudden impact on society or on some aspect of human endeavor. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Revolutionary .
+
 cwrc:rural-unskilled
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:SocialClass, skos:Concept ;
@@ -4236,6 +4284,7 @@ cwrc:rural-unskilled
     rdfs:label "rural unskilled"@en, "travailleurs ruraux non qualifiés"@fr ;
     skos:definition ""@fr, "This generally indicates farm laborers, mostly male in earlier periods, and includes migrant farm workers."@en ;
     skos:inScheme cwrc:SocialClass .
+
 cwrc:sabbatarianism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4245,6 +4294,7 @@ cwrc:sabbatarianism
     skos:definition ""@fr, "Sabbatarianism is a movement within Protestantism whose proponents advocate that certain observances, specifically enumerated in a code of behavior or law, are required for Christians to properly observe the Sabbath or Sabbath principles. Its historical origins lie in Puritan Sabbatarianism, which delineated precepts for keeping Sunday holy in observance of Sabbath commandment principles. This observance of Sunday is the purest form of first-day Sabbatarianism, a movement which diminished and largely disappeared in the 18th century, though traces and influences remain today. Today, seventh-day Sabbatarianism is the most prominent type, a movement that generally embraces a literal reading of the Sabbath commandment that provides for both worship and rest on the seventh day of the week. Seventh-day Baptists leave most other Sabbath considerations of observance to individual conscience. The Seventh-day Adventist Church and Church of God (Seventh Day) have similar views, but maintain the original, scriptural duration as Friday sunset through Saturday sunset. Non-Sabbatarianism is the view opposing all Sabbatarianism, declaring Christians to be free of mandates to follow such specific observances. It upholds the principle in Christian church doctrine that the church is not bound by such law or code, but is free to set in place and time such observances as uphold Sabbath principles according to its doctrine: to establish a day of rest, or not, and to establish a day of worship, or not, whether on Saturday or on Sunday or on some other day. It includes all Catholics and Orthodox, and most Protestant denominations. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Sabbatarianism .
+
 cwrc:sanitaryMovement
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4255,6 +4305,7 @@ cwrc:sanitaryMovement
     skos:inScheme cwrc:PoliticalAffiliation ;
     skos:related cwrc:urbanReform ;
     prov:derivedFrom <http://dbpedia.org/resource/Sanitation#History> .
+
 cwrc:scottishNationalism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4266,6 +4317,7 @@ cwrc:scottishNationalism
     skos:definition "Le nationalisme écossais moderne naît dans l'entre-deux-guerres, même si des éléments nationalistes sont depuis plusieurs siècles au cœur de l'identité écossaise. L'article examine le contexte historique et politique qui a vu l'éclosion d'un nationalisme politique en Écosse, depuis la création du SNP (Scottish National Party) en 1934 jusqu'à la mise en place d'un régime de dévolution à l'Écosse à partir de 1999. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr, "Scottish nationalism promotes the idea that the Scottish people form a cohesive nation and national identity and is closely linked to the cause of Scottish home rule and Scottish independence, the ideology of the Scottish National Party, the party forming the Scottish Government. It is often described as a form of civic nationalism rather than ethnic nationalism. The Acts of Union merged the independent kingdoms of Scotland and England into Great Britain in 1707, but a separate legal system and distinct Scottish institutions continued to exist. Linguistic independence was an important part of the twentieth century Scottish Renaissance, associated with the nationalist impetus provided by Hugh MacDiarmid. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Scottish_nationalism .
+
 cwrc:secularism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4276,6 +4328,7 @@ cwrc:secularism
     skos:definition "La laïcité ou le sécularisme est le « principe de séparation dans l'État de la société civile et de la société religieuse» et « d'impartialité ou de neutralité de l'État à l'égard des confessions religieuses». Le mot désigne par extension le caractère des « institutions, publiques ou privées, qui sont indépendantes du clergé et des églises». La laïcité s'oppose à la reconnaissance d'une religion d'État. Toutefois, le principe de séparation entre l'État et les religions peut trouver des applications différentes selon les pays. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr, "Secularism is the principle of the separation of government institutions and persons mandated to represent the state from religious institutions and religious dignitaries. One manifestation of secularism is asserting the right to be free from religious rule and teachings, or, in a state declared to be neutral on matters of belief, from the imposition by government of religion or religious practices upon its people. Another manifestation of secularism is the view that public activities and decisions, especially political ones, should be uninfluenced by religious beliefs and/or practices. Secularism draws its intellectual roots from Greek and Roman philosophers such as Epicurus and Marcus Aurelius; from Enlightenment thinkers such as John Locke, Denis Diderot, Voltaire, Baruch Spinoza, James Madison, Thomas Jefferson, and Thomas Paine; and from more recent freethinkers and atheists such as Robert Ingersoll and Bertrand Russell. The purposes and arguments in support of secularism vary widely. In European laicism, it has been argued that secularism is a movement toward modernization, and away from traditional religious values (also known as secularization). This type of secularism, on a social or philosophical level, has often occurred while maintaining an official state church or other state support of religion. In the United States, some argue that  has served to a greater extent to protect religion and the religious from governmental interference, while secularism on a social level is less prevalent. Within countries as well, differing political movements support secularism for varying reasons. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Secularism .
+
 cwrc:servants
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:SocialClass, skos:Concept ;
@@ -4283,6 +4336,7 @@ cwrc:servants
     rdfs:label "domestiques"@fr, "servants"@en ;
     skos:definition ""@fr, "Domestic servants typically live in the home with the family or institution that employs them, although the lowest class of servants might work only casually and hence not receive room and board. This type of labour, very common before the twentieth century, is distinct from that of service positions such as shop assistants, flight attendances, and restaurant workers."@en ;
     skos:inScheme cwrc:SocialClass .
+
 cwrc:sexualReform
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4292,6 +4346,7 @@ cwrc:sexualReform
     rdfs:label ""@fr, "sexual reform"@en ;
     skos:definition ""@fr, "Advocacy or activism related to the reform of attitudes, practices and laws related to sex, including autonomy, age of consent, trafficking, and sex work."@en ;
     skos:inScheme cwrc:PoliticalAffiliation .
+
 cwrc:shopkeepers
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:SocialClass, skos:Concept ;
@@ -4299,6 +4354,7 @@ cwrc:shopkeepers
     rdfs:label "commerçants"@fr, "shopkeepers"@en ;
     skos:definition ""@fr, "Owns and runs a pub or shop. Similar to an industrialist but to a lesser degree of magnitude."@en ;
     skos:inScheme cwrc:SocialClass .
+
 cwrc:skilledCraftpersonArtisan
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:SocialClass, skos:Concept ;
@@ -4306,6 +4362,7 @@ cwrc:skilledCraftpersonArtisan
     rdfs:label "artisan"@fr, "skilled craftperson/artisan"@en ;
     skos:definition ""@fr, "Goldsmith, tailor, shoemaker, milliner, dressmaker."@en ;
     skos:inScheme cwrc:SocialClass .
+
 cwrc:socialPurity
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4316,6 +4373,7 @@ cwrc:socialPurity
     skos:definition ""@fr, "The social purity movement was a late 19th-century social movement that sought to abolish prostitution and other sexual activities that were considered immoral according to Christian morality. Composed primarily of women, the movement was active in English-speaking nations from the late 1860s to about 1910, exerting an important influence on the contemporaneous feminist, eugenics, and birth control movements. The movement helped to shape feminist views on prostitution. The roots of the social purity movement lay in early 19th-century moral reform movements, such as radical utopianism, abolitionism, and the temperance movement. In the late 19th century, \"social\" was a euphemism for \"sexual\"; the movement first formed in opposition to the legalization and regulation of prostitution, and quickly spread to other sex-related issues such as raising the age of consent, sexually segregating prisons, eliminating abortion, opposing contraception, and censoring pornography. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Social_purity_movement .
+
 cwrc:socialReform
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4326,6 +4384,7 @@ cwrc:socialReform
     skos:definition ""@fr, "A reform movement is the kind of social movement that aims to make gradual change, or change in certain aspects of society, rather than rapid or fundamental changes. A reform movement is distinguished from more radical social movements such as revolutionary movements. Reformists' ideas are often grounded in liberalism, although they may be rooted in socialist (specifically, social democratic) or religious concepts. Some rely on personal transformation; others rely on small collectives, such as Mahatma Gandhi's spinning wheel and the self-sustaining village economy, as a mode of social change. Reactionary movements, which can arise against any of these, attempt to put things back the way they were before any successes the new reform movement(s) enjoyed, or to prevent any such successes. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Reform_movement .
+
 cwrc:socialism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4337,6 +4396,7 @@ cwrc:socialism
     skos:inScheme cwrc:PoliticalAffiliation ;
     skos:related cwrc:communism, cwrc:socialReform ;
     prov:derivedFrom dbpedia:Socialism .
+
 cwrc:societyOfFriends
     dcterms:isReplacedBy cwrc:quakerism ;
     void:inDataset cwrc:datasetdefinition ;
@@ -4352,12 +4412,14 @@ cwrc:societyOfFriends
     skos:inScheme cwrc:PoliticalAffiliation, cwrc:Religion ;
     skos:related cwrc:abolitionism, cwrc:feminism ;
     prov:derivedFrom dbpedia:Quakers .
+
 cwrc:sonOf
     void:inDataset cwrc:datasetdefinition ;
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
     rdfs:label "fil de"@fr, "son of"@en ;
     rdfs:subPropertyOf cwrc:childOf .
+
 cwrc:spanishRepublicanism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4368,6 +4430,7 @@ cwrc:spanishRepublicanism
     skos:definition ""@fr, "There has existed in the Kingdom of Spain a persistent trend of republican thought, especially throughout the 19th, 20th, and 21st centuries, that has manifested itself in diverse political parties and movements over the entire course of the history of Spain. While these movements have shared the objective of establishing a republic in Spain, during these three centuries there have surged distinct schools of thought on the form republicans would want to give to the Spanish State: unitary (centralized) or federal. Despite the country's long-lasting schools of republican movements, the government of Spain has been organized as a republic during only two very short periods in its history, which totaled less than 10 years of republican government in the entirety of Spanish history. The First Spanish Republic lasted from February 1873 to December 1874, and the Second Spanish Republic lasted from April 1931 to April 1939. Currently there are movements and political parties throughout the entire political spectrum that advocate for a Third Spanish Republic, including almost all of the Spanish left, as well as liberal, right-winged, and nationalist parties. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Republicanism_in_Spain .
+
 cwrc:spiritualism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:Religion, skos:Concept ;
@@ -4377,10 +4440,12 @@ cwrc:spiritualism
     skos:definition ""@fr, "Spiritualism is the belief that the spirits of the dead have both the ability and the inclination to communicate with the living. The afterlife, or the \"spirit world\", is seen by spiritualists, not as a static place, but as one in which spirits continue to evolve. These two beliefs: that contact with spirits is possible, and that spirits are more advanced than humans, lead spiritualists to a third belief, that spirits are capable of providing useful knowledge about moral and ethical issues, as well as about the nature of God. Some spiritualists will speak of a concept which they refer to as \"spirit guides\"—specific spirits, often contacted, who are relied upon for spiritual guidance. Spiritism, a branch of spiritualism developed by Allan Kardec and today practiced mostly in Continental Europe and Latin America, especially in Brazil, emphasizes reincarnation.<a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:Religion ;
     prov:derivedFrom dbpedia:Spiritualism .
+
 cwrc:sshrc
     a foaf:Organization ;
     foaf:name "Conseil de recherches en sciences humaines"@fr, "Social Sciences and Humanities Research Council"@en ;
     foaf:nick "SSHRC" .
+
 cwrc:stalinism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4392,6 +4457,7 @@ cwrc:stalinism
     skos:definition "Le mot stalinisme désigne l’idéologie et la pratique politique des partis communistes ayant adopté la ligne politique définie par les partisans de Joseph Staline, secrétaire général du Parti communiste de l'Union soviétique. Par extension, ces partis et leurs membres ont été qualifiés de staliniens. Le stalinisme est caractérisé par le centralisme et l'emploi de la force et de la terreur comme mode de gouvernement, accompagnés d'un culte de la personnalité organisé autour du principal dirigeant de chaque Parti communiste. Les régimes staliniens se caractérisent par une économie planifiée par l'état. Par extension, le terme de stalinisme et les adjectifs stalinien ou, plus rarement, staliniste sont parfois utilisés pour qualifier l'ensemble des régimes basés sur le modèle soviétique, ainsi que les partis politiques les soutenant. Après la déstalinisation (1956), l'Union soviétique cesse de se réclamer de Staline, mais le terme stalinisme et l'adjectif stalinien continuent d'être utilisés, dans le cadre de discours critiques ou polémiques, pour qualifier l'URSS, l'ensemble des pays du bloc de l'Est et plus largement l'ensemble des régimes dictatoriaux communistes. En Europe après la déstalinisation, seule la République populaire socialiste d'Albanie s'est réclamée de la continuité stalinienne. En Asie en revanche, ce fut encore, durant des décennies, le cas des régimes communistes chinois, vietnamien, laotien, cambodgien et surtout coréen qui, au XXIe siècle, est parfois qualifiée de « dernier régime stalinien ». <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr, "Stalinism is the means of governing and related policies implemented by Joseph Stalin. Stalinist policies in the Soviet Union included state terror, rapid industrialization, the theory of socialism in one country, a centralized state, collectivization of agriculture, cult of personality in leadership, and subordination of interests of foreign communist parties to those of the Communist Party of the Soviet Union—deemed by Stalinism to be the most forefront vanguard party of communist revolution at the time. Stalinism promoted the escalation of class conflict, utilizing state violence to forcibly purge society of claimed supporters of the bourgeoisie, regarding them as threats to the pursuit of the communist revolution that resulted in substantial political violence and persecution of such people. These included not only bourgeois people but also working-class people accused of counter-revolutionary sympathies. Stalinist industrialization was officially designed to accelerate the development towards communism, stressing that such rapid industrialization was needed because the country was previously economically backward in comparison with other countries; and that it was needed in order to face the challenges posed by internal and external enemies of communism. Rapid industrialization was accompanied with mass collectivization of agriculture and rapid urbanization. Rapid urbanization converted many small villages into industrial cities. To accelerate the development of industrialization, Stalin pragmatically created joint venture contracts with major American private enterprises, such as Ford Motor Company, that under state supervision assisted in developing the basis of industry of the Soviet economy from the late 1920s to 1930s. After the American private enterprises completed their tasks, Soviet state enterprises took over. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Stalinism .
+
 cwrc:suffrage
     void:inDataset cwrc:datasetdefinition ;
     cwrc:contraryTo cwrc:anti-Feminism ;
@@ -4404,6 +4470,7 @@ cwrc:suffrage
     skos:definition "Le droit de vote permet aux citoyens d'un État de voter pour exprimer leur volonté, à l'occasion d'un scrutin. Dans son application contemporaine, il pose un choix et permet, soit d'élire des gouvernants à but représentatif, soit de répondre à une question posée par la gouvernance, sous forme de plébiscite ou de référendum. Les démocraties modernes présentent le droit de vote comme un droit civique fondamental. À partir du XIXe siècle, le vote devient un synonyme de démocratie, alors qu'auparavant il désignait un régime aristocratique ou oligarchique. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr, "Suffrage, political franchise, or simply franchise is the right to vote in public, political elections (although the term is sometimes used for any right to vote). The right to run for office is sometimes called candidate eligibility, and the combination of both rights is sometimes called full suffrage. In many languages, the right to vote is called the active right to vote and the right to run for office is called the passive right to vote. In English, these are sometimes called active suffrage and passive suffrage. Suffrage is often conceived in terms of elections for representatives. However, suffrage applies equally to referenda and initiatives. Suffrage describes not only the legal right to vote, but also the practical question of whether a question will be put to a vote. The utility of suffrage is reduced when important questions are decided unilaterally by elected or non-elected representatives. In most democracies, eligible voters can vote in elections of representatives. Voting on issues by referendum may also be available. For example, in Switzerland this is permitted at all levels of government. In the United States, some states such as California and Washington have exercised their shared sovereignty to offer citizens the opportunity to write, propose, and vote on referendums and initiatives; other states have not. The United States federal government does not offer any initiatives at all. Suffrage is granted to qualifying citizens once they have reached the voting age. What constitutes a qualifying citizen depends on the government's decision, but most democracies no longer extend differing rights to vote on the basis of sex or race. Resident non-citizens can vote in some countries, which may be restricted to citizens of closely linked countries (e.g., Commonwealth citizens and European Union citizens). <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Suffrage .
+
 cwrc:taxResistance
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4415,6 +4482,7 @@ cwrc:taxResistance
     skos:inScheme cwrc:PoliticalAffiliation ;
     skos:related cwrc:anti-Monarchism ;
     prov:derivedFrom dbpedia:Tax_resistance .
+
 cwrc:temperanceMovement
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4425,6 +4493,7 @@ cwrc:temperanceMovement
     skos:definition "The temperance movement is a social movement against the consumption of alcoholic beverages. Temperance movements typically criticize excessive alcohol consumption, promote complete abstinence (teetotalism), or use its political influence to press the government to enact alcohol laws to regulate the availability of alcohol or even its complete prohibition. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en, "Une Ligue de tempérance est une association formée pour s'opposer à la consommation d'alcools. Son fondement est souvent d'ordre religieux ou moral : la plupart des mouvements du XXe siècle en Occident sont également associés au mouvement féministe, l'alcool étant souvent la cause de violences conjugales et absorbant une part substantielle des revenus des familles à bas revenus. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Temperance_movement .
+
 cwrc:toryPartyBritain
     void:inDataset cwrc:datasetdefinition ;
     cwrc:contraryTo cwrc:whiggism ;
@@ -4437,6 +4506,7 @@ cwrc:toryPartyBritain
     skos:inScheme cwrc:PoliticalAffiliation ;
     skos:related cwrc:conservatism ;
     prov:derivedFrom <http://dbpedia.org/resource/Tories_(British_political_party)> .
+
 cwrc:tractarianMovement
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:Religion, skos:Concept ;
@@ -4447,6 +4517,7 @@ cwrc:tractarianMovement
     skos:definition ""@fr, "The Oxford Movement was a movement of High Church members of the Church of England which eventually developed into Anglo-Catholicism. The movement, whose original devotees were mostly associated with the University of Oxford, argued for the reinstatement of some older Christian traditions of faith and their inclusion into Anglican liturgy and theology. They thought of Anglicanism as one of three branches of the One, Holy, Catholic, and Apostolic Church. The movement's philosophy was known as Tractarianism after its series of publications, the Tracts for the Times, published from 1833 to 1841. Tractarians were also disparagingly referred to as \"Newmanites\" (before 1845) and \"Puseyites\" (after 1845) after two prominent Tractarians, John Henry Newman and Edward Bouverie Pusey. Other well-known Tractarians included John Keble, Charles Marriott, Richard Froude, Robert Wilberforce, Isaac Williams and William Palmer.<a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     skos:inScheme cwrc:Religion ;
     prov:derivedFrom dbpedia:Oxford_Movement .
+
 cwrc:tradeUnionism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4458,6 +4529,7 @@ cwrc:tradeUnionism
     skos:definition ""@fr, "In support of the formation of a trade union. See <a href=\"https://en.wikipedia.org/wiki/Trade_union\">https://en.wikipedia.org/wiki/Trade_union</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Trade_union .
+
 cwrc:transMan
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:Gender, skos:Concept ;
@@ -4465,6 +4537,7 @@ cwrc:transMan
     rdfs:label "homme trans"@fr, "transman/transmale"@en ;
     skos:definition ""@en ;
     foaf:name "transman/transmale (gender)"@en .
+
 cwrc:transWoman
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:Gender, skos:Concept ;
@@ -4472,6 +4545,7 @@ cwrc:transWoman
     rdfs:label "femme trans"@fr, "transwoman/transfemale"@en ;
     skos:definition ""@en ;
     foaf:name "transwoman/transfemale (gender)"@en .
+
 cwrc:uncleOf
     void:inDataset cwrc:datasetdefinition ;
     a owl:ObjectProperty ;
@@ -4479,6 +4553,7 @@ cwrc:uncleOf
     rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
     rdfs:label "oncle de"@fr, "uncle of"@en ;
     rdfs:subPropertyOf cwrc:relativeOf .
+
 cwrc:unitarianChurch
     dcterms:isReplacedBy cwrc:unitarianism ;
     void:inDataset cwrc:datasetdefinition ;
@@ -4492,6 +4567,7 @@ cwrc:unitarianChurch
     skos:broaderTransitive cwrc:christianity ;
     skos:definition ""@fr, "Unitarian church usually refers to a church (either a single church or a group of churches and/or its followers) which follows Unitarianism, a Christian theology. It can also more broadly refer to a church which is a member of an umbrella group with \"Unitarian\" in its title, such as the Unitarian Universalist Association in the U.S., the Canadian Unitarian Council, and similar bodies. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@en ;
     prov:derivedFrom dbpedia:Unitarian_church .
+
 cwrc:unitarianism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:Religion, skos:Concept ;
@@ -4505,6 +4581,7 @@ cwrc:unitarianism
     skos:definition "In het bijzonder te gebruiken voor de vrijzinnig protestantse beweging die in Europa opkwam tijdens de Reformatie in de 16de eeuw, werd belichaamd door een kerk in Transsylvanië en een confessionele status verkreeg in Groot-Brittannië, de Verenigde Staten en Canada tijdens de 19de eeuw. De beweging wordt gekenmerkt door de afwijzing van de orthodox christelijke leer van de Drie-eenheid en de goddelijke Christus, het vrije gebruik van de rede in religieuze zaken en het geloof dat God bestaat in één persoon. In 1961 fuseerde deze beweging in de Verenigde Staten en Canada met de universalistische beweging, waardoor het ‘unitaristisch universalisme’ ontstond. Ook in het algemeen te gebruiken voor de theologische leer van de eenheid van God en het mens-zijn van Jezus, zoals voor het eerst verwoord in het monarchisme van de 2de en 3de eeuw en in de leer van Arius in de 3de en 4de eeuw, en later in de leer van de radicale neoplatonisten uit de Reformatie zoals Michael Servetus, Faustus Socinus en Ferenc David. <a href=\"#_getty_2017\">(Getty, 2017)</a>"@nl, "L’unitarisme est une doctrine qui affirme que le Dieu du christianisme est une seule personne, et non pas une seule nature ou \"ousie\" en trois hypostases comme l'affirme le dogme de la Trinité : Père, Fils et Esprit. Selon le dogme de la Trinité, ces trois personnes divines participent d'une seule nature divine unique . Le « trinitarisme » est la doctrine officielle du christianisme depuis le premier concile de Nicée (325) et le concile de Chalcédoine (451). <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr, "The liberal Protestant movement that arose in Europe during the 16th century Reformation, was embodied in a church in Transylvania, and achieved denominational status in the 19th century in the United Kingdom, the United States, and Canada. It is characterized by a denial of the orthodox Christian doctrines of the Trinity and the divinity of Jesus, the free use of reason in religion, and the belief that God exists in one person. In 1961, in the United States and Canada, it merged with the Universalist denomination to form \"Unitarian Universalism.\"  Use also generally for the theological doctrines of the unified nature of God and the humanity of Jesus, first expressed in second- and third-century monarchism and in the teachings of Arius in the third and fourth centuries, and later in the radical Neoplatonist thinkers of the Reformation such as Michael Servetus, Faustus Socinus, and Ferenc David. <a href=\"#_getty_2017\">(Getty, 2017)</a>"@en, "Úsese específicamente para el movimiento protestante liberal que surgió en Europa durante la Reforma del siglo XVI, que tuvo su manifestación en una iglesia en Transilvania, y que logró un estatus confesional en el siglo XIX en el Reino Unido, los Estados Unidos y Canadá. Es caracterizado por una desaprobación de las doctrinas cristianas ortodoxas de la Trinidad y la divinidad de Jesús, el libre uso de la razón en la religión y la creencia que Dios existe en una persona. En 1961, en los Estados Unidos y Canadá s <a href=\"#_getty_2017\">(Getty, 2017)</a>"@es ;
     skos:inScheme cwrc:Religion ;
     prov:derivedFrom dbpedia:Unitarianism, <http://vocab.getty.edu/aat/300263305> .
+
 cwrc:unknownSex
     void:inDataset cwrc:datasetdefinition ;
     a skos:Concept ;
@@ -4515,6 +4592,7 @@ cwrc:unknownSex
     vs:term_status "deprecated"@en ;
     skos:definition ""@en, ""@fr ;
     foaf:name "Unknown (Sex)"@en .
+
 cwrc:upper-middleClass
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:SocialClass, skos:Concept ;
@@ -4523,6 +4601,7 @@ cwrc:upper-middleClass
     rdfs:label "classe moyenne supérieure"@fr, "upper-middle class"@en ;
     skos:definition ""@en, ""@fr ;
     skos:inScheme cwrc:SocialClass .
+
 cwrc:urban-industrialUnskilled
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:SocialClass, skos:Concept ;
@@ -4530,6 +4609,7 @@ cwrc:urban-industrialUnskilled
     rdfs:label "ouvrier non qualifié"@fr, "urban unskilled"@en ;
     skos:definition ""@fr, "This category includes factory workers and workers in urban or large-scale industries without defined trades or professional qualifications, and those in low-wage and low-status service sector jobs, such as the restaurant or fast-food industry, in industrial or post-industrial societies."@en ;
     skos:inScheme cwrc:SocialClass .
+
 cwrc:urbanReform
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4541,6 +4621,7 @@ cwrc:urbanReform
     skos:definition ""@fr, "Advocacy or activism in support of reforming the urban environment, often in support of alleviating poverty. See <a href=\"https://en.wikipedia.org/wiki/Urban_renewal\">https://en.wikipedia.org/wiki/Urban_renewal</a>"@en ;
     skos:inScheme cwrc:PoliticalAffiliation ;
     prov:derivedFrom dbpedia:Urban_renewal .
+
 cwrc:vegetarianism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4552,6 +4633,7 @@ cwrc:vegetarianism
     skos:inScheme cwrc:PoliticalAffiliation ;
     skos:related cwrc:animalWelfareAdvocacy ;
     prov:derivedFrom dbpedia:Vegetarianism .
+
 cwrc:welshNationalHeritage
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:NationalHeritage, skos:Concept ;
@@ -4560,6 +4642,7 @@ cwrc:welshNationalHeritage
     owl:sameAs <http://sws.geonames.org/2634895/> ;
     skos:broader cwrc:welshLabel ;
     skos:definition ""@en, ""@fr .
+
 cwrc:welshNationalism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:PoliticalAffiliation, skos:Concept ;
@@ -4722,16 +4805,3 @@ cwrc:zionism
 
 prov:derivedFrom
     rdfs:range cwrc:Context .
-
-© 2017 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-API
-Training
-Shop
-Blog
-About
