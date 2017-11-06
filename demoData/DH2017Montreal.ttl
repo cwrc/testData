@@ -541,9 +541,9 @@ cwrc:CharlotteMontefioreFather
     cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasNationalitySelfDefined cwrc:englishNationality ;
     cwrc:hasNationality cwrc:englishNationalIdentity ;
-    cwrc:hasReligion cwrc:Protestantism ;
-    cwrc:hasReligion cwrc:Anglicanism ;
-    cwrc:hasReligion cwrc:Catholicism ;
+    oa:hasBody cwrc:protestantism ;
+    oa:hasReligion cwrc:anglicanism ;
+    oa:hasReligion cwrc:catholicism ;
     a foaf:Person ;
     foaf:name "Queen Elizabeth I" .
     
