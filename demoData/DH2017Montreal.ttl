@@ -534,6 +534,44 @@ cwrc:CharlotteMontefioreFather
     a foaf:Document;
     rdfs:label "Orlando Markup on Virginia Woolf"@en ;
     dcterms:creator cwrc:originalOrlandoAuthor .
+
+# ELIZABETH I
+<http://www.cwrc.ca/cwrcdata/QueenElizabethI>
+    cwrc:hasGender cwrc:genderWomanFemale ;
+    cwrc:hasNationalitySelfDefined cwrc:englishNationality ;
+    cwrc:hasReligion cwrc:Protestantism ;
+    cwrc:hasReligion cwrc:Anglicanism ;
+    cwrc:hasReligion cwrc:Catholicism ;
+    a foaf:Person ;
+    foaf:name "Queen Elizbeth I" .
+    
+<http://www.cwrc.ca/cwrcdata/QueenElizabethIGender>
+    a cwrc:CulturalFormationContext ;
+    rdfs:label "Gender Context for QueenElizabethI"@en ;
+    oa:hasBody cwrc:genderWomanFemale ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/QueenElizabethI> ;
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/QE1> .    
+    
+<http://www.cwrc.ca/cwrcdata/QueenElizabethINationalityContext>
+    a cwrc:NationalityContext ;
+    rdfs:label "Nationality Self-Defined for QueenElizabethI"@en ;
+    oa:hasBody cwrc:englishNationality ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/QueenElizabethI> ;
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/QE1> .
+        
+<http://www.cwrc.ca/cwrcdata/QueenElizabethIReligionContext>
+    a cwrc:ReligionContext ;
+    rdfs:label "Religion for QueenElizabethI"@en ;
+    oa:hasBody cwrc:Protestantism ;
+    oa:hasBody cwrc:Anglicanism ;
+    oa:hasBody cwrc:Catholicism ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/QueenElizabethI> ;
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/QE1> . 
+    
+<http://www.cwrc.ca/cwrcdata/Queen_Elizabeth_I_Main_Document>
+    a foaf:Document;
+    rdfs:label "Orlando Markup on Queen Elizabeth I"@en ;
+    dcterms:creator cwrc:originalOrlandoAuthor .
     
  #Works go here   
 
