@@ -497,7 +497,7 @@ cwrc:CharlotteMontefioreFather
 # add cwrc:evangelical once in dataset KM
     cwrc:hasNationality cwrc:englishNationality ;
     cwrc:hasSexualitySelfReported cwrc:bisexual ;
-    cwrc:alludesExplicitlyTo <http://www.cwrc.ca/cwrcdata/ElizabethI> ;
+    cwrc:alludesExplicitlyTo <http://www.cwrc.ca/cwrcdata/QueenElizabethI> ;
     cwrc:respondsTo <http://www.cwrc.ca/cwrcdata/EmbassyLetters> ;
     a foaf:Person ;
     foaf:name "Virginia Woolf" .
@@ -536,9 +536,11 @@ cwrc:CharlotteMontefioreFather
     dcterms:creator cwrc:originalOrlandoAuthor .
 
 # ELIZABETH I
+
 <http://www.cwrc.ca/cwrcdata/QueenElizabethI>
     cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasNationalitySelfDefined cwrc:englishNationality ;
+    cwrc:hasNationality cwrc:englishNationalIdentity ;
     cwrc:hasReligion cwrc:Protestantism ;
     cwrc:hasReligion cwrc:Anglicanism ;
     cwrc:hasReligion cwrc:Catholicism ;
@@ -741,12 +743,6 @@ cwrc:CharlotteMontefioreFather
     cwrc:hasNationality cwrc:englishNationalIdentity ;
     a foaf:Person ;
     foaf:name "Alexander Pope" .
-
-<http://www.cwrc.ca/cwrcdata/ElizabethI>
-    cwrc:hasGender cwrc:genderWomanFemale ;
-    cwrc:hasNationality cwrc:englishNationalIdentity ;
-    a foaf:Person ;
-    foaf:name "Elizabeth I" .
     
 <http://www.cwrc.ca/cwrcdata/TildaSwinton>
     owl:sameAs <http://www.viaf.org/viaf/117443790/#Swinton,_Tilda>;
