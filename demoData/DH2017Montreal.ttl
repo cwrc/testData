@@ -543,7 +543,7 @@ cwrc:CharlotteMontefioreFather
     cwrc:hasReligion cwrc:Anglicanism ;
     cwrc:hasReligion cwrc:Catholicism ;
     a foaf:Person ;
-    foaf:name "Queen Elizbeth I" .
+    foaf:name "Queen Elizabeth I" .
     
 <http://www.cwrc.ca/cwrcdata/QueenElizabethIGender>
     a cwrc:CulturalFormationContext ;
@@ -581,7 +581,7 @@ cwrc:CharlotteMontefioreFather
    cwrc:hasGenre cwrc:genreNovel ;
    loc:pub <http://www.cwrc.ca/cwrcdata/HogarthPress> ;
    cwrc:alludesExplicitlyTo <http://www.cwrc.ca/cwrcdata/AlexanderPope> ;
-   cwrc:alludesExplicitlyTo <http://www.cwrc.ca/cwrcdata/ElizabethI> ;
+   cwrc:alludesExplicitlyTo <http://www.cwrc.ca/cwrcdata/QueenElizabethI> ;
    cwrc:relatesByMaterialFeaturesTo <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
    cwrc:relatesByMaterialFeaturesTo <http://www.cwrc.ca/cwrcdata/KnoleHouse> ;   
    cwrc:contestsGenre cwrc:genreBiography ;
