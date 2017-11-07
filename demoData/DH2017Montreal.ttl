@@ -584,6 +584,7 @@ cwrc:CharlotteMontefioreFather
    loc:pub <http://www.cwrc.ca/cwrcdata/HogarthPress> ;
    cwrc:alludesExplicitlyTo <http://www.cwrc.ca/cwrcdata/AlexanderPope> ;
    cwrc:alludesExplicitlyTo <http://www.cwrc.ca/cwrcdata/QueenElizabethI> ;
+   cwrc:hasCharacter <http://www.cwrc.ca/cwrcdata/QueenElizabethI> ;
    cwrc:relatesByMaterialFeaturesTo <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
    cwrc:relatesByMaterialFeaturesTo <http://www.cwrc.ca/cwrcdata/KnoleHouse> ;   
    cwrc:contestsGenre cwrc:genreBiography ;
@@ -736,7 +737,23 @@ cwrc:CharlotteMontefioreFather
     foaf:name "Classic Stage Company"@en ;
     rdfs:label "Classic Stage Company"@en . 
     
-#People go here    
+#People go here  
+
+<http://www.cwrc.ca/cwrcdata/KingHenryVIII>
+    owl: sameAs <http://viaf.org/viaf/172419710/#Henry_VIII,_King_of_England,_1491-1547> ;
+    a foaf:Person ;
+    foaf:name "King Henry VIII" ;
+    cwrc:fatherOf <http://www.cwrc.ca/cwrcdata/QueenElizabethI> ;
+    cwrc:hasNationalHeritage cwrc:england ;
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/QE1> .
+
+<http://www.cwrc.ca/cwrcdata/AnneBoleyn>
+    owl: sameAs <http://viaf.org/viaf/29521340/#Anne_Boleyn,_Queen,_consort_of_Henry_VIII,_King_of_England,_1507-1536> ;
+    a foaf:Person ;
+    foaf:name "Anne Boleyn" ;
+    cwrc:motherOf <http://www.cwrc.ca/cwrcdata/QueenElizabethI> ;
+    cwrc:hasNationalHeritage cwrc:england ;
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/QE1> .
 
 <http://www.cwrc.ca/cwrcdata/AlexanderPope>
     cwrc:hasGender cwrc:genderManMale ;
