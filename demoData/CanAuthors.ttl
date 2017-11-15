@@ -51,7 +51,7 @@
 
 # Schools go here 
 
-http://www.cwrc.ca/cwrcdata/LeasideHighSchool> 
+<http://www.cwrc.ca/cwrcdata/LeasideHighSchool> 
   a foaf:Organization ; 
   foaf:name "Leaside High School"@en ; 
   rdfs:label "Leaside High School"@en ;
