@@ -29,3 +29,38 @@
 @prefix frbr: <http://purl.org/vocab/frbr/core> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix schema: <http://schema.org/> .
+
+# Margaret Atwood
+ 
+<http://www.cwrc.ca/cwrcdata/MargaretAtwood>
+  cwrc:hasEducation  cwrc:dayschool ;
+  cwrc:hasEducation  cwrc:religious ;
+  cwrc:hasEducation  cwrc:secondary ; 
+  cwrc:attends cwrc:Leaside High School ;
+  a foaf:Person ;
+  foaf:name "Margaret Atwood".
+
+<http://www.cwrc.ca/cwrcdata/AtwoodEducation> 
+  a cwrc:EducationContext ; 
+  rdfs:label "Education Context for Margaret Atwood"@en ;
+  oa:hasBody cwrc:dayschool ;
+  oa:hasBody cwrc:religious ; 
+  oa:hasBody cwrc:secondary ; 
+  oa:hasTarget <http://www.cwrc.ca/cwrcdata/MargaretAtwood> ;
+  prov:derivedFrom <http://www.cwrc.ca/cwrcdata/MargaretAtwoodEducation1> .
+
+# Schools go here 
+
+http://www.cwrc.ca/cwrcdata/LeasideHighSchool> 
+  a foaf:Organization ; 
+  foaf:name "Leaside High School"@en ; 
+  rdfs:label "Leaside High School"@en ;
+  cwrc:hasType cwrc:dayschool cwrc:secondary cwrc:religious ; .
+
+# SNIPPET
+
+<http://www.cwrc.ca/cwrcdata/MargaretAtwoodEducation1> ;
+  rdfs:label """She attended elementary school, and then from 1952 Leaside High School in Toronto, both in the Protestant     public school system operating in Ontario alongside a Catholic one."""@en ;
+  a nif:Context, nif:Sentence ; 
+  dcterms:partOf <http://www.cwrc.ca/cwrcdata/MargaretAtwood_Main_Document> ;
+  prov:createdBy cwrc:originalOrlandoAuthor . 
