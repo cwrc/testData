@@ -47,7 +47,7 @@
   oa:hasBody cwrc:religious ; 
   oa:hasBody cwrc:secondary ; 
   oa:hasTarget <http://www.cwrc.ca/cwrcdata/MargaretAtwood> ;
-  prov:derivedFrom <http://www.cwrc.ca/cwrcdata/MargaretAtwoodEducation1> .
+  prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/MargaretAtwoodEducation1> .
 
 # Schools go here 
 
