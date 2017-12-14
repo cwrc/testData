@@ -33,15 +33,16 @@
 # Margaret Atwood
 <http://www.cwrc.ca/cwrcdata/MargaretAtwood>
   cwrc:hasEducation cwrc:MAInstitutionalEducation ;
-  cwrc:hasEducation cwrc:universityOfToronto ;
-  cwrc:hasEducation cwrc:leasideHighSchool ;
-  cwrc:hasLocation geonames:Toronto ;
+  cwrc:hasInstitution cwrc:universityOfToronto ;
+  cwrc:hasInstitution cwrc:victoriaCollegeUniversityofToronto ;
+  cwrc:hasInstitution cwrc:leasideHighSchool ;
+  cwrc:hasLocation geonames:toronto ;
   cwrc:hasSubject cwrc:englishLiterature ;
   cwrc:hasSubject cwrc:gothicNovel ;
   cwrc:hasSubject cwrc:victorianLiterature ;
   cwrc:hasSubject cwrc:canadianLiterature ;
   cwrc:hasSubject cwrc:religiousKnowledge ;
-  cwrc:hasText cwrc:Bible ;
+  cwrc:hasText cwrc:bible ;
 #enterothertextshere
   cwrc:MAInstitutionalEducation 
   rdfs:label "Margaret Atwood Education" ;
@@ -50,33 +51,64 @@
 
 prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/MAInstitutionalEducationContext> .
 
+
+# Sarah Duncan 
+<http://www.cwrc.ca/cwrcdata/SaraDuncan>
+  cwrc:hasEducation SJDInstitutionalEducationContext
+  hasEvent 
+  rdfs:hasLabel “SJD began formal schooling at Central School in Brantford.” ;
+  hasDate:1867 ;
+  hasInstitution cwrc: Brantford Central School ;
+  hasLocation geonames:Brantford ;  
+#Finish when we know how to separate graduation event from attendance event
+  hasEvent 
+  rdfs:hasLabel “SJD graduated from…”
+  hasDate:June 1879 ;
+  
+prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/SaraDuncanEducation1> ; 
+
+
+
 #Institutions go here
+
+<http://www.cwrc.ca/cwrcdata/BrantfordCentralSchool>
+  a foaf:Organization ;
+  foaf:name: "Brantford Central School" @en ;
+  rdfs:label "Brantford Central School" @en ;
+  cwrc:hasType cwrc:grammar, cwrc:primary, cwrc:co-ed ;
+  
 <http://www.cwrc.ca/cwrcdata/LeasideHighSchool>
-a  foaf:Organization ; 
-foaf:name "Leaside High School" @en ; 
-rdfs:label "Leaside High School" @en ;
-rdf:type dayschool ;
-rdf:type secondary ;
-rdf:type religious ;
+  a foaf:Organization ; 
+  foaf:name "Leaside High School" @en ; 
+  rdfs:label "Leaside High School" @en ;
+  cwrc:hasType cwrc:dayschool, cwrc:secondary cwrc:religious ;
 
 <http://www.cwrc.ca/cwrcdata/UniversityofToronto>
-a foaf:Organization ;
-foaf:name "University of Toronto" @en ;
-rdfs:label "University of Toronto" @en ;
-rdf:type postsecondary ;
+  a foaf:Organization ;
+  foaf:name "University of Toronto" @en ;
+  rdfs:label "University of Toronto" @en ;
+  cwrc:hasType cwrc:postsecondary ;
 
 <http://www.cwrc.ca/cwrcdata/VictoriaCollegeUniversityofToronto>
-a foaf:Organization ;
-foaf:name "Victoria College University of Toronto" @en ;
-rdfs:label "Victoria College University of Toronto" @en ;
-rdf:type postsecondary ;
-rdf:type religious ;
+  a foaf:Organization ;
+  foaf:name "Victoria College University of Toronto" @en ;
+  rdfs:label "Victoria College University of Toronto" @en ;
+  cwrc:hasType cwrc:postsecondary, cwrc:religious ;
+
+<http://www.cwrc.ca/cwrcdata/CentralSchool>
+  a foaf:Organization ;
+  foaf:name “Central School” @en ;
+  rdfs:label “Central School” @en ;
+  cwrc:hasType cwrc:grammar, cwrc:primary, cwrc:coed ;
 
 #Snippetsgohere
-
 <http://www.cwrc.ca/cwrcdata/MAInstitutionalEducationContext>;
+  rdfs:label “””She attended elementary school, and then from 1952 Leaside High School in Toronto, both in the Protestant public school system operating in Ontario alongside a Catholic one.””” @en ;
+  a nif:Context, nif:Sentence ; 
+  dcterms:partOf <http://www.cwrc.ca/cwrcdata/MargaretAtwood_Main_Document> ;
+  prov:createdBy cwrc:originalOrlandoAuthor > .
 
-rdfs:label “””She attended elementary school, and then from 1952 Leaside High School in Toronto, both in the Protestant public school system operating in Ontario alongside a Catholic one.””” @en ;
-a nif:Context, nif:Sentence ; 
-dcterms:partOf <http://www.cwrc.ca/cwrcdata/MargaretAtwood_Main_Document> ;
-prov:createdBy cwrc:originalOrlandoAuthor > .
+<http://www.cwrc.ca/cwrcdata/SaraDuncanEducation1>;
+  rdfs:label “““SJD began formal schooling at Central School in Brantford.””” @en ;
+  a nif:Context, nif:Sentence ;
+  dcterms:partOf <http://www.cwrc.ca/cwrcdata/SaraDuncan_Main_Document> ;
