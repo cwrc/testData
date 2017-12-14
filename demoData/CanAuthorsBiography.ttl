@@ -54,6 +54,11 @@ prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/MAInstitutionalEducationContext
 
 # Sarah Duncan 
 <http://www.cwrc.ca/cwrcdata/SaraDuncan>
+  cwrc:hasEducation SJDDomesticEducationContext
+  hasSubject: cwrc:geography ; 
+  hasSubject: cwrc:spelling ; 
+  hasSubject: cwrc:entrepreneurship ; 
+
   cwrc:hasEducation SJDInstitutionalEducationContext
   hasEvent 
   rdfs:hasLabel “SJD began formal schooling at Central School in Brantford.” ;
@@ -64,8 +69,45 @@ prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/MAInstitutionalEducationContext
   hasEvent 
   rdfs:hasLabel “SJD graduated from…”
   hasDate:June 1879 ;
+
+  hasEvent
+  rdfs:hasLabel “SJD reluctantly entered Brantford's County Model School to earn a teaching certificate.” ;
+  hasDate:30August1879 ;
+  hasInstitution cwrc:County Model School ;
+  hasLocation geonames:Brantford ;  
+
   
 prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/SaraDuncanEducation1> ; 
+
+
+# Pauline Johnson 
+<http://www.cwrc.ca/cwrcdata/PaulineJohnson>
+  cwrc:hasEducation PJDomesticEducationContext
+  rdfs:hasLabel “PJ was educated at home first by her mother, who introduced her to the English Romantics.” ;
+  hasInstructor foaf:Emily Susanna Johnson;
+  hasInstructor foaf:Smoke Johnson;
+  hasSubjectOfStudy cwrc:John Milton ; 
+  hasSubjectOfStudy cwrc:William Shakespeare ; 
+  hasSubjectOfStudy cwrc:George Gordon Byron ; 
+  hasSubjectOfStudy cwrc:Alfred Tennyson ;
+  hasSubjectOfStudy cwrc:Henry Wadsworth Longfellow ; 
+  hasSubjectOfStudy cwrc:Walter Scott ;
+  hasSubjectOfStudy cwrc:warStories ; 
+  hasSubjectOfStudy cwrc:nativeLegends ;
+  hasSubject cwrc:oralStories ; 
+  hasSubject cwrc:canoeing ; 
+  hasSubject cwrc:camping ; 
+
+
+cwrc:hasEducation PJInstitutionalEducationContext
+  hasEvent 
+  rdfs:hasLabel: “After attending a reservation school for three years, PJ left home to attend the Brantford Collegiate Institute.” ;
+  hasBeginning:1875 ; 
+  hasEnding:June1877 ; 
+  hasInstitution cwrc: Brantford Collegiate Institute ;
+
+prov:wasDerivedFrom<http://www.cwrc.ca/cwrcdata/PaulineJohnsonEducation1>
+
 
 
 
@@ -112,3 +154,8 @@ prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/SaraDuncanEducation1> ;
   rdfs:label “““SJD began formal schooling at Central School in Brantford.””” @en ;
   a nif:Context, nif:Sentence ;
   dcterms:partOf <http://www.cwrc.ca/cwrcdata/SaraDuncan_Main_Document> ;
+
+<http://www.cwrc.ca/cwrcdata/BrantfordCollegiateInstitute>
+  a foaf:Organization ;
+  foaf:name: "Brantford Collegiate Institute" @en ;
+  rdfs:label "Brantford Collegiate Institute" @en ;
