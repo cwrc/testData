@@ -31,36 +31,52 @@
 @prefix schema: <http://schema.org/> .
 
 # Margaret Atwood
- 
 <http://www.cwrc.ca/cwrcdata/MargaretAtwood>
-  cwrc:hasEducation  cwrc:dayschool ;
-  cwrc:hasEducation  cwrc:religious ;
-  cwrc:hasEducation  cwrc:secondary ; 
-  cwrc:attends cwrc:Leaside High School ;
+  cwrc:hasEducation cwrc:MAInstitutionalEducation ;
+  cwrc:hasEducation cwrc:universityOfToronto ;
+  cwrc:hasEducation cwrc:leasideHighSchool ;
+  cwrc:hasLocation geonames:Toronto ;
+  cwrc:hasSubject cwrc:englishLiterature ;
+  cwrc:hasSubject cwrc:gothicNovel ;
+  cwrc:hasSubject cwrc:victorianLiterature ;
+  cwrc:hasSubject cwrc:canadianLiterature ;
+  cwrc:hasSubject cwrc:religiousKnowledge ;
+  cwrc:hasText cwrc:Bible ;
+#enterothertextshere
+  cwrc:MAInstitutionalEducation 
+  rdfs:label "Margaret Atwood Education" ;
   a foaf:Person ;
-  foaf:name "Margaret Atwood".
+  foaf name:"Margaret Atwood" .
 
-<http://www.cwrc.ca/cwrcdata/AtwoodEducation> 
-  a cwrc:EducationContext ; 
-  rdfs:label "Education Context for Margaret Atwood"@en ;
-  oa:hasBody cwrc:dayschool ;
-  oa:hasBody cwrc:religious ; 
-  oa:hasBody cwrc:secondary ; 
-  oa:hasTarget <http://www.cwrc.ca/cwrcdata/MargaretAtwood> ;
-  prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/MargaretAtwoodEducation1> .
+prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/MAInstitutionalEducationContext> .
 
-# Schools go here 
+#Institutions go here
+<http://www.cwrc.ca/cwrcdata/LeasideHighSchool>
+a  foaf:Organization ; 
+foaf:name "Leaside High School" @en ; 
+rdfs:label "Leaside High School" @en ;
+rdf:type dayschool ;
+rdf:type secondary ;
+rdf:type religious ;
 
-<http://www.cwrc.ca/cwrcdata/LeasideHighSchool> 
-  a foaf:Organization ; 
-  foaf:name "Leaside High School"@en ; 
-  rdfs:label "Leaside High School"@en ;
-  cwrc:hasType cwrc:dayschool cwrc:secondary cwrc:religious ; .
+<http://www.cwrc.ca/cwrcdata/UniversityofToronto>
+a foaf:Organization ;
+foaf:name "University of Toronto" @en ;
+rdfs:label "University of Toronto" @en ;
+rdf:type postsecondary ;
 
-# SNIPPET
+<http://www.cwrc.ca/cwrcdata/VictoriaCollegeUniversityofToronto>
+a foaf:Organization ;
+foaf:name "Victoria College University of Toronto" @en ;
+rdfs:label "Victoria College University of Toronto" @en ;
+rdf:type postsecondary ;
+rdf:type religious ;
 
-<http://www.cwrc.ca/cwrcdata/MargaretAtwoodEducation1> ;
-  rdfs:label """She attended elementary school, and then from 1952 Leaside High School in Toronto, both in the Protestant     public school system operating in Ontario alongside a Catholic one."""@en ;
-  a nif:Context, nif:Sentence ; 
-  dcterms:partOf <http://www.cwrc.ca/cwrcdata/MargaretAtwood_Main_Document> ;
-  prov:createdBy cwrc:originalOrlandoAuthor . 
+#Snippetsgohere
+
+<http://www.cwrc.ca/cwrcdata/MAInstitutionalEducationContext>;
+
+rdfs:label “””She attended elementary school, and then from 1952 Leaside High School in Toronto, both in the Protestant public school system operating in Ontario alongside a Catholic one.””” @en ;
+a nif:Context, nif:Sentence ; 
+dcterms:partOf <http://www.cwrc.ca/cwrcdata/MargaretAtwood_Main_Document> ;
+prov:createdBy cwrc:originalOrlandoAuthor > .
