@@ -31,25 +31,48 @@
 @prefix schema: <http://schema.org/> .
 
 # Margaret Atwood
-<http://www.cwrc.ca/cwrcdata/MargaretAtwood>
-  cwrc:hasEducation cwrc:MAInstitutionalEducation ;
-  cwrc:hasInstitution cwrc:universityOfToronto ;
-  cwrc:hasInstitution cwrc:victoriaCollegeUniversityofToronto ;
-  cwrc:hasInstitution cwrc:leasideHighSchool ;
-  cwrc:hasLocation geonames:toronto ;
-  cwrc:hasSubject cwrc:englishLiterature ;
-  cwrc:hasSubject cwrc:gothicNovel ;
-  cwrc:hasSubject cwrc:victorianLiterature ;
-  cwrc:hasSubject cwrc:canadianLiterature ;
-  cwrc:hasSubject cwrc:religiousKnowledge ;
-  cwrc:hasText cwrc:bible ;
+#<http://www.cwrc.ca/cwrcdata/MargaretAtwood>
+#  cwrc:hasEducation cwrc:MAInstitutionalEducation ;
+#  cwrc:hasInstitution cwrc:universityOfToronto ;
+#  cwrc:hasInstitution cwrc:victoriaCollegeUniversityofToronto ;
+#  cwrc:hasInstitution cwrc:leasideHighSchool ;
+#  cwrc:hasLocation geonames:toronto ;
+#  cwrc:hasSubject cwrc:englishLiterature ;
+#  cwrc:hasSubject cwrc:gothicNovel ;
+#  cwrc:hasSubject cwrc:victorianLiterature ;
+#  cwrc:hasSubject cwrc:canadianLiterature ;
+#  cwrc:hasSubject cwrc:religiousKnowledge ;
+#  cwrc:hasText cwrc:bible ;
 #enterothertextshere
-  cwrc:MAInstitutionalEducation 
-  rdfs:label "Margaret Atwood Education" ;
-  a foaf:Person ;
-  foaf name:"Margaret Atwood" .
+#  cwrc:MAInstitutionalEducation 
+#  rdfs:label "Margaret Atwood Education" ;
+#  a foaf:Person ;
+#  foaf name:"Margaret Atwood" .
 
-prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/MAInstitutionalEducationContext> .
+#prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/MAInstitutionalEducationContext> .
+
+# Separated Margaret Atwood -- All properties directly on the Person are defined under it.
+# Previously name and institution were within the person.
+
+<http://cwrc.ca/cwrcdata/MargaretAtwood> a cwrc:Person ;
+	cwrc:hasEducation cwrc:MAInstutionalEducation ;
+	foaf:name "Margaret Atwood"@en ;
+	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/MAInstitutionalEducationContext> .
+
+# Define a separate set of triples for the education	
+<http://cwrc.ca/cwrcdata/MAInstutionalEducation> a cwrc:EducationConstruct ;
+	cwrc:hasInstitution cwrc:universityOfToronto ;
+	cwrc:hasInstitution cwrc:victoriaCollegeUniversityOfToronto ;
+	cwrc:hasInstitution cwrc:leasideHighSchool ;
+	cwrc:hasLocation geonames:toronto ;
+	cwrc:hasSubject cwrc:englishLiterature ;
+	cwrc:hasSubject cwrc:gothicNovel ;
+	cwrc:hasSubject cwrc:victorianLiterature ;
+	cwrc:hasSubject cwrc:canadianLiterature ;
+	cwrc:hasSubject cwrc:religiousKnowledge ;
+	cwrc:hasText cwrc:bible ;
+	rdfs:label "Margaret Atwood Education" .
+
 
 
 # Sarah Duncan 
