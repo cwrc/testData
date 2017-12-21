@@ -173,12 +173,14 @@
   dcterms:partOf <http://www.cwrc.ca/cwrcdata/MargaretAtwood_Main_Document> ;
   prov:createdBy cwrc:originalOrlandoAuthor > .
 
-<http://www.cwrc.ca/cwrcdata/SaraDuncanEducation1>;
-  rdfs:label “““SJD began formal schooling at Central School in Brantford.””” @en ;
-  a nif:Context, nif:Sentence ;
-  dcterms:partOf <http://www.cwrc.ca/cwrcdata/SaraDuncan_Main_Document> ;
+#<http://www.cwrc.ca/cwrcdata/SaraDuncanEducation1>;
+#  rdfs:label “““SJD began formal schooling at Central School in Brantford.””” @en ;
+#  a nif:Context, nif:Sentence ;
+#  dcterms:partOf <http://www.cwrc.ca/cwrcdata/SaraDuncan_Main_Document> ;
 
-<http://www.cwrc.ca/cwrcdata/BrantfordCollegiateInstitute>
-  a foaf:Organization ;
-  foaf:name: "Brantford Collegiate Institute" @en ;
-  rdfs:label "Brantford Collegiate Institute" @en ;
+#<http://www.cwrc.ca/cwrcdata/BrantfordCollegiateInstitute>
+#  a foaf:Organization ;
+#  foaf:name: "Brantford Collegiate Institute" @en ;
+#  rdfs:label "Brantford Collegiate Institute" @en ;
+#  dcterms:partOf <http://www.cwrc.ca/cwrcdata/MargaretAtwood_Main_Document> ;
+#  prov:createdBy cwrc:originalOrlandoAuthor > .
