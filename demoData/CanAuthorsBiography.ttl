@@ -140,7 +140,7 @@
   a foaf:Organization ;
   foaf:name: "Brantford Central School" @en ;
   rdfs:label "Brantford Central School" @en ;
-  cwrc:hasType cwrc:grammar, cwrc:primary, cwrc:co-ed ;
+  cwrc:hasType cwrc:grammar, cwrc:primary, cwrc:co-ed .
   
 <http://www.cwrc.ca/cwrcdata/LeasideHighSchool>
   a foaf:Organization ; 
