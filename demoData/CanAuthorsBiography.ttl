@@ -30,34 +30,13 @@
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix schema: <http://schema.org/> .
 
-# Margaret Atwood
-#<http://www.cwrc.ca/cwrcdata/MargaretAtwood>
-#  cwrc:hasEducation cwrc:MAInstitutionalEducation ;
-#  cwrc:hasInstitution cwrc:universityOfToronto ;
-#  cwrc:hasInstitution cwrc:victoriaCollegeUniversityofToronto ;
-#  cwrc:hasInstitution cwrc:leasideHighSchool ;
-#  cwrc:hasLocation geonames:toronto ;
-#  cwrc:hasSubject cwrc:englishLiterature ;
-#  cwrc:hasSubject cwrc:gothicNovel ;
-#  cwrc:hasSubject cwrc:victorianLiterature ;
-#  cwrc:hasSubject cwrc:canadianLiterature ;
-#  cwrc:hasSubject cwrc:religiousKnowledge ;
-#  cwrc:hasText cwrc:bible ;
-#enterothertextshere
-#  cwrc:MAInstitutionalEducation 
-#  rdfs:label "Margaret Atwood Education" ;
-#  a foaf:Person ;
-#  foaf name:"Margaret Atwood" .
-
-#prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/MAInstitutionalEducationContext> .
-
 # Separated Margaret Atwood -- All properties directly on the Person are defined under it.
 # Previously name and institution were within the person.
 
 <http://cwrc.ca/cwrcdata/MargaretAtwood> a cwrc:Person ;
 	cwrc:hasEducation cwrc:MAInstutionalEducation ;
 	foaf:name "Margaret Atwood"@en ;
-	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/MAInstitutionalEducationContext> .
+	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/MAInstitutionalEducationContext> . # Wouldn't this line go after the next set of triples? KM
 
 # Define a separate set of triples for the education	
 <http://cwrc.ca/cwrcdata/MAInstutionalEducation> a cwrc:EducationConstruct ;
@@ -73,114 +52,136 @@
 	cwrc:hasText cwrc:bible ;
 	rdfs:label "Margaret Atwood Education" .
 
-
-
 # Sarah Duncan 
-#<http://www.cwrc.ca/cwrcdata/SaraDuncan>
-#  cwrc:hasEducation SJDDomesticEducationContext
-#  hasSubject: cwrc:geography ; 
-# hasSubject: cwrc:spelling ; 
-#  hasSubject: cwrc:entrepreneurship ; 
+<http://cwrc.ca/cwrcdata/SaraDuncan> a cwrc:Person ;
+	cwrc:hasEducation cwrc:SJDDomesticEducation ;
+	cwrc:hasEducation cwrc:SJDInstitutionalEducation ;
+	foaf:name "Sara Duncan"@en ;
+
+<http://cwrc.ca/cwrcdata/SJDDomesticEducation> a cwrc:EducationConstruct ;
+	hasSubject: cwrc:geography ;
+	hasSubject: cwrc:spelling ;
+	hasSubject: cwrc:entrepreneurship ;	
+	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/SJDDomesticEducationContext> .
+
+<http://cwrc.ca/cwrcdata/SJDInstitutionalEducation> a cwrc:EducationConstruct ;
+	hasInstitution: cwrc:brantfordCentralSchool ;
+	hasLocation: geonames:brantford ;
+	hasInstitution: cwrc:countyModelSchool ;
+ 	hasLocation: geonames:brantford ;  
+	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/SJDInstitutionalEducationContext> .
+
+# The following information on SJD has not been entered. We need to discuss how to properly create the triples for multiple events - KM
 
 #  cwrc:hasEducation SJDInstitutionalEducationContext
 #  hasEvent 
 #  rdfs:hasLabel “SJD began formal schooling at Central School in Brantford.” ;
 #  hasDate:1867 ;
-#  hasInstitution cwrc: Brantford Central School ;
-#  hasLocation geonames:Brantford ;  
 # #Finish when we know how to separate graduation event from attendance event
 #  hasEvent 
 #  rdfs:hasLabel “SJD graduated from…”
 #  hasDate:June 1879 ;
-
 #  hasEvent
 #  rdfs:hasLabel “SJD reluctantly entered Brantford's County Model School to earn a teaching certificate.” ;
 #  hasDate:30August1879 ;
-#  hasInstitution cwrc:County Model School ;
-#  hasLocation geonames:Brantford ;  
 
-  
-#prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/SaraDuncanEducation1> ; 
+# Pauline Johnson 
+<http://cwrc.ca/cwrcdata/PaulineJohnson> a cwrc:Person ;
+	cwrc:hasEducation cwrc:PJDomesticEducation ;
+	cwrc:hasEducation cwrc:PJInstitutionalEducation ;
+	foaf:name "Pauline Johnson"@en ;
 
+<http://cwrc.ca/cwrcdata/PJDomesticEducation> a cwrc:EducationConstruct ;
+	hasInstructor: foaf:emilySusannaJohnson;
+	hasInstructor: foaf:smokeJohnson;
+	hasSubjectOfStudy: cwrc:johnMilton ; 
+	hasSubjectOfStudy: cwrc:williamShakespeare ; 
+	hasSubjectOfStudy: cwrc:georgeGordonByron ; 
+	hasSubjectOfStudy: cwrc:alfredTennyson ;
+	hasSubjectOfStudy: cwrc:henryWadsworthLongfellow ; 
+	hasSubjectOfStudy: cwrc:walterScott ;
+	hasSubjectOfStudy: cwrc:warStories ; 
+	hasSubjectOfStudy: cwrc:nativeLegends ;
+	hasSubject: cwrc:oralStories ; 
+	hasSubject: cwrc:canoeing ; 
+	hasSubject: cwrc:camping ; 
+	hasLocation: geonames:5964685 ; 
+#Is this how I would create a triple for the Grand River? See http://sws.geonames.org/5964685 - KM
+	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/PJDomesticEducationContext> .
 
-# # Pauline Johnson 
-# <http://www.cwrc.ca/cwrcdata/PaulineJohnson>
-#  cwrc:hasEducation PJDomesticEducationContext
-#  rdfs:hasLabel “PJ was educated at home first by her mother, who introduced her to the English Romantics.” ;
-#  hasInstructor foaf:Emily Susanna Johnson;
-#  hasInstructor foaf:Smoke Johnson;
-#  hasSubjectOfStudy cwrc:John Milton ; 
-#  hasSubjectOfStudy cwrc:William Shakespeare ; 
-#  hasSubjectOfStudy cwrc:George Gordon Byron ; 
-#  hasSubjectOfStudy cwrc:Alfred Tennyson ;
-#  hasSubjectOfStudy cwrc:Henry Wadsworth Longfellow ; 
-#  hasSubjectOfStudy cwrc:Walter Scott ;
-#  hasSubjectOfStudy cwrc:warStories ; 
-#  hasSubjectOfStudy cwrc:nativeLegends ;
-#  hasSubject cwrc:oralStories ; 
-#  hasSubject cwrc:canoeing ; 
-#  hasSubject cwrc:camping ; 
+<http://cwrc.ca/cwrcdata/PJInstitutionalEducation> a cwrc:EducationConstruct ;
+	hasBeginning: cwrc:1875 ; 
+	hasEnding: cwrc:june1877 ; 
+	hasInstitution cwrc:brantfordCollegiateInstitute ;
+	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/PJInstitutionalEducationContext> .
 
-
-# cwrc:hasEducation PJInstitutionalEducationContext
-# hasEvent 
-#  rdfs:hasLabel: “After attending a reservation school for three years, PJ left home to attend the Brantford Collegiate Institute.” ;
-#  hasBeginning:1875 ; 
-#  hasEnding:June1877 ; 
-#  hasInstitution cwrc: Brantford Collegiate Institute ;
-
-# prov:wasDerivedFrom<http://www.cwrc.ca/cwrcdata/PaulineJohnsonEducation1>
-
-
-
-
-#Institutions go here
+#Institutions
 
 <http://www.cwrc.ca/cwrcdata/BrantfordCentralSchool>
-  a foaf:Organization ;
-  foaf:name: "Brantford Central School" @en ;
-  rdfs:label "Brantford Central School" @en ;
-  cwrc:hasType cwrc:grammar, cwrc:primary, cwrc:co-ed .
+  	a foaf:Organization ;
+  	foaf:name: "Brantford Central School" @en ;
+  	rdfs:label "Brantford Central School" @en ;
+  	cwrc:hasType cwrc:grammar, cwrc:primary, cwrc:co-ed .
   
 <http://www.cwrc.ca/cwrcdata/LeasideHighSchool>
-  a foaf:Organization ; 
-  foaf:name "Leaside High School" @en ; 
-  rdfs:label "Leaside High School" @en ;
-  cwrc:hasType cwrc:dayschool, cwrc:secondary cwrc:religious ;
+  	a foaf:Organization ; 
+  	foaf:name "Leaside High School" @en ; 
+  	rdfs:label "Leaside High School" @en ;
+  	cwrc:hasType cwrc:dayschool, cwrc:secondary cwrc:religious ;
 
 <http://www.cwrc.ca/cwrcdata/UniversityofToronto>
-  a foaf:Organization ;
-  foaf:name "University of Toronto" @en ;
-  rdfs:label "University of Toronto" @en ;
-  cwrc:hasType cwrc:postsecondary ;
+  	a foaf:Organization ;
+  	foaf:name "University of Toronto" @en ;
+  	rdfs:label "University of Toronto" @en ;
+  	cwrc:hasType cwrc:postsecondary ;
 
 <http://www.cwrc.ca/cwrcdata/VictoriaCollegeUniversityofToronto>
-  a foaf:Organization ;
-  foaf:name "Victoria College University of Toronto" @en ;
-  rdfs:label "Victoria College University of Toronto" @en ;
-  cwrc:hasType cwrc:postsecondary, cwrc:religious ;
+  	a foaf:Organization ;
+  	foaf:name "Victoria College University of Toronto" @en ;
+  	rdfs:label "Victoria College University of Toronto" @en ;
+  	cwrc:hasType cwrc:postsecondary, cwrc:religious ;
 
 <http://www.cwrc.ca/cwrcdata/CentralSchool>
-  a foaf:Organization ;
-  foaf:name “Central School” @en ;
-  rdfs:label “Central School” @en ;
-  cwrc:hasType cwrc:grammar, cwrc:primary, cwrc:coed ;
+  	a foaf:Organization ;
+  	foaf:name “Central School” @en ;
+  	rdfs:label “Central School” @en ;
+  	cwrc:hasType cwrc:grammar, cwrc:primary, cwrc:coed ;
 
-#Snippetsgohere
-<http://www.cwrc.ca/cwrcdata/MAInstitutionalEducationContext>;
-  rdfs:label “””She attended elementary school, and then from 1952 Leaside High School in Toronto, both in the Protestant public school system operating in Ontario alongside a Catholic one.””” @en ;
-  a nif:Context, nif:Sentence ; 
-  dcterms:partOf <http://www.cwrc.ca/cwrcdata/MargaretAtwood_Main_Document> ;
-  prov:createdBy cwrc:originalOrlandoAuthor > .
+<http://www.cwrc.ca/cwrcdata/BrantfordCollegiateInstitute>
+ 	a foaf:Organization ;
+ 	foaf:name: "Brantford Collegiate Institute" @en ;
+ 	rdfs:label "Brantford Collegiate Institute" @en ;
+	
+#Snippets 
 
-#<http://www.cwrc.ca/cwrcdata/SaraDuncanEducation1>;
-#  rdfs:label “““SJD began formal schooling at Central School in Brantford.””” @en ;
-#  a nif:Context, nif:Sentence ;
-#  dcterms:partOf <http://www.cwrc.ca/cwrcdata/SaraDuncan_Main_Document> ;
+<http://www.cwrc.ca/cwrcdata/MAInstitutionalEducationContext> ;
+  	rdfs:label “““She attended elementary school, and then from 1952 Leaside High School in Toronto, both in the Protestant public school system operating in Ontario alongside a Catholic one.””” @en ;
+	a nif:Context, nif:Sentence ; 
+  	dcterms:partOf <http://www.cwrc.ca/cwrcdata/MargaretAtwood_Main_Document> ;
+  	prov:createdBy cwrc:originalOrlandoAuthor > .
 
-#<http://www.cwrc.ca/cwrcdata/BrantfordCollegiateInstitute>
-#  a foaf:Organization ;
-#  foaf:name: "Brantford Collegiate Institute" @en ;
-#  rdfs:label "Brantford Collegiate Institute" @en ;
-#  dcterms:partOf <http://www.cwrc.ca/cwrcdata/MargaretAtwood_Main_Document> ;
-#  prov:createdBy cwrc:originalOrlandoAuthor > .
+<http://www.cwrc.ca/cwrcdata/SJDDomesticEducationContext> ;
+ 	rdfs:label “““SJD obtained an early education from a maiden aunt who may also have been teaching at a school in Brantford.””” @en ;
+	a nif:Context, nif:Sentence ;
+	dcterms:partOf <http://www.cwrc.ca/cwrcdata/SaraDuncan_Main_Document> ;
+	prov:createdBy cwrc:originalOrlandoAuthor > .
+
+<http://www.cwrc.ca/cwrcdata/SJDInstitutionalEducationContext>;
+  	rdfs:label “““SJD began formal schooling at Central School in Brantford.””” @en ;
+  	a nif:Context, nif:Sentence ;
+  	dcterms:partOf <http://www.cwrc.ca/cwrcdata/SaraDuncan_Main_Document> ;
+	prov:createdBy cwrc:originalOrlandoAuthor > .
+
+<http://www.cwrc.ca/cwrcdata/PJDomesticEducationContext>;
+ 	rdfs:hasLabel “““PJ was educated at home first by her mother, who introduced her to the English Romantics.”””@en ;
+	a nif:Context, nif:Sentence ;
+	dcterms:partOf <http://www.cwrc.ca/cwrcdata/PaulineJohnson_Main_Document> ;\
+	prov:createdBy cwrc:originalOrlandoAuthor > .
+
+<http://www.cwrc.ca/cwrcdata/PJInstitutionalEducationContext>;
+	rdfs:hasLabel: “““After attending a reservation school for three years, PJ left home to attend the Brantford Collegiate Institute.”””@en ;
+	a nif:Conetxt, nif:Sentence ;
+	dcterms: partOf <http://www.cwrc.ca/cwrcdata/PaulineJohnson_Main_Document> 
+	prov:createdBy cwrc:originalOrlandoAuthor > .
+
+
