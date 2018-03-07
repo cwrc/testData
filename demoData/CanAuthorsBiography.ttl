@@ -61,16 +61,16 @@
 	foaf:name "Sara Duncan"@en .
 
 <http://cwrc.ca/cwrcdata/SJDDomesticEducation> a cwrc:EducationConstruct ;
-	hasSubject: cwrc:geography ;
-	hasSubject: cwrc:spelling ;
-	hasSubject: cwrc:entrepreneurship ;	
+	cwrc:hasSubject cwrc:geography ;
+	cwrc:hasSubject cwrc:spelling ;
+	cwrc:hasSubject cwrc:entrepreneurship ;	
 	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/SJDDomesticEducationContext> .
 
 <http://cwrc.ca/cwrcdata/SJDInstitutionalEducation> a cwrc:EducationConstruct ;
-	hasInstitution: cwrc:brantfordCentralSchool ;
-	hasLocation: geonames:brantford ;
-	hasInstitution: cwrc:countyModelSchool ;
- 	hasLocation: geonames:brantford ;  
+	cwrc:hasInstitution cwrc:brantfordCentralSchool ;
+	cwrc:hasLocation geonames:brantford ;
+	cwrc:hasInstitution cwrc:countyModelSchool ;
+ 	cwrc:hasLocation geonames:brantford ;  
 	cwrc:factorTo <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling> ; # Inverse link for the factor
 	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/SJDInstitutionalEducationContext> .
 
@@ -106,26 +106,26 @@
 	foaf:name "Pauline Johnson"@en ;
 
 <http://cwrc.ca/cwrcdata/PJDomesticEducation> a cwrc:EducationConstruct ;
-	hasInstructor: foaf:emilySusannaJohnson;
-	hasInstructor: foaf:smokeJohnson;
-	hasSubjectOfStudy: cwrc:johnMilton ; 
-	hasSubjectOfStudy: cwrc:williamShakespeare ; 
-	hasSubjectOfStudy: cwrc:georgeGordonByron ; 
-	hasSubjectOfStudy: cwrc:alfredTennyson ;
-	hasSubjectOfStudy: cwrc:henryWadsworthLongfellow ; 
-	hasSubjectOfStudy: cwrc:walterScott ;
-	hasSubjectOfStudy: cwrc:warStories ; 
-	hasSubjectOfStudy: cwrc:nativeLegends ;
-	hasSubject: cwrc:oralStories ; 
-	hasSubject: cwrc:canoeing ; 
-	hasSubject: cwrc:camping ; 
-	hasLocation: geonames:5964685 ; 
+	cwrc:hasInstructor foaf:emilySusannaJohnson;
+	cwrc:hasInstructor foaf:smokeJohnson;
+	cwrc:hasSubjectOfStudy cwrc:johnMilton ; 
+	cwrc:hasSubjectOfStudy cwrc:williamShakespeare ; 
+	cwrc:hasSubjectOfStudy cwrc:georgeGordonByron ; 
+	cwrc:hasSubjectOfStudy cwrc:alfredTennyson ;
+	cwrc:hasSubjectOfStudy cwrc:henryWadsworthLongfellow ; 
+	cwrc:hasSubjectOfStudy cwrc:walterScott ;
+	cwrc:hasSubjectOfStudy cwrc:warStories ; 
+	cwrc:hasSubjectOfStudy cwrc:nativeLegends ;
+	cwrc:hasSubject cwrc:oralStories ; 
+	cwrc:hasSubject cwrc:canoeing ; 
+	cwrc:hasSubject cwrc:camping ; 
+	cwrc:hasLocation geonames:5964685 ; 
 #Is this how I would create a triple for the Grand River? See http://sws.geonames.org/5964685 - KM
 	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/PJDomesticEducationContext> .
 
 <http://cwrc.ca/cwrcdata/PJInstitutionalEducation> a cwrc:EducationConstruct ;
-	hasBeginning: cwrc:1875 ; 
-	hasEnding: cwrc:june1877 ; 
+	time:hasBeginning cwrc:1875 ; 
+	time:hasEnding cwrc:june1877 ; 
 	hasInstitution cwrc:brantfordCollegiateInstitute ;
 	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/PJInstitutionalEducationContext> .
 
