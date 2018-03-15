@@ -69,17 +69,18 @@
 <http://cwrc.ca/cwrcdata/SJDInstitutionalEducation> a cwrc:EducationalContext ;
 #within context, everything between the 2 education tags needs to be included. KM
 
-	cwrc:EducationFactorOf <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling> ; # Inverse link for the factor
+	cwrc:FactorOf <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling> ; # Inverse link for the factor
 	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/SJDInstitutionalEducationContext> .
 
 <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling> a cwrc: EducationalEvent ;
 #this event is taking place within the Educational context. Only items that are directly related to the event in the tagging scheme are included here. KM
-        cwrc:hasInstitution cwrc:brantfordCentralSchool ;
+        a cwrc: writingClimateEvent ; #This comes from the CHRONColumn tag KM
+	cwrc:hasInstitution cwrc:brantfordCentralSchool ;
 	cwrc:hasLocation geonames:brantford ;
 	cwrc:hasInstitution cwrc:countyModelSchool ;
  	cwrc:hasLocation geonames:brantford ;  
 	rdfs:Label "SJD began formal schooling at Central School in Brantford." ;
-	cwrc:hasEducationFactor <http://cwrc.ca/cwrcdata/SJDInstitutionalEducation> # If this event relates to the education context it is a factor
+	cwrc:hasFactor <http://cwrc.ca/cwrcdata/SJDInstitutionalEducation> # If this event relates to the education context it is a factor
 	time:hasBeginning 1867 ;
 	time:hasEnd 1879 . # If there is an end time (which may/may not be the case here)
 
