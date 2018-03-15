@@ -60,30 +60,35 @@
 	cwrc:hasEvent <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventCountyModelSchool> ;
 	foaf:name "Sara Duncan"@en .
 
-<http://cwrc.ca/cwrcdata/SJDDomesticEducation> a cwrc:EducationConstruct ;
-	cwrc:hasSubject cwrc:geography ;
-	cwrc:hasSubject cwrc:spelling ;
-	cwrc:hasSubject cwrc:entrepreneurship ;	
+<http://cwrc.ca/cwrcdata/SJDDomesticEducation> a cwrc:EducationalContext ;
+	cwrc:hasSubjectOfStudy cwrc:geography ;
+	cwrc:hasSubjectOfStudy cwrc:spelling ;
+	cwrc:hasSubjectOfStudy cwrc:entrepreneurship ;	
 	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/SJDDomesticEducationContext> .
 
-<http://cwrc.ca/cwrcdata/SJDInstitutionalEducation> a cwrc:EducationConstruct ;
-	cwrc:hasInstitution cwrc:brantfordCentralSchool ;
+<http://cwrc.ca/cwrcdata/SJDInstitutionalEducation> a cwrc:EducationalContext ;
+#within context, everything between the 2 education tags needs to be included. KM
+
+	cwrc:EducationFactorOf <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling> ; # Inverse link for the factor
+	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/SJDInstitutionalEducationContext> .
+
+<http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling> a cwrc: EducationalEvent ;
+#this event is taking place within the Educational context. Only items that are directly related to the event in the tagging scheme are included here. KM
+        cwrc:hasInstitution cwrc:brantfordCentralSchool ;
 	cwrc:hasLocation geonames:brantford ;
 	cwrc:hasInstitution cwrc:countyModelSchool ;
  	cwrc:hasLocation geonames:brantford ;  
-	cwrc:factorTo <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling> ; # Inverse link for the factor
-	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/SJDInstitutionalEducationContext> .
-
-<http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling> a cwrc:Event ;
 	rdfs:Label "SJD began formal schooling at Central School in Brantford." ;
 	cwrc:hasEducationFactor <http://cwrc.ca/cwrcdata/SJDInstitutionalEducation> # If this event relates to the education context it is a factor
 	time:hasBeginning 1867 ;
 	time:hasEnd 1879 . # If there is an end time (which may/may not be the case here)
 
-<http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventCountyModelSchool> a cwrc:Event ;
-	rdfs:Label "SJD began formal schooling at Central School in Brantford." ;
+<http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventCountyModelSchool> a cwrc:EducationalEvent ;
+	rdfs:Label "SJD reluctantly entered Brantford's County Model School." ;
 	time:hasBeginning 30August1879 ; # This will need an encoding (ISO format maybe?)
-	time:hasEnd 1879 . # If there is an end time (which may/may not be the case here)
+	#time:hasEnd 1879 . # If there is an end time (which may/may not be the case here)
+
+#There is a third education event here that needs to be included. KM
 
 # Pauline Johnson 
 <http://cwrc.ca/cwrcdata/PaulineJohnson> a cwrc:Person ;
