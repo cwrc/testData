@@ -494,11 +494,11 @@ cwrc:CharlotteMontefioreFather
     cwrc:hasGender cwrc:woman ;
     cwrc:hasSocialRankSelfReported cwrc:professional ;
     cwrc:hasReligion cwrc:societyOfFriends, cwrc:quakers, cwrc:agnosticism ;
-# add cwrc:evangelical once in dataset KM
     cwrc:hasNationality cwrc:englishNationality ;
     cwrc:hasSexualitySelfReported cwrc:bisexual ;
     cwrc:alludesExplicitlyTo <http://www.cwrc.ca/cwrcdata/ElizabethI> ;
     cwrc:respondsTo <http://www.cwrc.ca/cwrcdata/EmbassyLetters> ;
+    dcterms:subject <http://www.cwrc.ca/cwrcdata/MariaEdgeworth> ;
     a foaf:Person ;
     foaf:name "Virginia Woolf" .
 
@@ -535,10 +535,31 @@ cwrc:CharlotteMontefioreFather
     rdfs:label "Orlando Markup on Virginia Woolf"@en ;
     dcterms:creator cwrc:originalOrlandoAuthor .
 
+#new gender label goes here
+
+<http://www.cwrc.ca/cwrcdata/freke>
+    a cwrc:Gender, owl:Thing ;
+    rdfs:label "Freke" ;
+    skos:narrower cwrc:woman .
+
+#characters go here
+
+<http://www.cwrc.ca/cwrcdata/HarriotFreke>
+  a cwrc:character ;
+  cwrc:hasGender <http://www.cwrc.ca/cwrcdata/freke> ;
+  rdfs:label "Harriot Freke" .
+
  #Works go here
 
+ <http://www.cwrc.ca/cwrcdata/Belinda>
+  a frbr:work, bibo:Book ;
+  dcterms:title "Belinda" ;
+  cwrc:hasGenre cwrc:genreNovel ;
+  cwrc:hasCharacter <http://www.cwrc.ca/cwrcdata/HarriotFreke> ;
+  rdfs:label "Belinda"@en .
+
 <http://www.cwrc.ca/cwrcdata/Orlando>
-   a frbr:Work, bibo:Book;
+   a frbr:Work, bibo:Book ;
    schema:workExample <http://www.cwrc.ca/cwrcdata/OrlandoExpressionOrlando2006> ;
    cwrc:hasGenre cwrc:genreNovel ;
    loc:pub <http://www.cwrc.ca/cwrcdata/HogarthPress> ;
@@ -700,6 +721,7 @@ cwrc:CharlotteMontefioreFather
 
 <http://www.cwrc.ca/cwrcdata/MariaEdgeworth>
   cwrc:hasGender cwrc:woman ;
+  dcterms:creator <http://www.cwrc.ca/cwrcdata/Belinda> ;
   a foaf:Person ;
   foaf:name "Maria Edgeworth" .
 
