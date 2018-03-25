@@ -72,6 +72,13 @@
 	cwrc:FactorOf <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling> ; # Inverse link for the factor
 	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/SJDInstitutionalEducationContext> .
 
+# JC - We will need to use the time ontology instants here to define when things happend.
+<http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling_StartDate> a time:Instant ;
+	time:inXSDDate "1867-01-01"^^xsd:date .
+
+<http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling_EndDate> a time:Instant ;
+	time:inXSDDate "1879-01-01"^^xsd:date .
+
 <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling> a cwrc: EducationalEvent ;
 #this event is taking place within the Educational context. Only items that are directly related to the event in the tagging scheme are included here. KM
         a cwrc: writingClimateEvent ; #This comes from the CHRONColumn tag KM
@@ -81,12 +88,17 @@
  	cwrc:hasLocation geonames:brantford ;  
 	rdfs:Label "SJD began formal schooling at Central School in Brantford." ;
 	cwrc:hasFactor <http://cwrc.ca/cwrcdata/SJDInstitutionalEducation> # If this event relates to the education context it is a factor
-	time:hasBeginning 1867 ;
-	time:hasEnd 1879 . # If there is an end time (which may/may not be the case here)
+	time:hasBeginning <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling_StartDate> ;
+	time:hasEnd <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling_EndDate> . # If there is an end time (which may/may not be the case here)
+
+# Correctly define the time as an instant which is an XSD Date (ISO8601 format)
+
+<http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventCountyModelSchool_StartDate> a time:Instant ;
+	time:inXSDDate "1879-08-30"^^xsd:date .
 
 <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventCountyModelSchool> a cwrc:EducationalEvent ;
 	rdfs:Label "SJD reluctantly entered Brantford's County Model School." ;
-	time:hasBeginning 30August1879 ; # This will need an encoding (ISO format maybe?)
+	time:hasBeginning <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventCountyModelSchool_StartDate> ; # This will need an encoding (ISO format maybe?)
 	#time:hasEnd 1879 . # If there is an end time (which may/may not be the case here)
 
 #There is a third education event here that needs to be included. KM
@@ -96,6 +108,12 @@
 	cwrc:hasEducation cwrc:PJDomesticEducation ;
 	cwrc:hasEducation cwrc:PJInstitutionalEducation ;
 	foaf:name "Pauline Johnson"@en ;
+
+# JC - Creating Locations for a Geonames location requires creating an instance of GeonamesFeature
+<http://geonames.org/5964685> a geonames:GeonamesFeature ;
+	rdfs:label "Grand River"@en ;
+	geonames:name "Grand River"@en ;
+	geonames:notation "5964685" .
 
 <http://cwrc.ca/cwrcdata/PJDomesticEducation> a cwrc:EducationConstruct ;
 	cwrc:hasInstructor foaf:emilySusannaJohnson;
@@ -111,7 +129,7 @@
 	cwrc:hasSubject cwrc:oralStories ; 
 	cwrc:hasSubject cwrc:canoeing ; 
 	cwrc:hasSubject cwrc:camping ; 
-	cwrc:hasLocation geonames:5964685 ; 
+	cwrc:hasLocation <http://geonames.org/5964685> ; # JC - We would do so like this -- however we may want to reuse another definition of location (schema:Place?) 
 #Is this how I would create a triple for the Grand River? See http://sws.geonames.org/5964685 - KM
 	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/PJDomesticEducationContext> .
 
@@ -127,31 +145,43 @@
   	a foaf:Organization ;
   	foaf:name: "Brantford Central School" @en ;
   	rdfs:label "Brantford Central School" @en ;
-  	cwrc:hasType cwrc:grammar, cwrc:primary, cwrc:co-ed .
+	# JC - We decided to use rdf:type where possible to assign multiple types to our instances
+	a cwrc:grammar ;
+	a cwrc:primary ;
+	a cwrc:coed .
+  	# cwrc:hasType cwrc:grammar, cwrc:primary, cwrc:co-ed . # We will use rdf:type here
+	
   
 <http://www.cwrc.ca/cwrcdata/LeasideHighSchool>
   	a foaf:Organization ; 
   	foaf:name "Leaside High School" @en ; 
   	rdfs:label "Leaside High School" @en ;
-  	cwrc:hasType cwrc:dayschool, cwrc:secondary cwrc:religious ;
+	# JC RDF Type
+	a cwrc:dayschool ;
+	a cwrc:secondary ;
+	a cwrc:religious .
+  	# cwrc:hasType cwrc:dayschool, cwrc:secondary cwrc:religious ;
 
 <http://www.cwrc.ca/cwrcdata/UniversityofToronto>
   	a foaf:Organization ;
+	a cwrc:postsecondary ;
   	foaf:name "University of Toronto" @en ;
-  	rdfs:label "University of Toronto" @en ;
-  	cwrc:hasType cwrc:postsecondary ;
+  	rdfs:label "University of Toronto" @en .
 
 <http://www.cwrc.ca/cwrcdata/VictoriaCollegeUniversityofToronto>
   	a foaf:Organization ;
+	a cwrc:postsecondary ;
+	a cwrc:religious ;
   	foaf:name "Victoria College University of Toronto" @en ;
-  	rdfs:label "Victoria College University of Toronto" @en ;
-  	cwrc:hasType cwrc:postsecondary, cwrc:religious ;
+  	rdfs:label "Victoria College University of Toronto" @en .
 
 <http://www.cwrc.ca/cwrcdata/CentralSchool>
   	a foaf:Organization ;
+	a cwrc:grammar ;
+	a cwrc:primary ;
+	a cwrc:coed ;
   	foaf:name “Central School” @en ;
-  	rdfs:label “Central School” @en ;
-  	cwrc:hasType cwrc:grammar, cwrc:primary, cwrc:coed ;
+  	rdfs:label “Central School” @en .
 
 <http://www.cwrc.ca/cwrcdata/BrantfordCollegiateInstitute>
  	a foaf:Organization ;
