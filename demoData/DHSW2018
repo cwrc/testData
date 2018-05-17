@@ -1,0 +1,103 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix locl: <http://id.loc.gov/vocabulary/languages/> .
+@prefix mil: <http://rdf.muninn-project.org/ontologies/military#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rel: <http://purl.org/vocab/relationship/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix frbr: <http://purl.org/vocab/frbr/core> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix schema: <http://schema.org/> .
+
+#REED data here
+
+#Canadian Theatre and Terrorism
+<http://www.cwrc.ca/cwrcdata/CdnTheatreAndTerrorism>
+  a frbr:Work, bibo:Entry ;
+  rdfs:label "Canadian Theatre and Terrorism"@en ;
+  dcterms:subject <http://www.cwrc.ca/cwrcdata/WillLoveHuntAndPunish> ;
+  dcterms:subject <http://http://dbpedia.org/page/September_11_attacks> ;
+  dcterms:subject <http://dbpedia.org/page/Terrorism> .
+
+#CWPO Celia McBride Entry
+<http://www.cwrc.ca/cwrcdata/CWPOCeliaMcBride>
+  a frbr:Work, bibo:Entry ;
+  rdfs:label "Celia McBride (CWPO Entry)"@en ;
+  dcterms:subject <http://www.cwrc.ca/cwrcdata/CeliaMcBride> .
+
+#Subjects go here
+<http://www.cwrc.ca/cwrcdata/September_11_attacks>
+  owl:sameAs <http://http://dbpedia.org/page/September_11_attacks> ;
+  a dcterms:subject ;
+  foaf:name "9/11" .
+
+
+#People go here
+
+<http://www.cwrc.ca/cwrcdata/CeliaMcBride>
+  owl:sameAs <https://viaf.org/viaf/145378306/#McBride,_Celia> ;
+  a foaf:person ;
+  foaf:name "Celia McBride" .
+
+
+
+
+#Works go here
+<http://cwrc.ca/cwrcdata/theMemorableMasqueText> a cwrc:WillLoveHuntAndPunish ;
+    cwrc:hasAuthor <http://www.cwrc.ca/cwrcdata/CeliaMcBride> ;
+    rdfs:label "Will, Love, Hunt and Punish" ;
+    dcterms:subject <http://http://dbpedia.org/page/September_11_attacks> ;
+    dcterms:subject <http://dbpedia.org/page/Terrorism> .
+
+
+#Orlando data here
+
+
+<http://www.cwrc.ca/cwrcdata/CeliaMcBride>
+  cwrc:hasGender cwrc:woman ;
+  cwrc:hasNationalitySelfDefined cwrc:canadianNationality .
+
+<http://www.cwrc.ca/cwrcdata/CeliaMcBrideNationalityContext>
+        a cwrc:NationalityContext ;
+        rdfs:label "Nationality Self-Defined for CeliaMcBride"@en ;
+        oa:hasBody cwrc:canadianNationality ;
+        oa:hasTarget <http://www.cwrc.ca/cwrcdata/CeliaMcBride> ;
+        prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/QMB> .
+
+<http://www.cwrc.ca/cwrcdata/CWPOCeliaMcBrideEntry>
+        a foaf:Document;
+        rdfs:label "CWPO Markup on Celia McBride"@en ;
+        dcterms:creator cwrc:CWPO_Author .
+
+
+
+#ONTOLOGY
+
+cwrc:woman
+  void:inDataset cwrc:datasetdefinition ;
+  a cwrc:Gender, owl:Thing, skos:Concept ;
+  rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+  rdfs:label "femme"@fr, "woman"@en ;
+  skos:definition ""@en ;
+  foaf:name "woman (gender)"@en .
