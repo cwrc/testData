@@ -46,6 +46,13 @@
   rdfs:label "Celia McBride (CWPO Entry)"@en ;
   dcterms:subject <http://www.cwrc.ca/cwrcdata/CeliaMcBride> .
 
+#Subjects go here
+<http://www.cwrc.ca/cwrcdata/September_11_attacks>
+  owl:sameAs <http://http://dbpedia.org/page/September_11_attacks> ;
+  a dcterms:subject ;
+  foaf:name "9/11" .
+
+
 #People go here
 
 <http://www.cwrc.ca/cwrcdata/CeliaMcBride>
