@@ -50,7 +50,7 @@
 <http://www.cwrc.ca/cwrcdata/September_11_attacks>
   owl:sameAs <http://http://dbpedia.org/page/September_11_attacks> ;
   a dcterms:subject ;
-  foaf:name "9/11" .
+  rdfs:label "9/11"@en .
 
 
 #People go here
