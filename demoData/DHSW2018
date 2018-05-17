@@ -49,12 +49,12 @@
 #Subjects go here
 <http://www.cwrc.ca/cwrcdata/September_11_attacks>
   owl:sameAs <http://http://dbpedia.org/page/September_11_attacks> ;
-  a dcterms:subject ;
+  a dc:subject ;
   rdfs:label "9/11"@en .
 
   <http://www.cwrc.ca/cwrcdata/Terrorism>
     owl:sameAs <http://dbpedia.org/page/Terrorism> ;
-    a dcterms:subject ;
+    a dc:subject ;
     rdfs:label "Terrorism"@en .
 
 #People go here
