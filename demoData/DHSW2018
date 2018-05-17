@@ -36,7 +36,7 @@
 <http://www.cwrc.ca/cwrcdata/CdnTheatreAndTerrorism>
   a frbr:Work, bibo:Entry ;
   rdfs:label "Canadian Theatre and Terrorism"@en ;
-  dcterms:subject <http://www.cwrc.ca/cwrcdata/CeliaMcBride> ;
+  dcterms:subject <http://www.cwrc.ca/cwrcdata/WillLoveHuntAndPunish> ;
   dcterms:subject <http://http://dbpedia.org/page/September_11_attacks> ;
   dcterms:subject <http://dbpedia.org/page/Terrorism> .
 
@@ -78,7 +78,7 @@
         oa:hasTarget <http://www.cwrc.ca/cwrcdata/CeliaMcBride> ;
         prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/QMB> .
 
-<http://www.cwrc.ca/cwrcdata/CWPO Celia McBride Entry>
+<http://www.cwrc.ca/cwrcdata/CWPOCeliaMcBrideEntry>
         a foaf:Document;
         rdfs:label "CWPO Markup on Celia McBride"@en ;
         dcterms:creator cwrc:CWPO_Author .
