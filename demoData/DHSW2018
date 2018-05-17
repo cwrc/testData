@@ -1,0 +1,277 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix locl: <http://id.loc.gov/vocabulary/languages/> .
+@prefix mil: <http://rdf.muninn-project.org/ontologies/military#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rel: <http://purl.org/vocab/relationship/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix frbr: <http://purl.org/vocab/frbr/core> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix schema: <http://schema.org/> .
+
+#REED data here
+
+#EPhelips to DCarleton
+<http://www.cwrc.ca/cwrcdata/EPhelipstoDCarleton>
+  a frbr:Work, bibo:Letter ;
+  rdfs:label "Letter of E Phelips to D Carleton"@en ;
+  cwrc:hasCorrespondent <http://www.cwrc.ca/cwrcdata/SirEdwardPhelips> ;
+  cwrc:hasAddressee <http://www.cwrc.ca/cwrcdata/SirDudleyCarleton> ;
+  dcterms:subject <http://www.cwrc.ca/cwrcdata/JamesI> ;
+  dcterms:subject <http://cwrc.ca/cwrcdata/InnsOfCourt> ;
+  dcterms:subject <http://cwrc.ca/cwrcdata/theMemorableMasque> ;
+  dcterms:subject <http://cwrc.ca/cwrcdata/MasqueoftheInnerTempleandGreysInn> ;
+  dcterms:subject <http://cwrc.ca/cwrcdata/MarriageofElizabethStuartandFrederickV> .
+
+#Chamberlain to Dudley Carleton
+<http://www.cwrc.ca/cwrcdata/ChamberlaintoDCarleton>
+  a frbr:Work, bibo:Letter ;
+  rdfs:label "Letter of J Chamberlain to D Carleton"@en ;
+  cwrc:hasCorrespondent <http://www.cwrc.ca/cwrcdata/JohnChamberlain> ;
+  cwrc:hasAddressee <http://www.cwrc.ca/cwrcdata/SirDudleyCarleton> ;
+  dcterms:subject <http://www.cwrc.ca/cwrcdata/JamesI> ;
+  dcterms:subject <http://cwrc.ca/cwrcdata/InnsOfCourt> ;
+  dcterms:subject <http://cwrc.ca/cwrcdata/GreysInn> ;
+  dcterms:subject <http://cwrc.ca/cwrcdata/InnerTemple> ;
+  dcterms:subject <http://cwrc.ca/cwrcdata/SupperintheMarriageRoom> .
+
+#People go here
+
+<http://www.cwrc.ca/cwrcdata/JohnChamberlain>
+  owl:sameAs <https://viaf.org/viaf/39748463> ;
+  a foaf:person ;
+  foaf:name "John Chamberlain" .
+
+<http://www.cwrc.ca/cwrcdata/SirEdwardPhelips>
+    owl:sameAs <http://viaf.org/viaf/88489445/> ;
+    a foaf:Person ;
+    foaf:name "Sir Edward Phelips" .
+
+<http://www.cwrc.ca/cwrcdata/SirDudleyCarleton>
+    owl:sameAs <http://viaf.org/viaf/45365382/>;
+    a foaf:Person ;
+    foaf:name "Sir Dudley Carleton" .
+
+<http://www.cwrc.ca/cwrcdata/JamesI>
+    owl:sameAs <https://viaf.org/viaf/88905668> ;
+    a foaf:Person ;
+    cwrc:hasCousin <http://www.cwrc.ca/cwrcdata/QueenElizabethI> ;
+    foaf:name "King James I" .
+
+<http://www.cwrc.ca/cwrcdata/AnneofDenmark>
+    owl:sameAs <https://viaf.org/viaf/27912114> ;
+    a foaf:Person ;
+    foaf:name "Anne of Denmark" .
+
+<http://www.cwrc.ca/cwrcdata/ElizabethStuart>
+    owl:sameAs <https://viaf.org/viaf/11125150> ;
+    a foaf:Person ;
+    foaf:name "Elizabeth Stuart" .
+
+<http://www.cwrc.ca/cwrcdata/FrederickVCountPalatine>
+    owl:sameAs <https://viaf.org/viaf/267097560> ;
+    a foaf:Person ;
+    foaf:name "Frederick V, Count Palatine" .
+
+<http://www.cwrc.ca/cwrcdata/GeorgeChapman>
+    owl:sameAs <https://viaf.org/viaf/41879013> ;
+    a foaf:person ;
+    foaf:name "George Chapman" .
+
+<http://www.cwrc.ca/cwrcdata/FrancisBeaumont>
+    owl:sameAs <https://viaf.org/viaf/49333217> ;
+            a foaf:person ;
+            foaf:name "Francis Beaumont" .
+
+#Events go here
+
+<http://cwrc.ca/cwrcdata/SupperintheMarriageRoom>
+  rdfs:label "Supper in the Marriage Room" ;
+  cwrc:hasLocation <http://cwrc.ca/cwrcdata/LondonEngland> ;
+  cwrc:hasDate "1613-02-21"^^xsd:date ;
+  a time:TemporalEntity ;
+  time:hasBeginning  <http://cwrc.ca/cwrcdata/SupperintheMarriageRoomBeginning> ; # Created an object for the beginning as per time ontology
+  cwrc:hasHost <http://www.cwrc.ca/cwrcdata/JamesI> ;
+  cwrc:hasAttendant <http://www.cwrc.ca/cwrcdata/ElizabethStuart> ;
+  cwrc:hasAttendant <http://www.cwrc.ca/cwrcdata/FrederickVCountPalatine> ;
+  cwrc:hasAttendant <http://www.cwrc.ca/cwrcdata/AnneofDenmark> .
+
+# Here is the instance with the data in xsd:date format
+<http://cwrc.ca/cwrcdata/SupperintheMarriageRoomBeginning> a time:Instant ;
+  rdfs:label "1613-02-21" ;
+  time:inXSDDate "1613-02-21"^^xsd:date .
+
+<http://cwrc.ca/cwrcdata/MarriageofElizabethStuartandFrederickV>
+  rdfs:label "Marriage of Elizabeth Stuart and Frederick V" ;
+  cwrc:hasLocation <http://cwrc.ca/cwrcdata/LondonEngland> ;
+  cwrc:hasDate "1613-02-14"^^xsd:date ;
+  a time:TemporalEntity ;
+  time:hasBeginning <http://cwrc.ca/cwrcdata/MarriageofElizabethStuartandFrederickVBeginning> ;
+  cwrc:marriageOf <http://www.cwrc.ca/cwrcdata/FrederickVCountPalatine> ;
+  cwrc:marriageOf <http://www.cwrc.ca/cwrcdata/ElizabethStuart> .
+
+<http://cwrc.ca/cwrcdata/MarriageofElizabethStuartandFrederickVBeginning> a time:Instant ;
+  rdfs:label "1613-02-14" ;
+  time:inXSDDate "1613-02-14"^^xsd:date .
+
+<http://cwrc.ca/cwrcdata/theMemorableMasque>
+  rdfs:label  "The Memorable Masque" ;
+  cwrc:hasLocation <http://cwrc.ca/cwrcdata/LondonEngland> ;
+  cwrc:hasDate "1613-02-15"^^xsd:date ;
+  a time:TemporalEntity ;
+  time:hasBeginning <http://cwrc.ca/cwrcdata/theMemorableMasquePerformance> .
+
+<http://cwrc.ca/cwrcdata/theMemorableMasquePerformance> a time:Instant ;
+  rdfs:label "1613-02-15" ;
+  time:inXSDDate "1613-02-15"^^xsd:date .
+
+<http://cwrc.ca/cwrcdata/MasqueoftheInnerTempleandGreysInn>
+  rdfs:label "Masque of the Inner Temple and Grey's Inn" ;
+  cwrc:hasLocation <http://cwrc.ca/cwrcdata/LondonEngland> ;
+  cwrc:hasDate cwrc:1613-02-20 ;
+  cwrc:hasActors <http://cwrc.ca/cwrcdata/GreysInn> ;
+  cwrc:hasActors <http://cwrc.ca/cwrcdata/InnerTemple> ;
+  a time:TemporalEntity ;
+  time:hasBeginning <http://cwrc.ca/cwrcdata/MasqueoftheInnerTempleandGreysInnPerformance> .
+
+<http://cwrc.ca/cwrcdata/MasqueoftheInnerTempleandGreysInnPerformance> a time:Instant ;
+ rdfs:label "1613-02-20" ;
+ time:inXSDDate "1613-02-20"^^xsd:date .
+
+#Places go here
+<http://cwrc.ca/cwrcdata/LondonEngland> a cwrc:Place ;
+  owl:sameAs <http://www.geonames.org/2643743/london.html> ;
+  rdfs:label  "London, England" .
+
+#Organizations go here
+<http://cwrc.ca/cwrcdata/InnsOfCourt> a cwrc:Organization ;
+  cwrc:hasLocation <http://cwrc.ca/cwrcdata/LondonEngland> ;
+  rdfs:label "Inns of Court" .
+
+<http://cwrc.ca/cwrcdata/GreysInn> a cwrc:Organization ;
+  cwrc:hasLocation <http://cwrc.ca/cwrcdata/LondonEngland> ;
+  rdfs:label "Grey's Inn" .
+
+<http://cwrc.ca/cwrcdata/InnerTemple> a cwrc:Organization ;
+  cwrc:hasLocation <http://cwrc.ca/cwrcdata/LondonEngland> ;
+  rdfs:label "Inner Temple" .
+
+#Works go here
+<http://cwrc.ca/cwrcdata/theMemorableMasqueText> a cwrc:MasqueText ;
+    cwrc:hasAuthor <http://www.cwrc.ca/cwrcdata/GeorgeChapman> ;
+    cwrc:hasPerformance <http://cwrc.ca/cwrcdata/theMemorableMasque> ;
+    rdfs:label "The Memorable Masque Text" .
+
+<http://cwrc.ca/cwrcdata/MasqueoftheInnerTempleandGreysInnText> a cwrc:MasqueText ;
+    cwrc:hasAuthor <http://www.cwrc.ca/cwrcdata/FrancisBeaumont> ;
+    cwrc:hasPerformance <http://cwrc.ca/cwrcdata/MasqueoftheInnerTempleandGreysInn> ;
+    rdfs:label "Masque of the Inner Temple and Grey's Inn Text" .
+
+
+#Orlando data here
+
+
+<http://www.cwrc.ca/cwrcdata/QueenElizabethI>
+  cwrc:hasGender cwrc:woman ;
+  cwrc:hasNationalitySelfDefined cwrc:englishNationality ;
+  cwrc:hasNationality cwrc:englishNationalIdentity ;
+  cwrc:succeededBy <http://www.cwrc.ca/cwrcdata/JamesI> ;
+  oa:hasBody cwrc:protestantism ;
+  oa:hasReligion cwrc:anglicanism ;
+  oa:hasReligion cwrc:catholicism ;
+  a foaf:Person ;
+  foaf:name "Queen Elizabeth I" .
+
+<http://www.cwrc.ca/cwrcdata/QueenElizabethIGender>
+  a cwrc:CulturalFormationContext ;
+  rdfs:label "Gender Context for QueenElizabethI"@en ;
+  oa:hasBody cwrc:woman ;
+  oa:hasTarget <http://www.cwrc.ca/cwrcdata/QueenElizabethI> ;
+  prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/QE1> .
+
+<http://www.cwrc.ca/cwrcdata/QueenElizabethINationalityContext>
+        a cwrc:NationalityContext ;
+        rdfs:label "Nationality Self-Defined for QueenElizabethI"@en ;
+        oa:hasBody cwrc:englishNationality ;
+        oa:hasTarget <http://www.cwrc.ca/cwrcdata/QueenElizabethI> ;
+        prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/QE1> .
+
+<http://www.cwrc.ca/cwrcdata/QueenElizabethIReligionContext>
+        a cwrc:ReligionContext ;
+        rdfs:label "Religion for QueenElizabethI"@en ;
+        oa:hasBody cwrc:Protestantism ;
+        oa:hasBody cwrc:Anglicanism ;
+        oa:hasBody cwrc:Catholicism ;
+        oa:hasTarget <http://www.cwrc.ca/cwrcdata/QueenElizabethI> ;
+        prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/QE1> .
+
+<http://www.cwrc.ca/cwrcdata/Queen_Elizabeth_I_Main_Document>
+        a foaf:Document;
+        rdfs:label "Orlando Markup on Queen Elizabeth I"@en ;
+        dcterms:creator cwrc:originalOrlandoAuthor .
+
+
+
+#ONTOLOGY
+
+cwrc:anglicanism
+    void:inDataset cwrc:datasetdefinition ;
+    a cwrc:Religion, skos:Concept, foaf:Organization ;
+    rdfs:comment "La description de ce terme est basée sur celle de DBPedia."@fr, "The description for this term is indebted to the Getty Art & Architecture Thesaurus."@en ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label "Anglicaans (kerk van Engeland)"@nl, "Anglicanism"@en, "Anglicanismo"@es, "Iglesia de Inglaterra"@es, "ying guo sheng gong hui"@zh-latn-pinyin-x-notone, "ying kuo sheng kung hui"@zh-latn-wadegile, "yīng guó shèng gōng huì"@zh-latn-pinyin-x-hanyu, "Église d'Angleterre"@fr, "英國聖公會 (英國國教)"@zh-hant ;
+    skos:broaderTransitive cwrc:christianity ;
+    skos:definition "A Christian denomination having both Protestant and Catholic aspects that originated with Henry VIII's break with the Roman Catholic Church (ca. 1532-34). As the official state Church of England, the monarch of England is still formally considered its head. While at first it remained mainly Catholic in character, reforms came under Edward IV and Elizabeth I who introduced doctrine that was more Protestant in nature, namely new editions of the Book of Common Prayer and the Thirty-nine Articles. Although an overall attitude of toleration exists in the modern Anglican Church, tension remains between its Protestant and Catholic inclinations as well as with newer liberal and evangelical influences. Anglicanism is based on episcopal authority and parish structure is fundamental to the organization of the church. The term is used with regard to the Church of England; with regard to the Episcopal Church in America, use \"Episcopal.\" <a href=\"#_getty_2017\">(Getty, 2017)</a>"@en, "L'anglicanisme est une confession chrétienne présente principalement dans les pays qui ont pu être imprégnés par la culture anglaise incluant notamment, outre l'Angleterre, les anciennes colonies britanniques en Amérique et en Afrique. On retrouve tout de même plusieurs communauté anglicanes dans le monde, notamment en France. L'origine de cette confession remonte à la période antique de l'Église d'Angleterre, lorsque celle-ci était unie canoniquement et juridiquement à l'évêque de Rome. Puis, au XVIe siècle, lorsque le roi d'Angleterre Henri VIII rompit avec le pape de Rome pour causes politiques et théologiques. Ainsi, Henri VIII ne créa rien de nouveau : il extirpa l'autorité du pape de son royaume, sans pour autant modifier ou jeter de nouvelles bases théologiques pour l'Église, et remplaça l'autorité papale par la sienne propre. Depuis la reine Elizabeth Ire, le monarque a le titre de « gouverneur suprême », mais n'a qu'un rôle de maintien de l'ordre et du bon déroulement de la vie ecclésiale, mais aucune réelle autorité décisionnelle comme celle d'un évêque ou d'un synode. L'Archevêque de Canterbury porte le titre de « primat de toute l'Angleterre » et l'archevêque d'York porte quant à lui le titre de « primat de l'Angleterre ». L'Église anglicane, tout comme l'Église orthodoxe, est une communion d'églises autocéphales, mais néanmoins interdépendantes. Bien que plusieurs églises anglicanes existent à travers le monde, comme c'est le cas pour l'Église catholique romaine (présente en France, en Espagne, etc.), ou encore pour l'Église orthodoxe (présente en Russie, en Serbie, etc.), il ne s'agit que d'une seule Église. Elles sont rassemblées dans la Communion anglicane , au sein de laquelle l'Église d'Angleterre et son primat, l'archevêque de Canterbury, ne jouissent que d'une primauté d'honneur. Ces églises sont en pleine communion (doctrinale, spirituelle, épiscopale, sacramentelle) les unes avec les autres et représentent ensemble environ 85 millions de fidèles. Les Églises de la Communion anglicane ont une structure épiscopale. Elles se disent à la fois catholiques et réformées, et l'anglicanisme a souvent été présenté comme une via media entre le catholicisme romain et le protestantisme. Elles se présentent comme des Églises catholiques non romaines, parce qu'elles se veulent en continuité avec la tradition apostolique (ainsi la patristique est très développée dans le monde anglican) et affirment avoir conservé la succession apostolique. L'Église orthodoxe du patriarcat œcuménique de Constantinople a reconnu la validité de la succession apostolique en 1922 ; cependant, d'autres patriarcats, comme celui de Russie, ne saurait reconnaître une quelconque succession apostolique, en autre par le fait de l'ordination épiscopale de femme, depuis janvier 2015. L'Église catholique romaine ne leur reconnait pas cette qualité : ainsi par la lettre apostolique Apostolicae Curae le pape Léon XIII déclare en 1896 « nulles et sans valeur » les ordinations anglicanes (doctrine confirmée par le motu proprio Ad Tuendam Fidem en 1998). Les archevêques anglicans de Canterbury et d'York ont donné leur réponse dans Saepius officio. Pour autant, lors du concile Vatican II est affirmée la « place particulière » des Anglicans, « qui gardent en partie les traditions et les structures catholiques ». Par ailleurs, les Églises anglicanes se disent réformées parce qu'elles ont adhéré à certains principes nouveaux issus de la Réforme protestante en matière de doctrine et de liturgie.À l'origine, la doctrine anglicane est énoncée dans les Trente-neuf articles (Bill of XXXIX articles) qui ont longtemps eu une valeur impérative. L'éventail entre les positions doctrinales s'est ensuite élargi et donne lieu à de nombreuses classifications (Haute Église, Basse Église, Broad Church (en), Anglo-catholicisme, Évangélisme…). Alors que pendant longtemps la coexistence apaisée entre de telles positions divergentes était considérée comme une spécificité de l'anglicanisme, la communion est depuis la fin du XXe siècle soumise à de forts tiraillements sur certaines questions, notamment l'ordination des femmes et la position par rapport à l'homosexualité. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr, "Te gebruiken om te verwijzen naar de anglicaanse kerk (Church of England); gebruik 'episcopaal' om te verwijzen naar de episcopale kerk in Amerika. De term verwijst naar een christelijke geloofsrichting met zowel protestantse als katholieke elementen die ontstond na de breuk tussen de Engelse koning Hendrik VIII en de rooms-katholieke kerk (circa 1532-34). Het anglicanisme is de officiële Britse staatsgodsdienst, en de Britse soevereine vorst is nog altijd het officiële hoofd van de anglicaanse kerk. Aanvankelijk droeg de kerk nog een overwegend katholiek karakter, maar onder Edward IV en Elizabeth I werden er hervormingen doorgevoerd en werd een meer protestants georiënteerde geloofsleer geïntroduceerd, met een nieuwe versie van het Book of Common Prayer en de Negenendertig Artikelen. Hoewel de huidige anglicaanse kerk in het algemeen wordt gekenmerkt door een tolerante houding, zijn de spanningen tussen protestants en katholiek gezinde stromingen binnen de kerk nooit verdwenen en heerst er weerstand tegen nieuwe vrijzinnige en evangelische invloeden. Het anglicanisme berust op episcopaal gezag en op een structuur van parochies, welke van fundamenteel belang is voor de kerkelijke organisatie. <a href=\"#_getty_2017\">(Getty, 2017)</a>"@nl, "Úsese con referencia a la Iglesia de Inglaterra y también con referencia a la Iglesia Episcopal de Estados Unidos (úsese Iglesia Episcopal). Este término s erefiere a a una denominación cristiana que contiene elementos católicos y protestantes en varios aspectos y que se originó con el rey Enrique VIII quien rompió con la Iglesia Católica Romana (ca. 1532-1534) Es la iglesia oficial de Inglaterra, la Monarquía Inglesa es aún formalmente considerada su cabeza.Mientras en sus comienzos conservaba su carácter católico, con las reformas realizadas bajo Eduardo IV e Isabel I quienes introdujeron una doctrina que está más cerca del protestantismo y que se encuentra contenida en nuevas ediciones del Libro de Oraciones Comunes y en los Treinta y nueve Artículos. Aunque el anglicanismo  tiene actualmente una actitud de total tolerancia, aún persisten tensiones con las iglesias protestantes y católicas así como de últimas influencias liberales y evangélicas.El Anglicanismo está basado en la autoridad episcopal y se sustenta en una estructura de parroquias que resulta fundamental para la organización de la Iglesia. <a href=\"#_getty_2017\">(Getty, 2017)</a>"@es, "英王亨利八世與羅馬天主教教會(西元1532-34年)分裂所創的基督教派別，同時含有新教與天主教元素。作為官方英國國教，其正式教會首腦仍為英國國王。起初較具天主教特色，在愛德華四世與伊莉莎白一世時改革，加入較具新教本質的教條，即：新版的公禱書(Book of Common Prayer)及三十九條信綱(Thirty-nine Articles)。雖然現代的英國聖公會大體上態度已越顯寬容，但教會內的新教派系與天主教派系關係仍緊繃，也仍不樂於接受較新的自由與福音派影響。英國聖公會奠基於主教的權威上，牧師教區的結構對教會組織十分重要。此詞彙用於指稱英國國教；美國區的主教派教會，則稱為「美國聖公會(Episcopal)」。 <a href=\"#_getty_2017\">(Getty, 2017)</a>"@zh-hant ;
+    skos:inScheme cwrc:Religion ;
+    prov:wasDerivedFrom dbpedia:Anglicanism, <http://vocab.getty.edu/aat/300153822> .
+
+cwrc:catholicism
+        void:inDataset cwrc:datasetdefinition ;
+        a cwrc:Religion, skos:Concept ;
+        rdfs:comment "La description de ce terme est basée sur celle de DBPedia."@fr, "The description for this term is indebted to the Getty Art & Architecture Thesaurus."@en ;
+        rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+        rdfs:label "Catholicisme"@fr, "Catolicismo"@es, "Catolicismo Romano"@es, "Katholicisme"@nl, "Katholiek"@nl, "Roman Catholicism"@en, "Rooms-Katholicisme"@nl ;
+        skos:broaderTransitive cwrc:christianity ;
+        skos:definition "L’Église catholique, ou Église catholique, apostolique et romaine, est la plus grande Église chrétienne avec plus d'un milliard de fidèles. Elle réunit l’ensemble des chrétiens en communion avec le pape et les évêques qui sont considérés par les catholiques comme étant les successeurs des apôtres de Jésus-Christ. L'Église catholique est l'une des plus vieilles institutions religieuses au monde et a joué un rôle important dans l'histoire, surtout du monde occidental. La foi de l'Église catholique est résumée par le symbole de Nicée et elle se caractérise par la célébration des sept sacrements dont le plus important est l'Eucharistie célébré liturgiquement durant la messe. Selon son propre catéchisme, l'Église catholique est composée de trois parties qui ne forment qu'une seule Église placée sous Jésus-Christ : l'Église militante, l'Église triomphante et l'Église souffrante correspondant respectivement à l'ensemble des fidèles sur terre, l'ensemble des saints qui sont au ciel et l'ensemble des âmes qui sont au purgatoire. L'Église catholique sur terre se conçoit comme une communion d'Églises locales ou particulières, c'est-à-dire ayant chacune un territoire et un évêque à sa tête. Celles-ci sont chacune pleinement l'Église catholique dans la mesure où elles sont en communion avec le pape, qui est l'évêque de Rome et considéré comme étant le successeur de saint Pierre, et en communion les unes avec les autres. L'Église catholique se définit comme une institution à la fois humaine et divine : « société parfaite en dépit de l'imperfection de ses membres ». En plus d'être l'ensemble des baptisés, elle est aussi une institution et un clergé organisés de façon hiérarchique. Une très grande majorité des catholiques (au moins 98 %) sont de l'Église latine, mais il existe aussi des catholiques de différentes Églises catholiques orientales. <a href=\"#_dbpedia_2017\">(DBpedia, 2017)</a>"@fr, "Refers to the branch of Christianity characterized by a uniform, highly developed ritual canon and organizational structure with doctrinal roots based in the teachings of the Apostles of Jesus Christ in the first century, in the Alexandrian school of theology, and in Augustinian thought. In this religious branch, faith is considered an acceptance of revelation; revelation appears as doctrine. In juridical terms, it refers to the branch of Christianity distinguished as a unified, monolithic sacramental system under the governance of papal authority. Throughout much of its history, the seat of the Pope has been in Rome, thus \"Roman Catholicism\" is often used to distinguish this concept from the Orthodox Catholic church. <a href=\"#_getty_2017\">(Getty, 2017)</a>"@en, "Se refiere a la rama del cristianismo caracterizada por un canon ritual uniforme y altamente desarrollado y una estructura organizacional con raíces doctrinales basadas en las enseñanzas de los Apostoles de Jesucristo en la primera centuria, en la Escuela Alejandrina de teología, y en el pensamiento agustiniano. En esta rama de la religión, la fe es considerada como una aceptación de revelación; la revelación aparece como doctrina. Se refiere a la rama del cristianismo caracterizada por un canon ritual uniforme y altamente desarrollado y una estructura organizacional con raíces doctrinales basadas en las enseñanzas de los Apóstoles de Jesucristo en el primer siglo, en la Escuela Alejandrina de teología, y en el pensamiento agustiniano. En esta rama de la religión, la fe es considerada como una aceptación de revelación; la revelación aparece como doctrina. En términos jurídicos, se refiere a la rama del Cristianismo distinguido como sistema sacramental unificado, monolítico bajo gobierno de la autoridad papal. A través de la mayor parte de su historia, \"la silla del papal” ha estado en Roma, mediante este concepto el Catolicismo Romano se distingue de la Iglesia Católica Ortodoxa. <a href=\"#_getty_2017\">(Getty, 2017)</a>"@es, "Verwijst naar de richting van het christendom die zich kenmerkt door een uniforme, hoogontwikkelde rituele canon en organisatiestructuur met een doctrine die wortelt in de leer van de apostelen van Jezus Christus in de 1ste eeuw, in de theologie van de Alexandrijnse school en in het augustijner gedachtegoed. In deze godsdienstige richting wordt het geloof beschouwd als een aanvaarding van de openbaring; de openbaring heeft de vorm van een doctrine. In juridische zin verwijst de term naar de richting van het christendom die zich onderscheidt als een verenigd, monolithisch sacramenteel systeem onder het bestuur van het pauselijk gezag. Gedurende het grootste deel van de geschiedenis van dit systeem was de paus gevestigd in Rome en daarom wordt 'rooms-katholicisme' vaak gebruikt om dit begrip te onderscheiden van de orthodoxe katholieke kerk. <a href=\"#_getty_2017\">(Getty, 2017)</a>"@nl ;
+        skos:inScheme cwrc:Religion ;
+        prov:wasDerivedFrom dbpedia:Catholic_Church, <http://vocab.getty.edu/aat/300073730> .
+
+cwrc:protestantism
+    void:inDataset cwrc:datasetdefinition ;
+    a cwrc:Religion, skos:Concept ;
+    rdfs:comment "The description for this term is indebted to the Getty Art & Architecture Thesaurus."@en ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+    rdfs:label "Protestantism"@en, "hsin chiao"@zh-latn-wadegile, "protestant"@nl, "protestantisme"@fr, "protestantisme"@nl, "protestantismo"@es, "xin jiao"@zh-latn-pinyin-x-notone, "xīn jiāo"@zh-latn-pinyin-x-hanyu, "抗羅宗"@zh-hant, "新教"@zh-hant ;
+    skos:broaderTransitive cwrc:christianity ;
+    skos:definition "De algemene term voor typen christelijk geloof die zijn ontstaan tijdens de Reformatie. Hoewel de vroegste vormen van protestantisme werden beoefend door de volgelingen van Luther, Calvijn en Zwingli, wordt de term tegenwoordig gebruikt voor de meeste overtuigingen die niet rooms-katholiek of orthodox zijn. Protestanten willen dichter bij de geloofsstijl van de vroege kerk staan, die volgens hen in de katholieke praktijk overschaduwd is geraakt. De term is afkomstig van het woord 'protestari', wat niet alleen 'protesteren' betekent, maar ook 'belijden'. Enkele algemene kenmerken van het protestantisme zijn: rechtvaardiging door het geloof alleen, de berusting van alle gezag bij de Bijbel en de leer dat alle gelovigen zelf hun zonden aan God kunnen belijden, waarbij het aanhoren van de biecht niet alleen aan priesters is voorbehouden. <a href=\"#_getty_2017\">(Getty, 2017)</a>"@nl, "El término general para tipos de fe cristiana originadas a partir de la Reforma. Aunque las formas tempranas del protestantismo fueron aquellas que obedecían a Lutero, Calvino y Zwinglio, el término ahora incluye la mayoría de las denominaciones no Romanas o no Ortodoxas. El caracter común de los protestantes incluye la justificación de la fe por la fe, la autoridad de la sagrada escritura  y el sacerdocio de todos los fieles, por el que cada creyente puede oir la confesión de los pecados, no siendo exclusivo del clero. protestantes quieren estar cerca al estilo de fe de la primera Iglesia el cual sienten ha sido opacado en las prácticas católicas. El término deriva desde la palabra \"protestari\" que significa no sólo protestar sino que reconocer o confesar. Característica común. <a href=\"#_getty_2017\">(Getty, 2017)</a>"@es, "Le protestantisme est l'une des principales branches du christianisme avec le catholicisme et l'orthodoxie. Entendu largement, le protestantisme est l'ensemble des groupements « issus, directement ou non, de la Réforme et qui rejettent l'autorité du pape ». Selon cette perspective, le protestantisme englobe des mouvements variés allant des luthériens passant par les évangéliques, jusqu'aux quakers. <a href=\"#_getty_2017\">(DBpedia, 2017)</a>"@fr, "The general term for types of Christian faith originating from the Reformation. Although the early forms of Protestantism were those who followed Luther, Calvin, and Zwingli, the term now includes most non-Roman Catholic or non-Orthodox denominations. Protestants want to be closer to the style of faith of the early Church which they feel has been obscured in Catholic practices. The term derives from the word 'protestari' which means not only to protest but to avow or confess. Common characteristics of Protestantism include the justification by faith alone, the authority of scripture, and the priesthood of all believers, in which not only the clergy are able to hear the confession of sin. <a href=\"#_getty_2017\">(Getty, 2017)</a>"@en, "泛稱源自宗教改革的各式基督信仰。雖然早期的新教形式是指遵循路德(Luther)、喀爾文(Calvin)，以及茨溫利(Zwingli)的派別，但現在新教這個詞彙包含了大部分非羅馬天主教或非正教的派別。新教徒希望能更接近早期教會信仰，認為天主教將之變得晦澀難解。本詞彙衍生自”protestari”，不僅意指抗議，更要坦白或懺悔。新教的常見特色包括因純信而稱義、經典的權威性、信徒皆牧師，所以不是只有牧師才能聽取認罪懺悔。 <a href=\"#_getty_2017\">(Getty, 2017)</a>"@zh-hant ;
+    skos:inScheme cwrc:Religion ;
+    prov:wasDerivedFrom dbpedia:Protestantism, <http://vocab.getty.edu/aat/300073735> .
+
+cwrc:woman
+  void:inDataset cwrc:datasetdefinition ;
+  a cwrc:Gender, owl:Thing, skos:Concept ;
+  rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-08-03> ;
+  rdfs:label "femme"@fr, "woman"@en ;
+  skos:definition ""@en ;
+  foaf:name "woman (gender)"@en .
