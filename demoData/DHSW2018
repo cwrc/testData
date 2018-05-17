@@ -52,6 +52,10 @@
   a dcterms:subject ;
   rdfs:label "9/11"@en .
 
+  <http://www.cwrc.ca/cwrcdata/Terrorism>
+    owl:sameAs <http://dbpedia.org/page/Terrorism> ;
+    a dcterms:subject ;
+    rdfs:label "Terrorism"@en .
 
 #People go here
 
