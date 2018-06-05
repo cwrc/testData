@@ -37,6 +37,20 @@
 	cwrc:hasEducation cwrc:MAInstitutionalEducation ;
 	foaf:name "Margaret Atwood"@en .
 
+# Missing predicates from the ontology
+#		hasInstitution -- some cwrc:School/cwrc:Organization
+#		These two seem similar to me and I can't grasp the difference that would help with definition
+#			hasSubject 
+# 		hasSubjectOfStudy
+#		hasTemporalReference -- use time ontology and we can make the object any time:Entity see https://www.w3.org/TR/owl-time/#time:hasTime
+#		hasPersonReference -- This might be has Person but I'm thinking this is more specifict than that
+
+
+# general notes (hopefully helpful)
+# - types will start with capitals (Organization)
+# - predicates start with lowercase (hasOrganization)
+
+
 # Define a separate set of triples for the education
 <http://cwrc.ca/cwrcdata/MAInstitutionalEducation> a cwrc:EducationContext ;
 	cwrc:hasInstitution cwrc:universityOfToronto ;
@@ -60,10 +74,10 @@
 	cwrc:hasSubjectOfStudy cwrc:MarieClaireBlais ;
 	cwrc:hasAward cwrc:WoodrowWilsonFellowship ;
 	cwrc:hasSubject cwrc:gothicNovel ;
-	cwrc:hasTemporalReference cwrc:1952 ;
-	cwrc:hasTemporalReference cwrc:1957 ;
-	cwrc:hasTemporalReference cwrc:1961 ;
-	cwrc:hasTemporalReference cwrc:1967 ;
+	time:hasTime cwrc:1952 ; # All time instants -- time ontology
+	time:hasTime cwrc:1957 ;
+	time:hasTime cwrc:1961 ;
+	time:hasTime cwrc:1967 ;
 	cwrc:hasPersonReference cwrc:MavisGallant ;
 	cwrc:hasPersonReference cwrc:MordecaiRichler ;
 	cwrc:hasPersonReference cwrc:MargaretLaurence ;
@@ -76,23 +90,23 @@
   	a foaf:Organization ;
   	foaf:name "Leaside High School"@en ;
   	rdfs:label "Leaside High School"@en ;
-	  a cwrc:dayschool ;
-		a cwrc:secondary ;
-		a cwrc:religious .
+	  a cwrc:DaySchool ;
+		a cwrc:SecondaryModernSchool ;
+		a cwrc:ReligiousSchool .
 
 <http://www.cwrc.ca/cwrcdata/BrantfordCentralSchool>
   	a foaf:Organization ;
   	foaf:name: "Brantford Central School"@en ;
   	rdfs:label "Brantford Central School"@en ;
 	# JC - We decided to use rdf:type where possible to assign multiple types to our instances
-		a cwrc:grammar ;
-		a cwrc:primary ;
-		a cwrc:coed .
+		a cwrc:GrammarSchool ;
+		a cwrc:PrimarySchool ;
+		a cwrc:CoEducationalSchool .
   	# cwrc:hasType cwrc:grammar, cwrc:primary, cwrc:co-ed . # We will use rdf:type here
 
 <http://www.cwrc.ca/cwrcdata/radcliffeCollegeHarvardUniversity>
 	a foaf:Organization ;
-	a cwrc:postsecondary ;
+	a cwrc:PostSecondarySchool ;
 	foaf:name "Radcliffe College, Harvard University"@en ;
 	rdfs:label "Radcliffe College, Harvard University"@en .
 
