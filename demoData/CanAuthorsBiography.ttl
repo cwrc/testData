@@ -30,9 +30,6 @@
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix schema: <http://schema.org/> .
 
-# Separated Margaret Atwood -- All properties directly on the Person are defined under it.
-# Previously name and institution were within the person.
-
 <http://cwrc.ca/cwrcdata/MargaretAtwood> a cwrc:Person ;
 	cwrc:hasEducation cwrc:MAInstitutionalEducation ;
 	foaf:name "Margaret Atwood"@en .
@@ -49,15 +46,16 @@
 # general notes (hopefully helpful)
 # - types will start with capitals (Organization)
 # - predicates start with lowercase (hasOrganization)
+# - ok, are the objects (ie, universityOfToronto) supposed to be in camelcase as below? KM
 
 
 # Define a separate set of triples for the education
 <http://cwrc.ca/cwrcdata/MAInstitutionalEducation> a cwrc:EducationContext ;
-	cwrc:hasInstitution cwrc:universityOfToronto ;
-	cwrc:hasInstitution cwrc:victoriaCollegeUniversityOfToronto ;
-	cwrc:hasInstitution cwrc:leasideHighSchool ;
-	cwrc:hasText cwrc:bible ;
-	cwrc:hasSubject cwrc:religiousKnowledge ;
+	cwrc:hasInstitution cwrc:UniversityOfToronto ;
+	cwrc:hasInstitution cwrc:VictoriaCollegeUniversityOfToronto ;
+	cwrc:hasInstitution cwrc:LeasideHighSchool ;
+	cwrc:hasText cwrc:Bible ;
+	cwrc:hasSubject cwrc:ReligiousKnowledge ;
 	cwrc:hasLocation geonames:toronto ;
 	cwrc:hasSubject cwrc:englishLiterature ;
 	cwrc:hasSubject cwrc:gothicNovel ;
@@ -90,19 +88,15 @@
   	a foaf:Organization ;
   	foaf:name "Leaside High School"@en ;
   	rdfs:label "Leaside High School"@en ;
-	  a cwrc:DaySchool ;
-		a cwrc:SecondaryModernSchool ;
-		a cwrc:ReligiousSchool .
+	cwrc:hasType cwrc:daySchool, cwrc:secondaryModernSchool, cwrc:co-ed .
 
 <http://www.cwrc.ca/cwrcdata/BrantfordCentralSchool>
   	a foaf:Organization ;
   	foaf:name: "Brantford Central School"@en ;
   	rdfs:label "Brantford Central School"@en ;
 	# JC - We decided to use rdf:type where possible to assign multiple types to our instances
-		a cwrc:GrammarSchool ;
-		a cwrc:PrimarySchool ;
-		a cwrc:CoEducationalSchool .
-  	# cwrc:hasType cwrc:grammar, cwrc:primary, cwrc:co-ed . # We will use rdf:type here
+  	cwrc:hasType cwrc:grammar, cwrc:primary, cwrc:co-ed . # We will use rdf:type here
+# KM - Please confirm that line 98 is proper rdf:type format, JC?
 
 <http://www.cwrc.ca/cwrcdata/radcliffeCollegeHarvardUniversity>
 	a foaf:Organization ;
@@ -110,99 +104,107 @@
 	foaf:name "Radcliffe College, Harvard University"@en ;
 	rdfs:label "Radcliffe College, Harvard University"@en .
 
+# Sara Duncan
+<http://cwrc.ca/cwrcdata/SaraJeannetteDuncan> a cwrc:Person ;
+	cwrc:hasEducation cwrc:SJDDomesticEducation ;
+	cwrc:hasEducation cwrc:SJDInstitutionalEducation ;
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling> 
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventCountyModelSchool> ;
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventTorontoNormalSchool> ;
+	foaf:name "Sara Duncan"@en .
 
-	# Sara Duncan
-	<http://cwrc.ca/cwrcdata/SaraJeannetteDuncan> a cwrc:Person ;
-		cwrc:hasEducation cwrc:SJDDomesticEducation ;
-		cwrc:hasEducation cwrc:SJDInstitutionalEducation ;
-		cwrc:hasEvent <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling> ;
-		cwrc:hasEvent <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventCountyModelSchool> ;
-		foaf:name "Sara Duncan"@en .
+<http://cwrc.ca/cwrcdata/SJDDomesticEducation> a cwrc:EducationContext ;
+	cwrc:hasSubjectOfStudy cwrc:geography ;
+	cwrc:hasSubjectOfStudy cwrc:spelling ;
+	cwrc:hasSubjectOfStudy cwrc:entrepreneurship ;
+#KM - this might be "commercial enterprise' and not "entrepreneurship", have asked in agenda for meeting tomorrow.
+	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/SJDDomesticEducationContext> .
 
-	<http://cwrc.ca/cwrcdata/SJDDomesticEducation> a cwrc:EducationContext ;
-		cwrc:hasSubjectOfStudy cwrc:geography ;
-		cwrc:hasSubjectOfStudy cwrc:spelling ;
-		cwrc:hasSubjectOfStudy cwrc:entrepreneurship ;
-		prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/SJDDomesticEducationContext> .
-
-	<http://cwrc.ca/cwrcdata/SJDInstitutionalEducation> a cwrc:EducationalContext ;
+<http://cwrc.ca/cwrcdata/SJDInstitutionalEducation> a cwrc:EducationalContext ;
 	#within context, everything between the 2 education tags needs to be included. KM
 
-		cwrc:FactorOf <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling> ; # Inverse link for the factor (JC) So what goes here now? KM (What is the revised term for FactorOf)
-		prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/SJDInstitutionalEducationContext> .
+	cwrc:FactorOf <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling> ; # Inverse link for the factor (JC) So what goes here now? KM (What is the revised term for FactorOf)
+	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/SJDInstitutionalEducationContext> .
 
 	# JC - We will need to use the time ontology instants here to define when things happened.
-	<http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling_StartDate> a time:Instant ;
-		time:inXSDDate "1867-01-01"^^xsd:date .
+	# KM - you mean the beginning and end of her time at school?
 
-	<http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling_EndDate> a time:Instant ;
-		time:inXSDDate "1879-01-01"^^xsd:date .
+<http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling_StartDate> a time:Instant ;
+	time:inXSDDate "1867-01-01"^^xsd:date .
 
-	<http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling> a cwrc:EducationalEvent ;
+<http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling_EndDate> a time:Instant ;
+	time:inXSDDate "1879-01-01"^^xsd:date .
+#This date refers to when she started the next school, not necessarily when she finished at this one. Is there a better way of marking that up?
+
+<http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling> a cwrc:EducationalEvent ;
 	#this event is taking place within the Educational context. Only items that are directly related to the event in the tagging scheme are included here. KM
-	  a cwrc:writingClimateEvent ; #This comes from the CHRONColumn tag KM
-		cwrc:hasInstitution cwrc:brantfordCentralSchool ;
-		cwrc:hasLocation geonames:brantford ;
-		cwrc:hasInstitution cwrc:countyModelSchool ;
-	 	cwrc:hasLocation geonames:brantford ;
-		rdfs:Label "SJD began formal schooling at Central School in Brantford." ;
-		cwrc:hasFactor <http://cwrc.ca/cwrcdata/SJDInstitutionalEducation>; # If this event relates to the education context it is a factor
-		time:hasBeginning <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling_StartDate> ;
-		time:hasEnd <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling_EndDate> . # If there is an end time (which may/may not be the case here)
+	a cwrc:writingClimateEvent ; #This comes from the CHRONColumn tag KM
+	cwrc:hasInstitution cwrc:brantfordCentralSchool ;
+	cwrc:hasLocation geonames:brantford ;
+	cwrc:hasInstitution cwrc:countyModelSchool ;
+	cwrc:hasLocation geonames:brantford ;
+	rdfs:Label "SJD began formal schooling at Central School in Brantford." ;
+	cwrc:hasFactor <http://cwrc.ca/cwrcdata/SJDInstitutionalEducation>; # If this event relates to the education context it is a factor
+	time:hasBeginning <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling_StartDate> ;
+	time:inXSDDate "1867-01-01"^^xsd:date .
+	#time:hasEnd <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling_EndDate> . # If there is an end time (which may/may not be the case here)
 
-	# Correctly define the time as an instant which is an XSD Date (ISO8601 format)
+# Correctly define the time as an instant which is an XSD Date (ISO8601 format)
 
+<http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventCountyModelSchool> a cwrc:EducationalEvent ;
+	rdfs:Label "SJD reluctantly entered Brantford's County Model School." ;
 	<http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventCountyModelSchool_StartDate> a time:Instant ;
-		time:inXSDDate "1879-08-30"^^xsd:date .
+	time:inXSDDate "1879-08-30"^^xsd:date .
+	#time:hasEnd 1879 . # If there is an end time (which may/may not be the case here)
 
-	<http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventCountyModelSchool> a cwrc:EducationalEvent ;
-		rdfs:Label "SJD reluctantly entered Brantford's County Model School." ;
-		time:hasBeginning <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventCountyModelSchool_StartDate> .#; # This will need an encoding (ISO format maybe?)
-		#time:hasEnd 1879 . # If there is an end time (which may/may not be the case here)
+<http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventTorontoNormalSchool_StartDate> a time:Instant ;
+	time:inXSDDate "1882-01-01"^^xsd:date .
+	cwrc:hasInstitution cwrc:TorontoNormalSchool ;
+	cwrc:hasType cwrc:co-ed cwrc:post-secondary .
+# Orlando indicates SJD earned a degree by June (possibly 1882) - we don't have a predicate for this, as far as I know - KM
 
-	#There is a third education event here that needs to be included. KM
+# Pauline Johnson
+<http://cwrc.ca/cwrcdata/PaulineJohnson> a cwrc:Person ;
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/EPJBirthEvent> ;
+	cwrc:hasEducation cwrc:PJDomesticEducation ;
+	cwrc:hasEducation cwrc:PJInstitutionalEducation ;
+	foaf:name "Pauline Johnson"@en .
 
-	# Pauline Johnson
-	<http://cwrc.ca/cwrcdata/PaulineJohnson> a cwrc:Person ;
-		cwrc:hasEvent <http://cwrc.ca/cwrcdata/EPJBirthEvent> ;
-		cwrc:hasEducation cwrc:PJDomesticEducation ;
-		cwrc:hasEducation cwrc:PJInstitutionalEducation ;
-		foaf:name "Pauline Johnson"@en .
+<http://cwrc.ca/cwrcdata/EPJBirthEvent> a cwrc:BirthEvent ;
+	time:inXSDDate "1861-03-10"^^xsd:date ;
+	cwrc:hasLocation cwrc:chiefswood ;
+	cwrc:hasLocation <http://www.geonames.org/6093943> ;
+	cwrc:hasLocation <http://geonames.org/5964685> ;
+	cwrc:hasBirthPosition cwrc:youngest ;
+	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/EPJBirthEvent> .
 
-	<http://cwrc.ca/cwrcdata/EPJBirthEvent> a cwrc:BirthEvent ;
-		time:inXSDDate "1861-03-10"^^xsd:date ;
-		cwrc:hasLocation cwrc:Chiefswood ;
-		cwrc:hasLocation <http://www.geonames.org/6093943> ;
-		cwrc:hasLocation <http://geonames.org/5964685> ;
-		cwrc:hasBirthPosition cwrc:youngest ;
-		prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/EPJBirthEvent> .
+<http://cwrc.ca/cwrcdata/PJDomesticEducation> a cwrc:EducationConstruct ;
+	cwrc:hasInstructor foaf:emilySusannaJohnson;
+	cwrc:hasInstructor foaf:smokeJohnson;
+	cwrc:hasSubjectOfStudy cwrc:JohnMilton ;
+	cwrc:hasSubjectOfStudy cwrc:WilliamShakespeare ;
+	cwrc:hasSubjectOfStudy cwrc:GeorgeGordonByron ;
+	cwrc:hasSubjectOfStudy cwrc:AlfredTennyson ;
+	cwrc:hasSubjectOfStudy cwrc:HenryWadsworthLongfellow ;
+	cwrc:hasSubjectOfStudy cwrc:WalterScott ;
+	cwrc:hasSubjectOfStudy cwrc:warStories ;
+	cwrc:hasSubjectOfStudy cwrc:nativeLegends ;
+	cwrc:hasSubject cwrc:oralStories ;
+	cwrc:hasSubject cwrc:canoeing ;
+	cwrc:hasSubject cwrc:camping ;
+	cwrc:hasLocation <http://geonames.org/5964685> ; # JC - We would do so like this -- however we may want to reuse another definition of location (schema:Place?)
+	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/PJDomesticEducationContext> .
 
-	<http://cwrc.ca/cwrcdata/PJDomesticEducation> a cwrc:EducationConstruct ;
-		cwrc:hasInstructor foaf:emilySusannaJohnson;
-		cwrc:hasInstructor foaf:smokeJohnson;
-		cwrc:hasSubjectOfStudy cwrc:JohnMilton ;
-		cwrc:hasSubjectOfStudy cwrc:WilliamShakespeare ;
-		cwrc:hasSubjectOfStudy cwrc:GeorgeGordonByron ;
-		cwrc:hasSubjectOfStudy cwrc:AlfredTennyson ;
-		cwrc:hasSubjectOfStudy cwrc:HenryWadsworthLongfellow ;
-		cwrc:hasSubjectOfStudy cwrc:WalterScott ;
-		cwrc:hasSubjectOfStudy cwrc:warStories ;
-		cwrc:hasSubjectOfStudy cwrc:nativeLegends ;
-		cwrc:hasSubject cwrc:oralStories ;
-		cwrc:hasSubject cwrc:canoeing ;
-		cwrc:hasSubject cwrc:camping ;
-		cwrc:hasLocation <http://geonames.org/5964685> ; # JC - We would do so like this -- however we may want to reuse another definition of location (schema:Place?)
-		prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/PJDomesticEducationContext> .
-
-	<http://cwrc.ca/cwrcdata/PJInstitutionalEducation> a cwrc:EducationConstruct ;
-		time:hasBeginning cwrc:1875 ;
-		time:hasEnding cwrc:june1877 ;
-		cwrc:hasInstitution cwrc:brantfordCollegiateInstitute ;
-		prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/PJInstitutionalEducationContext> .
+<http://cwrc.ca/cwrcdata/PJInstitutionalEducation> a cwrc:EducationConstruct ;
+	time:hasBeginning cwrc:1875 ;
+	time:hasEnding cwrc:june1877 ;
+	cwrc:hasInstitution cwrc:brantfordCollegiateInstitute ;
+	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/PJInstitutionalEducationContext> .
 
 
 #Places goes here
 # JC - Creating Locations for a Geonames location requires creating an instance of GeonamesFeature
+# KM - ok, I understand that but don't know how to do it, or where it should go.
 <http://geonames.org/5964685> a geonames:GeonamesFeature ;
 	rdfs:label "Grand River"@en ;
 	geonames:name "Grand River"@en ;
@@ -222,18 +224,18 @@
 	rdfs:label "Victoria College University of Toronto"@en .
 
 <http://www.cwrc.ca/cwrcdata/UniversityofToronto>
-  a foaf:Organization ;
+  	a foaf:Organization ;
 	a cwrc:postsecondary ;
-  foaf:name "University of Toronto"@en ;
-  rdfs:label "University of Toronto"@en .
+  	foaf:name "University of Toronto"@en ;
+	rdfs:label "University of Toronto"@en .
 
 <http://www.cwrc.ca/cwrcdata/CentralSchool>
-  a foaf:Organization ;
+ 	a foaf:Organization ;
 	a cwrc:grammar ;
 	a cwrc:primary ;
 	a cwrc:coed ;
-  foaf:name "Central School"@en ;
-  rdfs:label "Central School"@en .
+	foaf:name "Central School"@en ;
+	rdfs:label "Central School"@en .
 
 <http://www.cwrc.ca/cwrcdata/BrantfordCollegiateInstitute>
  	a foaf:Organization ;
@@ -242,41 +244,41 @@
 
 #People go here
 
-	<http://www.cwrc.ca/cwrcdata/NorthropFrye>
-		a foaf:Person ;
-		foaf:name "Northrop Frye" .
+<http://www.cwrc.ca/cwrcdata/NorthropFrye>
+	a foaf:Person ;
+	foaf:name "Northrop Frye" .
 
-	<http://www.cwrc.ca/cwrcdata/JayMacpherson>
-		a foaf:Person ;
-		foaf:name "Jay Macpherson" .
+<http://www.cwrc.ca/cwrcdata/JayMacpherson>
+	a foaf:Person ;
+	foaf:name "Jay Macpherson" .
 
-	<http://www.cwrc.ca/cwrcdata/WilliamShakespeare>
-	 	a foaf:Person ;
-	 	foaf:name "William Shakespeare" .
+<http://www.cwrc.ca/cwrcdata/WilliamShakespeare>
+	a foaf:Person ;
+ 	foaf:name "William Shakespeare" .
 
-	<http://www.cwrc.ca/cwrcdata/TSEliot>
-		a foaf:Person ;
-		foaf:name "T.S. Eliot" .
+<http://www.cwrc.ca/cwrcdata/TSEliot>
+	a foaf:Person ;
+	foaf:name "T.S. Eliot" .
 
-	<http://www.cwrc.ca/cwrcdata/MarieClaireBlais>
-		a foaf:Person ;
-		foaf:name "Marie-Claire Blais" .
+<http://www.cwrc.ca/cwrcdata/MarieClaireBlais>
+	a foaf:Person ;
+	foaf:name "Marie-Claire Blais" .
 
-	<http://www.cwrc.ca/cwrcdata/SheilaWatson>
-		a foaf:Person ;
-		foaf:name "Sheila Watson" .
+<http://www.cwrc.ca/cwrcdata/SheilaWatson>
+	a foaf:Person ;
+	foaf:name "Sheila Watson" .
 
-	<http://www.cwrc.ca/cwrcdata/ThomasHardy>
-		a foaf:Person ;
-		foaf:name "Thomas Hardy" .
+<http://www.cwrc.ca/cwrcdata/ThomasHardy>
+	a foaf:Person ;
+	foaf:name "Thomas Hardy" .
 
 
 #Snippets go here
 <http://www.cwrc.ca/cwrcdata/MAInstitutionalEducationContext> 
-  rdfs:label """She attended elementary school, and then from 1952 Leaside High School in Toronto, both in the Protestant public school system operating in Ontario alongside a Catholic one."""@en ;
+  	rdfs:label """She attended elementary school, and then from 1952 Leaside High School in Toronto, both in the Protestant public school system operating in Ontario alongside a Catholic one."""@en ;
 	a nif:Context, nif:Sentence ;
-  dcterms:partOf <http://www.cwrc.ca/cwrcdata/MargaretAtwood_Main_Document> ;
-  prov:createdBy cwrc:originalOrlandoAuthor .
+  	dcterms:partOf <http://www.cwrc.ca/cwrcdata/MargaretAtwood_Main_Document> ;
+  	prov:createdBy cwrc:originalOrlandoAuthor .
 
 <http://www.cwrc.ca/cwrcdata/SJDDomesticEducationContext> 
  	rdfs:label """SJD obtained an early education from a maiden aunt who may also have been teaching at a school in Brantford."""@en ;
@@ -285,9 +287,9 @@
 	prov:createdBy cwrc:originalOrlandoAuthor .
 
 <http://www.cwrc.ca/cwrcdata/SJDInstitutionalEducationContext>
-  rdfs:label """SJD began formal schooling at Central School in Brantford."""@en ;
-  a nif:Context, nif:Sentence ;
-  dcterms:partOf <http://www.cwrc.ca/cwrcdata/SaraDuncan_Main_Document> ;
+  	rdfs:label """SJD began formal schooling at Central School in Brantford."""@en ;
+  	a nif:Context, nif:Sentence ;
+  	dcterms:partOf <http://www.cwrc.ca/cwrcdata/SaraDuncan_Main_Document> ;
 	prov:createdBy cwrc:originalOrlandoAuthor .
 
 <http://www.cwrc.ca/cwrcdata/PJDomesticEducationContext>
