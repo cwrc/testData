@@ -47,6 +47,7 @@
 # - types will start with capitals (Organization)
 # - predicates start with lowercase (hasOrganization)
 # - ok, are the objects (ie, universityOfToronto) supposed to be in camelcase as below? KM
+# 	Good question we'll need to decided on a convention -- I belive we have been using lowercase thus far though 
 
 
 # Define a separate set of triples for the education
@@ -95,8 +96,8 @@
   	foaf:name: "Brantford Central School"@en ;
   	rdfs:label "Brantford Central School"@en ;
 	# JC - We decided to use rdf:type where possible to assign multiple types to our instances
-  	cwrc:hasType cwrc:grammar, cwrc:primary, cwrc:co-ed . # We will use rdf:type here
-# KM - Please confirm that line 98 is proper rdf:type format, JC?
+  	a cwrc:GrammarSchool, cwrc:PrimarySchool, cwrc:CoEducationalSchool . # We will use rdf:type here
+# KM - Please confirm that line 98 is proper rdf:type format, JC? Now correct, we will use rdf:type or (a)
 
 <http://www.cwrc.ca/cwrcdata/radcliffeCollegeHarvardUniversity>
 	a foaf:Organization ;
@@ -127,14 +128,14 @@
 	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/SJDInstitutionalEducationContext> .
 
 	# JC - We will need to use the time ontology instants here to define when things happened.
-	# KM - you mean the beginning and end of her time at school?
+	# KM - you mean the beginning and end of her time at school? JC: Yes, any time we need a date or time.
 
 <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling_StartDate> a time:Instant ;
 	time:inXSDDate "1867-01-01"^^xsd:date .
 
 <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling_EndDate> a time:Instant ;
 	time:inXSDDate "1879-01-01"^^xsd:date .
-#This date refers to when she started the next school, not necessarily when she finished at this one. Is there a better way of marking that up?
+#This date refers to when she started the next school, not necessarily when she finished at this one. Is there a better way of marking that up? - JC:  If there is a way of separating them we could have different objects however I suspect that isn't the case and I can't find anything that seems obviously better
 
 <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling> a cwrc:EducationalEvent ;
 	#this event is taking place within the Educational context. Only items that are directly related to the event in the tagging scheme are included here. KM
@@ -161,7 +162,7 @@
 	time:inXSDDate "1882-01-01"^^xsd:date .
 	cwrc:hasInstitution cwrc:TorontoNormalSchool ;
 	cwrc:hasType cwrc:co-ed cwrc:post-secondary .
-# Orlando indicates SJD earned a degree by June (possibly 1882) - we don't have a predicate for this, as far as I know - KM
+# Orlando indicates SJD earned a degree by June (possibly 1882) - we don't have a predicate for this, as far as I know - KM JC: Correct I don't believe we have anything regarding degrees. 
 
 # Pauline Johnson
 <http://cwrc.ca/cwrcdata/PaulineJohnson> a cwrc:Person ;
@@ -205,21 +206,14 @@
 #Places goes here
 # JC - Creating Locations for a Geonames location requires creating an instance of GeonamesFeature
 # KM - ok, I understand that but don't know how to do it, or where it should go.
-<http://geonames.org/5964685> a geonames:GeonamesFeature ;
-	rdfs:label "Grand River"@en ;
-	geonames:name "Grand River"@en ;
-	geonames:notation "5964685" .
-
-<http://www.geonames.org/6093943> a geonames:GeonamesFeature ;
-	rdfs:label "Ontario"@en ;
-	geonames:name "Grand River"@en ;
-	geonames:notation "6093943" .
+# JC - It looks we can actually just use the URL -- they have an ontology with all the features in it!
+We can just use cwrc:hasLocation <http://genonames/5964685> as above and we don't need the triples below for location
 
 #Institutions go here
 <http://www.cwrc.ca/cwrcdata/VictoriaCollegeUniversityofToronto>
 	a foaf:Organization ;
-	a cwrc:postsecondary ;
-	a cwrc:religious ;
+	a cwrc:PostSecondarySchool ;
+	a cwrc:ReligiousSchool ;
 	foaf:name "Victoria College University of Toronto"@en ;
 	rdfs:label "Victoria College University of Toronto"@en .
 
@@ -231,9 +225,9 @@
 
 <http://www.cwrc.ca/cwrcdata/CentralSchool>
  	a foaf:Organization ;
-	a cwrc:grammar ;
-	a cwrc:primary ;
-	a cwrc:coed ;
+	a cwrc:GrammarSchool ;
+	a cwrc:PrimarySchool ;
+	a cwrc:CoEducationSchool ;
 	foaf:name "Central School"@en ;
 	rdfs:label "Central School"@en .
 

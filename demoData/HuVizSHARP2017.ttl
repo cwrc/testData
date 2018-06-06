@@ -30,10 +30,12 @@
 @prefix frbr: <http://purl.org/vocab/frbr/core> .
 @prefix rel: <http://purl.org/vocab/relationship/> .
 
+# JC This looks pretty good in its current state no glaring problems!
+
 # SOPHIA KING
 <http://www.cwrc.ca/cwrcdata/SophiaKing>
     cwrc:hasSocialClass cwrc:indigent, cwrc:gentry, cwrc:professional ;
-    cwrc:hasGeogHeritage cwrc:portugal ;
+    cwrc:hasGeographicalHeritage cwrc:portugal ;
     cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasEthnicity cwrc:JewishEthnicity ;
     cwrc:hasReligion cwrc:judaism ;
@@ -182,7 +184,7 @@ cwrc:King12345
 # CHARLOTTE DACRE
 <http://www.cwrc.ca/cwrcdata/CharlotteDacre>
     cwrc:hasGender cwrc:genderWomanFemale ;
-    cwrc:hasGeogHeritage cwrc:jewishGeographicalHeritage, cwrc:portugal, cwrc:england, cwrc:middlesex, cwrc:london ;
+    cwrc:hasGeographicalHeritage cwrc:jewishGeographicalHeritage, cwrc:portugal, cwrc:england, cwrc:middlesex, cwrc:london ;
     cwrc:hasReligion cwrc:anglicanchurch, cwrc:judaism ;
     cwrc:hasEthnicity cwrc:JewishEthnicity ;
     cwrc:hasSocialClass cwrc:entrepreneurial-industrialist, cwrc:gentry, cwrc:indigent;
