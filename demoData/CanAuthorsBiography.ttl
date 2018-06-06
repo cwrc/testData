@@ -32,6 +32,9 @@
 
 <http://cwrc.ca/cwrcdata/MargaretAtwood> a cwrc:Person ;
 	cwrc:hasEducation cwrc:MAInstitutionalEducation ;
+	cwrc:attends cwrc:UniversityOfToronto ;
+	cwrc:attends cwrc:VictoriaCollegeUniversityOfToronto ;
+	cwrc:attends cwrc:LeasideHighSchool ;
 	foaf:name "Margaret Atwood"@en .
 
 # Missing predicates from the ontology
@@ -52,9 +55,10 @@
 
 # Define a separate set of triples for the education
 <http://cwrc.ca/cwrcdata/MAInstitutionalEducation> a cwrc:EducationContext ;
-	cwrc:hasInstitution cwrc:UniversityOfToronto ;
-	cwrc:hasInstitution cwrc:VictoriaCollegeUniversityOfToronto ;
-	cwrc:hasInstitution cwrc:LeasideHighSchool ;
+	#cwrc:hasInstitution cwrc:UniversityOfToronto ;
+	#cwrc:hasInstitution cwrc:VictoriaCollegeUniversityOfToronto ;
+	#cwrc:hasInstitution cwrc:LeasideHighSchool ;
+# KM - change hasInstitution when we have further thought through what events will look like
 	cwrc:hasText cwrc:Bible ;
 	cwrc:hasSubject cwrc:ReligiousKnowledge ;
 	cwrc:hasLocation geonames:toronto ;
