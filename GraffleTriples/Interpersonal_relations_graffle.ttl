@@ -1,0 +1,96 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/>
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix locl: <http://id.loc.gov/vocabulary/languages/> .
+@prefix mil: <http://rdf.muninn-project.org/ontologies/military#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rel: <http://purl.org/vocab/relationship/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix frbr: <http://purl.org/vocab/frbr/core> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix schema: <http://schema.org/> .
+
+cwrc:CharlotteBronte a cwrc:NaturalPerson ;
+    foaf:name "Charlotte Bronte" ;
+    cwrc:hasBrother cwrc:BranwellBronte ;
+    cwrc:hasEvent cwrc:CharlotteBronteEvent_1 ;
+    cwrc:hasEvent cwrc:CharlotteBronteEvent_2 .
+
+cwrc:BranwellBronte a cwrc:NaturalPerson ;
+    foaf:name "Patrick Branwell Bronte" .
+
+cwrc:MrsRobinson a cwrc:NaturalPerson ;
+    foaf:name "Mrs. Robinson" .
+
+
+cwrc:CharlotteBronteEvent_1 a cwrc:Event ;
+    time:inXSDDate "1817-06-26"^^xsd:date ;
+    dcterms:description "Patrick Branwell Brontë, the only son of the family, 
+was born: he was known as Branwell."^^xsd:string .
+
+cwrc:CharlotteBronteEvent_2 a cwrc:Event ;
+    time:inXSDDate "1846-1-1"^^xsd:date ;
+    dcterms:description "Branwell Brontë began a downward spiral of drinking, 
+debts, and dissipation that hastened his death."^^xsd:string .
+
+
+
+cwrc:CharlotteBronteFamilyContext_1 a cwrc:FamilyContext ;
+    oa:motivatedBy oa:describing ;
+    oa:hasSource <http://orlando.cambridge.org/protected/wheel?src_ref=bronch-b.sgm&doc_type=0&&t=0:14>
+    oa:hasBody cwrc:CharlotteBronteFamilyContext_1_AnnotationBody ;
+    dc:subject cwrc:BranwellBronte ;
+    oa:hasTarget cwrc:CharlotteBronte .
+
+
+cwrc:CharlotteBronteFamilyContext_1_AnnotationBody a oa:Choice ;
+    as:items cwrc:CharlotteBronteFamilyContext_1_Snippet ;
+    as:items cwrc:BranwellBronte .
+
+cwrc:CharlotteBronteFamilyContext_1_Snippet a dctypes:text ;
+    dcterms:description "26 June 1817 Patrick Branwell Brontë, the only son of the family, was born: he was known as Branwell.￼26 June 1817 Patrick Branwell Brontë, the only son of the family, was born: he was known as Branwell.￼ Branwell was an important literary collaborator of his sisters, CB in particular, in their youth."^^xsd:string .
+
+cwrc:CharlotteBronteFamilyContext_2 a cwrc:FamilyContext ;
+    oa:motivatedBy oa:describing ;
+    oa:hasSource <http://orlando.cambridge.org/protected/wheel?src_ref=bronch-b.sgm&doc_type=0&&t=0:73> ;
+    oa:hasBody cwrc:CharlotteBronteFamilyContext_2_AnnotationBody ;
+    dc:subject cwrc:BranwellBronte ;
+    dc:subject cwrc:MrsRobinson ;
+    oa:hasTarget cwrc:CharlotteBronte .
+
+cwrc:CharlotteBronteFamilyContext_2_AnnotationBody a oa:Choice ;
+    as:items cwrc:CharlotteBronteFamilyContext_2_Snippet ;
+    as:items cwrc:BranwellBronte ;
+    as:items cwrc:MrsRobinson .
+
+cwrc:CharlotteBronteFamilyContext_2_Snippet a dctypes:text ;
+    dcterms:description ". Autumn 1846 Branwell Brontë began a downward spiral of drinking, debts, and dissipation that hastened his death￼ He despaired of his affair with Mrs Robinson, for whose family he had been tutor and Anne governess. Although persevering in their literary labours and approaches to publishers, his sisters found his decline painful and embarrassing."^^xsd:string .
+
+cwrc:CharlotteBronteFamilyContext_3 a cwrc:FamilyContext ;
+    oa:motivatedBy oa:identifying ;
+    oa:hasBody cwrc:CharlotteBronteFamilyContext_2_AnnotationBody ;
+    oa:hasTarget cwrc:MrsRobinson ;
+    dc:subject cwrc:MrsRobinson ;
+    oa:hasSource <http://orlando.cambridge.org/protected/wheel?src_ref=bronch-b.sgm&doc_type=0&&t=0:73> .
+
