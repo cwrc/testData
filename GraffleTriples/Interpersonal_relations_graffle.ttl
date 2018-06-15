@@ -76,21 +76,24 @@ cwrc:CharlotteBronteFamilyContext_2 a cwrc:FamilyContext ;
     oa:hasSource <http://orlando.cambridge.org/protected/wheel?src_ref=bronch-b.sgm&doc_type=0&&t=0:73> ;
     oa:hasBody cwrc:CharlotteBronteFamilyContext_2_AnnotationBody ;
     dc:subject cwrc:BranwellBronte ;
-    dc:subject cwrc:MrsRobinson ;
+# removed b/c no family relationship    dc:subject cwrc:MrsRobinson ;
     oa:hasTarget cwrc:CharlotteBronte .
 
 cwrc:CharlotteBronteFamilyContext_2_AnnotationBody a oa:Choice ;
     as:items cwrc:CharlotteBronteFamilyContext_2_Snippet ;
-    as:items cwrc:BranwellBronte ;
-    as:items cwrc:MrsRobinson .
+    as:items cwrc:BranwellBronte .
+# removed b/c no family relationship known    as:items cwrc:MrsRobinson .
 
 cwrc:CharlotteBronteFamilyContext_2_Snippet a dctypes:text ;
-    dcterms:description ". Autumn 1846 Branwell Brontë began a downward spiral of drinking, debts, and dissipation that hastened his death￼ He despaired of his affair with Mrs Robinson, for whose family he had been tutor and Anne governess. Although persevering in their literary labours and approaches to publishers, his sisters found his decline painful and embarrassing."^^xsd:string .
+    dcterms:description "Autumn 1846 Branwell Brontë began a downward spiral of drinking, debts, and dissipation that hastened his death￼ He despaired of his affair with Mrs Robinson, for whose family he had been tutor and Anne governess. Although persevering in their literary labours and approaches to publishers, his sisters found his decline painful and embarrassing."^^xsd:string .
 
 cwrc:CharlotteBronteFamilyContext_3 a cwrc:FamilyContext ;
     oa:motivatedBy oa:identifying ;
-    oa:hasBody cwrc:CharlotteBronteFamilyContext_2_AnnotationBody ;
+    oa:hasBody cwrc:CharlotteBronteFamilyContext_3_AnnotationBody ;
     oa:hasTarget cwrc:MrsRobinson ;
     dc:subject cwrc:MrsRobinson ;
-    oa:hasSource <http://orlando.cambridge.org/protected/wheel?src_ref=bronch-b.sgm&doc_type=0&&t=0:73> .
+    oa:hasSource <http://orlando.cambridge.org/protected/wheel?src_ref=bronch-b.sgm&doc_type=0&&t=0:73> ;
 
+cwrc:CharlotteBronteFamilyContext_3_AnnotationBody a oa:Choice ;
+    as:items cwrc:CharlotteBronteFamilyContext_2_Snippet ;
+    as:items cwrc:MrsRobinson .
