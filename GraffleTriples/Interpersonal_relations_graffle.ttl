@@ -71,6 +71,8 @@ cwrc:CharlotteBronteFamilyContext_1_AnnotationBody a oa:Choice ;
 cwrc:CharlotteBronteFamilyContext_1_Snippet a dctypes:text ;
     dcterms:description "26 June 1817 Patrick Branwell Brontë, the only son of the family, was born: he was known as Branwell.￼26 June 1817 Patrick Branwell Brontë, the only son of the family, was born: he was known as Branwell.￼ Branwell was an important literary collaborator of his sisters, CB in particular, in their youth."^^xsd:string .
 
+#Please review from here down JC and respond to comments - KM.
+
 cwrc:CharlotteBronteFamilyContext_2 a cwrc:FamilyContext ;
     oa:motivatedBy oa:describing ;
     oa:hasSource <http://orlando.cambridge.org/protected/wheel?src_ref=bronch-b.sgm&doc_type=0&&t=0:73> ;
@@ -90,10 +92,12 @@ cwrc:CharlotteBronteFamilyContext_2_Snippet a dctypes:text ;
 cwrc:CharlotteBronteFamilyContext_3 a cwrc:FamilyContext ;
     oa:motivatedBy oa:identifying ;
     oa:hasBody cwrc:CharlotteBronteFamilyContext_3_AnnotationBody ;
-    oa:hasTarget cwrc:MrsRobinson ;
+    oa:hasTarget cwrc:CharlotteBronte ; #this was MrsRobinson, but we think it should be CB. Is this right JC? - KM
     dc:subject cwrc:MrsRobinson ;
     oa:hasSource <http://orlando.cambridge.org/protected/wheel?src_ref=bronch-b.sgm&doc_type=0&&t=0:73> ;
 
-cwrc:CharlotteBronteFamilyContext_3_AnnotationBody a oa:Choice ;
-    as:items cwrc:CharlotteBronteFamilyContext_2_Snippet ;
-    as:items cwrc:MrsRobinson .
+# It looks like we don't need a choice for Family Context 3. Shouldn't there be one, as below JC? - KM
+
+#cwrc:CharlotteBronteFamilyContext_3_AnnotationBody a oa:Choice ;  
+ #   as:items cwrc:CharlotteBronteFamilyContext_2_Snippet ;
+  #  as:items cwrc:MrsRobinson .
