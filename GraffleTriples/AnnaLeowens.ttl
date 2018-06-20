@@ -42,7 +42,7 @@ cwrc:AnnaLeonowensRaceEthnicityContext      a               cwrc:RaceEthnicityCo
                                             oa:motivatedBy  oa:describing ;
                                             oa:hasBody      cwrc:AnnaLeonowensAnnotationBody ;
                                             oa:hasTarget    cwrc:AnnaLeonowens ;
-                                            oa:hasSource    <http://linkToOrlando/AnnaLeonowens> ;
+                                            oa:hasSource    <http://orlando.cambridge.org> ;
                                             dcterms:subject      cwrc:eurasianRaceColour ;
                                             dcterms:subject      cwrc:whiteRaceColour ;
                                             dcterms:subject      cwrc:whiteRaceEthnicity .
