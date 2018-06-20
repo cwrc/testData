@@ -5,7 +5,7 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dbpedia: <http://dbpedia.org/resource/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dctypes: <http://purl.org/dc/dcmitype/>
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix eurovoc: <http://eurovoc.europa.eu/> .
@@ -60,7 +60,7 @@ cwrc:CharlotteBronteFamilyContext_1 a cwrc:FamilyContext ;
     oa:motivatedBy oa:describing ;
     oa:hasSource <http://orlando.cambridge.org/protected/wheel?src_ref=bronch-b.sgm&doc_type=0&&t=0:14>
     oa:hasBody cwrc:CharlotteBronteFamilyContext_1_AnnotationBody ;
-    dc:subject cwrc:BranwellBronte ;
+    dcterms:subject cwrc:BranwellBronte ;
     oa:hasTarget cwrc:CharlotteBronte .
 
 
@@ -77,7 +77,7 @@ cwrc:CharlotteBronteFamilyContext_2 a cwrc:FamilyContext ;
     oa:motivatedBy oa:describing ;
     oa:hasSource <http://orlando.cambridge.org/protected/wheel?src_ref=bronch-b.sgm&doc_type=0&&t=0:73> ;
     oa:hasBody cwrc:CharlotteBronteFamilyContext_2_AnnotationBody ;
-    dc:subject cwrc:BranwellBronte ;
+    dcterms:subject cwrc:BranwellBronte ;
 # removed b/c no family relationship    dc:subject cwrc:MrsRobinson ;
     oa:hasTarget cwrc:CharlotteBronte .
 
@@ -93,7 +93,7 @@ cwrc:CharlotteBronteFamilyContext_3 a cwrc:FamilyContext ;
     oa:motivatedBy oa:identifying ;
     oa:hasBody cwrc:CharlotteBronteFamilyContext_3_AnnotationBody ;
     oa:hasTarget cwrc:CharlotteBronte ; #this was MrsRobinson, but we think it should be CB. Is this right JC? - KM
-    dc:subject cwrc:MrsRobinson ;
+    dcterms:subject cwrc:MrsRobinson ;
     oa:hasSource <http://orlando.cambridge.org/protected/wheel?src_ref=bronch-b.sgm&doc_type=0&&t=0:73> ;
 
 # It looks like we don't need a choice for Family Context 3. Shouldn't there be one, as below JC? - KM
