@@ -43,9 +43,9 @@ cwrc:AnnaLeonowensRaceEthnicityContext      a               cwrc:RaceEthnicityCo
                                             oa:hasBody      cwrc:AnnaLeonowensAnnotationBody ;
                                             oa:hasTarget    cwrc:AnnaLeonowens ;
                                             oa:hasSource    <http://linkToOrlando/AnnaLeonowens> ;
-                                            dc:subject      cwrc:eurasianRaceColour ;
-                                            dc:subject      cwrc:whiteRaceColour ;
-                                            dc:subject      cwrc:whiteRaceEthnicity .
+                                            dcterms:subject      cwrc:eurasianRaceColour ;
+                                            dcterms:subject      cwrc:whiteRaceColour ;
+                                            dcterms:subject      cwrc:whiteRaceEthnicity .
 
 # Note the order of the as:items which matters as the first one is to be the preferred body
 
