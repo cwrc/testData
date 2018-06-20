@@ -59,9 +59,9 @@ cwrc:AnnaLeonowensAnnotationBody    a           oa:Choice ;
 
 cwrc:AnnaLeonowensSnippet    a                   dctypes:Text ;
                             dctypes:description 
-    "\"Although AL herself, in attempting to adopt an unequivocally English identity, 
+    "Although AL herself, in attempting to adopt an unequivocally English identity, 
     implicitly claimed that she was white, . . .  
     evidence suggests that while her father was probably Welsh 
     (he had lived in Middlesex) and presumably white, 
     her mother was quite possibly Eurasian. 
-    If this is the case then AL suppressed her mixed-race origins.\"^^xsd:string .
+    If this is the case then AL suppressed her mixed-race origins."^^xsd:string .
