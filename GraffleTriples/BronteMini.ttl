@@ -32,72 +32,83 @@
 @prefix schema: <http://schema.org/> .
 
 cwrc:CharlotteBronte a cwrc:NaturalPerson ;
+    rdfs:label "Charlotte Bronte" ;
     foaf:name "Charlotte Bronte" ;
     cwrc:hasBrother cwrc:BranwellBronte ;
     cwrc:hasEvent cwrc:CharlotteBronteEvent_1 ;
     cwrc:hasEvent cwrc:CharlotteBronteEvent_2 .
 
 cwrc:BranwellBronte a cwrc:NaturalPerson ;
+    rdfs:label "Patrick Branwell Bronte" ;
     foaf:name "Patrick Branwell Bronte" .
 
 cwrc:MrsRobinson a cwrc:NaturalPerson ;
+    rdfs:label "Mrs. Robinson" ;
     foaf:name "Mrs. Robinson" .
 
 
 cwrc:CharlotteBronteEvent_1 a cwrc:Event ;
+    rdfs:label "Charlotte Bonte Event 1" ;
+    a time:TemporalEntity ;
     time:inXSDDate "1817-06-26"^^xsd:date ;
-    dcterms:description "Patrick Branwell Brontë, the only son of the family, 
-was born: he was known as Branwell."^^xsd:string .
+    dcterms:description "Patrick Branwell Brontë, the only son of the family, was born: he was known as Branwell."^^xsd:string .
 
 cwrc:CharlotteBronteEvent_2 a cwrc:Event ;
+    rdfs:label "Charlotte Bronte Event 2" ;
+    a time:TemporalEntity ;
     time:inXSDDate "1846-1-1"^^xsd:date ;
-    dcterms:description "Branwell Brontë began a downward spiral of drinking, 
-debts, and dissipation that hastened his death."^^xsd:string .
-
-
+    dcterms:description "Branwell Brontë began a downward spiral of drinking, debts, and dissipation that hastened his death."^^xsd:string .
 
 cwrc:CharlotteBronteFamilyContext_1 a cwrc:FamilyContext ;
+    rdfs:label "Charlotte Bronte Family Context 1" ;
     oa:motivatedBy oa:describing ;
-    oa:hasSource <http://orlando.cambridge.org/protected/wheel?src_ref=bronch-b.sgm&doc_type=0&&t=0:14>
+    oa:hasSource <http://orlando.cambridge.org/protected/wheel?src_ref=bronch-b.sgm&doc_type=0&&t=0:14> ;
     oa:hasBody cwrc:CharlotteBronteFamilyContext_1_AnnotationBody ;
     dcterms:subject cwrc:BranwellBronte ;
     oa:hasTarget cwrc:CharlotteBronte .
 
 
 cwrc:CharlotteBronteFamilyContext_1_AnnotationBody a oa:Choice ;
+    rdfs:label "Charlotte Bronte Family Context 1 Annotation Body" ;
     as:items cwrc:CharlotteBronteFamilyContext_1_Snippet ;
     as:items cwrc:BranwellBronte .
 
 cwrc:CharlotteBronteFamilyContext_1_Snippet a dctypes:text ;
+    rdfs:label "Charlotte Bronte Family Context 1 Snippet" ;
     dcterms:description "26 June 1817 Patrick Branwell Brontë, the only son of the family, was born: he was known as Branwell.￼26 June 1817 Patrick Branwell Brontë, the only son of the family, was born: he was known as Branwell.￼ Branwell was an important literary collaborator of his sisters, CB in particular, in their youth."^^xsd:string .
 
 #Please review from here down JC and respond to comments - KM.
 
 cwrc:CharlotteBronteFamilyContext_2 a cwrc:FamilyContext ;
+    rdfs:label "Charlotte Bronte Family Context 2" ;
     oa:motivatedBy oa:describing ;
     oa:hasSource <http://orlando.cambridge.org/protected/wheel?src_ref=bronch-b.sgm&doc_type=0&&t=0:73> ;
     oa:hasBody cwrc:CharlotteBronteFamilyContext_2_AnnotationBody ;
     dcterms:subject cwrc:BranwellBronte ;
-# removed b/c no family relationship    dc:subject cwrc:MrsRobinson ;
+# removed b/c no family relationship    dc:subject cwrc:MrsRobinson ; Graffle needs to be updated. 
     oa:hasTarget cwrc:CharlotteBronte .
 
 cwrc:CharlotteBronteFamilyContext_2_AnnotationBody a oa:Choice ;
+    rdfs:label "Charlotte Bronte Family Context 2 Annotation Body" ;
     as:items cwrc:CharlotteBronteFamilyContext_2_Snippet ;
     as:items cwrc:BranwellBronte .
 # removed b/c no family relationship known    as:items cwrc:MrsRobinson .
 
 cwrc:CharlotteBronteFamilyContext_2_Snippet a dctypes:text ;
+    rdfs:label "Charlotte Bronte Family Context 2 Snippet" ;
     dcterms:description "Autumn 1846 Branwell Brontë began a downward spiral of drinking, debts, and dissipation that hastened his death￼ He despaired of his affair with Mrs Robinson, for whose family he had been tutor and Anne governess. Although persevering in their literary labours and approaches to publishers, his sisters found his decline painful and embarrassing."^^xsd:string .
 
 cwrc:CharlotteBronteFamilyContext_3 a cwrc:FamilyContext ;
+    rdfs:label "Charlotte Bronte Family Context 3" ;
     oa:motivatedBy oa:identifying ;
     oa:hasBody cwrc:CharlotteBronteFamilyContext_3_AnnotationBody ;
     oa:hasTarget cwrc:CharlotteBronte ; #this was MrsRobinson, but we think it should be CB. Is this right JC? - KM
     dcterms:subject cwrc:MrsRobinson ;
-    oa:hasSource <http://orlando.cambridge.org/protected/wheel?src_ref=bronch-b.sgm&doc_type=0&&t=0:73> ;
+    oa:hasSource <http://orlando.cambridge.org/protected/wheel?src_ref=bronch-b.sgm&doc_type=0&&t=0:73> .
 
-# It looks like we don't need a choice for Family Context 3. Shouldn't there be one, as below JC? - KM
+# It looks like we don't need a choice for Family Context 3. Shouldn't there be one, as below JC? - KM - There appears to be one in the Graffle it just points to the same snippet 
 
-#cwrc:CharlotteBronteFamilyContext_3_AnnotationBody a oa:Choice ;  
- #   as:items cwrc:CharlotteBronteFamilyContext_2_Snippet ;
-  #  as:items cwrc:MrsRobinson .
+cwrc:CharlotteBronteFamilyContext_3_AnnotationBody a oa:Choice ;  
+    rdfs:label "Charlotte Bronte Family Context 3 Annotation Body" ;
+    as:items cwrc:CharlotteBronteFamilyContext_2_Snippet ;
+    as:items cwrc:MrsRobinson .

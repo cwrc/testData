@@ -163,9 +163,11 @@
 	time:hasEnd <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventCountyModelSchool_EndDate> .
 
 <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventCountyModelSchool_StartDate> a time:Instant ;
+	rdfs:label "August 30th 1879" ;
 	time:inXSDDate "1879-08-30"^^xsd:date .
 
 <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventCountyModelSchool_EndDate>
+	rdfs:label "1879" ;
 	time:hasEnd 1879 . # If there is an end time (which may/may not be the case here)
 
 <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventTorontoNormalSchool_StartDate> a time:Instant ;
@@ -179,6 +181,7 @@
 	foaf:name "Pauline Johnson"@en .
 
 <http://cwrc.ca/cwrcdata/EPJBirthEvent> a cwrc:BirthEvent ;
+	rdfs:label "March 10th 1861" ;
 	time:inXSDDate "1861-03-10"^^xsd:date ;
 	cwrc:hasLocation cwrc:chiefswood ;
 	cwrc:hasLocation <http://www.geonames.org/6093943> ;
@@ -187,6 +190,7 @@
 	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/EPJBirthEvent> .
 
 <http://cwrc.ca/cwrcdata/PJDomesticEducation> a cwrc:EducationConstruct ;
+	rdfs:label "Pauline Johnson Education" ;
 	cwrc:hasInstructor foaf:emilySusannaJohnson ;
 	cwrc:hasInstructor foaf:smokeJohnson ;
 	cwrc:hasSubjectOfStudy cwrc:JohnMilton ;
@@ -204,6 +208,7 @@
 	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/PJDomesticEducationContext> .
 
 <http://cwrc.ca/cwrcdata/PJInstitutionalEducation> a cwrc:EducationConstruct ;
+	rdfs:label "Pualine Johnson Brantford Collegiate 1875 - 1877" ;
 	time:hasBeginning cwrc:1875 ;
 	time:hasEnding cwrc:june1877 ;
 	cwrc:hasInstitution cwrc:brantfordCollegiateInstitute ;

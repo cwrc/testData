@@ -32,6 +32,7 @@
 @prefix schema: <http://schema.org/> .
 
 cwrc:AnnaLeonowens  a                               cwrc:Person ;
+                    rdfs:label                      "Anna Leonowes" ;
                     cwrc:hasRaceColourReported      cwrc:eurasianRaceColour ;
                     cwrc:hasRaceColourSelfReported  cwrc:whiteRaceColour ;
                     cwrc:hasEthnicity               cwrc:whiteRaceEthnicity .
@@ -39,6 +40,7 @@ cwrc:AnnaLeonowens  a                               cwrc:Person ;
 # This is is the Web Annotation
 
 cwrc:AnnaLeonowensRaceEthnicityContext      a               cwrc:RaceEthnicityContext ;
+                                            rdfs:label      "Anna Leonowens Race Ethnicity Context" ;
                                             oa:motivatedBy  oa:describing ;
                                             oa:hasBody      cwrc:AnnaLeonowensAnnotationBody ;
                                             oa:hasTarget    cwrc:AnnaLeonowens ;
@@ -50,6 +52,7 @@ cwrc:AnnaLeonowensRaceEthnicityContext      a               cwrc:RaceEthnicityCo
 # Note the order of the as:items which matters as the first one is to be the preferred body
 
 cwrc:AnnaLeonowensAnnotationBody    a           oa:Choice ;
+                                    rdfs:label  "Anna Leonowens Annotation Body 1" ;
                                     as:items    cwrc:AnnaLeonowensSnippet ;
                                     as:items    cwrc:eurasianRaceColour ;
                                     as:items    cwrc:whiteRaceColour ;
@@ -58,4 +61,5 @@ cwrc:AnnaLeonowensAnnotationBody    a           oa:Choice ;
 # Text is to be represented as a dc
 
 cwrc:AnnaLeonowensSnippet    a                   dctypes:Text ;
+                            rdfs:label "Annotation Body" ;
                             dctypes:description "Although AL herself, in attempting to adopt an unequivocally English identity, implicitly claimed that she was white, . . .  evidence suggests that while her father was probably Welsh (he had lived in Middlesex) and presumably white, her mother was quite possibly Eurasian. If this is the case then AL suppressed her mixed-race origins."^^xsd:string .
