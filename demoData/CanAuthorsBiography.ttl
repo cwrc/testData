@@ -113,7 +113,7 @@
 <http://cwrc.ca/cwrcdata/SaraJeannetteDuncan> a cwrc:Person ;
 	cwrc:hasEducation cwrc:SJDDomesticEducation ;
 	cwrc:hasEducation cwrc:SJDInstitutionalEducation ;
-	cwrc:hasEvent <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling> 
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling> ;
 	cwrc:hasEvent <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventCountyModelSchool> ;
 	cwrc:hasEvent <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventTorontoNormalSchool> ;
 	foaf:name "Sara Duncan"@en .
@@ -184,8 +184,8 @@
 	prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/EPJBirthEvent> .
 
 <http://cwrc.ca/cwrcdata/PJDomesticEducation> a cwrc:EducationConstruct ;
-	cwrc:hasInstructor foaf:emilySusannaJohnson;
-	cwrc:hasInstructor foaf:smokeJohnson;
+	cwrc:hasInstructor foaf:emilySusannaJohnson ;
+	cwrc:hasInstructor foaf:smokeJohnson ;
 	cwrc:hasSubjectOfStudy cwrc:JohnMilton ;
 	cwrc:hasSubjectOfStudy cwrc:WilliamShakespeare ;
 	cwrc:hasSubjectOfStudy cwrc:GeorgeGordonByron ;
