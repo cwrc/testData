@@ -157,16 +157,19 @@
 # Correctly define the time as an instant which is an XSD Date (ISO8601 format)
 
 <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventCountyModelSchool> a cwrc:EducationalEvent ;
+	a time:TemporalEntity ;
 	rdfs:Label "SJD reluctantly entered Brantford's County Model School." ;
-	<http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventCountyModelSchool_StartDate> a time:Instant ;
+	time:hasBeginning <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventCountyModelSchool_StartDate> ;
+	time:hasEnd <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventCountyModelSchool_EndDate> .
+
+<http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventCountyModelSchool_StartDate> a time:Instant ;
 	time:inXSDDate "1879-08-30"^^xsd:date .
-	#time:hasEnd 1879 . # If there is an end time (which may/may not be the case here)
+
+<http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventCountyModelSchool_EndDate>
+	time:hasEnd 1879 . # If there is an end time (which may/may not be the case here)
 
 <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventTorontoNormalSchool_StartDate> a time:Instant ;
 	time:inXSDDate "1882-01-01"^^xsd:date .
-	cwrc:hasInstitution cwrc:TorontoNormalSchool ;
-	cwrc:hasType cwrc:co-ed cwrc:post-secondary .
-# Orlando indicates SJD earned a degree by June (possibly 1882) - we don't have a predicate for this, as far as I know - KM JC: Correct I don't believe we have anything regarding degrees. 
 
 # Pauline Johnson
 <http://cwrc.ca/cwrcdata/PaulineJohnson> a cwrc:Person ;
@@ -211,7 +214,7 @@
 # JC - Creating Locations for a Geonames location requires creating an instance of GeonamesFeature
 # KM - ok, I understand that but don't know how to do it, or where it should go.
 # JC - It looks we can actually just use the URL -- they have an ontology with all the features in it!
-We can just use cwrc:hasLocation <http://genonames/5964685> as above and we don't need the triples below for location
+# We can just use cwrc:hasLocation <http://genonames/5964685> as above and we don't need the triples below for location
 
 #Institutions go here
 <http://www.cwrc.ca/cwrcdata/VictoriaCollegeUniversityofToronto>
