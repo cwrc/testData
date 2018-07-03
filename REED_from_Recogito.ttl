@@ -1,0 +1,433 @@
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix cnt:   <http://www.w3.org/2011/content#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix pelagios: <http://pelagios.github.io/vocab/terms#> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#c0eb10a5-dc5f-4161-b3fd-d996c57a3b0b>
+        a             oa:Annotation ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@role:French Ambassador"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#420f1d46-455e-4582-8c81-909676af2ab3>
+        a             oa:Annotation ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@n:James I"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#4e966ce2-2923-431f-8baa-4f56776ea8f7>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#a6f2cb28-3b31-42e3-8ce7-94721742faa6>
+        a             oa:Annotation ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@n:Sir Thomas Middleton"
+                      ] ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@role:Lord Mayor of London"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#b2281f4c-4275-4057-af00-f37c62ba0d98>
+        a             oa:Annotation ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@n:Gorhamhury"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#8774e348-377a-40c0-87a8-88343ecc1076>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#a556cdd9-1e7c-42a5-a175-ea63651e651e>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#deca8cac-9d50-4882-9f6c-6dad1ce0f485>
+        a             oa:Annotation ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@role:Venetian Ambassador"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#961d39a1-f717-48ae-8d33-6f53fb3bad7f>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#bc63613d-f977-4542-841f-b5601c37cb66>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#859799f7-d466-40bc-980b-af707f193dfc>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#0cdd04e2-7795-4a29-a77f-3ca44aa672e1>
+        a             oa:Annotation ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@cert:high"
+                      ] ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@resp:KM"
+                      ] ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@n:Katherine Knyvett"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#daf7e943-d246-4fd2-99c4-72c789e5f56f>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#31746c8a-47ca-4957-b634-5322ed0c2bd2>
+        a             oa:Annotation ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@n:Frederick V of the Palatinate"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#4d9e58de-0b8e-4dbb-a458-b2c20824e375>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#91bb00ae-c4f9-46db-9f69-b6c011bc5d20>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#881ea1b2-b85d-4101-bc2d-14aef9c78cb2>
+        a             oa:Annotation ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@n:King James I"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#e8c9527f-e52b-4dbf-92c7-db98f7d132f3>
+        a             oa:Annotation ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@n:London"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#c1fca830-5807-4c2b-8e79-dab31547d73b>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#25edc5ef-f33f-40f1-abbc-7bf2b87f6edc>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#86685d75-b764-4dab-b13e-e4d02b7b26fe>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#74c862cb-4223-4de3-a267-4af34a8d9994>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#f4c58073-ad0b-4ec0-b2ca-6e3649cd11d2>
+        a             oa:Annotation ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@role:ambassadors"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#31f1612e-787b-4196-942d-196620d88f24>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#25c36141-d852-44b1-9a97-6272e34d0d0f>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#eac9464d-c1a1-40a6-a053-f57bd4ef737c>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#da589531-5d73-4e63-880f-026d93d92f21>
+        a             oa:Annotation ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@n:Charles I"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#d89fc2cf-695e-4554-9547-85397eabcdd2>
+        a             oa:Annotation ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@n:St. Albans"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#94dfb812-c129-4e58-8a53-9319f24e87a8>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#9d27335a-f747-4d49-81b1-557d45fd6c73>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#61976b26-812e-44bd-925d-22e57fc24d6a>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#cd47a269-8197-49a3-beb8-f2f78f27a31b>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#e7259f53-f1b1-4f45-b38a-c047fe59145a>
+        a             oa:Annotation ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@n:James I"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#4920cacc-c728-45fc-8d2a-9c1d745d59f8>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#277278fa-2920-4fab-88bd-6f68d32e3c54>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#8cb61fbd-9e42-4181-8ed2-530403aaaff9>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#a03d3858-5dcb-4a20-93b5-8abb5e681918>
+        a             oa:Annotation ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@n:Sir Francis Bacon"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#b6784971-0dee-49a6-b014-607f43b4e268>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#1d40778b-9bf3-4931-9685-4545b61d8b69>
+        a             oa:Annotation ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@n:Merchant Taylors' Hall"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#5f047ae9-d6a7-493d-8406-b7267e4ac5a5>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#c5698ed0-0858-4b7c-98ca-96c80c1e65ab>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#98c084a5-8cc9-4789-9d41-b644f14ebaa4>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#9b4c6104-bcd5-4218-a835-67fc7526fb83>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#57bf6ea9-d960-425a-8855-0d3dd0edc8aa>
+        a             oa:Annotation ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@n:Lady Frances Howard"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#d60cd6b2-50af-4bff-b7ae-3a9abcb0e5cf>
+        a             oa:Annotation ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@n:the Inns of Court"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#3885b528-cb60-42c7-a2fa-928625aaea53>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#57f055c3-7d6f-462a-b3bc-61d2394ab2e4>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#72ba2800-38bf-4b70-aee2-ce4c4ee4fbc1>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#7bdd3106-40fc-4bcf-890b-020107956483>
+        a             oa:Annotation ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@n:Ferdinand de Boiscot"
+                      ] ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@role:ambassador"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#8b0ef706-af0d-4c54-8233-c421e1f5e0ed>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#ca445a47-f78b-4964-b111-a69fd10bcc4e>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#549beb53-193a-4a36-abc1-61cadd9bb0ff>
+        a             oa:Annotation ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@n:James I"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#4ee5b49f-c6a6-4edf-b39a-897ba195e431>
+        a             oa:Annotation ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@n:Sir Henry Yelverton"
+                      ] ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@role:master solicitor"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#3eaa91c0-538f-4dfb-a75e-f535d87a982b>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#5e9bbf29-3b82-45b0-a081-cc7936cc3ab1>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#7d0e9fd9-3703-4d48-abff-f658196034d0>
+        a             oa:Annotation ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@role:Archdukes"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#b05ecfa8-2aea-4d33-9cbc-8d65c69ed55e>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#ebb5043d-d941-4e67-be48-94a5f180bf66>
+        a             oa:Annotation ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@n:Elizabeth Stuart, Queen of Bohemia"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#3525869b-c421-4252-ad39-830329d5c997>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#187762b8-9117-4df5-bf1a-33c6f870c0ea>
+        a             oa:Annotation ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@n:Anne of Denmark"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#f8e2d5ca-5ca2-4d0d-9fd9-0c2a180fdf56>
+        a             oa:Annotation ;
+        oa:hasBody    <http://mapoflondon.uvic.ca/CHEA2.htm> ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        dcterms:creator  "kimmartin" ;
+                        cnt:chars        "@n:Cheapside"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#3be2451c-78a0-4ef2-a557-95501fa5d787>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#428f0652-d2f4-4a2c-a289-b488bc6ed0c5>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#e516f246-1536-4810-a08c-e43761f14317>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre>
+        a                pelagios:AnnotatedThing ;
+        dcterms:creator  "KM" ;
+        dcterms:date     "June 25th, 2018" ;
+        dcterms:title    "REED test file" .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#83fcb720-3c38-4703-b99a-30d4019aada9>
+        a             oa:Annotation ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@cert:high"
+                      ] ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@resp:KM"
+                      ] ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@n:Thomas Howard, first earl of Suffolk"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#90661289-fbc7-445e-ac95-72b647a8af04>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#34893d9e-e1bb-44d6-8440-e05e226bc984>
+        a             oa:Annotation ;
+        oa:hasBody    <http://pleiades.stoa.org/places/442469> ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#1b34c2e4-694e-4705-85fd-16072743c232>
+        a             oa:Annotation ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@cert:medium"
+                      ] ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@resp:KM"
+                      ] ;
+        oa:hasBody    [ a                oa:Tag ;
+                        dcterms:created  "2018-06-25T15:13:49+00:00" ;
+                        cnt:chars        "@n:Sir Ralph Winwood"
+                      ] ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#93fbf7bd-972d-4da9-97e8-9c1ea8e6342f>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
+
+<https://recogito.pelagios.org/document/oii8jeziywkmre#a3c82659-a955-48cf-953d-ea39a19dc95a>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/oii8jeziywkmre> .
