@@ -1,0 +1,309 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix locl: <http://id.loc.gov/vocabulary/languages/> .
+@prefix mil: <http://rdf.muninn-project.org/ontologies/military#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rel: <http://purl.org/vocab/relationship/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix frbr: <http://purl.org/vocab/frbr/core> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix schema: <http://schema.org/> .
+
+# VIRGINIA WOOLF
+<http://www.cwrc.ca/cwrcdata/VirginiaWoolf>
+    cwrc:hasSocialClassSelfReported cwrc:professional ;
+    cwrc:hasReligion cwrc:societyOfFriends, cwrc:quakers, cwrc:agnosticism , cwrc:evangelical ;
+    cwrc:hasNationality cwrc:englishNationality ;
+    cwrc:hasSexualitySelfReported cwrc:bisexual ;
+    a foaf:Person ;
+    foaf:name "Virginia Woolf" .
+
+<http://www.cwrc.ca/cwrcdata/VirginiaWoolf_CulturalFormContext1>
+    a cwrc:CulturalFormContext ;
+    rdfs:label "Cultural Form Context for Virginia Woolf"@en ;
+    oa:hasBody [
+        a oa:TextualBody ;
+        rdf:value """http://www.cwrc.ca/cwrcdata/VirginiaWoolf cwrc:hasSocialClassSelfReported cwrc:professional;
+        cwrc:hasReligion cwrc:societyOfFriends;
+        cwrc:hasReligion cwrc:quakers;
+        cwrc:hasReligion cwrc:agnosticism; cwrc:hasReligion cwrc:evangelical"""^^xsd:string ;
+        dcterms:format "text/turtle"^^xsd:string
+    ] ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
+    prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/virginiaWoolf1> .
+
+<http://www.cwrc.ca/cwrcdata/VirginiaWoolf_SexualityContext1>
+    a cwrc:SexualityContext ;
+    rdfs:label "Sexuality Context for Virginia Woolf"@en ;
+    oa:hasBody  [
+      a oa:TextualBody ;
+      rdf:value "http://www.cwrc.ca/cwrcdata/VirginiaWoolf cwrc:hasSexualitySelfReported cwrc:bisexual"^^xsd:string ;
+      dcterms:format "text/turtle"^^xsd:string
+    ] ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
+    prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/virginiaWoolf1> .
+
+    <http://www.cwrc.ca/cwrcdata/VirginiaWoolf_NationalityContext1>
+    a cwrc:NationalityContext ;
+    rdfs:label "Nationality Context for Virginia Woolf"@en ;
+    oa:hasBody [
+      a oa:TextualBody ;
+      rdf:value "http://www.cwrc.ca/cwrcdata/VirginiaWoolf cwrc:hasNationality cwrc:english"^^xsd:string ;
+      dcterms:format "text/turtle"^^xsd:string
+    ] ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
+    prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/virginiaWoolf1> .
+
+<http://www.cwrc.ca/cwrcdata/virginia_Woolf_Main_Document>
+    a foaf:Document;
+    rdfs:label "Orlando Markup on Virginia Woolf"@en ;
+    dcterms:creator cwrc:originalOrlandoAuthor .
+
+# VITA SACKVILLE-WEST
+<http://www.cwrc.ca/cwrcdata/VitaSackvilleWest>
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasSocialClass cwrc:nobility ;
+    cwrc:hasNationalHeritageSelfReported cwrc:spanish ;
+    cwrc:hasEthnicitySelfReported cwrc:gipsy ;
+    cwrc:hasNationalHeritageSelfReported cwrc:english ;
+    cwrc:hasSexualitySelfReported cwrc:bisexual ;
+    cwrc:hasSexualitySelfReported cwrc:lesbian ;
+    a foaf:Person ;
+    foaf:name "Vita Sackville-West" .
+
+<http://www.cwrc.ca/cwrcdata/VitaSackvilleWest_SocialClassContext1>
+    a cwrc:SocialClassContext ;
+    rdfs:label "Social Class Context for Vita Sackville-West"@en ;
+    oa:hasBody [
+      a oa:TextualBody ;
+      rdf:value "http://www.cwrc.ca/cwrcdata/VirginiaWoolf cwrc:hasSocialClass cwrc:nobility"^^xsd:string ;
+      dcterms:format "text/turtle"^^xsd:string
+    ] ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+    prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/vitaSackvilleWest1> .
+
+  <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest_RaceEthnicityContext1>
+    a cwrc:RaceEthnicityContext ;
+    rdfs:label "Race Ethnicity Context for Vita Sackville-West"@en ;
+    oa:hasBody [
+      a oa:TextualBody ;
+      rdf:value """<http://www.cwrc.ca/cwrcdata/VirginiaWoolf> cwrc:hasNationalHeritageSelfReported cwrc:spanish;
+      cwrc:hasNationalHeritageSelfReported cwrc:english;
+      cwrc:hasEthnicitySelfReported cwrc:gipsy"""^^xsd:string ;
+      dcterms:format "text/turtle"^^xsd:string
+        ] ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+    prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/vitaSackvilleWest1> .
+
+<http://www.cwrc.ca/cwrcdata/VitaSackvilleWest_SexualityContext1>
+    a cwrc:SexualityContext ;
+    rdfs:label "Sexuality Context for Vita Sackville-West"@en ;
+    oa:hasBody [
+      a oa:TextualBody ;
+      rdf:value "http://www.cwrc.ca/cwrcdata/VirginiaWoolf cwrc:hasSexualitySelfReported cwrc:bisexual; cwrc:hasSexualitySelfReported cwrc:lesbian"^^xsd:string ;
+      dcterms:format "text/turtle"^^xsd:string
+    ] ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+    prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/vitaSackvilleWest1> .
+
+<http://www.cwrc.ca/cwrcdata/vita_Sackville_West_Main_Document>
+    a foaf:Document;
+    rdfs:label "Orlando Markup on Vita Sackville-West"@en ;
+    dcterms:creator cwrc:originalOrlandoAuthor .
+
+#MAY CANNON
+<http://www.cwrc.ca/cwrcdata/MayCannan>
+    cwrc:hasSocialClass cwrc:professional ;
+    cwrc:hasNationalHeritage cwrc:Scotland ;
+    cwrc:hasGeographicHeritage cwrc:Scotland ;
+    a foaf:Person ;
+    foaf:name "May Cannan" .
+
+<http://www.cwrc.ca/cwrcdata/MayCannan_CulturalFormContext>
+    a cwrc:CulturalFormContext ;
+    rdfs:label "Cultural Form Context for May Cannan"@en ;
+    oa:hasBody[
+      a oa:TextualBody ;
+      rdf:value """http://www.cwrc.ca/cwrcdata/MayCannan cwrc:hasSocialClass cwrc:professional;
+      cwrc:hasNationalHeritage cwrc:Scotland ;
+      cwrc:hasGeographicHeritage cwrc:Scotland"""^^xsd:string ;
+      dcterms:format "text/turtle"^^xsd:string
+    ] ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/MayCannan> ;
+    prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/mayCannan1> .
+
+<http://www.cwrc.ca/cwrcdata/may_Cannan_Main_Document>
+    a foaf:Document;
+    rdfs:label "Orlando Markup on May Cannan"@en ;
+    dcterms:creator cwrc:originalOrlandoAuthor .
+
+#CHRISTINAROSSETTI
+<http://www.cwrc.ca/cwrcdata/ChristinaRossetti>
+    cwrc:hasNationalHeritageSelfReported cwrc:Italy ;
+    cwrc:hasNationalitySelfReported cwrc:England ;
+    cwrc:hasNationalHeritage cwrc:England ;
+    cwrc:hasSocialClass cwrc:professional ;
+    cwrc:hasReligion cwrc:romanCatholic ;
+    cwrc:hasReligionSelfDefined cwrc:anglicanism ;
+    cwrc:hasReligionSelfDefined cwrc:anglicanism ;
+    a foaf:Person ;
+    foaf:name "Christina Rossetti" .
+
+<http://www.cwrc.ca/cwrcdata/christina_Rossetti_Main_Document>
+    a foaf:Document;
+    rdfs:label "Orlando Markup on Christina Rossetti"@en ;
+    dcterms:creator cwrc:originalOrlandoAuthor .
+
+#GERTRUDE STEIN
+<http://www.cwrc.ca/cwrcdata/GertrudeStein>
+    cwrc:hasNationalHeritageSelfReported cwrc:american ;
+    cwrc:hasSocialClassSelfReported cwrc:middleClass ;
+    cwrc:hasEthnicitySelfReported cwrc:jewish ;
+    cwrc:hasRaceColourSelfReported cwrc:white ;
+    cwrc:hasReligionSelfReported cwrc:Judaism ;
+    cwrc:hasGeographicHeritageSelfReported cwrc:Germany ;
+    cwrc:hasSexualitySelfReported cwrc:lesbian ;
+    cwrc:hasSexualityReported cwrc:lesbian ;
+    a foaf:Person ;
+    foaf:name "Gertrude Stein" .
+
+<http://www.cwrc.ca/cwrcdata/gertrude_Stein_Main_Document>
+    a foaf:Document;
+    rdfs:label "Orlando Markup on Gertrude Stein"@en ;
+    dcterms:creator cwrc:originalOrlandoAuthor .
+
+#ANNA Leonowens
+<http://www.cwrc.ca/cwrcdata/AnnaLeonowens>
+    cwrc:hasNationalitySelfReported cwrc:english ;
+    cwrc:hasRaceColourSelfDeclared cwrc:whiteRaceColour ;
+    cwrc:hasNationalHeritage cwrc:welsh ;
+    cwrc:hasRaceColour cwrc:eurasianRaceColour ;
+    cwrc:hasNativeLinguisticAbility locl:hin ;
+    cwrc:hasNativeLinguisticAbility locl:eng ;
+    cwrc:hasNativeLinguisticAbility locl:guj ;
+    cwrc:hasNativeLinguisticAbility locl:guj ;
+    cwrc:hasLinguisticAbility locl:san ;
+    cwrc:hasLinguisticAbility locl:fre ;
+    cwrc:hasLinguisticAbility locl:thai ;
+    cwrc:hasLinguisticAbility locl:mal ;
+    cwrc:hasLinguisticAbility locl:ara ;
+    cwrc:hasLinguisticAbility locl:per ;
+    cwrc:hasLinguisticAbility locl:lat ;
+    cwrc:hasLinguisticAbility locl:pal ;
+    cwrc:hasLinguisticAbility locl:rus ;
+    cwrc:hasReligion cwrc:presbyterian ;
+    cwrc:hasReligion cwrc:hinduism ;
+    cwrc:hasReligion cwrc:huddhism ;
+    a foaf:Person ;
+    foaf:name "Anna Leonowens" .
+
+#ANNIE TINSLEY
+<http://www.cwrc.ca/cwrcdata/AnnieTinsley>
+    cwrc:hasSocialClass cwrc:professional ;
+    cwrc:hasGeographicHeritage cwrc:lancashire ;
+    cwrc:hasNationalHeritage cwrc:scotland ;
+    cwrc:hasPoliticalAffiliation cwrc:jacobites ;
+    cwrc:hasReligionSelfReported cwrc:romanCatholic ;
+    cwrc:hasReligion cwrc:anglican ;
+    a foaf:Person ;
+    foaf:name "Annie Tinsley" .
+
+<http://www.cwrc.ca/cwrcdata/annie_Tinsley_Main_Document>
+        a foaf:Document;
+        rdfs:label "Orlando Markup on Annie Tinsley"@en ;
+        dcterms:creator cwrc:originalOrlandoAuthor .
+
+#UNA MARSON
+<http://www.cwrc.ca/cwrcdata/UnaMarson>
+    cwrc:hasSocialClassSelfReported cwrc:professional ;
+    cwrc:hasReligion cwrc:baptist ;
+    cwrc:hasGeogHeritage cwrc:jamaican ;
+    cwrc:hasGeographicHeritageReported cwrc:ireland ;
+    cwrc:hasRaceColourReported cwrc:whiteRaceColour ;
+    cwrc:hasGeographicHeritageSelfReported cwrc:africa ;
+    cwrc:hasRaceColourSelfReported cwrc:blackRaceColour ;
+    cwrc:hasEthnicity cwrc:westIndian ;
+    cwrc:hasNationalHeritage cwrc:jamaica ;
+    cwrc:hasNationalitySelfReported cwrc:jamaican ;
+    a foaf:Person ;
+    foaf:name "Una Marson" .
+
+<http://www.cwrc.ca/cwrcdata/una_Marson_Main_Document>
+    a foaf:Document;
+    rdfs:label "Orlando Markup on Una Marson"@en ;
+    dcterms:creator cwrc:originalOrlandoAuthor .
+
+#ETHEL LIIAN VOYNICH
+<http://www.cwrc.ca/cwrcdata/EthelLilianVoynich>
+    cwrc:hasNationalitySelfReported cwrc:English ;
+    cwrc:hasNationalityReported cwrc:irish ;
+    cwrc:hasSexuality cwrc:heterosexual ;
+    a foaf:Person ;
+    foaf:name "Ethel Lilian Voynich" .
+
+<http://www.cwrc.ca/cwrcdata/ethel_Voynich_Main_Document>
+    a foaf:Document;
+    rdfs:label "Orlando Markup on Ethel Lilian Voynich"@en ;
+    dcterms:creator cwrc:originalOrlandoAuthor .
+
+#NAOMI MITCHISON
+<http://www.cwrc.ca/cwrcdata/NaomiMitchison>
+    cwrc:hasNationalitySelfReported cwrc:scot ;
+    cwrc:hasEthnicityReported cwrc:jewish ;
+    a foaf:Person ;
+    foaf:name "Naomi Mitchison" .
+
+<http://www.cwrc.ca/cwrcdata/naomi_Mitchison_Main_Document>
+    a foaf:Document;
+    rdfs:label "Orlando Markup on Naomi Mitchison"@en ;
+    dcterms:creator cwrc:originalOrlandoAuthor .
+
+#ALICE MEYNELL
+<http://www.cwrc.ca/cwrcdata/AliceMeynell>
+    cwrc:hasSocialClass cwrc:gentry ;
+    cwrc:hasSocialClass cwrc:professional ;
+    cwrc:hasEthnicity cwrc:jamaican ;
+    cwrc:hasRaceColour cwrc:whiteRaceColour ;
+    cwrc:hasNationalitySelfReported cwrc:english ;
+    cwrc:hasReligion cwrc:anglicanism ;
+    cwrc:hasReligionSelfReported  cwrc:romanCatholic ;
+    a foaf:person ;
+    foaf:name "Alice Meynell" .
+
+<http://www.cwrc.ca/cwrcdata/alice_Meynell_Main_Document>
+    a foaf:Document;
+    rdfs:label "Orlando Markup on Alice Meynell"@en ;
+    dcterms:creator cwrc:originalOrlandoAuthor .
+
+#EDITH SITWELL
+<http://www.cwrc.ca/cwrcdata/EdithSitwell>
+    cwrc:hasSocialClassReported cwrc:nobility ;
+    cwrc:hasReligionSelfReported cwrc:neothomism ;
+    a foaf:Person ;
+    foaf:name "Edith Sitwell" .
+
+<http://www.cwrc.ca/cwrcdata/edith_Sitwell_Main_Document>
+    a foaf:Document;
+    rdfs:label "Orlando Markup on Edith Sitwell"@en ;
+    dcterms:creator cwrc:originalOrlandoAuthor .
