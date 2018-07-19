@@ -41,14 +41,34 @@
 
 <http://www.cwrc.ca/cwrcdata/VirginiaWoolf_CulturalFormContext1>
     a cwrc:CulturalFormContext ;
+    
     rdfs:label "Cultural Form Context for Virginia Woolf"@en ;
+    # We will use Separate Body elements for each triple we want to annotate to make it
+    # easier to search due to its granularity
     oa:hasBody [
-        a oa:TextualBody ;
-        rdf:value """http://www.cwrc.ca/cwrcdata/VirginiaWoolf cwrc:hasSocialClassSelfReported cwrc:professional;
-        cwrc:hasReligion cwrc:societyOfFriends;
-        cwrc:hasReligion cwrc:quakers;
-        cwrc:hasReligion cwrc:agnosticism; cwrc:hasReligion cwrc:evangelical"""^^xsd:string ;
-        dcterms:format "text/turtle"^^xsd:string
+    	a oa:TextualBody ;
+    	rdf:value "http://www.cwrc.ca/cwrcdata/VirginiaWoolf_cwrc:hasSocialClassSelfReported_cwrc:professional"^^xsd:string ;
+    	dcterms:format "text/turtle"^^xsd:string ;
+    ] ;
+    oa:hasBody [
+    	a oa:TextualBody ;
+    	rdf:value "http://www.cwrc.ca/cwrcdata/VirginiaWoolf_cwrc:hasReligion_cwrc:societyOfFriends"^^xsd:string ;
+    	dcterms:format "text/turtle"^^xsd:string ;
+    ] ;
+    oa:hasBody [
+    	a oa:TextualBody ;
+    	rdf:value "http://www.cwrc.ca/cwrcdata/VirginiaWoolf_cwrc:hasReligion_cwrc:quakers"^^xsd:string ;
+    	dcterms:format "text/turtle"^^xsd:string ;
+    ] ;
+    oa:hasBody [
+    	a oa:TextualBody ;
+    	rdf:value "http://www.cwrc.ca/cwrcdata/VirginiaWoolf_cwrc:hasReligion_cwrc:agnosticism"^^xsd:string ;
+    	dcterms:format "text/turtle"^^xsd:string ;
+    ] ;
+    oa:hasBody [
+    	a oa:TextualBody ;
+    	rdf:value "http://www.cwrc.ca/cwrcdata/VirginiaWoolf_cwrc:hasReligion_cwrc:evangelical"^^xsd:string ;
+    	dcterms:format "text/turtle"^^xsd:string ;
     ] ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
     prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/virginiaWoolf1> .
