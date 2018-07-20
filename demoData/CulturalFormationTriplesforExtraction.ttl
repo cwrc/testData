@@ -14,6 +14,7 @@
 @prefix mil: <http://rdf.muninn-project.org/ontologies/military#> .
 @prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -33,8 +34,9 @@
 # VIRGINIA WOOLF
 <http://www.cwrc.ca/cwrcdata/VirginiaWoolf>
     cwrc:hasSocialClassSelfReported cwrc:professional ;
-    cwrc:hasReligion cwrc:societyOfFriends, cwrc:quakers, cwrc:agnosticism , cwrc:evangelical ;
-    cwrc:hasNationality cwrc:englishNationality ;
+    org:memberOf cwrc:societyOfFriends;
+    cwrc:hasReligion cwrc:quakers, cwrc:agnosticism , cwrc:evangelical ;
+    cwrc:hasNationality "GB-ENG"^^xsd:string ; 
     cwrc:hasSexualitySelfReported cwrc:bisexual ;
     a foaf:Person ;
     foaf:name "Virginia Woolf" .
@@ -50,7 +52,7 @@
     ] ;
     oa:hasBody [
     	a oa:TextualBody ;
-    	rdf:value "http://www.cwrc.ca/cwrcdata/VirginiaWoolf cwrc:hasReligion cwrc:societyOfFriends"^^xsd:string ;
+    	rdf:value "http://www.cwrc.ca/cwrcdata/VirginiaWoolf org:memberOf cwrc:societyOfFriends"^^xsd:string ;
     	dcterms:format "text/turtle"^^xsd:string ;
     ] ;
     oa:hasBody [
@@ -150,7 +152,7 @@
       rdf:value "http://www.cwrc.ca/cwrcdata/VirginiaWoolf cwrc:hasSexualitySelfReported cwrc:bisexual"^^xsd:string ;
       dcterms:format "text/turtle"^^xsd:string ;
     ] ;
-    oa:hasBody
+    oa:hasBody [
       a oa:TextualBody ;
       rdf:value "http://www.cwrc.ca/cwrcdata/VirginiaWoolf cwrc:hasSexualitySelfReported cwrc:lesbian"^^xsd:string ;
       dcterms:format "text/turtle"^^xsd:string ;
@@ -177,7 +179,7 @@
     oa:hasBody[
       a oa:TextualBody ;
       rdf:value "http://www.cwrc.ca/cwrcdata/MayCannan cwrc:hasSocialClass cwrc:professional"^^xsd:string ;
-      cwrc:hasGeographicHeritage cwrc:Scotland"""^^xsd:string ;
+      cwrc:hasGeographicHeritage cwrc:Scotland ;
       dcterms:format "text/turtle"^^xsd:string ;
     ] ;
     oa:hasBody[
@@ -204,8 +206,8 @@
     cwrc:hasNationalitySelfReported cwrc:England ;
     cwrc:hasNationalHeritage cwrc:England ;
     cwrc:hasSocialClass cwrc:professional ;
-    cwrc:hasReligion cwrc:romanCatholic ;
-    cwrc:hasReligionSelfDefined cwrc:anglicanism ;
+    cwrc:hasReligion cwrc:catholicism ;
+    cwrc:hasReligionSelfReported cwrc:anglicanism ;
     a foaf:Person ;
     foaf:name "Christina Rossetti" .
 
@@ -235,12 +237,12 @@
     ] ;
     oa:hasBody [
       a oa:TextualBody ;
-      rdf:value "http://www.cwrc.ca/cwrcdata/ChristinaRossetti cwrc:hasReligion cwrc:romanCatholic"^^xsd:string ;
+      rdf:value "http://www.cwrc.ca/cwrcdata/ChristinaRossetti cwrc:hasReligion cwrc:catholicism"^^xsd:string ;
       dcterms:format "text/turtle"^^xsd:string ;
     ] ;
     oa:hasBody [
       a oa:TextualBody ;
-      rdf:value "http://www.cwrc.ca/cwrcdata/ChristinaRossetti cwrc:hasReligionSelfDefined cwrc:anglicanism"^^xsd:string ;
+      rdf:value "http://www.cwrc.ca/cwrcdata/ChristinaRossetti cwrc:hasReligionSelfReported cwrc:anglicanism"^^xsd:string ;
       dcterms:format "text/turtle"^^xsd:string ;
     ] ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/ChristinaRossetti> ;
@@ -257,7 +259,7 @@
     cwrc:hasSocialClassSelfReported cwrc:middleClass ;
     cwrc:hasEthnicitySelfReported cwrc:jewish ;
     cwrc:hasRaceColourSelfReported cwrc:white ;
-    cwrc:hasReligionSelfReported cwrc:Judaism ;
+    cwrc:hasReligionSelfReported cwrc:judaism ;
     cwrc:hasGeographicHeritageSelfReported cwrc:germany ;
     cwrc:hasSexualitySelfReported cwrc:lesbian ;
     cwrc:hasSexualityReported cwrc:lesbian ;
@@ -295,7 +297,7 @@
     ] ;
     oa:hasBody [
       a oa:TextualBody ;
-      rdf:value "http://www.cwrc.ca/cwrcdata/GertrudeStein cwrc:hasReligionSelfReported cwrc:Judaism"^^xsd:string ;
+      rdf:value "http://www.cwrc.ca/cwrcdata/GertrudeStein cwrc:hasReligionSelfReported cwrc:judaism"^^xsd:string ;
       dcterms:format "text/turtle"^^xsd:string ;
     ] ;
     oa:hasBody [
@@ -422,9 +424,9 @@
     cwrc:hasSocialClass cwrc:professional ;
     cwrc:hasGeographicHeritage cwrc:lancashire ;
     cwrc:hasNationalHeritage cwrc:scotland ;
-    cwrc:hasPoliticalAffiliation cwrc:jacobites ;
-    cwrc:hasReligionSelfReported cwrc:romanCatholic ;
-    cwrc:hasReligion cwrc:anglican ;
+    cwrc:hasPoliticalAffiliation cwrc:jacobitism ;
+    cwrc:hasReligionSelfReported cwrc:catholicism ;
+    cwrc:hasReligion cwrc:aismnglican ;
     a foaf:Person ;
     foaf:name "Annie Tinsley" .
 
@@ -449,17 +451,17 @@
     ] ;
     oa:hasBody [
       a oa:TextualBody ;
-      rdf:value "http://www.cwrc.ca/cwrcdata/AnnieTinsley cwrc:hasPoliticalAffiliation cwrc:jacobites"^^xsd:string ;
+      rdf:value "http://www.cwrc.ca/cwrcdata/AnnieTinsley cwrc:hasPoliticalAffiliation cwrc:jacobitism"^^xsd:string ;
       dcterms:format "text/turtle"^^xsd:string ;
     ] ;
     oa:hasBody [
       a oa:TextualBody ;
-      rdf:value "http://www.cwrc.ca/cwrcdata/AnnieTinsley cwrc:hasReligionSelfReported cwrc:romanCatholic"^^xsd:string ;
+      rdf:value "http://www.cwrc.ca/cwrcdata/AnnieTinsley cwrc:hasReligionSelfReported cwrc:catholicism"^^xsd:string ;
       dcterms:format "text/turtle"^^xsd:string ;
     ] ;
     oa:hasBody [
       a oa:TextualBody ;
-      rdf:value "http://www.cwrc.ca/cwrcdata/AnnieTinsley cwrc:hasReligion cwrc:anglican"^^xsd:string ;
+      rdf:value "http://www.cwrc.ca/cwrcdata/AnnieTinsley cwrc:hasReligion cwrc:anglicanism"^^xsd:string ;
       dcterms:format "text/turtle"^^xsd:string ;
     ] ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnieTinsley> ;
@@ -474,12 +476,12 @@
 <http://www.cwrc.ca/cwrcdata/UnaMarson>
     cwrc:hasSocialClassSelfReported cwrc:professional ;
     cwrc:hasReligion cwrc:baptist ;
-    cwrc:hasGeogHeritage cwrc:jamaican ;
+    cwrc:hasGeographicHeritage cwrc:jamaican ;
     cwrc:hasGeographicHeritageReported cwrc:ireland ;
     cwrc:hasRaceColourReported cwrc:whiteRaceColour ;
     cwrc:hasGeographicHeritageSelfReported cwrc:africa ;
     cwrc:hasRaceColourSelfReported cwrc:blackRaceColour ;
-    cwrc:hasEthnicity cwrc:westIndian ;
+    cwrc:hasEthnicity cwrc:westIndianEthnicity ;
     cwrc:hasNationalHeritage cwrc:jamaica ;
     cwrc:hasNationalitySelfReported cwrc:jamaican ;
     a foaf:Person ;
@@ -501,7 +503,7 @@
     ] ;
     oa:hasBody [
       a oa:TextualBody ;
-      rdf:value "http://www.cwrc.ca/cwrcdata/UnaMarson cwrc:hasGeogHeritage cwrc:jamaican"^^xsd:string ;
+      rdf:value "http://www.cwrc.ca/cwrcdata/UnaMarson cwrc:hasGeographicHeritage cwrc:jamaican"^^xsd:string ;
       dcterms:format "text/turtle"^^xsd:string ;
     ] ;
     oa:hasBody [
@@ -526,7 +528,7 @@
     ] ;
     oa:hasBody [
       a oa:TextualBody ;
-      rdf:value "http://www.cwrc.ca/cwrcdata/UnaMarson cwrc:hasEthnicity cwrc:westIndian"^^xsd:string ;
+      rdf:value "http://www.cwrc.ca/cwrcdata/UnaMarson cwrc:hasEthnicity cwrc:westIndianEthnicity"^^xsd:string ;
       dcterms:format "text/turtle"^^xsd:string ;
     ] ;
     oa:hasBody [
@@ -615,11 +617,11 @@
 <http://www.cwrc.ca/cwrcdata/AliceMeynell>
     cwrc:hasSocialClass cwrc:gentry ;
     cwrc:hasSocialClass cwrc:professional ;
-    cwrc:hasEthnicity cwrc:jamaican ;
+    cwrc:hasEthnicity cwrc:jamaicanEthnicity ;
     cwrc:hasRaceColour cwrc:whiteRaceColour ;
     cwrc:hasNationalitySelfReported cwrc:english ;
     cwrc:hasReligion cwrc:anglicanism ;
-    cwrc:hasReligionSelfReported  cwrc:romanCatholic ;
+    cwrc:hasReligionSelfReported  cwrc:catholicism ;
     a foaf:person ;
     foaf:name "Alice Meynell" .
 
@@ -639,7 +641,7 @@
     ] ;
     oa:hasBody [
       a oa:TextualBody ;
-      rdf:value "http://www.cwrc.ca/cwrcdata/AliceMeynell cwrc:hasEthnicity cwrc:jamaican"^^xsd:string ;
+      rdf:value "http://www.cwrc.ca/cwrcdata/AliceMeynell cwrc:hasEthnicity cwrc:jamaicanEthnicity"^^xsd:string ;
       dcterms:format "text/turtle"^^xsd:string ;
     ] ;
     oa:hasBody [
@@ -659,7 +661,7 @@
     ] ;
     oa:hasBody [
       a oa:TextualBody ;
-      rdf:value "http://www.cwrc.ca/cwrcdata/AliceMeynell cwrc:hasReligionSelfReported  cwrc:romanCatholic"^^xsd:string ;
+      rdf:value "http://www.cwrc.ca/cwrcdata/AliceMeynell cwrc:hasReligionSelfReported  cwrc:catholicism"^^xsd:string ;
       dcterms:format "text/turtle"^^xsd:string ;
     ] ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AliceMeynell> ;
@@ -673,7 +675,7 @@
 #EDITH SITWELL
 <http://www.cwrc.ca/cwrcdata/EdithSitwell>
     cwrc:hasSocialClassReported cwrc:nobility ;
-    cwrc:hasReligionSelfReported cwrc:neothomism ;
+    cwrc:hasReligionSelfReported cwrc:neo-Thomism ;
     a foaf:Person ;
     foaf:name "Edith Sitwell" .
 
@@ -702,6 +704,6 @@
     prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/edithSitwell2> .
 
 <http://www.cwrc.ca/cwrcdata/edith_Sitwell_Main_Document>
-    a foaf:Document;
+    a foaf:Document ;
     rdfs:label "Orlando Markup on Edith Sitwell"@en ;
     dcterms:creator cwrc:originalOrlandoAuthor .
