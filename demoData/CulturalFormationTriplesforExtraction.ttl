@@ -88,7 +88,7 @@
     oa:hasBody [
       a oa:TextualBody ;
       rdf:value "http://www.cwrc.ca/cwrcdata/VirginiaWoolf cwrc:hasNationality cwrc:english"^^xsd:string ;
-      dcterms:format "text/turtle"^^xsd:string
+      dcterms:format "text/turtle"^^xsd:string ;
     ] ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
     prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/virginiaWoolf1> .
@@ -116,7 +116,7 @@
     oa:hasBody [
       a oa:TextualBody ;
       rdf:value "http://www.cwrc.ca/cwrcdata/VirginiaWoolf cwrc:hasSocialClass cwrc:nobility"^^xsd:string ;
-      dcterms:format "text/turtle"^^xsd:string
+      dcterms:format "text/turtle"^^xsd:string ;
     ] ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
     prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/vitaSackvilleWest1> .
@@ -127,12 +127,12 @@
     oa:hasBody [
       a oa:TextualBody ;
       rdf:value "<http://www.cwrc.ca/cwrcdata/VirginiaWoolf> cwrc:hasNationalHeritageSelfReported cwrc:spanish;"^^xsd:string ;
-      dcterms:format "text/turtle"^^xsd:string
+      dcterms:format "text/turtle"^^xsd:string ;
     ] ;
     oa:hasBody [
       a oa:TextualBody ;
       rdf:value "<http://www.cwrc.ca/cwrcdata/VirginiaWoolf> cwrc:hasNationalHeritageSelfReported cwrc:english;"^^xsd:string ;
-      dcterms:format "text/turtle"^^xsd:string
+      dcterms:format "text/turtle"^^xsd:string ;
     ] ;
     oa:hasBody [
       a oa:TextualBody ;
@@ -176,18 +176,18 @@
     rdfs:label "Cultural Form Context for May Cannan"@en ;
     oa:hasBody[
       a oa:TextualBody ;
-      rdf:value "http://www.cwrc.ca/cwrcdata/MayCannan cwrc:hasSocialClass cwrc:professional"^^xsd:string
+      rdf:value "http://www.cwrc.ca/cwrcdata/MayCannan cwrc:hasSocialClass cwrc:professional"^^xsd:string ;
       cwrc:hasGeographicHeritage cwrc:Scotland"""^^xsd:string ;
       dcterms:format "text/turtle"^^xsd:string ;
     ] ;
     oa:hasBody[
       a oa:TextualBody ;
-      rdf:value "http://www.cwrc.ca/cwrcdata/MayCannan cwrc:hasNationalHeritage cwrc:scotland"^^xsd:string
+      rdf:value "http://www.cwrc.ca/cwrcdata/MayCannan cwrc:hasNationalHeritage cwrc:scotland"^^xsd:string ;
       dcterms:format "text/turtle"^^xsd:string ;
     ] ;
     oa:hasBody[
       a oa:TextualBody ;
-      rdf:value "http://www.cwrc.ca/cwrcdata/MayCannan cwrc:hasNationalHeritage cwrc:scotland"^^xsd:string
+      rdf:value "http://www.cwrc.ca/cwrcdata/MayCannan cwrc:hasNationalHeritage cwrc:scotland"^^xsd:string ;
       dcterms:format "text/turtle"^^xsd:string ;
     ] ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/MayCannan> ;
