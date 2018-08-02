@@ -13,7 +13,7 @@ cwrc:anno1 a cwrc:InstitutionalEducationContext ;
 	oa:hasBody gn:6167865 ;
 
 cwrc:Orlando_Atwood_EducationSnippet a oa:TextualBody ;
-	rdfs:label "Atwood Education Source" ;
+	rdfs:label "Margaret Atwood Source Excerpt" ;
 	oa:hasSource <http://orlando.cambridge.org/protected/sv/People?people_tab=3&formname=r&person_id=atwoma#Education> ;
 	dcterms:description "She attended elementary school, and then form 1952 Leaside High School in Toronto, both in the Protestatn public school system operating in Ontario alongside a Catholic one. She and here schoolmates got prayers and...."^^xsd:string .
 
@@ -21,11 +21,11 @@ cwrc:anno2 a cwrc:InstitutionalEducationContext ;
 	rdfs:label "Atwood Education Context 2" ;
 	oa:hasBody [
 		dc:type	"text/turtle" ;
-		rdf:value "cwrc:MaragaretAtwood cwrc:hasEducationLocation gn:6167865" 
+		rdf:value "cwrc:MargaretAtwood cwrc:hasEducationLocation gn:6167865" 
 	] ;
 	oa:hasBody [
 		dc:type	"text/turtle" ;
-		rdf:value "cwrc:MaragaretAtwood cwrc:attends cwrc:LeasideHighSchool" 
+		rdf:value "cwrc:MargaretAtwood cwrc:attends cwrc:LeasideHighSchool" 
 	] ;
 	oa:motivatedBy oa:describing ;
 	cwrc:hasIdDependencyOn cwrc:anno1 ;
@@ -44,7 +44,7 @@ cwrc:MargaretAtwood a cwrc:Person ;
 
 
 cwrc:Orlando_Atwood_SpatialSnippet a oa:TextualBody ;
-	rdfs:label "Atwood Spatial Source" ;
+	rdfs:label "Excerpt from Margaret Atwood entry" ;
 	dcterms:desciption "Apart from thse sojourns, and a six-year period living with Gibson and their small daughter on a farm near Alliston, Ontario, MA has lived in Toronto" ;
 	oa:hasSource <http://orlando.cambridge.org/protected/svPeople?people_tab=3&formname=r&person_id=atwoma#PersonalLife> .
 
