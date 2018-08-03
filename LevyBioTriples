@@ -69,11 +69,11 @@ data:levyam_religion_context1_item1_snippettext a dctypes:text ;
         "Stockbroker" ;
     cwrc:hasName "Lewis Levy" .
 
-data:levyam a cwrc:NaturalPerson ;
-    cwrc:hasEthnicity cwrc:jewishEthnicity ;
-    cwrc:hasGender cwrc:woman ;
-    cwrc:hasReligionSelfReported cwrc:judaism ;
-    foaf:name "Levy, Amy" .
+# a cwrc:NaturalPerson ;
+#    cwrc:hasEthnicity cwrc:jewishEthnicity ;
+#    cwrc:hasGender cwrc:woman ;
+#    cwrc:hasReligionSelfReported cwrc:judaism ;
+#    foaf:name "Levy, Amy" .
 
 <http://example.org/Amy_Levy> a cwrc:NaturalPerson ;
     cwrc:hasBirthDate "1861-11-10" ;
@@ -90,4 +90,3 @@ data:levyam a cwrc:NaturalPerson ;
     cwrc:hasMother <http://example.org/Isabelle_Levy> ;
     cwrc:hasName "Amy Levy" ;
     cwrc:hasSister <http://example.org/Amy_Levy_Sister> .
-
