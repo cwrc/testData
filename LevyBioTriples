@@ -1,0 +1,93 @@
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:levyam_politics_context0 a cwrc:PoliticalContext ;
+    oa:hasBody data:levyam_politics_context0_annotationbody ;
+    oa:hasTarget data:levyam ;
+    oa:motivatedBy oa:describing .
+
+data:levyam_raceandethnicity_context1 a cwrc:RaceEthnicityContext ;
+    dcterms:subject cwrc:jewishEthnicity ;
+    oa:hasBody data:levyam_raceandethnicity_context1_annotationbody ;
+    oa:hasTarget data:levyam ;
+    oa:motivatedBy oa:describing .
+
+data:levyam_religion_context1 a cwrc:ReligionContext ;
+    dcterms:subject cwrc:judaism ;
+    oa:hasBody data:levyam_religion_context1_annotationbody ;
+    oa:hasTarget data:levyam ;
+    oa:motivatedBy oa:describing .
+
+cwrc:levyamdeathContext1 cwrc:hasdescription "The following year the novelist Grant Allen , an opponent of higher education for women, attributed her suicide directly to her time at university. Beckman considers many possible reasons—a broken love-affair, her lesbianism, her deafness, the growing antisemitism of English society, the hostile reception of Reuben Sachs , possible fears of inherited insanity, or simple body chemistry—but comes to no definite conclusion. 3, 7, 203-210, 318  As to her sensitivity to adverse criticism, in 1884 she had written of herself and Ernest Radford , It's a good thing we are not of Keats -like sensibility, otherwise we shd. long ago have been snuffed out by the various articles of kind critics. 248" ;
+    oa:hasTarget <http://example.org/Amy_Levy> .
+
+cwrc:levyamdeathContext2 cwrc:hasdescription "As to her sensitivity to adverse criticism, in 1884 she had written of herself and Ernest Radford , It's a good thing we are not of Keats -like sensibility, otherwise we shd. long ago have been snuffed out by the various articles of kind critics. 248" ;
+    oa:hasTarget <http://example.org/Amy_Levy> .
+
+cwrc:levyamdeathContext3 cwrc:hasdescription "On 13 September AL became the first Jewish woman to be cremated in England . Her ashes are buried at Balls Pond Cemetery in London . 214" ;
+    oa:hasTarget <http://example.org/Amy_Levy> .
+
+data:levyam_politics_context0_annotationbody a oa:choice ;
+    as:items data:levyam_politics_context0_item1_snippettext .
+
+data:levyam_politics_context0_item1_snippettext a dctypes:text ;
+    dctypes:description "Her friendship with highly politicised women does not mean, however, that she shared their left-wing views.130"^^xsd:string .
+
+data:levyam_raceandethnicity_context1_annotationbody a oa:choice ;
+    as:items data:levyam_raceandethnicity_context1_item1_snippettext,
+        cwrc:jewishEthnicity .
+
+data:levyam_raceandethnicity_context1_item1_snippettext a dctypes:text ;
+    dctypes:description "Being Jewish must have posed problems for AL, problems which seem to have been exacerbated by struggles with an internalised anti-semitism. She apparently thought of herself as unattractive to a degree quite at odds with..."^^xsd:string .
+
+data:levyam_religion_context1_annotationbody a oa:choice ;
+    as:items data:levyam_religion_context1_item1_snippettext,
+        cwrc:judaism .
+
+data:levyam_religion_context1_item1_snippettext a dctypes:text ;
+    dctypes:description "Her time in Dresden crystallized her mixed feelings about the practice of her religion. Visiting the synagogue (for Yom Kippur) disgusted her: she said that German Jews made her feel anti-semitic.45 Zion unventilated & unrefreshed..."^^xsd:string .
+
+<http://example.org/Amy_Levy_Brother> a cwrc:NaturalPerson .
+
+<http://example.org/Amy_Levy_Sister> a cwrc:NaturalPerson .
+
+<http://example.org/Isabelle_Levy> a cwrc:NaturalPerson ;
+    cwrc:hasName "Isabelle Levy" .
+
+<http://example.org/Lewis_Levy> a cwrc:NaturalPerson ;
+    cwrc:hasJob "Merchant",
+        "Pedlar",
+        "Stockbroker" ;
+    cwrc:hasName "Lewis Levy" .
+
+data:levyam a cwrc:NaturalPerson ;
+    cwrc:hasEthnicity cwrc:jewishEthnicity ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasReligionSelfReported cwrc:judaism ;
+    foaf:name "Levy, Amy" .
+
+<http://example.org/Amy_Levy> a cwrc:NaturalPerson ;
+    cwrc:hasBirthDate "1861-11-10" ;
+    cwrc:hasBirthPlace "Lambeth, Surrey, England" ;
+    cwrc:hasBrother <http://example.org/Amy_Levy_Brother> ;
+    cwrc:hasDeathCause "asphyxiated by carbon monoxide",
+        "suicide" ;
+    cwrc:hasDeathDate "1889-09-10" ;
+    cwrc:hasDeathPlace "London, Middlesex, England" ;
+    cwrc:hasEroticRelationhip "Edith Creak",
+        "Linda Hunt Beckman",
+        "Vernon Lee" ;
+    cwrc:hasFather <http://example.org/Lewis_Levy> ;
+    cwrc:hasMother <http://example.org/Isabelle_Levy> ;
+    cwrc:hasName "Amy Levy" ;
+    cwrc:hasSister <http://example.org/Amy_Levy_Sister> .
+
