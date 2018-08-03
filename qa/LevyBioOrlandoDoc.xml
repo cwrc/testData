@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://cwrc.ca/schemas/orlando_biography.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://cwrc.ca/templates/css/orlando.css"?>
+<!DOCTYPE ORLANDO [ <!ENTITY % character_entities SYSTEM "http://cwrc.ca/schemas/character_entities.dtd"> %character_entities; ]>
+<BIOGRAPHY SEX="FEMALE" PERSON="BRWWRITER">
+    <ORLANDOHEADER TYPE="text">
+        <FILEDESC>
+            <TITLESTMT>
+                <DOCTITLE>Amy Levy: biography</DOCTITLE>
+            </TITLESTMT>
+            <PUBLICATIONSTMT>
+                <AUTHORITY>Orlando Project</AUTHORITY>
+            </PUBLICATIONSTMT>
+            <SOURCEDESC>Created from original research by members of the Orlando Project</SOURCEDESC>
+        </FILEDESC>
+        <REVISIONDESC>
+            <RESPONSIBILITY RESP="SIB" WORKSTATUS="RWT" WORKVALUE="I">
+                <DATE>9 December 1997</DATE>
+                <ITEM>Initial document given to tagger.</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="SIB" WORKSTATUS="REV" WORKVALUE="I">
+                <DATE>25 May 1998</DATE>
+                <ITEM>sib: checking in SLT&apos;s version of doc wh/ was lost</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="SIB" WORKSTATUS="RWT" WORKVALUE="C">
+                <DATE>6 October 1998</DATE>
+                <ITEM>Updated for Sept 1998 Audit</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="KNT" WORKSTATUS="CFT" WORKVALUE="C">
+                <DATE>19 July 1999</DATE>
+                <ITEM>knt: fixed date</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="C">
+                <DATE>21 December 1999</DATE>
+                <ITEM>BATCH CHANGE: primarily orgName and bibCit cleanup</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="IMG" WORKSTATUS="REV" WORKVALUE="P">
+                <DATE>6 January 2001</DATE>
+                <ITEM></ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="DRG" WORKSTATUS="REV" WORKVALUE="C">
+                <DATE>1 February 2001</DATE>
+                <ITEM>converted textual apostrophes and quotation marks to entity references</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="IMG" WORKSTATUS="REV" WORKVALUE="C">
+                <DATE>8 March 2001</DATE>
+                <ITEM></ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="KDC" WORKSTATUS="CFT" WORKVALUE="C">
+                <DATE>10 March 2001</DATE>
+                <ITEM>checked for tagging</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="SIB" WORKSTATUS="REV" WORKVALUE="C">
+                <DATE>23 March 2001</DATE>
+                <ITEM></ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="NCK" WORKSTATUS="CAS" WORKVALUE="C">
+                <DATE>28 May 2001</DATE>
+                <ITEM></ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="NCK" WORKSTATUS="REV" WORKVALUE="C">
+                <DATE>28 May 2001</DATE>
+                <ITEM>corrected a few dbref numbers</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="NCK" WORKSTATUS="REV" WORKVALUE="C">
+                <DATE>5 June 2001</DATE>
+                <ITEM>made changes as necessary from tag reports</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="RSC" WORKSTATUS="PUB" WORKVALUE="I">
+                <DATE>6 June 2001</DATE>
+                <ITEM></ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="RSC" WORKSTATUS="PUB" WORKVALUE="I">
+                <DATE>6 June 2001</DATE>
+                <ITEM>added DLB page ref</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                <DATE>18 June 2001</DATE>
+                <ITEM>fixed socalled</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                <DATE>5 July 2001</DATE>
+                <ITEM>fixed place</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                <DATE>17 July 2001</DATE>
+                <ITEM>fixed orgname</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="SIB" WORKSTATUS="RBV" WORKVALUE="C">
+                <DATE>27 July 2001</DATE>
+                <ITEM></ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="JAH" WORKSTATUS="CFB" WORKVALUE="C">
+                <DATE>15 February 2002</DATE>
+                <ITEM>cfb done</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="RSC" WORKSTATUS="PUB" WORKVALUE="C">
+                <DATE>21 March 2002</DATE>
+                <ITEM></ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="SLB" WORKSTATUS="PUB" WORKVALUE="C">
+                <DATE>27 March 2002</DATE>
+                <ITEM>fixed socalled</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="SLB" WORKSTATUS="PUB" WORKVALUE="C">
+                <DATE>26 April 2002</DATE>
+                <ITEM>fixed name</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="SLB" WORKSTATUS="PUB" WORKVALUE="C">
+                <DATE>15 July 2002</DATE>
+                <ITEM>fixed orgname</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                <DATE>6 January 2003</DATE>
+                <ITEM> fixed PLACE</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                <DATE>9 January 2003</DATE>
+                <ITEM> fixed PLACE</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                <DATE>13 January 2003</DATE>
+                <ITEM> fixed PLACE</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                <DATE>10 April 2003</DATE>
+                <ITEM> fixed PLACE</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="I">
+                <DATE>14 April 2003</DATE>
+                <ITEM>BATCH CHANGE: primarily PLACE cleanup</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="JAH" WORKSTATUS="CFB" WORKVALUE="C">
+                <DATE>15 April 2003</DATE>
+                <ITEM>fixed bibcits</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                <DATE>22 April 2003</DATE>
+                <ITEM> fixed PLACE</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="I">
+                <DATE>16 June 2003</DATE>
+                <ITEM>BATCH CHANGE: primarily TGENRENAME cleanup, BIBCIT following P moved before P, BIBCITS TAG added</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                <DATE>26 August 2003</DATE>
+                <ITEM></ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                <DATE>15 September 2003</DATE>
+                <ITEM></ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                <DATE>22 March 2004</DATE>
+                <ITEM>changed position to birth position </ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="I">
+                <DATE>08 April 2005</DATE>
+                <ITEM>BATCH CHANGE: March 2005 Specifications. Mainly tag/attribute name changes</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                <DATE>13 January 2006</DATE>
+                <ITEM></ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="IMG" WORKSTATUS="REV" WORKVALUE="C">
+                <DATE>4 April 2006</DATE>
+                <ITEM>final readthrough</ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                <DATE>5 February 2007</DATE>
+                <ITEM></ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                <DATE>21 March 2007</DATE>
+                <ITEM></ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY RESP="MKD" WORKSTATUS="REV" WORKVALUE="C">
+                <DATE>23 May 2012</DATE>
+                <ITEM></ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY WORKSTATUS="ENH" RESP="IMG" WORKVALUE="C">
+                <DATE>2 November 2013</DATE>
+                <ITEM></ITEM>
+            </RESPONSIBILITY>
+            <RESPONSIBILITY WORKSTATUS="REV" RESP="AGL" WORKVALUE="C">
+                <DATE>14 November 2013</DATE>
+                <ITEM>orgname cleanup</ITEM>
+            </RESPONSIBILITY>
+        <RESPONSIBILITY WORKSTATUS="ENH" RESP="IMG" WORKVALUE="C"><DATE>24 August 2015</DATE><ITEM></ITEM></RESPONSIBILITY>
+</REVISIONDESC>
+    </ORLANDOHEADER>
+    <DIV0>
+        <HEADING>Biography</HEADING>
+        <STANDARD>Levy, Amy</STANDARD>
+        <DIV1>
+            <PERSONNAME>
+                <DIV2>
+                    <DATASTRUCT>
+                        <DATAITEM>
+                            <BIRTHNAME WROTEORPUBLISHEDAS="WROTEPUBLISHEDASYES"> <GIVEN>Amy</GIVEN> <SURNAME>Levy</SURNAME> </BIRTHNAME>
+                            <BIBCITS><BIBCIT PLACEHOLDER="FC" DBREF="107913"></BIBCIT></BIBCITS>
+                        </DATAITEM>
+                        <DATAITEM>
+                            <PSEUDONYM WROTEORPUBLISHEDAS="WROTEPUBLISHEDASYES" NAMESIGNIFIER="ROMANCE">Melissa</PSEUDONYM>
+                            <BIBCITS><BIBCIT PLACEHOLDER="Beckman 98" DBREF="8347">98</BIBCIT></BIBCITS>
+                        </DATAITEM>
+                        <DATAITEM>
+                            <PSEUDONYM WROTEORPUBLISHEDAS="WROTEPUBLISHEDASYES" NAMESIGNIFIER="CRYPTIC">A Maiden Aunt</PSEUDONYM>
+                            <BIBCITS><BIBCIT PLACEHOLDER="Beckman 128" DBREF="8347">128</BIBCIT></BIBCITS>
+                        </DATAITEM>
+                    </DATASTRUCT>
+                </DIV2>
+            </PERSONNAME>
+        </DIV1>
+        <DIV1>
+            <HEADING>Birth and Family</HEADING>
+            <BIRTH>
+                <DIV2>
+                    <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB"> <DATE>10 November 1861</DATE> <CHRONPROSE><BIRTHPOSITION>AL was born in the London district which was then known as <PLACE><SETTLEMENT CURRENT="London" REG="Lambeth">South Lambeth</SETTLEMENT><REGION REG="Surrey"></REGION><GEOG REG="England"></GEOG></PLACE> (now classified as <PLACE><SETTLEMENT CURRENT="London">Peckham</SETTLEMENT><REGION REG="Surrey"></REGION><GEOG REG="England"></GEOG></PLACE>), the second of seven children.</BIRTHPOSITION></CHRONPROSE> <BIBCITS><BIBCIT PLACEHOLDER="Beckman 1, 13" DBREF="8347">1, 13</BIBCIT></BIBCITS> </CHRONSTRUCT>
+                    <SHORTPROSE>
+                        <P>She had an elder and a younger sister, and four younger brothers.</P>
+                    </SHORTPROSE>
+                </DIV2>
+            </BIRTH>
+        </DIV1>
+        <DIV1>
+            <CULTURALFORMATION>
+                <DIV2>
+                    <SHORTPROSE>
+                        <P>AL was an <CLASS>upper-middle-class</CLASS> Jew from a family which had been <NATIONALHERITAGE SELF-DEFINED="SELFYES">English</NATIONALHERITAGE> for over a century, though they travelled the world for career purposes more freely than most English people.<SCHOLARNOTE> <P>Many reference books still repeat the mistaken story, which originated in an essay published in 1912 by <NAME>James Warwick Price</NAME>, that she came from a poverty-stricken background, had very little schooling, and later worked in a factory and lived in a garret.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 2" DBREF="8347">2</BIBCIT></BIBCITS></P> </SCHOLARNOTE> They thought of themselves as wholly assimilated, and seem to have practised the 
+
+                       <!-- <DENOMINATION SELF-DEFINED="SELFYES" REG="Judaism">Jewish</DENOMINATION> --> 
+
+                        religion only sketchily. They occasionally attended the Reform synagogue in <PLACE><ADDRESS><ADDRLINE>Upper Berkeley Street</ADDRLINE></ADDRESS><SETTLEMENT REG="London"></SETTLEMENT><REGION REG="Middlesex"></REGION><GEOG REG="England"></GEOG></PLACE>; the children visited <DENOMINATION REG="Anglican"><ORGNAME REG="Anglican Church" STANDARD="Anglican Church">Christian</ORGNAME></DENOMINATION> churches with their governess.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 13-17" DBREF="8347">13-17</BIBCIT></BIBCITS></P>
+                        <P>AL early developed <SEXUALIDENTITY REG="lesbian">strong erotic attachments to women</SEXUALIDENTITY>. She wrote of these openly, but may or may not have expressed them physically.</P>
+                    </SHORTPROSE>
+                </DIV2>
+                <RACEANDETHNICITY>
+                    <DIV2>
+                        <SHORTPROSE>
+                            <P>Being <ETHNICITY REG="Jew">Jewish</ETHNICITY> must have posed problems for AL, problems which seem to have been exacerbated by struggles with an internalised anti-semitism. She apparently thought of herself as unattractive to a degree quite at odds with the comments of other people; she drew caricatures, both visual and verbal, of Jewish people with exaggeratedly stereotyped racial characteristics. After visiting a synagogue in <PLACE><SETTLEMENT>Dresden</SETTLEMENT><REGION REG="Saxony"></REGION><GEOG REG="Germany"></GEOG></PLACE> she wrote, <QUOTE DIRECT="Y">the German Hebrew makes me feel, as a rule, that the Anti-Semitic movement is a most just &amp; virtuous one.</QUOTE><BIBCITS><BIBCIT PLACEHOLDER="Beckman 236" DBREF="8347" QTDIN="QTDINYES">236</BIBCIT></BIBCITS></P>
+                        </SHORTPROSE>
+                    </DIV2>
+                </RACEANDETHNICITY>
+            </CULTURALFORMATION>
+        </DIV1>
+        <DIV1>
+            <FAMILY>
+                <MEMBER RELATION="MOTHER">
+                    <DIV2>
+                        <HEADING>Mother</HEADING>
+                        <SHORTPROSE>
+                            <P>AL&apos;s parents were cousins. Her mother, Isabelle, came from a Jewish family settled in England since the early eighteenth century; her father (Amy&apos;s grandfather) lived at <PLACE><SETTLEMENT>Falmouth</SETTLEMENT> in <REGION>Cornwall</REGION><GEOG REG="England"></GEOG></PLACE> and traded with Spain. <NAME>Isabelle Levy</NAME> lived until 1928, and died in London.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 1, 12, 306n57" DBREF="8347">1, 12, 306n57</BIBCIT></BIBCITS></P>
+                        </SHORTPROSE>
+                    </DIV2>
+                </MEMBER>
+                <MEMBER RELATION="FATHER">
+                    <DIV2>
+                        <HEADING>Father</HEADING>
+                        <SHORTPROSE>
+                            <P>Her father, <NAME>Lewis Levy</NAME>, had been to Australia with his brothers during the gold-rush years, and <JOB REG="pedlar">travelled with a wagon</JOB>, selling goods to miners. Back in England he became a <JOB>merchant</JOB>, then a <JOB>stockbroker</JOB>. He died in Johannesburg.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 12-13, 306n57" DBREF="8347">12-13, 306n57</BIBCIT></BIBCITS></P>
+                        </SHORTPROSE>
+                    </DIV2>
+                </MEMBER>
+                <MEMBER RELATION="SISTER">
+                    <DIV2>
+                        <SHORTPROSE>
+                            <P>AL&apos;s sister Katie, the only sibling who was older than she was, got married in <DATE>August 1885</DATE>; which may precipated some kind of breakdown in Amy<BIBCITS><BIBCIT PLACEHOLDER="Pullen 107, 109" DBREF="76986">107, 109</BIBCIT></BIBCITS></P>
+                        </SHORTPROSE>
+                    </DIV2>
+                </MEMBER>
+                <MEMBER RELATION="BROTHER">
+                    <DIV2>
+                        <HEADING>Brothers</HEADING>
+                        <SHORTPROSE>
+                            <P>AL&apos;s brother Alfred, the family heir, also suffered some kind of mental illness, perhaps a breakdown, at around this date.<BIBCITS><BIBCIT PLACEHOLDER="Pullen 108" DBREF="76986">108</BIBCIT></BIBCITS></P>
+                        </SHORTPROSE>
+                        <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB"> <DATE>27 May 1887</DATE> <CHRONPROSE>AL&apos;s brother Alfred, her junior by seventeen months, died in the house of a doctor at the seaside village of <PLACE><SETTLEMENT>Gorleston</SETTLEMENT><REGION REG="Suffolk"></REGION><GEOG REG="England"></GEOG></PLACE> near <PLACE><SETTLEMENT REG="Great Yarmouth">Yarmouth</SETTLEMENT><REGION REG="Norfolk"></REGION><GEOG REG="England"></GEOG></PLACE>: a cloud hangs over his death.</CHRONPROSE> <BIBCITS><BIBCIT PLACEHOLDER="Beckman 136" DBREF="8347">136</BIBCIT><BIBCIT PLACEHOLDER="Pullen 123" DBREF="76986">123</BIBCIT></BIBCITS> </CHRONSTRUCT>
+                        <SHORTPROSE>
+                            <P>He was said ot died of <QUOTE DIRECT="Y">paralysis and exhaustion</QUOTE>, which would imply a long illness.<BIBCITS><BIBCIT PLACEHOLDER="Pullen 123" DBREF="76986" QTDIN="QTDINYES">123</BIBCIT></BIBCITS> Levy&apos;s biographers cannot provide a definite cause, Beckman suspects either syphilis or suicide; Pullen does not believe in the possibility of suicide, but suspects a stroke or debilitating depression.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 136" DBREF="8347">136</BIBCIT><BIBCIT PLACEHOLDER="Pullen 123-4" DBREF="76986">123-4</BIBCIT></BIBCITS></P>
+                            <P>The three brothers who survived Amy all emigrated to the New World.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 9, 10" DBREF="8347">9, 10</BIBCIT></BIBCITS></P>
+                        </SHORTPROSE>
+                    </DIV2>
+                </MEMBER>
+            </FAMILY>
+        </DIV1>
+        <DIV1>
+            <HEADING>Homes</HEADING>
+            <LOCATION RELATIONTO="LIVED">
+                <DIV2>
+                    <SHORTPROSE>
+                        <P>AL lived till the end of her life at her parents&apos; home. In 1872 they moved from <PLACE><SETTLEMENT CURRENT="London">Peckham</SETTLEMENT><REGION REG="Surrey"></REGION><GEOG REG="England"></GEOG></PLACE> to <PLACE><ADDRESS><ADDRLINE>11 Sussex Place</ADDRLINE></ADDRESS>, <SETTLEMENT CURRENT="London">Regent&apos;s Park</SETTLEMENT><REGION REG="Middlesex"></REGION><GEOG REG="England"></GEOG></PLACE>, and in 1884 from there to the less expensive <PLACE><ADDRESS><ADDRLINE>Ulster Place</ADDRLINE></ADDRESS>, <SETTLEMENT CURRENT="London">Regent&apos;s Park</SETTLEMENT><REGION REG="Middlesex"></REGION><GEOG REG="England"></GEOG></PLACE>. From August 1885 they lived at <PLACE><ADDRESS><ADDRLINE>7 Endsleigh Gardens</ADDRLINE></ADDRESS>, in <SETTLEMENT CURRENT="London">Bloomsbury</SETTLEMENT><REGION REG="Middlesex"></REGION><GEOG REG="England"></GEOG></PLACE>.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 83, 114, 217, 251" DBREF="8347">83, 114, 217, 251</BIBCIT></BIBCITS></P>
+                        <P>The Levy family owned a second home at <PLACE><SETTLEMENT>Brighton</SETTLEMENT><REGION REG="Sussex"></REGION><GEOG REG="England"></GEOG></PLACE> while several of their children attended school there. They kept this house even later, while living in London.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 217-18" DBREF="8347">217-18</BIBCIT><BIBCIT PLACEHOLDER="Pullen 45" DBREF="76986">45</BIBCIT></BIBCITS></P>
+                    </SHORTPROSE>
+                </DIV2>
+            </LOCATION>
+        </DIV1>
+        <DIV1>
+            <HEADING>Education</HEADING>
+            <EDUCATION MODE="DOMESTIC">
+                <DIV2>
+                    <SHORTPROSE>
+                        <P>AL and her brothers and sisters lived an energetically cultural home life. As well as writing and drawing individually, they collaborated in family magazines and theatricals. In her late teens Amy played Shylock in a family production of <TITLE TITLETYPE="MONOGRAPHIC">The Merchant of Venice</TITLE>.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 14, 19ff" DBREF="8347">14,19ff</BIBCIT></BIBCITS><SCHOLARNOTE> <P>The idea that she was entirely self-educated is one of the errors which arose in 1912.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 2" DBREF="8347">2</BIBCIT></BIBCITS></P> </SCHOLARNOTE></P>
+                    </SHORTPROSE>
+                </DIV2>
+            </EDUCATION>
+        </DIV1>
+        <DIV1>
+            <EDUCATION MODE="INSTITUTIONAL">
+                <DIV2>
+                    <HEADING>Brighton High School for Girls</HEADING>
+                    <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB"> <DATESTRUCT CERTAINTY="C" VALUE="1876-09-"><SEASON>Autumn</SEASON> <YEAR>1876</YEAR></DATESTRUCT> <CHRONPROSE>AL, aged nearly fifteen, was sent to <SCHOOL INSTITUTION="DAYSCHOOL" STUDENTBODY="SINGLESEX" INSTITUTIONLEVEL="SECONDARY" REG="Brighton High School for Girls"><ORGNAME REG="Brighton High School for Girls" STANDARD="Brighton High School for Girls">Brighton High School for Girls</ORGNAME></SCHOOL> in <PLACE><SETTLEMENT REG="Brighton"></SETTLEMENT><REGION>Sussex</REGION><GEOG REG="England"></GEOG></PLACE>, a forward-looking institution whose founders were feminists.</CHRONPROSE> <BIBCITS><BIBCIT PLACEHOLDER="Beckman 29, 218" DBREF="8347">29, 218</BIBCIT></BIBCITS> </CHRONSTRUCT>
+                    <SHORTPROSE>
+                        <P>The school was one of these only recently set up by the <ORGNAME STANDARD="Girls&apos; Public Day School Trust,, Limited">Girls&apos; Public Day School Company</ORGNAME>. It also took younger boys, and two of Amy&apos;s brothers attended with her. The headmistress, <INSTRUCTOR><NAME>Edith Creak</NAME></INSTRUCTOR>, was one of the five first graduates of the equally recent <ORGNAME REG="Newnham College,, Cambridge University" STANDARD="Newnham College,, Cambridge University">Newnham College, Cambridge</ORGNAME>. AL made some good friends at school, including <COMPANION><NAME STANDARD="Garnett, Constance">Constance Black</NAME></COMPANION> (later the translator Constance Garnett).<BIBCITS><BIBCIT PLACEHOLDER="Beckman 29-30" DBREF="8347">29-30</BIBCIT></BIBCITS></P>
+                        <P>At some time during her girlhood AL listed her favourite poets as all men, while her favourite prose writers included <NAME>Charlotte Bront&euml;</NAME>, <NAME>Elizabeth Gaskell</NAME>, <NAME>George Eliot</NAME>, and <NAME>Anne Thackeray Ritchie</NAME>.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 16" DBREF="8347">16</BIBCIT></BIBCITS></P>
+                    </SHORTPROSE>
+                </DIV2>
+                <DIV2>
+                    <HEADING>Newnham</HEADING>
+                    <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB" CHRONCOLUMN1="SOCIALCLIMATE1" RELEVANCE1="PERIOD1"> <DATE VALUE="1879-10-09" CERTAINTY="AFTER">October 1879</DATE> <CHRONPROSE>AL became the first Jewish woman to study at <SCHOOL STUDENTBODY="SINGLESEX" INSTITUTIONLEVEL="POST-SECONDARY" REG="Newnham College,, Cambridge University"><ORGNAME REG="Newnham College,, Cambridge University" STANDARD="Newnham College,, Cambridge University">Newnham Hall (later College)</ORGNAME></SCHOOL> (or indeed at <PLACE><SETTLEMENT>Cambridge</SETTLEMENT><REGION REG="Cambridgeshire"></REGION><GEOG REG="England"></GEOG></PLACE> University), at a time when women of any kind as undergraduates were a novel phenomenon.</CHRONPROSE> <BIBCITS><BIBCIT PLACEHOLDER="Beckman 37, 137" DBREF="8347">37, 137</BIBCIT><BIBCIT PLACEHOLDER="Pullen 158" DBREF="76986">158</BIBCIT></BIBCITS> </CHRONSTRUCT>
+                    <SHORTPROSE>
+                        <P>She was the only member of her family to attend university, even though she had four brothers. The curriculum (not yet a degree course) covered a range of subjects including <SUBJECT>Greek</SUBJECT>, <SUBJECT>Latin</SUBJECT>, <SUBJECT>geology</SUBJECT>, and <SUBJECT>gymnastics</SUBJECT>. AL had to grind hard to keep up with the work; she found the teaching excellent for everything except <SUBJECT>French</SUBJECT>. She left Cambridge in <DATE VALUE="1881-08-" CERTAINTY="C">1881</DATE> before the beginning of her third year: without, therefore, taking the Tripos exams, which had just been opened to women. She may have left for health reasons (an early attack of depression?) or have lost interest either because she was already a published author or because university-educated women were at this date regarded as a breed apart&mdash;or even on account of an undocumented love-affair.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 40-1, 51, 55-7, 226-9" DBREF="8347">40-1, 51, 55-7, 226-9</BIBCIT></BIBCITS> She later wrote of Cambridge: <QUOTE DIRECT="Y">That city do I love the best / Wherein my heart was heaviest.</QUOTE><BIBCITS><BIBCIT PLACEHOLDER="Ashworth 36" QTDIN="QTDINYES" DBREF="84946">36</BIBCIT></BIBCITS></P>
+                        <P>Having left Cambridge, AL studied both <SUBJECT>German</SUBJECT> and <SUBJECT>Greek</SUBJECT> when she visited <PLACE><SETTLEMENT>Dresden</SETTLEMENT><REGION REG="Saxony"></REGION><GEOG REG="Germany"></GEOG></PLACE>.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 75" DBREF="8347">75</BIBCIT></BIBCITS></P>
+                    </SHORTPROSE>
+                </DIV2>
+            </EDUCATION>
+        </DIV1>
+        <DIV1>
+            <OCCUPATION>
+                <DIV2>
+                    <HEADING>Drawing</HEADING>
+                    <SHORTPROSE>
+                        <P><SIGNIFICANTACTIVITY REG="artist">AL was an accomplished draughtswoman. She drew vivid sketches and scenes.</SIGNIFICANTACTIVITY> Her topics at an early age included a feminist on a soapbox, and characters from <NAME>Louisa May Alcott</NAME>&apos;s <TITLE TITLETYPE="MONOGRAPHIC">Little Women</TITLE> and <NAME>Germaine de Sta&euml;l</NAME>&apos;s <TITLE TITLETYPE="MONOGRAPHIC">Corinne</TITLE>. Later she drew exoticised, disagreeable Jewish women.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 18-19, 111-12" DBREF="8347">18-19, 111-12</BIBCIT></BIBCITS><SCHOLARNOTE> <P>She never worked in a factory, as the erroneous 1912 article maintained; and it was a different A. Levy who was secretary of the <ORGNAME>Beaumont Trust</ORGNAME>, an organisation raising money for educating the poor.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 2, 4, 6" DBREF="8347">2, 4, 6</BIBCIT></BIBCITS></P> </SCHOLARNOTE></P>
+                    </SHORTPROSE>
+                </DIV2>
+            </OCCUPATION>
+        </DIV1>
+        <DIV1>
+            <HEADING>Romantic Passions</HEADING>
+            <INTIMATERELATIONSHIPS EROTIC="EROTICYES">
+                <DIV2>
+                    <SHORTPROSE>
+                        <P>At Brighton High School AL developed <SOCALLED>a grand passion</SOCALLED> for headmistress <NAME>Edith Creak</NAME> (a recent <ORGNAME REG="Newnham College,, Cambridge University" STANDARD="Newnham College,, Cambridge University">Cambridge</ORGNAME> graduate). <QUOTE DIRECT="Y">Frankly I&apos;m more in love with her than ever,</QUOTE> she wrote with apparent good cheer to her elder sister, <QUOTE DIRECT="Y">isn&apos;t it grim?</QUOTE><BIBCITS><BIBCIT PLACEHOLDER="Beckman 29, 31" DBREF="8347" QTDIN="QTDINYES">29, 31</BIBCIT></BIBCITS> She may, as reported by a cousin, have been unhappily in love again as an undergraduate.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 51" DBREF="8347">51</BIBCIT></BIBCITS></P>
+                    </SHORTPROSE>
+                </DIV2>
+            </INTIMATERELATIONSHIPS>
+        </DIV1>
+        <DIV1>
+            <HEADING>Early Travel</HEADING>
+            <LOCATION RELATIONTO="TRAVELLED">
+                <DIV2>
+                    <SHORTPROSE>
+                        <P>AL took frequent trips around England, visiting friends, or sometimes staying by the seaside for health reasons.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 200, 115 and n100" DBREF="8347">200, 115 and n100</BIBCIT></BIBCITS></P>
+                    </SHORTPROSE>
+                    <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB"> <DATERANGE CERTAINTY="BY" FROM="1881-11-10" TO="1881-12-08" EXACT="FROM">November-December 1881</DATERANGE> <CHRONPROSE>AL made a visit to <PLACE><SETTLEMENT>Dresden</SETTLEMENT><REGION REG="Saxony"></REGION> in <GEOG>Germany</GEOG></PLACE>.</CHRONPROSE> <BIBCITS><BIBCIT PLACEHOLDER="Beckman 232, 237" DBREF="8347">232, 237</BIBCIT></BIBCITS> </CHRONSTRUCT>
+                    <SHORTPROSE>
+                        <P>Her six surviving letters from this visit show her as not homesick and not regularly attending the synagogue, but short of money and weathering criticism from home of her dancing, participating in <FOREIGN>tableaux vivants</FOREIGN>, and earning money by teaching.<BIBCITS><BIBCIT PLACEHOLDER="Pullen 41-3, 45" DBREF="76986">41-3, 45</BIBCIT></BIBCITS> She enjoyed a rich cultural life, and reported with gusto on the social scene, though she complained of neuralgia.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 237" DBREF="8347">237</BIBCIT></BIBCITS></P>
+                    </SHORTPROSE>
+                    <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB"> <DATE VALUE="1882-07-">September 1883</DATE> <CHRONPROSE>AL came to the end of some time spent at <PLACE><SETTLEMENT>Lucerne</SETTLEMENT> in <GEOG>Switzerland</GEOG></PLACE> (after a visit to <PLACE><SETTLEMENT>Cambridge</SETTLEMENT><REGION REG="Cambridgeshire"></REGION><GEOG REG="England"></GEOG></PLACE> in July).</CHRONPROSE> <BIBCITS><BIBCIT PLACEHOLDER="Pullen 52-3" DBREF="76986">52-3</BIBCIT></BIBCITS> </CHRONSTRUCT>
+                    <SHORTPROSE>
+                        <P>The same year, too, she took the ferry from <PLACE><SETTLEMENT>Brighton</SETTLEMENT><REGION REG="Sussex"></REGION><GEOG REG="England"></GEOG></PLACE> to <PLACE><SETTLEMENT>Dieppe</SETTLEMENT><REGION REG="Normandy"></REGION><GEOG REG="France"></GEOG></PLACE> and visited the seaside resort of <PLACE><SETTLEMENT>Mers-les-Bains</SETTLEMENT> in <REGION>Picardy</REGION><GEOG REG="France"></GEOG></PLACE>.<BIBCITS><BIBCIT PLACEHOLDER="Pullen 55" DBREF="76986">55</BIBCIT></BIBCITS></P>
+                    </SHORTPROSE>
+                    <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="IMG"> <DATESTRUCT CERTAINTY="C" VALUE="1884-07-"><SEASON>Summer</SEASON> <YEAR>1884</YEAR></DATESTRUCT> <CHRONPROSE>AL stayed on the <PLACE><REGION>Titisee</REGION> at <SETTLEMENT>Baden</SETTLEMENT> in <GEOG>Germany</GEOG></PLACE>, where she enjoyed <QUOTE DIRECT="Y">long basking days</QUOTE> but was threatened with depression.</CHRONPROSE> <BIBCITS><BIBCIT PLACEHOLDER="Beckman 244-6" DBREF="8347">244-6</BIBCIT></BIBCITS> </CHRONSTRUCT>
+                    <SHORTPROSE>
+                        <P>In July she and a friend, Blanche Smith<RESEARCHNOTE>name not tagged.</RESEARCHNOTE>, had reached were en route for Titisee and had reached <PLACE><SETTLEMENT CURRENT="Mont Sainte-Odile" REG="Odilienberg">Odilienberg</SETTLEMENT> (now called in French Mont Sainte-Odile) in the <REGION>Vosges</REGION> mountains <GEOG REG="France"></GEOG></PLACE> of <PLACE><REGION>Alsace</REGION><GEOG REG="France"></GEOG></PLACE>. By 13 September they had left for home. <BIBCITS><BIBCIT PLACEHOLDER="Pullen 80, 84" DBREF="76986">80, 84</BIBCIT></BIBCITS></P>
+                    </SHORTPROSE>
+                </DIV2>
+            </LOCATION>
+        </DIV1>
+        <DIV1>
+            <CULTURALFORMATION>
+                <RELIGION>
+                    <DIV2>
+                        <SHORTPROSE>
+                            <P>Her time in <PLACE><SETTLEMENT>Dresden</SETTLEMENT><REGION REG="Saxony"></REGION><GEOG REG="Germany"></GEOG></PLACE> crystallized her mixed feelings about the practice of her <ORGNAME STANDARD="Judaism"><DENOMINATION SELF-DEFINED="SELFYES" REG="Judaism">religion</DENOMINATION></ORGNAME>. Visiting the synagogue (for Yom Kippur) disgusted her: she said that German Jews made her feel anti-semitic.<BIBCITS><BIBCIT PLACEHOLDER="Pullen 45" DBREF="76986">45</BIBCIT></BIBCITS> <QUOTE DIRECT="Y">Zion unventilated &amp; unrefreshed . . . . The place was crammed with evil-looking Hebrews.</QUOTE> She contrasts these with some wealthy Jews she had met socially, who <QUOTE DIRECT="Y">don&apos;t seem half bad</QUOTE>&mdash;for Jews. Biographer <NAME>Linda Hunt Beckman</NAME> suggested that this insistence that Jews must be of English middle-class appearance before they could be acceptable registers a hidden self-hatred.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 237, 110" DBREF="8347" QTDIN="QTDINYES">237, 110</BIBCIT></BIBCITS></P>
+                        </SHORTPROSE>
+                    </DIV2>
+                </RELIGION>
+            </CULTURALFORMATION>
+        </DIV1>
+        <DIV1>
+            <OCCUPATION>
+                <DIV2>
+                    <SHORTPROSE>
+                        <P>In <PLACE><SETTLEMENT>Dresden</SETTLEMENT><REGION REG="Saxony"></REGION><GEOG REG="Germany"></GEOG></PLACE> she dealt with her need for money by <JOB REG="teacher">giving private lessons</JOB> in English to two boys aged eleven and sixteen. Her parents forbade this as improper.<BIBCITS><BIBCIT PLACEHOLDER="Pullen 43" DBREF="76986">43</BIBCIT></BIBCITS></P>
+                    </SHORTPROSE>
+                </DIV2>
+            </OCCUPATION>
+        </DIV1>
+        <DIV1>
+            <HEADING>Friends</HEADING>
+            <FRIENDSASSOCIATES>
+                <DIV2>
+                    <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB" CHRONCOLUMN1="SOCIALCLIMATE1" RELEVANCE1="DECADE1"> <DATE VALUE="1882-11-" CERTAINTY="BY">Probably by autumn 1882</DATE> <CHRONPROSE>AL became a member of a circle of reforming or socialist women who were mostly regulars in the ladies&apos; lunch room at the <ORGNAME REG="British Library" STANDARD="British Library">British Museum</ORGNAME>.</CHRONPROSE> <BIBCITS><BIBCIT PLACEHOLDER="Beckman 79" DBREF="8347">79</BIBCIT></BIBCITS> </CHRONSTRUCT>
+                    <SHORTPROSE>
+                        <P>They included <NAME>Olive Schreiner</NAME>, <NAME STANDARD="Webb, Beatrice">the future Beatrice Webb</NAME>, <NAME>Dollie Maitland Radford</NAME>, <NAME>Margaret Harkness</NAME>, <NAME>Clementina Black</NAME> (whose sister <NAME STANDARD="Garnett, Constance">Constance</NAME> had been a school friend of AL), and <NAME>Eleanor Marx</NAME>. Through <NAME>Vernon Lee</NAME> she met <NAME STANDARD="Robinson, A. Mary F.">Mary Robinson</NAME>, whom she had once imagined working for as secretary. As her confidence grew, so did her circle of literary friends.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 79, 130, 120, 242, 129" DBREF="8347">79, 130, 120, 242, 129</BIBCIT></BIBCITS> Through the club she frequented, she met men of letters like <NAME>George Bernard Shaw</NAME>, <NAME>Augustine Birrell</NAME>, and <NAME>Sidney Lee</NAME>. After 1886, as many of her earlier friends married or invested more of themselves in relationships with men, AL turned to members of homosocial literary circles she had met through Lee, like <NAME>Dorothy Blomfield</NAME>, <NAME>Bertha Thomas</NAME>, and <NAME>Helen Zimmern</NAME>.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 86, 132" DBREF="8347">86, 132</BIBCIT></BIBCITS></P>
+                        <P>Others among her friends were <NAME STANDARD="Darwin, Ellen Wordsworth">Ellen Wordsworth Crofts</NAME>, who later became the mother of the poet <NAME>Frances Cornford</NAME>, and <NAME>Karl Pearson</NAME>, mathematician, eugenicist, and founder of the <ORGNAME>Men and Women&apos;s Club</ORGNAME>.<BIBCITS><BIBCIT PLACEHOLDER="Pullen 115, 98" DBREF="76986">115, 98</BIBCIT></BIBCITS></P>
+                    </SHORTPROSE>
+                </DIV2>
+            </FRIENDSASSOCIATES>
+        </DIV1>
+        <DIV1>
+            <POLITICS>
+                <DIV2>
+                    <SHORTPROSE>
+                        <P>Her friendship with highly politicised women does not mean, however, that she shared their left-wing views.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 130" DBREF="8347">130</BIBCIT></BIBCITS></P>
+                    </SHORTPROSE>
+                </DIV2>
+            </POLITICS>
+        </DIV1>
+        <DIV1>
+            <LEISUREANDSOCIETY>
+                <DIV2>
+                    <SHORTPROSE>
+                        <P>She confessed also that to live like <NAME>Clementina Black</NAME> and her sister, doing their own housework, did not accord with <QUOTE DIRECT="Y">my own Philistine, middle class notions of comfort.</QUOTE><BIBCITS><BIBCIT PLACEHOLDER="Beckman 255" DBREF="8347" QTDIN="QTDINYES">255</BIBCIT></BIBCITS> She engaged, however, in socially provocative behaviour like riding on the open top deck of a bus, a conspicuous position normally occupied only by men.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 139" DBREF="8347">139</BIBCIT></BIBCITS> In December 1882 she joined an unnamed club for both sexes (too early for <NAME>Karl Pearson</NAME>&apos;s well-known Men and Women&apos;s Club) which met twice a month, either for talk and music or for the presentation of a paper. She had first registered as a guest in May that year, and late in 1883 the club twice met at her house. Later she did indeed join the <ORGNAME>Men and Women&apos;s Club</ORGNAME>, and she was also an early member of the <ORGNAME REG="University Women&apos;s Club" STANDARD="University Women&apos;s Club">University Women&apos;s Club</ORGNAME> (opened in January 1887), where she found a quiet space free from family demands.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 85-6, 137" DBREF="8347">85-6, 137</BIBCIT><BIBCIT PLACEHOLDER="Pullen 68" DBREF="76986">68</BIBCIT></BIBCITS></P>
+                    </SHORTPROSE>
+                </DIV2>
+            </LEISUREANDSOCIETY>
+        </DIV1>
+        <DIV1>
+            <HEADING>Health Problems</HEADING>
+            <HEALTH ISSUE="MENTAL">
+                <DIV2>
+                    <SHORTPROSE>
+                        <P>Throughout AL&apos;s life her letters refer to the depression which lurked constantly at the edges of her consciousness. In autumn 1885, a few months after her elder sister married, she attempted suicide and was sent to recover at <PLACE><SETTLEMENT>St Mawgan-in-Pydar</SETTLEMENT> in <REGION>Cornwall</REGION><GEOG REG="England"></GEOG></PLACE>.<BIBCITS><BIBCIT PLACEHOLDER="Pullen 110-11, 116" DBREF="76986">110-11, 116</BIBCIT></BIBCITS></P>
+                    </SHORTPROSE>
+                </DIV2>
+            </HEALTH>
+            <HEALTH ISSUE="PHYSICAL">
+                <DIV2>
+                    <SHORTPROSE>
+                        <P>She suffered various problems too with her physical health. In 1881 she had neuralgia and in 1884 an ulcerated sore throat. Her most serious trouble was deafness, which was already bothering her before she was twenty-three.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 243, 206, 251n4" DBREF="8347">243, 206, 251n4</BIBCIT></BIBCITS></P>
+                    </SHORTPROSE>
+                </DIV2>
+            </HEALTH>
+        </DIV1>
+        <DIV1>
+            <HEADING>Florence</HEADING>
+            <LOCATION RELATIONTO="TRAVELLED">
+                <DIV2>
+                    <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB"> <DATERANGE CERTAINTY="C" FROM="1886-01-" TO="1886-03-24" EXACT="BOTH">Late winter and early spring 1886</DATERANGE> <CHRONPROSE>AL, with <NAME>Clementina Black</NAME>, stayed at <PLACE><PLACENAME>Casa Guidi</PLACENAME>, <SETTLEMENT>Florence</SETTLEMENT><GEOG REG="Italy"></GEOG></PLACE>, once the home of <NAME STANDARD="Browning, Elizabeth Barrett">Elizabeth</NAME> and <NAME>Robert Browning</NAME>.</CHRONPROSE> <BIBCITS><BIBCIT PLACEHOLDER="Beckman 116-17" DBREF="8347">116-17</BIBCIT></BIBCITS> </CHRONSTRUCT>
+                    <SHORTPROSE>
+                        <P>This visit too had a recuperative purpose. But AL loved Florence. She hoped to return at around the same time the following year, but had to put off her trip.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 258, 265" DBREF="8347">258, 265</BIBCIT></BIBCITS></P>
+                    </SHORTPROSE>
+                </DIV2>
+            </LOCATION>
+        </DIV1>
+        <DIV1>
+            <INTIMATERELATIONSHIPS EROTIC="EROTICYES">
+                <DIV2>
+                    <HEADING>Vernon Lee</HEADING>
+                    <CHRONSTRUCT RELEVANCE="DECADE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB"> <DATE VALUE="1886-11-26" CERTAINTY="AFTER">From November 1886</DATE> <CHRONPROSE>AL addressed letters and love-poems to the writer <NAME>Vernon Lee</NAME>, whom she had met that spring in <PLACE><SETTLEMENT>Florence</SETTLEMENT><GEOG REG="Italy"></GEOG></PLACE>, and for whom she cherished an unrequited love.</CHRONPROSE> <BIBCITS><BIBCIT PLACEHOLDER="Beckman 254-5, 119-21" DBREF="8347">254-5, 119-21</BIBCIT></BIBCITS> </CHRONSTRUCT>
+                    <SHORTPROSE>
+                        <P>In this, says biographer Christine Pullen, AL was switching her emotional dependence from <NAME>Karl Pearson</NAME> (who, she felt, had betrayed their friendship) to Lee,<BIBCITS><BIBCIT PLACEHOLDER="Pullen 98" DBREF="76986">98</BIBCIT></BIBCITS> who was personally charismatic as well as being a writer with a growing reputation. AL addressed her as <SOCALLED>Miss Paget</SOCALLED>.</P>
+                    </SHORTPROSE>
+                </DIV2>
+            </INTIMATERELATIONSHIPS>
+        </DIV1>
+        <DIV1>
+            <WEALTH>
+                <DIV2>
+                    <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="IMG"> <DATE VALUE="1887--">1887</DATE> <CHRONPROSE>AL&apos;s family suffered a financial setback severe enough to prevent her return to <PLACE><SETTLEMENT>Florence</SETTLEMENT><GEOG REG="Italy"></GEOG></PLACE>.</CHRONPROSE> <BIBCITS><BIBCIT PLACEHOLDER="Beckman 135" DBREF="8347">135</BIBCIT></BIBCITS> </CHRONSTRUCT>
+                    <SHORTPROSE>
+                        <P>A younger relative&apos;s account&mdash;that Amy&apos;s father and uncle <QUOTE DIRECT="Y">lost every penny they had</QUOTE> on the Stock Exchange&mdash;was undoubtedly exaggerated.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 135" DBREF="8347" QTDIN="QTDINYES">135</BIBCIT></BIBCITS></P>
+                    </SHORTPROSE>
+                </DIV2>
+            </WEALTH>
+        </DIV1>
+        <DIV1>
+            <LOCATION RELATIONTO="TRAVELLED">
+                <DIV2>
+                    <HEADING>Back to Florence</HEADING>
+                    <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="IMG"> <DATE VALUE="1888-10-31" CERTAINTY="BY">By the end of October 1888</DATE> <CHRONPROSE>AL left for her second visit to <PLACE><SETTLEMENT>Florence</SETTLEMENT><GEOG REG="Italy"></GEOG></PLACE>, after finishing reading proof on her second novel.</CHRONPROSE> <BIBCITS><BIBCIT PLACEHOLDER="Beckman 149" DBREF="8347">149</BIBCIT></BIBCITS> </CHRONSTRUCT>
+                    <SHORTPROSE>
+                        <P>She returned home via <PLACE><SETTLEMENT>Paris</SETTLEMENT><GEOG REG="France"></GEOG></PLACE>, arriving on <DATE>17 January 1889</DATE>.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 152, 175" DBREF="8347">152, 175</BIBCIT></BIBCITS><SCHOLARNOTE> <P>On a later page, Beckman gives the date as 18 January, but her account of the days of the week suggests that the 17th is correct.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 175" DBREF="8347">175</BIBCIT></BIBCITS></P> </SCHOLARNOTE></P>
+                    </SHORTPROSE>
+                </DIV2>
+            </LOCATION>
+        </DIV1>
+        <DIV1>
+            <HEADING>A Last Love?</HEADING>
+            <INTIMATERELATIONSHIPS EROTIC="EROTICPOSSIBLY">
+                <DIV2>
+                    <SHORTPROSE>
+                        <P>AL&apos;s biographer <NAME>Linda Hunt Beckman</NAME> believes that AL fell in love once more in her life, and that the most likely person to have been her beloved was her friend <NAME>Dorothy Blomfield</NAME>. Levy sounded depressed during her second stay in Florence (without Blomfield), and she never saw her again after a meeting on <DATE>31 January 1889</DATE>, a fortnight after getting back to London. Beckman suspects that Blomfield ended the relationship, and that for Levy this was the final straw.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 152" DBREF="8347">152</BIBCIT></BIBCITS></P>
+                    </SHORTPROSE>
+                </DIV2>
+            </INTIMATERELATIONSHIPS>
+        </DIV1>
+        <DIV1>
+            <HEADING>A Last Year</HEADING>
+            <LEISUREANDSOCIETY>
+                <DIV2>
+                    <SHORTPROSE>
+                        <P>AL&apos;s final months of life were crowded and active. She attended concerts, plays, and lectures, visited galleries and museums, gave an ambitious party, and took her nieces and nephews on outings.</P>
+                    </SHORTPROSE>
+                </DIV2>
+            </LEISUREANDSOCIETY>
+        </DIV1>
+        <DIV1>
+            <FRIENDSASSOCIATES>
+                <DIV2>
+                    <SHORTPROSE>
+                        <P>She saw a good deal of <NAME>Olive Schreiner</NAME>, who called her <QUOTE DIRECT="Y">the most interesting girl she had met in England,</QUOTE><BIBCITS><BIBCIT PLACEHOLDER="Beckman 179" DBREF="8347" QTDIN="QTDINYES">179</BIBCIT></BIBCITS> and also took her on two trips outside London at the very end of her life, in a vain effort to cheer her. She met <NAME>Millicent Garrett Fawcett</NAME> and, in July, <NAME STANDARD="Yeats, W. B.">W. B. Yeats</NAME>.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 200, 177, 183" DBREF="8347">200, 177, 183</BIBCIT></BIBCITS></P>
+                    </SHORTPROSE>
+                </DIV2>
+            </FRIENDSASSOCIATES>
+        </DIV1>
+        <DIV1>
+            <OCCUPATION>
+                <DIV2>
+                    <SHORTPROSE>
+                        <P>She also this year <SIGNIFICANTACTIVITY PHILANTHROPYVOLUNTEER="PHILANTHROPYVOLUNTEERYES" REG="volunteer office work">helped <NAME>Clementina Black</NAME> in the office of the <ORGNAME REG="Women&apos;s Protective and Provident League" STANDARD="Women&apos;s Trade Union League">Women&apos;s Protective and Provident League</ORGNAME></SIGNIFICANTACTIVITY>.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 179" DBREF="8347">179</BIBCIT></BIBCITS></P>
+                    </SHORTPROSE>
+                </DIV2>
+            </OCCUPATION>
+        </DIV1>
+        <DIV1>
+            <HEADING>Suicide</HEADING>
+            <DEATH>
+                <DIV2>
+                    <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB"> <DATE>10 September 1889</DATE> <CHRONPROSE>AL committed <CAUSE>suicide</CAUSE> at her parents&apos; home at <PLACE><ADDRESS><ADDRLINE>7 Endsleigh Gardens</ADDRLINE></ADDRESS>, <SETTLEMENT CURRENT="London">Bloomsbury</SETTLEMENT><REGION REG="Middlesex"></REGION><GEOG REG="England"></GEOG></PLACE>, by burning charcoal in a small enclosed room, till she was <CAUSE>asphyxiated by carbon monoxide</CAUSE>.</CHRONPROSE> <BIBCITS><BIBCIT PLACEHOLDER="Beckman 201" DBREF="8347">201</BIBCIT></BIBCITS> </CHRONSTRUCT>
+                    <SHORTPROSE>
+                        <P>The following year the novelist <NAME>Grant Allen</NAME>, an opponent of higher education for women, attributed her suicide directly to her time at university. Beckman considers many possible reasons&mdash;a broken love-affair, her lesbianism, her deafness, the growing antisemitism of English society, the hostile reception of <TITLE TITLETYPE="MONOGRAPHIC">Reuben Sachs</TITLE>, possible fears of inherited insanity, or simple body chemistry&mdash;but comes to no definite conclusion.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 3, 7, 203-10, 318" DBREF="8347">3, 7, 203-210, 318</BIBCIT></BIBCITS><SCHOLARNOTE> <P>As to her sensitivity to adverse criticism, in 1884 she had written of herself and <NAME>Ernest Radford</NAME>, <QUOTE DIRECT="Y">It&apos;s a good thing we are not of <NAME STANDARD="Keats, John">Keats</NAME>-like sensibility, otherwise we shd. long ago have been <QUOTE DIRECT="N">snuffed out</QUOTE> by the various <QUOTE DIRECT="N">articles</QUOTE> of kind critics.</QUOTE><BIBCITS><BIBCIT PLACEHOLDER="Beckman 248" DBREF="8347" QTDIN="QTDINYES">248</BIBCIT></BIBCITS></P> </SCHOLARNOTE></P>
+                        <P>On 13 September AL became the first Jewish woman to be cremated in <PLACE><GEOG>England</GEOG></PLACE>. Her ashes are buried at <PLACE><PLACENAME>Balls Pond Cemetery</PLACENAME> in <SETTLEMENT>London</SETTLEMENT><REGION REG="Middlesex"></REGION><GEOG REG="England"></GEOG></PLACE>.<BIBCITS><BIBCIT PLACEHOLDER="DLB 156: 214" DBREF="9286">214</BIBCIT></BIBCITS></P>
+                    </SHORTPROSE>
+                </DIV2>
+            </DEATH>
+        </DIV1>
+        <WORKSCITED>
+            <SOURCE>Unless otherwise noted, all information is from the FC</SOURCE>
+            <SOURCE>Beckman, Linda Hunt. Amy Levy. 2000.</SOURCE>
+            <SOURCE>Horton, Audrey F. Amy Levy. Dictionary of Literary Biography.</SOURCE>
+            <SOURCE>Wagenknecht, Edward. Daughters of the Covenant.</SOURCE>
+        </WORKSCITED>
+    </DIV0>
+</BIOGRAPHY>
+
