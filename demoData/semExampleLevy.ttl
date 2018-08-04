@@ -1,0 +1,48 @@
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix geo: <http://sws.geonames.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix cwrcgenre: <http://sparql.cwrc.ca/ontologies/genre#>
+
+cwrc:AmyLevy	a sem:Actor, cwrc:Person ;
+		sem:actorType cwrc:Person ;
+		rdfs:label "Amy Levy" .
+
+
+cwrc:LevyDeathEvent1 a sem:Event ;
+	rdfs:label "10 September 1889: AL commited suicide at her parents' home at 7 Endsleigh Gardens, Bloomsbury, burning charcoal in a small enclosed room, till she was asphyxiated by carbon monoxide" ;
+	cwrc:hasTime cwrc:punctiveTime ;
+	sem:timeStamp "1889-09-10"^^xsd:date ;
+	sem:hasPlace geo:2643743 ;
+	sem:eventType cwrc:BritishWomensWritingEvent, cwrc:DeathEvent, cwrc:HistoricSignificance ;
+	sem:hasActor cwrc:AmyLevy
+	cwrc:hasFactor ii:suicide ;
+	cito:cites cwrc:dbref8347 ;
+
+
+cwrc:productionEvent1 a sem:Event, cwrc:MacroEvent ;
+    rdfs:label "By late May or early June 1884: AL's A Minor Poet and Other Verse reprinted many of the poems from her earlier collection and added most of those she had written since leaving university." ;
+    sem:eventType cwrc:ProductionEvent ;
+    cwrc:hasFactor cwrc:dbref76986, cwrcgenre:poetry ;
+    sem:hasActor cwrc:AmyLevy ;
+    sem:hasTime cwrc:circaTime ;
+    cito:cites cwrc:dbref8347, cwrc:dbref107913 ;
+    sem:hasTimeStamp '1884-06-01' .
+
+
+cwrc:LevyLocationEvent3 a sem:Event, cwrc:MicroEvent ;
+    rdfs:label "By November - December 1881: Amy Levy made a visit to Dresden in Germany." ;
+    sem:eventType cwrc:BritishWomensWritingEvent, cwrc:LocationEvent ;
+    sem:hasLatestBeginTimeStamp "1881-11-10"^^xsd:date ;
+    sem:hasTime cwrc:IntervalTime ;
+    sem:hasEndingTimeStamp "1881-12-08"^^xsd:date ;
+    cito:cites cwrc:dbref8347 ;
+    sem:hasPlace tgn:7004455 .
+
