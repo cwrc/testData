@@ -216,7 +216,11 @@
             <HEADING>Birth and Family</HEADING>
             <BIRTH>
                 <DIV2>
-                    <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB"> <DATE>10 November 1861</DATE> <CHRONPROSE><BIRTHPOSITION>AL was born in the London district which was then known as <PLACE><SETTLEMENT CURRENT="London" REG="Lambeth">South Lambeth</SETTLEMENT><REGION REG="Surrey"></REGION><GEOG REG="England"></GEOG></PLACE> (now classified as <PLACE><SETTLEMENT CURRENT="London">Peckham</SETTLEMENT><REGION REG="Surrey"></REGION><GEOG REG="England"></GEOG></PLACE>), the second of seven children.</BIRTHPOSITION></CHRONPROSE> <BIBCITS><BIBCIT PLACEHOLDER="Beckman 1, 13" DBREF="8347">1, 13</BIBCIT></BIBCITS> </CHRONSTRUCT>
+                    <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB"> 
+                       <!--  <DATE>10 November 1861</DATE>  -->
+                        <CHRONPROSE><BIRTHPOSITION>AL was born in the London district which was then known as 
+                           <!--  <PLACE><SETTLEMENT CURRENT="London" REG="Lambeth">South Lambeth</SETTLEMENT><REGION REG="Surrey"></REGION><GEOG REG="England"></GEOG></PLACE>  -->
+                            (now classified as <PLACE><SETTLEMENT CURRENT="London">Peckham</SETTLEMENT><REGION REG="Surrey"></REGION><GEOG REG="England"></GEOG></PLACE>), the second of seven children.</BIRTHPOSITION></CHRONPROSE> <BIBCITS><BIBCIT PLACEHOLDER="Beckman 1, 13" DBREF="8347">1, 13</BIBCIT></BIBCITS> </CHRONSTRUCT>
                     <SHORTPROSE>
                         <P>She had an elder and a younger sister, and four younger brothers.</P>
                     </SHORTPROSE>
@@ -235,41 +239,47 @@
                         <P>AL early developed <SEXUALIDENTITY REG="lesbian">strong erotic attachments to women</SEXUALIDENTITY>. She wrote of these openly, but may or may not have expressed them physically.</P>
                     </SHORTPROSE>
                 </DIV2>
-                <RACEANDETHNICITY>
+                <!-- <RACEANDETHNICITY>
                     <DIV2>
                         <SHORTPROSE>
-                            <P>Being <ETHNICITY REG="Jew">Jewish</ETHNICITY> must have posed problems for AL, problems which seem to have been exacerbated by struggles with an internalised anti-semitism. She apparently thought of herself as unattractive to a degree quite at odds with the comments of other people; she drew caricatures, both visual and verbal, of Jewish people with exaggeratedly stereotyped racial characteristics. After visiting a synagogue in <PLACE><SETTLEMENT>Dresden</SETTLEMENT><REGION REG="Saxony"></REGION><GEOG REG="Germany"></GEOG></PLACE> she wrote, <QUOTE DIRECT="Y">the German Hebrew makes me feel, as a rule, that the Anti-Semitic movement is a most just &amp; virtuous one.</QUOTE><BIBCITS><BIBCIT PLACEHOLDER="Beckman 236" DBREF="8347" QTDIN="QTDINYES">236</BIBCIT></BIBCITS></P>
+                            <P>Being
+                                <!-- <ETHNICITY REG="Jew">Jewish</ETHNICITY> -->
+                                must have posed problems for AL, problems which seem to have been exacerbated by struggles with an internalised anti-semitism. She apparently thought of herself as unattractive to a degree quite at odds with the comments of other people; she drew caricatures, both visual and verbal, of Jewish people with exaggeratedly stereotyped racial characteristics. After visiting a synagogue in <PLACE><SETTLEMENT>Dresden</SETTLEMENT><REGION REG="Saxony"></REGION><GEOG REG="Germany"></GEOG></PLACE> she wrote, <QUOTE DIRECT="Y">the German Hebrew makes me feel, as a rule, that the Anti-Semitic movement is a most just &amp; virtuous one.</QUOTE><BIBCITS><BIBCIT PLACEHOLDER="Beckman 236" DBREF="8347" QTDIN="QTDINYES">236</BIBCIT></BIBCITS></P>
                         </SHORTPROSE>
                     </DIV2>
-                </RACEANDETHNICITY>
+                </RACEANDETHNICITY> -->
             </CULTURALFORMATION>
         </DIV1>
         <DIV1>
             <FAMILY>
-                <MEMBER RELATION="MOTHER">
+                <<!-- MEMBER RELATION="MOTHER"> -->
                     <DIV2>
                         <HEADING>Mother</HEADING>
                         <SHORTPROSE>
-                            <P>AL&apos;s parents were cousins. Her mother, Isabelle, came from a Jewish family settled in England since the early eighteenth century; her father (Amy&apos;s grandfather) lived at <PLACE><SETTLEMENT>Falmouth</SETTLEMENT> in <REGION>Cornwall</REGION><GEOG REG="England"></GEOG></PLACE> and traded with Spain. <NAME>Isabelle Levy</NAME> lived until 1928, and died in London.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 1, 12, 306n57" DBREF="8347">1, 12, 306n57</BIBCIT></BIBCITS></P>
+                            <P>AL&apos;s parents were cousins. Her mother, Isabelle, came from a Jewish family settled in England since the early eighteenth century; her father (Amy&apos;s grandfather) lived at <PLACE><SETTLEMENT>Falmouth</SETTLEMENT> in <REGION>Cornwall</REGION><GEOG REG="England"></GEOG></PLACE> and traded with Spain. 
+<!--                             <NAME>Isabelle Levy</NAME>
+ -->                             lived until 1928, and died in London.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 1, 12, 306n57" DBREF="8347">1, 12, 306n57</BIBCIT></BIBCITS></P>
                         </SHORTPROSE>
                     </DIV2>
                 </MEMBER>
-                <MEMBER RELATION="FATHER">
+                <!-- <MEMBER RELATION="FATHER"> -->
                     <DIV2>
                         <HEADING>Father</HEADING>
                         <SHORTPROSE>
-                            <P>Her father, <NAME>Lewis Levy</NAME>, had been to Australia with his brothers during the gold-rush years, and <JOB REG="pedlar">travelled with a wagon</JOB>, selling goods to miners. Back in England he became a <JOB>merchant</JOB>, then a <JOB>stockbroker</JOB>. He died in Johannesburg.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 12-13, 306n57" DBREF="8347">12-13, 306n57</BIBCIT></BIBCITS></P>
+                            <P>Her father,
+<!--                                 <NAME>Lewis Levy</NAME>
+ -->                                , had been to Australia with his brothers during the gold-rush years, and <JOB REG="pedlar">travelled with a wagon</JOB>, selling goods to miners. Back in England he became a <JOB>merchant</JOB>, then a <JOB>stockbroker</JOB>. He died in Johannesburg.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 12-13, 306n57" DBREF="8347">12-13, 306n57</BIBCIT></BIBCITS></P>
                         </SHORTPROSE>
                     </DIV2>
                 </MEMBER>
-                <MEMBER RELATION="SISTER">
+                <!-- <MEMBER RELATION="SISTER"> -->
                     <DIV2>
                         <SHORTPROSE>
                             <P>AL&apos;s sister Katie, the only sibling who was older than she was, got married in <DATE>August 1885</DATE>; which may precipated some kind of breakdown in Amy<BIBCITS><BIBCIT PLACEHOLDER="Pullen 107, 109" DBREF="76986">107, 109</BIBCIT></BIBCITS></P>
                         </SHORTPROSE>
                     </DIV2>
                 </MEMBER>
-                <MEMBER RELATION="BROTHER">
+               <!--  <MEMBER RELATION="BROTHER"> -->
                     <DIV2>
                         <HEADING>Brothers</HEADING>
                         <SHORTPROSE>
@@ -337,13 +347,13 @@
         </DIV1>
         <DIV1>
             <HEADING>Romantic Passions</HEADING>
-            <INTIMATERELATIONSHIPS EROTIC="EROTICYES">
+            <!-- <INTIMATERELATIONSHIPS EROTIC="EROTICYES">
                 <DIV2>
                     <SHORTPROSE>
                         <P>At Brighton High School AL developed <SOCALLED>a grand passion</SOCALLED> for headmistress <NAME>Edith Creak</NAME> (a recent <ORGNAME REG="Newnham College,, Cambridge University" STANDARD="Newnham College,, Cambridge University">Cambridge</ORGNAME> graduate). <QUOTE DIRECT="Y">Frankly I&apos;m more in love with her than ever,</QUOTE> she wrote with apparent good cheer to her elder sister, <QUOTE DIRECT="Y">isn&apos;t it grim?</QUOTE><BIBCITS><BIBCIT PLACEHOLDER="Beckman 29, 31" DBREF="8347" QTDIN="QTDINYES">29, 31</BIBCIT></BIBCITS> She may, as reported by a cousin, have been unhappily in love again as an undergraduate.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 51" DBREF="8347">51</BIBCIT></BIBCITS></P>
                     </SHORTPROSE>
                 </DIV2>
-            </INTIMATERELATIONSHIPS>
+            </INTIMATERELATIONSHIPS> -->
         </DIV1>
         <DIV1>
             <HEADING>Early Travel</HEADING>
@@ -369,13 +379,15 @@
         </DIV1>
         <DIV1>
             <CULTURALFORMATION>
-                <RELIGION>
+                <!-- <RELIGION>
                     <DIV2>
                         <SHORTPROSE>
-                            <P>Her time in <PLACE><SETTLEMENT>Dresden</SETTLEMENT><REGION REG="Saxony"></REGION><GEOG REG="Germany"></GEOG></PLACE> crystallized her mixed feelings about the practice of her <ORGNAME STANDARD="Judaism"><DENOMINATION SELF-DEFINED="SELFYES" REG="Judaism">religion</DENOMINATION></ORGNAME>. Visiting the synagogue (for Yom Kippur) disgusted her: she said that German Jews made her feel anti-semitic.<BIBCITS><BIBCIT PLACEHOLDER="Pullen 45" DBREF="76986">45</BIBCIT></BIBCITS> <QUOTE DIRECT="Y">Zion unventilated &amp; unrefreshed . . . . The place was crammed with evil-looking Hebrews.</QUOTE> She contrasts these with some wealthy Jews she had met socially, who <QUOTE DIRECT="Y">don&apos;t seem half bad</QUOTE>&mdash;for Jews. Biographer <NAME>Linda Hunt Beckman</NAME> suggested that this insistence that Jews must be of English middle-class appearance before they could be acceptable registers a hidden self-hatred.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 237, 110" DBREF="8347" QTDIN="QTDINYES">237, 110</BIBCIT></BIBCITS></P>
+                            <P>Her time in <PLACE><SETTLEMENT>Dresden</SETTLEMENT><REGION REG="Saxony"></REGION><GEOG REG="Germany"></GEOG></PLACE> crystallized her mixed feelings about the practice of her <ORGNAME STANDARD="Judaism">
+                            <!-- <DENOMINATION SELF-DEFINED="SELFYES" REG="Judaism">religion</DENOMINATION> -->
+                        </ORGNAME>. Visiting the synagogue (for Yom Kippur) disgusted her: she said that German Jews made her feel anti-semitic.<BIBCITS><BIBCIT PLACEHOLDER="Pullen 45" DBREF="76986">45</BIBCIT></BIBCITS> <QUOTE DIRECT="Y">Zion unventilated &amp; unrefreshed . . . . The place was crammed with evil-looking Hebrews.</QUOTE> She contrasts these with some wealthy Jews she had met socially, who <QUOTE DIRECT="Y">don&apos;t seem half bad</QUOTE>&mdash;for Jews. Biographer <NAME>Linda Hunt Beckman</NAME> suggested that this insistence that Jews must be of English middle-class appearance before they could be acceptable registers a hidden self-hatred.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 237, 110" DBREF="8347" QTDIN="QTDINYES">237, 110</BIBCIT></BIBCITS></P>
                         </SHORTPROSE>
                     </DIV2>
-                </RELIGION>
+                </RELIGION> -->
             </CULTURALFORMATION>
         </DIV1>
         <DIV1>
@@ -400,13 +412,13 @@
             </FRIENDSASSOCIATES>
         </DIV1>
         <DIV1>
-            <POLITICS>
+            <!-- <POLITICS>
                 <DIV2>
                     <SHORTPROSE>
                         <P>Her friendship with highly politicised women does not mean, however, that she shared their left-wing views.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 130" DBREF="8347">130</BIBCIT></BIBCITS></P>
                     </SHORTPROSE>
                 </DIV2>
-            </POLITICS>
+            </POLITICS> -->
         </DIV1>
         <DIV1>
             <LEISUREANDSOCIETY>
@@ -446,7 +458,7 @@
             </LOCATION>
         </DIV1>
         <DIV1>
-            <INTIMATERELATIONSHIPS EROTIC="EROTICYES">
+            <!-- <INTIMATERELATIONSHIPS EROTIC="EROTICYES">
                 <DIV2>
                     <HEADING>Vernon Lee</HEADING>
                     <CHRONSTRUCT RELEVANCE="DECADE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB"> <DATE VALUE="1886-11-26" CERTAINTY="AFTER">From November 1886</DATE> <CHRONPROSE>AL addressed letters and love-poems to the writer <NAME>Vernon Lee</NAME>, whom she had met that spring in <PLACE><SETTLEMENT>Florence</SETTLEMENT><GEOG REG="Italy"></GEOG></PLACE>, and for whom she cherished an unrequited love.</CHRONPROSE> <BIBCITS><BIBCIT PLACEHOLDER="Beckman 254-5, 119-21" DBREF="8347">254-5, 119-21</BIBCIT></BIBCITS> </CHRONSTRUCT>
@@ -454,7 +466,7 @@
                         <P>In this, says biographer Christine Pullen, AL was switching her emotional dependence from <NAME>Karl Pearson</NAME> (who, she felt, had betrayed their friendship) to Lee,<BIBCITS><BIBCIT PLACEHOLDER="Pullen 98" DBREF="76986">98</BIBCIT></BIBCITS> who was personally charismatic as well as being a writer with a growing reputation. AL addressed her as <SOCALLED>Miss Paget</SOCALLED>.</P>
                     </SHORTPROSE>
                 </DIV2>
-            </INTIMATERELATIONSHIPS>
+            </INTIMATERELATIONSHIPS> -->
         </DIV1>
         <DIV1>
             <WEALTH>
@@ -479,13 +491,13 @@
         </DIV1>
         <DIV1>
             <HEADING>A Last Love?</HEADING>
-            <INTIMATERELATIONSHIPS EROTIC="EROTICPOSSIBLY">
+            <!-- <INTIMATERELATIONSHIPS EROTIC="EROTICPOSSIBLY">
                 <DIV2>
                     <SHORTPROSE>
                         <P>AL&apos;s biographer <NAME>Linda Hunt Beckman</NAME> believes that AL fell in love once more in her life, and that the most likely person to have been her beloved was her friend <NAME>Dorothy Blomfield</NAME>. Levy sounded depressed during her second stay in Florence (without Blomfield), and she never saw her again after a meeting on <DATE>31 January 1889</DATE>, a fortnight after getting back to London. Beckman suspects that Blomfield ended the relationship, and that for Levy this was the final straw.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 152" DBREF="8347">152</BIBCIT></BIBCITS></P>
                     </SHORTPROSE>
                 </DIV2>
-            </INTIMATERELATIONSHIPS>
+            </INTIMATERELATIONSHIPS> -->
         </DIV1>
         <DIV1>
             <HEADING>A Last Year</HEADING>
@@ -519,10 +531,20 @@
             <HEADING>Suicide</HEADING>
             <DEATH>
                 <DIV2>
-                    <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB"> <DATE>10 September 1889</DATE> <CHRONPROSE>AL committed <CAUSE>suicide</CAUSE> at her parents&apos; home at <PLACE><ADDRESS><ADDRLINE>7 Endsleigh Gardens</ADDRLINE></ADDRESS>, <SETTLEMENT CURRENT="London">Bloomsbury</SETTLEMENT><REGION REG="Middlesex"></REGION><GEOG REG="England"></GEOG></PLACE>, by burning charcoal in a small enclosed room, till she was <CAUSE>asphyxiated by carbon monoxide</CAUSE>.</CHRONPROSE> <BIBCITS><BIBCIT PLACEHOLDER="Beckman 201" DBREF="8347">201</BIBCIT></BIBCITS> </CHRONSTRUCT>
+                    <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB"> 
+                        <!-- <DATE>10 September 1889</DATE>  -->
+                        <CHRONPROSE>AL committed 
+                    <!-- <CAUSE>suicide</CAUSE>  -->
+                    at her parents&apos; home at <PLACE><ADDRESS><ADDRLINE>7 Endsleigh Gardens</ADDRLINE></ADDRESS>, 
+                    <!-- <SETTLEMENT CURRENT="London">Bloomsbury</SETTLEMENT><REGION REG="Middlesex"></REGION><GEOG REG="England"></GEOG></PLACE> -->, by burning charcoal in a small enclosed room, till she was 
+                    <!-- <CAUSE>asphyxiated by carbon monoxide</CAUSE> -->
+                    .</CHRONPROSE> <BIBCITS><BIBCIT PLACEHOLDER="Beckman 201" DBREF="8347">201</BIBCIT></BIBCITS> </CHRONSTRUCT>
                     <SHORTPROSE>
-                        <P>The following year the novelist <NAME>Grant Allen</NAME>, an opponent of higher education for women, attributed her suicide directly to her time at university. Beckman considers many possible reasons&mdash;a broken love-affair, her lesbianism, her deafness, the growing antisemitism of English society, the hostile reception of <TITLE TITLETYPE="MONOGRAPHIC">Reuben Sachs</TITLE>, possible fears of inherited insanity, or simple body chemistry&mdash;but comes to no definite conclusion.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 3, 7, 203-10, 318" DBREF="8347">3, 7, 203-210, 318</BIBCIT></BIBCITS><SCHOLARNOTE> <P>As to her sensitivity to adverse criticism, in 1884 she had written of herself and <NAME>Ernest Radford</NAME>, <QUOTE DIRECT="Y">It&apos;s a good thing we are not of <NAME STANDARD="Keats, John">Keats</NAME>-like sensibility, otherwise we shd. long ago have been <QUOTE DIRECT="N">snuffed out</QUOTE> by the various <QUOTE DIRECT="N">articles</QUOTE> of kind critics.</QUOTE><BIBCITS><BIBCIT PLACEHOLDER="Beckman 248" DBREF="8347" QTDIN="QTDINYES">248</BIBCIT></BIBCITS></P> </SCHOLARNOTE></P>
-                        <P>On 13 September AL became the first Jewish woman to be cremated in <PLACE><GEOG>England</GEOG></PLACE>. Her ashes are buried at <PLACE><PLACENAME>Balls Pond Cemetery</PLACENAME> in <SETTLEMENT>London</SETTLEMENT><REGION REG="Middlesex"></REGION><GEOG REG="England"></GEOG></PLACE>.<BIBCITS><BIBCIT PLACEHOLDER="DLB 156: 214" DBREF="9286">214</BIBCIT></BIBCITS></P>
+                        <!-- <P>The following year the novelist <NAME>Grant Allen</NAME>, an opponent of higher education for women, attributed her suicide directly to her time at university. Beckman considers many possible reasons&mdash;a broken love-affair, her lesbianism, her deafness, the growing antisemitism of English society, the hostile reception of <TITLE TITLETYPE="MONOGRAPHIC">Reuben Sachs</TITLE>, possible fears of inherited insanity, or simple body chemistry&mdash;but comes to no definite conclusion.<BIBCITS><BIBCIT PLACEHOLDER="Beckman 3, 7, 203-10, 318" DBREF="8347">3, 7, 203-210, 318</BIBCIT></BIBCITS><SCHOLARNOTE>
+
+                        <P>As to her sensitivity to adverse criticism, in 1884 she had written of herself and <NAME>Ernest Radford</NAME>, <QUOTE DIRECT="Y">It&apos;s a good thing we are not of <NAME STANDARD="Keats, John">Keats</NAME>-like sensibility, otherwise we shd. long ago have been <QUOTE DIRECT="N">snuffed out</QUOTE> by the various <QUOTE DIRECT="N">articles</QUOTE> of kind critics.</QUOTE><BIBCITS><BIBCIT PLACEHOLDER="Beckman 248" DBREF="8347" QTDIN="QTDINYES">248</BIBCIT></BIBCITS></P> </SCHOLARNOTE></P>
+                        
+                        <P>On 13 September AL became the first Jewish woman to be cremated in <PLACE><GEOG>England</GEOG></PLACE>. Her ashes are buried at <PLACE><PLACENAME>Balls Pond Cemetery</PLACENAME> in <SETTLEMENT>London</SETTLEMENT><REGION REG="Middlesex"></REGION><GEOG REG="England"></GEOG></PLACE>.<BIBCITS><BIBCIT PLACEHOLDER="DLB 156: 214" DBREF="9286">214</BIBCIT></BIBCITS></P> -->
                     </SHORTPROSE>
                 </DIV2>
             </DEATH>
