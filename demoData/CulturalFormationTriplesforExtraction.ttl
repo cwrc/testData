@@ -45,10 +45,13 @@
 
 <http://www.cwrc.ca/cwrcdata/VirginiaWoolf_CulturalFormContext1>
   a cwrc:CulturalFormContext ;
+  rdfs:label "Woolf Cultural Form Context 1" ;
   oa:hasBody cwrc:quakers ;
   oa:hasBody cwrc:agnosticism ;
   oa:hasBody cwrc:evangelical ;
   oa:hasTarget <http://www.cwrc.ca/cwrcdata/virginiaWoolf1> ;
+  dcterms:subject <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
+  dcterms:subject cwrc:quakers, cwrc:agnosticism , cwrc:evangelical ;
   oa:motivatedBy oa:identifying .
 
 # This second set describes the cultural forms in the ontology about Virginia Woolf
@@ -57,6 +60,7 @@
 
 <http://www.cwrc.ca/cwrcdata/VirginiaWoolf_CulturalFormContext2>
     a cwrc:CulturalFormContext ;
+    rdfs:label "Woolf Cultural Form Context 2" ;
     cwrc:hasIdDependencyOn <http://www.cwrc.ca/cwrcdata/VirginiaWoolf_CulturalFormContext1> ;
     rdfs:label "Cultural Form Context for Virginia Woolf"@en ;
     oa:hasBody [
@@ -86,6 +90,7 @@
     ] ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
     oa:motivatedBy oa:describing ;
+    cwrc:hasIdDependencyOn <http://www.cwrc.ca/cwrcdata/VirginiaWoolf_CulturalFormContext1> ;
     prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/virginiaWoolf1> .
 
 <http://www.cwrc.ca/cwrcdata/VirginiaWoolf_SexualityContext1>
@@ -93,6 +98,8 @@
   rdfs:label "Sexuality Context Identifying Virginia Woolf"@en ;
   oa:hasBody cwrc:bisexual ;
   oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
+  dcterms:subject <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
+  dcterms:subject cwrc:bisexual ;
   oa:motivatedBy oa:identifying .
 
 <http://www.cwrc.ca/cwrcdata/VirginiaWoolf_SexualityContext2>
@@ -116,6 +123,7 @@
       dcterms:format "text/turtle"^^xsd:string ;
     ] ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
+    cwrc:hasIdDependencyOn <http://www.cwrc.ca/cwrcdata/VirginiaWoolf_SexualityContext1> ;
     prov:wasDerivedFrom <http://www.cwrc.ca/cwrcdata/virginiaWoolf1> .
 
 <http://www.cwrc.ca/cwrcdata/virginia_Woolf_Main_Document>
