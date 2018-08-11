@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://cwrc.ca/schemas/orlando_biography.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+    <?xml-stylesheet type="text/css" href="http://cwrc.ca/templates/css/orlando.css"?>
+        <BIOGRAPHY SEX="FEMALE" PERSON="WRITER">
+            <ORLANDOHEADER TYPE="text">
+                <FILEDESC>
+                    <TITLESTMT>
+                        <DOCTITLE>Louisa May Alcott: biography</DOCTITLE>
+                    </TITLESTMT>
+                    <PUBLICATIONSTMT>
+                        <AUTHORITY>Orlando Project</AUTHORITY>
+                    </PUBLICATIONSTMT>
+                    <SOURCEDESC>Created from original research by members of the Orlando Project</SOURCEDESC>
+                </FILEDESC>
+                <REVISIONDESC>
+                    <RESPONSIBILITY RESP="JSC" WORKSTATUS="RWT" WORKVALUE="I">
+                        <DATE VALUE="1998-01-06">6 January 1998</DATE>
+                        <ITEM>Initial document given to tagger.</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JSC" WORKSTATUS="RWT" WORKVALUE="I">
+                        <DATE VALUE="1998-01-12">12 January 1998</DATE>
+                        <ITEM>Template for v2 Biography </ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JSC" WORKSTATUS="RWT" WORKVALUE="I">
+                        <DATE VALUE="1998-01-14">14 January 1998</DATE>
+                        <ITEM>Template for v2 Biography </ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JSC" WORKSTATUS="RWT" WORKVALUE="I">
+                        <DATE VALUE="1998-01-15">15 January 1998</DATE>
+                        <ITEM>Template for v2 Biography </ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JSC" WORKSTATUS="RWT" WORKVALUE="I">
+                        <DATE VALUE="1998-02-23">23 February 1998</DATE>
+                        <ITEM>Template for v2 Biography </ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="RWT" WORKVALUE="C">
+                        <DATE VALUE="1998-10-06">6 October 1998</DATE>
+                        <ITEM>Updated for Sept 1998 Audit</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="KNT" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="1999-05-11">11 May 1999</DATE>
+                        <ITEM>gcg: added missing titletype attribute</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="1999-12-21">21 December 1999</DATE>
+                        <ITEM>BATCH CHANGE: primarily orgName and bibCit cleanup</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="DRG" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2001-02-01">1 February 2001</DATE>
+                        <ITEM>converted textual apostrophes and quotation marks to entity references</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2001-07-20">20 July 2001</DATE>
+                        <ITEM>removed title tag(s) from workscited</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2003-04-14">14 April 2003</DATE>
+                        <ITEM>BATCH CHANGE: primarily PLACE cleanup</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2003-06-16">16 June 2003</DATE>
+                        <ITEM>BATCH CHANGE: primarily TGENRENAME cleanup, BIBCIT following P moved before P, BIBCITS TAG added</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2005-04-08">08 April 2005</DATE>
+                        <ITEM>BATCH CHANGE: March 2005 Specifications. Mainly tag/attribute name changes</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="LMS" WORKSTATUS="RWT" WORKVALUE="I">
+                        <DATE VALUE="2005-08-19">19 August 2005</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="LMS" WORKSTATUS="RWT" WORKVALUE="I">
+                        <DATE VALUE="2005-08-22">22 August 2005</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="LMS" WORKSTATUS="RWT" WORKVALUE="C">
+                        <DATE VALUE="2005-08-23">23 August 2005</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="KGS" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2005-08-23">23 August 2005</DATE>
+                        <ITEM>cft-c. ready for cas.</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="LMS" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2005-08-23">23 August 2005</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2005-08-28">28 August 2005</DATE>
+                        <ITEM>relevance rankings</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="KDM" WORKSTATUS="CAS" WORKVALUE="I">
+                        <DATE VALUE="2005-09-25">25 September 2005</DATE>
+                        <ITEM>cas-i: tag reports remaining</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="KDM" WORKSTATUS="CAS" WORKVALUE="C">
+                        <DATE VALUE="2005-09-28">28 September 2005</DATE>
+                        <ITEM>cas-c</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="BJA" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2005-10-06">6 October 2005</DATE>
+                        <ITEM>ready for pilot</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2005-10-24">24 October 2005</DATE>
+                        <ITEM>tag cleanup complete</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="PUB" WORKVALUE="I">
+                        <DATE VALUE="2005-11-02">2 November 2005</DATE>
+                        <ITEM>pub i</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JAH" WORKSTATUS="CFB" WORKVALUE="C">
+                        <DATE VALUE="2005-12-09">9 December 2005</DATE>
+                        <ITEM>cfb done</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="PUB" WORKVALUE="C">
+                        <DATE VALUE="2006-02-23">23 February 2006</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="ENH" WORKVALUE="C">
+                        <DATE VALUE="2007-11-29">29 November 2007</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="ENH" WORKVALUE="C">
+                        <DATE VALUE="2008-03-26">26 March 2008</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="ENH" WORKVALUE="C">
+                        <DATE VALUE="2008-11-29">29 November 2008</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="CSK" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2010-08-19">19 August 2010</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY WORKSTATUS="REV" RESP="MKD" WORKVALUE="C">
+                        <DATE VALUE="2012-11-26">26 November 2012</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY WORKSTATUS="ENH" RESP="IMG" WORKVALUE="C">
+                        <DATE VALUE="2014-10-20">20 October 2014</DATE>
+                        <ITEM/>
+                    </RESPONSIBILITY>
+                </REVISIONDESC>
+            </ORLANDOHEADER>
+            <DIV0>
+                <HEADING>Biography</HEADING>
+                <STANDARD>Alcott, Louisa May</STANDARD>
+                <DIV1>
+                    <PERSONNAME>
+                        <DIV2>
+                            <DATASTRUCT>
+                                <DATAITEM>
+                                    <BIRTHNAME WROTEORPUBLISHEDAS="WROTEPUBLISHEDASYES" REG="Alcott, Louisa May">
+                                        <GIVEN>Louisa May</GIVEN>
+                                        <SURNAME>Alcott</SURNAME>
+                                    </BIRTHNAME>
+                                </DATAITEM>
+                                <DATAITEM>
+                                    <PSEUDONYM WROTEORPUBLISHEDAS="WROTEPUBLISHEDASYES" NAMESIGNIFIER="CRYPTIC">Flora Fairfield</PSEUDONYM>
+                                </DATAITEM>
+                                <DATAITEM>
+                                    <PSEUDONYM WROTEORPUBLISHEDAS="WROTEPUBLISHEDASYES" NAMESIGNIFIER="CRYPTIC" REG="Barnard, A. M.">A. M. Barnard</PSEUDONYM>
+                                </DATAITEM>
+                            </DATASTRUCT>
+                        </DIV2>
+                    </PERSONNAME>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Birth and Background</HEADING>
+                    <BIRTH>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="WRITINGCLIMATE" RESP="JSC">
+                                <DATE VALUE="1832-11-29">29 November 1832</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Alcott, Louisa May">LMA</NAME> was born in
+                                    <PLACE>
+                                        <SETTLEMENT>Germantown</SETTLEMENT>
+                                        <REGION REG="Pennsylvania" />
+                                        <GEOG REG="USA" />
+                                    </PLACE> near
+                                    <PLACE>
+                                        <SETTLEMENT>Philadelphia</SETTLEMENT>,
+                                        <REGION>Pennsylvania</REGION>,
+                                        <GEOG>USA</GEOG>
+                                    </PLACE>, on this day, which was also her
+                                    <NAME STANDARD="Alcott, Amos Bronson">father</NAME>'s thirty-third birthday.
+                                    <BIRTHPOSITION>She was the second of four girls.</BIRTHPOSITION>
+                                </CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="DLB 239 online" DBREF="18329">239</BIBCIT>
+                                    <BIBCIT PLACEHOLDER="Today in Lit, 29 November 2007" DBREF="48925">29 November 2007</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                        </DIV2>
+                    </BIRTH>
+                </DIV1>
+                <DIV1>
+                    <CULTURALFORMATION>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>
+                                    <NAME STANDARD="Alcott, Louisa May">LMA</NAME> was raised in a household of
+                                    <CLASS SOCIALRANK="LOWER-MIDDLECLASS">middle-class</CLASS>, presumably
+                                    <RACECOLOUR>white</RACECOLOUR>,
+                                    <NATIONALITY SELF-DEFINED="SELFYES" REG="American">American</NATIONALITY>
+                                    <DENOMINATION REG="transcendentalism">Transcendentalist</DENOMINATION> thinkers whose philosophies often precluded financial solvency for the Alcott family. Her childhood poverty fuelled her adult writing and earning.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Stern, LMA Journals 16" DBREF="35862">16</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="DLB 239 online" DBREF="18329">239</BIBCIT>
+                                    </BIBCITS> The Trancendentalists stand accused by a recent commentator of
+                                    <QUOTE DIRECT="Y">smug sexism and narrow mindededness.</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Saxton 15" DBREF="81386">15</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </CULTURALFORMATION>
+                </DIV1>
+                <DIV1>
+                    <FAMILY>
+                        <MEMBER RELATION="FATHER">
+                            <DIV2>
+                                <SHORTPROSE>
+                                    <P>Her father,
+                                        <NAME STANDARD="Alcott, Amos Bronson">Amos Bronson Alcott</NAME>, was an idealistic abolitionist, suffragist,
+                                        <JOB>teacher</JOB> and
+                                        <SIGNIFICANTACTIVITY PHILANTHROPYVOLUNTEER="PHILANTHROPYVOLUNTEERYES">social reformer</SIGNIFICANTACTIVITY> whose philosophical interests contributed to his family's precarious financial situation. His schools in
+                                        <PLACE>
+                                            <SETTLEMENT>Philadelphia</SETTLEMENT>
+                                            <REGION REG="Pennsylvania" />
+                                            <GEOG REG="USA" />
+                                        </PLACE> and
+                                        <PLACE>
+                                            <SETTLEMENT>Boston</SETTLEMENT>
+                                            <REGION REG="Massachusetts" />
+                                            <GEOG REG="USA" />
+                                        </PLACE> failed by the early 1840s. He was a voluminous diarist, whose eighty-eight surviving journals total more than a thousand pages. He allegedly preferred the looks of Louisa's sisters, who were fair like himself, to the dark complexion of Louisa and her mother. His death occurred two days before Louisa's; she was too ill to be told of it.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Saxton 15" DBREF="81386">15</BIBCIT>
+                                            <BIBCIT PLACEHOLDER="Hill 37" DBREF="50566">37</BIBCIT>
+                                        </BIBCITS> The March family depicted in
+                                        <TITLE TITLETYPE="MONOGRAPHIC">Little Women</TITLE> is said by scholars to be a virtual replica of the Alcott family except that her father is sometimes said to have been much more
+                                        <QUOTE DIRECT="Y">chilly and unapproachable</QUOTE>
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="DLB 79 online" DBREF="18329">79</BIBCIT>
+                                        </BIBCITS> than Mr March.
+                                        <NAME STANDARD="Matteson, John">John Matteson</NAME> published a joint biography of
+                                        <NAME STANDARD="Alcott, Louisa May">LMA</NAME> and her father in 2007.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Myerson et al. xxvi" DBREF="35861">xxvi</BIBCIT>
+                                            <BIBCIT PLACEHOLDER="DLB 239 online" DBREF="18329">239</BIBCIT>
+                                            <BIBCIT PLACEHOLDER="Hill 36" DBREF="50566">36</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                        <MEMBER RELATION="MOTHER">
+                            <DIV2>
+                                <SHORTPROSE>
+                                    <P>
+                                        <NAME STANDARD="Alcott, Abigail May">Abigail (Abba) May Alcott</NAME>, her mother, sprang from a loving, wealthy, well-connected Boston family. Her marriage to a wildly impractical indebted idealist was seen as a step downwards.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Saxton 16" DBREF="81386">16</BIBCIT>
+                                        </BIBCITS> She was very close to her daughters but spent much of her time bridging the gap between her husband's idealist beliefs and the more practical aspects of raising a family. She worked as a
+                                        <JOB>social worker</JOB>, helping the unemployed. She died on
+                                        <DATE VALUE="1877-11-25">25 November 1877</DATE>.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="DLB 239 online" DBREF="18329">239</BIBCIT>
+                                            <BIBCIT PLACEHOLDER="Myerson et al. xxiv" DBREF="35861">xxiv</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                    <P>
+                                        <NAME STANDARD="LaPlante, Eve">Eve LaPlante</NAME> in
+                                        <TITLE TITLETYPE="MONOGRAPHIC">Marmee and Louisa: The Untold Story of Louisa May Alcott and Her Mother</TITLE> uses recently available documents like letters and journals to probe the
+                                        <QUOTE DIRECT="Y">poignant and sometimes distressing story of the powerful love, mutual dependency, identification, and shared disappointments</QUOTE> of Louisa May and her mother. Abigail gave her daughter blank journals to write in, but with strings attached: the offer of her own private journals and letters as examples.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Saxton 15" DBREF="81386">15</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                    </FAMILY>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Early Years</HEADING>
+                    <LOCATION RELATIONTO="LIVED">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>In
+                                    <DATE VALUE="1834">1834</DATE>,
+                                    <NAME STANDARD="Alcott, Louisa May">LMA</NAME> and her family moved to
+                                    <PLACE>
+                                        <SETTLEMENT>Boston</SETTLEMENT>,
+                                        <REGION>Massachusetts</REGION>
+                                        <GEOG REG="USA" />.</PLACE> They moved frequently around Massachusetts for several years after that. In
+                                    <DATE VALUE="1843-06-01">1843</DATE> they lived briefly at
+                                    <PLACE>
+                                        <PLACENAME>Fruitlands</PLACENAME>
+                                        <SETTLEMENT REG="Harvard" />
+                                        <REGION REG="Massachusetts" />
+                                        <GEOG REG="USA" />
+                                    </PLACE>, a utopian but ultimately disastrous commune co-founded by Louisa May's
+                                    <NAME STANDARD="Alcott, Amos Bronson">father</NAME>. Her views of this early experience are recorded in
+                                    <TITLE TITLETYPE="ANALYTIC">Transcendental Wild Oats</TITLE>. She lived most of her life in and around
+                                    <PLACE>
+                                        <SETTLEMENT>Boston</SETTLEMENT>
+                                        <REGION REG="Massachusetts" />
+                                        <GEOG REG="USA" />
+                                    </PLACE> and at
+                                    <PLACE>
+                                        <SETTLEMENT>Concord</SETTLEMENT>
+                                        <REGION REG="Massachusetts" />
+                                        <GEOG REG="USA" /> (in
+                                        <PLACENAME>Orchard House</PLACENAME>
+                                    </PLACE>, which is now open to the public and closely identified with the home of her famous characters).
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Stern, LMA Journals xvii-xviii, passim" DBREF="35862">xvii-xviii, passim</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="DLB 239 online" DBREF="18329">239</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="Dow 10" DBREF="55045">10</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <EDUCATION MODE="DOMESTIC">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>
+                                    <NAME STANDARD="Alcott, Louisa May">LMA</NAME> was educated largely at home by her parents.</P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </EDUCATION>
+                    <EDUCATION MODE="SELF-TAUGHT">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>She was also a great self-educator and took to reading everything from
+                                    <TEXT>
+                                        <NAME STANDARD="Bunyan, John">Bunyan</NAME>'s
+                                        <TITLE TITLETYPE="MONOGRAPHIC">Pilgrim's Progress</TITLE>
+                                    </TEXT> to
+                                    <TEXT>
+                                        <NAME STANDARD="Hawthorne, Nathaniel">Hawthorne</NAME>'s
+                                        <TITLE TITLETYPE="MONOGRAPHIC">The Scarlet Letter</TITLE>
+                                    </TEXT> (he was a family friend). She particularly admired
+                                    <TEXT>
+                                        <NAME STANDARD="Wollstonecraft, Mary">Mary Wollstonecraft</NAME>
+                                    </TEXT> and also warmed to
+                                    <TEXT>
+                                        <NAME STANDARD="Carlyle, Thomas">Thomas Carlyle</NAME>
+                                    </TEXT>'s
+                                    <QUOTE DIRECT="Y">earthquaky style</QUOTE>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Stern, LMA Journals 13" DBREF="35862" QTDIN="QTDINYES">13</BIBCIT>
+                                    </BIBCITS> She noted in
+                                    <DATE VALUE="1859-03">1859</DATE> that
+                                    <QUOTE DIRECT="Y">life is my college.</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Stern, LMA Journals 13" DBREF="35862" QTDIN="QTDINYES">13</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                                <P>
+                                    <NAME STANDARD="Alcott, Louisa May">LMA</NAME> frequently attended lectures in
+                                    <PLACE>
+                                        <SETTLEMENT>Boston</SETTLEMENT>
+                                        <REGION REG="Massachusetts" />
+                                        <GEOG REG="USA" />
+                                    </PLACE>, and was present for the speeches of both
+                                    <NAME STANDARD="Thackeray, William Makepeace">William Makepeace Thackeray</NAME> and
+                                    <TEXT>
+                                        <NAME STANDARD="Dickens, Charles">Charles Dickens</NAME>
+                                    </TEXT>. Though she adored Dickens's writings, she judged him in person to be
+                                    <QUOTE DIRECT="Y">an old dandy.</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Stern, LMA Journals 14" DBREF="35862" QTDIN="QTDINYES">14</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </EDUCATION>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Work, Travel, and Friends</HEADING>
+                    <OCCUPATION>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>
+                                    <NAME STANDARD="Alcott, Louisa May">LMA</NAME> began working at an early age to help support her family. She accepted whatever she could find and worked as a
+                                    <JOB REG="governess">governess</JOB>,
+                                    <JOB>editor</JOB>,
+                                    <JOB REG="teacher">teacher</JOB>,
+                                    <JOB REG="needlework">seamstress</JOB>,
+                                    <JOB REG="companion">paid companion</JOB>, and
+                                    <JOB REG="servant">domestic</JOB>. It was her work as a
+                                    <JOB>writer</JOB>, however, that finally led her family to financial security.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Myerson et al. xviii" DBREF="35861">xviii</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="DLB 239 online" DBREF="18329">239</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                            <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="WRITINGCLIMATE" RESP="SIB">
+                                <DATERANGE FROM="1862-12-11" TO="1863-01-21" EXACT="BOTH">11 December 1862-21 January 1863</DATERANGE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Alcott, Louisa May">LMA</NAME> worked as an
+                                    <JOB REG="nursing">army nurse</JOB> in
+                                    <PLACE>
+                                        <SETTLEMENT>Washington</SETTLEMENT>
+                                        <REGION REG="District of Columbia" />
+                                        <GEOG REG="USA" />
+                                    </PLACE> during the American Civil War until she was taken ill with typhoid pneumonia and returned home.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Myerson et. al. xx, 116" DBREF="35861">xx, 116</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <HEALTH ISSUE="PHYSICAL">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>During her illness she was dosed with large quantities of mercury in the form of calomel or mercurous chloride, which was then used to treat typhoid. She suffered from severe headaches and
+                                    <SOCALLED>neuralgia</SOCALLED> as a result of this exposure, and it did her more lasting damage as well.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="DLB 239 online" DBREF="18329">239</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="Hill 36" DBREF="50566">36</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </HEALTH>
+                </DIV1>
+                <DIV1>
+                    <LOCATION RELATIONTO="TRAVELLED">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>In
+                                    <DATE VALUE="1865-07-19">1865</DATE>
+                                    <NAME STANDARD="Alcott, Louisa May">LMA</NAME> gained the opportunity to travel when she accompanied an invalid woman, as her paid companion, on a European tour. They visited
+                                    <PLACE>
+                                        <GEOG>Switzerland</GEOG>
+                                    </PLACE>,
+                                    <PLACE>
+                                        <GEOG>Germany</GEOG>
+                                    </PLACE>,
+                                    <PLACE>
+                                        <GEOG>Italy</GEOG>
+                                    </PLACE>,
+                                    <PLACE>
+                                        <GEOG>France</GEOG>
+                                    </PLACE>, and
+                                    <PLACE>
+                                        <GEOG>England</GEOG>
+                                    </PLACE>. She revisited Europe in
+                                    <DATE VALUE="1870-04">April 1870</DATE>, and also travelled to
+                                    <PLACE>
+                                        <REGION REG="Quebec" />
+                                        <GEOG>Canada</GEOG>
+                                    </PLACE>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Myerson et al. xxi-xxii" DBREF="35861">xxi-xxii</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="DLB 239 online" DBREF="18329">239</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <INTIMATERELATIONSHIPS EROTIC="EROTICPOSSIBLY">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>Biographer
+                                    <NAME STANDARD="Matteson, John">John Matteson</NAME> reports that she was strongly attracted to a young Pole,
+                                    <NAME STANDARD="Wisniewski, Ladislas">Ladislas Wisniewski</NAME>, with whom she spent a brief period in
+                                    <PLACE>
+                                        <GEOG>Switzerland</GEOG>
+                                    </PLACE> and
+                                    <PLACE>
+                                        <SETTLEMENT>Paris</SETTLEMENT>
+                                        <GEOG REG="France" />
+                                    </PLACE>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Hill 37" DBREF="50566">37</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </INTIMATERELATIONSHIPS>
+                </DIV1>
+                <DIV1>
+                    <FRIENDSASSOCIATES>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>
+                                    <NAME STANDARD="Alcott, Louisa May">LMA</NAME> was a friend of, among others,
+                                    <NAME STANDARD="Burnett, Frances Hodgson">Frances Hodgson Burnett</NAME>,
+                                    <NAME STANDARD="Emerson, Ralph Waldo">Ralph Waldo Emerson</NAME>, who helped her family manage their financial difficulties, and
+                                    <NAME STANDARD="Thoreau, Henry David">Henry David Thoreau</NAME>, who taught science to her and her sisters. While in
+                                    <PLACE>
+                                        <GEOG>England</GEOG>
+                                    </PLACE> she met
+                                    <QUOTE DIRECT="Y">many interesting persons</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Myerson et al. 151" DBREF="35861">151</BIBCIT>
+                                    </BIBCITS> including
+                                    <NAME STANDARD="Bodichon, Barbara Leigh Smith">Barbara Leigh Smith Bodichon</NAME>,
+                                    <NAME STANDARD="Cobbe, Frances Power">Frances Power Cobbe</NAME>,
+                                    <NAME STANDARD="Ingelow, Jean">Jean Ingelow</NAME>,
+                                    <NAME STANDARD="Blind, Mathilde">Mathilde Blind</NAME>,
+                                    <NAME STANDARD="Anderson, Elizabeth Garrett">Elizabeth Garrett</NAME>, and
+                                    <NAME STANDARD="Gladstone, William Ewart">William Gladstone</NAME>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Myerson et al. 151, 247" DBREF="35861">151, 247</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="DLB 239 online" DBREF="18329">239</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </FRIENDSASSOCIATES>
+                </DIV1>
+                <DIV1>
+                    <FAMILY>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>
+                                    <CHILDLESSNESS>
+                                        <NAME STANDARD="Alcott, Louisa May">LMA</NAME> had no children of her own, though she looked after her young niece
+                                        <NAME STANDARD="Nieriker, Louisa May">Louisa May Nieriker</NAME>, and later adopted her nephew
+                                        <NAME STANDARD="Pratt, Frederick Alcott">Frederick Alcott Pratt</NAME>, to serve as a legal heir.</CHILDLESSNESS> There is no record of her having any intimate relationships. She noted in her journal,
+                                    <QUOTE DIRECT="Y">I'd rather be a free spinster and paddle my own canoe.</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Stern, LMA Journals 7" DBREF="35862" QTDIN="QTDINYES">7</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="Stern, LMA Journals 12" DBREF="35862">12</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="DLB 239 online" DBREF="18329">239</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </FAMILY>
+                </DIV1>
+                <DIV1>
+                    <WEALTH>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>Through her writing she became the financial mainstay of her family: her parents, sisters, and nephews and nieces.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Saxton 15" DBREF="81386">15</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </WEALTH>
+                </DIV1>
+                <DIV1>
+                    <OCCUPATION>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>Having inherited her parents' social reformist attitudes, she spent some of her time
+                                    <SIGNIFICANTACTIVITY PHILANTHROPYVOLUNTEER="PHILANTHROPYVOLUNTEERYES">visiting prisons and orphanages</SIGNIFICANTACTIVITY>. She was also present at the Women's Congress in
+                                    <PLACE>
+                                        <SETTLEMENT>Syracuse</SETTLEMENT>
+                                        <REGION REG="New York" />
+                                        <GEOG REG="USA" />
+                                    </PLACE>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="DLB 239 online" DBREF="18329">239</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <POLITICS>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="DECADE" CHRONCOLUMN="WRITINGCLIMATE" RESP="SIB">
+                                <DATE VALUE="1879-07-15" CERTAINTY="C">Around 15 July 1879</DATE>
+                                <CHRONPROSE>A keen
+                                    <POLITICALAFFILIATION ACTIVISM="ACTIVISTYES" WOMAN-GENDERISSUE="GENDERYES" REG="female suffrage">suffragist</POLITICALAFFILIATION>,
+                                    <NAME STANDARD="Alcott, Louisa May">LMA</NAME> became the first woman to register her name as a voter in
+                                    <PLACE>
+                                        <SETTLEMENT>Concord</SETTLEMENT>,
+                                        <REGION>Massachusetts</REGION>
+                                        <GEOG REG="USA" />
+                                    </PLACE>.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Myerson et al. 216" DBREF="35861">216</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>She had also been an ardent
+                                    <POLITICALAFFILIATION ACTIVISM="ACTIVISTYES" WOMAN-GENDERISSUE="GENDERNO">abolitionist</POLITICALAFFILIATION>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Stern, LMA Journals 26-7" DBREF="35862">26-7</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </POLITICS>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Death</HEADING>
+                    <DEATH>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="WRITINGCLIMATE" RESP="JSC">
+                                <DATE VALUE="1888-03-06">6 March 1888</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Alcott, Louisa May">LMA</NAME> died; the cause given at the time was
+                                    <CAUSE>apoplexy</CAUSE> but it was likely
+                                    <CAUSE>intestinal cancer</CAUSE> that brought about her death at fifty-five.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Stern, LMA Journals 30" DBREF="35862">30</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                        </DIV2>
+                    </DEATH>
+                </DIV1>
+                <WORKSCITED>
+                    <SOURCE>Unless otherwise noted, all information is from the FC</SOURCE>
+                    <SOURCE>Delamar, Gloria T. Louisa May Alcott and "Little Women": Biography, Critique, Publications, Poems, Songs and Contemporary Relevance. Jefferson: McFarland &amp; Co., 1990.</SOURCE>
+                    <SOURCE>Moses, Belle. Louisa May Alcott Dreamer and Worker: A Story of Achievement. New York &amp; London: Appleton and Company, 1916.</SOURCE>
+                </WORKSCITED>
+            </DIV0>
+        </BIOGRAPHY>

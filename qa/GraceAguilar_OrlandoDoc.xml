@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://cwrc.ca/schemas/orlando_biography.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+    <?xml-stylesheet type="text/css" href="http://cwrc.ca/templates/css/orlando.css"?>
+        <BIOGRAPHY SEX="FEMALE" PERSON="BRWWRITER">
+            <ORLANDOHEADER TYPE="text">
+                <FILEDESC>
+                    <TITLESTMT>
+                        <DOCTITLE>Grace Aguilar: biography</DOCTITLE>
+                    </TITLESTMT>
+                    <PUBLICATIONSTMT>
+                        <AUTHORITY>Orlando Project</AUTHORITY>
+                    </PUBLICATIONSTMT>
+                    <SOURCEDESC>Created from original research by members of the Orlando Project</SOURCEDESC>
+                </FILEDESC>
+                <REVISIONDESC>
+                    <RESPONSIBILITY RESP="JKW" WORKSTATUS="OLD" WORKVALUE="O">
+                        <DATE VALUE="1996-03-14">14 March 1996</DATE>
+                        <ITEM>OLDWORKSTATUS="tagged" OLDWORKVALUE="complete" (jkw)This is pretty bare-bones stuff, but have only a group of equally unreliable sources to work from. I've tried to convey consensus about her. Could flesh out with details in the writing DTD?</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="OLD" WORKVALUE="O">
+                        <DATE VALUE="1996-05-18">18 May 1996</DATE>
+                        <ITEM>OLDWORKSTATUS="REVISION" OLDWORKVALUE="COMPLETE" Did some tidying etc.</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="MEL" WORKSTATUS="OLD" WORKVALUE="O">
+                        <DATE VALUE="1996-09-20">20 September 1996</DATE>
+                        <ITEM>OLDWORKSTATUS="tagged" OLDWORKVALUE="incomplete" Retagging with new bio dtd of Grace Aguilar.</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="MEL" WORKSTATUS="OLD" WORKVALUE="O">
+                        <DATE VALUE="1996-09-22">22 September 1996</DATE>
+                        <ITEM>OLDWORKSTATUS="researched" OLDWORKVALUE="incomplete" Augmenting of bio w/ researched info from
+                            <NAME STANDARD="Aguilar, Grace">GA</NAME>'s (and her mother's) archival letters.</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="MEL" WORKSTATUS="OLD" WORKVALUE="O">
+                        <DATE VALUE="1996-10-31">31 October 1996</DATE>
+                        <ITEM>OLDWORKSTATUS="tagged" OLDWORKVALUE="complete" Checked for practice issues before checking in.</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="KDC" WORKSTATUS="OLD" WORKVALUE="O">
+                        <DATE VALUE="1997-06-12">12 June 1997</DATE>
+                        <ITEM>OLDWORKSTATUS="CHECKED" OLDWORKVALUE="QUERY" kdc: checking for tags and structure. Be sure to use the quote tag. Looks great.</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="OLD" WORKVALUE="O">
+                        <DATE VALUE="1997-06-25">25 June 1997</DATE>
+                        <ITEM>OLDWORKSTATUS="REVISION" OLDWORKVALUE="COMPLETE" sib: reviewed and revised</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JKW" WORKSTATUS="RWT" WORKVALUE="C">
+                        <DATE VALUE="1997-07-27">27 July 1997</DATE>
+                        <ITEM>Automatically generated to load Workflow Management System.</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="MEL" WORKSTATUS="CFT" WORKVALUE="P">
+                        <DATE VALUE="1998-03-30">30 March 1998</DATE>
+                        <ITEM>MTR bio revisions</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="MEL" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="1998-04-06">6 April 1998</DATE>
+                        <ITEM>MTR bio revisions</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="PHD" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="1998-05-05">5 May 1998</DATE>
+                        <ITEM>phd: mtr rev to June 1847 as per sib</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="PHD" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="1998-05-21">21 May 1998</DATE>
+                        <ITEM>phd: mtr rev to 1842 as per sib</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="RWT" WORKVALUE="C">
+                        <DATE VALUE="1998-10-06">6 October 1998</DATE>
+                        <ITEM>Updated for Sept 1998 Audit</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SRF" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="1998-11-10">10 November 1998</DATE>
+                        <ITEM>--added value to dateStruct</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SRF" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="1998-02-11">11 February 1998</DATE>
+                        <ITEM>fixed dates</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="1999-12-21">21 December 1999</DATE>
+                        <ITEM>BATCH CHANGE: primarily orgName and bibCit cleanup</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="DRG" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2001-02-01">1 February 2001</DATE>
+                        <ITEM>converted textual apostrophes and quotation marks to entity references</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2001-07-20">20 July 2001</DATE>
+                        <ITEM>removed title tag(s) from workscited</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2001-10-08">8 October 2001</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2001-10-28">28 October 2001</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="KDC" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2001-10-29">29 October 2001</DATE>
+                        <ITEM>checked for tagging</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="AFP" WORKSTATUS="CAS" WORKVALUE="I">
+                        <DATE VALUE="2001-11-12">12 November 2001</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="AFP" WORKSTATUS="CAS" WORKVALUE="I">
+                        <DATE VALUE="2001-11-19">19 November 2001</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="AFP" WORKSTATUS="CAS" WORKVALUE="I">
+                        <DATE VALUE="2001-11-20">20 November 2001</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="AFP" WORKSTATUS="CAS" WORKVALUE="I">
+                        <DATE VALUE="2001-11-29">29 November 2001</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="AFP" WORKSTATUS="CAS" WORKVALUE="I">
+                        <DATE VALUE="2001-12-03">3 December 2001</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="AFP" WORKSTATUS="CAS" WORKVALUE="P">
+                        <DATE VALUE="2001-12-05">5 December 2001</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="AFP" WORKSTATUS="CAS" WORKVALUE="P">
+                        <DATE VALUE="2001-12-05">5 December 2001</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="AFP" WORKSTATUS="CAS" WORKVALUE="C">
+                        <DATE VALUE="2001-12-06">6 December 2001</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="AFP" WORKSTATUS="CAS" WORKVALUE="C">
+                        <DATE VALUE="2001-12-11">11 December 2001</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="AFP" WORKSTATUS="CAS" WORKVALUE="C">
+                        <DATE VALUE="2001-12-19">19 December 2001</DATE>
+                        <ITEM>fixed a bibcit</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="RBV" WORKVALUE="C">
+                        <DATE VALUE="2002-02-12">12 February 2002</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2002-03-05">5 March 2002</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="RBV" WORKVALUE="C">
+                        <DATE VALUE="2002-03-21">21 March 2002</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="AFP" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2002-03-28">28 March 2002</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="RSC" WORKSTATUS="PUB" WORKVALUE="I">
+                        <DATE VALUE="2002-05-13">13 May 2002</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2002-06-26">26 June 2002</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2002-07-04">4 July 2002</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2002-07-19">19 July 2002</DATE>
+                        <ITEM>fixed relevance rankings</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2002-08-19">19 August 2002</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2002-08-19">19 August 2002</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2003-01-08">8 January 2003</DATE>
+                        <ITEM> fixed PLACE</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JAH" WORKSTATUS="CFB" WORKVALUE="C">
+                        <DATE VALUE="2003-01-24">24 January 2003</DATE>
+                        <ITEM>fixed titles</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JAH" WORKSTATUS="CFB" WORKVALUE="C">
+                        <DATE VALUE="2003-01-24">24 January 2003</DATE>
+                        <ITEM>fixed bibcits</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2003-02-05">5 February 2003</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2003-02-06">6 February 2003</DATE>
+                        <ITEM> fixed NAME</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JAH" WORKSTATUS="CFB" WORKVALUE="C">
+                        <DATE VALUE="2003-03-12">12 March 2003</DATE>
+                        <ITEM>fixed bibcits</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2003-04-14">14 April 2003</DATE>
+                        <ITEM>BATCH CHANGE: primarily PLACE cleanup</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2003-04-14">14 April 2003</DATE>
+                        <ITEM> fixed PLACE</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="PUB" WORKVALUE="C">
+                        <DATE VALUE="2003-04-23">23 April 2003</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="LKD" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2003-04-25">25 April 2003</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2003-05-05">5 May 2003</DATE>
+                        <ITEM> fixed PLACE</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2003-06-16">16 June 2003</DATE>
+                        <ITEM>BATCH CHANGE: primarily TGENRENAME cleanup, BIBCIT following P moved before P, BIBCITS TAG added</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2003-06-20">20 June 2003</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2004-03-22">22 March 2004</DATE>
+                        <ITEM>changed position to birth position</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2005-04-08">08 April 2005</DATE>
+                        <ITEM>BATCH CHANGE: March 2005 Specifications. Mainly tag/attribute name changes</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2005-05-01">1 May 2005</DATE>
+                        <ITEM>revised CF tags slightly</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2006-04-13">13 April 2006</DATE>
+                        <ITEM>final readthrough</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2007-02-05">5 February 2007</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                </REVISIONDESC>
+            </ORLANDOHEADER>
+            <DIV0>
+                <HEADING>Biography</HEADING>
+                <STANDARD>Aguilar, Grace</STANDARD>
+                <DIV1>
+                    <PERSONNAME>
+                        <DIV2>
+                            <DATASTRUCT>
+                                <DATAITEM>
+                                    <BIRTHNAME WROTEORPUBLISHEDAS="WROTEPUBLISHEDASYES">
+                                        <GIVEN>Grace</GIVEN>
+                                        <SURNAME>Aguilar</SURNAME>
+                                    </BIRTHNAME>
+                                </DATAITEM>
+                            </DATASTRUCT>
+                        </DIV2>
+                    </PERSONNAME>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Birth and Influences</HEADING>
+                    <BIRTH>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SYS">
+                                <DATE VALUE="1816-06-02">2 June 1816</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Aguilar, Grace">GA</NAME> was born at
+                                    <PLACE>
+                                        <SETTLEMENT CURRENT="London">Hackney</SETTLEMENT>
+                                        <REGION REG="Middlesex" />
+                                        <GEOG REG="England" /> in North London</PLACE>.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Abrahams 137" DBREF="108722">137</BIBCIT>
+                                    <BIBCIT PLACEHOLDER="DNB" DBREF="1759" />
+                                    <BIBCIT PLACEHOLDER="Allibone" DBREF="1864" />
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>
+                                    <BIRTHPOSITION POSITION="ELDEST">She was the Aguilars' eldest child and only daughter. She had two brothers who were at least eight years younger than she.</BIRTHPOSITION>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Aguilar, (30 Nov 1843), 2" DBREF="101027">(30 Nov 1843): 2</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="AM Hall, Pilgrimages 453" DBREF="10071">453</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="Abrahams 138" DBREF="108722">138</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </BIRTH>
+                </DIV1>
+                <DIV1>
+                    <CULTURALFORMATION>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>Both of
+                                    <NAME STANDARD="Aguilar, Grace">GA</NAME>'s parents were presumably
+                                    <RACECOLOUR FOREBEAR="PARENTS">white</RACECOLOUR> and of
+                                    <ETHNICITY REG="Jew">Jewish</ETHNICITY> descent; her family belonged to the
+                                    <CLASS SOCIALRANK="ENTREPRENEURIAL-INDUSTRIALIST">middle class</CLASS>.</P>
+                                <P>Her father's family was from
+                                    <NATIONALHERITAGE FOREBEAR="FATHER">Spain</NATIONALHERITAGE> and her mother's family was from
+                                    <NATIONALHERITAGE FOREBEAR="MOTHER">Portugal</NATIONALHERITAGE>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Galchinsky 136, 176" DBREF="109135">136, 176</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="Abrahams 138" DBREF="108722">138</BIBCIT>
+                                    </BIBCITS>
+                                    <NAME STANDARD="Aguilar, Grace">GA</NAME> was
+                                    <NATIONALITY SELF-DEFINED="SELFYES"> English</NATIONALITY> by birth, and she was full of praise for her country as a land of tolerance and freedom:
+                                    <QUOTE DIRECT="Y">England offers a rest and home of perfect freedom to the exile and oppressed . . . .</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="GA Women of Israel 2: 311" DBREF="10105">2: 311</BIBCIT>
+                                    </BIBCITS> Much of her writing about Jews served to counter the claims of those such as
+                                    <NAME STANDARD="Carlyle, Thomas">Thomas Carlyle</NAME>, who argued that
+                                    <NATIONALITY SELF-DEFINED="SELFYES" REG="Jewish">Jew</NATIONALITY>s could not be fully loyal to any country except Zion.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Galchinsky 165" DBREF="109135">165</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                        <RELIGION>
+                            <DIV2>
+                                <SHORTPROSE>
+                                    <P>
+                                        <NAME STANDARD="Aguilar, Grace">GA</NAME>'s writings treat in detail the
+                                        <DENOMINATION SELF-DEFINED="SELFYES" REG="Judaism">Jewish</DENOMINATION> faith to which she strongly adhered, and she often focuses on the persecution and prejudice which Jews suffered throughout the nineteenth century, as well as historically. As critic
+                                        <NAME STANDARD="Galchinsky, Michael">Michael Galchinsky</NAME> argues, the practices and culture of crypto-Judaism, whereby Jews evaded the
+                                        <ORGNAME REG="Spanish Inquisition" STANDARD="Inquisition">Inquisition</ORGNAME> by passing for Catholic while retaining their ancestral faith in private, considerably influenced both the form and content of her work.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Galchinsky passim" DBREF="109135">passim</BIBCIT>
+                                        </BIBCITS> Despite her intense commitment to improving the standing of her people through her writing, her friend
+                                        <NAME STANDARD="Hall, Anna Maria">Anna Maria Hall</NAME> avers that she and her husband could only with difficulty get
+                                        <NAME STANDARD="Aguilar, Grace">GA</NAME> to speak on religious topics and
+                                        <QUOTE DIRECT="Y">were quite unacquainted with her religious habits.</QUOTE>
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="AM Hall Pilgrimages 454" DBREF="10071">454</BIBCIT>
+                                        </BIBCITS> However, her continuing dedication to Judaism, and her identification of herself with her
+                                        <NATIONALITY SELF-DEFINED="SELFYES">Sephardic Jewish</NATIONALITY> heritage—which she also considered a nationality—was obvious to those who knew her, and she may have been a
+                                        <POLITICALAFFILIATION>proto-Zionist</POLITICALAFFILIATION>:
+                                        <QUOTE DIRECT="Y">the natural and unaffected eloquence of her words, when referring to the past history of the Jews . . . and the positive radiance of her countenance when she spoke of the gathering of the tribes at Jerusalem, could never be forgotten . . . .</QUOTE>
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="AM Hall Pilgrimages 459" DBREF="10071">459</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </RELIGION>
+                    </CULTURALFORMATION>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Family</HEADING>
+                    <FAMILY>
+                        <MEMBER RELATION="MOTHER">
+                            <DIV2>
+                                <HEADING>Mother</HEADING>
+                                <SHORTPROSE>
+                                    <P>According to the matriarchal traditions of her culture,
+                                        <NAME STANDARD="Aguilar, Sarah">Sarah (Dias Fernandes) Aguilar</NAME>
+                                        <SCHOLARNOTE>
+                                            <P>The name is sometimes spelled Diaz.</P>
+                                        </SCHOLARNOTE> passed on to Grace the oral traditions of the Sephardic crypto-Jews' experiences of the expulsion and the
+                                        <ORGNAME STANDARD="Inquisition">Inquisition</ORGNAME>.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Galchinsky 136-7" DBREF="109135">136-7</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                        <MEMBER RELATION="FOREBEAR">
+                            <DIV2>
+                                <SHORTPROSE>
+                                    <P>
+                                        <NAME STANDARD="Aguilar, Grace">GA</NAME>'s maternal great-grandfather,
+                                        <NAME STANDARD="Fernandez, Benjamin Dias">Benjamin Dias Fernandez</NAME>,
+                                        <JOB REG="religious writer">wrote religious polemic</JOB>, which was eventually published by
+                                        <NAME STANDARD="Leeser, Isaac">Isaac Leeser</NAME> (the editor of
+                                        <NAME STANDARD="Aguilar, Grace">GA</NAME>'s
+                                        <TITLE TITLETYPE="MONOGRAPHIC">The Spirit of Judaism</TITLE>).
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Abrahams 138, 141" DBREF="108722">138, 141</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                        <MEMBER RELATION="FATHER">
+                            <DIV2>
+                                <HEADING>Father</HEADING>
+                                <SHORTPROSE>
+                                    <P>
+                                        <NAME STANDARD="Aguilar, Grace">GA</NAME>'s father,
+                                        <NAME STANDARD="Aguilar, Emanuel,, Sr">Emanuel Aguilar</NAME>, was a
+                                        <JOB>merchant</JOB> and an active member of the Sephardi community until his death. For a while he was the
+                                        <SIGNIFICANTACTIVITY>lay leader, or Parnas</SIGNIFICANTACTIVITY>, of the
+                                        <ORGNAME REG="Spanish and Portuguese Jews' Congregation" STANDARD="Spanish and Portuguese Jews' Congregation">Portuguese and Spanish Jewish Congregation</ORGNAME> in London.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Allibone" DBREF="1864" />
+                                            <BIBCIT PLACEHOLDER="Abrahams 138" DBREF="108722">138</BIBCIT>
+                                            <BIBCIT PLACEHOLDER="Galchinsky 136" DBREF="109135">136</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                        <MEMBER RELATION="BROTHER">
+                            <DIV2>
+                                <HEADING>Brothers</HEADING>
+                                <SHORTPROSE>
+                                    <P>
+                                        <NAME STANDARD="Aguilar, Grace">GA</NAME> helped to educate both her brothers, and the essays she wrote for their religious education became the basis of the
+                                        <TITLE TITLETYPE="MONOGRAPHIC">The Spirit of Judaism</TITLE>.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Abrahams 141" DBREF="108722">141</BIBCIT>
+                                        </BIBCITS> The elder of the brothers (
+                                        <NAME STANDARD="Aguilar, Emanuel,, Jr">Emanuel</NAME>, who was about eight years Grace's junior) studied music in Germany and was, according to
+                                        <NAME STANDARD="Aguilar, Grace">GA</NAME>,
+                                        <QUOTE DIRECT="Y">most extraordinarily gifted for Music.</QUOTE>
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Aguilar, (30 Nov 1843): 4" DBREF="101027">(30 Nov 1843): 4</BIBCIT>
+                                        </BIBCITS>
+                                        <SCHOLARNOTE>
+                                            <P>Emanuel was nineteen on 30 November 1843, when she wrote this about him.
+                                                <BIBCITS>
+                                                    <BIBCIT PLACEHOLDER="Aguilar, (30 Nov 1843): 4" DBREF="101027">(30 Nov 1843): 4</BIBCIT>
+                                                </BIBCITS>
+                                            </P>
+                                        </SCHOLARNOTE>
+                                    </P>
+                                </SHORTPROSE>
+                                <SHORTPROSE>
+                                    <P>
+                                        <NAME STANDARD="Aguilar, Grace">GA</NAME>'s younger brother,
+                                        <NAME STANDARD="Aguilar, Henry">Henry</NAME>, made his first voyage as a
+                                        <JOB>midshipman</JOB> in August 1843 at the age of sixteen.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Aguilar, (30 Nov 1843), 2, 5" DBREF="101027">(30 Nov 1843): 2, 5</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                    <P>Despite
+                                        <NAME STANDARD="Aguilar, Grace">GA</NAME>'s efforts, her brother Emanuel and his wife eventually left the Jewish community and brought up their children as Christians. Henry too left the Jewish community.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Abrahams 148" DBREF="108722">148</BIBCIT>
+                                        </BIBCITS>
+                                        <RESEARCHNOTE/>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                        <MEMBER RELATION="AUNT">
+                            <DIV2>
+                                <SHORTPROSE>
+                                    <P>
+                                        <NAME STANDARD="Aguilar, Grace">GA</NAME>'s family included not only her parents and brothers, but an unmarried aunt.
+                                        <SCHOLARNOTE>
+                                            <P>
+                                                <NAME STANDARD="Aguilar, Grace">GA</NAME> describes her aunt as
+                                                <QUOTE DIRECT="Y">one of the kindest and best of beings</QUOTE>
+                                                <BIBCITS>
+                                                    <BIBCIT PLACEHOLDER="Aguilar, (30 Nov 1843): 4" DBREF="101027">(30 Nov 1843): 4</BIBCIT>
+                                                </BIBCITS> in a
+                                                <DATE VALUE="1843-11-30">30 November 1843</DATE> letter addressed to the Cohens, but does not provide her aunt's name.</P>
+                                        </SCHOLARNOTE>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                    </FAMILY>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Education</HEADING>
+                    <EDUCATION MODE="DOMESTIC">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>
+                                    <NAME STANDARD="Aguilar, Grace">GA</NAME>, a
+                                    <QUOTE DIRECT="Y">voracious</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Abrahams 138" DBREF="108722">138</BIBCIT>
+                                    </BIBCITS> reader, was educated chiefly by her mother and directed in her studies by both parents.
+                                    <NAME STANDARD="Hall, Anna Maria">Anna Maria Hall</NAME> reported that
+                                    <NAME STANDARD="Aguilar, Grace">GA</NAME> had learned to read
+                                    <QUOTE DIRECT="Y">almost by intuition</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Hall Pilgrimage 453" DBREF="10071">453</BIBCIT>
+                                    </BIBCITS> and was impressed by her extensive knowledge of
+                                    <SUBJECT>foreign literature</SUBJECT>,
+                                    <SUBJECT>theology</SUBJECT>, and
+                                    <SUBJECT>history</SUBJECT>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Hall Pilgrimage 452-3" DBREF="10071">452-3</BIBCIT>
+                                    </BIBCITS>
+                                    <NAME STANDARD="Aguilar, Grace">GA</NAME> felt considerably hampered in her religious studies by her lack of knowledge of
+                                    <QUOTE DIRECT="Y">Hebrew, of the Talmud, and of rabbinic tradition.</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Galchinsky 141" DBREF="109135">141</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                                <P>In addition to
+                                    <SUBJECT>singing</SUBJECT>,
+                                    <SUBJECT>sewing</SUBJECT>,
+                                    <SUBJECT>sketching</SUBJECT>, and
+                                    <SUBJECT>dancing</SUBJECT>—until her mother requested
+                                    <QUOTE DIRECT="Y">that she should not waltz,</QUOTE> after which
+                                    <QUOTE DIRECT="Y">no solicitation could . . . tempt her</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Sarah Aguilar xi" DBREF="108730">xi</BIBCIT>
+                                    </BIBCITS>—
+                                    <NAME STANDARD="Aguilar, Grace">GA</NAME> also played the
+                                    <SUBJECT>piano</SUBJECT> and took up the
+                                    <SUBJECT>harp</SUBJECT> in 1831.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Sarah Aguilar x" DBREF="108730">x</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </EDUCATION>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Evolving Faith and Literary Connections</HEADING>
+                    <LOCATION RELATIONTO="MOVED">
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SYS">
+                                <DATE VALUE="1828-09">September 1828</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Aguilar, Grace">GA</NAME> and her family moved from
+                                    <PLACE>
+                                        <SETTLEMENT CURRENT="London">Hackney</SETTLEMENT>
+                                        <REGION REG="Middlesex" />
+                                        <GEOG REG="England" /> in North London</PLACE> to
+                                    <PLACE>
+                                        <REGION>Devon</REGION>
+                                        <GEOG REG="England" />
+                                    </PLACE>.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="FC" DBREF="107913" />
+                                    <BIBCIT PLACEHOLDER="Abrahams 138" DBREF="108722">138</BIBCIT>
+                                    <BIBCIT PLACEHOLDER="Sarah Aguilar x" DBREF="108730">x</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                        </DIV2>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <CULTURALFORMATION>
+                        <RELIGION>
+                            <DIV2>
+                                <SHORTPROSE>
+                                    <P>In
+                                        <PLACE>
+                                            <REGION>Devon</REGION>
+                                            <GEOG REG="England" />
+                                        </PLACE> she developed the religious tolerance that distinguishes her writing and helped her to bridge the gap between the Jewish and Christian literary communities. Here she came into contact with
+                                        <DENOMINATION>provincial English Protestantism</DENOMINATION>, which she distinguished from the intolerant
+                                        <DENOMINATION>
+                                            <ORGNAME REG="Roman Catholic Church" STANDARD="Roman Catholic Church">Catholicism</ORGNAME>
+                                        </DENOMINATION> that had persecuted her family on the Continent. She made Christian friends with whom she discussed religious issues, attended church—she altered the forms of praise and prayer where necessary to accord with her own—and came to the conclusion that
+                                        <DENOMINATION>Christianity</DENOMINATION> and
+                                        <DENOMINATION>Judaism</DENOMINATION> had much in common in spirit, even if they diverged in form. She later argued in
+                                        <TITLE TITLETYPE="MONOGRAPHIC" REG="Sabbath Thoughts and Sacred Communings">Sabbath Thoughts</TITLE> that Christianity was the Kingdom of Iron prophesied by Daniel, which would prepare for the Jewish messiah.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Abrahams 137-9" DBREF="108722">137-9</BIBCIT>
+                                        </BIBCITS> Her lack of adequate religious education meant that she frequently had to rely on Christian texts about Judaism. Critic
+                                        <NAME STANDARD="Abrahams, Beth-Zion">Beth-Zion Lask Abrahams</NAME> joins some contemporary critics in calling her a
+                                        <SOCALLED>Jewish Protestant</SOCALLED>; however, others have argued that though she was reformist, she was a dedicated Jew nonetheless, and above all.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Abrahams 142" DBREF="108722">142</BIBCIT>
+                                            <BIBCIT PLACEHOLDER="Galchinsky 146, 150" DBREF="109135">146, 150</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </RELIGION>
+                    </CULTURALFORMATION>
+                </DIV1>
+                <DIV1>
+                    <FRIENDSASSOCIATES>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="PERIOD" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1833-01" CERTAINTY="C">Early 1833</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Aguilar, Grace">GA</NAME> met
+                                    <NAME STANDARD="Bowles, Caroline">Caroline Bowles</NAME> (later Southey) at a ball in
+                                    <PLACE>
+                                        <SETTLEMENT>Teignmouth</SETTLEMENT> in
+                                        <REGION>Devon</REGION>
+                                        <GEOG REG="England" />
+                                    </PLACE>.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Abrahams 140" DBREF="108722">140</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>Bowles and her circle likened the young woman who enjoyed dancing and singing to
+                                    <NAME STANDARD="Scott, Sir Walter">Walter Scott</NAME>'s Flora McIvor.</P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </FRIENDSASSOCIATES>
+                </DIV1>
+                <DIV1>
+                    <LOCATION RELATIONTO="MOVED">
+                        <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                            <DATE VALUE="1838" CERTAINTY="BY">By 1838</DATE>
+                            <CHRONPROSE>
+                                <NAME STANDARD="Aguilar, Grace">GA</NAME> moved with her family from
+                                <PLACE>
+                                    <REGION>Devon</REGION>
+                                    <GEOG REG="England" />
+                                </PLACE> to
+                                <PLACE>
+                                    <SETTLEMENT>Brighton</SETTLEMENT>
+                                    <REGION REG="Sussex" />
+                                    <GEOG REG="England" />
+                                </PLACE>.</CHRONPROSE>
+                            <BIBCITS>
+                                <BIBCIT PLACEHOLDER="Abrahams 141" DBREF="108722">141</BIBCIT>
+                            </BIBCITS>
+                        </CHRONSTRUCT>
+                    </LOCATION>
+                    <LOCATION RELATIONTO="MOVED">
+                        <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="MEL">
+                            <DATE VALUE="1842-02" CERTAINTY="BY">By early 1842</DATE>
+                            <CHRONPROSE>
+                                <NAME STANDARD="Aguilar, Grace">GA</NAME> had moved with her family from
+                                <PLACE>
+                                    <SETTLEMENT>Brighton</SETTLEMENT>
+                                    <REGION REG="Sussex" />
+                                    <GEOG REG="England" />
+                                </PLACE> back to
+                                <PLACE>
+                                    <SETTLEMENT CURRENT="London">Hackney</SETTLEMENT>
+                                    <REGION REG="Middlesex" />
+                                    <GEOG REG="England" />
+                                </PLACE>.</CHRONPROSE>
+                            <BIBCITS>
+                                <BIBCIT PLACEHOLDER="Abrahams 141" DBREF="108722">141</BIBCIT>
+                            </BIBCITS>
+                        </CHRONSTRUCT>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <FRIENDSASSOCIATES>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>Around this time her acquaintance deepened with
+                                    <NAME STANDARD="Crosland, Camilla">Camilla Crosland</NAME>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Crosland Landmarks 174" DBREF="101791">174</BIBCIT>
+                                    </BIBCITS> Other Christian literary friends included
+                                    <NAME STANDARD="Hemans, Felicia">Felicia Hemans</NAME>,
+                                    <NAME STANDARD="Howitt, Mary">Mary Howitt</NAME>, and
+                                    <NAME STANDARD="Hall, Anna Maria">Anna Maria Hall</NAME>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Galchinsky 145" DBREF="109135">145</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </FRIENDSASSOCIATES>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Teaching</HEADING>
+                    <OCCUPATION>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="DECADE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1842-03" CERTAINTY="BY">By March 1842</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Aguilar, Grace">GA</NAME> and her
+                                    <NAME STANDARD="Aguilar, Sarah">mother</NAME>
+                                    <JOB REG="teacher">were running a small private boarding school</JOB> in
+                                    <PLACE>
+                                        <SETTLEMENT CURRENT="London">Hackney</SETTLEMENT>
+                                        <REGION REG="Middlesex" />
+                                        <GEOG REG="England" />
+                                    </PLACE> for boys aged four to ten; subjects included Religion, English, and Hebrew.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Abrahams 141" DBREF="108722">141</BIBCIT>
+                                </BIBCITS>
+                                <KEYWORDCLASS>Women and Education</KEYWORDCLASS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>
+                                    <NAME STANDARD="Aguilar, Grace">GA</NAME> herself did not know Hebrew. However, since her mother was an invalid, most of the work presumably fell to her.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Abrahams 141" DBREF="108722" QTDIN="QTDINYES">141</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <LEISUREANDSOCIETY>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>She still found time to write, however, and for other activities. Her fondness for the study of nature prompted her to collect and dry samples of various leaves.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Aguilar, (30 Nov 1843), 7" DBREF="101027">(30 Nov 1843): 7</BIBCIT>
+                                    </BIBCITS>
+                                    <KEYWORDCLASS KEYWORDTYPE="Hobbies">leisure activities</KEYWORDCLASS>
+                                    <KEYWORDCLASS KEYWORDTYPE="Botany">Science</KEYWORDCLASS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </LEISUREANDSOCIETY>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Ill Health</HEADING>
+                    <HEALTH ISSUE="PHYSICAL">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>
+                                    <NAME STANDARD="Aguilar, Grace">GA</NAME>'s mother considered her to have had a
+                                    <QUOTE DIRECT="Y">great delicacy of constitution</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Sarah Aguilar (6 April 1848): 2" DBREF="101027" QTDIN="QTDINYES">(6 April 1848): 2</BIBCIT>
+                                    </BIBCITS> from the age of two.</P>
+                            </SHORTPROSE>
+                            <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1837" CERTAINTY="C">Around 1837</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Aguilar, Grace">GA</NAME> suffered from the measles; her health was thereafter precarious.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Sarah Aguilar xiii" DBREF="108730">xiii</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>Further weakened after this attack of measles,
+                                    <NAME STANDARD="Aguilar, Grace">GA</NAME> suffered from ill-health for the rest of her life. According to her mother she was obliged by her poor constitution to spend part of every summer by the sea.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Sarah Aguilar (6 April 1848): 2- 3" DBREF="101027">6 April 1848: 2-3</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </HEALTH>
+                </DIV1>
+                <DIV1>
+                    <FAMILY>
+                        <MEMBER RELATION="FATHER">
+                            <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1845-01-18">18 January 1845</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Aguilar, Grace">GA</NAME>'s father,
+                                    <NAME STANDARD="Aguilar, Emanuel,, Sr">Emanuel Aguilar</NAME>, died of consumption.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Sarah Aguilar xiv" DBREF="108730">xiv</BIBCIT>
+                                    <BIBCIT PLACEHOLDER="Abrahams 138, 148" DBREF="108722">138, 148</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                        </MEMBER>
+                    </FAMILY>
+                </DIV1>
+                <DIV1>
+                    <HEALTH ISSUE="PHYSICAL">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>Within a couple of years after this
+                                    <NAME STANDARD="Aguilar, Grace">GA</NAME> too was suffering from consumption as well as complications from the measles, and set out, accompanied by her mother, on travels which were designed to improve her declining health. She could walk for only brief periods, and was advised against reading and writing.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Galchinsky 139" DBREF="109135">139</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="Sarah Aguilar (6 April 1848): 3, 4" DBREF="101027">(6 April 1848): 3, 4</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </HEALTH>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Recognition</HEADING>
+                    <OCCUPATION>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>
+                                    <NAME STANDARD="Aguilar, Grace">GA</NAME>'s need to rely on her
+                                    <JOB REG="writer">writing</JOB> for part of her income in the wake of her father's death may have prompted her to seek to publish the novel she had written ten years earlier:
+                                    <TITLE TITLETYPE="MONOGRAPHIC" REG="Home Influence">Home Influence: A Tale for Mothers and Daughters</TITLE> in early 1847. The great popularity of the book cemented her reputation, and brought her, before her departure for the Continent, a testimonial and gift from women in the Jewish community in London (a community to which she had been in a small way a
+                                    <SIGNIFICANTACTIVITY PHILANTHROPYVOLUNTEER="PHILANTHROPYVOLUNTEERYES" REG="charitable giving">benefactor</SIGNIFICANTACTIVITY>).
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="DNB" DBREF="1759" />
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <WEALTH>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>Although
+                                    <NAME STANDARD="Aguilar, Grace">GA</NAME> was far from wealthy, she gave freely to those poorer than herself, both Jews and Christians.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="ODNB" DBREF="29268" />
+                                    </BIBCITS> As the old
+                                    <TITLE TITLETYPE="MONOGRAPHIC" REG="Dictionary of National Biography">DNB</TITLE> put it, her friend
+                                    <NAME STANDARD="Hall, Anna Maria">Mrs S. C. (Anna Maria) Hall</NAME>
+                                    <QUOTE DIRECT="Y">relates many charitable acts done by her to fellow authoresses.</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="DNB" DBREF="1759" QTDIN="QTDINYES" />
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </WEALTH>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Last Illness, Last Travel</HEADING>
+                    <LOCATION RELATIONTO="VISITED">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>During the last summer of her life,
+                                    <NAME STANDARD="Aguilar, Grace">GA</NAME> travelled to
+                                    <PLACE>
+                                        <GEOG>Germany</GEOG> (
+                                        <SETTLEMENT>Frankfurt</SETTLEMENT>
+                                    </PLACE> and the spa of
+                                    <PLACE>
+                                        <SETTLEMENT>Schwalbach</SETTLEMENT>
+                                        <GEOG REG="Germany" />
+                                    </PLACE>), hoping to benefit her failing health.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Hall Pilgrimages 458" DBREF="10071">458</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="Sarah Aguilar xv" DBREF="108730">xv</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="DNB" DBREF="1759" />
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <HEALTH ISSUE="PHYSICAL">
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1847-06-17" CERTAINTY="BY">16 or 17 June 1847</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Aguilar, Grace">GA</NAME> and her
+                                    <NAME STANDARD="Aguilar, Sarah">mother</NAME> left
+                                    <PLACE>
+                                        <GEOG>England</GEOG>
+                                    </PLACE> for
+                                    <PLACE>
+                                        <GEOG>Germany</GEOG>
+                                    </PLACE>, to seek a consultation with an eminent German physician about Grace's condition.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Sarah Aguilar (6 April 1848): 4" DBREF="101027">6 April 1848: 4</BIBCIT>
+                                    <BIBCIT PLACEHOLDER="Hall Pilgrimages 458" DBREF="10071">458</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>They spent several weeks (from 24 June) in
+                                    <PLACE>
+                                        <SETTLEMENT>Frankfurt</SETTLEMENT>
+                                        <GEOG REG="Germany" />
+                                    </PLACE>, during which time, however, her health did not improve.</P>
+                            </SHORTPROSE>
+                            <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SYS">
+                                <DATESTRUCT CERTAINTY="C" CALENDAR="NEWSTYLE" VALUE="1847-08-05">
+                                    <SEASON CERTAINTY="C">Summer</SEASON>
+                                    <YEAR>1847</YEAR>
+                                </DATESTRUCT>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Aguilar, Grace">GA</NAME> and her
+                                    <NAME STANDARD="Aguilar, Sarah">mother</NAME> repaired to the steel baths at
+                                    <PLACE>
+                                        <SETTLEMENT>Schwalbach</SETTLEMENT>
+                                        <GEOG REG="Germany" />
+                                    </PLACE> for several weeks, still hoping her health would improve; thereafter they returned to
+                                    <PLACE>
+                                        <SETTLEMENT>Frankfurt</SETTLEMENT>
+                                        <GEOG REG="Germany" />
+                                    </PLACE>, where she lived only a few weeks longer.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Sarah Aguilar (6 April 1848): 4-5" DBREF="101027">(6 April 1848): 4-6</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>For some time before her death she could not speak, but communicated in sign language.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Sarah Aguilar xvi" DBREF="101730">xvi</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="Hall Pilgrimages 458" DBREF="10071">458</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </HEALTH>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Death</HEADING>
+                    <DEATH>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SYS">
+                                <DATE VALUE="1847-09-16">16 September 1847</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Aguilar, Grace">GA</NAME> died at the age of thirty-one in
+                                    <PLACE>
+                                        <SETTLEMENT>Frankfurt</SETTLEMENT>,
+                                        <GEOG>Germany</GEOG>
+                                    </PLACE>, of complications she had suffered following
+                                    <CAUSE>measles and tuberculosis</CAUSE>.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="DNB" DBREF="1759" />
+                                    <BIBCIT PLACEHOLDER="Sarah Aguilar xvi" DBREF="108730">xvi</BIBCIT>
+                                    <BIBCIT PLACEHOLDER="Abrahams 146" DBREF="108722">146</BIBCIT>
+                                    <BIBCIT PLACEHOLDER="Hall Pilgrimages 462" DBREF="10071">462</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>Her grave is in the Jewish burial ground in Frankfurt, near the wall of the Protestant one. The headstone is inscribed with the proverb:
+                                    <QUOTE DIRECT="Y">Give her of the fruit of her hands, and let her own works praise her in the gates.</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Proverbs xxxi.31" DBREF="9328">xxxi: 31</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="AM Hall Pilgrimages 459, 462" DBREF="10071">459, 462</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="Abrahams 146" DBREF="108722">146</BIBCIT>
+                                    </BIBCITS>
+                                    <NAME STANDARD="Hartog, Marion">Marion Hartog</NAME>, another Jewish woman writer, published
+                                    <TITLE TITLETYPE="ANALYTIC">Lines on the Death of Grace Aguilar</TITLE> in
+                                    <TITLE TITLETYPE="JOURNAL">The Jewish Chronicle</TITLE> in 1854.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Galchinsky 235" DBREF="109135">235</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </DEATH>
+                </DIV1>
+                <WORKSCITED>
+                    <SOURCE>Unless otherwise noted, all information is from the FC</SOURCE>
+                    <SOURCE>Abrahams, Beth-Zion Lask, Grace Aguilar: A Centenary Tribute, 1948</SOURCE>
+                    <SOURCE>Aguilar, Grace, An Archive of Her Letters, 1842-1854</SOURCE>
+                    <SOURCE>Aguilar, Sarah, Memoir of Grace Aguilar, n.d.</SOURCE>
+                </WORKSCITED>
+            </DIV0>
+        </BIOGRAPHY>

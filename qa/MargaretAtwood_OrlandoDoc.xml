@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://cwrc.ca/schemas/orlando_biography.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+    <?xml-stylesheet type="text/css" href="http://cwrc.ca/templates/css/orlando.css"?>
+        <BIOGRAPHY SEX="FEMALE" PERSON="WRITER">
+            <ORLANDOHEADER TYPE="text">
+                <FILEDESC>
+                    <TITLESTMT>
+                        <DOCTITLE>Margaret Atwood: biography</DOCTITLE>
+                    </TITLESTMT>
+                    <PUBLICATIONSTMT>
+                        <AUTHORITY>Orlando Project</AUTHORITY>
+                    </PUBLICATIONSTMT>
+                    <SOURCEDESC>Created from original research by members of the Orlando Project</SOURCEDESC>
+                </FILEDESC>
+                <REVISIONDESC>
+                    <RESPONSIBILITY RESP="JEB" WORKSTATUS="RWT" WORKVALUE="I">
+                        <DATE VALUE="1998-01-09">9 January 1998</DATE>
+                        <ITEM>Initial document given to tagger.</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JEB" WORKSTATUS="RWT" WORKVALUE="I">
+                        <DATE VALUE="1998-01-14">14 January 1998</DATE>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JEB" WORKSTATUS="RWT" WORKVALUE="I">
+                        <DATE VALUE="1998-01-14">14 January 1998</DATE>
+                        <ITEM>Template for v2 Biography</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JKW" WORKSTATUS="CFT" WORKVALUE="P">
+                        <DATE VALUE="1998-02-04">4 February 1998</DATE>
+                        <ITEM>Template for v2 Biography; JKW: prelimanary checking of chronstructs</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SRF" WORKSTATUS="CFT" WORKVALUE="P">
+                        <DATE VALUE="1998-03-02">2 March 1998</DATE>
+                        <ITEM>JKW: prelimanary checking of chronstructs SRF: fixed standard name</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JEB" WORKSTATUS="REV" WORKVALUE="P">
+                        <DATE VALUE="1998-04-05">5 April 1998</DATE>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JEB" WORKSTATUS="REV" WORKVALUE="P">
+                        <DATE VALUE="1998-04-05">5 April 1998</DATE>
+                        <ITEM>JKW: prelimanary checking of chronstructs SRF: fixed standard name</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JEB" WORKSTATUS="REV" WORKVALUE="P">
+                        <DATE VALUE="1998-04-21">21 April 1998</DATE>
+                        <ITEM>JKW: prelimanary checking of chronstructs SRF: fixed standard name</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JEB" WORKSTATUS="REV" WORKVALUE="P">
+                        <DATE VALUE="1998-04-21">21 April 1998</DATE>
+                        <ITEM>JKW: prelimanary checking of chronstructs SRF: fixed standard name</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JEB" WORKSTATUS="REV" WORKVALUE="P">
+                        <DATE VALUE="1998-04-21">21 April 1998</DATE>
+                        <ITEM>JKW: prelimanary checking of chronstructs SRF: fixed standard name</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JEB" WORKSTATUS="REV" WORKVALUE="P">
+                        <DATE VALUE="1998-04-22">22 April 1998</DATE>
+                        <ITEM>JKW: prelimanary checking of chronstructs SRF: fixed standard name</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JEB" WORKSTATUS="REV" WORKVALUE="P">
+                        <DATE VALUE="1998-04-22">22 April 1998</DATE>
+                        <ITEM>JKW: prelimanary checking of chronstructs SRF: fixed standard name</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JEB" WORKSTATUS="REV" WORKVALUE="P">
+                        <DATE VALUE="1998-04-22">22 April 1998</DATE>
+                        <ITEM>JKW: prelimanary checking of chronstructs SRF: fixed standard name</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JEB" WORKSTATUS="REV" WORKVALUE="P">
+                        <DATE VALUE="1998-05-26">26 May 1998</DATE>
+                        <ITEM>JKW: prelimanary checking of chronstructs SRF: fixed standard name</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JEB" WORKSTATUS="REV" WORKVALUE="P">
+                        <DATE VALUE="1998-06-25">25 June 1998</DATE>
+                        <ITEM>JKW: prelimanary checking of chronstructs SRF: fixed standard name</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="PDC" WORKSTATUS="RWT" WORKVALUE="C">
+                        <DATE VALUE="1998-10-06">6 October 1998</DATE>
+                        <ITEM>Updated for Sept 1998 Audit</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JEB" WORKSTATUS="RWT" WORKVALUE="C">
+                        <DATE VALUE="1998-11-12">12 November 1998</DATE>
+                        <ITEM>Updated for Sept 1998 Audit</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JEB" WORKSTATUS="RWT" WORKVALUE="C">
+                        <DATE VALUE="1999-02-05">5 February 1999</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JEB" WORKSTATUS="RWT" WORKVALUE="C">
+                        <DATE VALUE="1999-03-11">11 March 1999</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JEB" WORKSTATUS="RWT" WORKVALUE="C">
+                        <DATE VALUE="1999-04-19">19 April 1999</DATE>
+                        <ITEM>TEST TEST TESTCFT: ORGNAME</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="1999-04-22">22 April 1999</DATE>
+                        <ITEM> fixed ORGNAME</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SRF" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="1999-08-27">27 August 1999</DATE>
+                        <ITEM>removed proximity. Really</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="1999-12-21">21 December 1999</DATE>
+                        <ITEM>BATCH CHANGE: primarily orgName and bibCit cleanup</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="DRG" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2001-02-01">1 February 2001</DATE>
+                        <ITEM>converted textual apostrophes and quotation marks to entity references</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2001-07-20">20 July 2001</DATE>
+                        <ITEM>removed title tag(s) from workscited</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2003-04-14">14 April 2003</DATE>
+                        <ITEM>BATCH CHANGE: primarily PLACE cleanup</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="RWT" WORKVALUE="P">
+                        <DATE VALUE="2003-04-24">24 April 2003</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="RWT" WORKVALUE="P">
+                        <DATE VALUE="2003-04-24">24 April 2003</DATE>
+                        <ITEM>removed accidental pub c attribute</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2003-06-16">16 June 2003</DATE>
+                        <ITEM>BATCH CHANGE: primarily TGENRENAME cleanup, BIBCIT following P moved before P, BIBCITS TAG added</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="PDC" WORKSTATUS="RWT" WORKVALUE="P">
+                        <DATE VALUE="2004-08-05">5 August 2004</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2005-04-04">4 April 2005</DATE>
+                        <ITEM>fixed obsolete attribute</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2005-04-08">08 April 2005</DATE>
+                        <ITEM>BATCH CHANGE: March 2005 Specifications. Mainly tag/attribute name changes</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2005-05-29">29 May 2005</DATE>
+                        <ITEM>rwt c, ready for rbv (writing doc; Pat may or may not wish to see bio doc again), cas, cft.</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="AGH" WORKSTATUS="CAS" WORKVALUE="C">
+                        <DATE VALUE="2005-06-15">15 June 2005</DATE>
+                        <ITEM>cas-c</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="AGH" WORKSTATUS="CAS" WORKVALUE="C">
+                        <DATE VALUE="2005-06-21">21 June 2005</DATE>
+                        <ITEM>cas-c. Fixed tag inconsistency.</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="KGS" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2005-06-21">21 June 2005</DATE>
+                        <ITEM>cft-c. ready for rbv.</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2005-07-07">7 July 2005</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="PDC" WORKSTATUS="RBV" WORKVALUE="C">
+                        <DATE VALUE="2005-07-14">14 July 2005</DATE>
+                        <ITEM>rbv-c</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2005-08-19">19 August 2005</DATE>
+                        <ITEM> fixed ORGNAME</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2005-08-19">19 August 2005</DATE>
+                        <ITEM> fixed PLACE</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="PUB" WORKVALUE="I">
+                        <DATE VALUE="2005-10-15">15 October 2005</DATE>
+                        <ITEM>pub i</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="CFB" WORKVALUE="C">
+                        <DATE VALUE="2005-11-30">30 November 2005</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="PUB" WORKVALUE="C">
+                        <DATE VALUE="2005-12-16">16 December 2005</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="ENH" WORKVALUE="C">
+                        <DATE VALUE="2007-07-11">11 July 2007</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="ENH" WORKVALUE="C">
+                        <DATE VALUE="2010-08-06">6 August 2010</DATE>
+                        <ITEM>training Aug 2010</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="MKD" WORKSTATUS="CAS" WORKVALUE="C">
+                        <DATE VALUE="2011-05-13">13 May 2011</DATE>
+                        <ITEM>test CAS</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="ENH" WORKVALUE="C">
+                        <DATE VALUE="2011-11-27">27 November 2011</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY WORKSTATUS="ENH" RESP="IMG" WORKVALUE="C">
+                        <DATE VALUE="2012-09-14">14 September 2012</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY WORKSTATUS="REV" RESP="AGL" WORKVALUE="C">
+                        <DATE VALUE="2013-11-11">11 November 2013</DATE>
+                        <ITEM>orgname cleanup</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY WORKSTATUS="ENH" RESP="IMG" WORKVALUE="C">
+                        <DATE VALUE="2013-12-06">6 December 2013</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY WORKSTATUS="REV" RESP="AGL" WORKVALUE="C">
+                        <DATE VALUE="2014-03-07">7 March 2014</DATE>
+                        <ITEM/>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY WORKSTATUS="REV" RESP="IMG" WORKVALUE="C">
+                        <DATE VALUE="2014-12-09">9 December 2014</DATE>
+                        <ITEM/>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY WORKSTATUS="ENH" RESP="IMG" WORKVALUE="C">
+                        <DATE VALUE="2015-11-07">7 November 2015</DATE>
+                        <ITEM/>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY WORKSTATUS="ENH" RESP="IMG" WORKVALUE="C">
+                        <DATE VALUE="2016-10-24">24 October 2016</DATE>
+                        <ITEM/>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY WORKSTATUS="ENH" RESP="IMG" WORKVALUE="C">
+                        <DATE VALUE="2017-03-16">16 March 2017</DATE>
+                        <ITEM/>
+                    </RESPONSIBILITY>
+                </REVISIONDESC>
+            </ORLANDOHEADER>
+            <DIV0>
+                <HEADING>Biography</HEADING>
+                <STANDARD>Atwood, Margaret</STANDARD>
+                <DIV1>
+                    <PERSONNAME>
+                        <DIV2>
+                            <DATASTRUCT>
+                                <DATAITEM>
+                                    <BIRTHNAME WROTEORPUBLISHEDAS="WROTEPUBLISHEDASYES" REG="Atwood, Margaret">
+                                        <GIVEN>Margaret</GIVEN>
+                                        <GIVEN>Eleanor</GIVEN>
+                                        <SURNAME>Atwood</SURNAME>
+                                    </BIRTHNAME>
+                                </DATAITEM>
+                                <DATAITEM>
+                                    <NICKNAME>Peggy Atwood</NICKNAME>
+                                    <SCHOLARNOTE>
+                                        <P>
+                                            <NAME STANDARD="Atwood, Margaret">MA</NAME> used this form of her name on some juvenile work.</P>
+                                    </SCHOLARNOTE>
+                                </DATAITEM>
+                                <DATAITEM>
+                                    <INDEXED WROTEORPUBLISHEDAS="WROTEPUBLISHEDASYES" REG="Atwood, M. E.">M. E. Atwood</INDEXED>
+                                    <SCHOLARNOTE>
+                                        <P>She published her first book of poetry under this form of her name.
+                                            <BIBCITS>
+                                                <BIBCIT PLACEHOLDER="New Wave Canada" DBREF="33925" />
+                                            </BIBCITS>
+                                        </P>
+                                    </SCHOLARNOTE>
+                                </DATAITEM>
+                            </DATASTRUCT>
+                        </DIV2>
+                    </PERSONNAME>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Birth and Family</HEADING>
+                    <BIRTH>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="WRITINGCLIMATE" RESP="JEB">
+                                <DATE VALUE="1939-11-18">18 November 1939</DATE>
+                                <CHRONPROSE>
+                                    <BIRTHPOSITION>
+                                        <NAME STANDARD="Atwood, Margaret">MA</NAME> was born in
+                                        <PLACE>
+                                            <SETTLEMENT>Ottawa</SETTLEMENT>,
+                                            <REGION>Ontario</REGION>
+                                            <GEOG REG="Canada" />
+                                        </PLACE>, the second of three children.</BIRTHPOSITION>
+                                </CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="DLB online 251" DBREF="18329">251</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                        </DIV2>
+                    </BIRTH>
+                </DIV1>
+                <DIV1>
+                    <CULTURALFORMATION>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>She was born into a
+                                    <RACECOLOUR>white</RACECOLOUR>, urban,
+                                    <CLASS SOCIALRANK="PROFESSIONAL" SELF-DEFINED="SELFYES">middle-class</CLASS>
+                                    <NATIONALITY SELF-DEFINED="SELFYES">Canadian</NATIONALITY> family whose second environment, the
+                                    <GEOGHERITAGE>northern wilderness</GEOGHERITAGE>, became deeply familiar to her from long summers in the bush where her father did his research.</P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </CULTURALFORMATION>
+                </DIV1>
+                <DIV1>
+                    <FAMILY>
+                        <MEMBER RELATION="MOTHER">
+                            <DIV2>
+                                <SHORTPROSE>
+                                    <P>Her mother was born
+                                        <NAME STANDARD="Atwood, Margaret Killam">Margaret Killam</NAME>, a member of a Nova Scotia family which acquired prominence as merchants, politicians, financiers, and latterly philanthropists.</P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                        <MEMBER RELATION="FATHER">
+                            <DIV2>
+                                <SHORTPROSE>
+                                    <P>Her father, Dr
+                                        <NAME STANDARD="Atwood, Carl Edmund">Carl Edmund Atwood</NAME>, was an
+                                        <JOB>academic</JOB>
+                                        <JOB REG="scientist">entomologist</JOB>.</P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                    </FAMILY>
+                </DIV1>
+                <DIV1>
+                    <LOCATION RELATIONTO="LIVED">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>
+                                    <NAME STANDARD="Atwood, Margaret">MA</NAME> spent her childhood in
+                                    <PLACE>
+                                        <SETTLEMENT>Ottawa</SETTLEMENT>
+                                        <REGION REG="Ontario" />
+                                        <GEOG REG="Canada" />
+                                    </PLACE>,
+                                    <PLACE>
+                                        <SETTLEMENT>Sault Ste Marie</SETTLEMENT>
+                                        <REGION REG="Ontario" />
+                                        <GEOG REG="Canada" />
+                                    </PLACE>, and
+                                    <PLACE>
+                                        <SETTLEMENT>Toronto</SETTLEMENT>
+                                        <REGION REG="Ontario" />
+                                        <GEOG REG="Canada" />
+                                    </PLACE>, with summers in the bush area north of
+                                    <PLACE>
+                                        <SETTLEMENT>Temiscaming</SETTLEMENT>
+                                        <REGION REG="Quebec" />
+                                        <GEOG REG="Canada" />
+                                    </PLACE>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Atwood, Quiet 22" DBREF="33945">22</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Education</HEADING>
+                    <EDUCATION MODE="DOMESTIC">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>Margaret's earliest education was at home—from her mother, and from the major educational experience of her wilderness summers. She later enumerated the pop-cultural forms of her childhood as the movies, radio, the funny papers and comic books.
+                                    <BIBCITS>
+                                        <BIBCIT DBREF="91087" PLACEHOLDER="Atwood, Shale 31">31</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </EDUCATION>
+                    <EDUCATION MODE="INSTITUTIONAL">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>She attended elementary school, and then from
+                                    <DATE VALUE="1952-09" CERTAINTY="AFTER">1952</DATE>
+                                    <SCHOOL INSTITUTION="DAYSCHOOL" INSTITUTIONLEVEL="SECONDARY" REG="Leaside High School,, Toronto" RELIGIOUS="RELIGIOUSYES">
+                                        <ORGNAME REG="Leaside High School,, Toronto" STANDARD="Leaside High School,, Toronto">Leaside High School</ORGNAME>
+                                    </SCHOOL> in
+                                    <PLACE>
+                                        <SETTLEMENT>Toronto</SETTLEMENT>
+                                        <REGION REG="Ontario" />
+                                        <GEOG REG="Canada" />
+                                    </PLACE>, both in the Protestant public school system which then operated in Canada alongside a Catholic one. She and her schoolmates got prayers and
+                                    <TEXT>
+                                        <TITLE TITLETYPE="MONOGRAPHIC" REND="normal">Bible</TITLE>
+                                    </TEXT> readings every day, memorized psalms and other biblical passages, and took the occasional
+                                    <SUBJECT>Religious Knowledge</SUBJECT> course. The
+                                    <QUOTE DIRECT="Y">
+                                        <SUBJECT>English Literature</SUBJECT> curriculum was resolutely British</QUOTE>:
+                                    <TEXT>
+                                        <NAME STANDARD="Shakespeare, William">Shakespeare</NAME>
+                                    </TEXT>,
+                                    <TEXT>English Romantic and Victorian poets</TEXT>, and novels by
+                                    <TEXT>
+                                        <NAME STANDARD="Eliot, George">George Eliot</NAME>
+                                    </TEXT> and
+                                    <TEXT>
+                                        <NAME STANDARD="Hardy, Thomas">Thomas Hardy</NAME>
+                                    </TEXT>.
+                                    <BIBCITS>
+                                        <BIBCIT DBREF="91087" PLACEHOLDER="Atwood, Shale 9">9</BIBCIT>
+                                    </BIBCITS> From
+                                    <DATE VALUE="1957-08" CERTAINTY="AFTER">1957</DATE> she attended
+                                    <SCHOOL RELIGIOUS="RELIGIOUSYES" INSTITUTIONLEVEL="POST-SECONDARY" REG="Victoria College,, Toronto">
+                                        <ORGNAME REG="Victoria College,, University of Toronto" STANDARD="Victoria College,, University of Toronto">Victoria College</ORGNAME>
+                                    </SCHOOL>,
+                                    <SCHOOL INSTITUTIONLEVEL="POST-SECONDARY" REG="University of Toronto">
+                                        <ORGNAME REG="University of Toronto" STANDARD="University of Toronto">University of Toronto</ORGNAME>
+                                    </SCHOOL>. Canadian publishing and the arts in Canada, broadly considered, had not yet recovered from the second world war. There were no cheap reprints of new Canadian books, and authors like
+                                    <NAME STANDARD="Laurence, Margaret">Margaret Laurence</NAME>,
+                                    <NAME STANDARD="Gallant, Mavis">Mavis Gallant</NAME>, and
+                                    <NAME STANDARD="Richler, Mordecai">Mordecai Richler</NAME> were living abroad.
+                                    <BIBCITS>
+                                        <BIBCIT DBREF="91087" PLACEHOLDER="Atwood, Shale 33">33</BIBCIT>
+                                    </BIBCITS> At university
+                                    <NAME STANDARD="Atwood, Margaret">MA</NAME> first became aware of
+                                    <SUBJECT>Canadian literature</SUBJECT> as a subject of study and a source of pleasure, a discovery which she felt she owed to two of her teachers in particular,
+                                    <INSTRUCTOR>
+                                        <NAME STANDARD="Frye, Northrop">Northrop Frye</NAME>
+                                    </INSTRUCTOR> and
+                                    <INSTRUCTOR>
+                                        <NAME STANDARD="Macpherson, Jay">Jay Macpherson</NAME>
+                                    </INSTRUCTOR>. For her
+                                    <DEGREE>BA in English</DEGREE> (awarded in
+                                    <DATE VALUE="1961-06" CERTAINTY="C">1961</DATE>) she studied the canon from
+                                    <TEXT>Anglo-Saxon literature</TEXT> to
+                                    <TEXT>
+                                        <NAME STANDARD="Eliot, T. S.">T. S. Eliot</NAME>
+                                    </TEXT>; in her final year she discovered
+                                    <TEXT>
+                                        <NAME STANDARD="Watson, Sheila">Sheila Watson</NAME>
+                                    </TEXT> and
+                                    <TEXT>
+                                        <NAME STANDARD="Blais, Marie-Claire">Marie-Claire Blais</NAME>
+                                    </TEXT>.
+                                    <BIBCITS>
+                                        <BIBCIT DBREF="91087" PLACEHOLDER="Atwood, Shale 36-7">36-7</BIBCIT>
+                                    </BIBCITS> She spent the year after her graduation studying
+                                    <SUBJECT>Victorian literature</SUBJECT> at
+                                    <SCHOOL INSTITUTIONLEVEL="POST-SECONDARY" REG="Radcliffe College,, Harvard University">
+                                        <ORGNAME STANDARD="Radcliffe Institute for Advanced Study at Harvard" REG="Radcliffe College">Radcliffe College</ORGNAME>
+                                    </SCHOOL>,
+                                    <SCHOOL INSTITUTIONLEVEL="POST-SECONDARY" REG="Harvard University">
+                                        <ORGNAME REG="Harvard University" STANDARD="Harvard University">Harvard</ORGNAME>
+                                    </SCHOOL> (then an all-female institution), and then began on doctoral studies at Toronto. She broke off her doctorate in order to work, then resumed it at Harvard in
+                                    <DATE VALUE="1965-09" CERTAINTY="C">1965</DATE>, where she held a
+                                    <AWARD>Woodrow Wilson Fellowship</AWARD>. The new subject of her research (not completed) was the English
+                                    <SUBJECT>gothic novel</SUBJECT>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="FC" DBREF="107913" />
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </EDUCATION>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Jobs</HEADING>
+                    <OCCUPATION>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P> Back in
+                                    <PLACE>
+                                        <SETTLEMENT>Toronto</SETTLEMENT>
+                                        <REGION REG="Ontario" />
+                                        <GEOG REG="Canada" />
+                                    </PLACE> between periods of study, she took a job in
+                                    <DATE VALUE="1963-08" CERTAINTY="C">1963</DATE> with a
+                                    <JOB>market research</JOB> company, and then taught at the
+                                    <EMPLOYER>
+                                        <ORGNAME REG="University of British Columbia" STANDARD="University of British Columbia">University of British Columbia</ORGNAME>
+                                    </EMPLOYER>,
+                                    <DATERANGE CERTAINTY="C" FROM="1964-09" TO="1965-06" EXACT="BOTH">1964-5</DATERANGE>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="FC" DBREF="107913" />
+                                    </BIBCITS> After this she taught briefly at
+                                    <EMPLOYER>
+                                        <ORGNAME STANDARD="Sir George Williams University">Sir George Williams University</ORGNAME>
+                                    </EMPLOYER> in
+                                    <PLACE>
+                                        <SETTLEMENT>Montreal</SETTLEMENT>
+                                        <REGION REG="Quebec" />
+                                        <GEOG REG="Canada" />
+                                    </PLACE>, the
+                                    <EMPLOYER>
+                                        <ORGNAME STANDARD="University of Alberta">University of Alberta</ORGNAME>
+                                    </EMPLOYER> in
+                                    <PLACE>
+                                        <SETTLEMENT>Edmonton</SETTLEMENT>
+                                        <REGION REG="Alberta" />
+                                        <GEOG REG="Canada" />
+                                    </PLACE>, and
+                                    <EMPLOYER>
+                                        <ORGNAME STANDARD="York University">York University</ORGNAME>
+                                    </EMPLOYER>,
+                                    <PLACE>
+                                        <SETTLEMENT>Toronto</SETTLEMENT>
+                                        <REGION REG="Ontario" />
+                                        <GEOG REG="Canada" />
+                                    </PLACE>. She was
+                                    <JOB>Writer in Residence</JOB> at the
+                                    <EMPLOYER>
+                                        <ORGNAME STANDARD="University of Toronto">University of Toronto</ORGNAME>
+                                    </EMPLOYER> in 1972-3, and has since held several other Writer in Residence positions in the
+                                    <PLACE>
+                                        <GEOG>USA</GEOG>
+                                    </PLACE> and one at
+                                    <EMPLOYER>
+                                        <ORGNAME STANDARD="Macquarie University">Macquarie University</ORGNAME>
+                                    </EMPLOYER>,
+                                    <PLACE>
+                                        <GEOG>Australia</GEOG>
+                                    </PLACE>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="DLB 251 online" DBREF="18329">251</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Personal Life</HEADING>
+                    <FAMILY>
+                        <MEMBER RELATION="HUSBAND">
+                            <MARRIAGE>
+                                <DIV2>
+                                    <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="WRITINGCLIMATE" RESP="IMG">
+                                        <DATE VALUE="1967-06-09">9 June 1967</DATE>
+                                        <CHRONPROSE>
+                                            <NAME STANDARD="Atwood, Margaret">MA</NAME> was married in
+                                            <PLACE>
+                                                <SETTLEMENT>Boston</SETTLEMENT>
+                                                <REGION REG="Massachusetts" />
+                                                <GEOG REG="USA" />
+                                            </PLACE> to
+                                            <NAME STANDARD="Polk, James">James Polk</NAME>, whom she met while she was a graduate student at
+                                            <ORGNAME REG="Harvard University" STANDARD="Harvard University">Harvard</ORGNAME>.
+                                            <SEPARATION>They separated in summer 1972.</SEPARATION>
+                                        </CHRONPROSE>
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="DLB 251 online" DBREF="18329">251</BIBCIT>
+                                        </BIBCITS>
+                                    </CHRONSTRUCT>
+                                    <SHORTPROSE>
+                                        <P>
+                                            <DIVORCE>Their divorce followed in
+                                                <DATE VALUE="1977">1977</DATE>.
+                                                <BIBCITS>
+                                                    <BIBCIT PLACEHOLDER="DLB 251 online" DBREF="18329">251</BIBCIT>
+                                                </BIBCITS>
+                                            </DIVORCE>
+                                        </P>
+                                    </SHORTPROSE>
+                                </DIV2>
+                            </MARRIAGE>
+                        </MEMBER>
+                    </FAMILY>
+                </DIV1>
+                <DIV1>
+                    <INTIMATERELATIONSHIPS EROTIC="EROTICYES">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>
+                                    <LIVESWITH>In 1972
+                                        <NAME STANDARD="Atwood, Margaret">MA</NAME> formed a relationship with novelist
+                                        <NAME STANDARD="Gibson, Graeme">Graeme Gibson</NAME>, with whom she lives.</LIVESWITH>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </INTIMATERELATIONSHIPS>
+                </DIV1>
+                <DIV1>
+                    <FAMILY>
+                        <MEMBER RELATION="DAUGHTER">
+                            <DIV2>
+                                <SHORTPROSE>
+                                    <P>
+                                        <CHILDREN NUMBER="1">They have one daughter, born on
+                                            <DATE VALUE="1976-05-17">17 May 1976</DATE>.
+                                            <BIBCITS>
+                                                <BIBCIT PLACEHOLDER="DLB 251 online" DBREF="18329">251</BIBCIT>
+                                            </BIBCITS>
+                                        </CHILDREN>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                    </FAMILY>
+                </DIV1>
+                <DIV1>
+                    <LOCATION RELATIONTO="VISITED">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>
+                                    <NAME STANDARD="Atwood, Margaret">MA</NAME> has been a lifelong Torontonian, but has lived in widely separated places:
+                                    <PLACE>
+                                        <REGION>British Columbia</REGION>
+                                        <GEOG REG="Canada" />
+                                    </PLACE>,
+                                    <PLACE>
+                                        <SETTLEMENT REG="Edmonton" />
+                                        <REGION>Alberta</REGION>
+                                        <GEOG REG="Canada" />
+                                    </PLACE> (1968-70), the
+                                    <PLACE>
+                                        <GEOG>USA</GEOG>
+                                    </PLACE>,
+                                    <PLACE>
+                                        <GEOG>Australia</GEOG>
+                                    </PLACE>, and (1970-1) in Europe—
+                                    <PLACE>
+                                        <SETTLEMENT>London</SETTLEMENT>
+                                        <REGION REG="Middlesex" />,
+                                        <GEOG>England</GEOG>
+                                    </PLACE>,
+                                    <PLACE>
+                                        <GEOG>France</GEOG>
+                                    </PLACE>, and
+                                    <PLACE>
+                                        <GEOG>Italy</GEOG>
+                                    </PLACE>.</P>
+                                <P>In winter 1983 Atwood and Gibson spent six months in England. She mentions both a
+                                    <QUOTE DIRECT="Y">cobblestone ex-fisherman's cottage with cold stone floors</QUOTE> and a rectory at
+                                    <PLACE>
+                                        <SETTLEMENT>Blakeney</SETTLEMENT> in
+                                        <REGION>Norfolk</REGION>
+                                        <GEOG REG="England" />
+                                    </PLACE>, reputedly haunted by nuns. She was engaged in futile struggle with the complicated time layers of a never-finished historical fiction, finding consolation in the Tudor novels of
+                                    <NAME STANDARD="Plaidy, Jean">Jean Plaidy</NAME>. She came home to abandon her project and write
+                                    <TITLE TITLETYPE="MONOGRAPHIC">The Handmaid's Tale</TITLE>.
+                                    <BIBCITS>
+                                        <BIBCIT DBREF="78588" PLACEHOLDER="Atwood, Fail better" />
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </LOCATION>
+                    <LOCATION RELATIONTO="LIVED">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>Apart from these sojourns, and a six-year period living with Gibson and their baby daughter on a farm near
+                                    <PLACE>
+                                        <SETTLEMENT>Alliston</SETTLEMENT>,
+                                        <REGION>Ontario</REGION>
+                                        <GEOG REG="Canada" />
+                                    </PLACE>,
+                                    <NAME STANDARD="Atwood, Margaret">MA</NAME> has lived in
+                                    <PLACE>
+                                        <SETTLEMENT>Toronto</SETTLEMENT>
+                                        <REGION REG="Ontario" />
+                                        <GEOG REG="Canada" />
+                                    </PLACE>.</P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Public and Literary Life</HEADING>
+                    <OCCUPATION>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>
+                                    <NAME STANDARD="Atwood, Margaret">MA</NAME> has spoken at length about the literary life in Toronto in the 1960s and 70s:
+                                    <QUOTE DIRECT="Y">improvisational, inventive, and far from top-heavy with a sense of [its] own importance.</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT DBREF="91087" PLACEHOLDER="Atwood, Shale 20">20</BIBCIT>
+                                    </BIBCITS> During
+                                    <DATERANGE FROM="1971" TO="1973" EXACT="BOTH">1971-3</DATERANGE>
+                                    <NAME STANDARD="Atwood, Margaret">MA</NAME> was editor of
+                                    <ORGNAME STANDARD="Anansi Press">Anansi Press</ORGNAME> in
+                                    <PLACE>
+                                        <SETTLEMENT>Toronto</SETTLEMENT>
+                                        <REGION REG="Ontario" />
+                                        <GEOG REG="Canada" />
+                                    </PLACE>, and she later served on its board.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="CA online" DBREF="16185" />
+                                    </BIBCITS> She was also one of the
+                                    <SIGNIFICANTACTIVITY PHILANTHROPYVOLUNTEER="PHILANTHROPYVOLUNTEERYES" REG="entertainment organizer">organizers and impresarios</SIGNIFICANTACTIVITY> of the All-Star Eclectic Typewriter Revue, a
+                                    <SIGNIFICANTACTIVITY PHILANTHROPYVOLUNTEER="PHILANTHROPYVOLUNTEERYES" REG="fundraiser">fundraising</SIGNIFICANTACTIVITY> entertainment for the recently-formed
+                                    <ORGNAME STANDARD="Writers' Union of Canada">Writers' Union of Canada</ORGNAME> on 9 May 1974 (or possibly on this day a year or two later) at which writers and reviewers performed, and Atwood herself
+                                    <SIGNIFICANTACTIVITY PHILANTHROPYVOLUNTEER="PHILANTHROPYVOLUNTEERYES" REG="dancer">took part in dance routines</SIGNIFICANTACTIVITY> on snowshoes and in kilts.
+                                    <BIBCITS>
+                                        <BIBCIT DBREF="91087" PLACEHOLDER="Atwood, Shale 20-5">20-5</BIBCIT>
+                                    </BIBCITS> The revue, she says, brought together Canadian authors of all ages and regions,
+                                    <QUOTE DIRECT="Y">working as a team and making idiots of themselves for a common cause.</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT DBREF="91087" PLACEHOLDER="Atwood, Shale 30">30</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                                <P>Later, in
+                                    <DATERANGE FROM="1982" TO="1983" EXACT="BOTH">1982-3</DATERANGE>,
+                                    <NAME STANDARD="Atwood, Margaret">MA</NAME> was President of the
+                                    <ORGNAME STANDARD="Writers' Union of Canada">Writers' Union of Canada</ORGNAME>. She was President of the Canadian branch of
+                                    <ORGNAME REG="PEN International" STANDARD="PEN International">PEN International</ORGNAME> in 1984-6. She became a Vice-President of Pen International on 11 July 2007, joining other such distinguished writers as
+                                    <NAME STANDARD="Gordimer, Nadine">Nadine Gordimer</NAME> and
+                                    <NAME STANDARD="Morrison, Toni">Toni Morrison</NAME>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="CA online" DBREF="16185" />
+                                        <BIBCIT PLACEHOLDER="Caitlin Smith" DBREF="46869" />
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <POLITICS>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>In middle age
+                                    <NAME STANDARD="Atwood, Margaret">MA</NAME> has taken an increasingly prominent role in shaping opinion on urgent questions confronting Canadians and others living with the new global economy and a single superpower world. In articles, lectures, and interviews she has made her influence felt on
+                                    <POLITICALAFFILIATION WOMAN-GENDERISSUE="GENDERYES" INVOLVEMENT="INVOLVEMENTYES" REG="feminist">women's issues</POLITICALAFFILIATION> and on issues of environment, nationalism, governance, peace and war, literacy, and human rights (especially prisoners' rights, especially through
+                                    <ORGNAME STANDARD="PEN International">PEN</ORGNAME>). She is an omni-present cultural commentator. She has taken part in an annual two-week summer camp run by
+                                    <ORGNAME STANDARD="Somebody's Daughter">Somebody's Daughter</ORGNAME>, a literacy project for Inuit women in the Canadian Arctic.</P>
+                                <P>She is also a
+                                    <SIGNIFICANTACTIVITY REG="nerd">pioneer (among writers) in the uses of social media, of new hybrid genres, and of the web</SIGNIFICANTACTIVITY> in general. In 2012 she launched a web space entitled
+                                    <ORGNAME STANDARD="Fanado">Fanado</ORGNAME> (http://fanado.com) designed to facilitate online contact between artists and creators of all kinds and their admirers, consumers, or fans, particularly through virtual meet-and-greet sessions and remote signatures. As an example of its work,
+                                    <NAME STANDARD="Atwood, Margaret">MA</NAME> remote-signed a portrait of her painted other images by
+                                    <NAME STANDARD="Zhelisko, Oksana">Oksana Zhelisko</NAME>, an artist in
+                                    <PLACE>
+                                        <SETTLEMENT>Edmonton</SETTLEMENT>,
+                                        <REGION>Alberta</REGION>
+                                        <GEOG REG="Canada" />
+                                    </PLACE>. The artist, delighted at virtually meeting her model, put the signed portrait up for sale on
+                                    <ORGNAME STANDARD="eBay">eBay</ORGNAME> to raise money for Fanado.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Fanado" DBREF="73986" />
+                                        <BIBCIT PLACEHOLDER="Today in Literature, 8 September 2015" DBREF="48925">8 September 2015</BIBCIT>
+                                    </BIBCITS> In early summer 2016 she attended a major event hosted in
+                                    <PLACE>
+                                        <SETTLEMENT>San Diego</SETTLEMENT>
+                                        <REGION REG="California" />
+                                        <GEOG REG="USA" />
+                                    </PLACE> by
+                                    <ORGNAME STANDARD="Comic-Con International">Comic-Con International</ORGNAME>, an organization that brings together enthusiasts for old-style comic books and new-style graphic fiction.
+                                    <BIBCITS>
+                                        <BIBCIT DBREF="89071" PLACEHOLDER="La Rose" />
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </POLITICS>
+                </DIV1>
+                <WORKSCITED>
+                    <SOURCE>Unless otherwise noted, all information is from the FC.</SOURCE>
+                    <SOURCE>CA online.</SOURCE>
+                    <SOURCE>Contemporary Authors (New Revision Series)(59)</SOURCE>
+                    <SOURCE>DLB online vol 251</SOURCE>
+                    <SOURCE>New Wave Canada.</SOURCE>
+                </WORKSCITED>
+            </DIV0>
+        </BIOGRAPHY>

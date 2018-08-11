@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://cwrc.ca/schemas/orlando_biography.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+    <?xml-stylesheet type="text/css" href="http://cwrc.ca/templates/css/orlando.css"?>
+        <BIOGRAPHY SEX="FEMALE" PERSON="IBRWRITER">
+            <ORLANDOHEADER>
+                <FILEDESC>
+                    <TITLESTMT>
+                        <DOCTITLE>Mary Seacole: biography</DOCTITLE>
+                    </TITLESTMT>
+                    <PUBLICATIONSTMT>
+                        <AUTHORITY>Orlando Project</AUTHORITY>
+                    </PUBLICATIONSTMT>
+                    <SOURCEDESC>Based on original research conducted by members of the Orlando Project</SOURCEDESC>
+                </FILEDESC>
+                <REVISIONDESC>
+                    <RESPONSIBILITY RESP="CNM" WORKSTATUS="OLD" WORKVALUE="O">
+                        <DATE VALUE="1996-06-05">5 June 1996</DATE>
+                        <ITEM>OLDWORKSTATUS="researched" OLDWORKVALUE="complete"</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="CNM" WORKSTATUS="OLD" WORKVALUE="O">
+                        <DATE VALUE="1996-06-26">26 June 1996</DATE>
+                        <ITEM>OLDWORKSTATUS="tagged" OLDWORKVALUE="incomplete"</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="CNM" WORKSTATUS="OLD" WORKVALUE="O">
+                        <DATE VALUE="1996-06-27">27 June 1996</DATE>
+                        <ITEM>OLDWORKSTATUS="tagged" OLDWORKVALUE="complete"</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SRF" WORKSTATUS="OLD" WORKVALUE="O">
+                        <DATE VALUE="1996-07-02">2 July 1996</DATE>
+                        <ITEM>OLDWORKSTATUS="checked" OLDWORKVALUE="query" SRF and KDC checked for practice and tagging consistency as part of the Bio test period.</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="KJB" WORKSTATUS="OLD" WORKVALUE="O">
+                        <DATE VALUE="1996-07-03">3 July 1996</DATE>
+                        <ITEM>OLDWORKSTATUS="checked" OLDWORKVALUE="query" KJB did same as SRF &amp; KDC</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="CNM" WORKSTATUS="OLD" WORKVALUE="O">
+                        <DATE VALUE="1996-07-15">15 July 1996</DATE>
+                        <ITEM>OLDWORKSTATUS="revision" OLDWORKVALUE="complete" cnm finished revising and adding research notes commentary</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="KKC" WORKSTATUS="OLD" WORKVALUE="O">
+                        <DATE VALUE="1996-11-25">25 November 1996</DATE>
+                        <ITEM>OLDWORKSTATUS="revision" OLDWORKVALUE="incomplete"</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="CNM" WORKSTATUS="RWT" WORKVALUE="C">
+                        <DATE VALUE="1997-07-27">27 July 1997</DATE>
+                        <ITEM>Automatically generated to load Workflow Management System.</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="CNM" WORKSTATUS="RWT" WORKVALUE="C">
+                        <DATE VALUE="1998-03-30">30 March 1998</DATE>
+                        <ITEM>Template for v2 Biography</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JSC" WORKSTATUS="REV" WORKVALUE="I">
+                        <DATE VALUE="1998-05-08">8 May 1998</DATE>
+                        <ITEM>Template for v2 Biography</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JSC" WORKSTATUS="REV" WORKVALUE="I">
+                        <DATE VALUE="1998-07-13">13 July 1998</DATE>
+                        <ITEM>revision for MTR: document requires major overhaul</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="RWT" WORKVALUE="I">
+                        <DATE VALUE="1998-10-06">6 October 1998</DATE>
+                        <ITEM>Updated for Sept 1998 Audit</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="GCG" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="1999-05-21">21 May 1999</DATE>
+                        <ITEM>gcg: added missing titletype attribute</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="GCG" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="1999-05-21">21 May 1999</DATE>
+                        <ITEM>gcg: added missing titletype attribute</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="KNT" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="1999-07-20">20 July 1999</DATE>
+                        <ITEM>knt: fixed dateRange</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="KAH" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="1999-09-02">2 September 1999</DATE>
+                        <ITEM>removed proximity/proximityto attributes</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="REV" WORKVALUE="P">
+                        <DATE VALUE="1999-10-25">25 October 1999</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="1999-12-21">21 December 1999</DATE>
+                        <ITEM>BATCH CHANGE: primarily orgName and bibCit cleanup</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="RWT" WORKVALUE="C">
+                        <DATE VALUE="2000-08-27">27 August 2000</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="KDC" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2000-08-28">28 August 2000</DATE>
+                        <ITEM>checked for tagging</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2000-08-28">28 August 2000</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2000-09-05">5 September 2000</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="OSM" WORKSTATUS="CAS" WORKVALUE="I">
+                        <DATE VALUE="2000-09-11">11 September 2000</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="OSM" WORKSTATUS="CAS" WORKVALUE="I">
+                        <DATE VALUE="2000-09-20">20 September 2000</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="OSM" WORKSTATUS="CAS" WORKVALUE="C">
+                        <DATE VALUE="2000-09-21">21 September 2000</DATE>
+                        <ITEM>This is my first document. PLease double check that stuff is done. I am really not certain.</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="OSM" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2000-09-22">22 September 2000</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2000-09-22">22 September 2000</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="OSM" WORKSTATUS="CAS" WORKVALUE="C">
+                        <DATE VALUE="2000-10-02">2 October 2000</DATE>
+                        <ITEM>osm: dbref Midgley, and added attribute to New Granada</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="RSC" WORKSTATUS="CAS" WORKVALUE="C">
+                        <DATE VALUE="2000-10-19">19 October 2000</DATE>
+                        <ITEM>checked Uglow in Edmonton</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="OSM" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2000-10-27">27 October 2000</DATE>
+                        <ITEM>osm: confirmed date in Seacole</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="RSC" WORKSTATUS="PUB" WORKVALUE="I">
+                        <DATE VALUE="2000-11-20">20 November 2000</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="PUB" WORKVALUE="I">
+                        <DATE VALUE="2000-11-22">22 November 2000</DATE>
+                        <ITEM>removed title tags from works cited</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2000-11-27">27 November 2000</DATE>
+                        <ITEM>fixed socalled</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2000-11-29">29 November 2000</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2000-11-29">29 November 2000</DATE>
+                        <ITEM>fixed names</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2000-12-04">4 December 2000</DATE>
+                        <ITEM>fixed quote</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2000-12-08">8 December 2000</DATE>
+                        <ITEM>fixed place</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2000-12-13">13 December 2000</DATE>
+                        <ITEM>fixe place</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="DRG" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2001-02-01">1 February 2001</DATE>
+                        <ITEM>converted textual apostrophes and quotation marks to entity references</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="OSM" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2001-04-03">3 April 2001</DATE>
+                        <ITEM>changed the dbref of seacole book from # 105963 to 7542 to match the one that I CASC'd</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="RSC" WORKSTATUS="PUB" WORKVALUE="C">
+                        <DATE VALUE="2001-05-14">14 May 2001</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="PUB" WORKVALUE="C">
+                        <DATE VALUE="2002-03-27">27 March 2002</DATE>
+                        <ITEM>fixed socalled</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JAH" WORKSTATUS="CFB" WORKVALUE="C">
+                        <DATE VALUE="2002-10-25">25 October 2002</DATE>
+                        <ITEM>fixed bibcits</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2002-12-06">6 December 2002</DATE>
+                        <ITEM>filled in reg attribute on married fixed NAME</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2002-12-06">6 December 2002</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2003-03-17">17 March 2003</DATE>
+                        <ITEM> fixed PLACE</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JAH" WORKSTATUS="CFB" WORKVALUE="C">
+                        <DATE VALUE="2003-03-27">27 March 2003</DATE>
+                        <ITEM>fixed bibcits</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2003-03-28">28 March 2003</DATE>
+                        <ITEM> fixed PLACE</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2003-04-14">14 April 2003</DATE>
+                        <ITEM>BATCH CHANGE: primarily PLACE cleanup</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2003-06-16">16 June 2003</DATE>
+                        <ITEM>BATCH CHANGE: primarily TGENRENAME cleanup, BIBCIT following P moved before P, BIBCITS TAG added</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2003-06-20">20 June 2003</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2004-06-14">14 June 2004</DATE>
+                        <ITEM>changed person designation to IBRWriter</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2005-01-07">7 January 2005</DATE>
+                        <ITEM>revised chroncolumn</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2005-04-08">08 April 2005</DATE>
+                        <ITEM>BATCH CHANGE: March 2005 Specifications. Mainly tag/attribute name changes</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2005-08-26">26 August 2005</DATE>
+                        <ITEM>job/occupation regs</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2005-09-09">9 September 2005</DATE>
+                        <ITEM>changed attribute value none on attribute exact to neither</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2006-03-15">15 March 2006</DATE>
+                        <ITEM>final readthrough</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="MPO" WORKSTATUS="ENH" WORKVALUE="C">
+                        <DATE VALUE="2010-02-23">23 February 2010</DATE>
+                        <ITEM>Manual changes related to AREA tag batch change</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="ENH" WORKVALUE="C">
+                        <DATE VALUE="2011-05-09">9 May 2011</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="LSW" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2011-11-01">1 November 2011</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="LSW" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2011-11-02">2 November 2011</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="MKD" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2012-05-16">16 May 2012</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="LSW" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2012-09-19">19 September 2012</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY WORKSTATUS="REV" RESP="IMG" WORKVALUE="C">
+                        <DATE VALUE="2013-06-05">5 June 2013</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                </REVISIONDESC>
+            </ORLANDOHEADER>
+            <DIV0>
+                <HEADING>Biography</HEADING>
+                <STANDARD>Seacole, Mary</STANDARD>
+                <DIV1>
+                    <PERSONNAME>
+                        <DIV2>
+                            <DATASTRUCT>
+                                <DATAITEM>
+                                    <BIRTHNAME>
+                                        <GIVEN>Mary</GIVEN>
+                                        <GIVEN>Jane</GIVEN>
+                                        <SURNAME>Grant</SURNAME>
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="FC" DBREF="107913" />
+                                        </BIBCITS>
+                                    </BIRTHNAME>
+                                </DATAITEM>
+                                <DATAITEM>
+                                    <MARRIED WROTEORPUBLISHEDAS="WROTEPUBLISHEDASYES" REG="Seacole, Mary Jane">Seacole</MARRIED>
+                                </DATAITEM>
+                                <DATAITEM>
+                                    <NICKNAME NAMETYPE="OTHER" NAMECONNOTATION="HONORIFIC">Mother Seacole</NICKNAME>
+                                </DATAITEM>
+                                <DATAITEM>
+                                    <NICKNAME NAMETYPE="OTHER" NAMECONNOTATION="HONORIFIC">Auntie Seacole</NICKNAME>
+                                </DATAITEM>
+                            </DATASTRUCT>
+                            <SHORTPROSE>
+                                <P>
+                                    <NAME STANDARD="Seacole, Mary">MS</NAME> was given the affectionate title of
+                                    <SOCALLED>Mother Seacole</SOCALLED> by the soldiers in the Crimea. Her nickname in Panama,
+                                    <SOCALLED>Aunty Seacole</SOCALLED>, she seems to have regarded less fondly, perhaps because it bore specifically racist connotations from the US context, along the lines of
+                                    <SOCALLED>Aunt Jemima</SOCALLED>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Seacole passim" DBREF="7542">passim</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </PERSONNAME>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Birth and Heritage</HEADING>
+                    <BIRTH>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="IMG" CHRONCOLUMN1="WRITINGCLIMATE1" RELEVANCE1="SELECTIVE1">
+                                <DATE VALUE="1805">1805</DATE>
+                                <CHRONPROSE>
+                                    <BIRTHPOSITION>
+                                        <NAME STANDARD="Seacole, Mary">MS</NAME> was born Mary Grant, in
+                                        <PLACE>
+                                            <SETTLEMENT>Kingston</SETTLEMENT>,
+                                            <GEOG>Jamaica</GEOG>
+                                        </PLACE>, one of two children.</BIRTHPOSITION>
+                                </CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Freyer 246" DBREF="7465">246</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                        </DIV2>
+                    </BIRTH>
+                </DIV1>
+                <DIV1>
+                    <CULTURALFORMATION>
+                        <RACEANDETHNICITY>
+                            <DIV2>
+                                <SHORTPROSE>
+                                    <P>
+                                        <NAME STANDARD="Seacole, Mary">MS</NAME> was a free-born
+                                        <NATIONALHERITAGE CURRENTALTERNATIVETERM="Jamaican" SELF-DEFINED="SELFYES">Jamaican</NATIONALHERITAGE>
+                                        <RACECOLOUR SELF-DEFINED="SELFYES">Creole</RACECOLOUR>, in the mixed-race sense of the term.
+                                        <SCHOLARNOTE>
+                                            <P>
+                                                <SOCALLED>Creole</SOCALLED> originally meant a person born in a colony of parents from elsewhere, whether white or black. This and its secondary meanings were usually inflected by racial prejudice.</P>
+                                        </SCHOLARNOTE> She herself seems to have thoroughly absorbed the mid-Victorian notion of race as instilling predictable characteristics and behaviours, invoking it in the opening pages of her only publication to apply to the natives of Scotland, Jamaica, and Greece, although her narrative in many ways undermines the apparent fixity of racial categories. She emphasizes at the outset of her story her
+                                        <QUOTE DIRECT="Y">good
+                                            <RACECOLOUR FOREBEAR="FATHER" SELF-DEFINED="SELFYES">Scotch</RACECOLOUR> blood</QUOTE> and that her father was of
+                                        <QUOTE DIRECT="Y">an old
+                                            <NATIONALHERITAGE SELF-DEFINED="SELFYES">Scotch</NATIONALHERITAGE> family,</QUOTE>
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Seacole B [1]" DBREF="7542">B [1]</BIBCIT>
+                                        </BIBCITS> perhaps to establish unequivocally her
+                                        <RACECOLOUR FOREBEAR="FATHER" SELF-DEFINED="SELFNO">white</RACECOLOUR> ancestry, but does so in the context of declaring herself a Creole. She invokes without endorsing it the
+                                        <QUOTE DIRECT="Y">
+                                            <SOCALLED>lazy Creole</SOCALLED>
+                                        </QUOTE> stereotype, noting that others have attributed to her Scotch blood (in good white Western fashion) her unceasing desire
+                                        <QUOTE DIRECT="Y">to be up and doing.</QUOTE>
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Seacole 2" DBREF="7542">2</BIBCIT>
+                                        </BIBCITS>
+                                        <NAME STANDARD="Seacole, Mary">MS</NAME> implicitly distinguishes herself from her
+                                        <RACECOLOUR FOREBEAR="MOTHER" SELF-DEFINED="SELFNO">black</RACECOLOUR>
+                                        <ETHNICITY SELF-DEFINED="SELFYES" FOREBEAR="MOTHER">Creole</ETHNICITY> mother by representing herself, often in the words of others, as
+                                        <QUOTE DIRECT="Y">
+                                            <RACECOLOUR>yellow</RACECOLOUR>
+                                        </QUOTE>.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Seacole 34" DBREF="7542">34</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </RACEANDETHNICITY>
+                    </CULTURALFORMATION>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Family</HEADING>
+                    <FAMILY>
+                        <MEMBER RELATION="MOTHER">
+                            <DIV2>
+                                <SHORTPROSE>
+                                    <P>
+                                        <NAME STANDARD="Seacole, Mary">MS</NAME>'s mother was a free black
+                                        <JOB FAMILYBUSINESS="FAMILYBUSINESSYES" REG="doctor">
+                                            <SOCALLED>doctress</SOCALLED>,</JOB> or traditional healer, and
+                                        <JOB>boarding-house keeper</JOB> in Kingston.
+                                        <NAME STANDARD="Seacole, Mary">MS</NAME> credits her with having passed on a talent for herbal medicines.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Andrews xxvii" DBREF="107858">xxviii</BIBCIT>
+                                        </BIBCITS>
+                                        <NAME STANDARD="Seacole, Mary">MS</NAME> took over the boarding-house after her mother's death.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="FC" DBREF="107913" />
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                        <MEMBER RELATION="FATHER">
+                            <DIV2>
+                                <SHORTPROSE>
+                                    <P>
+                                        <NAME STANDARD="Seacole, Mary">MS</NAME>'s father was a Scottish
+                                        <JOB>army officer</JOB> stationed in Kingston, Jamaica.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Andrews xxvii" DBREF="107858">xxvii</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                        <MEMBER RELATION="BROTHER">
+                            <DIV2>
+                                <SHORTPROSE>
+                                    <P>She had a brother named Edward, who became a
+                                        <JOB>hotelier</JOB> and
+                                        <JOB>storekeeper</JOB> in Panama.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Uglow 490" DBREF="108642">490</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                    </FAMILY>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Early Life and Travels</HEADING>
+                    <EDUCATION>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>Raised in the household of an old lady
+                                    <QUOTE DIRECT="Y">patroness</QUOTE> alongside the old lady's grandchildren,
+                                    <NAME STANDARD="Seacole, Mary">MS</NAME> gained from frequent contact with her mother
+                                    <QUOTE DIRECT="Y">a yearning for
+                                        <SUBJECT REG="medicine">medical</SUBJECT> knowledge and practice which has never deserted me.</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Andrews xxviii" DBREF="107858">xxviii</BIBCIT>
+                                    </BIBCITS> She trained herself first upon her doll, then animals, and finally herself.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Seacole 2-3" DBREF="7542">2-3</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </EDUCATION>
+                </DIV1>
+                <DIV1>
+                    <OCCUPATION>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>By the age of twelve,
+                                    <NAME STANDARD="Seacole, Mary">MS</NAME> was her mother's
+                                    <SIGNIFICANTACTIVITY>assistant in medical care</SIGNIFICANTACTIVITY> of officers and their wives who were stationed near Kingston.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Seacole 2" DBREF="7542">2</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <LOCATION RELATIONTO="LIVED">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>As a young woman,
+                                    <NAME STANDARD="Seacole, Mary">MS</NAME>—who describes herself as indulging
+                                    <QUOTE DIRECT="Y">a longing to travel which will never leave me while I have health and vigour</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Seacole 4" DBREF="7542">4</BIBCIT>
+                                    </BIBCITS>—accompanied some relatives to England, where she experienced racism firsthand from streetboys in
+                                    <PLACE>
+                                        <SETTLEMENT>London</SETTLEMENT>
+                                        <REGION REG="Middlesex" />
+                                        <GEOG REG="England" />
+                                    </PLACE>. She lived there for a year, then returned after stocking up on Jamaican delicacies to sell, stayed again in England for a further two years, and was nearly shipwrecked on her return home. She also travelled to
+                                    <PLACE>
+                                        <REGION>New Providence</REGION> in the
+                                        <GEOG REG="Bahamas">Bahamas</GEOG>
+                                    </PLACE>, and to
+                                    <PLACE>
+                                        <GEOG>Haiti</GEOG>
+                                    </PLACE> and
+                                    <PLACE>
+                                        <GEOG>Cuba</GEOG>
+                                    </PLACE>, often
+                                    <QUOTE DIRECT="Y">with a view to gain.</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Seacole 4-5" DBREF="7542">4-5</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <HEADING>
+                        <QUOTE DIRECT="Y">An Unprotected Female</QUOTE>
+                    </HEADING>
+                    <FAMILY>
+                        <MEMBER RELATION="HUSBAND">
+                            <MARRIAGE>
+                                <DIV2>
+                                    <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB" CHRONCOLUMN1="WRITINGCLIMATE1" RELEVANCE1="COMPREHENSIVE1">
+                                        <DATE VALUE="1836">1836</DATE>
+                                        <CHRONPROSE>
+                                            <NAME STANDARD="Seacole, Mary">Mary Grant</NAME> married
+                                            <NAME STANDARD="Seacole, Edwin Horatio">Edwin Horatio Seacole</NAME> (a godson of
+                                            <NAME STANDARD="Nelson, Horatio">Lord Nelson</NAME>), who died in 1844.</CHRONPROSE>
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Uglow 490" DBREF="108642">490</BIBCIT>
+                                            <BIBCIT PLACEHOLDER="Anionwu" DBREF="67625" />
+                                        </BIBCITS>
+                                    </CHRONSTRUCT>
+                                </DIV2>
+                            </MARRIAGE>
+                        </MEMBER>
+                    </FAMILY>
+                </DIV1>
+                <DIV1>
+                    <POLITICS>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>The full emancipation of the slaves in Jamaica finally took place in 1838, during the years of
+                                    <NAME STANDARD="Seacole, Mary">MS</NAME>'s marriage. Though she and all those close to her were free already, this event must have made a practical difference in her life, and sharpened her perceptions of living in a racially stratified society.</P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </POLITICS>
+                </DIV1>
+                <DIV1>
+                    <FAMILY>
+                        <MEMBER RELATION="MOTHER">
+                            <DIV2>
+                                <SHORTPROSE>
+                                    <P>Her mother died not long after her husband.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Seacole 6" DBREF="7542">6</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                    </FAMILY>
+                </DIV1>
+                <DIV1>
+                    <OCCUPATION>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>
+                                    <NAME STANDARD="Seacole, Mary">MS</NAME> worked at her mother's
+                                    <JOB FAMILYBUSINESS="FAMILYBUSINESSYES" REG="boarding-house keeper">boarding-house</JOB>. With her husband she
+                                    <JOB REG="store-owner">ran a store</JOB> at
+                                    <PLACE>
+                                        <SETTLEMENT>Black River</SETTLEMENT>
+                                        <GEOG>Jamaica</GEOG>
+                                    </PLACE>,
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Seacole 5" DBREF="7542">5</BIBCIT>
+                                    </BIBCITS> and after her mother's death she owned and managed a
+                                    <JOB FAMILYBUSINESS="FAMILYBUSINESSYES" REG="hotel manager">hotel</JOB>, which she then rebuilt
+                                    <QUOTE DIRECT="Y">after the great fire of
+                                        <DATE VALUE="1843">1843</DATE>.</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Seacole 7" DBREF="7542" QTDIN="QTDINYES">7</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <LOCATION RELATIONTO="MOVED">
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB" CHRONCOLUMN1="WRITINGCLIMATE1" RELEVANCE1="COMPREHENSIVE1">
+                                <DATE VALUE="1850" CERTAINTY="C">Around 1850</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Seacole, Mary">MS</NAME> left Jamaica for a gold-prospecting town on the
+                                    <PLACE>
+                                        <REGION>Isthmus of Panama</REGION>, in the country then called
+                                        <GEOG CURRENT="Panama" REG="Panama">New Granada</GEOG>
+                                    </PLACE> (the present-day Panama). She went there to visit her brother, who was not strong and needed care.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Seacole 9" DBREF="7542">9</BIBCIT>
+                                    <BIBCIT PLACEHOLDER="Anionwu" DBREF="67625" />
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>Her narrative describes the brutal conditions of travel and residence on the isthmus, which was frequented by travellers going to and from the California gold rush.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Seacole 9" DBREF="7542">9</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <OCCUPATION>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>In
+                                    <PLACE>
+                                        <GEOG>Panama</GEOG>
+                                    </PLACE>, since her brother was a shopkeeper, she proceeded to
+                                    <JOB REG="shopkeeper">set up her own establishment</JOB>, having brought plentiful goods with her.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Seacole 9, passim" DBREF="7542">9, passim</BIBCIT>
+                                    </BIBCITS> She also began her field training as
+                                    <JOB REG="nursing">nurse</JOB> and
+                                    <JOB REG="doctor">
+                                        <SOCALLED>doctress</SOCALLED>
+                                    </JOB> during a cholera epidemic. An American doctor left the town, overwhelmed by its needs, and Seacole was left to care single-handedly for the sick. Three years later, back in Jamaica, she nursed the sick at her boarding-house during a yellow-fever epidemic, and was offered the job of
+                                    <JOB REG="nursing supervisor">supervising nursing services</JOB> at
+                                    <PLACE>
+                                        <PLACENAME REG="Uppark">Up-Park Military Camp</PLACENAME> near
+                                        <SETTLEMENT>Kingston</SETTLEMENT>
+                                        <GEOG REG="Jamaica" />
+                                    </PLACE>, the British military headquarters on the island.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Seacole 8-9" DBREF="7542">8-9</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="Uglow 490" DBREF="108642">490</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="Anionwu" DBREF="67625" />
+                                    </BIBCITS>
+                                    <SCHOLARNOTE>
+                                        <P>The English
+                                            <PLACE>
+                                                <PLACENAME>Uppark</PLACENAME> is a historic house in
+                                                <REGION REG="Sussex">West Sussex</REGION>.
+                                                <GEOG REG="England" />
+                                            </PLACE>.</P>
+                                    </SCHOLARNOTE>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <INTIMATERELATIONSHIPS>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>
+                                    <NAME STANDARD="Seacole, Mary">MS</NAME> stressed that she was self-supporting and independent by choice:
+                                    <QUOTE DIRECT="Y">it was from confidence in my own powers, and not at all from necessity, that I remained an unprotected female . . . . [o]ne of the hardest struggles of my life in Kingston was to resist the pressing candidates for the late Mr. Seacole's shoes.</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Seacole 8" DBREF="7542" QTDIN="QTDINYES">8</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </INTIMATERELATIONSHIPS>
+                </DIV1>
+                <DIV1>
+                    <LOCATION RELATIONTO="MOVED">
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="IMG" CHRONCOLUMN1="WRITINGCLIMATE1" RELEVANCE1="COMPREHENSIVE1">
+                                <DATE VALUE="1853">1853</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Seacole, Mary">MS</NAME> returned to
+                                    <PLACE>
+                                        <GEOG>Jamaica</GEOG>
+                                    </PLACE> after her several years in
+                                    <PLACE>
+                                        <GEOG>Panama</GEOG>
+                                    </PLACE>. She stayed there for some months before heading for
+                                    <PLACE>
+                                        <GEOG>England</GEOG>
+                                    </PLACE> with a brief stop in Panama to wrap up her affairs there.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Seacole 59, 63" DBREF="7542">59, 63</BIBCIT>
+                                    </BIBCITS>
+                                </CHRONPROSE>
+                            </CHRONSTRUCT>
+                        </DIV2>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <HEADING>The Crimea and England</HEADING>
+                    <LOCATION RELATIONTO="MOVED">
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="DECADE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB" CHRONCOLUMN1="WRITINGCLIMATE1" RELEVANCE1="DECADE1">
+                                <DATE VALUE="1854-10">October 1854</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Seacole, Mary">MS</NAME> landed in
+                                    <PLACE>
+                                        <SETTLEMENT>London</SETTLEMENT>
+                                        <REGION REG="Middlesex" />
+                                        <GEOG REG="England" />
+                                    </PLACE> after her voyage from the
+                                    <PLACE>
+                                        <AREA>Caribbean</AREA>
+                                    </PLACE>, to pursue her goal of volunteering as a nurse in the Crimean War effort.</CHRONPROSE>
+                                <KEYWORDCLASS>Crimean War</KEYWORDCLASS>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Seacole 74-6" DBREF="7542">74-6</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>Her
+                                    <TITLE TITLETYPE="MONOGRAPHIC" REG="Wonderful Adventures of Mrs. Seacole in Many Lands">Wonderful Adventures</TITLE> attributes to pure racism the failure to take up her offer. She attempted unsuccessfully to meet with the Secretary-at-War, then with someone from the office of the Quartermaster General, then the Medical Department. She applied to a Mrs H. who was going to take a complement of nurses to the front, and was also rejected by someone associated with
+                                    <NAME STANDARD="Nightingale, Florence">Florence Nightingale</NAME>. She therefore resolved to open a hotel in Crimea independently (having already nursed at a boarding house), and sent advance notice of her plan to the troops at
+                                    <PLACE>
+                                        <SETTLEMENT REG="Sevastopol">Sebastopol</SETTLEMENT>
+                                        <REGION REG="Crimea" />
+                                        <GEOG REG="Ukraine" />
+                                    </PLACE>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Seacole 78-9" DBREF="7542">78-9</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </LOCATION>
+                    <LOCATION RELATIONTO="MOVED">
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="DECADE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB" CHRONCOLUMN1="WRITINGCLIMATE1" RELEVANCE1="DECADE1">
+                                <DATE VALUE="1855">1855</DATE>
+                                <CHRONPROSE>
+                                    <SOCALLED>Doctress</SOCALLED>
+                                    <NAME STANDARD="Seacole, Mary">MS</NAME> arrived at
+                                    <PLACE>
+                                        <SETTLEMENT CURRENT="Balaklava" REG="Balaclava">Balaklava</SETTLEMENT> in the
+                                        <REGION>Crimea</REGION>
+                                        <GEOG REG="Ukraine" />
+                                    </PLACE>
+                                    <PLACE>
+                                        <GEOG CURRENT="Russian Federation" REG="Russia" />
+                                    </PLACE>, with the intention of nursing soldiers in the war.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Midgley 259" DBREF="7605">259</BIBCIT>
+                                </BIBCITS>
+                                <KEYWORDCLASS>Crimean War</KEYWORDCLASS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>En route, she stopped at
+                                    <NAME STANDARD="Nightingale, Florence">Florence Nightingale</NAME>'s hospital at
+                                    <PLACE>
+                                        <SETTLEMENT>Scutari</SETTLEMENT>
+                                        <GEOG REG="Turkey" />
+                                    </PLACE>; her offer of assistance was declined, and she was put up for the night in the room of a washerwoman.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Seacole 90-1" DBREF="7542">90-1</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <VIOLENCE>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="DECADE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="IMG" CHRONCOLUMN1="WRITINGCLIMATE1" RELEVANCE1="DECADE1">
+                                <DATERANGE FROM="1855" TO="1856-04" EXACT="FROM">1855-56</DATERANGE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Seacole, Mary">MS</NAME> worked on the battlefields of
+                                    <PLACE>
+                                        <REGION>Crimea</REGION>
+                                        <GEOG REG="Ukraine" />
+                                    </PLACE>
+                                    <PLACE>
+                                        <GEOG CURRENT="Russian Federation" REG="Russia" />
+                                    </PLACE>, at times under fire, unlike other nurses who usually worked in hospitals some distance from the field.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Seacole 154" DBREF="7542">154</BIBCIT>
+                                    <BIBCIT PLACEHOLDER="Midgley 259" DBREF="7605">259</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                        </DIV2>
+                    </VIOLENCE>
+                </DIV1>
+                <DIV1>
+                    <OCCUPATION>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>As she was in the area unofficially, she did not have to work within the formal medical structure of the British Army, which would have required her to style herself a
+                                    <JOB REG="nursing">nurse</JOB>. To support herself, she
+                                    <JOB REG="hotelier">built the British Hotel</JOB> at
+                                    <PLACE>
+                                        <PLACENAME>Spring Hill</PLACENAME>,
+                                        <SETTLEMENT CURRENT="Balaklava" REG="Balaclava">Balaklava</SETTLEMENT>
+                                        <REGION REG="Crimea" />
+                                        <GEOG REG="Ukraine" />
+                                    </PLACE>
+                                    <PLACE>
+                                        <GEOG CURRENT="Russian Federation" REG="Russia" />
+                                    </PLACE>, where she worked, as well as in the field, to
+                                    <JOB REG="provisioner">provide medical and other services for troops</JOB>. The Hotel provided a
+                                    <JOB REG="storekeeper">store</JOB>, a dispensary and sick bay, and a transport service. At a canteen for enlisted men and a mess hall for officers, she endeavoured to provide
+                                    <QUOTE DIRECT="Y">a taste of home.</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Seacole 140, 96" DBREF="7542">140, 96</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="Midgley 259" DBREF="7605">259</BIBCIT>
+                                    </BIBCITS> She charged officers for the services she rendered, even on the battlefield, but cared for enlisted men gratis.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Seacole 125" DBREF="7542">125</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="Uglow 490" DBREF="108642">490</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                            <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB" CHRONCOLUMN1="WRITINGCLIMATE1" CHRONCOLUMN2="SOCIALCLIMATE2" RELEVANCE1="COMPREHENSIVE1" RELEVANCE2="DECADE2">
+                                <DATE VALUE="1855-09-14">14 September 1855</DATE>
+                                <CHRONPROSE>Crimean war correspondent
+                                    <NAME STANDARD="Russell, Sir William Howard">W. H. Russell</NAME> praised
+                                    <NAME STANDARD="Seacole, Mary">MS</NAME> in a dispatch as a
+                                    <QUOTE DIRECT="Y">kind and successful
+                                        <JOB>physician</JOB>.</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Fryer 250" DBREF="7465" QTDIN="QTDINYES">250</BIBCIT>
+                                    </BIBCITS>
+                                </CHRONPROSE>
+                            </CHRONSTRUCT>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <LOCATION RELATIONTO="TRAVELLED">
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="IMG" CHRONCOLUMN1="WRITINGCLIMATE1" RELEVANCE1="COMPREHENSIVE1">
+                                <DATE VALUE="1856-04" CERTAINTY="AFTER">After April 1856</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Seacole, Mary">MS</NAME> moved to
+                                    <PLACE>
+                                        <SETTLEMENT>London</SETTLEMENT>
+                                        <REGION REG="Middlesex" />
+                                        <GEOG REG="England" />, to
+                                        <ADDRESS>
+                                            <ADDRLINE>14 Soho Square</ADDRLINE>
+                                        </ADDRESS>
+                                        <SETTLEMENT CURRENT="London" REG="Soho" />
+                                    </PLACE>, after the Crimean War ended. In her last years she lived both there and in
+                                    <PLACE>
+                                        <GEOG>Jamaica</GEOG>
+                                    </PLACE>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Andrews xxxii" DBREF="107858">xxxii</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="Uglow 490" DBREF="108642">490</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="Anionwu" DBREF="67625" />
+                                    </BIBCITS>
+                                </CHRONPROSE>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>She notes without providing details that she detoured to see some other places on her journey back to England. Another of her London addresses was
+                                    <PLACE>
+                                        <ADDRESS>
+                                            <ADDRLINE>147 George Street, W1</ADDRLINE>
+                                        </ADDRESS>
+                                        <SETTLEMENT REG="London" />
+                                        <REGION REG="Middlesex" />
+                                        <GEOG REG="England" />
+                                    </PLACE>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Seacole 197" DBREF="7542">197</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="Anionwu" DBREF="67625" />
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Bankruptcy and Recovery</HEADING>
+                    <WEALTH>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="IMG" CHRONCOLUMN1="WRITINGCLIMATE1" RELEVANCE1="COMPREHENSIVE1">
+                                <DATE VALUE="1856-11">November 1856</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Seacole, Mary">MS</NAME>, back in
+                                    <PLACE>
+                                        <SETTLEMENT>London</SETTLEMENT>
+                                        <REGION REG="Middlesex" />
+                                        <GEOG REG="England" />
+                                    </PLACE> from the Crimean war, was declared bankrupt by a court. Her plight attracted several letters of support addressed to the editor of
+                                    <TITLE TITLETYPE="JOURNAL" REG="Times">The Times</TITLE>.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Anionwu" DBREF="67625" />
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB" CHRONCOLUMN1="WRITINGCLIMATE1" RELEVANCE1="COMPREHENSIVE1">
+                                <DATE VALUE="1857-07-27">28 July 1857</DATE>
+                                <CHRONPROSE>After
+                                    <NAME STANDARD="Seacole, Mary">MS</NAME> had been discharged from her bankruptcy and had scored a success as an author, a Grand Military Festival was held to raise funds for her.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Seacole 195-6" DBREF="7542">195-6</BIBCIT>
+                                    <BIBCIT PLACEHOLDER="FC" DBREF="107913" />
+                                    <BIBCIT PLACEHOLDER="Fryer 553n23" DBREF="7465">553n23</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>When Balaclava was evacuated, she had been unable to sell her provisions at anything near what they had originally cost. In England, she attempted unsuccessfully with her business partner to set up a store at the military centre of
+                                    <PLACE>
+                                        <SETTLEMENT>Aldershot</SETTLEMENT> in
+                                        <REGION REG="Hampshire">Hampshire</REGION>
+                                        <GEOG REG="England" />
+                                    </PLACE>. The four-day musical benefit held for her at the
+                                    <PLACE>
+                                        <PLACENAME>Royal Surrey Gardens</PLACENAME> in
+                                        <SETTLEMENT REG="Kennington">Kennington</SETTLEMENT>
+                                        <REGION REG="Surrey" />
+                                        <GEOG REG="England" />
+                                    </PLACE> involved nearly 1,000 performers but netted her only ¥228.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Fryer 250-2" DBREF="7465">250-2</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="Uglow 490" DBREF="108642">490</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </WEALTH>
+                </DIV1>
+                <DIV1>
+                    <POLITICS>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>
+                                    <NAME STANDARD="Seacole, Mary">MS</NAME>'s work in the Crimea was driven by a passionate concern for the plight of the ordinary soldier. One memoir by a lieutenant describes her as
+                                    <QUOTE DIRECT="Y">beloved by the rank and file of the whole army.</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Fryer 249" DBREF="7465" QTDIN="QTDINYES">249</BIBCIT>
+                                    </BIBCITS> From the time that she settled in England after the Crimean war,
+                                    <NAME STANDARD="Seacole, Mary">MS</NAME>
+                                    <QUOTE DIRECT="Y">involved herself in the cause of war widows and orphans.</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Andrews xxxiii" DBREF="107858" QTDIN="QTDINYES">xxxiii</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </POLITICS>
+                </DIV1>
+                <DIV1>
+                    <LEISUREANDSOCIETY>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>A bust of
+                                    <NAME STANDARD="Seacole, Mary">MS</NAME> was sculpted by
+                                    <NAME STANDARD="Weekes, Henry">Henry Weekes</NAME> in 1859. She had already been sketched, while in Crimea, by the war artist
+                                    <NAME STANDARD="Simpson, William,, 1823 - 1899">William Simpson</NAME>. She was later the subject of another sculpture (by
+                                    <NAME STANDARD="Hohenlohe-Langenburg, Prince Victor of">Count Gleichen</NAME>). A remarkable photograph of her from a Crimean album is held by
+                                    <ORGNAME STANDARD="Winchester College">Winchester College</ORGNAME>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Anionwu" DBREF="67625" />
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </LEISUREANDSOCIETY>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Later Life</HEADING>
+                    <OCCUPATION>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>In the
+                                    <DATERANGE FROM="1870" TO="1879" EXACT="NEITHER">1870s</DATERANGE>
+                                    <NAME STANDARD="Seacole, Mary">MS</NAME> developed a friendship with
+                                    <NAME STANDARD="Alexandra of Denmark,, Queen of England">Alexandra</NAME> (wife of
+                                    <NAME STANDARD="Edward VII, King">Edward Prince of Wales</NAME>), to whom she acted as
+                                    <SIGNIFICANTACTIVITY>unofficial masseuse</SIGNIFICANTACTIVITY> though she was by this time in her late sixties.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Andrews xxxiii" DBREF="107858">xxxiii</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="FC" DBREF="107913" />
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <WEALTH>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>Despite such unofficial attention, however, and although she was decorated for her service by the French, Turkish, and the English governments,
+                                    <NAME STANDARD="Seacole, Mary">MS</NAME> was not granted the government pension she hints that she deserved.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Seacole 194" DBREF="7542">194</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="Andrews xxxiii" DBREF="107858">xxxiii</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="Fryer 252" DBREF="7465">252</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </WEALTH>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Illness and Death</HEADING>
+                    <DEATH>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB" CHRONCOLUMN1="WRITINGCLIMATE1" RELEVANCE1="SELECTIVE1">
+                                <DATE VALUE="1881-05-14">14 May 1881</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Seacole, Mary">MS</NAME> died
+                                    <QUOTE DIRECT="Y">in prosperous circumstances.</QUOTE> She had suffered an
+                                    <SOCALLED>
+                                        <CAUSE>apoplexy</CAUSE>
+                                    </SOCALLED> two weeks before this, and spent three days in a coma.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Andrews xxxiii" DBREF="107858">xxxiii</BIBCIT>
+                                    <BIBCIT PLACEHOLDER="Fryer 252" DBREF="7465">252</BIBCIT>
+                                    <BIBCIT PLACEHOLDER="Anionwu" DBREF="67625" />
+                                </BIBCITS>
+                                <SCHOLARNOTE>
+                                    <P>Her grave lies as she requested in the Roman Catholic section of
+                                        <PLACE>
+                                            <PLACENAME>Kensal Green Cemetery</PLACENAME> in
+                                            <SETTLEMENT>London</SETTLEMENT>
+                                            <REGION REG="Middlesex" />
+                                            <GEOG REG="England" />
+                                        </PLACE>. Her estate amounted to more than ¥2,500.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Fryer 252" DBREF="7465">252</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                </SCHOLARNOTE>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>Her grave lies as she requested in the Roman Catholic section of
+                                    <PLACE>
+                                        <PLACENAME>Kensal Green Cemetery</PLACENAME> in
+                                        <SETTLEMENT>London</SETTLEMENT>
+                                        <REGION REG="Middlesex" />
+                                        <GEOG REG="England" />
+                                    </PLACE>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Fryer 252" DBREF="7465">252</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </DEATH>
+                </DIV1>
+                <DIV1>
+                    <WEALTH>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P> Her estate amounted to more than ¥2,500.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Fryer 252" DBREF="7465">252</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </WEALTH>
+                </DIV1>
+                <WORKSCITED>
+                    <SOURCE>Andrews, William L. Introduction. Wonderful Adventures of Mrs. Seacole in Many Lands. Mary Seacole. Oxford: OUP, 1988.</SOURCE>
+                    <SOURCE>Uglow, Jennifer S. Continuum Dictionary of Women's Biography. NY: Continuum, 1989.</SOURCE>
+                </WORKSCITED>
+            </DIV0>
+        </BIOGRAPHY>

@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://cwrc.ca/schemas/orlando_biography.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+    <?xml-stylesheet type="text/css" href="http://cwrc.ca/templates/css/orlando.css"?>
+        <BIOGRAPHY SEX="FEMALE" PERSON="BRWWRITER">
+            <ORLANDOHEADER TYPE="text">
+                <FILEDESC>
+                    <TITLESTMT>
+                        <DOCTITLE>Emily Brontë: biography</DOCTITLE>
+                    </TITLESTMT>
+                    <PUBLICATIONSTMT>
+                        <AUTHORITY>Orlando Project</AUTHORITY>
+                    </PUBLICATIONSTMT>
+                    <SOURCEDESC>Created from original research by members of the Orlando Project</SOURCEDESC>
+                </FILEDESC>
+                <REVISIONDESC>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="RWT" WORKVALUE="I">
+                        <DATE VALUE="1997-12-09">9 December 1997</DATE>
+                        <ITEM>Initial document given to tagger.</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="RWT" WORKVALUE="I">
+                        <DATE VALUE="1998-02-26">26 February 1998</DATE>
+                        <ITEM>in progress</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="RWT" WORKVALUE="C">
+                        <DATE VALUE="1998-03-22">22 March 1998</DATE>
+                        <ITEM>done for MTR</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="RWT" WORKVALUE="C">
+                        <DATE VALUE="1998-04-03">3 April 1998</DATE>
+                        <ITEM>done for MTR</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="HJM" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="1998-05-24">24 May 1998</DATE>
+                        <ITEM>hjm: mtr rev</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="RWT" WORKVALUE="I">
+                        <DATE VALUE="1998-10-06">6 October 1998</DATE>
+                        <ITEM>Updated for Sept 1998 Audit</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="1999-12-21">21 December 1999</DATE>
+                        <ITEM>BATCH CHANGE: primarily orgName and bibCit cleanup</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="DRG" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2001-02-01">1 February 2001</DATE>
+                        <ITEM>converted textual apostrophes and quotation marks to entity references</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="RWT" WORKVALUE="I">
+                        <DATE VALUE="2001-07-26">26 July 2001</DATE>
+                        <ITEM>removed title tag(s) from workscited</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="KLH" WORKSTATUS="RWT" WORKVALUE="C">
+                        <DATE VALUE="2002-03-29">29 March 2002</DATE>
+                        <ITEM>klh: added info on Old Parsonage in Death section; added it here rather than in other Br sisters because AB isn't yet pub-c.</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2002-04-26">26 April 2002</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="RSC" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2002-06-27">27 June 2002</DATE>
+                        <ITEM>removed 1928 addition since it will come up in chronology anyway</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2003-04-14">14 April 2003</DATE>
+                        <ITEM>BATCH CHANGE: primarily PLACE cleanup</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2003-06-16">16 June 2003</DATE>
+                        <ITEM>BATCH CHANGE: primarily TGENRENAME cleanup, BIBCIT following P moved before P, BIBCITS TAG added</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2004-03-22">22 March 2004</DATE>
+                        <ITEM>changed position to birth position</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="RWT" WORKVALUE="I">
+                        <DATE VALUE="2004-05-04">4 May 2004</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="RWT" WORKVALUE="I">
+                        <DATE VALUE="2004-05-10">10 May 2004</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="RWT" WORKVALUE="I">
+                        <DATE VALUE="2004-05-17">17 May 2004</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="RWT" WORKVALUE="I">
+                        <DATE VALUE="2004-06-01">1 June 2004</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="RWT" WORKVALUE="C">
+                        <DATE VALUE="2004-06-22">22 June 2004</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2004-06-25">25 June 2004</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2004-06-28">28 June 2004</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="KGS" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2004-07-23">23 July 2004</DATE>
+                        <ITEM>kgs: cft-i complete. notified kdc.</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="DLK" WORKSTATUS="CAS" WORKVALUE="I">
+                        <DATE VALUE="2004-08-10">10 August 2004</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="DLK" WORKSTATUS="CAS" WORKVALUE="I">
+                        <DATE VALUE="2004-08-11">11 August 2004</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="DLK" WORKSTATUS="CAS" WORKVALUE="I">
+                        <DATE VALUE="2004-08-12">12 August 2004</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="KDC" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2004-08-14">14 August 2004</DATE>
+                        <ITEM>checked for tagging</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="DLK" WORKSTATUS="CAS" WORKVALUE="I">
+                        <DATE VALUE="2004-08-24">24 August 2004</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="DLK" WORKSTATUS="CAS" WORKVALUE="I">
+                        <DATE VALUE="2004-08-25">25 August 2004</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="DLK" WORKSTATUS="CAS" WORKVALUE="I">
+                        <DATE VALUE="2004-08-26">26 August 2004</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="DLK" WORKSTATUS="CAS" WORKVALUE="C">
+                        <DATE VALUE="2004-09-15">15 September 2004</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="RBV" WORKVALUE="C">
+                        <DATE VALUE="2004-09-16">16 September 2004</DATE>
+                        <ITEM>ready for pilot</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2004-10-01">1 October 2004</DATE>
+                        <ITEM>addes missing bibcits tags</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2004-10-04">4 October 2004</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2004-10-14">14 October 2004</DATE>
+                        <ITEM> fixed ORGNAME</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2004-10-15">15 October 2004</DATE>
+                        <ITEM> fixed PLACE</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2004-10-15">15 October 2004</DATE>
+                        <ITEM> fixed ORGNAME</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="PUB" WORKVALUE="I">
+                        <DATE VALUE="2004-11-22">22 November 2004</DATE>
+                        <ITEM>pub i</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JAH" WORKSTATUS="CFB" WORKVALUE="C">
+                        <DATE VALUE="2005-01-07">7 January 2005</DATE>
+                        <ITEM>cfb done</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="PUB" WORKVALUE="C">
+                        <DATE VALUE="2005-03-10">10 March 2005</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2005-04-08">08 April 2005</DATE>
+                        <ITEM>BATCH CHANGE: March 2005 Specifications. Mainly tag/attribute name changes</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2005-08-30">30 August 2005</DATE>
+                        <ITEM>job/occupation regs</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2007-01-31">31 January 2007</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2007-05-07">7 May 2007</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2008-02-12">12 February 2008</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2008-03-12">12 March 2008</DATE>
+                        <ITEM>revised l and lg as necessary</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY WORKSTATUS="REV" RESP="IMG" WORKVALUE="C">
+                        <DATE VALUE="2013-09-23">23 September 2013</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                </REVISIONDESC>
+            </ORLANDOHEADER>
+            <DIV0>
+                <HEADING>Biography</HEADING>
+                <STANDARD>Brontë, Emily</STANDARD>
+                <DIV1>
+                    <PERSONNAME>
+                        <DIV2>
+                            <DATASTRUCT>
+                                <DATAITEM>
+                                    <BIRTHNAME WROTEORPUBLISHEDAS="WROTEPUBLISHEDASYES" REG="Brontë, Emily">
+                                        <GIVEN>Emily</GIVEN>
+                                        <SURNAME>Brontë</SURNAME>
+                                    </BIRTHNAME>
+                                </DATAITEM>
+                                <DATAITEM>
+                                    <PSEUDONYM WROTEORPUBLISHEDAS="WROTEPUBLISHEDASYES" NAMESIGNIFIER="CRYPTIC" REG="Bell, Ellis">Ellis Bell</PSEUDONYM>
+                                </DATAITEM>
+                            </DATASTRUCT>
+                        </DIV2>
+                    </PERSONNAME>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Birth and Context</HEADING>
+                    <BIRTH>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1818-07-30">30 July 1818</DATE>
+                                <CHRONPROSE>
+                                    <BIRTHPOSITION>
+                                        <NAME STANDARD="Brontë, Emily">Emily Brontë</NAME>, the fourth of the Brontë daughters, was born in
+                                        <PLACE>
+                                            <SETTLEMENT>Thornton</SETTLEMENT>
+                                            <REGION REG="Yorkshire" />
+                                            <GEOG REG="England" />
+                                        </PLACE>, near
+                                        <PLACE>
+                                            <SETTLEMENT>Bradford</SETTLEMENT> in
+                                            <REGION>Yorkshire</REGION>
+                                            <GEOG REG="England" />
+                                        </PLACE>.</BIRTHPOSITION>
+                                </CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 78" DBREF="391">78</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>She was baptized three weeks later, on August 20. Her eldest sister, Maria, was only four years and three months old.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 59, 78" DBREF="391">59, 78</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </BIRTH>
+                </DIV1>
+                <DIV1>
+                    <CULTURALFORMATION>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>Of
+                                    <NATIONALHERITAGE FOREBEAR="FATHER">Irish</NATIONALHERITAGE> and
+                                    <NATIONALHERITAGE>English</NATIONALHERITAGE> descent, Emily was raised in the
+                                    <DENOMINATION>
+                                        <ORGNAME REG="Anglican Church" STANDARD="Anglican Church">Church of England</ORGNAME>
+                                    </DENOMINATION> as the
+                                    <CLASS SOCIALRANK="PROFESSIONAL">daughter of a clergyman</CLASS>. Almost nothing is known directly of her personality and opinions; one biographer characterizes her as
+                                    <QUOTE DIRECT="Y">secretive</QUOTE> and admits that
+                                    <QUOTE DIRECT="Y">we are in the realm of guesswork</QUOTE> if we try to fathom her emotional life.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Chitham, Life of EB 195, 244" DBREF="25506">195, 244</BIBCIT>
+                                    </BIBCITS> Virtually all biographical information about her is filtered through the perspectives of others, or inferred from her writings.</P>
+                                <P>
+                                    <NAME STANDARD="Brontë, Emily">EB</NAME> was influentially represented by her sister
+                                    <NAME STANDARD="Brontë, Charlotte">Charlotte</NAME>, in her biographical preface to the 1850 edition of
+                                    <TITLE TITLETYPE="MONOGRAPHIC">Wuthering Heights</TITLE>, as living apart from the world, a homebody who was
+                                    <QUOTE DIRECT="Y">not naturally gregarious</QUOTE> and
+                                    <QUOTE DIRECT="Y">had scarcely more practical knowledge of the peasantry amongst whom she lived, than a nun has of the country people who sometimes pass her convent gates.</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Charlotte Bronte, Editor's Preface 366" DBREF="26295">366</BIBCIT>
+                                    </BIBCITS>
+                                    <NAME STANDARD="Brontë, Emily">EB</NAME>'s own writing, however, suggests a more active interest in the yeoman and peasant classes than her sister would suggest. There is also evidence that she was a competent person who took on many of the practical details of the sisters' household, including managing their investments in railway stock following the death of their father and aunt.</P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </CULTURALFORMATION>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Family</HEADING>
+                    <FAMILY>
+                        <MEMBER RELATION="MOTHER">
+                            <DIV2>
+                                <HEADING>Mother</HEADING>
+                                <SHORTPROSE>
+                                    <P>
+                                        <NAME STANDARD="Brontë, Maria Branwell">Maria Branwell</NAME> was the daughter of a prosperous merchant from Penzance; her parents' deaths left her with a life annuity of ¥50. She was twenty-nine when she met Patrick Brontë, having moved to Yorkshire to assist her uncle with a boarding school at Woodhouse Grove. Little is known of her, but her surviving letters to her future husband suggest a lively, intelligent, and well-educated woman. She married him on 29 December 1812. Several years after their marriage,
+                                        <SIGNIFICANTACTIVITY REG="writer">she wrote a piece</SIGNIFICANTACTIVITY> on
+                                        <TITLE TITLETYPE="ANALYTIC">The Advantages of Poverty, in Religious Concerns</TITLE>, which she hoped to publish.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Barker 48-9, 51, 52-6, 57, 69" DBREF="391">48-9, 51, 52-6, 57, 69</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                        <MEMBER RELATION="FATHER">
+                            <DIV2>
+                                <HEADING>Father</HEADING>
+                                <SHORTPROSE>
+                                    <P>
+                                        <NAME STANDARD="Brontë, Patrick">Patrick Brontë</NAME> was an Irish protestant from a large respectable farming family of limited means. He took to books from an early age, opened a school in his teens, became a gentleman's
+                                        <JOB>tutor</JOB>, and finally accumulated enough to attend
+                                        <ORGNAME REG="Cambridge University" STANDARD="Cambridge University">Cambridge</ORGNAME> at the age of twenty-five. At Cambridge he adopted the family name of
+                                        <QUOTE DIRECT="Y">Bronte</QUOTE> (still without the umlaut) as a regularization of various spellings which had been employed in Ireland.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Barker 2-3" DBREF="391">2-3</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                    <P>His eventual position as a
+                                        <JOB>clergyman</JOB> and published
+                                        <JOB>author</JOB> in early nineteenth-century England was, given his background, a considerable accomplishment. Notwithstanding
+                                        <NAME STANDARD="Gaskell, Elizabeth">Elizabeth Gaskell</NAME>'s portrait of him in her biography of his daughter as an eccentric, hot-tempered, and difficult recluse, his associates considered him kind and genial.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Barker 2-3, 107-8" DBREF="391">2-3, 107-8</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                    <P>Patrick Brontë was ordained late in 1807 and held several curacies, mostly in Yorkshire, where he worked with evangelical fervour to serve far-flung communities.
+                                        <SCHOLARNOTE>
+                                            <P>He
+                                                <SIGNIFICANTACTIVITY PHILANTHROPYVOLUNTEER="PHILANTHROPYVOLUNTEERYES" REG="fundraiser">raised money to distribute Bibles to the poor</SIGNIFICANTACTIVITY>, and helped in 1813 to found a
+                                                <ORGNAME STANDARD="Church Missionary Association">Church Missionary Association</ORGNAME> at Bradford, for work in Africa and the East.
+                                                <BIBCITS>
+                                                    <BIBCIT PLACEHOLDER="Barker 60-1" DBREF="391">60-1</BIBCIT>
+                                                </BIBCITS>
+                                            </P>
+                                        </SCHOLARNOTE> He also preached strongly against the Luddite activity then taking place in the area. In
+                                        <DATE VALUE="1820-02">February 1820</DATE> he took up the perpetual curacy of Haworth, which gave him a modest income of ¥170 per year.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Barker 15, 29, 34, 37, 57, 45-7, 80-8" DBREF="391">15, 29, 34, 37, 57, 45-7, 80-8</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                    <P>Patrick Brontë had
+                                        <JOB REG="author">literary aspirations</JOB> and published several books.
+                                        <SCHOLARNOTE>
+                                            <P>As early as 1810, he had
+                                                <SIGNIFICANTACTIVITY REG="poet">published a poem</SIGNIFICANTACTIVITY> on didactic subjects, and by 1813 had published two books of similar pieces,
+                                                <TITLE TITLETYPE="MONOGRAPHIC">Cottage Poems</TITLE> and
+                                                <TITLE TITLETYPE="MONOGRAPHIC">The Rural Minstrel</TITLE>. In 1815 another collection,
+                                                <TITLE TITLETYPE="MONOGRAPHIC">The Cottage in the Wood</TITLE>, inaugurated the spelling
+                                                <QUOTE DIRECT="Y">Brontë</QUOTE>
+                                                <BIBCITS>
+                                                    <BIBCIT PLACEHOLDER="Barker 69" DBREF="391">69</BIBCIT>
+                                                </BIBCITS> for the author's name. In
+                                                <TITLE TITLETYPE="MONOGRAPHIC" REG="The Maid of Killarney">The Maid of Killarney; or, Albion and Flora, A Modern Tale . . . </TITLE>, he describes Ireland through the eyes of an English hero. This book details Irish poverty, disapproves of Catholic Emancipation, and supports legal reform.
+                                                <BIBCITS>
+                                                    <BIBCIT PLACEHOLDER="Barker 42, 44, 57, 69" DBREF="391">42, 44, 57, 69</BIBCIT>
+                                                </BIBCITS>
+                                            </P>
+                                        </SCHOLARNOTE> His
+                                        <TITLE TITLETYPE="MONOGRAPHIC">The Maid of Killarney</TITLE>, an anonymous novella, 1818, had a considerable influence on the writings of his children.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Barker 76-8." DBREF="391">76-8</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                        <MEMBER RELATION="SISTER">
+                            <DIV2>
+                                <HEADING>Sisters</HEADING>
+                                <SHORTPROSE>
+                                    <P>Two of
+                                        <NAME STANDARD="Brontë, Emily">EB</NAME>'s sisters,
+                                        <NAME STANDARD="Brontë, Maria,, 1814 - 1825">Maria</NAME> and
+                                        <NAME STANDARD="Brontë, Elizabeth">Elizabeth</NAME>, died before she reached the age of seven. With
+                                        <NAME STANDARD="Brontë, Charlotte">Charlotte</NAME>, her elder by two years, and
+                                        <NAME STANDARD="Brontë, Anne">Anne</NAME>, her younger by eighteen months, Emily engaged in extensive imaginative play and literary collaboration, along with their brother when he was at home.</P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                        <MEMBER RELATION="BROTHER">
+                            <DIV2>
+                                <HEADING>Brother</HEADING>
+                                <SHORTPROSE>
+                                    <P>
+                                        <NAME STANDARD="Brontë, Emily">EB</NAME> was supposed by early biographers to have been close to her brother
+                                        <NAME STANDARD="Brontë, Branwell">Branwell</NAME>, who was born on
+                                        <DATE VALUE="1817-06-26">26 June 1817</DATE>, perhaps because of their closeness in age, his wayward temperament, and a supposed similarity to the character of Heathcliff in
+                                        <TITLE TITLETYPE="MONOGRAPHIC">Wuthering Heights</TITLE>. More recent scholars do not believe the two to have been particularly intimate; indeed, Emily seems to have been quite self-contained, even with members of her family.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Barker 74" DBREF="391">74</BIBCIT>
+                                            <BIBCIT PLACEHOLDER="Chitham, Life of EB 126-7" DBREF="25506">126-7</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                        <MEMBER RELATION="AUNT">
+                            <DIV2>
+                                <HEADING>Strong Women</HEADING>
+                                <SHORTPROSE>
+                                    <P>
+                                        <NAME STANDARD="Brontë, Emily">EB</NAME>'s maternal aunt,
+                                        <NAME STANDARD="Branwell, Elizabeth">Elizabeth Branwell</NAME>, helped raise the children after the death of their mother on
+                                        <DATE VALUE="1821-09-15">15 September 1821</DATE>. She was a Cornishwoman of old-fashioned habits, from her clothing to her custom of taking snuff.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Barker 194" DBREF="391">194</BIBCIT>
+                                        </BIBCITS> Early representations of her as tyrannical and narrow-mindedly religious have been discounted.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Chitham, Life of EB 27" DBREF="25506">27</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>Another important member of the family for many years was their indoor servant, the widowed
+                                    <NAME STANDARD="Aykroyd, Tabitha">Tabitha Aykroyd</NAME>, known as
+                                    <SOCALLED>Tabby</SOCALLED>. She came to work at the parsonage in 1824, and stayed until her death in 1855 at the age of eighty-four.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 134, 770" DBREF="391">134, 770</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </FAMILY>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Childhood and Education</HEADING>
+                    <LOCATION RELATIONTO="MOVED">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>A few months after the birth of Anne, the family moved to
+                                    <PLACE>
+                                        <SETTLEMENT>Haworth</SETTLEMENT>, in the
+                                        <REGION REG="Yorkshire">West Riding of Yorkshire</REGION>
+                                        <GEOG REG="England" />
+                                    </PLACE>, where her father took up a position as perpetual curate. It was not a well-paid position for a man with a large family. However, the household had one and sometimes two indoor servants, and the children had toys, companionship in each other, and access to plenty of reading materials.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 150" DBREF="391">93, 150</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                                <P>The Brontë children spent much time playing in the garden of the parsonage, and traipsing through the miles of open moorland onto which the house backed. This wild Yorkshire landscape figures largely in
+                                    <NAME STANDARD="Brontë, Emily">EB</NAME>'s poetry and fiction. Their home life too was lively and boisterous, judging from an anecdote in which the servant Tabby fled the house and sent her nephew in because
+                                    <QUOTE DIRECT="Y">yon childer's all gooin mad, an' aw darn't stop 'ith hause ony longer wi' em.</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Chitham, Life of EB 59" DBREF="25506" QTDIN="QTDINYES">59</BIBCIT>
+                                    </BIBCITS> He arrived to find them all laughing at the joke they had played on her.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Chitham, Life of EB 59" DBREF="25506">59</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="Barker 110" DBREF="391">110</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <EDUCATION MODE="INSTITUTIONAL">
+                        <DIV2>
+                            <HEADING>
+                                <SCHOOL INSTITUTION="BOARDING" STUDENTBODY="SINGLESEX" RELIGIOUS="RELIGIOUSYES">Clergy Daughters' School</SCHOOL>
+                            </HEADING>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1824-11-25">25 November 1824</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Emily">EB</NAME>, aged six, joined her elder sisters as a pupil at the
+                                    <SCHOOL INSTITUTION="BOARDING" STUDENTBODY="SINGLESEX" RELIGIOUS="RELIGIOUSYES">Clergy Daughters' School</SCHOOL> in
+                                    <PLACE>
+                                        <PLACENAME>Cowan Bridge</PLACENAME>,
+                                        <SETTLEMENT REG="Tunstall" />
+                                        <REGION REG="Yorkshire">Yorkshire</REGION>
+                                        <GEOG REG="England" />
+                                    </PLACE>.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 134" DBREF="391">134</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>She was intended to receive the education of a governess, and the intake note recorded that she was already able to read
+                                    <QUOTE DIRECT="Y">very prettily</QUOTE>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 134" DBREF="391" QTDIN="QTDINYES">134</BIBCIT>
+                                    </BIBCITS> The superintendent,
+                                    <INSTRUCTOR>
+                                        <NAME STANDARD="Evans, Miss">Miss Evans</NAME>
+                                    </INSTRUCTOR>, recollected that as the youngest girl there she became
+                                    <QUOTE DIRECT="Y">quite the pet nursling of the school.</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Gerin 8" DBREF="3881" QTDIN="QTDINYES">8</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                                <P>Conditions at the establishment, which Charlotte fictionalized as Lowood School in
+                                    <TITLE TITLETYPE="MONOGRAPHIC">Jane Eyre</TITLE>, were deleterious to the pupils' health. Following the removal and death of their sister Maria, and the removal of Elizabeth, their father came to collect Emily and Charlotte on
+                                    <DATE VALUE="1825-06-01">1 June 1825</DATE>. Elizabeth died on
+                                    <DATE VALUE="1825-06-15">15 June</DATE>, also of consumption. The
+                                    <SCHOOL INSTITUTION="BOARDING" STUDENTBODY="SINGLESEX" RELIGIOUS="RELIGIOUSYES">Clergy Daughters' School</SCHOOL> lost more than a third of its pupils in 1825.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 122, 127, 137-8" DBREF="391">122, 127, 137-8</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </EDUCATION>
+                    <EDUCATION MODE="DOMESTIC">
+                        <DIV2>
+                            <HEADING>Back at Home</HEADING>
+                            <SHORTPROSE>
+                                <P>Thereafter,
+                                    <INSTRUCTOR>
+                                        <NAME STANDARD="Brontë, Patrick">Patrick Brontë</NAME>
+                                    </INSTRUCTOR> educated his remaining children at home, using standard educational texts including
+                                    <TEXT>
+                                        <NAME STANDARD="Salmon, Thomas">Thomas Salmon</NAME>'s
+                                        <TITLE TITLETYPE="MONOGRAPHIC">A New Geographical and Historical
+                                            <SUBJECT>Grammar</SUBJECT>
+                                        </TITLE>
+                                    </TEXT>, a condensed version of
+                                    <TEXT>
+                                        <NAME STANDARD="Goldsmith, Oliver">Oliver Goldsmith</NAME>'s
+                                        <TITLE TITLETYPE="MONOGRAPHIC" REG="Oliver Goldsmith, An History of England, 1764">
+                                            <SUBJECT>History</SUBJECT> of England</TITLE>
+                                    </TEXT>,
+                                    <TEXT>
+                                        <NAME STANDARD="Goldsmith, J.">J. Goldsmith</NAME>'s
+                                        <TITLE TITLETYPE="MONOGRAPHIC">A Grammar of General
+                                            <SUBJECT>Geography</SUBJECT>
+                                        </TITLE>
+                                    </TEXT>—which helped inspire the children's invented lands of Angria and Gondal—and
+                                    <TEXT>
+                                        <NAME STANDARD="More, Hannah">Hannah More</NAME>'s
+                                        <TITLE TITLETYPE="MONOGRAPHIC" REG="Moral Sketches of Prevailing Opinions and Manners, Foreign and Domestic">Moral Sketches</TITLE>
+                                    </TEXT>. The girls may have shared in some of Branwell's
+                                    <SUBJECT>Latin</SUBJECT> lessons, for Emily was later capable of translating Latin. They also read widely in such authors as
+                                    <NAME STANDARD="Bunyan, John">Bunyan</NAME>,
+                                    <NAME STANDARD="Milton, John">Milton</NAME>,
+                                    <NAME STANDARD="Scott, Sir Walter">Scott</NAME>,
+                                    <NAME STANDARD="Watts, Isaac">Isaac Watts</NAME>, and from borrowed copies of
+                                    <TITLE TITLETYPE="JOURNAL">Blackwood's Edinburgh Magazine</TITLE>, all of which had a shaping influence upon them.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 145-7, 149" DBREF="391">145-7, 149</BIBCIT>
+                                    </BIBCITS> They also had
+                                    <SUBJECT>art</SUBJECT> and
+                                    <SUBJECT>music</SUBJECT> lessons:
+                                    <NAME STANDARD="Brontë, Emily">EB</NAME> studied the
+                                    <SUBJECT>piano</SUBJECT>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 150, 212" DBREF="391">150, 212</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </EDUCATION>
+                </DIV1>
+                <DIV1>
+                    <LEISUREANDSOCIETY>
+                        <DIV2>
+                            <HEADING>Gondal</HEADING>
+                            <SHORTPROSE>
+                                <P>During childhood and early adulthood the Brontë siblings produced elaborate fantasy worlds, which they acted out as
+                                    <SOCALLED>plays</SOCALLED>, in part with toy figures. These worlds came to have individualized personae, geographies, and histories, which were recorded in a substantial body of juvenilia. All four children shared in Glass Town Confederation, which later developed into the world of Angria, led by
+                                    <NAME STANDARD="Brontë, Charlotte">Charlotte</NAME> and
+                                    <NAME STANDARD="Brontë, Branwell">Branwell</NAME>. Emily created the world of Gondal with
+                                    <NAME STANDARD="Brontë, Anne">Anne</NAME> (excluding Branwell) when Charlotte was away in 1831. Gondal played a large part in her everyday life, judging from a rare diary entry from 24 November 1834, when she was sixteen, in which mundane domestic details are interleaved with a developing narrative:
+                                    <QUOTE DIRECT="Y">Taby said just now come Anne pillopatate (ie pill a potato Aunt has come into the Kitchen just now and said where are your feet Anne Anne answered &lt; onthe &gt; on the floor Aunt papa opened the parlour Door and &lt; said B &gt; gave Branwell a Letter saying here Branwell read this and show it to your Aunt and Charlotte — the Gondals are &lt;disc&gt; discovering the interior of Gaaldine
+                                        <LB>
+                                            <L>Sally mosley is washing in the back Kitchin
+                                                <BIBCITS>
+                                                    <BIBCIT PLACEHOLDER="Barker 220-1" DBREF="391" QTDIN="QTDINYES">220-1</BIBCIT>
+                                                    <BIBCIT PLACEHOLDER="Bock 34-6" DBREF="25865">34-6</BIBCIT>
+                                                </BIBCITS>
+                                            </L>
+                                            <RESEARCHNOTE>sib: new line in original: using line tag to create new line</RESEARCHNOTE>
+                                        </LB>
+                                    </QUOTE>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </LEISUREANDSOCIETY>
+                </DIV1>
+                <DIV1>
+                    <HEALTH ISSUE="PHYSICAL">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>
+                                    <NAME STANDARD="Brontë, Emily">EB</NAME> apparently had a very independent character. In a famous incident related to
+                                    <NAME STANDARD="Gaskell, Elizabeth">Elizabeth Gaskell</NAME> by
+                                    <NAME STANDARD="Brontë, Charlotte">Charlotte</NAME>, Emily tried to help a possibly rabid dog, only to have it bite her. She immediately went inside to obtain a hot iron with which she cauterized the wound, telling no one of the incident until the danger of infection had passed.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 198" DBREF="391">198</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </HEALTH>
+                </DIV1>
+                <DIV1>
+                    <EDUCATION MODE="INSTITUTIONAL">
+                        <DIV2>
+                            <HEADING>Roe Head</HEADING>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1835-07-29">29 July 1835</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Emily">EB</NAME> went as a pupil to
+                                    <SCHOOL INSTITUTION="BOARDING" STUDENTBODY="SINGLESEX">Roe Head School</SCHOOL>, on the outskirts of
+                                    <PLACE>
+                                        <SETTLEMENT>Mirfield</SETTLEMENT>, near Hartshead,
+                                        <REGION>Yorkshire</REGION>
+                                        <GEOG REG="England" />
+                                    </PLACE>, but returned home three months later because of failing health.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 226, 236" DBREF="391">226, 236</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>Charlotte was there too as a teacher; Branwell had gone to London and Anne remained at home. By Charlotte's account, her sister did poorly in the new environment:
+                                    <QUOTE DIRECT="Y">Liberty was the breath of Emily's nostrils; without it, she perished. The change from her own home to a school, and from her own very noiseless, very secluded, but unrestricted and inartificial mode of life, to one of disciplined routine (though under the kindliest auspices), was what she failed in enduring. Her nature proved here too strong for her fortitude. Every morning when she woke, the vision of home and the moors rushed on her, and darkened and saddened the day that lay before her. Nobody knew what ailed her but me—I knew only too well. In this struggle her health was quickly broken: her white face, attenuated form, and failing strength threatened rapid decline. I felt in my heart she would die if she did not go home, and with this conviction obtained her recall.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Charlotte Bronte, Extract 370" DBREF="26295">370</BIBCIT>
+                                            <BIBCIT PLACEHOLDER="Barker 226" DBREF="391">226</BIBCIT>
+                                        </BIBCITS>
+                                    </QUOTE>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </EDUCATION>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Teaching</HEADING>
+                    <OCCUPATION>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="PERIOD" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1838-09">September 1838</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Emily">EB</NAME> entered six months' employment as a
+                                    <JOB REG="teacher">teacher</JOB> at
+                                    <EMPLOYER>Law Hill school</EMPLOYER> at
+                                    <PLACE>
+                                        <SETTLEMENT>Southowram</SETTLEMENT>
+                                        <REGION REG="Yorkshire" />
+                                        <GEOG REG="England" />
+                                    </PLACE> outside
+                                    <PLACE>
+                                        <SETTLEMENT>Halifax</SETTLEMENT>
+                                        <REGION REG="Yorkshire" />
+                                        <GEOG REG="England" />
+                                    </PLACE>.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 293, 306-7" DBREF="391">293, 306-7</BIBCIT>
+                                </BIBCITS>
+                                <KEYWORDCLASS>Women and Education</KEYWORDCLASS>
+                            </CHRONSTRUCT>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <HEALTH ISSUE="MENTAL">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>In a letter to
+                                    <NAME STANDARD="Nussey, Ellen">Ellen Nussey</NAME>, Charlotte described her sister's arduous duties there:
+                                    <QUOTE DIRECT="Y">Hard labour from six in the morning until near eleven at night. with only one half hour of exercise between—this is slavery
+                                        <RESEARCHNOTE>dlk: double space in original</RESEARCHNOTE> I fear she will never stand it—</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Charlotte Bronte, Letters 1: 182" DBREF="17685">1: 182</BIBCIT>
+                                    </BIBCITS>
+                                    <NAME STANDARD="Brontë, Emily">EB</NAME> nevertheless made time to write poetry, though it expressed considerable homesickness and yearning for contact with the moors. After the Christmas holidays she wrote no more, perhaps owing to worsening depression. She returned home for good in March or April after her health broke down, and took on the running of the household there.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 295, 306-7, 363" DBREF="391">295, 306-7, 363</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </HEALTH>
+                </DIV1>
+                <DIV1>
+                    <EDUCATION MODE="INSTITUTIONAL">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>A plan was formed that the sisters would open their own school to support themselves, and
+                                    <NAME STANDARD="Brontë, Charlotte">Charlotte</NAME> decided that she and Emily needed further education in order to distinguish themselves from their competitors. On
+                                    <DATE VALUE="1842-02-08">8 February 1842</DATE> the sisters left for
+                                    <PLACE>
+                                        <SETTLEMENT>Brussels</SETTLEMENT>
+                                        <GEOG REG="Belgium" />
+                                    </PLACE>, where they studied at the
+                                    <SCHOOL INSTITUTION="BOARDING" STUDENTBODY="SINGLESEX" RELIGIOUS="RELIGIOUSYES">Pensionnat Heger</SCHOOL>.
+                                    <NAME STANDARD="Brontë, Emily">EB</NAME> had much catching-up to do given her minimal background in
+                                    <SUBJECT>French</SUBJECT>, but she made rapid progress in this, as well as in
+                                    <SUBJECT>German</SUBJECT>,
+                                    <SUBJECT>drawing</SUBJECT>, and
+                                    <SUBJECT>music</SUBJECT>. Their lessons included the
+                                    <SUBJECT>analysis of French literature</SUBJECT>; a few of their essays have survived, of which one by
+                                    <NAME STANDARD="Brontë, Emily">EB</NAME> is a defence of cats by means of likening their allegedly bad qualities to human characteristics.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 361-2, 377, 382-4, 388, 393" DBREF="391">361-2, 377, 382-4, 388, 393</BIBCIT>
+                                    </BIBCITS> The sisters' teacher,
+                                    <INSTRUCTOR>
+                                        <NAME STANDARD="Heger, Constantin">M. Heger</NAME>
+                                    </INSTRUCTOR>, who sought to improve their literary style, formed a high opinion of Emily as having
+                                    <QUOTE DIRECT="Y">a head for logic, and a capability of argument, unusual in a man, and rare indeed in a woman.</QUOTE> He also noted her
+                                    <QUOTE DIRECT="Y">strong, imperious will.</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 392" DBREF="391" QTDIN="QTDINYES">392</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </EDUCATION>
+                </DIV1>
+                <DIV1>
+                    <OCCUPATION>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>In August, Charlotte and
+                                    <NAME STANDARD="Brontë, Emily">EB</NAME> were invited to stay on as
+                                    <JOB REG="teacher">teacher</JOB>s in the
+                                    <EMPLOYER>Pensionnat Heger</EMPLOYER>. They received lessons in exchange for their work. The sisters stayed on as planned, although apparently Emily was again badly missing home.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 394" DBREF="391">394</BIBCIT>
+                                    </BIBCITS> Their time was cut short, however, when the death of their
+                                    <NAME STANDARD="Branwell, Elizabeth">aunt Branwell</NAME> called them back to England, and when Charlotte decided after that to return to her position at the school, Emily remained at home. The time in Brussels seems to have made little impact upon her, although she now took to reading German novels, sometimes while kneading bread.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 404, 409, 412-13" DBREF="391">404, 409, 412-13</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <OCCUPATION>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1842-11-08">8 November 1842</DATE>
+                                <CHRONPROSE>On her return to
+                                    <PLACE>
+                                        <SETTLEMENT>Haworth</SETTLEMENT>
+                                        <REGION REG="Yorkshire" />
+                                        <GEOG REG="England" />
+                                    </PLACE> from Brussels,
+                                    <NAME STANDARD="Brontë, Emily">EB</NAME> again took up the
+                                    <SIGNIFICANTACTIVITY REG="housekeeper">management of the household</SIGNIFICANTACTIVITY>.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 406" DBREF="391">406</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <OCCUPATION>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>The school plan went as far as the printing and sending out of prospectuses in the summer of 1844, but, in the words of a diary paper
+                                    <NAME STANDARD="Brontë, Emily">EB</NAME> wrote in 1845,
+                                    <QUOTE DIRECT="Y">it was found no go—now I dont desire a school at all and none of us have any great longing for it—we have cash enough for our present wants with a prospect of
+                                        <SIC CORR="accumulation">accumolation</SIC> . . . .</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 455" DBREF="391" QTDIN="QTDINYES">455</BIBCIT>
+                                    </BIBCITS> A bequest of about ¥300 each from their aunt to her nieces had somewhat improved the family finances.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 409" DBREF="391">409</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <LOCATION RELATIONTO="TRAVELLED">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>From this time
+                                    <NAME STANDARD="Brontë, Emily">EB</NAME> stayed close to home, apart from a brief trip that she and
+                                    <NAME STANDARD="Brontë, Anne">Anne</NAME> made to
+                                    <PLACE>
+                                        <SETTLEMENT>York</SETTLEMENT>
+                                        <REGION REG="Yorkshire" />
+                                        <GEOG REG="England" />
+                                    </PLACE> in June 1845. During the journey she and Anne pretended they were Royalist prisoners fleeing from Gondal.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Chitham, Life of EB 180" DBREF="25506">180</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Thrust into Publication?</HEADING>
+                    <OCCUPATION>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>Charlotte's account of
+                                    <NAME STANDARD="Brontë, Emily">EB</NAME>'s response to her discovery of the Gondal poems, and the difficulty she had in persuading Emily to publish, suggests that Emily had no desire to become an
+                                    <SIGNIFICANTACTIVITY REG="writer">author</SIGNIFICANTACTIVITY>. Of the three sisters, she seems to have most fiercely guarded the privacy and anonymity which her pseudonym of
+                                    <SOCALLED>Ellis Bell</SOCALLED> provided. Even after the considerable success of
+                                    <TITLE TITLETYPE="MONOGRAPHIC">Wuthering Heights</TITLE>, when the
+                                    <NAME STANDARD="Newby, Thomas Cautley">publisher</NAME> used by herself and Anne then enraged Charlotte's
+                                    <ORGNAME REG="Smith,, Elder and Co." STANDARD="Smith,, Elder and Co.">Smith, Elder</ORGNAME> by passing off
+                                    <TITLE TITLETYPE="MONOGRAPHIC">The Tenant of Wildfell Hall</TITLE> as the work of
+                                    <SOCALLED>Currer Bell</SOCALLED>, she refused to have her identity made known. Charlotte and Anne journeyed to London to substantiate the claim that the Bells were multiple, but Emily was furious to learn that Charlotte's publisher was aware of the existence of more than one sister. Charlotte wrote to
+                                    <NAME STANDARD="Williams, William Smith">William Smith Williams</NAME>:
+                                    <QUOTE DIRECT="Y">Permit me to caution you not to speak of my Sister
+                                        <EMPH>s</EMPH> when you write to me—I mean do not use the word in the plural.
+                                        <SOCALLED>Ellis Bell</SOCALLED> will not endure to be alluded to under any other appellation than the
+                                        <SOCALLED>
+                                            <FOREIGN LANG="fr">nom de plume</FOREIGN>
+                                        </SOCALLED>. I committed a grand error in betraying &lt;her&gt; his identity to you and Mr Smith—it was inadvertent— . . . I regret it bitterly now, for I find it is against every feeling and intention of
+                                        <SOCALLED>Ellis Bell</SOCALLED>.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Barker 563, 478-81" DBREF="391" QTDIN="QTDINYES">563, 478-81</BIBCIT>
+                                            <BIBCIT PLACEHOLDER="Allott xix" DBREF="1041">xix</BIBCIT>
+                                        </BIBCITS>
+                                    </QUOTE> The fact that Emily kept a number of reviews of
+                                    <TITLE TITLETYPE="MONOGRAPHIC">Wuthering Heights</TITLE>, however, suggests that she was not indifferent to the reception of her work.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Allott passim" DBREF="1041">passim</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Final Illness and Death</HEADING>
+                    <FAMILY>
+                        <MEMBER RELATION="BROTHER">
+                            <DIV2>
+                                <SHORTPROSE>
+                                    <P>The death of
+                                        <NAME STANDARD="Brontë, Emily">EB</NAME>'s brother
+                                        <NAME STANDARD="Brontë, Branwell">Branwell</NAME> on
+                                        <DATE VALUE="1848-09-24">24 September 1848</DATE> of tuberculosis, hastened by depression and dissipation, was the culmination of two years of great anxiety for the Brontë family.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Barker 567" DBREF="391">567</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                    </FAMILY>
+                </DIV1>
+                <DIV1>
+                    <HEALTH ISSUE="PHYSICAL">
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1848-11-07">7 November 1848</DATE>
+                                <CHRONPROSE>In a letter to her publisher,
+                                    <NAME STANDARD="Brontë, Charlotte">Charlotte Brontë</NAME> reported with concern that her sister
+                                    <NAME STANDARD="Brontë, Emily">Emily</NAME> was too ill to write: she had a cough and fever.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Charlotte Bronte, Letters 2: 138" DBREF="17685">2: 138</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>Emily refused to answer her sister's anxious questions, consult a doctor, or take any medicine. Although her condition steadily worsened, as late as 7 December Charlotte still held out hope:
+                                    <QUOTE DIRECT="Y">I
+                                        <EMPH>must</EMPH> cling to the expectation of her recovery; I
+                                        <EMPH>cannot</EMPH> renounce it.</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Charlotte Bronte, Letters 2: 147" DBREF="17685">2: 147</BIBCIT>
+                                    </BIBCITS> Only on the day of Emily's death did she consent to see a doctor.</P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </HEALTH>
+                </DIV1>
+                <DIV1>
+                    <DEATH>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1848-12-19">19 December 1848</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Emily">EB</NAME> died of
+                                    <CAUSE REG="tuberculosis">consumption</CAUSE> at the age of thirty, at
+                                    <PLACE>
+                                        <SETTLEMENT>Haworth</SETTLEMENT> in
+                                        <REGION>Yorkshire</REGION>
+                                        <GEOG REG="England" />
+                                    </PLACE>.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 576" DBREF="391">576</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>She was buried in the vaults of the Haworth Church three days later.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 578, 656" DBREF="391">578, 656</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                                <P>The paucity of archival material has meant that her sister Charlotte's interpretation of
+                                    <NAME STANDARD="Brontë, Emily">EB</NAME>'s character and the significance of her life, as articulated in the former's posthumous editing of the poems and her
+                                    <TITLE TITLETYPE="ANALYTIC" REG="Biographical Notice of Ellis and Acton Bell">Biographical Notice</TITLE> in the 1850 edition, had an enormous impact on subsequent biographies and critical interpretations of
+                                    <NAME STANDARD="Brontë, Emily">EB</NAME>.</P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </DEATH>
+                </DIV1>
+                <WORKSCITED>
+                    <SOURCE>Unless otherwise noted, all information is from the FC</SOURCE>
+                    <SOURCE>Juiet Barker, The Brontës (New York: St. Martin's Press, 1994)</SOURCE>
+                </WORKSCITED>
+            </DIV0>
+        </BIOGRAPHY>

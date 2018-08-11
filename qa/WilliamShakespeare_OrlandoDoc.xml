@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://cwrc.ca/schemas/orlando_biography.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+    <?xml-stylesheet type="text/css" href="http://cwrc.ca/templates/css/orlando.css"?>
+        <BIOGRAPHY SEX="MALE" PERSON="WRITER">
+            <ORLANDOHEADER>
+                <FILEDESC>
+                    <TITLESTMT>
+                        <DOCTITLE>William Shakespeare: biography</DOCTITLE>
+                    </TITLESTMT>
+                    <PUBLICATIONSTMT>
+                        <AUTHORITY>Orlando Project</AUTHORITY>
+                    </PUBLICATIONSTMT>
+                    <SOURCEDESC>Created from original research by members of the Orlando Project.</SOURCEDESC>
+                </FILEDESC>
+                <REVISIONDESC>
+                    <RESPONSIBILITY RESP="CEL" WORKSTATUS="OLD" WORKVALUE="O">
+                        <DATE VALUE="1996-10-31">31 October 1996</DATE>
+                        <ITEM>OLDWORKSTATUS="tagged" OLDWORKVALUE="incomplete"</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="CEL" WORKSTATUS="RWT" WORKVALUE="I">
+                        <DATE VALUE="1997-07-27">27 July 1997</DATE>
+                        <ITEM>Automatically generated to load Workflow Management System.</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="RWT" WORKVALUE="I">
+                        <DATE VALUE="1998-10-06">6 October 1998</DATE>
+                        <ITEM>Updated for Sept 1998 Audit</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="RBV" WORKVALUE="C">
+                        <DATE VALUE="1999-11-24">24 November 1999</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="1999-12-21">21 December 1999</DATE>
+                        <ITEM>BATCH CHANGE: primarily orgName and bibCit cleanup</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="DRG" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2001-02-01">1 February 2001</DATE>
+                        <ITEM>converted textual apostrophes and quotation marks to entity references</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="RBV" WORKVALUE="C">
+                        <DATE VALUE="2002-01-30">30 January 2002</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="DBH" WORKSTATUS="CAS" WORKVALUE="C">
+                        <DATE VALUE="2002-05-09">9 May 2002</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JES" WORKSTATUS="PUB" WORKVALUE="I">
+                        <DATE VALUE="2002-07-24">24 July 2002</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2003-04-14">14 April 2003</DATE>
+                        <ITEM>BATCH CHANGE: primarily PLACE cleanup</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2003-04-30">30 April 2003</DATE>
+                        <ITEM> fixed PLACE</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2003-06-16">16 June 2003</DATE>
+                        <ITEM>BATCH CHANGE: primarily TGENRENAME cleanup, BIBCIT following P moved before P, BIBCITS TAG added</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="PUB" WORKVALUE="C">
+                        <DATE VALUE="2003-08-06">6 August 2003</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2005-04-08">08 April 2005</DATE>
+                        <ITEM>BATCH CHANGE: March 2005 Specifications. Mainly tag/attribute name changes</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2005-08-29">29 August 2005</DATE>
+                        <ITEM>job/occupation regs</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="RBV" WORKVALUE="C">
+                        <DATE VALUE="2006-01-01">1 January 2006</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2008-03-03">3 March 2008</DATE>
+                        <ITEM>fixed place</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="ENH" WORKVALUE="C">
+                        <DATE VALUE="2008-05-26">26 May 2008</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="ENH" WORKVALUE="C">
+                        <DATE VALUE="2009-04-23">23 April 2009</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                </REVISIONDESC>
+            </ORLANDOHEADER>
+            <DIV0>
+                <HEADING>Biography</HEADING>
+                <STANDARD>Shakespeare, William</STANDARD>
+                <DIV1>
+                    <HEADING>Birth and Background</HEADING>
+                    <BIRTH>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="WRITINGCLIMATE" RESP="SYS">
+                                <DATE CALENDAR="NEWSTYLE" VALUE="1564-04-23" CERTAINTY="UNKNOWN">23 April 1564</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Shakespeare, William">WS</NAME>, poet and playwright, was born in
+                                    <PLACE>
+                                        <ADDRESS>
+                                            <ADDRLINE>Henley Street</ADDRLINE>
+                                        </ADDRESS>,
+                                        <SETTLEMENT>Stratford upon Avon</SETTLEMENT>,
+                                        <REGION>Warwickshire</REGION>
+                                        <GEOG REG="England" />
+                                    </PLACE>, supposedly on this date, the feast of St George.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="DNB" DBREF="1759" />
+                                    <BIBCIT PLACEHOLDER="Concise Oxford Dic of Eng Lit 475" DBREF="10840">475</BIBCIT>
+                                </BIBCITS>
+                                <SCHOLARNOTE>
+                                    <P>The date is virtually a guess. The child was baptised on
+                                        <DATE CALENDAR="NEWSTYLE" VALUE="1564-04-26">26 April</DATE>; he eventually died on 23 April, which as the feast of St George, patron saint of England, is in this context a highly symbolic date. For all these reasons the attraction of 23 April as
+                                        <SOCALLED>Shakespeare's Birthday</SOCALLED> has proved irresistible to tradition.</P>
+                                </SCHOLARNOTE>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>The house where he was born is now a tourist site known as
+                                    <SOCALLED>Shakespeare's Birthplace</SOCALLED>.
+                                    <BIRTHPOSITION>He was the third child to be born and the first to survive in a family that in the end amounted to eight. Most of them lived to grow up, but only one survived longer than William.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="ODNB" DBREF="29268" />
+                                            <BIBCIT PLACEHOLDER="Greer 31" DBREF="48775">31</BIBCIT>
+                                        </BIBCITS>
+                                    </BIRTHPOSITION>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </BIRTH>
+                </DIV1>
+                <DIV1>
+                    <FAMILY>
+                        <MEMBER RELATION="MOTHER">
+                            <DIV2>
+                                <SHORTPROSE>
+                                    <P>His mother, born Mary Arden as the youngest child in her family, was an executor for her father and brought landed property to her considerably older husband.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="ODNB" DBREF="29268" />
+                                            <BIBCIT PLACEHOLDER="Greer 27" DBREF="48775">27</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                        <MEMBER RELATION="FATHER">
+                            <DIV2>
+                                <SHORTPROSE>
+                                    <P>William's father, John Shakespeare, was a
+                                        <JOB>glover</JOB> by trade. He made money by buying property in Stratford, and held various civic offices in the town, but while William was in his teens the family finances declined sharply.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="ODNB" DBREF="29268" />
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                    </FAMILY>
+                </DIV1>
+                <DIV1>
+                    <CULTURALFORMATION>
+                        <RELIGION>
+                            <DIV2>
+                                <SHORTPROSE>
+                                    <P>Scholarly debate continues to rage on the question of whether
+                                        <NAME STANDARD="Shakespeare, William">WS</NAME> subscribed to the
+                                        <DENOMINATION REG="Anglican">
+                                            <ORGNAME REG="Anglican Church" STANDARD="Anglican Church">Church of England</ORGNAME>
+                                        </DENOMINATION> or whether he adhered to the minority and persecuted Old Religion of
+                                        <DENOMINATION REG="Roman Catholic">
+                                            <ORGNAME REG="Roman Catholic Church" STANDARD="Roman Catholic Church">Catholicism</ORGNAME>
+                                        </DENOMINATION>. Supporters of the Catholic thesis include
+                                        <NAME STANDARD="Wood, Michael">Michael Wood</NAME> and
+                                        <NAME STANDARD="Wilson, Richard">Richard Wilson</NAME>.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Dobson 7" DBREF="38414">7</BIBCIT>
+                                        </BIBCITS>
+                                        <NAME STANDARD="Greer, Germaine">Germaine Greer</NAME> strongly disagrees with what she calls dismissively
+                                        <QUOTE DIRECT="Y">the elaborate argument that seeks to prove that Shakespeare was as Catholic as the pope.</QUOTE>
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Greer 28" DBREF="48775">28</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                                <CHRONSTRUCT RELEVANCE="DECADE" CHRONCOLUMN="SOCIALCLIMATE" RESP="IMG" CHRONCOLUMN1="WRITINGCLIMATE1" RELEVANCE1="COMPREHENSIVE1">
+                                    <DATE VALUE="1571-05-01">May Day 1571</DATE>
+                                    <CHRONPROSE>A medieval painting of the Last Judgement on the walls of the Guild Chapel at
+                                        <PLACE>
+                                            <SETTLEMENT REG="Stratford upon Avon">Stratford</SETTLEMENT>
+                                            <REGION REG="Warwickshire" />
+                                            <GEOG REG="England" />
+                                        </PLACE> was white-washed over in accordance with new
+                                        <DENOMINATION>Protestant</DENOMINATION> practice; the father of
+                                        <NAME STANDARD="Shakespeare, William">WS</NAME> was then bailiff of the town.</CHRONPROSE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Dobson 7" DBREF="38414">7</BIBCIT>
+                                    </BIBCITS>
+                                </CHRONSTRUCT>
+                                <SHORTPROSE>
+                                    <P>Scholars speculating on Shakespeare's religion have read this as a symbol either of destruction of the old, concealment of the old, compromise, or (the view of
+                                        <NAME STANDARD="Shapiro, James">James Shapiro</NAME>) the layered nature of Elizabethan belief.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Dobson 7" DBREF="38414">7</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </RELIGION>
+                    </CULTURALFORMATION>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Education, Marriage</HEADING>
+                    <EDUCATION MODE="INSTITUTIONAL">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>At
+                                    <PLACE>
+                                        <SETTLEMENT REG="Stratford upon Avon">Stratford</SETTLEMENT>
+                                        <REGION REG="Warwickshire" />
+                                        <GEOG REG="England" />
+                                    </PLACE> grammar school
+                                    <NAME STANDARD="Shakespeare, William">WS</NAME> would have been educated, free, in
+                                    <SUBJECT>Latin</SUBJECT> and
+                                    <SUBJECT>rhetoric</SUBJECT>, reading a wide range of
+                                    <SUBJECT>literature</SUBJECT>. He also had opportunities before leaving home of attending plays put on by travelling companies.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="ODNB" DBREF="29268" />
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </EDUCATION>
+                </DIV1>
+                <DIV1>
+                    <FAMILY>
+                        <MEMBER RELATION="WIFE">
+                            <DIV2>
+                                <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="WRITINGCLIMATE" RESP="IMG">
+                                    <DATE VALUE="1582-11-27">27 November 1582</DATE>
+                                    <CHRONPROSE>
+                                        <NAME STANDARD="Shakespeare, William">WS</NAME>, aged eighteen, took out a licence to marry
+                                        <NAME STANDARD="Shakespeare, Anne">Anne Hathaway</NAME>, who was already pregnant by him.</CHRONPROSE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="ODNB" DBREF="29268" />
+                                    </BIBCITS>
+                                </CHRONSTRUCT>
+                                <SHORTPROSE>
+                                    <P>Her name was given wrongly in the licence, which has given rise to various lines of speculation; however, there seems no good reason to doubt that Shakespeare intended from this date to marry the woman whom he did marry.
+                                        <NAME STANDARD="Greer, Germaine">Germaine Greer</NAME> finds some bitter fun in tracing the progressive traducing of Anne Shakespeare by successive scholars to reach
+                                        <NAME STANDARD="Greenblatt, Stephen">Stephen Greenblatt</NAME>'s belief that the prospect of sharing a grave with her filled her husband with horror and disgust.
+                                        <CHILDREN NUMBER="3">The couple had three children: a daughter, Susanna, followed by twins, Hamnet and Judith.</CHILDREN> Hamnet died young in
+                                        <DATE VALUE="1596-08">August 1596</DATE>.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Greer 5-9" DBREF="48775">5-9</BIBCIT>
+                                            <BIBCIT PLACEHOLDER="ODNB" DBREF="29268" />
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                    </FAMILY>
+                </DIV1>
+                <DIV1>
+                    <LOCATION RELATIONTO="MOVED">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>The date of Shakespeare's move from
+                                    <PLACE>
+                                        <SETTLEMENT REG="Stratford upon Avon">Stratford</SETTLEMENT>
+                                        <REGION REG="Warwickshire" />
+                                        <GEOG REG="England" />
+                                    </PLACE> to
+                                    <PLACE>
+                                        <SETTLEMENT>London</SETTLEMENT>
+                                        <REGION REG="Middlesex" />
+                                        <GEOG REG="England" />
+                                    </PLACE> is not known. He was well enough established in the capital to have his writing fiercely attacked (by
+                                    <NAME STANDARD="Greene, Robert">Robert Greene</NAME>) some time before September 1592.</P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </LOCATION>
+                    <LOCATION RELATIONTO="VISITED">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>After he became successful he made regular visits to
+                                    <PLACE>
+                                        <SETTLEMENT REG="Stratford upon Avon">Stratford</SETTLEMENT>
+                                        <REGION REG="Warwickshire" />
+                                        <GEOG REG="England" />
+                                    </PLACE> and followed in his father's footsteps by buying property in the town.</P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Acting Career</HEADING>
+                    <OCCUPATION>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>Shakespeare is believed to have worked as an
+                                    <JOB REG="acting">actor</JOB> from soon after his arrival in London, still in his early twenties. He joined a company of players whose name varied with successive patrons.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="DNB" DBREF="1759" />
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                            <CHRONSTRUCT RELEVANCE="DECADE" CHRONCOLUMN="SOCIALCLIMATE" RESP="IMG" CHRONCOLUMN1="WRITINGCLIMATE1" RELEVANCE1="COMPREHENSIVE1">
+                                <DATE VALUE="1598-12-28">28 December 1598</DATE>
+                                <CHRONPROSE>The
+                                    <PLACE>
+                                        <PLACENAME REG="Globe Theatre">Theatre</PLACENAME> in
+                                        <SETTLEMENT>London</SETTLEMENT>
+                                        <REGION REG="Middlesex" />
+                                        <GEOG REG="England" />
+                                    </PLACE>, home of
+                                    <NAME STANDARD="Shakespeare, William">WS</NAME>'s acting company, was dismantled preparatory to being transported south of the
+                                    <PLACE>
+                                        <REGION REG="Thames">river</REGION>
+                                        <GEOG REG="England" />
+                                    </PLACE> for re-erection as the Globe.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Dobson 7" DBREF="38414">7</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>From
+                                    <DATESTRUCT CERTAINTY="C" VALUE="1599-04">
+                                        <SEASON>spring</SEASON>
+                                        <YEAR>1599</YEAR>
+                                    </DATESTRUCT> the company acted at the rebuilt
+                                    <PLACE>
+                                        <PLACENAME REG="Globe Theatre">Globe</PLACENAME> in
+                                        <SETTLEMENT REG="London">Southwark</SETTLEMENT>
+                                        <REGION REG="Middlesex" />
+                                        <GEOG REG="England" />
+                                    </PLACE>, on the south bank of the
+                                    <PLACE>
+                                        <REGION>Thames</REGION>
+                                        <GEOG REG="England" />
+                                    </PLACE>. From
+                                    <DATE VALUE="1594">1594</DATE> the company was known as the
+                                    <ORGNAME REG="King's Men" STANDARD="King's Men">Lord Chamberlain's Men</ORGNAME>, and acted under the aegis of
+                                    <NAME STANDARD="Hunsdon, Henry Carey,,, first Baron">Lord Hunsdon</NAME> (lover of the poet
+                                    <NAME STANDARD="Lanyer, Aemilia">Aemilia Lanyer</NAME>).
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Dobson 7" DBREF="38414">7</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="ODNB" DBREF="29268" />
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                            <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="WRITINGCLIMATE" RESP="IMG">
+                                <DATE VALUE="1610" CERTAINTY="AFTER">After about 1610</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Shakespeare, William">Shakespeare</NAME>'s company, now known as the
+                                    <ORGNAME REG="King's Men" STANDARD="King's Men">King's Company of Players</ORGNAME>, moved their centre of operations to the private
+                                    <PLACE>
+                                        <PLACENAME>Blackfriars Theatre</PLACENAME>
+                                        <SETTLEMENT REG="London" />
+                                        <REGION REG="Middlesex" />
+                                        <GEOG REG="England" />
+                                    </PLACE>, which drew a wealthier class of patron.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="DNB" DBREF="1759" />
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>Blackfriars had been built by
+                                    <NAME STANDARD="Burbage, Richard">Richard Burbage</NAME> in
+                                    <DATE VALUE="1596">1596</DATE>. Apart from the composition of the audience, the biggest difference between it and the public theatres was that here candlelight could replace or supplement daylight. The company continued to act at the
+                                    <PLACE>
+                                        <PLACENAME REG="Globe Theatre">Globe</PLACENAME>
+                                        <SETTLEMENT REG="London" />
+                                        <REGION REG="Middlesex" />
+                                        <GEOG REG="England" />
+                                    </PLACE> as well.</P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Love and Money</HEADING>
+                    <INTIMATERELATIONSHIPS EROTIC="EROTICPOSSIBLY">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>Speculations about Shakespeare's love-life stem from his sonnets, many of which read like (though they may not necessarily be) documents of impassioned self-expression. They seem to show him
+                                    <SEXUALIDENTITY REG="male homosexual">passionately in love with a younger man</SEXUALIDENTITY> and
+                                    <SEXUALIDENTITY SELF-DEFINED="SELFNO" REG="heterosexual">sexually enthralled by a woman</SEXUALIDENTITY> whom he despises.</P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </INTIMATERELATIONSHIPS>
+                </DIV1>
+                <DIV1>
+                    <WEALTH>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>In 1613
+                                    <NAME STANDARD="Shakespeare, William">WS</NAME> made another substantial property investment, this time in London instead of in Stratford, close to the
+                                    <PLACE>
+                                        <PLACENAME>Blackfriars Theatre</PLACENAME>
+                                        <SETTLEMENT REG="London" />
+                                        <REGION REG="Middlesex" />
+                                        <GEOG REG="England" />
+                                    </PLACE>. He sold his share in the Globe some time after the building burned down in June this year.</P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </WEALTH>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Death</HEADING>
+                    <DEATH>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="WRITINGCLIMATE" RESP="SYS">
+                                <DATE CALENDAR="NEWSTYLE" VALUE="1616-04-23">23 April 1616</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Shakespeare, William">WS</NAME>, poet and playwright, died on St George's day at
+                                    <PLACE>
+                                        <ADDRESS>
+                                            <ADDRLINE>New Place</ADDRLINE>
+                                        </ADDRESS> in
+                                        <SETTLEMENT REG="Stratford upon Avon">Stratford</SETTLEMENT>
+                                        <REGION REG="Warwickshire" />
+                                        <GEOG REG="England" />
+                                    </PLACE>, the fine modern house he had bought with his theatrical earnings in
+                                    <DATE CALENDAR="NEWSTYLE" VALUE="1597">1597</DATE>.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Concise Oxford Dic of Eng Lit 475" DBREF="10840">475</BIBCIT>
+                                    <BIBCIT PLACEHOLDER="Rogers 127" DBREF="10889">127</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>By tradition this is reckoned to have been his fifty-second birthday. It is also the day on which
+                                    <NAME STANDARD="Cervantes, Miguel de">Miguel de Cervantes</NAME> died. The concatenation of these dates prompted the
+                                    <ORGNAME STANDARD="UNESCO">United Nations Educational, Scientific and Cultural Organization</ORGNAME> in 1996 to declare this date
+                                    <SOCALLED>World Book and Copyright Day</SOCALLED>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="UNESCO World Book and Copyright Day 2007" DBREF="57186" />
+                                        <BIBCIT PLACEHOLDER="Today in Literature, 23 April 2009" DBREF="48925">23 April 2009</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </DEATH>
+                </DIV1>
+                <WORKSCITED>
+                    <SOURCE>CODofEL</SOURCE>
+                    <SOURCE>DNB, Vol. 17</SOURCE>
+                    <SOURCE>Rogers, Pat, ed. An Outline of English Literature. 1992.</SOURCE>
+                </WORKSCITED>
+            </DIV0>
+        </BIOGRAPHY>

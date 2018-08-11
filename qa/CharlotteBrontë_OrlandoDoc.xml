@@ -1,0 +1,2015 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://cwrc.ca/schemas/orlando_biography.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+    <?xml-stylesheet type="text/css" href="http://cwrc.ca/templates/css/orlando.css"?>
+        <BIOGRAPHY SEX="FEMALE" PERSON="BRWWRITER">
+            <ORLANDOHEADER TYPE="text">
+                <FILEDESC>
+                    <TITLESTMT>
+                        <DOCTITLE>Charlotte Brontë: biography</DOCTITLE>
+                    </TITLESTMT>
+                    <PUBLICATIONSTMT>
+                        <AUTHORITY>Orlando Project</AUTHORITY>
+                    </PUBLICATIONSTMT>
+                    <SOURCEDESC>Created from original research by members of the Orlando Project</SOURCEDESC>
+                </FILEDESC>
+                <REVISIONDESC>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="RWT" WORKVALUE="I">
+                        <DATE VALUE="1997-12-09">9 December 1997</DATE>
+                        <ITEM>Initial document given to tagger.</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="RWT" WORKVALUE="I">
+                        <DATE VALUE="1998-02-26">26 February 1998</DATE>
+                        <ITEM>In Progress</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="RWT" WORKVALUE="I">
+                        <DATE VALUE="1998-03-06">6 March 1998</DATE>
+                        <ITEM>In Progress</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="RWT" WORKVALUE="I">
+                        <DATE VALUE="1998-03-11">11 March 1998</DATE>
+                        <ITEM>In Progress</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="KDC" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="1998-04-15">15 April 1998</DATE>
+                        <ITEM>kdc checking</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="KDC" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="1998-04-15">15 April 1998</DATE>
+                        <ITEM>In Progress; kdc checked</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SJW" WORKSTATUS="REV" WORKVALUE="I">
+                        <DATE VALUE="1998-04-30">30 April 1998</DATE>
+                        <ITEM>sjw: one mtr rev</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="KAH" WORKSTATUS="REV" WORKVALUE="I">
+                        <DATE VALUE="1998-05-07">7 May 1998</DATE>
+                        <ITEM>kah: 2 kwd added for mtr</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="HJM" WORKSTATUS="REV" WORKVALUE="I">
+                        <DATE VALUE="1998-05-08">8 May 1998</DATE>
+                        <ITEM>hjm: mtr rev to feb 1852 as per sib</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="PHD" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="1998-05-12">12 May 1998</DATE>
+                        <ITEM>phd: mtr rev</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="AHM" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="1998-05-20">20 May 1998</DATE>
+                        <ITEM>ahm: mtr rev</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SJW" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="1998-05-20">20 May 1998</DATE>
+                        <ITEM>sjw: mtr rev</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="HJM" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="1998-05-20">20 May 1998</DATE>
+                        <ITEM>hjm: revised feb 1825 as per img</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="1998-05-22">22 May 1998</DATE>
+                        <ITEM>revised</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JSC" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="1998-07-03">3 July 1998</DATE>
+                        <ITEM>revised</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="RWT" WORKVALUE="C">
+                        <DATE VALUE="1998-10-06">6 October 1998</DATE>
+                        <ITEM>Updated for Sept 1998 Audit</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="CAS" WORKVALUE="C">
+                        <DATE VALUE="1998-10-06">6 October 1998</DATE>
+                        <ITEM>Updated for Sept 1998 Audit</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SRF" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="1998-11-10">10 November 1998</DATE>
+                        <ITEM>--added value attributes to dateStruct</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SRF" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="1999-01-25">25 January 1999</DATE>
+                        <ITEM>fixed dateRanges</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="KDC" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="1999-03-06">6 March 1999</DATE>
+                        <ITEM>checked for tagging</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="PUB" WORKVALUE="I">
+                        <DATE VALUE="1999-03-12">12 March 1999</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JSC" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="1999-03-22">22 March 1999</DATE>
+                        <ITEM>name tag cleanup completed</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JSC" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="1999-03-22">22 March 1999</DATE>
+                        <ITEM>one change added</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="KAH" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="1999-03-30">30 March 1999</DATE>
+                        <ITEM>checked/fixed place tags</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JSC" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="1999-04-01">1 April 1999</DATE>
+                        <ITEM>name tag cleanup done</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="PHD" WORKSTATUS="CFB" WORKVALUE="I">
+                        <DATE VALUE="1999-04-01">1 April 1999</DATE>
+                        <ITEM>began checking bibcits--not done</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="KAH" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="1999-04-06">6 April 1999</DATE>
+                        <ITEM>checked rs, socalled, quote tag clean-up; fixed a a couple tags</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="PHD" WORKSTATUS="CFB" WORKVALUE="C">
+                        <DATE VALUE="1999-04-07">7 April 1999</DATE>
+                        <ITEM>bibcits checked</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SRF" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="1999-04-07">7 April 1999</DATE>
+                        <ITEM>fixed names</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SRF" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="1999-04-09">9 April 1999</DATE>
+                        <ITEM>fixed orgnames</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="PHD" WORKSTATUS="CFB" WORKVALUE="C">
+                        <DATE VALUE="1999-04-12">12 April 1999</DATE>
+                        <ITEM>moved some bibcits; doc needs bibcits added</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="KAH" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="1999-04-13">13 April 1999</DATE>
+                        <ITEM>fixed title tags</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="MEB" WORKSTATUS="CAS" WORKVALUE="I">
+                        <DATE VALUE="1999-04-14">14 April 1999</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="MEB" WORKSTATUS="CAS" WORKVALUE="C">
+                        <DATE VALUE="1999-04-16">16 April 1999</DATE>
+                        <ITEM>bronch-b bibcit entries complete. meb.</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JSC" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="1999-04-20">20 April 1999</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SRF" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="1999-04-21">21 April 1999</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JKW" WORKSTATUS="CFB" WORKVALUE="C">
+                        <DATE VALUE="1999-04-27">27 April 1999</DATE>
+                        <ITEM>fixed bibcits</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JKW" WORKSTATUS="PUB" WORKVALUE="C">
+                        <DATE VALUE="1999-04-30">30 April 1999</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="KAH" WORKSTATUS="PUB" WORKVALUE="C">
+                        <DATE VALUE="1999-07-08">8 July 1999</DATE>
+                        <ITEM>added dbrefs</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="RSC" WORKSTATUS="PUB" WORKVALUE="C">
+                        <DATE VALUE="1999-11-04">4 November 1999</DATE>
+                        <ITEM>added link</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="1999-12-21">21 December 1999</DATE>
+                        <ITEM>BATCH CHANGE: primarily orgName and bibCit cleanup</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="PUB" WORKVALUE="C">
+                        <DATE VALUE="2000-06-14">14 June 2000</DATE>
+                        <ITEM>fixed name</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="PUB" WORKVALUE="C">
+                        <DATE VALUE="2000-11-03">3 November 2000</DATE>
+                        <ITEM>removed title tags from sources</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="PUB" WORKVALUE="C">
+                        <DATE VALUE="2000-12-14">14 December 2000</DATE>
+                        <ITEM>fixed name</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="PUB" WORKVALUE="C">
+                        <DATE VALUE="2000-12-15">15 December 2000</DATE>
+                        <ITEM>fixed name</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="PUB" WORKVALUE="C">
+                        <DATE VALUE="2000-12-19">19 December 2000</DATE>
+                        <ITEM>fixed name</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="DRG" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2001-02-01">1 February 2001</DATE>
+                        <ITEM>converted textual apostrophes and quotation marks to entity references</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="PUB" WORKVALUE="C">
+                        <DATE VALUE="2001-03-21">21 March 2001</DATE>
+                        <ITEM>removed researchnotes</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="PUB" WORKVALUE="C">
+                        <DATE VALUE="2001-07-19">19 July 2001</DATE>
+                        <ITEM>removed researchnote regging accented character</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2001-07-30">30 July 2001</DATE>
+                        <ITEM>fixed datestruct value</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="RSC" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2001-08-16">16 August 2001</DATE>
+                        <ITEM>added topic tag</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2001-10-26">26 October 2001</DATE>
+                        <ITEM>fixed name</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2001-11-01">1 November 2001</DATE>
+                        <ITEM>fixed name</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2001-11-13">13 November 2001</DATE>
+                        <ITEM>fixed name</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="RSC" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2001-11-28">28 November 2001</DATE>
+                        <ITEM>removed topic tag</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2002-01-09">9 January 2002</DATE>
+                        <ITEM>fixed standard name</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2002-06-07">7 June 2002</DATE>
+                        <ITEM>fixed orgname attribute</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2002-08-06">6 August 2002</DATE>
+                        <ITEM>fixed orgname</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="RJR" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2002-08-07">7 August 2002</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2003-03-20">20 March 2003</DATE>
+                        <ITEM> fixed PLACE</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2003-04-14">14 April 2003</DATE>
+                        <ITEM>BATCH CHANGE: primarily PLACE cleanup</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2003-06-16">16 June 2003</DATE>
+                        <ITEM>BATCH CHANGE: primarily TGENRENAME cleanup, BIBCIT following P moved before P, BIBCITS TAG added</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2003-06-20">20 June 2003</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2004-03-22">22 March 2004</DATE>
+                        <ITEM>changed position to birth position</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2004-05-04">4 May 2004</DATE>
+                        <ITEM>getting rid of redundant events</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SIB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2004-06-01">1 June 2004</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="DLK" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2004-08-11">11 August 2004</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="JAH" WORKSTATUS="CFB" WORKVALUE="C">
+                        <DATE VALUE="2005-01-07">7 January 2005</DATE>
+                        <ITEM>fixed titles and bibcits</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SYS" WORKSTATUS="CFT" WORKVALUE="I">
+                        <DATE VALUE="2005-04-08">08 April 2005</DATE>
+                        <ITEM>BATCH CHANGE: March 2005 Specifications. Mainly tag/attribute name changes</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2005-08-25">25 August 2005</DATE>
+                        <ITEM>job/occupation regs</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2005-08-31">31 August 2005</DATE>
+                        <ITEM>job/occupation regs</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2005-09-09">9 September 2005</DATE>
+                        <ITEM>changed attribute value none on attribute exact to neither</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2005-12-04">4 December 2005</DATE>
+                        <ITEM>final read-through</ITEM>
+                    </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="TCD" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2006-05-17">17 May 2006</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2007-01-31">31 January 2007</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2007-03-19">19 March 2007</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="SLB" WORKSTATUS="CFT" WORKVALUE="C">
+                        <DATE VALUE="2007-05-07">7 May 2007</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="IMG" WORKSTATUS="ENH" WORKVALUE="C">
+                        <DATE VALUE="2012-04-12">12 April 2012</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                    <RESPONSIBILITY RESP="MDG" WORKSTATUS="REV" WORKVALUE="C">
+                        <DATE VALUE="2012-08-10">10 August 2012</DATE>
+                        <ITEM/> </RESPONSIBILITY>
+                </REVISIONDESC>
+            </ORLANDOHEADER>
+            <DIV0>
+                <HEADING>Biography</HEADING>
+                <STANDARD>Brontë, Charlotte</STANDARD>
+                <DIV1>
+                    <PERSONNAME>
+                        <DIV2>
+                            <DATASTRUCT>
+                                <DATAITEM>
+                                    <BIRTHNAME>
+                                        <GIVEN>Charlotte</GIVEN>
+                                        <SURNAME>Brontë</SURNAME>
+                                    </BIRTHNAME>
+                                </DATAITEM>
+                                <DATAITEM>
+                                    <PSEUDONYM WROTEORPUBLISHEDAS="WROTEPUBLISHEDASYES">Currer Bell</PSEUDONYM>
+                                </DATAITEM>
+                                <DATAITEM>
+                                    <MARRIED>Mrs Arthur Bell Nicholls</MARRIED>
+                                </DATAITEM>
+                            </DATASTRUCT>
+                        </DIV2>
+                    </PERSONNAME>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Birth and Background</HEADING>
+                    <BIRTH>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1816-04-21">21 April 1816</DATE>
+                                <CHRONPROSE>
+                                    <BIRTHPOSITION>
+                                        <NAME STANDARD="Brontë, Charlotte">Charlotte Brontë</NAME>, the third daughter in the family</BIRTHPOSITION>, was born in
+                                    <PLACE>
+                                        <SETTLEMENT>Thornton</SETTLEMENT>
+                                        <REGION REG="Yorkshire" />
+                                        <GEOG REG="England" />
+                                    </PLACE>, near
+                                    <PLACE>
+                                        <SETTLEMENT>Bradford</SETTLEMENT>, in
+                                        <REGION>Yorkshire</REGION>
+                                        <GEOG REG="England" />
+                                    </PLACE>.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 71" DBREF="391">71</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>She was baptised on
+                                    <DATE VALUE="1816-06-29">June 29</DATE>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 71" DBREF="391">71</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </BIRTH>
+                </DIV1>
+                <DIV1>
+                    <CULTURALFORMATION>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> came from an
+                                    <NATIONALHERITAGE FOREBEAR="FATHER">Irish</NATIONALHERITAGE> and
+                                    <NATIONALHERITAGE>English</NATIONALHERITAGE> background,
+                                    <DENOMINATION>
+                                        <ORGNAME REG="Anglican Church" STANDARD="Anglican Church">Anglican</ORGNAME>
+                                    </DENOMINATION> on both sides. Her father's tireless activity as rector in Haworth and surrounding areas made her
+                                    <CLASS SOCIALRANK="PROFESSIONAL">a member of a prominent and respectable, if financially strapped, family</CLASS>. At least once, however, the Brontës' Irish origins were used to ridicule their brother
+                                    <NAME STANDARD="Brontë, Branwell">Branwell</NAME>.</P>
+                                <P>Despite or perhaps because of his brother's participation in late eighteenth-century nationalist insurrection, her father firmly defended the 1801 Act of Union. He publicly supported Catholic Emancipation in 1829, however, despite his generally Tory politics, and fought for political, social, and sanitary reform.</P>
+                                <P>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME>'s own political position was complex, though largely
+                                    <POLITICALAFFILIATION>Tory</POLITICALAFFILIATION> and strongly anti-Catholic. Her work is often read as an articulation of the tensions in middle-class Victorian feminism.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 4, 157" DBREF="391">4, 157</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </CULTURALFORMATION>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Family</HEADING>
+                    <FAMILY>
+                        <MEMBER RELATION="MOTHER">
+                            <DIV2>
+                                <HEADING>Mother</HEADING>
+                                <SHORTPROSE>
+                                    <P>
+                                        <NAME STANDARD="Brontë, Maria Branwell">Maria Branwell</NAME> was the daughter of a prosperous merchant from Penzance; her parents' deaths left her with a life annuity of ¥50. She was twenty-nine when she met Patrick Brontë, having moved to Yorkshire to assist her uncle with a boarding school at Woodhouse Grove. Little is known of her, but her surviving letters to her future husband suggest a lively, intelligent, and well-educated woman. She married him on 29 December 1812. Several years after their marriage,
+                                        <SIGNIFICANTACTIVITY REG="writer">she wrote a piece on
+                                            <TITLE TITLETYPE="ANALYTIC">The Advantages of Poverty, in Religious Concerns</TITLE>
+                                        </SIGNIFICANTACTIVITY>, which she hoped to publish.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Barker 48-9, 51, 52-6, 57, 69" DBREF="391">48-9, 51, 52-6, 57, 69</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                        <MEMBER RELATION="FATHER">
+                            <DIV2>
+                                <HEADING>Father</HEADING>
+                                <SHORTPROSE>
+                                    <P>
+                                        <NAME STANDARD="Brontë, Patrick">Patrick Brontë</NAME> was an Irish protestant from a large respectable farming family of limited means. He took to books from an early age, opened a school for the gentry at the age of sixteen, became a gentleman's
+                                        <JOB>tutor</JOB>, and finally saved enough to attend
+                                        <ORGNAME REG="Cambridge University" STANDARD="Cambridge University">Cambridge</ORGNAME> at the age of twenty-five.
+                                        <SCHOLARNOTE>
+                                            <P>At Cambridge he adopted the family name of
+                                                <SOCALLED>Bronte</SOCALLED> as a regularization of various spellings which had been employed in Ireland.
+                                                <BIBCITS>
+                                                    <BIBCIT PLACEHOLDER="Barker 2-3" DBREF="391">2-3</BIBCIT>
+                                                </BIBCITS>
+                                            </P>
+                                            <P>The family Brontë tutored was headed by an evangelical minister,
+                                                <NAME STANDARD="Tighe, Thomas">Thomas Tighe</NAME>, who assisted his entry into the evangelical
+                                                <ORGNAME REG="St John's College,, Cambridge University" STANDARD="St John's College,, Cambridge University">St John's College</ORGNAME> at Cambridge as a sizar. He was also assisted financially by
+                                                <NAME STANDARD="Thornton, Henry">Henry Thornton</NAME> and
+                                                <NAME STANDARD="Wilberforce, William">William Wilberforce</NAME>. He volunteered for the local militia in preparations to resist the anticipated invasion of Napoleon, drilling under
+                                                <NAME STANDARD="Palmerston, Henry John Temple,,, third Viscount">Lord Palmerston</NAME> in 1804, while earning a first-class Bachelor of Arts in 1806.
+                                                <BIBCITS>
+                                                    <BIBCIT PLACEHOLDER="Barker 6, 11, 9, 12" DBREF="391">6, 11, 9, 12</BIBCIT>
+                                                </BIBCITS>
+                                            </P>
+                                        </SCHOLARNOTE> His eventual position as a
+                                        <JOB>clergyman</JOB> and published
+                                        <JOB>author</JOB> in early nineteenth-century England was, given his background, a considerable accomplishment. Notwithstanding
+                                        <NAME STANDARD="Gaskell, Elizabeth">Elizabeth Gaskell</NAME>'s portrait of him in her biography of his daughter as an eccentric, hot-tempered, and difficult recluse, his associates considered him kind and genial.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Barker 2-3, 107-8" DBREF="391">2-3, 107-8</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                    <P>Patrick Brontë was ordained late in 1807 and held several curacies, mostly in Yorkshire, where he worked with evangelical fervour to serve far-flung communities.
+                                        <SCHOLARNOTE>
+                                            <P>He raised money to distribute Bibles to the poor, and helped in 1813 to found a
+                                                <ORGNAME STANDARD="Church Missionary Association">Church Missionary Association</ORGNAME> at Bradford, for work in Africa and the East.
+                                                <BIBCITS>
+                                                    <BIBCIT PLACEHOLDER="Barker 60-1" DBREF="391">60-1</BIBCIT>
+                                                </BIBCITS>
+                                            </P>
+                                        </SCHOLARNOTE> He also preached strongly against the Luddite activity, including riots and assassination, taking place in the north of England. In
+                                        <DATE VALUE="1820-02">February 1820</DATE> Brontë took up the perpetual curacy of Haworth, which gave him ¥170 per year.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Barker 15, 29, 34, 37, 57, 45-7, 80-8" DBREF="391">15, 29, 34, 37, 57, 45-7, 80-8</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                    <P>Patrick Brontë had
+                                        <JOB REG="author">literary aspirations</JOB> and published several books.
+                                        <SCHOLARNOTE>
+                                            <P>As early as 1810, he had published a poem on didactic subjects, and by 1813 had published two books of like pieces,
+                                                <TITLE TITLETYPE="MONOGRAPHIC">Cottage Poems</TITLE> and
+                                                <TITLE TITLETYPE="MONOGRAPHIC">The Rural Minstrel</TITLE>. Another collection of 1815,
+                                                <TITLE TITLETYPE="MONOGRAPHIC">The Cottage in the Wood</TITLE>, inaugurated the spelling
+                                                <QUOTE DIRECT="Y">Brontë</QUOTE>
+                                                <BIBCITS>
+                                                    <BIBCIT PLACEHOLDER="Barker 69" DBREF="391">69</BIBCIT>
+                                                </BIBCITS> for the author's name. His anonymous 1818 novella,
+                                                <TITLE TITLETYPE="MONOGRAPHIC" REG="The Maid of Killarney">The Maid of Killarney; or, Albion and Flora, a modern tale . . . </TITLE>, describes Ireland through the eyes of an English hero; it details Irish poverty, disapproves of Catholic Emancipation, and supports legal reform
+                                                <BIBCITS>
+                                                    <BIBCIT PLACEHOLDER="Barker 42, 44, 57, 69" DBREF="391">42, 44, 57, 69</BIBCIT>
+                                                </BIBCITS>
+                                            </P>
+                                        </SCHOLARNOTE>His
+                                        <TITLE TITLETYPE="MONOGRAPHIC">The Maid of Killarney</TITLE> had a considerable influence on the writings of his children.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Barker 76-8." DBREF="391">76-8</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                        <MEMBER RELATION="SISTER">
+                            <DIV2>
+                                <HEADING>Sisters</HEADING>
+                                <CHRONSTRUCT RELEVANCE="DECADE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                    <DATE VALUE="1814-04-23">23 April 1814</DATE>
+                                    <CHRONPROSE>
+                                        <NAME STANDARD="Brontë, Maria,, 1814 - 1825">Maria Brontë</NAME>, the eldest of the Brontë children, was baptized.</CHRONPROSE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 59" DBREF="391">59</BIBCIT>
+                                    </BIBCITS>
+                                </CHRONSTRUCT>
+                                <CHRONSTRUCT RELEVANCE="DECADE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                    <DATE VALUE="1815-02-08">8 February 1815</DATE>
+                                    <CHRONPROSE>
+                                        <NAME STANDARD="Brontë, Elizabeth">Elizabeth Brontë</NAME>, the second of the Brontë children, was born.</CHRONPROSE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 61" DBREF="391">61</BIBCIT>
+                                    </BIBCITS>
+                                </CHRONSTRUCT>
+                                <SHORTPROSE>
+                                    <P>Charlotte's birth the next year was soon followed by Branwell's in 1817. Emily's birth came on
+                                        <DATE VALUE="1818-07-30">30 July 1818</DATE>, and that of Anne, the youngest, on
+                                        <DATE VALUE="1820-01-17">17 January 1820</DATE>.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Barker 78, 86" DBREF="391">78, 86</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                        <MEMBER RELATION="BROTHER">
+                            <DIV2>
+                                <HEADING>Brother</HEADING>
+                                <CHRONSTRUCT RELEVANCE="PERIOD" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                    <DATE VALUE="1817-06-26">26 June 1817</DATE>
+                                    <CHRONPROSE>
+                                        <NAME STANDARD="Brontë, Branwell">Patrick Branwell Brontë</NAME>, the only son of the family, was born: he was known as Branwell.</CHRONPROSE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 74" DBREF="391">74</BIBCIT>
+                                    </BIBCITS>
+                                </CHRONSTRUCT>
+                                <SHORTPROSE>
+                                    <P>Branwell was an important literary collaborator of his sisters,
+                                        <NAME STANDARD="Brontë, Charlotte">CB</NAME> in particular, in their youth.</P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                    </FAMILY>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Early Life in Haworth</HEADING>
+                    <LOCATION RELATIONTO="MOVED">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>In early April 1820, the Brontës moved to
+                                    <PLACE>
+                                        <SETTLEMENT>Haworth</SETTLEMENT>, in the
+                                        <REGION REG="Yorkshire">West Riding of Yorkshire</REGION>
+                                        <GEOG REG="England" />
+                                    </PLACE>, where their father took up the position of perpetual curate. Despite the depiction of the village as an isolated, primitive place full of uneducated, violent inhabitants (by both
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> in her biographical preface to
+                                    <TITLE TITLETYPE="MONOGRAPHIC">Wuthering Heights</TITLE> and
+                                    <NAME STANDARD="Gaskell, Elizabeth">Elizabeth Gaskell</NAME> in her
+                                    <TITLE TITLETYPE="MONOGRAPHIC" REG="The Life of Charlotte Brontë">Life of Charlotte Brontë</TITLE>), it was a busy mill town of about 4,500 people on a textile trade route and was, during the Brontës' time, undergoing rapid growth and change as a result of the industrial revolution.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 92" DBREF="391">92</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                                <P>The poor health and high mortality rates in Haworth—on a level comparable with London's worst—were caused by deplorable sanitation and poor water supply.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 96, 635" DBREF="391">96, 635</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <FAMILY>
+                        <MEMBER RELATION="MOTHER">
+                            <DIV2>
+                                <CHRONSTRUCT RELEVANCE="DECADE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                    <DATE VALUE="1821-09-15">15 September 1821</DATE>
+                                    <CHRONPROSE>The Brontës' mother,
+                                        <NAME STANDARD="Brontë, Maria Branwell">Maria Brontë</NAME>, died at the age of thirty-eight, having fallen ill in January with cancer, probably of the uterus.</CHRONPROSE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 102, 104" DBREF="391">102, 104</BIBCIT>
+                                    </BIBCITS>
+                                </CHRONSTRUCT>
+                                <SHORTPROSE>
+                                    <P>Several of the children had scarlet fever during her illness. Maria's death left her stricken husband considerably poorer, since her annuity ceased on her death; he received some additional money through donations and a subscription.
+                                        <NAME STANDARD="Branwell, Elizabeth">Elizabeth Branwell</NAME>, the sister who had come to help nurse Maria, stayed on to care for the children. This arrangement became permanent.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Barker 103, 105" DBREF="391">103, 105</BIBCIT>
+                                        </BIBCITS>
+                                        <SCHOLARNOTE>
+                                            <P>Patrick Brontë offended the family friend
+                                                <NAME STANDARD="Firth, Elizabeth">Elizabeth Firth</NAME> by proposing to her only months after his wife's death in an attempt to provide a mother for his children. He also seems to have pursued two other women as potential second wives.
+                                                <BIBCITS>
+                                                    <BIBCIT PLACEHOLDER="Barker 106, 113" DBREF="391">106, 113</BIBCIT>
+                                                </BIBCITS>
+                                            </P>
+                                        </SCHOLARNOTE>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                        <MEMBER RELATION="FATHER">
+                            <DIV2>
+                                <SHORTPROSE>
+                                    <P>Their father regularly dined with his young children, showed considerable care for their development, adjudicated disputes arising from their home theatricals, and often walked with them on the moors.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Barker 108-10" DBREF="391">108-10</BIBCIT>
+                                        </BIBCITS>
+                                        <SCHOLARNOTE>
+                                            <P>Biographer
+                                                <NAME STANDARD="Barker, Juliet">Juliet Barker</NAME> objects strongly to Gaskell's representation of Patrick Brontë as a
+                                                <QUOTE DIRECT="Y">domestic hyena</QUOTE>, arguing that she used his alleged failure as a parent to excuse the shocking qualities in his daughters' writings.
+                                                <BIBCITS>
+                                                    <BIBCIT PLACEHOLDER="Barker 107-8" DBREF="391">107-8</BIBCIT>
+                                                </BIBCITS>
+                                            </P>
+                                        </SCHOLARNOTE>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                    </FAMILY>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Education</HEADING>
+                    <EDUCATION MODE="DOMESTIC">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>The Brontë children were taught when young by their father, who gave them regular oral lessons, by their aunt, who supervised their lessons and work in the house, and by servants who taught them such skills as
+                                    <SUBJECT>sewing</SUBJECT>. The eldest, Maria, read to her siblings from newspapers, which provided lively accounts of issues and events of the day.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 110-2" DBREF="391">110-2</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </EDUCATION>
+                    <EDUCATION MODE="INSTITUTIONAL">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>Maria and Elizabeth were sent briefly to Crofton Hall, a school near Wakefield. In July of 1824, they were moved to a newly established school, shortly thereafter followed by Charlotte.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 117-8, 128" DBREF="391">117-8, 128</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="Gaskell 103" DBREF="392">103</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </EDUCATION>
+                </DIV1>
+                <DIV1>
+                    <HEALTH ISSUE="PHYSICAL">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>Like them, she had recently had whooping cough and measles.</P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </HEALTH>
+                </DIV1>
+                <DIV1>
+                    <EDUCATION MODE="INSTITUTIONAL">
+                        <DIV2>
+                            <HEADING>The Clergy Daughters' School</HEADING>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1824-08-10">10 August 1824</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> arrived at the strict and parsimonious
+                                    <SCHOOL INSTITUTION="BOARDING" STUDENTBODY="SINGLESEX" RELIGIOUS="RELIGIOUSYES">Clergy Daughters' School</SCHOOL> in
+                                    <PLACE>
+                                        <PLACENAME>Cowan Bridge</PLACENAME>,
+                                        <SETTLEMENT>Tunstall</SETTLEMENT> parish
+                                        <REGION REG="Yorkshire" />
+                                        <GEOG REG="England" />
+                                    </PLACE>, the original of Lowood School in
+                                    <TITLE TITLETYPE="MONOGRAPHIC">Jane Eyre</TITLE>.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 118" DBREF="391">118</BIBCIT>
+                                </BIBCITS>
+                                <KEYWORDCLASS>Women and Education</KEYWORDCLASS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>The fees for the school were ¥14 per year. It was primarily an Evangelical school aimed to assist needy clergymen with the education of their daughters in a
+                                    <QUOTE DIRECT="Y">plain and useful Education, which may best fit them to return with Respectability and Advantage to their own Homes, or to maintain themselves in the different Stations of Life to which Providence may call them.</QUOTE> Its list of eminent patrons included
+                                    <NAME STANDARD="More, Hannah">Hannah More</NAME> and several associates and patrons of Patrick Brontë.
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> claimed that her portrait of the school and its personnel was both just and immediately recognizable to those who knew it.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 118-21" DBREF="391">118-21</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                                <P>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME>, who had never been away from home, found adjusting to school difficult. She was recognized as clever on entrance, and like her eldest sister was trained for work as a governess. Her sister Emily arrived in November.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 129" DBREF="391">129</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1825-02-15" CERTAINTY="C">February 1825</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Maria,, 1814 - 1825">Maria Brontë</NAME>, the original of Helen Burns in
+                                    <TITLE TITLETYPE="MONOGRAPHIC">Jane Eyre</TITLE>, was removed from the
+                                    <SCHOOL INSTITUTION="BOARDING" STUDENTBODY="SINGLESEX" RELIGIOUS="RELIGIOUSYES">Clergy Daughters' School</SCHOOL>, seriously ill with consumption. She died at home in early May.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 135-7" DBREF="391">135-7</BIBCIT>
+                                </BIBCITS>
+                                <KEYWORDCLASS>Women and Education</KEYWORDCLASS>
+                            </CHRONSTRUCT>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1825-06-01">1 June 1825</DATE>
+                                <CHRONPROSE>Emily and
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> were removed permanently from the
+                                    <SCHOOL INSTITUTION="BOARDING" STUDENTBODY="SINGLESEX" RELIGIOUS="RELIGIOUSYES">Clergy Daughters' School</SCHOOL>, after their consumptive elder sister Elizabeth had been sent home the previous day.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 138" DBREF="391">138</BIBCIT>
+                                </BIBCITS>
+                                <KEYWORDCLASS>Women and Education</KEYWORDCLASS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>Elizabeth died in mid-June at the age of ten.</P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </EDUCATION>
+                </DIV1>
+                <DIV1>
+                    <EDUCATION MODE="DOMESTIC">
+                        <DIV2>
+                            <HEADING>Return to Haworth</HEADING>
+                            <SHORTPROSE>
+                                <P>The years following Emily's and
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME>'s return to Haworth were marked by extreme poverty and unemployment in the region, as well as trade union agitation and measures against it by employers.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 143-4" DBREF="391">143-4</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                                <P>Their education continued at home from a selection of standard texts including
+                                    <TEXT>
+                                        <NAME STANDARD="Goldsmith, Oliver">Oliver Goldsmith</NAME>'s
+                                        <TITLE TITLETYPE="MONOGRAPHIC" REG="Oliver Goldsmith, An History of England, 1764">History of England</TITLE>
+                                    </TEXT>,
+                                    <TEXT>
+                                        <NAME STANDARD="More, Hannah">Hannah More</NAME>'s
+                                        <TITLE TITLETYPE="MONOGRAPHIC" REG="Moral Sketches of Prevailing Opinions and Manners, Foreign and Domestic">Moral Sketches</TITLE>
+                                    </TEXT>,
+                                    <TEXT>
+                                        <NAME STANDARD="Bunyan, John">John Bunyan</NAME>'s
+                                        <TITLE TITLETYPE="MONOGRAPHIC">Pilgrim's Progress</TITLE>
+                                    </TEXT>,
+                                    <TEXT>
+                                        <NAME STANDARD="Watts, Isaac">Isaac Watts</NAME>'s
+                                        <TITLE TITLETYPE="MONOGRAPHIC" REG="The Doctrine of the Passions Explained and Improved">Doctrine of the Passions</TITLE>
+                                    </TEXT>, and
+                                    <TEXT>
+                                        <NAME STANDARD="Milton, John">Milton</NAME>'s
+                                        <TITLE TITLETYPE="MONOGRAPHIC">Paradise Lost</TITLE>
+                                    </TEXT>, in addition to the limited libraries of their father and their aunt. The
+                                    <TEXT>Bible</TEXT> and
+                                    <TEXT>Prayer Book</TEXT> were also used as teaching texts. They studied
+                                    <SUBJECT>French</SUBJECT>, and there is some evidence that all three of Emily, Anne, and Charlotte acquired some familiarity with
+                                    <SUBJECT>classical literature</SUBJECT>, although whether they studied the languages is unclear. They also had, with their brother,
+                                    <SUBJECT>drawing</SUBJECT> and
+                                    <SUBJECT>music</SUBJECT> lessons from about 1829.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 166, 145-7" DBREF="391">166, 145-7</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                                <P>Both Charlotte and Branwell aspired to become artists. She studied drawing seriously, first with a private tutor, later at
+                                    <SCHOOL INSTITUTION="BOARDING" STUDENTBODY="SINGLESEX" INSTITUTIONLEVEL="SECONDARY" REG="Roe Head School">Roe Head</SCHOOL>, and after her return independently, by copying romantic illustrations from annuals such as
+                                    <TITLE TITLETYPE="MONOGRAPHIC">Friendship's Offering</TITLE> and
+                                    <TITLE TITLETYPE="MONOGRAPHIC">The Keepsake</TITLE> as well as drawing from life.
+                                    <SCHOLARNOTE>
+                                        <P>Branwell, however, unlike his sister, was provided with a prestigious tutor at the exorbitant rate of two guineas per lesson, and intended for further schooling at the
+                                            <ORGNAME STANDARD="Royal Academy">Royal Academy</ORGNAME> and a study tour of Europe.
+                                            <BIBCITS>
+                                                <BIBCIT PLACEHOLDER="Barker 214, 224, 245" DBREF="391">214, 224, 245</BIBCIT>
+                                            </BIBCITS>
+                                        </P>
+                                    </SCHOLARNOTE>Branwell set up a studio in Bradford for a short time, but gave it up in May of 1839.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 213, 302" DBREF="391">213, 302</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                                <P>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> was later, at
+                                    <SCHOOL STUDENTBODY="SINGLESEX" REG="Roe Head School">Roe Head</SCHOOL>, discouraged from continuing with
+                                    <SUBJECT>piano</SUBJECT> lessons because of her extreme short-sightedness, but Emily and Anne played, and their father bought a piano in 1833 or 1834.</P>
+                                <P>They regularly read
+                                    <TITLE TITLETYPE="JOURNAL" REG="Blackwood's Edinburgh Magazine">Blackwood's Magazine</TITLE> through a friend, and probably frequented a circulating library at nearby
+                                    <PLACE>
+                                        <SETTLEMENT>Keighley</SETTLEMENT>
+                                        <REGION REG="Yorkshire" />
+                                        <GEOG REG="England" />
+                                    </PLACE>. They also had access to lectures at the
+                                    <ORGNAME REG="Keighley Mechanics' Institute" STANDARD="Keighley Mechanics' Institute">Keighley Mechanics' Institute</ORGNAME>, of which their father became a member in 1832, on such subjects as British poetry.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 148-9, 212-13" DBREF="391">148-9, 212-13</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </EDUCATION>
+                </DIV1>
+                <DIV1>
+                    <OTHERLIFEEVENT>
+                        <DIV2>
+                            <HEADING>Imaginative Play: Angria</HEADING>
+                            <SHORTPROSE>
+                                <P>The Brontë children devised private
+                                    <SOCALLED>plays</SOCALLED> in their early years, starting from a group of a dozen wooden soldiers they dubbed the
+                                    <SOCALLED>Young Men</SOCALLED>. The games, which initially involved Charlotte, Branwell, Emily, and Anne, developed over many years into the Glass Town Confederation, loosely modelled on the United Kingdom, with a kingdom for each of the four children. Often based on accounts of historical and political events from newspapers and books, the games gave rise to a body of written juvenilia, more and more elaborate sagas of love, hate, betrayal, war, exploration, and politics. The earlier stages were documented mostly by Charlotte and Branwell, and eventually gave rise to the very different Oriental and imperial Angria. The vividness of this imaginative play is evident in the degree to which the worlds of their creation merge with the real world in Emily's diary. Elements of fantasy played a significant role in the lives of the Brontë children into their mid-twenties.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 151-4, 238, 156" DBREF="391">151-4, 238, 156</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </OTHERLIFEEVENT>
+                </DIV1>
+                <DIV1>
+                    <EDUCATION MODE="INSTITUTIONAL">
+                        <DIV2>
+                            <HEADING>Roe Head School</HEADING>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATERANGE FROM="1831-01-17" TO="1832-06" EXACT="BOTH">17 January 1831-June 1832</DATERANGE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> distinguished herself at
+                                    <NAME STANDARD="Wooler, Margaret">Miss Wooler</NAME>'s
+                                    <SCHOOL INSTITUTION="BOARDING" STUDENTBODY="SINGLESEX" INSTITUTIONLEVEL="SECONDARY">Roe Head School</SCHOOL>, on the outskirts of
+                                    <PLACE>
+                                        <SETTLEMENT>Mirfield</SETTLEMENT>, near Hartshead,
+                                        <REGION>Yorkshire</REGION>
+                                        <GEOG REG="England" />
+                                    </PLACE>.</CHRONPROSE>
+                                <KEYWORDCLASS>Women and Education</KEYWORDCLASS>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 170, 172, 181" DBREF="391">170, 172, 181</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>She rose to the top of her class by the end of her first six months, and stayed there until her departure, as well as winning prizes in
+                                    <SUBJECT>French</SUBJECT>. There she also met
+                                    <COMPANION>
+                                        <NAME STANDARD="Taylor, Mary">Mary Taylor</NAME>
+                                    </COMPANION> and
+                                    <COMPANION>
+                                        <NAME STANDARD="Nussey, Ellen">Ellen Nussey</NAME>
+                                    </COMPANION>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </EDUCATION>
+                </DIV1>
+                <DIV1>
+                    <FRIENDSASSOCIATES>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>
+                                    <NAME STANDARD="Taylor, Mary">Taylor</NAME> and
+                                    <NAME STANDARD="Nussey, Ellen">Nussey</NAME> became lifelong friends and correspondents of
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME>. She spent short holidays at their homes.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 172, 174, 176" DBREF="391">172, 174, 176</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </FRIENDSASSOCIATES>
+                </DIV1>
+                <DIV1>
+                    <POLITICS>
+                        <CHRONSTRUCT RELEVANCE="PERIOD" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                            <DATE VALUE="1832-05-17">17 May 1832</DATE>
+                            <CHRONPROSE>
+                                <NAME STANDARD="Brontë, Charlotte">CB</NAME> expressed her satisfaction that the Lords had thrown out the Reform Bill, which she opposed though her father supported it.</CHRONPROSE>
+                            <KEYWORDCLASS>Women and Politics</KEYWORDCLASS>
+                            <BIBCITS>
+                                <BIBCIT PLACEHOLDER="Barker 179" DBREF="391">179</BIBCIT>
+                            </BIBCITS>
+                        </CHRONSTRUCT>
+                    </POLITICS>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Teaching</HEADING>
+                    <OCCUPATION>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATESTRUCT CERTAINTY="C" CALENDAR="NEWSTYLE" VALUE="1832-06">
+                                    <SEASON>Summer</SEASON>
+                                    <YEAR>1832</YEAR>
+                                </DATESTRUCT>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Patrick">Patrick Brontë</NAME> opened a
+                                    <ORGNAME STANDARD="National Church Sunday School">National Church Sunday School</ORGNAME> at
+                                    <PLACE>
+                                        <SETTLEMENT>Haworth</SETTLEMENT>
+                                        <REGION REG="Yorkshire" />
+                                        <GEOG REG="England" />
+                                    </PLACE>, to which
+                                    <NAME STANDARD="Brontë, Emily">Emily</NAME>, and
+                                    <NAME STANDARD="Brontë, Anne">Anne</NAME>, and
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> contributed by
+                                    <SIGNIFICANTACTIVITY PHILANTHROPYVOLUNTEER="PHILANTHROPYVOLUNTEERYES" REG="teacher">teaching</SIGNIFICANTACTIVITY>.</CHRONPROSE>
+                                <KEYWORDCLASS>Women and Education</KEYWORDCLASS>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 183" DBREF="391">183</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>During this period, she exchanged visits with Ellen Nussey and continued her collaborative writings with Branwell. The siblings attended concerts of the Haworth Philharmonic Society and, from spring of 1834, concerts such as Handel's
+                                    <TITLE TITLETYPE="MONOGRAPHIC">Messiah</TITLE> on the new church organ.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 187, 193, 210" DBREF="391">187, 193, 210</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <OCCUPATION>
+                        <DIV2>
+                            <HEADING>Discontent with Teaching</HEADING>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1835-07-29">29 July 1835</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> reluctantly returned to
+                                    <EMPLOYER>Miss Wooler</EMPLOYER>'s
+                                    <ORGNAME STANDARD="Roe Head School">Roe Head School</ORGNAME> as a
+                                    <JOB REG="teacher">teacher</JOB>.</CHRONPROSE>
+                                <KEYWORDCLASS>Women and Education</KEYWORDCLASS>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 226" DBREF="391">226</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>Her salary was largely absorbed by the cost of her sister Emily's school fees and their clothing.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 237" DBREF="391">237</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <OCCUPATION>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>Emily left in poor health after only a few months.
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> attributed the decline to her sister's powerful yearning for home and the moors. Though she too found life at Roe Head confining, she found some consolation in her vivid imaginings. By August 1836, however, she was complaining in her diary about spending
+                                    <QUOTE DIRECT="Y">all the best part of my life in this wretched bondage, forcibly suppressing my rage . . . .</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 254" DBREF="391">254</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="Barker 237, 254" DBREF="391">237, 254</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                                <P>During the following Christmas holidays, the Brontës' servant Tabby Aykroyd fell and shattered her hip; the sisters won a battle with their aunt to keep her at their home and nurse her. She recovered but had to leave her position a few years later.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 259" DBREF="391">259</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <CULTURALFORMATION>
+                        <RELIGION>
+                            <CHRONSTRUCT RELEVANCE="PERIOD" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1837-12">December 1837</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Anne">Anne</NAME> and
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> apparently experienced crises of faith around this time; Anne was also seriously ill.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 280-1, 284-5" DBREF="391">280-1, 284-5</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                        </RELIGION>
+                    </CULTURALFORMATION>
+                </DIV1>
+                <DIV1>
+                    <OCCUPATION>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1838-05-23" CERTAINTY="C">Late May 1838</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> left her position as a
+                                    <JOB REG="teacher">teacher</JOB> at Roe Head, convinced that her life depended on relief of her depressed health and spirits.</CHRONPROSE>
+                                <KEYWORDCLASS>Women and Education</KEYWORDCLASS>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 289" DBREF="391">289</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>By August she returned to Roe Head, owing to family financial pressures, but finally resigned for good at Christmas. Her father's health was visibly deteriorating by this time.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 292, 298, 296" DBREF="391">292, 298, 296</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <HEADING>A Proposal</HEADING>
+                    <OTHERLIFEEVENT>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="DECADE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1839-03">March 1839</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> declined a marriage proposal from the Reverend
+                                    <NAME STANDARD="Nussey, Henry">Henry Nussey</NAME>, the brother of her friend
+                                    <NAME STANDARD="Nussey, Ellen">Ellen</NAME>.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 301" DBREF="391">301</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>Nussey's proposal had been very matter-of-fact. She received another proposal later that year from a visiting Irish clergyman who had met her just once. Clearly, despite her unhappiness, she was unwilling to enter into a loveless marriage.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 314" DBREF="391">314</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </OTHERLIFEEVENT>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Working as a Governess</HEADING>
+                    <OCCUPATION>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="PERIOD" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATERANGE FROM="1839-05" TO="1839-07" EXACT="BOTH">May-July 1839</DATERANGE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> took a temporary position as a
+                                    <JOB REG="governess">governess</JOB> not far from Haworth.</CHRONPROSE>
+                                <KEYWORDCLASS KEYWORDTYPE="governess">Women and Education</KEYWORDCLASS>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 309-11" DBREF="391">309-11</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>She found her duties degrading and felt herself publicly humiliated by her employer. She concluded to Emily,
+                                    <QUOTE DIRECT="Y">a private governess has no existence, is not considered as a living and rational being.</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 310" DBREF="391">310</BIBCIT>
+                                    </BIBCITS> Her friend
+                                    <NAME STANDARD="Taylor, Mary">Mary Taylor</NAME> decided to emigrate to New Zealand rather than take up such employment.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 310" DBREF="391">310</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <LOCATION RELATIONTO="TRAVELLED">
+                        <CHRONSTRUCT RELEVANCE="PERIOD" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                            <DATE VALUE="1839-08-31" CERTAINTY="C">Late Summer 1839</DATE>
+                            <CHRONPROSE>
+                                <NAME STANDARD="Brontë, Charlotte">CB</NAME> gained her first experience of rail travel and a first, inspiring sight of the sea during a holiday at
+                                <PLACE>
+                                    <SETTLEMENT>Bridlington</SETTLEMENT>,
+                                    <REGION>Yorkshire</REGION>
+                                    <GEOG REG="England" />
+                                </PLACE>, on the east coast, with her friend
+                                <NAME STANDARD="Nussey, Ellen">Ellen Nussey</NAME>.</CHRONPROSE>
+                            <BIBCITS>
+                                <BIBCIT PLACEHOLDER="Barker 315-16" DBREF="391">315-16</BIBCIT>
+                            </BIBCITS>
+                        </CHRONSTRUCT>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <OCCUPATION>
+                        <CHRONSTRUCT RELEVANCE="PERIOD" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                            <DATE VALUE="1841-03-02">2 March 1841</DATE>
+                            <CHRONPROSE>
+                                <REMUNERATION>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> began working as
+                                    <JOB REG="governess">governess</JOB> for ¥20 a year</REMUNERATION> at
+                                <PLACE>
+                                    <PLACENAME>Upperwood House</PLACENAME>, near
+                                    <SETTLEMENT>Rawdon</SETTLEMENT>
+                                    <REGION REG="Yorkshire" />
+                                    <GEOG REG="England" />
+                                </PLACE>.</CHRONPROSE>
+                            <BIBCITS>
+                                <BIBCIT PLACEHOLDER="Barker 351" DBREF="391">351</BIBCIT>
+                            </BIBCITS>
+                            <KEYWORDCLASS>Women and Education</KEYWORDCLASS>
+                        </CHRONSTRUCT>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <OCCUPATION>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="PERIOD" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1841-07-19" CERTAINTY="C">July 1841</DATE>
+                                <CHRONPROSE>The Brontë sisters decided to set up a school of their own.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 360" DBREF="391">360</BIBCIT>
+                                </BIBCITS>
+                                <KEYWORDCLASS>Women and Education</KEYWORDCLASS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>Their aunt
+                                    <NAME STANDARD="Branwell, Elizabeth">Elizabeth Branwell</NAME> offered to loan them ¥100 for the purpose, and
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> persuaded her to advance some of it to underwrite a period of education in Brussels for herself and Emily.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 362" DBREF="391">362</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Brussels</HEADING>
+                    <LOCATION RELATIONTO="MOVED">
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1842-02-08">8 February 1842</DATE>
+                                <CHRONPROSE>Emily and
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> left for further schooling in
+                                    <PLACE>
+                                        <SETTLEMENT>Brussels</SETTLEMENT>
+                                        <GEOG REG="Belgium" />
+                                    </PLACE>, stopping for three days in
+                                    <PLACE>
+                                        <SETTLEMENT>London</SETTLEMENT>
+                                        <REGION REG="Middlesex" />
+                                        <GEOG REG="England" />
+                                    </PLACE> en route.</CHRONPROSE>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>They were accompanied by their father and Mary and Joe Taylor.
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> insisted on seeing the major buildings and galleries.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 377-8" DBREF="391">377-8</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <EDUCATION>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATERANGE FROM="1842-02-15" TO="1842-11-06" EXACT="BOTH">15 February-6 November 1842</DATERANGE>
+                                <CHRONPROSE>Emily and
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> were pupils at the Catholic
+                                    <SCHOOL INSTITUTION="BOARDING" STUDENTBODY="SINGLESEX" RELIGIOUS="RELIGIOUSYES">Pensionnat Heger</SCHOOL> in
+                                    <PLACE>
+                                        <SETTLEMENT>Brussels</SETTLEMENT>
+                                        <GEOG REG="Belgium" /> (
+                                        <ADDRESS>
+                                            <ADDRLINE>rue Isabelle</ADDRLINE>
+                                        </ADDRESS>
+                                    </PLACE>, which is no longer in existence).</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 379, 394" DBREF="391">379, 394</BIBCIT>
+                                </BIBCITS>
+                                <KEYWORDCLASS>Women and Education</KEYWORDCLASS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>The
+                                    <SUBJECT>composition</SUBJECT> instruction of the demanding master of rhetoric, Monsieur
+                                    <INSTRUCTOR>
+                                        <NAME STANDARD="Heger, Constantin">Constantin Heger</NAME>
+                                    </INSTRUCTOR>, had a particularly strong impact on
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME>'s writing. They took lessons in
+                                    <SUBJECT>French</SUBJECT> and
+                                    <SUBJECT>German</SUBJECT>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 384ff, 404" DBREF="391">384ff, 404</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </EDUCATION>
+                </DIV1>
+                <DIV1>
+                    <OCCUPATION>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>They covered the cost of extending their stay by
+                                    <JOB REG="teacher">giving lessons in English and music</JOB>
+                                    <REMUNERATION>in exchange for the language lessions they received.</REMUNERATION>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 384ff, 404" DBREF="391">384ff, 404</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <FAMILY>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="PERIOD" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1842-10-29">29 October 1842</DATE>
+                                <CHRONPROSE>Elizabeth Branwell, the aunt who had stepped in after the death of the Brontës' mother, died; Emily and
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> returned from Brussels.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 404n78" DBREF="391">404n78</BIBCIT>
+                                    <BIBCIT PLACEHOLDER="Barker 405" DBREF="391">405</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                        </DIV2>
+                    </FAMILY>
+                </DIV1>
+                <DIV1>
+                    <WEALTH>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>Each of the Brontë sisters received a little under ¥300 from their aunt, mostly in the form of investments in the
+                                    <ORGNAME STANDARD="York and North Midland Railway">York and North Midland Railway</ORGNAME>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 409" DBREF="391">409</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </WEALTH>
+                </DIV1>
+                <DIV1>
+                    <OCCUPATION>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1843-01-27">27 January 1843</DATE>
+                                <CHRONPROSE>Having mourned her aunt,
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> returned to the
+                                    <ORGNAME STANDARD="Pensionnat Heger">Pensionnat Heger</ORGNAME> as a
+                                    <JOB REG="teacher">teacher</JOB>, travelling alone to
+                                    <PLACE>
+                                        <SETTLEMENT>Brussels</SETTLEMENT>
+                                        <GEOG CURRENT="Belgium" REG="Belgium" />
+                                    </PLACE>.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 410" DBREF="391">410</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>
+                                    <REMUNERATION>Her salary was ¥16 a year</REMUNERATION>. She continued her studies with M. Heger, who insisted that genius requires self-discipline.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 417" DBREF="391">417</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <INTIMATERELATIONSHIPS EROTIC="EROTICPOSSIBLY">
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME>'s pedagogical relationship with the married
+                                    <NAME STANDARD="Heger, Constantin">Constantin Heger</NAME> was most intense, though not necessarily adulterous.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 419" DBREF="391">419</BIBCIT>
+                                    </BIBCITS> She fell in love with him during her first visit, and returned (as she put it)
+                                    <QUOTE DIRECT="Y">prompted by what then seemed an irresistible impulse.</QUOTE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Bracken 12" DBREF="72368">12</BIBCIT>
+                                    </BIBCITS> As she became lonelier in Emily's absence, she grew to resent Mme Heger and to depend on M. Heger for a sense of well being. Her great distress during a school holiday led her to make a confession to a Catholic priest, an incident which became the basis for a scene in
+                                    <TITLE TITLETYPE="MONOGRAPHIC">Villette</TITLE>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 424" DBREF="391">424</BIBCIT>
+                                    </BIBCITS> After leaving Brussels she dreamed of him, and corresponded with him for more than a year, until he stopped answering her letters.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Bracken 12" DBREF="72368">12</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </INTIMATERELATIONSHIPS>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Struggle and Loss</HEADING>
+                    <LOCATION RELATIONTO="MOVED">
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1843-12-31">31 December 1843</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> returned to
+                                    <PLACE>
+                                        <SETTLEMENT>Haworth</SETTLEMENT>
+                                        <REGION REG="Yorkshire" />
+                                        <GEOG REG="England" />
+                                    </PLACE> from Brussels.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 427" DBREF="391">427</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                        </DIV2>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <FAMILY>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>She found her father with failing sight and in uncertain health and delayed her plan to establish a school. Branwell contributed nothing to the family finances. After he gave up his Bradford studio, he worked as a private tutor in the Lake District, where he pursued literary encouragement from local writers. He soon lost his post, possibly as a result of fathering an illegitimate child. Back in Yorkshire, he worked as a clerk for the Leeds and Manchester Railway, but was again dismissed.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 432" DBREF="391">432</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </FAMILY>
+                </DIV1>
+                <DIV1>
+                    <OCCUPATION>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATESTRUCT CERTAINTY="C" CALENDAR="NEWSTYLE" VALUE="1844-06">
+                                    <SEASON>Summer</SEASON>
+                                    <YEAR>1844</YEAR>
+                                </DATESTRUCT>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> unsuccessfully attempted to establish a boarding school for young ladies at the
+                                    <PLACE>
+                                        <PLACENAME>Haworth Parsonage</PLACENAME>
+                                        <SETTLEMENT REG="Haworth" />
+                                        <REGION REG="Yorkshire" />
+                                        <GEOG REG="England" />
+                                    </PLACE>.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 439-40" DBREF="391">439-40</BIBCIT>
+                                </BIBCITS>
+                                <KEYWORDCLASS>Women and Education</KEYWORDCLASS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>She believed that authorship was closed to her and that
+                                    <JOB REG="teacher">teaching</JOB> was her only option, but reported declining a job in Manchester (as principal teacher at the generous rate of ¥100 a year) in order to stay with her father. She was only three years away from publishing
+                                    <TITLE TITLETYPE="MONOGRAPHIC">Jane Eyre</TITLE>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Bronte, Letters 1: 358" DBREF="17685">I: 358</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </OCCUPATION>
+                </DIV1>
+                <DIV1>
+                    <FAMILY>
+                        <MEMBER RELATION="BROTHER">
+                            <DIV2>
+                                <CHRONSTRUCT RELEVANCE="DECADE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="IMG">
+                                    <DATESTRUCT CERTAINTY="C" CALENDAR="NEWSTYLE" VALUE="1846-09">
+                                        <SEASON>Autumn</SEASON>
+                                        <YEAR>1846</YEAR>
+                                    </DATESTRUCT>
+                                    <CHRONPROSE>
+                                        <NAME STANDARD="Brontë, Branwell">Branwell Brontë</NAME> began a downward spiral of drinking, debts, and dissipation that hastened his death.</CHRONPROSE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 512" DBREF="391">512</BIBCIT>
+                                    </BIBCITS>
+                                </CHRONSTRUCT>
+                                <SHORTPROSE>
+                                    <P>He despaired of his affair with
+                                        <NAME STANDARD="Robinson, Lydia">Mrs Robinson</NAME>, for whose family he had been tutor and Anne governess. Although persevering in their literary labours and approaches to publishers, his sisters found his decline painful and embarrassing.</P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                    </FAMILY>
+                </DIV1>
+                <DIV1>
+                    <LEISUREANDSOCIETY>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>Following the publication of
+                                    <TITLE TITLETYPE="MONOGRAPHIC">Jane Eyre</TITLE>,
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> was kept abreast of many recent publications through gift copies of new books from publishers. She kept her identity secret, however, in deference to Emily's wishes.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 549" DBREF="391">549</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </LEISUREANDSOCIETY>
+                </DIV1>
+                <DIV1>
+                    <FAMILY>
+                        <MEMBER RELATION="BROTHER">
+                            <CHRONSTRUCT RELEVANCE="DECADE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="IMG">
+                                <DATE VALUE="1848-09-24">24 September 1848</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Branwell">Branwell Brontë</NAME> died of tuberculosis.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 567" DBREF="391">567</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                        </MEMBER>
+                    </FAMILY>
+                </DIV1>
+                <DIV1>
+                    <FAMILY>
+                        <MEMBER RELATION="SISTER">
+                            <DIV2>
+                                <SHORTPROSE>
+                                    <P>
+                                        <NAME STANDARD="Brontë, Charlotte">CB</NAME> was devastated by the death of her sister Emily from tuberculosis less than three months later, on
+                                        <DATE VALUE="1848-12-19">19 December 1848</DATE>.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Barker 576" DBREF="391">576</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                    </FAMILY>
+                </DIV1>
+                <DIV1>
+                    <LOCATION RELATIONTO="TRAVELLED">
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1849-05-23">23 May 1849</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> reluctantly set out to accompany Anne, whose health was failing rapidly, to
+                                    <PLACE>
+                                        <SETTLEMENT>Scarborough</SETTLEMENT>
+                                        <REGION REG="Yorkshire" />
+                                        <GEOG REG="England" />
+                                    </PLACE>, together with
+                                    <NAME STANDARD="Nussey, Ellen">Ellen Nussey</NAME>.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 581" DBREF="391">581</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                        </DIV2>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <FAMILY>
+                        <MEMBER RELATION="SISTER">
+                            <DIV2>
+                                <SHORTPROSE>
+                                    <P>On
+                                        <DATE VALUE="1849-05-28">28 May 1849</DATE> her last remaining sibling died of tuberculosis. She arranged for her sister's immediate funeral and burial, rather than transporting the body back to Haworth.
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Barker 594-5" DBREF="391">594-5</BIBCIT>
+                                        </BIBCITS> She wrote to her publisher,
+                                        <QUOTE DIRECT="Y">Papa has now only me—the weakest—puniest—least promising of his children—Consumption has taken the whole five.</QUOTE>
+                                        <BIBCITS>
+                                            <BIBCIT PLACEHOLDER="Barker 595" DBREF="391">595</BIBCIT>
+                                        </BIBCITS>
+                                    </P>
+                                </SHORTPROSE>
+                            </DIV2>
+                        </MEMBER>
+                    </FAMILY>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Literary Life and Travel</HEADING>
+                    <FRIENDSASSOCIATES>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1849-11">November 1849</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Gaskell, Elizabeth">Elizabeth Gaskell</NAME> initiated her friendship with
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> by her sympathetic comments about the sickbed scenes in
+                                    <TITLE TITLETYPE="MONOGRAPHIC">Shirley</TITLE>.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 615" DBREF="391">615</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> saw a resemblance between Emily and both Gaskell and
+                                    <NAME STANDARD="Martineau, Harriet">Harriet Martineau</NAME>, to whom she also had her publishers send a copy of
+                                    <TITLE TITLETYPE="MONOGRAPHIC">Shirley</TITLE>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 615" DBREF="391">615</BIBCIT>
+                                        <BIBCIT PLACEHOLDER="Gaskell 392" DBREF="392">392</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </FRIENDSASSOCIATES>
+                </DIV1>
+                <DIV1>
+                    <LOCATION RELATIONTO="VISITED">
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="PERIOD" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATERANGE FROM="1849-11-29" TO="1849-12-15" EXACT="BOTH">29 November-15 December 1849</DATERANGE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> visited
+                                    <PLACE>
+                                        <SETTLEMENT>London</SETTLEMENT>
+                                        <REGION REG="Middlesex" />
+                                        <GEOG REG="England" />
+                                    </PLACE>, where she met
+                                    <NAME STANDARD="Thackeray, William Makepeace">Thackeray</NAME> and
+                                    <NAME STANDARD="Martineau, Harriet">Harriet Martineau</NAME>, both of whom she admired.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 617-22" DBREF="391">617-22</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>She stayed at the house of handsome, unmarried
+                                    <NAME STANDARD="Smith, George Murray">George Smith</NAME>, of
+                                    <ORGNAME REG="Smith,, Elder and Co." STANDARD="Smith,, Elder and Co.">Smith, Elder, and Co.</ORGNAME>, and his mother. The night before she left, they hosted a dinner for critics, including
+                                    <NAME STANDARD="Forster, John">John Forster</NAME> and
+                                    <NAME STANDARD="Chorley, Henry Fothergill">Henry Chorley</NAME>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 616-17, 621" DBREF="391">616-17, 621</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATESTRUCT CERTAINTY="C" CALENDAR="NEWSTYLE" VALUE="1850-05-30">End of
+                                    <MONTH CERTAINTY="BY">May</MONTH>
+                                    <YEAR>1850</YEAR>
+                                </DATESTRUCT>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> again visited the
+                                    <NAME STANDARD="Smith, George Murray">Smith</NAME>s in
+                                    <PLACE>
+                                        <SETTLEMENT>London</SETTLEMENT>
+                                        <REGION REG="Middlesex" />
+                                        <GEOG REG="England" />
+                                    </PLACE>, where she met a number of young female writers, among others
+                                    <NAME STANDARD="Ritchie, Anne Thackeray">Anne Thackeray</NAME> and
+                                    <NAME STANDARD="Procter, Adelaide">Adelaide Procter</NAME>.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 639-43" DBREF="391">639-43</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> also had a confrontation with
+                                    <NAME STANDARD="Lewes, George Henry">George Henry Lewes</NAME>. She attended the
+                                    <ORGNAME STANDARD="House of Commons">House of Commons</ORGNAME>, the
+                                    <ORGNAME STANDARD="Chapel Royal">Chapel Royal</ORGNAME>, where she saw her hero the
+                                    <NAME STANDARD="Wellington, Arthur Wellesley,,, first Duke of">Duke of Wellington</NAME>, and a meeting of the
+                                    <ORGNAME REG="Quakers" STANDARD="Society of Friends">Society of Friends</ORGNAME>. She had her portrait done by society painter
+                                    <NAME STANDARD="Richmond, George">George Richmond</NAME>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 640-4" DBREF="391">640-4</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                        <CHRONSTRUCT RELEVANCE="PERIOD" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                            <DATE VALUE="1850-06-25">25 June 1850</DATE>
+                            <CHRONPROSE>
+                                <NAME STANDARD="Brontë, Charlotte">CB</NAME> went from London to her friend
+                                <NAME STANDARD="Nussey, Ellen">Ellen Nussey</NAME>'s in
+                                <PLACE>
+                                    <SETTLEMENT REG="Brookroyd" />
+                                    <REGION>Yorkshire</REGION>
+                                    <GEOG REG="England" />
+                                </PLACE>; from there she went on to
+                                <PLACE>
+                                    <SETTLEMENT>Edinburgh</SETTLEMENT>
+                                    <REGION REG="Midlothian" />
+                                    <GEOG REG="Scotland" />
+                                </PLACE> to join her friends
+                                <NAME STANDARD="Smith, George Murray">George Smith</NAME> and his sister
+                                <NAME STANDARD="Smith, Eliza">Eliza</NAME> for a couple of days.</CHRONPROSE>
+                        </CHRONSTRUCT>
+                    </LOCATION>
+                    <LOCATION RELATIONTO="LIVED">
+                        <CHRONSTRUCT RELEVANCE="PERIOD" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                            <DATE VALUE="1850-07-15" CERTAINTY="C">Mid-July 1850</DATE>
+                            <CHRONPROSE>
+                                <NAME STANDARD="Brontë, Charlotte">CB</NAME> returned
+                                <PLACE>
+                                    <SETTLEMENT REG="Haworth">home</SETTLEMENT>
+                                    <REGION REG="Yorkshire" />
+                                    <GEOG REG="England" />
+                                </PLACE> after visiting
+                                <PLACE>
+                                    <SETTLEMENT>London</SETTLEMENT>
+                                    <REGION REG="Middlesex" />
+                                    <GEOG REG="England" />
+                                </PLACE>,
+                                <PLACE>
+                                    <REGION>Yorkshire</REGION>
+                                    <GEOG REG="England" />
+                                </PLACE>, and
+                                <PLACE>
+                                    <SETTLEMENT>Edinburgh</SETTLEMENT>
+                                    <REGION REG="Midlothian" />
+                                    <GEOG REG="Scotland" />
+                                </PLACE>.</CHRONPROSE>
+                            <BIBCITS>
+                                <BIBCIT PLACEHOLDER="Barker 648" DBREF="391">648</BIBCIT>
+                            </BIBCITS>
+                        </CHRONSTRUCT>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <FRIENDSASSOCIATES>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME>'s epistolary relationship with
+                                    <NAME STANDARD="Smith, George Murray">George Smith</NAME>, in which she often refers to herself by her masculine pseudonym, was playful and teasing. Biographer
+                                    <NAME STANDARD="Barker, Juliet">Juliet Barker</NAME> suggests that over the London visits and the Scottish trip she fell in love with him. She certainly seems to have taken his lapses in correspondence and the announcement of his marriage several years later rather hard.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 623, 648, 703, 744" DBREF="391">623, 648, 703, 744</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </FRIENDSASSOCIATES>
+                </DIV1>
+                <DIV1>
+                    <LOCATION RELATIONTO="TRAVELLED">
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="PERIOD" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATERANGE FROM="1850-08-19" TO="1850-08-26" EXACT="FROM">19-26 August 1850</DATERANGE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> visited her neighbours Sir
+                                    <NAME STANDARD="Kay-Shuttleworth, Sir James Philips">James</NAME> and Lady
+                                    <NAME STANDARD="Kay-Shuttleworth, Lady Janet">Kay-Shuttleworth</NAME> in the
+                                    <PLACE>
+                                        <REGION>Lake District</REGION>
+                                        <GEOG REG="England" />
+                                    </PLACE>
+                                    <PLACE>
+                                        <REGION REG="Lake Windermere" />
+                                        <GEOG REG="England" />
+                                    </PLACE>, where she met
+                                    <NAME STANDARD="Gaskell, Elizabeth">Elizabeth Gaskell</NAME>.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 631, 651, 653" DBREF="391">631, 651, 653</BIBCIT>
+                                    <BIBCIT PLACEHOLDER="Gaskell 417" DBREF="392">417</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                        </DIV2>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <FRIENDSASSOCIATES>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>She and
+                                    <NAME STANDARD="Gaskell, Elizabeth">Gaskell</NAME> quickly established an epistolary friendship.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Shelston 11" DBREF="601">11</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </FRIENDSASSOCIATES>
+                </DIV1>
+                <DIV1>
+                    <LOCATION RELATIONTO="VISITED">
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1850-12-16">16 December 1850</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> visited
+                                    <NAME STANDARD="Martineau, Harriet">Harriet Martineau</NAME> at her home
+                                    <PLACE>
+                                        <PLACENAME>The Knoll</PLACENAME>
+                                        <SETTLEMENT REG="Ambleside" />
+                                        <REGION CURRENT="Cumbria" REG="Westmorland" />
+                                        <GEOG REG="England" />
+                                    </PLACE>, in the
+                                    <PLACE>
+                                        <REGION>Lake District</REGION>
+                                        <GEOG REG="England" />
+                                    </PLACE>, where she asked her host to mesmerize her.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 663-4" DBREF="391">663-4</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>The visit lasted a week. Martineau feared
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME>'s nerves might not be up to the experiment and ceased as soon as she began to have an effect on her subject.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 663-4" DBREF="391">663-4</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <OTHERLIFEEVENT>
+                        <CHRONSTRUCT RELEVANCE="DECADE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                            <DATE VALUE="1851-04-04">4 April 1851</DATE>
+                            <CHRONPROSE>
+                                <NAME STANDARD="Brontë, Charlotte">CB</NAME> received her third proposal when
+                                <NAME STANDARD="Taylor, James">James Taylor</NAME>, the managing clerk of
+                                <ORGNAME REG="Smith,, Elder and Co." STANDARD="Smith,, Elder and Co.">Smith, Elder, and Co.</ORGNAME>, asked her to marry him; she refused.</CHRONPROSE>
+                            <BIBCITS>
+                                <BIBCIT PLACEHOLDER="Barker 669" DBREF="391">669</BIBCIT>
+                            </BIBCITS>
+                        </CHRONSTRUCT>
+                    </OTHERLIFEEVENT>
+                </DIV1>
+                <DIV1>
+                    <LOCATION RELATIONTO="VISITED">
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1851-05-28" CERTAINTY="C">Late May 1851</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> visited
+                                    <PLACE>
+                                        <SETTLEMENT>London</SETTLEMENT>
+                                        <REGION REG="Middlesex" />
+                                        <GEOG REG="England" />
+                                    </PLACE>, where her relationship with her publisher and friend
+                                    <NAME STANDARD="Smith, George Murray">George Smith</NAME> turned away from intimacy.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Gordon 235" DBREF="78">235</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>She stayed with Smith and his mother. He was younger than her by eight years, and their correspondence had become increasingly playful on both sides. He has been read as the original for John Bretton in
+                                    <TITLE TITLETYPE="MONOGRAPHIC">Villette</TITLE>.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 675-7" DBREF="391">675-7</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                                <P>During the visit, she attended a
+                                    <NAME STANDARD="Thackeray, William Makepeace">Thackeray</NAME> lecture, viewed paintings at
+                                    <ORGNAME STANDARD="Somerset House">Somerset House</ORGNAME>, went to the Great Exhibition several times, and saw the great actress
+                                    <SOCALLED>
+                                        <NAME STANDARD="Félix, Elisa">Rachel</NAME>
+                                    </SOCALLED> perform twice.
+                                    <KEYWORDCLASS>Great Exhibition</KEYWORDCLASS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </LOCATION>
+                    <LOCATION RELATIONTO="VISITED">
+                        <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                            <DATE VALUE="1851-06-27">27 June 1851</DATE>
+                            <CHRONPROSE>
+                                <NAME STANDARD="Brontë, Charlotte">CB</NAME> visited
+                                <NAME STANDARD="Gaskell, Elizabeth">Elizabeth Gaskell</NAME> in
+                                <PLACE>
+                                    <SETTLEMENT>Manchester</SETTLEMENT>
+                                    <REGION REG="Lancashire" />
+                                    <GEOG REG="England" />
+                                </PLACE> on her way back to Haworth.</CHRONPROSE>
+                            <BIBCITS>
+                                <BIBCIT PLACEHOLDER="Barker 681" DBREF="391">681</BIBCIT>
+                            </BIBCITS>
+                        </CHRONSTRUCT>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <LOCATION RELATIONTO="VISITED">
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="PERIOD" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATERANGE FROM="1852-05-28" TO="1852-06-30" EXACT="NEITHER">Late May-Late June 1852</DATERANGE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> returned to
+                                    <PLACE>
+                                        <SETTLEMENT>Filey</SETTLEMENT>
+                                        <REGION REG="Yorkshire" />
+                                        <GEOG REG="England" />
+                                    </PLACE>, near
+                                    <PLACE>
+                                        <SETTLEMENT>Scarborough</SETTLEMENT>
+                                        <REGION REG="Yorkshire" />
+                                        <GEOG REG="England" />
+                                    </PLACE>, to try to improve her health and to visit
+                                    <NAME STANDARD="Brontë, Anne">Anne</NAME>'s grave.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 696-9" DBREF="391">696-9</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>Late in the year she refused a second invitation from
+                                    <NAME STANDARD="Martineau, Harriet">Martineau</NAME>, but she did not accept it, bowing to the view of her father and friends that Martineau's atheism made a friendship between them inappropriate.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 709" DBREF="391">709</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Courtship and Marriage</HEADING>
+                    <OTHERLIFEEVENT>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="PERIOD" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1852-12-13">13 December 1852</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Nicholls, Arthur Bell">Arthur Bell Nicholls</NAME> asked
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> to marry him; she declined, and her father violently opposed the match.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 710-12" DBREF="391">710-12</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>She had originally had little regard for her father's long-time curate, but gradually grew to feel friendly towards him. The strong passion Nicholls evinced following her refusal—he decided to go as a missionary to Australia—and the injustice of her father's treatment of him, won her sympathy.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 710-12" DBREF="391">710-12</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </OTHERLIFEEVENT>
+                </DIV1>
+                <DIV1>
+                    <LOCATION RELATIONTO="VISITED">
+                        <CHRONSTRUCT RELEVANCE="PERIOD" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                            <DATERANGE FROM="1853-01-05" TO="1853-02-05" EXACT="FROM">From 5 January 1853</DATERANGE>
+                            <CHRONPROSE>
+                                <NAME STANDARD="Brontë, Charlotte">CB</NAME> spent a month in
+                                <PLACE>
+                                    <SETTLEMENT>London</SETTLEMENT>
+                                    <REGION REG="Middlesex" />
+                                    <GEOG REG="England" />
+                                </PLACE> where she visited a range of institutions including prisons, hospitals, financial sights in the City, and the General Post Office.</CHRONPROSE>
+                            <BIBCITS>
+                                <BIBCIT PLACEHOLDER="Barker 713-14" DBREF="391">713-14</BIBCIT>
+                            </BIBCITS>
+                        </CHRONSTRUCT>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <FAMILY>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="DECADE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1853-06">June 1853</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME>'s
+                                    <NAME STANDARD="Brontë, Patrick">father</NAME> suffered a second and quite debilitating stroke.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 731" DBREF="391">731</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>
+                                    <NAME STANDARD="Nicholls, Arthur Bell">Arthur Bell Nicholls</NAME> visited the neighbourhood shortly afterwards, and she began a correspondence with him. They became engaged in
+                                    <DATE CALENDAR="NEWSTYLE" VALUE="1854-03" CERTAINTY="C">March 1854</DATE>, on the heels of George Smith's marriage, which had taken place the previous month.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Gordon 299" DBREF="78">299</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </FAMILY>
+                </DIV1>
+                <DIV1>
+                    <FRIENDSASSOCIATES>
+                        <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                            <DATERANGE FROM="1853-09-19" TO="1853-09-23">19 September 1853</DATERANGE>
+                            <CHRONPROSE>
+                                <NAME STANDARD="Gaskell, Elizabeth">Elizabeth Gaskell</NAME> visited
+                                <NAME STANDARD="Brontë, Charlotte">CB</NAME> at Haworth for four days.</CHRONPROSE>
+                            <BIBCITS>
+                                <BIBCIT PLACEHOLDER="Barker 738" DBREF="391">738</BIBCIT>
+                            </BIBCITS>
+                        </CHRONSTRUCT>
+                    </FRIENDSASSOCIATES>
+                </DIV1>
+                <DIV1>
+                    <LOCATION RELATIONTO="VISITED">
+                        <CHRONSTRUCT RELEVANCE="PERIOD" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                            <DATE VALUE="1854-05-01">1 May 1854</DATE>
+                            <CHRONPROSE>
+                                <NAME STANDARD="Brontë, Charlotte">CB</NAME> returned
+                                <NAME STANDARD="Gaskell, Elizabeth">Gaskell</NAME>'s visit with a four-day stay in
+                                <PLACE>
+                                    <SETTLEMENT>Manchester</SETTLEMENT>
+                                    <REGION REG="Lancashire" />
+                                    <GEOG REG="England" />
+                                </PLACE>.</CHRONPROSE>
+                            <BIBCITS>
+                                <BIBCIT PLACEHOLDER="Barker 752" DBREF="391">752</BIBCIT>
+                            </BIBCITS>
+                        </CHRONSTRUCT>
+                    </LOCATION>
+                </DIV1>
+                <DIV1>
+                    <FAMILY>
+                        <MEMBER RELATION="HUSBAND">
+                            <MARRIAGE>
+                                <CHRONSTRUCT RELEVANCE="DECADE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                    <DATE VALUE="1854-06-29">29 June 1854</DATE>
+                                    <CHRONPROSE>
+                                        <NAME STANDARD="Brontë, Charlotte">CB</NAME> married
+                                        <JOB>curate</JOB>
+                                        <NAME STANDARD="Nicholls, Arthur Bell">Arthur Bell Nicholls</NAME>. They honeymooned in
+                                        <PLACE>
+                                            <GEOG>Wales</GEOG>
+                                        </PLACE> and his native
+                                        <PLACE>
+                                            <GEOG>Ireland</GEOG>
+                                        </PLACE>.</CHRONPROSE>
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 757" DBREF="391">757</BIBCIT>
+                                    </BIBCITS>
+                                </CHRONSTRUCT>
+                            </MARRIAGE>
+                        </MEMBER>
+                    </FAMILY>
+                </DIV1>
+                <DIV1>
+                    <WEALTH>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>At the time of her marriage,
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> had money amounting to ¥1,678 9s 9d, most of it from the proceeds of her writing; it was settled on her for her sole use during her marriage.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 756" DBREF="391">756</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </WEALTH>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Pregnancy and Death</HEADING>
+                    <HEALTH ISSUE="FEMALEBODY">
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SYS">
+                                <DATE VALUE="1855-01-19" CERTAINTY="BY">January 1855</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> was pregnant and became ill.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="Barker 769" DBREF="391">769</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>She made her will a month later, in favour of her husband, instead of her father as stipulated in her marriage settlement.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 770" DBREF="391">770</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </HEALTH>
+                </DIV1>
+                <DIV1>
+                    <DEATH>
+                        <DIV2>
+                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                                <DATE VALUE="1855-03-31">31 March 1855</DATE>
+                                <CHRONPROSE>
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME>, Mrs Arthur Bell Nicholls, died at
+                                    <PLACE>
+                                        <SETTLEMENT>Haworth</SETTLEMENT>
+                                        <REGION REG="Yorkshire" />
+                                        <GEOG REG="England" />
+                                    </PLACE> of a
+                                    <CAUSE>chill</CAUSE>, which was called
+                                    <CAUSE>tuberculosis</CAUSE>. It is now generally supposed that she died because she was weakened by exceptionally heavy
+                                    <CAUSE>morning sickness in her pregnancy</CAUSE>.</CHRONPROSE>
+                                <BIBCITS>
+                                    <BIBCIT PLACEHOLDER="ODNB" DBREF="29268" />
+                                    <BIBCIT PLACEHOLDER="Barker 772" DBREF="391">772</BIBCIT>
+                                    <BIBCIT PLACEHOLDER="Gaskell 523" DBREF="392">523</BIBCIT>
+                                </BIBCITS>
+                            </CHRONSTRUCT>
+                            <SHORTPROSE>
+                                <P>Her body was placed in the family vault in
+                                    <PLACE>
+                                        <PLACENAME>Haworth Church</PLACENAME>
+                                        <SETTLEMENT REG="Haworth" />
+                                        <REGION REG="Yorkshire" />
+                                        <GEOG REG="England" />
+                                    </PLACE> on
+                                    <DATE VALUE="1855-04-04">April 4</DATE>. When
+                                    <NAME STANDARD="Gaskell, Elizabeth">Gaskell</NAME> heard of the circumstances of the death, she regretted she had not known; she would have hoped to save
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME>'s life by inducing the birth.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 773-4" DBREF="391">773-4</BIBCIT>
+                                    </BIBCITS>
+                                    <KEYWORDCLASS KEYWORDTYPE="Abortion">Health</KEYWORDCLASS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </DEATH>
+                </DIV1>
+                <DIV1>
+                    <HEADING>Biography and Scandal</HEADING>
+                    <FRIENDSASSOCIATES>
+                        <DIV2>
+                            <SHORTPROSE>
+                                <P>Numerous friends and acquaintances of
+                                    <NAME STANDARD="Brontë, Charlotte">CB</NAME> wrote tributes or obituaries which initiated the legend of the Brontës and Charlotte in particular:
+                                    <NAME STANDARD="Martineau, Harriet">Harriet Martineau</NAME> in the
+                                    <TITLE TITLETYPE="JOURNAL">Daily News</TITLE> on April 6;
+                                    <NAME STANDARD="Arnold, Matthew">Matthew Arnold</NAME> in a short poem in
+                                    <TITLE TITLETYPE="JOURNAL">Fraser's Magazine</TITLE> in May;
+                                    <NAME STANDARD="Gaskell, Elizabeth">Elizabeth Gaskell</NAME> anonymously in
+                                    <TITLE TITLETYPE="JOURNAL">Sharpe's London Magazine</TITLE> in June.</P>
+                                <P>Ironically, this last piece, with a much-reprinted and similarly exaggerated and gossipy account in the
+                                    <TITLE TITLETYPE="JOURNAL">Literary Gazette</TITLE>, prompted
+                                    <NAME STANDARD="Nussey, Ellen">Ellen Nussey</NAME> to suggest that Gaskell should write a true account of the life in order to set the rumours to rest.
+                                    <NAME STANDARD="Nicholls, Arthur Bell">Nicholls</NAME> agreed and
+                                    <NAME STANDARD="Brontë, Patrick">Patrick Brontë</NAME> wrote Gaskell to suggest an idea which had in fact already occurred to her.
+                                    <TITLE TITLETYPE="MONOGRAPHIC" REG="The Life of Charlotte Brontë">The Life of Charlotte Brontë</TITLE> proved scandalous in itself, and had to be altered to avoid a libel suit. It by no means dispelled all the myths, but presented a compelling, controversial, and enduring account of one of the century's most influential women writers.
+                                    <BIBCITS>
+                                        <BIBCIT PLACEHOLDER="Barker 775, 778-82, 800" DBREF="391">775, 778-82, 800</BIBCIT>
+                                    </BIBCITS>
+                                </P>
+                            </SHORTPROSE>
+                        </DIV2>
+                    </FRIENDSASSOCIATES>
+                </DIV1>
+                <WORKSCITED>
+                    <SOURCE>Unless otherwise noted, all information is from the FC .</SOURCE>
+                    <SOURCE>Barker, Juliet. The Brontës. 1994.</SOURCE>
+                    <SOURCE>Gaskell, Elizabeth. The Life of Charlotte Brontë. 1975.</SOURCE>
+                    <SOURCE>Gordon, Lyndall. Charlotte Brontë: A Passionate Life. 1994.</SOURCE>
+                    <SOURCE>Shelston, Alan. Introduction. 1975.</SOURCE>
+                </WORKSCITED>
+            </DIV0>
+        </BIOGRAPHY>
