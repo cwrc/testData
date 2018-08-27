@@ -88,7 +88,7 @@
                 <STANDARD>Shakespeare, William</STANDARD>
                 <DIV1>
                     <HEADING>Birth and Background</HEADING>
-                    <BIRTH>
+                    <!-- <BIRTH>
                         <DIV2>
                             <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="WRITINGCLIMATE" RESP="SYS">
                                 <DATE CALENDAR="NEWSTYLE" VALUE="1564-04-23" CERTAINTY="UNKNOWN">23 April 1564</DATE>
@@ -105,7 +105,7 @@
                                 <BIBCITS>
                                     <BIBCIT PLACEHOLDER="DNB" DBREF="1759" />
                                     <BIBCIT PLACEHOLDER="Concise Oxford Dic of Eng Lit 475" DBREF="10840">475</BIBCIT>
-                                </BIBCITS>
+                                </BIBCITS> -->
                                 <SCHOLARNOTE>
                                     <P>The date is virtually a guess. The child was baptised on
                                         <DATE CALENDAR="NEWSTYLE" VALUE="1564-04-26">26 April</DATE>; he eventually died on 23 April, which as the feast of St George, patron saint of England, is in this context a highly symbolic date. For all these reasons the attraction of 23 April as
@@ -128,23 +128,24 @@
                 </DIV1>
                 <DIV1>
                     <FAMILY>
-                        <MEMBER RELATION="MOTHER">
+                       <!--  <MEMBER RELATION="MOTHER">
                             <DIV2>
                                 <SHORTPROSE>
                                     <P>His mother, born Mary Arden as the youngest child in her family, was an executor for her father and brought landed property to her considerably older husband.
-                                        <BIBCITS>
-                                            <BIBCIT PLACEHOLDER="ODNB" DBREF="29268" />
+                                        <BIBCITS> -->
+                                       <!--      <BIBCIT PLACEHOLDER="ODNB" DBREF="29268" />
                                             <BIBCIT PLACEHOLDER="Greer 27" DBREF="48775">27</BIBCIT>
                                         </BIBCITS>
-                                    </P>
+                                    </P> -->
                                 </SHORTPROSE>
                             </DIV2>
                         </MEMBER>
                         <MEMBER RELATION="FATHER">
                             <DIV2>
                                 <SHORTPROSE>
-                                    <P>William's father, John Shakespeare, was a
-                                        <JOB>glover</JOB> by trade. He made money by buying property in Stratford, and held various civic offices in the town, but while William was in his teens the family finances declined sharply.
+                                <!--     <P>William's father, John Shakespeare, was a
+                                        <JOB>glover</JOB>  -->
+                                        by trade. He made money by buying property in Stratford, and held various civic offices in the town, but while William was in his teens the family finances declined sharply.
                                         <BIBCITS>
                                             <BIBCIT PLACEHOLDER="ODNB" DBREF="29268" />
                                         </BIBCITS>
@@ -156,7 +157,7 @@
                 </DIV1>
                 <DIV1>
                     <CULTURALFORMATION>
-                        <RELIGION>
+                        <!-- <RELIGION>
                             <DIV2>
                                 <SHORTPROSE>
                                     <P>Scholarly debate continues to rage on the question of whether
@@ -178,8 +179,8 @@
                                             <BIBCIT PLACEHOLDER="Greer 28" DBREF="48775">28</BIBCIT>
                                         </BIBCITS>
                                     </P>
-                                </SHORTPROSE>
-                                <CHRONSTRUCT RELEVANCE="DECADE" CHRONCOLUMN="SOCIALCLIMATE" RESP="IMG" CHRONCOLUMN1="WRITINGCLIMATE1" RELEVANCE1="COMPREHENSIVE1">
+                                </SHORTPROSE> -->
+                               <!--  <CHRONSTRUCT RELEVANCE="DECADE" CHRONCOLUMN="SOCIALCLIMATE" RESP="IMG" CHRONCOLUMN1="WRITINGCLIMATE1" RELEVANCE1="COMPREHENSIVE1">
                                     <DATE VALUE="1571-05-01">May Day 1571</DATE>
                                     <CHRONPROSE>A medieval painting of the Last Judgement on the walls of the Guild Chapel at
                                         <PLACE>
@@ -192,15 +193,15 @@
                                     <BIBCITS>
                                         <BIBCIT PLACEHOLDER="Dobson 7" DBREF="38414">7</BIBCIT>
                                     </BIBCITS>
-                                </CHRONSTRUCT>
-                                <SHORTPROSE>
+                                </CHRONSTRUCT> -->
+                              <!--   <SHORTPROSE>
                                     <P>Scholars speculating on Shakespeare's religion have read this as a symbol either of destruction of the old, concealment of the old, compromise, or (the view of
                                         <NAME STANDARD="Shapiro, James">James Shapiro</NAME>) the layered nature of Elizabethan belief.
                                         <BIBCITS>
                                             <BIBCIT PLACEHOLDER="Dobson 7" DBREF="38414">7</BIBCIT>
                                         </BIBCITS>
                                     </P>
-                                </SHORTPROSE>
+                                </SHORTPROSE> -->
                             </DIV2>
                         </RELIGION>
                     </CULTURALFORMATION>
@@ -236,7 +237,7 @@
                                     <DATE VALUE="1582-11-27">27 November 1582</DATE>
                                     <CHRONPROSE>
                                         <NAME STANDARD="Shakespeare, William">WS</NAME>, aged eighteen, took out a licence to marry
-                                        <NAME STANDARD="Shakespeare, Anne">Anne Hathaway</NAME>, who was already pregnant by him.</CHRONPROSE>
+                                       <!--  <NAME STANDARD="Shakespeare, Anne">Anne Hathaway</NAME>, who was already pregnant by him.</CHRONPROSE> -->
                                     <BIBCITS>
                                         <BIBCIT PLACEHOLDER="ODNB" DBREF="29268" />
                                     </BIBCITS>
@@ -245,7 +246,8 @@
                                     <P>Her name was given wrongly in the licence, which has given rise to various lines of speculation; however, there seems no good reason to doubt that Shakespeare intended from this date to marry the woman whom he did marry.
                                         <NAME STANDARD="Greer, Germaine">Germaine Greer</NAME> finds some bitter fun in tracing the progressive traducing of Anne Shakespeare by successive scholars to reach
                                         <NAME STANDARD="Greenblatt, Stephen">Stephen Greenblatt</NAME>'s belief that the prospect of sharing a grave with her filled her husband with horror and disgust.
-                                        <CHILDREN NUMBER="3">The couple had three children: a daughter, Susanna, followed by twins, Hamnet and Judith.</CHILDREN> Hamnet died young in
+                                   <!--      <CHILDREN NUMBER="3">The couple had three children: a daughter, Susanna, followed by twins, Hamnet and Judith.</CHILDREN>  -->
+                                        Hamnet died young in
                                         <DATE VALUE="1596-08">August 1596</DATE>.
                                         <BIBCITS>
                                             <BIBCIT PLACEHOLDER="Greer 5-9" DBREF="48775">5-9</BIBCIT>
@@ -276,7 +278,7 @@
                             </SHORTPROSE>
                         </DIV2>
                     </LOCATION>
-                    <LOCATION RELATIONTO="VISITED">
+                   <!--  <LOCATION RELATIONTO="VISITED">
                         <DIV2>
                             <SHORTPROSE>
                                 <P>After he became successful he made regular visits to
@@ -287,7 +289,7 @@
                                     </PLACE> and followed in his father's footsteps by buying property in the town.</P>
                             </SHORTPROSE>
                         </DIV2>
-                    </LOCATION>
+                    </LOCATION> -->
                 </DIV1>
                 <DIV1>
                     <HEADING>Acting Career</HEADING>
@@ -376,7 +378,7 @@
                 </DIV1>
                 <DIV1>
                     <HEADING>Love and Money</HEADING>
-                    <INTIMATERELATIONSHIPS EROTIC="EROTICPOSSIBLY">
+                   <!--  <INTIMATERELATIONSHIPS EROTIC="EROTICPOSSIBLY">
                         <DIV2>
                             <SHORTPROSE>
                                 <P>Speculations about Shakespeare's love-life stem from his sonnets, many of which read like (though they may not necessarily be) documents of impassioned self-expression. They seem to show him
@@ -384,10 +386,10 @@
                                     <SEXUALIDENTITY SELF-DEFINED="SELFNO" REG="heterosexual">sexually enthralled by a woman</SEXUALIDENTITY> whom he despises.</P>
                             </SHORTPROSE>
                         </DIV2>
-                    </INTIMATERELATIONSHIPS>
+                    </INTIMATERELATIONSHIPS> -->
                 </DIV1>
                 <DIV1>
-                    <WEALTH>
+                    <!-- <WEALTH>
                         <DIV2>
                             <SHORTPROSE>
                                 <P>In 1613
@@ -400,11 +402,11 @@
                                     </PLACE>. He sold his share in the Globe some time after the building burned down in June this year.</P>
                             </SHORTPROSE>
                         </DIV2>
-                    </WEALTH>
+                    </WEALTH> -->
                 </DIV1>
                 <DIV1>
                     <HEADING>Death</HEADING>
-                    <DEATH>
+                    <!-- <DEATH>
                         <DIV2>
                             <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="WRITINGCLIMATE" RESP="SYS">
                                 <DATE CALENDAR="NEWSTYLE" VALUE="1616-04-23">23 April 1616</DATE>
@@ -419,7 +421,7 @@
                                         <GEOG REG="England" />
                                     </PLACE>, the fine modern house he had bought with his theatrical earnings in
                                     <DATE CALENDAR="NEWSTYLE" VALUE="1597">1597</DATE>.</CHRONPROSE>
-                                <BIBCITS>
+                                <BIBCITS> -->
                                     <BIBCIT PLACEHOLDER="Concise Oxford Dic of Eng Lit 475" DBREF="10840">475</BIBCIT>
                                     <BIBCIT PLACEHOLDER="Rogers 127" DBREF="10889">127</BIBCIT>
                                 </BIBCITS>
