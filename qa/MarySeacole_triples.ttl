@@ -1,0 +1,408 @@
+#346 triples
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix ii: <http://sparql.cwrc.ca/ontologies/ii> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:seacma_LeisureContext1_identifying a cwrc:LeisureContext ;
+    rdfs:label "Seacole, Mary LeisureContext identifying annotation" ;
+    oa:hasBody data:Hohenlohe-Langenburg_Prince_Victor_of,
+        data:Seacole_Mary,
+        data:Simpson_William_1823_-_1899,
+        data:Weekes_Henry,
+        cwrc:Winchester_College_ORG ;
+    oa:hasTarget data:seacma_LeisureContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:seacma_PoliticalContext1_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Seacole, Mary PoliticalContext identifying annotation" ;
+    oa:hasBody data:Seacole_Mary ;
+    oa:hasTarget data:seacma_PoliticalContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:seacma_PoliticalContext2_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Seacole, Mary PoliticalContext identifying annotation" ;
+    oa:hasBody data:Seacole_Mary ;
+    oa:hasTarget data:seacma_PoliticalContext2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:seacma_RaceEthnicityContext1_describing a cwrc:RaceEthnicityContext ;
+    rdfs:label "Seacole, Mary RaceEthnicityContext describing annotation" ;
+    dcterms:subject data:Seacole_Mary,
+        cwrc:blackRaceColour,
+        cwrc:creoleEthnicity,
+        cwrc:creoleRaceColour,
+        cwrc:scottishRaceColour,
+        cwrc:whiteRaceColour,
+        "GB-SCT"^^xsd:string,
+        "JM"^^xsd:string,
+        "_yellow_"^^xsd:string ;
+    cwrc:hasIDependencyOn data:seacma_RaceEthnicityContext1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc:hasEthnicitySelfReported cwrc:creoleEthnicity ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc:hasRaceColourReported cwrc:blackRaceColour ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc:hasRaceColourSelfReported cwrc:scottishRaceColour ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc:hasRaceColourSelfReported cwrc:creoleRaceColour ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc:hasRaceColourReported cwrc:whiteRaceColour ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc:hasRaceColour \"_yellow_\"^^xsd:string ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc:hasNationalHeritageSelfReported \"JM\"^^xsd:string ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc:hasNationalHeritageSelfReported \"GB-SCT\"^^xsd:string ."^^xsd:string ] ;
+    oa:hasTarget data:Seacole_Mary,
+        data:seacma_RaceEthnicityContext1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:seacma_RaceEthnicityContext2_identifying a cwrc:RaceEthnicityContext ;
+    rdfs:label "Seacole, Mary RaceEthnicityContext identifying annotation" ;
+    oa:hasBody data:Seacole_Mary ;
+    oa:hasTarget data:seacma_RaceEthnicityContext2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:seacma_SpatialContext_inhabits_1_describing a cwrc:SpatialContext ;
+    rdfs:label "Seacole, Mary location describing annotation" ;
+    dcterms:subject data:Seacole_Mary,
+        <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/3562981/>,
+        <http://sws.geonames.org/3571815/>,
+        <http://sws.geonames.org/3723988/> ;
+    cwrc:hasIDependencyOn data:seacma_SpatialContext_inhabits_1_identifying ;
+    oa:hasTarget data:Seacole_Mary,
+        data:seacma_SpatialContext_inhabits_1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:seacma_SpatialContext_travelsTo_2_describing a cwrc:SpatialContext ;
+    rdfs:label "Seacole, Mary location describing annotation" ;
+    dcterms:subject data:Seacole_Mary,
+        <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/3489940/> ;
+    cwrc:hasIDependencyOn data:seacma_SpatialContext_travelsTo_2_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc:travelsTo <http://sws.geonames.org/2643743/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc:travelsTo <http://sws.geonames.org/3489940/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc:travelsTo <http://sws.geonames.org/2643743/> ."^^xsd:string ] ;
+    oa:hasTarget data:Seacole_Mary,
+        data:seacma_SpatialContext_travelsTo_2_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:seacma_ViolenceContext1_identifying a cwrc:ViolenceContext ;
+    rdfs:label "Seacole, Mary ViolenceContext identifying annotation" ;
+    oa:hasBody data:Seacole_Mary,
+        <http://sws.geonames.org/2017370/>,
+        <http://sws.geonames.org/703884/> ;
+    oa:hasTarget data:seacma_ViolenceContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:seacma_WealthContext1_identifying a cwrc:WealthContext ;
+    rdfs:label "Seacole, Mary WealthContext identifying annotation" ;
+    oa:hasBody data:Seacole_Mary,
+        <http://sws.geonames.org/2645804/>,
+        <http://sws.geonames.org/2657540/> ;
+    oa:hasTarget data:seacma_WealthContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:seacma_WealthContext2_identifying a cwrc:WealthContext ;
+    rdfs:label "Seacole, Mary WealthContext identifying annotation" ;
+    oa:hasBody data:Seacole_Mary,
+        cwrc:Times_TITLE,
+        <http://sws.geonames.org/2643743/> ;
+    oa:hasTarget data:seacma_WealthContext2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:seacma_WealthContext3_identifying a cwrc:WealthContext ;
+    rdfs:label "Seacole, Mary WealthContext identifying annotation" ;
+    oa:hasBody data:Seacole_Mary ;
+    oa:hasTarget data:seacma_WealthContext3_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:seacma_WealthContext4_identifying a cwrc:WealthContext ;
+    rdfs:label "Seacole, Mary WealthContext identifying annotation" ;
+    oa:hasBody data:Seacole_Mary ;
+    oa:hasTarget data:seacma_WealthContext4_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:seacma_WealthContext5_identifying a cwrc:WealthContext ;
+    rdfs:label "Seacole, Mary WealthContext identifying annotation" ;
+    oa:hasBody data:Seacole_Mary ;
+    oa:hasTarget data:seacma_WealthContext5_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:seacma_causeofdeath_context0_describing a cwrc:DeathContext ;
+    rdfs:label "Seacole, Mary DeathContext describing annotation" ;
+    dcterms:subject data:Seacole_Mary,
+        <http://sparql.cwrc.ca/ontologies/iiCerebrovascular_diseases_stroke> ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc:hasCauseOfDeath ii:Cerebrovascular_diseases_stroke ."^^xsd:string ] ;
+    oa:hasTarget data:Seacole_Mary,
+        data:seacma_causeofdeath_context0_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:seacmabirthContext_describing1 a cwrc:FriendsAndAssociatesContext ;
+    rdfs:label "Seacole_Mary birthContext describing annotation" ;
+    dcterms:subject data:Seacole_Mary,
+        "1805",
+        "Kingston, , Jamaica" ;
+    cwrc:hasIDependencyOn data:seacmabirthContextidentifying1 ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc.hasBirthPlace Kingston, , Jamaica" ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc.hasBirthDate 1805" ] ;
+    oa:hasTarget data:Seacole_Mary,
+        data:seacmabirthContext_snippet1 ;
+    oa:motivatedBy oa:describing .
+
+data:seacmadeathContext_describing1 a cwrc:FriendsAndAssociatesContext ;
+    rdfs:label "Seacole_Mary deathContext describing annotation" ;
+    dcterms:subject data:Seacole_Mary,
+        "1881-05-14",
+        "London, Middlesex, England" ;
+    cwrc:hasIDependencyOn data:seacmadeathContextidentifying1 ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc.hasDeathPlace London, Middlesex, England" ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc.hasDeathDate 1881-05-14" ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc.hasBurialPlace London, Middlesex, England" ] ;
+    oa:hasTarget data:Seacole_Mary,
+        data:seacmadeathContext_snippet1 ;
+    oa:motivatedBy oa:describing .
+
+data:seacmahasIntimateRelationshipsContext_describing1 a cwrc:IntimateRelationshipsContext ;
+    rdfs:label "Seacole_Mary hasIntimateRelationshipsContext describing annotation" ;
+    dcterms:subject data:Seacole_Mary,
+        data:intimate_relationship ;
+    cwrc:hasIDependencyOn data:seacmahasIntimateRelationshipsContextidentifying1 ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc.hasIntimateRelationshipWith data:intimate_relationship" ] ;
+    oa:hasTarget data:Seacole_Mary,
+        data:seacmahasIntimateRelationshipsContext_snippet1 ;
+    oa:motivatedBy oa:describing .
+
+data:Seacole_Edwin_Horatio a cwrc:NaturalPerson ;
+    foaf:name "Seacole, Edwin Horatio" .
+
+data:Seacole_Mary_Brother a cwrc:NaturalPerson ;
+    cwrc:hasPaidOccupation "Hotelier",
+        "Storekeeper" .
+
+data:Seacole_Mary_Father a cwrc:NaturalPerson ;
+    cwrc:hasPaidOccupation "Army Officer" .
+
+data:Seacole_Mary_Mother a cwrc:NaturalPerson ;
+    cwrc:hasFamilyBasedOccupation "Doctor" ;
+    cwrc:hasPaidOccupation "Boarding-House Keeper" .
+
+data:seacma_LeisureContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Seacole, Mary LeisureContext snippet" ;
+    dctypes:description "A bust of MS was sculpted by Henry Weekes in 1859. She had already been sketched, while in Crimea, by the war artist William Simpson. She was later the subject of another sculpture (by Count..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=seacma#BankruptcyandRecovery> .
+
+data:seacma_PoliticalContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Seacole, Mary PoliticalContext snippet" ;
+    dctypes:description "The full emancipation of the slaves in Jamaica finally took place in 1838, during the years of MS's marriage. Though she and all those close to her were free already, this event must have made..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=seacma#AnUnprotectedFemale> .
+
+data:seacma_PoliticalContext2_Snippet a oa:TextualBody ;
+    rdfs:label "Seacole, Mary PoliticalContext snippet" ;
+    dctypes:description "MS's work in the Crimea was driven by a passionate concern for the plight of the ordinary soldier. One memoir by a lieutenant describes her as beloved by the rank and file of the whole..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=seacma#BankruptcyandRecovery> .
+
+data:seacma_RaceEthnicityContext1_identifying a cwrc:RaceEthnicityContext ;
+    rdfs:label "Seacole, Mary RaceEthnicityContext identifying annotation" ;
+    oa:hasBody data:Seacole_Mary,
+        cwrc:blackRaceColour,
+        cwrc:creoleEthnicity,
+        cwrc:creoleRaceColour,
+        cwrc:scottishRaceColour,
+        cwrc:whiteRaceColour,
+        "GB-SCT"^^xsd:string,
+        "JM"^^xsd:string,
+        "_yellow_"^^xsd:string ;
+    oa:hasTarget data:seacma_RaceEthnicityContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:seacma_RaceEthnicityContext2_Snippet a oa:TextualBody ;
+    rdfs:label "Seacole, Mary RaceEthnicityContext snippet" ;
+    dctypes:description "Creole originally meant a person born in a colony of parents from elsewhere, whether white or black. This and its secondary meanings were usually inflected by racial prejudice."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=seacma#BirthandHeritage> .
+
+data:seacma_SpatialContext_inhabits_1_identifying a cwrc:SpatialContext ;
+    rdfs:label "Seacole, Mary location identifying annotation" ;
+    oa:hasBody data:Seacole_Mary,
+        <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/3562981/>,
+        <http://sws.geonames.org/3571815/>,
+        <http://sws.geonames.org/3723988/> ;
+    oa:hasTarget data:seacma_SpatialContext_inhabits_1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:seacma_SpatialContext_travelsTo_2_identifying a cwrc:SpatialContext ;
+    rdfs:label "Seacole, Mary location identifying annotation" ;
+    oa:hasBody data:Seacole_Mary,
+        <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/3489940/> ;
+    oa:hasTarget data:seacma_SpatialContext_travelsTo_2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:seacma_ViolenceContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Seacole, Mary ViolenceContext snippet" ;
+    dctypes:description "1855-56 MS worked on the battlefields of Crimea, at times under fire, unlike other nurses who usually worked in hospitals some distance from the field. 154259"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=seacma#TheCrimeaandEngland> .
+
+data:seacma_WealthContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Seacole, Mary WealthContext snippet" ;
+    dctypes:description "When Balaclava was evacuated, she had been unable to sell her provisions at anything near what they had originally cost. In England, she attempted unsuccessfully with her business partner to set up a store at..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=seacma#BankruptcyandRecovery> .
+
+data:seacma_WealthContext2_Snippet a oa:TextualBody ;
+    rdfs:label "Seacole, Mary WealthContext snippet" ;
+    dctypes:description "November 1856 MS, back in London from the Crimean war, was declared bankrupt by a court. Her plight attracted several letters of support addressed to the editor of The Times."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=seacma#BankruptcyandRecovery> .
+
+data:seacma_WealthContext3_Snippet a oa:TextualBody ;
+    rdfs:label "Seacole, Mary WealthContext snippet" ;
+    dctypes:description "28 July 1857 After MS had been discharged from her bankruptcy and had scored a success as an author, a Grand Military Festival was held to raise funds for her. 195-6553n23"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=seacma#BankruptcyandRecovery> .
+
+data:seacma_WealthContext4_Snippet a oa:TextualBody ;
+    rdfs:label "Seacole, Mary WealthContext snippet" ;
+    dctypes:description "Despite such unofficial attention, however, and although she was decorated for her service by the French, Turkish, and the English governments, MS was not granted the government pension she hints that she deserved.194xxxiii252"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=seacma#LaterLife> .
+
+data:seacma_WealthContext5_Snippet a oa:TextualBody ;
+    rdfs:label "Seacole, Mary WealthContext snippet" ;
+    dctypes:description "Her estate amounted to more than ¥2,500.252"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=seacma#IllnessandDeath> .
+
+data:seacma_causeofdeath_context0_Snippet a oa:TextualBody ;
+    rdfs:label "Seacole, Mary DeathContext snippet " ;
+    dctypes:description "MS died in prosperous circumstances. She had suffered an apoplexy two weeks before this, and spent three days in a coma."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=seacma#Death> .
+
+data:seacmabirthContextidentifying1 oa:hasBody data:Seacole_Mary,
+        "1805",
+        "Kingston, , Jamaica" ;
+    oa:hasTarget data:seacmabirthContext_snippet1 ;
+    oa:motivatedBy oa:describing .
+
+data:seacmadeathContextidentifying1 oa:hasBody data:Seacole_Mary,
+        "1881-05-14",
+        "London, Middlesex, England" ;
+    oa:hasTarget data:seacmadeathContext_snippet1 ;
+    oa:motivatedBy oa:describing .
+
+data:seacmahasIntimateRelationshipsContextidentifying1 oa:hasBody data:Seacole_Mary,
+        data:intimate_relationship ;
+    oa:hasTarget data:seacmahasIntimateRelationshipsContext_snippet1 ;
+    oa:motivatedBy oa:describing .
+
+data:intimate_relationship a cwrc:NaturalPerson ;
+    foaf:name "intimate relationship" .
+
+data:seacma_RaceEthnicityContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Seacole, Mary RaceEthnicityContext snippet" ;
+    dctypes:description "MS was a free-born Jamaican Creole, in the mixed-race sense of the term.Creole originally meant a person born in a colony of parents from elsewhere, whether white or black. This and its secondary meanings were..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=seacma#BirthandHeritage> .
+
+data:seacma_SpatialContext_inhabits_1_Snippet a oa:TextualBody ;
+    rdfs:label "Seacole, Mary location snippet" ;
+    dctypes:description "As a young woman, MS—who describes herself as indulging a longing to travel which will never leave me while I have health and vigour4—accompanied some relatives to England, where she experienced racism firsthand from streetboys..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=seacma#EarlyLifeandTravels> .
+
+data:seacma_SpatialContext_travelsTo_2_Snippet a oa:TextualBody ;
+    rdfs:label "Seacole, Mary location snippet" ;
+    dctypes:description "After April 1856 MS moved to London, to 14 Soho Square, after the Crimean War ended. In her last years she lived both there and in Jamaica.xxxii490 She notes without providing details that she detoured..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=seacma#TheCrimeaandEngland> .
+
+data:seacmabirthContext_snippet1 a oa:TextualBody ;
+    rdfs:label "Seacole_Mary birthContext snippet" ;
+    dctypes:description "1805 MSwas born Mary Grant, in Kingston, Jamaica, one of two children. 246" .
+
+data:seacmadeathContext_snippet1 a oa:TextualBody ;
+    rdfs:label "Seacole_Mary deathContext snippet" ;
+    dctypes:description """14 May 1881 MSdied in prosperous circumstances. She had suffered an apoplexytwo weeks before this, and spent three days in a coma. xxxiii 252 Her grave lies as she requested in the Roman Catholic section of Kensal Green Cemetery in London . Her estate amounted to more than ¥2,500. 252
+Her grave lies as she requested in the Roman Catholic section of Kensal Green Cemetery in London . 252""" .
+
+data:seacmahasIntimateRelationshipsContext_snippet1 a oa:TextualBody ;
+    rdfs:label "Seacole_Mary hasIntimateRelationshipsContext snippet" ;
+    dctypes:description "MSstressed that she was self-supporting and independent by choice: it was from confidence in my own powers, and not at all from necessity, that I remained an unprotected female . . . . [o]ne of the hardest struggles of my life in Kingston was to resist the pressing candidates for the late Mr. Seacole's shoes. 8" .
+
+data:Seacole_Mary a cwrc:NaturalPerson ;
+    rdfs:label "Seacole, Mary"^^xsd:string ;
+    cwrc:hasBirthDate "1805" ;
+    cwrc:hasBirthPlace "Kingston, , Jamaica" ;
+    cwrc:hasBrother data:Seacole_Mary_Brother ;
+    cwrc:hasBurialPlace "London, Middlesex, England" ;
+    cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/iiCerebrovascular_diseases_stroke> ;
+    cwrc:hasDeathDate "1881-05-14" ;
+    cwrc:hasDeathPlace "London, Middlesex, England" ;
+    cwrc:hasEthnicitySelfReported cwrc:creoleEthnicity ;
+    cwrc:hasFather data:Seacole_Mary_Father ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasHusband data:Seacole_Edwin_Horatio ;
+    cwrc:hasIntimateRelationshipWith "Intimate Relationship" ;
+    cwrc:hasMother data:Seacole_Mary_Mother ;
+    cwrc:hasNationalHeritageSelfReported "GB-SCT"^^xsd:string,
+        "JM"^^xsd:string ;
+    cwrc:hasRaceColour "_yellow_"^^xsd:string ;
+    cwrc:hasRaceColourReported cwrc:blackRaceColour,
+        cwrc:whiteRaceColour ;
+    cwrc:hasRaceColourSelfReported cwrc:creoleRaceColour,
+        cwrc:scottishRaceColour ;
+    cwrc:travelsTo <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/3489940/> ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=seacma> ;
+    foaf:name "Seacole, Mary"^^xsd:string .

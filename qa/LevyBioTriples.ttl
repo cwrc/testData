@@ -1,93 +1,813 @@
+#735 triples
+
 @prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
 @prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
 @prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix ii: <http://sparql.cwrc.ca/ontologies/ii> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:levyam_politics_context0 a cwrc:PoliticalContext ;
-    oa:hasBody data:levyam_politics_context0_annotationbody ;
-    oa:hasTarget data:levyam ;
+data:levyamFriendsAndAssociatesContext_describing1 a cwrc:FriendsAndAssociatesContext ;
+    rdfs:label "Levy_Amy FriendsAndAssociatesContext describing annotation" ;
+    dcterms:subject data:Birrell_Augustine,
+        data:Black_Clementina,
+        data:Blomfield_Dorothy,
+        data:Cornford_Frances,
+        data:Darwin_Ellen_Wordsworth,
+        data:Garnett_Constance,
+        data:Harkness_Margaret,
+        data:Lee_Sidney,
+        data:Lee_Vernon,
+        data:Levy_Amy,
+        data:Marx_Eleanor,
+        data:Pearson_Karl,
+        data:Radford_Dollie_Maitland,
+        data:Robinson_A_Mary_F,
+        data:Schreiner_Olive,
+        data:Shaw_George_Bernard,
+        data:Thomas_Bertha,
+        data:Webb_Beatrice,
+        data:Zimmern_Helen ;
+    cwrc:hasIDependencyOn data:levyamFriendsAndAssociatesContextidentifying1 ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasInterpersonalRelationshipWith data:Darwin_Ellen_Wordsworth" ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasInterpersonalRelationshipWith data:Thomas_Bertha" ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasInterpersonalRelationshipWith data:Cornford_Frances" ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasInterpersonalRelationshipWith data:Birrell_Augustine" ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasInterpersonalRelationshipWith data:Harkness_Margaret" ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasInterpersonalRelationshipWith data:Robinson_A_Mary_F" ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasInterpersonalRelationshipWith data:Black_Clementina" ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasInterpersonalRelationshipWith data:Schreiner_Olive" ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasInterpersonalRelationshipWith data:Zimmern_Helen" ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasInterpersonalRelationshipWith data:Blomfield_Dorothy" ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasInterpersonalRelationshipWith data:Marx_Eleanor" ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasInterpersonalRelationshipWith data:Lee_Sidney" ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasInterpersonalRelationshipWith data:Shaw_George_Bernard" ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasInterpersonalRelationshipWith data:Webb_Beatrice" ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasInterpersonalRelationshipWith data:Pearson_Karl" ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasInterpersonalRelationshipWith data:Garnett_Constance" ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasInterpersonalRelationshipWith data:Radford_Dollie_Maitland" ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasInterpersonalRelationshipWith data:Lee_Vernon" ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyamFriendsAndAssociatesContext_snippet1 ;
     oa:motivatedBy oa:describing .
 
-#data:levyam_raceandethnicity_context1 a cwrc:RaceEthnicityContext ;
-   # dcterms:subject cwrc:jewishEthnicity ;
-   # oa:hasBody data:levyam_raceandethnicity_context1_annotationbody ;
-   #oa:hasTarget data:levyam ;
-   #oa:motivatedBy oa:describing .
+data:levyamFriendsAndAssociatesContext_describing2 a cwrc:FriendsAndAssociatesContext ;
+    rdfs:label "Levy_Amy FriendsAndAssociatesContext describing annotation" ;
+    dcterms:subject data:Fawcett_Millicent_Garrett,
+        data:Levy_Amy,
+        data:Schreiner_Olive,
+        data:Yeats_W_B ;
+    cwrc:hasIDependencyOn data:levyamFriendsAndAssociatesContextidentifying2 ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasInterpersonalRelationshipWith data:Yeats_W_B" ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasInterpersonalRelationshipWith data:Schreiner_Olive" ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasInterpersonalRelationshipWith data:Fawcett_Millicent_Garrett" ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyamFriendsAndAssociatesContext_snippet2 ;
+    oa:motivatedBy oa:describing .
 
-#data:levyam_religion_context1 a cwrc:ReligionContext ;
- #   dcterms:subject cwrc:judaism ;
-   # oa:hasBody data:levyam_religion_context1_annotationbody ;
-    #oa:hasTarget data:levyam ;
-    #oa:motivatedBy oa:describing .
+data:levyam_CulturalFormContext1_describing a cwrc:CulturalFormContext ;
+    rdfs:label "Levy, Amy CulturalFormContext describing annotation" ;
+    dcterms:subject data:Levy_Amy,
+        data:Price_James_Warwick,
+        cwrc:Anglican_Church_ORG,
+        cwrc:anglicanism,
+        cwrc:judaism,
+        cwrc:upper-middleClass,
+        <http://sws.geonames.org/2643743/>,
+        "GB-ENG"^^xsd:string ;
+    cwrc:hasIDependencyOn data:levyam_CulturalFormContext1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:hasReligionSelfReported cwrc:judaism ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy org:memberOf cwrc:Anglican_Church_ORG ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:hasReligion cwrc:anglicanism ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:hasNationalHeritageSelfReported \"GB-ENG\"^^xsd:string ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:hasSocialClass cwrc:upper-middleClass ."^^xsd:string ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyam_CulturalFormContext1_Snippet ;
+    oa:motivatedBy oa:describing .
 
-#cwrc:levyamdeathContext1 cwrc:hasdescription "The following year the novelist Grant Allen , an opponent of higher education for women, attributed her suicide directly to her time at university. Beckman considers many possible reasons—a broken love-affair, her lesbianism, her deafness, the growing antisemitism of English society, the hostile reception of Reuben Sachs , possible fears of inherited insanity, or simple body chemistry—but comes to no definite conclusion. 3, 7, 203-210, 318  As to her sensitivity to adverse criticism, in 1884 she had written of herself and Ernest Radford , It's a good thing we are not of Keats -like sensibility, otherwise we shd. long ago have been snuffed out by the various articles of kind critics. 248" ;
- #   oa:hasTarget <http://example.org/Amy_Levy> .
+data:levyam_CulturalFormContext2_identifying a cwrc:CulturalFormContext ;
+    rdfs:label "Levy, Amy CulturalFormContext identifying annotation" ;
+    oa:hasBody data:Levy_Amy,
+        data:Price_James_Warwick ;
+    oa:hasTarget data:levyam_CulturalFormContext2_Snippet ;
+    oa:motivatedBy oa:identifying .
 
-#cwrc:levyamdeathContext2 cwrc:hasdescription "As to her sensitivity to adverse criticism, in 1884 she had written of herself and Ernest Radford , It's a good thing we are not of Keats -like sensibility, otherwise we shd. long ago have been snuffed out by the various articles of kind critics. 248" ;
- #   oa:hasTarget <http://example.org/Amy_Levy> .
+data:levyam_CulturalFormContext3_describing a cwrc:CulturalFormContext ;
+    rdfs:label "Levy, Amy CulturalFormContext describing annotation" ;
+    dcterms:subject data:Levy_Amy,
+        cwrc:lesbian ;
+    cwrc:hasIDependencyOn data:levyam_CulturalFormContext3_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:hasSexuality cwrc:lesbian ."^^xsd:string ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyam_CulturalFormContext3_Snippet ;
+    oa:motivatedBy oa:describing .
 
-#cwrc:levyamdeathContext3 cwrc:hasdescription "On 13 September AL became the first Jewish woman to be cremated in England . Her ashes are buried at Balls Pond Cemetery in London . 214" ;
- #   oa:hasTarget <http://example.org/Amy_Levy> .
+data:levyam_LeisureContext1_identifying a cwrc:LeisureContext ;
+    rdfs:label "Levy, Amy LeisureContext identifying annotation" ;
+    oa:hasBody data:Black_Clementina,
+        data:Levy_Amy,
+        data:Pearson_Karl,
+        cwrc:Men_and_Womens_Club_ORG,
+        cwrc:University_Womens_Club_ORG ;
+    oa:hasTarget data:levyam_LeisureContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
 
-data:levyam_politics_context0_annotationbody a oa:choice ;
-    as:items data:levyam_politics_context0_item1_snippettext .
+data:levyam_LeisureContext2_identifying a cwrc:LeisureContext ;
+    rdfs:label "Levy, Amy LeisureContext identifying annotation" ;
+    oa:hasBody data:Levy_Amy ;
+    oa:hasTarget data:levyam_LeisureContext2_Snippet ;
+    oa:motivatedBy oa:identifying .
 
-#data:levyam_politics_context0_item1_snippettext a dctypes:text ;
- #   dctypes:description "Her friendship with highly politicised women does not mean, however, that she shared their left-wing views.130"^^xsd:string .
+data:levyam_MentalHealthContext1_identifying a cwrc:MentalHealthContext ;
+    rdfs:label "Levy, Amy MentalHealthContext identifying annotation" ;
+    oa:hasBody data:Levy_Amy,
+        <http://www.geonames.org/7300021/mawgan-in-pydar.html> ;
+    oa:hasTarget data:levyam_MentalHealthContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
 
-data:levyam_raceandethnicity_context1_annotationbody a oa:choice ;
-    as:items data:levyam_raceandethnicity_context1_item1_snippettext,
-        cwrc:jewishEthnicity .
+data:levyam_PhysicalHealthContext2_identifying a cwrc:PhysicalHealthContext ;
+    rdfs:label "Levy, Amy PhysicalHealthContext identifying annotation" ;
+    oa:hasBody data:Levy_Amy ;
+    oa:hasTarget data:levyam_PhysicalHealthContext2_Snippet ;
+    oa:motivatedBy oa:identifying .
 
-#data:levyam_raceandethnicity_context1_item1_snippettext a dctypes:text ;
- #   dctypes:description "Being Jewish must have posed problems for AL, problems which seem to have been exacerbated by struggles with an internalised anti-semitism. She apparently thought of herself as unattractive to a degree quite at odds with..."^^xsd:string .
+data:levyam_PoliticalContext1_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Levy, Amy PoliticalContext identifying annotation" ;
+    oa:hasBody data:Levy_Amy ;
+    oa:hasTarget data:levyam_PoliticalContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
 
-data:levyam_religion_context1_annotationbody a oa:choice ;
-    as:items data:levyam_religion_context1_item1_snippettext,
-        cwrc:judaism .
+data:levyam_RaceEthnicityContext1_describing a cwrc:RaceEthnicityContext ;
+    rdfs:label "Levy, Amy RaceEthnicityContext describing annotation" ;
+    dcterms:subject data:Levy_Amy,
+        cwrc:jewishEthnicity,
+        <http://sws.geonames.org/2935022/> ;
+    cwrc:hasIDependencyOn data:levyam_RaceEthnicityContext1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:hasEthnicity cwrc:jewishEthnicity ."^^xsd:string ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyam_RaceEthnicityContext1_Snippet ;
+    oa:motivatedBy oa:describing .
 
-#data:levyam_religion_context1_item1_snippettext a dctypes:text ;
- #   dctypes:description "Her time in Dresden crystallized her mixed feelings about the practice of her religion. Visiting the synagogue (for Yom Kippur) disgusted her: she said that German Jews made her feel anti-semitic.45 Zion unventilated & unrefreshed..."^^xsd:string .
+data:levyam_ReligionContext1_describing a cwrc:ReligionContext ;
+    rdfs:label "Levy, Amy ReligionContext describing annotation" ;
+    dcterms:subject data:Beckman_Linda_Hunt,
+        cwrc:Judaism_ORG,
+        cwrc:judaism,
+        <http://sws.geonames.org/2935022/> ;
+    cwrc:hasIDependencyOn data:levyam_ReligionContext1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy org:memberOf cwrc:Judaism_ORG ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:hasReligionSelfReported cwrc:judaism ."^^xsd:string ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyam_ReligionContext1_Snippet ;
+    oa:motivatedBy oa:describing .
 
-<http://example.org/Amy_Levy_Brother> a cwrc:NaturalPerson .
+data:levyam_SpatialContext_inhabits_1_describing a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy location describing annotation" ;
+    dcterms:subject data:Levy_Amy,
+        <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/2654710/> ;
+    cwrc:hasIDependencyOn data:levyam_SpatialContext_inhabits_1_identifying ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyam_SpatialContext_inhabits_1_Snippet ;
+    oa:motivatedBy oa:describing .
 
-<http://example.org/Amy_Levy_Sister> a cwrc:NaturalPerson .
+data:levyam_SpatialContext_travelsTo_2_describing a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy location describing annotation" ;
+    dcterms:subject data:Levy_Amy,
+        <http://sws.geonames.org/2653941/>,
+        <http://sws.geonames.org/2654710/>,
+        <http://sws.geonames.org/2659811/>,
+        <http://sws.geonames.org/2935022/>,
+        <http://sws.geonames.org/2953505/>,
+        <http://sws.geonames.org/2994313/>,
+        <http://sws.geonames.org/3021411/>,
+        <http://sws.geonames.org/3038032/>,
+        "Mont Sainte-Odile,Vosges,France" ;
+    cwrc:hasIDependencyOn data:levyam_SpatialContext_travelsTo_2_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:travelsTo <http://sws.geonames.org/2935022/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:travelsTo <http://sws.geonames.org/2953505/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:travelsTo <http://sws.geonames.org/2659811/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:travelsTo <http://sws.geonames.org/2654710/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:travelsTo <http://sws.geonames.org/3021411/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:travelsTo <http://sws.geonames.org/2653941/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:travelsTo <http://sws.geonames.org/3038032/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:travelsTo <http://sws.geonames.org/2994313/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:travelsTo \"Mont Sainte-Odile,Vosges,France\" ."^^xsd:string ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyam_SpatialContext_travelsTo_2_Snippet ;
+    oa:motivatedBy oa:describing .
 
-#<http://example.org/Isabelle_Levy> a cwrc:NaturalPerson ;
- #   cwrc:hasName "Isabelle Levy" .
+data:levyam_SpatialContext_travelsTo_3_describing a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy location describing annotation" ;
+    dcterms:subject data:Black_Clementina,
+        data:Browning_Elizabeth_Barrett,
+        data:Browning_Robert,
+        data:Levy_Amy,
+        <http://sws.geonames.org/3176959/> ;
+    cwrc:hasIDependencyOn data:levyam_SpatialContext_travelsTo_3_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:travelsTo <http://sws.geonames.org/3176959/> ."^^xsd:string ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyam_SpatialContext_travelsTo_3_Snippet ;
+    oa:motivatedBy oa:describing .
 
-#<http://example.org/Lewis_Levy> a cwrc:NaturalPerson ;
- #   cwrc:hasJob "Merchant",
-  #      "Pedlar",
-   #     "Stockbroker" ;
-    #cwrc:hasName "Lewis Levy" .
+data:levyam_SpatialContext_travelsTo_4_describing a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy location describing annotation" ;
+    dcterms:subject data:Levy_Amy,
+        <http://sws.geonames.org/2988507/>,
+        <http://sws.geonames.org/3176959/> ;
+    cwrc:hasIDependencyOn data:levyam_SpatialContext_travelsTo_4_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:travelsTo <http://sws.geonames.org/2988507/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:travelsTo <http://sws.geonames.org/3176959/> ."^^xsd:string ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyam_SpatialContext_travelsTo_4_Snippet ;
+    oa:motivatedBy oa:describing .
 
-# a cwrc:NaturalPerson ;
-#    cwrc:hasEthnicity cwrc:jewishEthnicity ;
-#    cwrc:hasGender cwrc:woman ;
-#    cwrc:hasReligionSelfReported cwrc:judaism ;
-#    foaf:name "Levy, Amy" .
+data:levyam_WealthContext1_identifying a cwrc:WealthContext ;
+    rdfs:label "Levy, Amy WealthContext identifying annotation" ;
+    oa:hasBody data:Levy_Amy ;
+    oa:hasTarget data:levyam_WealthContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
 
-#<http://example.org/Amy_Levy> a cwrc:NaturalPerson ;
- #   cwrc:hasBirthDate "1861-11-10" ;
-  #  cwrc:hasBirthPlace "Lambeth, Surrey, England" ;
-   # cwrc:hasBrother <http://example.org/Amy_Levy_Brother> ;
-   # cwrc:hasDeathCause "asphyxiated by carbon monoxide",
-    #    "suicide" ;
-   # cwrc:hasDeathDate "1889-09-10" ;
-    #cwrc:hasDeathPlace "London, Middlesex, England" ;
- #   cwrc:hasEroticRelationship "Edith Creak",
-       # "Linda Hunt Beckman", 
-        #AGL: why doesnt the above specify EROTICPOSSIBLYYES?
-    #    "Vernon Lee" ;
-  #  cwrc:hasFather <http://example.org/Lewis_Levy> ;
-   # cwrc:hasMother <http://example.org/Isabelle_Levy> ;
-   # cwrc:hasName "Amy Levy" ;
-   # cwrc:hasSister <http://example.org/Amy_Levy_Sister> .
+data:levyam_WealthContext2_identifying a cwrc:WealthContext ;
+    rdfs:label "Levy, Amy WealthContext identifying annotation" ;
+    oa:hasBody data:Levy_Amy,
+        <http://sws.geonames.org/3176959/> ;
+    oa:hasTarget data:levyam_WealthContext2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_causeofdeath_context0_describing a cwrc:DeathContext ;
+    rdfs:label "Levy, Amy DeathContext describing annotation" ;
+    dcterms:subject data:Levy_Amy,
+        <http://sparql.cwrc.ca/ontologies/iiIntentional_self-harm> ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:hasCauseOfDeath ii:Intentional_self-harm ."^^xsd:string ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyam_causeofdeath_context0_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:levyambirthContext_describing1 a cwrc:FriendsAndAssociatesContext ;
+    rdfs:label "Levy_Amy birthContext describing annotation" ;
+    dcterms:subject data:Levy_Amy,
+        "1861-11-10",
+        "London, Surrey, England" ;
+    cwrc:hasIDependencyOn data:levyambirthContextidentifying1 ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasBirthPlace London, Surrey, England" ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasBirthDate 1861-11-10" ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyambirthContext_snippet1 ;
+    oa:motivatedBy oa:describing .
+
+data:levyamdeathContext_describing1 a cwrc:FriendsAndAssociatesContext ;
+    rdfs:label "Levy_Amy deathContext describing annotation" ;
+    dcterms:subject data:Levy_Amy,
+        "1889-09-10",
+        "London, Middlesex, England" ;
+    cwrc:hasIDependencyOn data:levyamdeathContextidentifying1 ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasDeathPlace London, Middlesex, England" ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasDeathDate 1889-09-10" ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyamdeathContext_snippet1 ;
+    oa:motivatedBy oa:describing .
+
+data:levyamhasIntimateRelationshipsContext_describing1 a cwrc:IntimateRelationshipsContext ;
+    rdfs:label "Levy_Amy hasIntimateRelationshipsContext describing annotation" ;
+    dcterms:subject data:Creak_Edith,
+        data:Levy_Amy ;
+    cwrc:hasIDependencyOn data:levyamhasIntimateRelationshipsContextidentifying1 ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasEroticRelationshipWith data:Creak_Edith" ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyamhasIntimateRelationshipsContext_snippet1 ;
+    oa:motivatedBy oa:describing .
+
+data:levyamhasIntimateRelationshipsContext_describing2 a cwrc:IntimateRelationshipsContext ;
+    rdfs:label "Levy_Amy hasIntimateRelationshipsContext describing annotation" ;
+    dcterms:subject data:Lee_Vernon,
+        data:Levy_Amy ;
+    cwrc:hasIDependencyOn data:levyamhasIntimateRelationshipsContextidentifying2 ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasEroticRelationshipWith data:Lee_Vernon" ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyamhasIntimateRelationshipsContext_snippet2 ;
+    oa:motivatedBy oa:describing .
+
+data:levyamhasIntimateRelationshipsContext_describing3 a cwrc:IntimateRelationshipsContext ;
+    rdfs:label "Levy_Amy hasIntimateRelationshipsContext describing annotation" ;
+    dcterms:subject data:Beckman_Linda_Hunt,
+        data:Levy_Amy ;
+    cwrc:hasIDependencyOn data:levyamhasIntimateRelationshipsContextidentifying3 ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc.hasPossiblyEroticRelationshipWith data:Beckman_Linda_Hunt" ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyamhasIntimateRelationshipsContext_snippet3 ;
+    oa:motivatedBy oa:describing .
+
+data:Levy_Amy_Brother a cwrc:NaturalPerson .
+
+data:Levy_Amy_Sister a cwrc:NaturalPerson .
+
+data:Levy_Isabelle a cwrc:NaturalPerson ;
+    foaf:name "Levy, Isabelle" .
+
+data:Levy_Lewis a cwrc:NaturalPerson ;
+    cwrc:hasPaidOccupation "Merchant",
+        "Pedlar",
+        "Stockbroker" ;
+    foaf:name "Levy, Lewis" .
+
+data:levyamFriendsAndAssociatesContextidentifying1 oa:hasBody data:Birrell_Augustine,
+        data:Black_Clementina,
+        data:Blomfield_Dorothy,
+        data:Cornford_Frances,
+        data:Darwin_Ellen_Wordsworth,
+        data:Garnett_Constance,
+        data:Harkness_Margaret,
+        data:Lee_Sidney,
+        data:Lee_Vernon,
+        data:Levy_Amy,
+        data:Marx_Eleanor,
+        data:Pearson_Karl,
+        data:Radford_Dollie_Maitland,
+        data:Robinson_A_Mary_F,
+        data:Schreiner_Olive,
+        data:Shaw_George_Bernard,
+        data:Thomas_Bertha,
+        data:Webb_Beatrice,
+        data:Zimmern_Helen ;
+    oa:hasTarget data:levyamFriendsAndAssociatesContext_snippet1 ;
+    oa:motivatedBy oa:describing .
+
+data:levyamFriendsAndAssociatesContextidentifying2 oa:hasBody data:Fawcett_Millicent_Garrett,
+        data:Levy_Amy,
+        data:Schreiner_Olive,
+        data:Yeats_W_B ;
+    oa:hasTarget data:levyamFriendsAndAssociatesContext_snippet2 ;
+    oa:motivatedBy oa:describing .
+
+data:levyam_CulturalFormContext1_identifying a cwrc:CulturalFormContext ;
+    rdfs:label "Levy, Amy CulturalFormContext identifying annotation" ;
+    oa:hasBody data:Levy_Amy,
+        data:Price_James_Warwick,
+        cwrc:Anglican_Church_ORG,
+        cwrc:anglicanism,
+        cwrc:judaism,
+        cwrc:upper-middleClass,
+        <http://sws.geonames.org/2643743/>,
+        "GB-ENG"^^xsd:string ;
+    oa:hasTarget data:levyam_CulturalFormContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_CulturalFormContext2_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy CulturalFormContext snippet" ;
+    dctypes:description "Many reference books still repeat the mistaken story, which originated in an essay published in 1912 by James Warwick Price, that she came from a poverty-stricken background, had very little schooling, and later worked in..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#BirthandFamily> .
+
+data:levyam_CulturalFormContext3_identifying a cwrc:CulturalFormContext ;
+    rdfs:label "Levy, Amy CulturalFormContext identifying annotation" ;
+    oa:hasBody data:Levy_Amy,
+        cwrc:lesbian ;
+    oa:hasTarget data:levyam_CulturalFormContext3_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_LeisureContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy LeisureContext snippet" ;
+    dctypes:description "She confessed also that to live like Clementina Black and her sister, doing their own housework, did not accord with my own Philistine, middle class notions of comfort. 255 She engaged, however, in socially provocative..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#Friends> .
+
+data:levyam_LeisureContext2_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy LeisureContext snippet" ;
+    dctypes:description "AL's final months of life were crowded and active. She attended concerts, plays, and lectures, visited galleries and museums, gave an ambitious party, and took her nieces and nephews on outings."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#ALastYear> .
+
+data:levyam_MentalHealthContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy MentalHealthContext snippet" ;
+    dctypes:description "Throughout AL's life her letters refer to the depression which lurked constantly at the edges of her consciousness. In autumn 1885, a few months after her elder sister married, she attempted suicide and was sent..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#HealthProblems> .
+
+data:levyam_PhysicalHealthContext2_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy PhysicalHealthContext snippet" ;
+    dctypes:description "She suffered various problems too with her physical health. In 1881 she had neuralgia and in 1884 an ulcerated sore throat. Her most serious trouble was deafness, which was already bothering her before she was..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#HealthProblems> .
+
+data:levyam_PoliticalContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy PoliticalContext snippet" ;
+    dctypes:description "Her friendship with highly politicised women does not mean, however, that she shared their left-wing views. 130"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#Friends> .
+
+data:levyam_RaceEthnicityContext1_identifying a cwrc:RaceEthnicityContext ;
+    rdfs:label "Levy, Amy RaceEthnicityContext identifying annotation" ;
+    oa:hasBody data:Levy_Amy,
+        cwrc:jewishEthnicity,
+        <http://sws.geonames.org/2935022/> ;
+    oa:hasTarget data:levyam_RaceEthnicityContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_ReligionContext1_identifying a cwrc:ReligionContext ;
+    rdfs:label "Levy, Amy ReligionContext identifying annotation" ;
+    oa:hasBody data:Beckman_Linda_Hunt,
+        data:Levy_Amy,
+        cwrc:Judaism_ORG,
+        cwrc:judaism,
+        <http://sws.geonames.org/2935022/> ;
+    oa:hasTarget data:levyam_ReligionContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_SpatialContext_inhabits_1_identifying a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy location identifying annotation" ;
+    oa:hasBody data:Levy_Amy,
+        <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/2654710/> ;
+    oa:hasTarget data:levyam_SpatialContext_inhabits_1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_SpatialContext_travelsTo_2_identifying a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy location identifying annotation" ;
+    oa:hasBody data:Levy_Amy,
+        <http://sws.geonames.org/2653941/>,
+        <http://sws.geonames.org/2654710/>,
+        <http://sws.geonames.org/2659811/>,
+        <http://sws.geonames.org/2935022/>,
+        <http://sws.geonames.org/2953505/>,
+        <http://sws.geonames.org/2994313/>,
+        <http://sws.geonames.org/3021411/>,
+        <http://sws.geonames.org/3038032/>,
+        "Mont Sainte-Odile,Vosges,France" ;
+    oa:hasTarget data:levyam_SpatialContext_travelsTo_2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_SpatialContext_travelsTo_3_identifying a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy location identifying annotation" ;
+    oa:hasBody data:Black_Clementina,
+        data:Browning_Elizabeth_Barrett,
+        data:Browning_Robert,
+        data:Levy_Amy,
+        <http://sws.geonames.org/3176959/> ;
+    oa:hasTarget data:levyam_SpatialContext_travelsTo_3_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_SpatialContext_travelsTo_4_identifying a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy location identifying annotation" ;
+    oa:hasBody data:Levy_Amy,
+        <http://sws.geonames.org/2988507/>,
+        <http://sws.geonames.org/3176959/> ;
+    oa:hasTarget data:levyam_SpatialContext_travelsTo_4_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_WealthContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy WealthContext snippet" ;
+    dctypes:description "A younger relative's account—that Amy's father and uncle lost every penny they had on the Stock Exchange—was undoubtedly exaggerated. 135"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#VernonLee> .
+
+data:levyam_WealthContext2_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy WealthContext snippet" ;
+    dctypes:description "1887 AL's family suffered a financial setback severe enough to prevent her return to Florence . 135"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#VernonLee> .
+
+data:levyam_causeofdeath_context0_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy DeathContext snippet " ;
+    dctypes:description "AL committed suicide at her parents' home at 7 Endsleigh Gardens, Bloomsbury, by burning charcoal in a small enclosed room, till she was asphyxiated by carbon monoxide."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#Death> .
+
+data:levyambirthContextidentifying1 oa:hasBody data:Levy_Amy,
+        "1861-11-10",
+        "London, Surrey, England" ;
+    oa:hasTarget data:levyambirthContext_snippet1 ;
+    oa:motivatedBy oa:describing .
+
+data:levyamdeathContextidentifying1 oa:hasBody data:Levy_Amy,
+        "1889-09-10",
+        "London, Middlesex, England" ;
+    oa:hasTarget data:levyamdeathContext_snippet1 ;
+    oa:motivatedBy oa:describing .
+
+data:levyamhasIntimateRelationshipsContextidentifying1 oa:hasBody data:Creak_Edith,
+        data:Levy_Amy ;
+    oa:hasTarget data:levyamhasIntimateRelationshipsContext_snippet1 ;
+    oa:motivatedBy oa:describing .
+
+data:levyamhasIntimateRelationshipsContextidentifying2 oa:hasBody data:Lee_Vernon,
+        data:Levy_Amy ;
+    oa:hasTarget data:levyamhasIntimateRelationshipsContext_snippet2 ;
+    oa:motivatedBy oa:describing .
+
+data:levyamhasIntimateRelationshipsContextidentifying3 oa:hasBody data:Beckman_Linda_Hunt,
+        data:Levy_Amy ;
+    oa:hasTarget data:levyamhasIntimateRelationshipsContext_snippet3 ;
+    oa:motivatedBy oa:describing .
+
+data:levyamFriendsAndAssociatesContext_snippet1 a oa:TextualBody ;
+    rdfs:label "Levy_Amy FriendsAndAssociatesContext snippet" ;
+    dctypes:description """Probably by autumn 1882 ALbecame a member of a circle of reforming or socialist women who were mostly regulars in the ladies' lunch room at the British Museum . 79
+They included Olive Schreiner, the future Beatrice Webb, Dollie Maitland Radford, Margaret Harkness, Clementina Black (whose sister Constance had been a school friend of AL ), and Eleanor Marx . Through Vernon Lee she met Mary Robinson, whom she had once imagined working for as secretary. As her confidence grew, so did her circle of literary friends. 79, 130, 120, 242, 129Through the club she frequented, she met men of letters like George Bernard Shaw, Augustine Birrell, and Sidney Lee . After 1886, as many of her earlier friends married or invested more of themselves in relationships with men, AL turned to members of homosocial literary circles she had met through Lee, like Dorothy Blomfield, Bertha Thomas, and Helen Zimmern . 86, 132""" .
+
+data:levyamFriendsAndAssociatesContext_snippet2 a oa:TextualBody ;
+    rdfs:label "Levy_Amy FriendsAndAssociatesContext snippet" ;
+    dctypes:description "She saw a good deal of Olive Schreiner, who called her the most interesting girl she had met in England, 179and also took her on two trips outside London at the very end of her life, in a vain effort to cheer her. She met Millicent Garrett Fawcett and, in July, W. B. Yeats . 200, 177, 183" .
+
+data:levyam_CulturalFormContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy CulturalFormContext snippet" ;
+    dctypes:description "AL was an upper-middle-class Jew from a family which had been English for over a century, though they travelled the world for career purposes more freely than most English people. Many reference books still repeat..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#BirthandFamily> .
+
+data:levyam_CulturalFormContext3_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy CulturalFormContext snippet" ;
+    dctypes:description "AL early developed strong erotic attachments to women. She wrote of these openly, but may or may not have expressed them physically."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#BirthandFamily> .
+
+data:levyam_RaceEthnicityContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy RaceEthnicityContext snippet" ;
+    dctypes:description "Being Jewish must have posed problems for AL, problems which seem to have been exacerbated by struggles with an internalised anti-semitism. She apparently thought of herself as unattractive to a degree quite at odds with..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#BirthandFamily> .
+
+data:levyam_ReligionContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy ReligionContext snippet" ;
+    dctypes:description "Her time in Dresden crystallized her mixed feelings about the practice of her religion . Visiting the synagogue (for Yom Kippur) disgusted her: she said that German Jews made her feel anti-semitic. 45 Zion unventilated..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#EarlyTravel> .
+
+data:levyam_SpatialContext_inhabits_1_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy location snippet" ;
+    dctypes:description "AL lived till the end of her life at her parents' home. In 1872 they moved from Peckham to 11 Sussex Place , Regent's Park , and in 1884 from there to the less expensive..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#Homes> .
+
+data:levyam_SpatialContext_travelsTo_2_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy location snippet" ;
+    dctypes:description "AL took frequent trips around England, visiting friends, or sometimes staying by the seaside for health reasons. 200, 115 and n100 November-December 1881 AL made a visit to Dresden in Germany . 232, 237 Her..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#EarlyTravel> .
+
+data:levyam_SpatialContext_travelsTo_3_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy location snippet" ;
+    dctypes:description "Late winter and early spring 1886 AL, with Clementina Black, stayed at Casa Guidi, Florence , once the home of Elizabeth and Robert Browning. 116-17 This visit too had a recuperative purpose. But AL loved..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#Florence> .
+
+data:levyam_SpatialContext_travelsTo_4_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy location snippet" ;
+    dctypes:description "Back to Florence By the end of October 1888 AL left for her second visit to Florence , after finishing reading proof on her second novel. 149 She returned home via Paris , arriving on..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#BacktoFlorence> .
+
+data:levyambirthContext_snippet1 a oa:TextualBody ;
+    rdfs:label "Levy_Amy birthContext snippet" ;
+    dctypes:description """10 November 1861 ALwas born in the London district which was then known as South Lambeth (now classified as Peckham ), the second of seven children. 1, 13
+She had an elder and a younger sister, and four younger brothers.""" .
+
+data:levyamdeathContext_snippet1 a oa:TextualBody ;
+    rdfs:label "Levy_Amy deathContext snippet" ;
+    dctypes:description """10 September 1889 ALcommitted suicide at her parents' home at 7 Endsleigh Gardens, Bloomsbury, by burning charcoal in a small enclosed room, till she was asphyxiated by carbon monoxide . 201
+The following year the novelist Grant Allen, an opponent of higher education for women, attributed her suicide directly to her time at university. Beckman considers many possible reasons—a broken love-affair, her lesbianism, her deafness, the growing antisemitism of English society, the hostile reception of Reuben Sachs, possible fears of inherited insanity, or simple body chemistry—but comes to no definite conclusion. 3, 7, 203-210, 318 As to her sensitivity to adverse criticism, in 1884 she had written of herself and Ernest Radford, It's a good thing we are not of Keats -like sensibility, otherwise we shd. long ago have been snuffed out by the various articles of kind critics. 248""" .
+
+data:levyamhasIntimateRelationshipsContext_snippet1 a oa:TextualBody ;
+    rdfs:label "Levy_Amy hasIntimateRelationshipsContext snippet" ;
+    dctypes:description "At Brighton High School AL developed a grand passion for headmistress Edith Creak (a recent Cambridge graduate). Frankly I'm more in love with her than ever, she wrote with apparent good cheer to her elder sister, isn't it grim? 29, 31She may, as reported by a cousin, have been unhappily in love again as an undergraduate. 51" .
+
+data:levyamhasIntimateRelationshipsContext_snippet2 a oa:TextualBody ;
+    rdfs:label "Levy_Amy hasIntimateRelationshipsContext snippet" ;
+    dctypes:description """From November 1886 ALaddressed letters and love-poems to the writer Vernon Lee, whom she had met that spring in Florence, and for whom she cherished an unrequited love. 254-5, 119-21
+In this, says biographer Christine Pullen, AL was switching her emotional dependence from Karl Pearson (who, she felt, had betrayed their friendship) to Lee, 98who was personally charismatic as well as being a writer with a growing reputation. AL addressed her as Miss Paget .""" .
+
+data:levyamhasIntimateRelationshipsContext_snippet3 a oa:TextualBody ;
+    rdfs:label "Levy_Amy hasIntimateRelationshipsContext snippet" ;
+    dctypes:description "AL's biographer Linda Hunt Beckman believes that AL fell in love once more in her life, and that the most likely person to have been her beloved was her friend Dorothy Blomfield . Levy sounded depressed during her second stay in Florence (without Blomfield), and she never saw her again after a meeting on 31 January 1889, a fortnight after getting back to London. Beckman suspects that Blomfield ended the relationship, and that for Levy this was the final straw. 152" .
+
+data:Birrell_Augustine a cwrc:NaturalPerson ;
+    foaf:name "Birrell, Augustine" .
+
+data:Blomfield_Dorothy a cwrc:NaturalPerson ;
+    foaf:name "Blomfield, Dorothy" .
+
+data:Cornford_Frances a cwrc:NaturalPerson ;
+    foaf:name "Cornford, Frances" .
+
+data:Creak_Edith a cwrc:NaturalPerson ;
+    foaf:name "Creak, Edith" .
+
+data:Darwin_Ellen_Wordsworth a cwrc:NaturalPerson ;
+    foaf:name "Darwin, Ellen Wordsworth" .
+
+data:Fawcett_Millicent_Garrett a cwrc:NaturalPerson ;
+    foaf:name "Fawcett, Millicent Garrett" .
+
+data:Garnett_Constance a cwrc:NaturalPerson ;
+    foaf:name "Garnett, Constance" .
+
+data:Harkness_Margaret a cwrc:NaturalPerson ;
+    foaf:name "Harkness, Margaret" .
+
+data:Lee_Sidney a cwrc:NaturalPerson ;
+    foaf:name "Lee, Sidney" .
+
+data:Marx_Eleanor a cwrc:NaturalPerson ;
+    foaf:name "Marx, Eleanor" .
+
+data:Radford_Dollie_Maitland a cwrc:NaturalPerson ;
+    foaf:name "Radford, Dollie Maitland" .
+
+data:Robinson_A_Mary_F a cwrc:NaturalPerson ;
+    foaf:name "Robinson, A. Mary F." .
+
+data:Shaw_George_Bernard a cwrc:NaturalPerson ;
+    foaf:name "Shaw, George Bernard" .
+
+data:Thomas_Bertha a cwrc:NaturalPerson ;
+    foaf:name "Thomas, Bertha" .
+
+data:Webb_Beatrice a cwrc:NaturalPerson ;
+    foaf:name "Webb, Beatrice" .
+
+data:Yeats_W_B a cwrc:NaturalPerson ;
+    foaf:name "Yeats, W. B." .
+
+data:Zimmern_Helen a cwrc:NaturalPerson ;
+    foaf:name "Zimmern, Helen" .
+
+data:Pearson_Karl a cwrc:NaturalPerson ;
+    foaf:name "Pearson, Karl" .
+
+data:Beckman_Linda_Hunt a cwrc:NaturalPerson ;
+    foaf:name "Beckman, Linda Hunt" .
+
+data:Schreiner_Olive a cwrc:NaturalPerson ;
+    foaf:name "Schreiner, Olive" .
+
+data:Black_Clementina a cwrc:NaturalPerson ;
+    foaf:name "Black, Clementina" .
+
+data:Lee_Vernon a cwrc:NaturalPerson ;
+    foaf:name "Lee, Vernon" .
+
+data:Levy_Amy a cwrc:NaturalPerson ;
+    rdfs:label "Levy, Amy"^^xsd:string ;
+    cwrc:hasBirthDate "1861-11-10" ;
+    cwrc:hasBirthPlace "London, Surrey, England" ;
+    cwrc:hasBrother data:Levy_Amy_Brother ;
+    cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/iiIntentional_self-harm> ;
+    cwrc:hasDeathDate "1889-09-10" ;
+    cwrc:hasDeathPlace "London, Middlesex, England" ;
+    cwrc:hasEroticRelationshipWith data:Creak_Edith,
+        data:Lee_Vernon ;
+    cwrc:hasEthnicity cwrc:jewishEthnicity ;
+    cwrc:hasFather data:Levy_Lewis ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasInterpersonalRelationshipWith data:Birrell_Augustine,
+        data:Black_Clementina,
+        data:Blomfield_Dorothy,
+        data:Cornford_Frances,
+        data:Darwin_Ellen_Wordsworth,
+        data:Fawcett_Millicent_Garrett,
+        data:Garnett_Constance,
+        data:Harkness_Margaret,
+        data:Lee_Sidney,
+        data:Lee_Vernon,
+        data:Marx_Eleanor,
+        data:Pearson_Karl,
+        data:Radford_Dollie_Maitland,
+        data:Robinson_A_Mary_F,
+        data:Schreiner_Olive,
+        data:Shaw_George_Bernard,
+        data:Thomas_Bertha,
+        data:Webb_Beatrice,
+        data:Yeats_W_B,
+        data:Zimmern_Helen ;
+    cwrc:hasMother data:Levy_Isabelle ;
+    cwrc:hasNationalHeritageSelfReported "GB-ENG"^^xsd:string ;
+    cwrc:hasPossiblyEroticRelationshipWith data:Beckman_Linda_Hunt ;
+    cwrc:hasReligion cwrc:anglicanism ;
+    cwrc:hasReligionSelfReported cwrc:judaism ;
+    cwrc:hasSexuality cwrc:lesbian ;
+    cwrc:hasSister data:Levy_Amy_Sister ;
+    cwrc:hasSocialClass cwrc:upper-middleClass ;
+    cwrc:travelsTo <http://sws.geonames.org/2653941/>,
+        <http://sws.geonames.org/2654710/>,
+        <http://sws.geonames.org/2659811/>,
+        <http://sws.geonames.org/2935022/>,
+        <http://sws.geonames.org/2953505/>,
+        <http://sws.geonames.org/2988507/>,
+        <http://sws.geonames.org/2994313/>,
+        <http://sws.geonames.org/3021411/>,
+        <http://sws.geonames.org/3038032/>,
+        <http://sws.geonames.org/3176959/>,
+        "Mont Sainte-Odile,Vosges,France" ;
+    org:memberOf cwrc:Anglican_Church_ORG,
+        cwrc:Judaism_ORG ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam> ;
+    foaf:name "Levy, Amy"^^xsd:string .
