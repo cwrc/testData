@@ -30,71 +30,72 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:shakwi_ReligionContext1_describing a cwrc:ReligionContext ;
-    rdfs:label "Shakespeare, William ReligionContext describing annotation" ;
-    dcterms:subject data:Greer_Germaine,
-        data:Shakespeare_William,
-        data:Wilson_Richard,
-        data:Wood_Michael,
-        cwrc:Anglican_Church_ORG,
-        cwrc:Roman_Catholic_Church_ORG,
-        cwrc:anglicanism,
-        cwrc:catholicism ;
-    cwrc:hasIDependencyOn data:shakwi_ReligionContext1_identifying ;
-    oa:hasBody [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Shakespeare_William org:memberOf cwrc:Roman_Catholic_Church_ORG ."^^xsd:string ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Shakespeare_William org:memberOf cwrc:Anglican_Church_ORG ."^^xsd:string ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Shakespeare_William cwrc:hasReligion cwrc:catholicism ."^^xsd:string ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Shakespeare_William cwrc:hasReligion cwrc:anglicanism ."^^xsd:string ] ;
-    oa:hasTarget data:Shakespeare_William,
-        data:shakwi_ReligionContext1_Snippet ;
-    oa:motivatedBy oa:describing .
+# data:shakwi_ReligionContext1_describing a cwrc:ReligionContext ;
+#     rdfs:label "Shakespeare, William ReligionContext describing annotation" ;
+#     dcterms:subject data:Greer_Germaine,
+#        data:Shakespeare_William,
+#        data:Wilson_Richard,
+#        data:Wood_Michael,
+#        cwrc:Anglican_Church_ORG,
+#        cwrc:Roman_Catholic_Church_ORG,
+#        cwrc:anglicanism,
+#        cwrc:catholicism ;
+#    cwrc:hasIDependencyOn data:shakwi_ReligionContext1_identifying ;
+    # oa:hasBody [ a oa:TextualBody ;
+    #         dcterms:format "text/turtle"^^xsd:string ;
+    #         rdf:value "data:Shakespeare_William org:memberOf cwrc:Roman_Catholic_Church_ORG ."^^xsd:string ],
+    #     [ a oa:TextualBody ;
+    #         dcterms:format "text/turtle"^^xsd:string ;
+    #         rdf:value "data:Shakespeare_William org:memberOf cwrc:Anglican_Church_ORG ."^^xsd:string ],
+    #     [ a oa:TextualBody ;
+    #         dcterms:format "text/turtle"^^xsd:string ;
+    #         rdf:value "data:Shakespeare_William cwrc:hasReligion cwrc:catholicism ."^^xsd:string ],
+    #     [ a oa:TextualBody ;
+    #         dcterms:format "text/turtle"^^xsd:string ;
+    #         rdf:value "data:Shakespeare_William cwrc:hasReligion cwrc:anglicanism ."^^xsd:string ] ;
+    # oa:hasTarget data:Shakespeare_William,
+    #     data:shakwi_ReligionContext1_Snippet ;
+    # oa:motivatedBy oa:describing .
 
-data:shakwi_ReligionContext2_identifying a cwrc:ReligionContext ;
-    rdfs:label "Shakespeare, William ReligionContext identifying annotation" ;
-    oa:hasBody data:Shakespeare_William,
-        data:Shapiro_James ;
-    oa:hasTarget data:shakwi_ReligionContext2_Snippet ;
-    oa:motivatedBy oa:identifying .
+# data:shakwi_ReligionContext2_identifying a cwrc:ReligionContext ;
+#     rdfs:label "Shakespeare, William ReligionContext identifying annotation" ;
+#     oa:hasBody data:Shakespeare_William,
+#         data:Shapiro_James ;
+#     oa:hasTarget data:shakwi_ReligionContext2_Snippet ;
+#     oa:motivatedBy oa:identifying .
 
-data:shakwi_ReligionContext3_describing a cwrc:ReligionContext ;
-    rdfs:label "Shakespeare, William ReligionContext describing annotation" ;
-    dcterms:subject data:Shakespeare_William,
-        cwrc:protestantism,
-        <http://sws.geonames.org/2636713/> ;
-    cwrc:hasIDependencyOn data:shakwi_ReligionContext3_identifying ;
-    oa:hasBody [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Shakespeare_William cwrc:hasReligion cwrc:protestantism ."^^xsd:string ] ;
-    oa:hasTarget data:Shakespeare_William,
-        data:shakwi_ReligionContext3_Snippet ;
-    oa:motivatedBy oa:describing .
+#data:shakwi_ReligionContext3_describing a cwrc:ReligionContext ;
+#    rdfs:label "Shakespeare, William ReligionContext describing annotation" ;
+#    dcterms:subject data:Shakespeare_William,
+#        cwrc:protestantism,
+#        <http://sws.geonames.org/2636713/> ;
+#    cwrc:hasIDependencyOn data:shakwi_ReligionContext3_identifying ;
+#    oa:hasBody [ a oa:TextualBody ;
+#            dcterms:format "text/turtle"^^xsd:string ;
+#            rdf:value "data:Shakespeare_William cwrc:hasReligion cwrc:protestantism ."^^xsd:string ] ;
+#    oa:hasTarget data:Shakespeare_William,
+#        data:shakwi_ReligionContext3_Snippet ;
+#    oa:motivatedBy oa:describing .
 
-data:shakwi_SpatialContext_visits_1_describing a cwrc:SpatialContext ;
-    rdfs:label "Shakespeare, William location describing annotation" ;
-    dcterms:subject <http://sws.geonames.org/2636713/> ;
-    cwrc:hasIDependencyOn data:shakwi_SpatialContext_visits_1_identifying ;
-    oa:hasBody [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Shakespeare_William cwrc:visits <http://sws.geonames.org/2636713/> ."^^xsd:string ] ;
-    oa:hasTarget data:Shakespeare_William,
-        data:shakwi_SpatialContext_visits_1_Snippet ;
-    oa:motivatedBy oa:describing .
+# data:shakwi_SpatialContext_visits_1_describing a cwrc:SpatialContext ;
+#     rdfs:label "Shakespeare, William location describing annotation" ;
+#     dcterms:subject <http://sws.geonames.org/2636713/> ;
+#     cwrc:hasIDependencyOn data:shakwi_SpatialContext_visits_1_identifying ;
+#     oa:hasBody [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Shakespeare_William cwrc:visits <http://sws.geonames.org/2636713/> ."^^xsd:string ] ;
+#     oa:hasTarget data:Shakespeare_William,
+#         data:shakwi_SpatialContext_visits_1_Snippet ;
+#     oa:motivatedBy oa:describing .
 
-data:shakwi_WealthContext1_identifying a cwrc:WealthContext ;
-    rdfs:label "Shakespeare, William WealthContext identifying annotation" ;
-    oa:hasBody data:Shakespeare_William,
-        <http://sws.geonames.org/2643743/> ;
-    oa:hasTarget data:shakwi_WealthContext1_Snippet ;
-    oa:motivatedBy oa:identifying .
+# data:shakwi_WealthContext1_identifying a cwrc:WealthContext ;
+#     rdfs:label "Shakespeare, William WealthContext identifying annotation" ;
+#     oa:hasBody data:Shakespeare_William,
+#         <http://sws.geonames.org/2643743/> ;
+#     oa:hasTarget data:shakwi_WealthContext1_Snippet ;
+#     oa:motivatedBy oa:identifying .
 
+#ERROR --> Incorrect context
 data:shakwibirthContext_describing1 a cwrc:FriendsAndAssociatesContext ;
     rdfs:label "Shakespeare_William birthContext describing annotation" ;
     dcterms:subject data:Shakespeare_William,
@@ -111,6 +112,7 @@ data:shakwibirthContext_describing1 a cwrc:FriendsAndAssociatesContext ;
         data:shakwibirthContext_snippet1 ;
     oa:motivatedBy oa:describing .
 
+#ERROR --> Incorrect context
 data:shakwideathContext_describing1 a cwrc:FriendsAndAssociatesContext ;
     rdfs:label "Shakespeare_William deathContext describing annotation" ;
     dcterms:subject data:Shakespeare_William,
@@ -127,133 +129,137 @@ data:shakwideathContext_describing1 a cwrc:FriendsAndAssociatesContext ;
         data:shakwideathContext_snippet1 ;
     oa:motivatedBy oa:describing .
 
-data:shakwihasIntimateRelationshipsContext_describing1 a cwrc:IntimateRelationshipsContext ;
-    rdfs:label "Shakespeare_William hasIntimateRelationshipsContext describing annotation" ;
-    dcterms:subject data:Shakespeare_William,
-        data:intimate_relationship ;
-    cwrc:hasIDependencyOn data:shakwihasIntimateRelationshipsContextidentifying1 ;
-    oa:hasBody [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Shakespeare_William cwrc.hasPossiblyEroticRelationshipWith data:intimate_relationship" ] ;
-    oa:hasTarget data:Shakespeare_William,
-        data:shakwihasIntimateRelationshipsContext_snippet1 ;
-    oa:motivatedBy oa:describing .
+# data:shakwihasIntimateRelationshipsContext_describing1 a cwrc:IntimateRelationshipsContext ;
+#     rdfs:label "Shakespeare_William hasIntimateRelationshipsContext describing annotation" ;
+#     dcterms:subject data:Shakespeare_William,
+#         data:intimate_relationship ;
+#     cwrc:hasIDependencyOn data:shakwihasIntimateRelationshipsContextidentifying1 ;
+#     oa:hasBody [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Shakespeare_William cwrc.hasPossiblyEroticRelationshipWith data:intimate_relationship" ] ;
+#     oa:hasTarget data:Shakespeare_William,
+#         data:shakwihasIntimateRelationshipsContext_snippet1 ;
+#     oa:motivatedBy oa:describing .
 
-data:Intimate_Relationship a cwrc:NaturalPerson ;
-    foaf:name "Intimate Relationship" .
+# data:Intimate_Relationship a cwrc:NaturalPerson ;
+#     foaf:name "Intimate Relationship" .
 
-data:Shakespeare_Anne a cwrc:NaturalPerson ;
-    foaf:name "Shakespeare, Anne" .
+# data:Shakespeare_Anne a cwrc:NaturalPerson ;
+#     foaf:name "Shakespeare, Anne" .
 
-data:Shakespeare_William_Father a cwrc:NaturalPerson ;
-    cwrc:hasPaidOccupation "Glover" .
+# data:Shakespeare_William_Father a cwrc:NaturalPerson ;
+#     cwrc:hasPaidOccupation "Glover" .
 
-data:Shakespeare_William_Mother a cwrc:NaturalPerson .
+# data:Shakespeare_William_Mother a cwrc:NaturalPerson .
 
-data:shakwi_ReligionContext1_identifying a cwrc:ReligionContext ;
-    rdfs:label "Shakespeare, William ReligionContext identifying annotation" ;
-    oa:hasBody data:Greer_Germaine,
-        data:Shakespeare_William,
-        data:Wilson_Richard,
-        data:Wood_Michael,
-        cwrc:Anglican_Church_ORG,
-        cwrc:Roman_Catholic_Church_ORG,
-        cwrc:anglicanism,
-        cwrc:catholicism ;
-    oa:hasTarget data:shakwi_ReligionContext1_Snippet ;
-    oa:motivatedBy oa:identifying .
+# data:shakwi_ReligionContext1_identifying a cwrc:ReligionContext ;
+#     rdfs:label "Shakespeare, William ReligionContext identifying annotation" ;
+#     oa:hasBody data:Greer_Germaine,
+#         data:Shakespeare_William,
+#         data:Wilson_Richard,
+#         data:Wood_Michael,
+#         cwrc:Anglican_Church_ORG,
+#         cwrc:Roman_Catholic_Church_ORG,
+#         cwrc:anglicanism,
+#         cwrc:catholicism ;
+#     oa:hasTarget data:shakwi_ReligionContext1_Snippet ;
+#     oa:motivatedBy oa:identifying .
 
-data:shakwi_ReligionContext2_Snippet a oa:TextualBody ;
-    rdfs:label "Shakespeare, William ReligionContext snippet" ;
-    dctypes:description "Scholars speculating on Shakespeare's religion have read this as a symbol either of destruction of the old, concealment of the old, compromise, or (the view of James Shapiro) the layered nature of Elizabethan belief.7"^^xsd:string ;
-    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=shakwi#BirthandBackground> .
+# data:shakwi_ReligionContext2_Snippet a oa:TextualBody ;
+#     rdfs:label "Shakespeare, William ReligionContext snippet" ;
+#     dctypes:description "Scholars speculating on Shakespeare's religion have read this as a symbol either of destruction of the old, concealment of the old, compromise, or (the view of James Shapiro) the layered nature of Elizabethan belief.7"^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=shakwi#BirthandBackground> .
 
-data:shakwi_ReligionContext3_identifying a cwrc:ReligionContext ;
-    rdfs:label "Shakespeare, William ReligionContext identifying annotation" ;
-    oa:hasBody data:Shakespeare_William,
-        cwrc:protestantism,
-        <http://sws.geonames.org/2636713/> ;
-    oa:hasTarget data:shakwi_ReligionContext3_Snippet ;
-    oa:motivatedBy oa:identifying .
+# data:shakwi_ReligionContext3_identifying a cwrc:ReligionContext ;
+#     rdfs:label "Shakespeare, William ReligionContext identifying annotation" ;
+#     oa:hasBody data:Shakespeare_William,
+#         cwrc:protestantism,
+#         <http://sws.geonames.org/2636713/> ;
+#     oa:hasTarget data:shakwi_ReligionContext3_Snippet ;
+#     oa:motivatedBy oa:identifying .
 
-data:shakwi_SpatialContext_visits_1_identifying a cwrc:SpatialContext ;
-    rdfs:label "Shakespeare, William location identifying annotation" ;
-    oa:hasBody data:Shakespeare_William,
-        <http://sws.geonames.org/2636713/> ;
-    oa:hasTarget data:shakwi_SpatialContext_visits_1_Snippet ;
-    oa:motivatedBy oa:identifying .
+# data:shakwi_SpatialContext_visits_1_identifying a cwrc:SpatialContext ;
+#     rdfs:label "Shakespeare, William location identifying annotation" ;
+#     oa:hasBody data:Shakespeare_William,
+#         <http://sws.geonames.org/2636713/> ;
+#     oa:hasTarget data:shakwi_SpatialContext_visits_1_Snippet ;
+#     oa:motivatedBy oa:identifying .
 
-data:shakwi_WealthContext1_Snippet a oa:TextualBody ;
-    rdfs:label "Shakespeare, William WealthContext snippet" ;
-    dctypes:description "In 1613 WS made another substantial property investment, this time in London instead of in Stratford, close to the Blackfriars Theatre. He sold his share in the Globe some time after the building burned down..."^^xsd:string ;
-    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=shakwi#LoveandMoney> .
+# data:shakwi_WealthContext1_Snippet a oa:TextualBody ;
+#     rdfs:label "Shakespeare, William WealthContext snippet" ;
+#     dctypes:description "In 1613 WS made another substantial property investment, this time in London instead of in Stratford, close to the Blackfriars Theatre. He sold his share in the Globe some time after the building burned down..."^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=shakwi#LoveandMoney> .
 
+#ERROR --> Connected to Incorrect context above
 data:shakwibirthContextidentifying1 oa:hasBody data:Shakespeare_William,
         "1564-04-23",
         "Stratford upon Avon, Warwickshire, England" ;
     oa:hasTarget data:shakwibirthContext_snippet1 ;
     oa:motivatedBy oa:describing .
 
+#ERROR --> Connected to Incorrect context above
 data:shakwideathContextidentifying1 oa:hasBody data:Shakespeare_William,
         "1616-04-23",
         "Stratford upon Avon, Warwickshire, England" ;
     oa:hasTarget data:shakwideathContext_snippet1 ;
     oa:motivatedBy oa:describing .
 
-data:shakwihasIntimateRelationshipsContextidentifying1 oa:hasBody data:Shakespeare_William,
-        data:intimate_relationship ;
-    oa:hasTarget data:shakwihasIntimateRelationshipsContext_snippet1 ;
-    oa:motivatedBy oa:describing .
+# data:shakwihasIntimateRelationshipsContextidentifying1 oa:hasBody data:Shakespeare_William,
+#         data:intimate_relationship ;
+#     oa:hasTarget data:shakwihasIntimateRelationshipsContext_snippet1 ;
+#     oa:motivatedBy oa:describing .
 
-data:intimate_relationship a cwrc:NaturalPerson ;
-    foaf:name "intimate relationship" .
+# data:intimate_relationship a cwrc:NaturalPerson ;
+#     foaf:name "intimate relationship" .
 
-data:shakwi_ReligionContext1_Snippet a oa:TextualBody ;
-    rdfs:label "Shakespeare, William ReligionContext snippet" ;
-    dctypes:description "Scholarly debate continues to rage on the question of whether WS subscribed to the Church of England or whether he adhered to the minority and persecuted Old Religion of Catholicism. Supporters of the Catholic thesis..."^^xsd:string ;
-    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=shakwi#BirthandBackground> .
+#data:shakwi_ReligionContext1_Snippet a oa:TextualBody ;
+#    rdfs:label "Shakespeare, William ReligionContext snippet" ;
+#    dctypes:description "Scholarly debate continues to rage on the question of whether WS subscribed to the Church of England or whether he adhered to the minority and persecuted Old Religion of Catholicism. Supporters of the Catholic thesis..."^^xsd:string ;
+#    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=shakwi#BirthandBackground> .
 
-data:shakwi_ReligionContext3_Snippet a oa:TextualBody ;
-    rdfs:label "Shakespeare, William ReligionContext snippet" ;
-    dctypes:description "May Day 1571 A medieval painting of the Last Judgement on the walls of the Guild Chapel at Stratford was white-washed over in accordance with new Protestant practice; the father of WS was then bailiff..."^^xsd:string ;
-    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=shakwi#BirthandBackground> .
+# data:shakwi_ReligionContext3_Snippet a oa:TextualBody ;
+#     rdfs:label "Shakespeare, William ReligionContext snippet" ;
+#     dctypes:description "May Day 1571 A medieval painting of the Last Judgement on the walls of the Guild Chapel at Stratford was white-washed over in accordance with new Protestant practice; the father of WS was then bailiff..."^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=shakwi#BirthandBackground> .
 
-data:shakwi_SpatialContext_visits_1_Snippet a oa:TextualBody ;
-    rdfs:label "Shakespeare, William location snippet" ;
-    dctypes:description "After he became successful he made regular visits to Stratford and followed in his father's footsteps by buying property in the town."^^xsd:string ;
-    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=shakwi#EducationMarriage> .
+# data:shakwi_SpatialContext_visits_1_Snippet a oa:TextualBody ;
+#     rdfs:label "Shakespeare, William location snippet" ;
+#     dctypes:description "After he became successful he made regular visits to Stratford and followed in his father's footsteps by buying property in the town."^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=shakwi#EducationMarriage> .
 
+#ERROR --> Connected to Incorrect context above
 data:shakwibirthContext_snippet1 a oa:TextualBody ;
     rdfs:label "Shakespeare_William birthContext snippet" ;
     dctypes:description """23 April 1564 WS, poet and playwright, was born in Henley Street, Stratford upon Avon, Warwickshire, supposedly on this date, the feast of St George. 475 The date is virtually a guess. The child was baptised on 26 April; he eventually died on 23 April, which as the feast of St George, patron saint of England, is in this context a highly symbolic date. For all these reasons the attraction of 23 April as Shakespeare's Birthday has proved irresistible to tradition.
 The house where he was born is now a tourist site known as Shakespeare's Birthplace. He was the third child to be born and the first to survive in a family that in the end amounted to eight. Most of them lived to grow up, but only one survived longer than William.31""" .
 
+#ERROR --> Connected to Incorrect context above
 data:shakwideathContext_snippet1 a oa:TextualBody ;
     rdfs:label "Shakespeare_William deathContext snippet" ;
     dctypes:description """23 April 1616 WS, poet and playwright, died on St George's day at New Place in Stratford, the fine modern house he had bought with his theatrical earnings in 1597. 475127
 By tradition this is reckoned to have been his fifty-second birthday. It is also the day on which Miguel de Cervantes died. The concatenation of these dates prompted the United Nations Educational, Scientific and Cultural Organization in 1996 to declare this date World Book and Copyright Day.23 April 2009""" .
 
-data:shakwihasIntimateRelationshipsContext_snippet1 a oa:TextualBody ;
-    rdfs:label "Shakespeare_William hasIntimateRelationshipsContext snippet" ;
-    dctypes:description "Speculations about Shakespeare's love-life stem from his sonnets, many of which read like (though they may not necessarily be) documents of impassioned self-expression. They seem to show him passionately in love with a younger man and sexually enthralled by a woman whom he despises." .
+# data:shakwihasIntimateRelationshipsContext_snippet1 a oa:TextualBody ;
+#     rdfs:label "Shakespeare_William hasIntimateRelationshipsContext snippet" ;
+#     dctypes:description "Speculations about Shakespeare's love-life stem from his sonnets, many of which read like (though they may not necessarily be) documents of impassioned self-expression. They seem to show him passionately in love with a younger man and sexually enthralled by a woman whom he despises." .
 
 data:Shakespeare_William a cwrc:NaturalPerson ;
     rdfs:label "Shakespeare, William"^^xsd:string ;
-    cwrc:hasBirthDate "1564-04-23" ;
-    cwrc:hasBirthPlace "Stratford upon Avon, Warwickshire, England" ;
-    cwrc:hasChildren "3" ;
-    cwrc:hasDeathDate "1616-04-23" ;
-    cwrc:hasDeathPlace "Stratford upon Avon, Warwickshire, England" ;
-    cwrc:hasFather data:Shakespeare_William_Father ;
-    cwrc:hasGender cwrc:man ;
-    cwrc:hasMother data:Shakespeare_William_Mother ;
-    cwrc:hasPossiblyEroticRelationshipWith data:Intimate_Relationship ;
-    cwrc:hasReligion cwrc:anglicanism,
-        cwrc:catholicism,
-        cwrc:protestantism ;
-    cwrc:hasWife data:Shakespeare_Anne ;
-    cwrc:visits <http://sws.geonames.org/2636713/> ;
-    org:memberOf cwrc:Anglican_Church_ORG,
-        cwrc:Roman_Catholic_Church_ORG ;
-    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=shakwi> ;
-    foaf:name "Shakespeare, William"^^xsd:string .
+#    cwrc:hasBirthDate "1564-04-23" ;
+#    cwrc:hasBirthPlace "Stratford upon Avon, Warwickshire, England" ;
+#    cwrc:hasChildren "3" ;
+#    cwrc:hasDeathDate "1616-04-23" ;
+#    cwrc:hasDeathPlace "Stratford upon Avon, Warwickshire, England" ;
+#    cwrc:hasFather data:Shakespeare_William_Father ;
+#    cwrc:hasGender cwrc:man ;
+#    cwrc:hasMother data:Shakespeare_William_Mother ;
+#    cwrc:hasPossiblyEroticRelationshipWith data:Intimate_Relationship ;
+#    cwrc:hasReligion cwrc:anglicanism,
+#        cwrc:catholicism,
+#        cwrc:protestantism ;
+#    cwrc:hasWife data:Shakespeare_Anne ;
+#    cwrc:visits <http://sws.geonames.org/2636713/> ;
+#    org:memberOf cwrc:Anglican_Church_ORG,
+#        cwrc:Roman_Catholic_Church_ORG ;
+#    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=shakwi> ;
+#    foaf:name "Shakespeare, William"^^xsd:string .
