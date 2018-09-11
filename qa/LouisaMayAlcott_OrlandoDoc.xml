@@ -161,14 +161,14 @@
                     <BIRTH>
                         <DIV2>
                             <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="WRITINGCLIMATE" RESP="JSC">
-                                <DATE VALUE="1832-11-29">29 November 1832</DATE>
+                                <!-- <DATE VALUE="1832-11-29">29 November 1832</DATE> -->
                                 <CHRONPROSE>
                                     <NAME STANDARD="Alcott, Louisa May">LMA</NAME> was born in
-                                    <PLACE>
+                                    <!-- <PLACE>
                                         <SETTLEMENT>Germantown</SETTLEMENT>
                                         <REGION REG="Pennsylvania" />
                                         <GEOG REG="USA" />
-                                    </PLACE> near
+                                    </PLACE> near -->
                                     <PLACE>
                                         <SETTLEMENT>Philadelphia</SETTLEMENT>,
                                         <REGION>Pennsylvania</REGION>,
@@ -176,6 +176,7 @@
                                     </PLACE>, on this day, which was also her
                                     <NAME STANDARD="Alcott, Amos Bronson">father</NAME>'s thirty-third birthday.
                                     <BIRTHPOSITION>She was the second of four girls.</BIRTHPOSITION>
+                                  <!--   AGL: Are we not treating birth positions as strings? They are not in the triples. -->
                                 </CHRONPROSE>
                                 <BIBCITS>
                                     <BIBCIT PLACEHOLDER="DLB 239 online" DBREF="18329">239</BIBCIT>
@@ -191,10 +192,10 @@
                             <SHORTPROSE>
                                 <P>
                                     <NAME STANDARD="Alcott, Louisa May">LMA</NAME> was raised in a household of
-                                    <CLASS SOCIALRANK="LOWER-MIDDLECLASS">middle-class</CLASS>, presumably
-                                    <RACECOLOUR>white</RACECOLOUR>,
-                                    <NATIONALITY SELF-DEFINED="SELFYES" REG="American">American</NATIONALITY>
-                                    <DENOMINATION REG="transcendentalism">Transcendentalist</DENOMINATION> thinkers whose philosophies often precluded financial solvency for the Alcott family. Her childhood poverty fuelled her adult writing and earning.
+                                    <!-- <CLASS SOCIALRANK="LOWER-MIDDLECLASS">middle-class</CLASS>, presumably -->
+                                    <!-- <RACECOLOUR>white</RACECOLOUR>, -->
+                                    <!-- <NATIONALITY SELF-DEFINED="SELFYES" REG="American">American</NATIONALITY> -->
+                                    <!-- <DENOMINATION REG="transcendentalism">Transcendentalist</DENOMINATION> thinkers whose philosophies often precluded financial solvency for the Alcott family. Her childhood poverty fuelled her adult writing and earning. -->
                                     <BIBCITS>
                                         <BIBCIT PLACEHOLDER="Stern, LMA Journals 16" DBREF="35862">16</BIBCIT>
                                         <BIBCIT PLACEHOLDER="DLB 239 online" DBREF="18329">239</BIBCIT>
@@ -209,14 +210,14 @@
                     </CULTURALFORMATION>
                 </DIV1>
                 <DIV1>
-                    <FAMILY>
+                   <!--  <FAMILY>
                         <MEMBER RELATION="FATHER">
                             <DIV2>
                                 <SHORTPROSE>
                                     <P>Her father,
                                         <NAME STANDARD="Alcott, Amos Bronson">Amos Bronson Alcott</NAME>, was an idealistic abolitionist, suffragist,
                                         <JOB>teacher</JOB> and
-                                        <SIGNIFICANTACTIVITY PHILANTHROPYVOLUNTEER="PHILANTHROPYVOLUNTEERYES">social reformer</SIGNIFICANTACTIVITY> whose philosophical interests contributed to his family's precarious financial situation. His schools in
+                                        <SIGNIFICANTACTIVITY PHILANTHROPYVOLUNTEER="PHILANTHROPYVOLUNTEERYES">social reformer</SIGNIFICANTACTIVITY> whose philosophical interests contributed to his family's precarious financial situation. His schools in -->
                                         <PLACE>
                                             <SETTLEMENT>Philadelphia</SETTLEMENT>
                                             <REGION REG="Pennsylvania" />
@@ -247,7 +248,7 @@
                                 </SHORTPROSE>
                             </DIV2>
                         </MEMBER>
-                        <MEMBER RELATION="MOTHER">
+                        <!-- <MEMBER RELATION="MOTHER">
                             <DIV2>
                                 <SHORTPROSE>
                                     <P>
@@ -261,7 +262,7 @@
                                             <BIBCIT PLACEHOLDER="DLB 239 online" DBREF="18329">239</BIBCIT>
                                             <BIBCIT PLACEHOLDER="Myerson et al. xxiv" DBREF="35861">xxiv</BIBCIT>
                                         </BIBCITS>
-                                    </P>
+                                    </P> -->
                                     <P>
                                         <NAME STANDARD="LaPlante, Eve">Eve LaPlante</NAME> in
                                         <TITLE TITLETYPE="MONOGRAPHIC">Marmee and Louisa: The Untold Story of Louisa May Alcott and Her Mother</TITLE> uses recently available documents like letters and journals to probe the
@@ -275,7 +276,7 @@
                         </MEMBER>
                     </FAMILY>
                 </DIV1>
-                <DIV1>
+         <!--        <DIV1>
                     <HEADING>Early Years</HEADING>
                     <LOCATION RELATIONTO="LIVED">
                         <DIV2>
@@ -316,7 +317,7 @@
                             </SHORTPROSE>
                         </DIV2>
                     </LOCATION>
-                </DIV1>
+                </DIV1> -->
                 <DIV1>
                     <EDUCATION MODE="DOMESTIC">
                         <DIV2>
@@ -411,7 +412,7 @@
                         </DIV2>
                     </OCCUPATION>
                 </DIV1>
-                <DIV1>
+               <!--  <DIV1>
                     <HEALTH ISSUE="PHYSICAL">
                         <DIV2>
                             <SHORTPROSE>
@@ -425,8 +426,8 @@
                             </SHORTPROSE>
                         </DIV2>
                     </HEALTH>
-                </DIV1>
-                <DIV1>
+                </DIV1> -->
+<!--                 <DIV1>
                     <LOCATION RELATIONTO="TRAVELLED">
                         <DIV2>
                             <SHORTPROSE>
@@ -461,13 +462,16 @@
                             </SHORTPROSE>
                         </DIV2>
                     </LOCATION>
-                </DIV1>
-                <DIV1>
+                </DIV1> -->
+            <!--     <DIV1>
                     <INTIMATERELATIONSHIPS EROTIC="EROTICPOSSIBLY">
                         <DIV2>
                             <SHORTPROSE>
                                 <P>Biographer
-                                    <NAME STANDARD="Matteson, John">John Matteson</NAME> reports that she was strongly attracted to a young Pole,
+                                    <NAME STANDARD="Matteson, John">John Matteson</NAME> reports that she was strongly attracted to a young Pole, -->
+
+                          <!--           AGL: I'm assuming the extraction only pulls the first name. Do we want it to also pull associated places? As it stands, the triple makes the claim that Louisa May Alcott had a possible erotic relationship with her biographer, John Matteson, which is of course wrong - should have been Ladislas. -->
+
                                     <NAME STANDARD="Wisniewski, Ladislas">Ladislas Wisniewski</NAME>, with whom she spent a brief period in
                                     <PLACE>
                                         <GEOG>Switzerland</GEOG>
@@ -489,24 +493,27 @@
                         <DIV2>
                             <SHORTPROSE>
                                 <P>
-                                    <NAME STANDARD="Alcott, Louisa May">LMA</NAME> was a friend of, among others,
-                                    <NAME STANDARD="Burnett, Frances Hodgson">Frances Hodgson Burnett</NAME>,
-                                    <NAME STANDARD="Emerson, Ralph Waldo">Ralph Waldo Emerson</NAME>, who helped her family manage their financial difficulties, and
-                                    <NAME STANDARD="Thoreau, Henry David">Henry David Thoreau</NAME>, who taught science to her and her sisters. While in
-                                    <PLACE>
+<!--                                     <NAME STANDARD="Alcott, Louisa May">LMA</NAME> was a friend of, among others,
+<!  -->                                    
+<!-- <NAME STANDARD="Burnett, Frances Hodgson">Frances Hodgson Burnett</NAME>,
+ --> -->                                   
+<!--   <NAME STANDARD="Emerson, Ralph Waldo">Ralph Waldo Emerson</NAME>, who helped her family manage their financial difficulties, and
+ --><!--                                     <NAME STANDARD="Thoreau, Henry David">Henry David Thoreau</NAME>, who taught science to her and her sisters. While in
+ -->                                    <PLACE>
                                         <GEOG>England</GEOG>
                                     </PLACE> she met
                                     <QUOTE DIRECT="Y">many interesting persons</QUOTE>
                                     <BIBCITS>
                                         <BIBCIT PLACEHOLDER="Myerson et al. 151" DBREF="35861">151</BIBCIT>
                                     </BIBCITS> including
-                                    <NAME STANDARD="Bodichon, Barbara Leigh Smith">Barbara Leigh Smith Bodichon</NAME>,
-                                    <NAME STANDARD="Cobbe, Frances Power">Frances Power Cobbe</NAME>,
-                                    <NAME STANDARD="Ingelow, Jean">Jean Ingelow</NAME>,
-                                    <NAME STANDARD="Blind, Mathilde">Mathilde Blind</NAME>,
-                                    <NAME STANDARD="Anderson, Elizabeth Garrett">Elizabeth Garrett</NAME>, and
-                                    <NAME STANDARD="Gladstone, William Ewart">William Gladstone</NAME>.
-                                    <BIBCITS>
+<!--                                     <NAME STANDARD="Bodichon, Barbara Leigh Smith">Barbara Leigh Smith Bodichon</NAME>,
+ --><!--                                     <NAME STANDARD="Cobbe, Frances Power">Frances Power Cobbe</NAME>,
+ --><!--                                     <NAME STANDARD="Ingelow, Jean">Jean Ingelow</NAME>,
+ --><!--                                     <NAME STANDARD="Blind, Mathilde">Mathilde Blind</NAME>,
+ -->                                    
+<!--  <NAME STANDARD="Anderson, Elizabeth Garrett">Elizabeth Garrett</NAME>, and
+ --><!--                                     <NAME STANDARD="Gladstone, William Ewart">William Gladstone</NAME>.
+ -->                                    <BIBCITS>
                                         <BIBCIT PLACEHOLDER="Myerson et al. 151, 247" DBREF="35861">151, 247</BIBCIT>
                                         <BIBCIT PLACEHOLDER="DLB 239 online" DBREF="18329">239</BIBCIT>
                                     </BIBCITS>
@@ -525,6 +532,9 @@
                                         <NAME STANDARD="Nieriker, Louisa May">Louisa May Nieriker</NAME>, and later adopted her nephew
                                         <NAME STANDARD="Pratt, Frederick Alcott">Frederick Alcott Pratt</NAME>, to serve as a legal heir.</CHILDLESSNESS> There is no record of her having any intimate relationships. She noted in her journal,
                                     <QUOTE DIRECT="Y">I'd rather be a free spinster and paddle my own canoe.</QUOTE>
+<!-- AGL: why does the triple know that it's adoption? -->
+
+
                                     <BIBCITS>
                                         <BIBCIT PLACEHOLDER="Stern, LMA Journals 7" DBREF="35862" QTDIN="QTDINYES">7</BIBCIT>
                                         <BIBCIT PLACEHOLDER="Stern, LMA Journals 12" DBREF="35862">12</BIBCIT>
@@ -535,7 +545,7 @@
                         </DIV2>
                     </FAMILY>
                 </DIV1>
-                <DIV1>
+               <!--  <DIV1>
                     <WEALTH>
                         <DIV2>
                             <SHORTPROSE>
@@ -547,7 +557,7 @@
                             </SHORTPROSE>
                         </DIV2>
                     </WEALTH>
-                </DIV1>
+                </DIV1> -->
                 <DIV1>
                     <OCCUPATION>
                         <DIV2>
@@ -570,7 +580,7 @@
                 <DIV1>
                     <POLITICS>
                         <DIV2>
-                            <CHRONSTRUCT RELEVANCE="DECADE" CHRONCOLUMN="WRITINGCLIMATE" RESP="SIB">
+                            <!-- <CHRONSTRUCT RELEVANCE="DECADE" CHRONCOLUMN="WRITINGCLIMATE" RESP="SIB">
                                 <DATE VALUE="1879-07-15" CERTAINTY="C">Around 15 July 1879</DATE>
                                 <CHRONPROSE>A keen
                                     <POLITICALAFFILIATION ACTIVISM="ACTIVISTYES" WOMAN-GENDERISSUE="GENDERYES" REG="female suffrage">suffragist</POLITICALAFFILIATION>,
@@ -583,34 +593,37 @@
                                 <BIBCITS>
                                     <BIBCIT PLACEHOLDER="Myerson et al. 216" DBREF="35861">216</BIBCIT>
                                 </BIBCITS>
-                            </CHRONSTRUCT>
-                            <SHORTPROSE>
+                            </CHRONSTRUCT> -->
+                            <!-- <SHORTPROSE>
                                 <P>She had also been an ardent
                                     <POLITICALAFFILIATION ACTIVISM="ACTIVISTYES" WOMAN-GENDERISSUE="GENDERNO">abolitionist</POLITICALAFFILIATION>.
                                     <BIBCITS>
                                         <BIBCIT PLACEHOLDER="Stern, LMA Journals 26-7" DBREF="35862">26-7</BIBCIT>
                                     </BIBCITS>
                                 </P>
-                            </SHORTPROSE>
+                            </SHORTPROSE> -->
                         </DIV2>
                     </POLITICS>
                 </DIV1>
-                <DIV1>
+              <!--   <DIV1>
                     <HEADING>Death</HEADING>
                     <DEATH>
                         <DIV2>
                             <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="WRITINGCLIMATE" RESP="JSC">
                                 <DATE VALUE="1888-03-06">6 March 1888</DATE>
                                 <CHRONPROSE>
-                                    <NAME STANDARD="Alcott, Louisa May">LMA</NAME> died; the cause given at the time was
+                                    <NAME STANDARD="Alcott, Louisa May">LMA</NAME> died; the cause given at the 
+                                    time was -->
+
                                     <CAUSE>apoplexy</CAUSE> but it was likely
-                                    <CAUSE>intestinal cancer</CAUSE> that brought about her death at fifty-five.</CHRONPROSE>
+
+                         <!--            <CAUSE>intestinal cancer</CAUSE> that brought about her death at fifty-five.</CHRONPROSE>
                                 <BIBCITS>
                                     <BIBCIT PLACEHOLDER="Stern, LMA Journals 30" DBREF="35862">30</BIBCIT>
                                 </BIBCITS>
                             </CHRONSTRUCT>
                         </DIV2>
-                    </DEATH>
+                    </DEATH> -->
                 </DIV1>
                 <WORKSCITED>
                     <SOURCE>Unless otherwise noted, all information is from the FC</SOURCE>
