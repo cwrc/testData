@@ -46,400 +46,410 @@ data:alcoloFriendsAndAssociatesContext_describing1 a cwrc:FriendsAndAssociatesCo
         data:Ingelow_Jean,
         data:Thoreau_Henry_David ;
     cwrc:hasIDependencyOn data:alcoloFriendsAndAssociatesContextidentifying1 ;
-    oa:hasBody [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc.hasInterpersonalRelationshipWith data:Blind_Mathilde" ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc.hasInterpersonalRelationshipWith data:Burnett_Frances_Hodgson" ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc.hasInterpersonalRelationshipWith data:Ingelow_Jean" ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc.hasInterpersonalRelationshipWith data:Thoreau_Henry_David" ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc.hasInterpersonalRelationshipWith data:Gladstone_William_Ewart" ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc.hasInterpersonalRelationshipWith data:Emerson_Ralph_Waldo" ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc.hasInterpersonalRelationshipWith data:Anderson_Elizabeth_Garrett" ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc.hasInterpersonalRelationshipWith data:Cobbe_Frances_Power" ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc.hasInterpersonalRelationshipWith data:Bodichon_Barbara_Leigh_Smith" ] ;
-    oa:hasTarget data:Alcott_Louisa_May,
-        data:alcoloFriendsAndAssociatesContext_snippet1 ;
-    oa:motivatedBy oa:describing .
+    # oa:hasBody [ a oa:TextualBody ;
+    #         dcterms:format "text/turtle"^^xsd:string ;
+    #         rdf:value "data:Alcott_Louisa_May cwrc.hasInterpersonalRelationshipWith data:Blind_Mathilde" ],
+    #     [ a oa:TextualBody ;
+    #         dcterms:format "text/turtle"^^xsd:string ;
+    #         rdf:value "data:Alcott_Louisa_May cwrc.hasInterpersonalRelationshipWith data:Burnett_Frances_Hodgson" ],
+    #     [ a oa:TextualBody ;
+    #         dcterms:format "text/turtle"^^xsd:string ;
+    #         rdf:value "data:Alcott_Louisa_May cwrc.hasInterpersonalRelationshipWith data:Ingelow_Jean" ],
+    #     [ a oa:TextualBody ;
+    #         dcterms:format "text/turtle"^^xsd:string ;
+    #         rdf:value "data:Alcott_Louisa_May cwrc.hasInterpersonalRelationshipWith data:Thoreau_Henry_David" ],
+    #     [ a oa:TextualBody ;
+    #         dcterms:format "text/turtle"^^xsd:string ;
+    #         rdf:value "data:Alcott_Louisa_May cwrc.hasInterpersonalRelationshipWith data:Gladstone_William_Ewart" ],
+    #     [ a oa:TextualBody ;
+    #         dcterms:format "text/turtle"^^xsd:string ;
+    #         rdf:value "data:Alcott_Louisa_May cwrc.hasInterpersonalRelationshipWith data:Emerson_Ralph_Waldo" ],
+    #     [ a oa:TextualBody ;
+    #         dcterms:format "text/turtle"^^xsd:string ;
+    #         rdf:value "data:Alcott_Louisa_May cwrc.hasInterpersonalRelationshipWith data:Anderson_Elizabeth_Garrett" ],
+    #     [ a oa:TextualBody ;
+    #         dcterms:format "text/turtle"^^xsd:string ;
+    #         rdf:value "data:Alcott_Louisa_May cwrc.hasInterpersonalRelationshipWith data:Cobbe_Frances_Power" ],
+    #     [ a oa:TextualBody ;
+    #         dcterms:format "text/turtle"^^xsd:string ;
+    #         rdf:value "data:Alcott_Louisa_May cwrc.hasInterpersonalRelationshipWith data:Bodichon_Barbara_Leigh_Smith" ] ;
+    # oa:hasTarget data:Alcott_Louisa_May,
+    #     data:alcoloFriendsAndAssociatesContext_snippet1 ;
+    # oa:motivatedBy oa:describing .
 
-data:alcolo_CulturalFormContext1_describing a cwrc:CulturalFormContext ;
-    rdfs:label "Alcott, Louisa May CulturalFormContext describing annotation" ;
-    dcterms:subject data:Alcott_Louisa_May,
-        cwrc:lowerMiddleClass,
-        cwrc:whiteRaceColour,
-        "US"^^xsd:string,
-        "_transcendentalism_"^^xsd:string ;
-    cwrc:hasIDependencyOn data:alcolo_CulturalFormContext1_identifying ;
-    oa:hasBody [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc:hasNationalitySelfReported \"US\"^^xsd:string ."^^xsd:string ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc:hasReligion \"_transcendentalism_\"^^xsd:string ."^^xsd:string ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc:hasRaceColour cwrc:whiteRaceColour ."^^xsd:string ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc:hasSocialClass cwrc:lowerMiddleClass ."^^xsd:string ] ;
-    oa:hasTarget data:Alcott_Louisa_May,
-        data:alcolo_CulturalFormContext1_Snippet ;
-    oa:motivatedBy oa:describing .
+# data:alcolo_CulturalFormContext1_describing a cwrc:CulturalFormContext ;
+#     rdfs:label "Alcott, Louisa May CulturalFormContext describing annotation" ;
+#     dcterms:subject data:Alcott_Louisa_May,
+#         cwrc:lowerMiddleClass,
+#         cwrc:whiteRaceColour,
+        # "US"^^xsd:string,
+        # "_transcendentalism_"^^xsd:string ;
+        ## Is _transcendentalism_ a string b/c we don't have a def'n for it in the ontology?
+    # cwrc:hasIDependencyOn data:alcolo_CulturalFormContext1_identifying ;
+    # oa:hasBody [ a oa:TextualBody ;
+    #         dcterms:format "text/turtle"^^xsd:string ;
+    #         rdf:value "data:Alcott_Louisa_May cwrc:hasNationalitySelfReported \"US\"^^xsd:string ."^^xsd:string ],
+    #     [ a oa:TextualBody ;
+    #         dcterms:format "text/turtle"^^xsd:string ;
+    #         rdf:value "data:Alcott_Louisa_May cwrc:hasReligion \"_transcendentalism_\"^^xsd:string ."^^xsd:string ],
+    #     [ a oa:TextualBody ;
+    #         dcterms:format "text/turtle"^^xsd:string ;
+    #         rdf:value "data:Alcott_Louisa_May cwrc:hasRaceColour cwrc:whiteRaceColour ."^^xsd:string ],
+    #     [ a oa:TextualBody ;
+    #         dcterms:format "text/turtle"^^xsd:string ;
+    #         rdf:value "data:Alcott_Louisa_May cwrc:hasSocialClass cwrc:lowerMiddleClass ."^^xsd:string ] ;
+    # oa:hasTarget data:Alcott_Louisa_May,
+    #     data:alcolo_CulturalFormContext1_Snippet ;
+    # oa:motivatedBy oa:describing .
 
-data:alcolo_PhysicalHealthContext1_identifying a cwrc:PhysicalHealthContext ;
-    rdfs:label "Alcott, Louisa May PhysicalHealthContext identifying annotation" ;
-    oa:hasBody data:Alcott_Louisa_May ;
-    oa:hasTarget data:alcolo_PhysicalHealthContext1_Snippet ;
-    oa:motivatedBy oa:identifying .
+# data:alcolo_PhysicalHealthContext1_identifying a cwrc:PhysicalHealthContext ;
+#     rdfs:label "Alcott, Louisa May PhysicalHealthContext identifying annotation" ;
+#     oa:hasBody data:Alcott_Louisa_May ;
+#     oa:hasTarget data:alcolo_PhysicalHealthContext1_Snippet ;
+#     oa:motivatedBy oa:identifying .
 
-data:alcolo_PoliticalContext1_describing a cwrc:PoliticalContext ;
-    rdfs:label "Alcott, Louisa May PoliticalContext describing annotation" ;
-    dcterms:subject cwrc:abolitionism ;
-    cwrc:hasIDependencyOn data:alcolo_PoliticalContext1_identifying ;
-    oa:hasBody [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc:hasActivistInvolvementIn cwrc:abolitionism ."^^xsd:string ] ;
-    oa:hasTarget data:Alcott_Louisa_May,
-        data:alcolo_PoliticalContext1_Snippet ;
-    oa:motivatedBy oa:describing .
+# data:alcolo_PoliticalContext1_describing a cwrc:PoliticalContext ;
+#     rdfs:label "Alcott, Louisa May PoliticalContext describing annotation" ;
+#     dcterms:subject cwrc:abolitionism ;
+#     cwrc:hasIDependencyOn data:alcolo_PoliticalContext1_identifying ;
+#     oa:hasBody [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Alcott_Louisa_May cwrc:hasActivistInvolvementIn cwrc:abolitionism ."^^xsd:string ] ;
+#     oa:hasTarget data:Alcott_Louisa_May,
+#         data:alcolo_PoliticalContext1_Snippet ;
+#     oa:motivatedBy oa:describing .
 
-data:alcolo_PoliticalContext2_describing a cwrc:PoliticalContext ;
-    rdfs:label "Alcott, Louisa May PoliticalContext describing annotation" ;
-    dcterms:subject data:Alcott_Louisa_May,
-        cwrc:suffrage,
-        <http://sws.geonames.org/5084868/> ;
-    cwrc:hasIDependencyOn data:alcolo_PoliticalContext2_identifying ;
-    oa:hasBody [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc:hasActivistInvolvementIn cwrc:suffrage ."^^xsd:string ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc:hasGenderedPoliticalActivity cwrc:suffrage ."^^xsd:string ] ;
-    oa:hasTarget data:Alcott_Louisa_May,
-        data:alcolo_PoliticalContext2_Snippet ;
-    oa:motivatedBy oa:describing .
+# data:alcolo_PoliticalContext2_describing a cwrc:PoliticalContext ;
+#     rdfs:label "Alcott, Louisa May PoliticalContext describing annotation" ;
+#     dcterms:subject data:Alcott_Louisa_May,
+#         cwrc:suffrage,
+#         <http://sws.geonames.org/5084868/> ;
+#     cwrc:hasIDependencyOn data:alcolo_PoliticalContext2_identifying ;
+#     oa:hasBody [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Alcott_Louisa_May cwrc:hasActivistInvolvementIn cwrc:suffrage ."^^xsd:string ],
+#         [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Alcott_Louisa_May cwrc:hasGenderedPoliticalActivity cwrc:suffrage ."^^xsd:string ] ;
+#     oa:hasTarget data:Alcott_Louisa_May,
+#         data:alcolo_PoliticalContext2_Snippet ;
+#     oa:motivatedBy oa:describing .
 
-data:alcolo_SpatialContext_inhabits_1_describing a cwrc:SpatialContext ;
-    rdfs:label "Alcott, Louisa May location describing annotation" ;
-    dcterms:subject data:Alcott_Amos_Bronson,
-        data:Alcott_Louisa_May,
-        cwrc:Transcendental_Wild_Oats_TITLE,
-        <http://sws.geonames.org/4930956/>,
-        <http://sws.geonames.org/5084868/>,
-        <http://sws.geonames.org/5595231/> ;
-    cwrc:hasIDependencyOn data:alcolo_SpatialContext_inhabits_1_identifying ;
-    oa:hasTarget data:Alcott_Louisa_May,
-        data:alcolo_SpatialContext_inhabits_1_Snippet ;
-    oa:motivatedBy oa:describing .
+# data:alcolo_SpatialContext_inhabits_1_describing a cwrc:SpatialContext ;
+#     rdfs:label "Alcott, Louisa May location describing annotation" ;
+#     dcterms:subject data:Alcott_Amos_Bronson,
+#         data:Alcott_Louisa_May,
+#         cwrc:Transcendental_Wild_Oats_TITLE,
+#         <http://sws.geonames.org/4930956/>,
+#         <http://sws.geonames.org/5084868/>,
+#         <http://sws.geonames.org/5595231/> ;
+#     cwrc:hasIDependencyOn data:alcolo_SpatialContext_inhabits_1_identifying ;
+#     oa:hasTarget data:Alcott_Louisa_May,
+#         data:alcolo_SpatialContext_inhabits_1_Snippet ;
+#     oa:motivatedBy oa:describing .
 
-data:alcolo_SpatialContext_travelsTo_2_describing a cwrc:SpatialContext ;
-    rdfs:label "Alcott, Louisa May location describing annotation" ;
-    dcterms:subject data:Alcott_Louisa_May,
-        <http://sws.geonames.org/2658434/>,
-        <http://sws.geonames.org/2921044/>,
-        <http://sws.geonames.org/3017382/>,
-        <http://sws.geonames.org/3175395/>,
-        <http://sws.geonames.org/6115047/>,
-        <http://sws.geonames.org/6269131/> ;
-    cwrc:hasIDependencyOn data:alcolo_SpatialContext_travelsTo_2_identifying ;
-    oa:hasBody [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc:travelsTo <http://sws.geonames.org/6269131/> ."^^xsd:string ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc:travelsTo <http://sws.geonames.org/3175395/> ."^^xsd:string ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc:travelsTo <http://sws.geonames.org/3017382/> ."^^xsd:string ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc:travelsTo <http://sws.geonames.org/2921044/> ."^^xsd:string ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc:travelsTo <http://sws.geonames.org/6115047/> ."^^xsd:string ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc:travelsTo <http://sws.geonames.org/2658434/> ."^^xsd:string ] ;
-    oa:hasTarget data:Alcott_Louisa_May,
-        data:alcolo_SpatialContext_travelsTo_2_Snippet ;
-    oa:motivatedBy oa:describing .
+# data:alcolo_SpatialContext_travelsTo_2_describing a cwrc:SpatialContext ;
+#     rdfs:label "Alcott, Louisa May location describing annotation" ;
+#     dcterms:subject data:Alcott_Louisa_May,
+#         <http://sws.geonames.org/2658434/>,
+#         <http://sws.geonames.org/2921044/>,
+#         <http://sws.geonames.org/3017382/>,
+#         <http://sws.geonames.org/3175395/>,
+#         <http://sws.geonames.org/6115047/>,
+#         <http://sws.geonames.org/6269131/> ;
+#     cwrc:hasIDependencyOn data:alcolo_SpatialContext_travelsTo_2_identifying ;
+#     oa:hasBody [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Alcott_Louisa_May cwrc:travelsTo <http://sws.geonames.org/6269131/> ."^^xsd:string ],
+#         [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Alcott_Louisa_May cwrc:travelsTo <http://sws.geonames.org/3175395/> ."^^xsd:string ],
+#         [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Alcott_Louisa_May cwrc:travelsTo <http://sws.geonames.org/3017382/> ."^^xsd:string ],
+#         [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Alcott_Louisa_May cwrc:travelsTo <http://sws.geonames.org/2921044/> ."^^xsd:string ],
+#         [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Alcott_Louisa_May cwrc:travelsTo <http://sws.geonames.org/6115047/> ."^^xsd:string ],
+#         [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Alcott_Louisa_May cwrc:travelsTo <http://sws.geonames.org/2658434/> ."^^xsd:string ] ;
+#     oa:hasTarget data:Alcott_Louisa_May,
+#         data:alcolo_SpatialContext_travelsTo_2_Snippet ;
+#     oa:motivatedBy oa:describing .
 
-data:alcolo_WealthContext1_identifying a cwrc:WealthContext ;
-    rdfs:label "Alcott, Louisa May WealthContext identifying annotation" ;
-    oa:hasBody data:Alcott_Louisa_May ;
-    oa:hasTarget data:alcolo_WealthContext1_Snippet ;
-    oa:motivatedBy oa:identifying .
+# data:alcolo_WealthContext1_identifying a cwrc:WealthContext ;
+#     rdfs:label "Alcott, Louisa May WealthContext identifying annotation" ;
+#     oa:hasBody data:Alcott_Louisa_May ;
+#     oa:hasTarget data:alcolo_WealthContext1_Snippet ;
+#     oa:motivatedBy oa:identifying .
 
-data:alcolo_causeofdeath_context0_describing a cwrc:DeathContext ;
-    rdfs:label "Alcott, Louisa May DeathContext describing annotation" ;
-    dcterms:subject data:Alcott_Louisa_May,
-        <http://sparql.cwrc.ca/ontologies/iiCancer> ;
-    oa:hasBody [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc:hasCauseOfDeath ii:Cancer ."^^xsd:string ] ;
-    oa:hasTarget data:Alcott_Louisa_May,
-        data:alcolo_causeofdeath_context0_Snippet ;
-    oa:motivatedBy oa:describing .
+# data:alcolo_causeofdeath_context0_describing a cwrc:DeathContext ;
+#     rdfs:label "Alcott, Louisa May DeathContext describing annotation" ;
+#     dcterms:subject data:Alcott_Louisa_May,
+#         <http://sparql.cwrc.ca/ontologies/iiCancer> ;
+#     oa:hasBody [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Alcott_Louisa_May cwrc:hasCauseOfDeath ii:Cancer ."^^xsd:string ] ;
+#     oa:hasTarget data:Alcott_Louisa_May,
+#         data:alcolo_causeofdeath_context0_Snippet ;
+#     oa:motivatedBy oa:describing .
 
 data:alcolobirthContext_describing1 a cwrc:FriendsAndAssociatesContext ;
+## The birth is being incorrectly typed. Should be birth. KM
     rdfs:label "Alcott_Louisa_May birthContext describing annotation" ;
     dcterms:subject data:Alcott_Louisa_May,
         "1832-11-29",
         "Germantown, Pennsylvania, USA" ;
-    cwrc:hasIDependencyOn data:alcolobirthContextidentifying1 ;
-    oa:hasBody [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc.hasBirthPlace Germantown, Pennsylvania, USA" ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc.hasBirthDate 1832-11-29" ] ;
-    oa:hasTarget data:Alcott_Louisa_May,
-        data:alcolobirthContext_snippet1 ;
-    oa:motivatedBy oa:describing .
+## This isn't rendering a geonames location. Not sure why, as there appears to be one: http://www.geonames.org/5191021/germantown.html KM
 
-data:alcolodeathContext_describing1 a cwrc:FriendsAndAssociatesContext ;
-    rdfs:label "Alcott_Louisa_May deathContext describing annotation" ;
-    dcterms:subject data:Alcott_Louisa_May,
-        "1888-03-06" ;
-    cwrc:hasIDependencyOn data:alcolodeathContextidentifying1 ;
-    oa:hasBody [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc.hasDeathDate 1888-03-06" ] ;
-    oa:hasTarget data:Alcott_Louisa_May,
-        data:alcolodeathContext_snippet1 ;
-    oa:motivatedBy oa:describing .
+    # cwrc:hasIDependencyOn data:alcolobirthContextidentifying1 ;
+    # oa:hasBody [ a oa:TextualBody ;
+    #         dcterms:format "text/turtle"^^xsd:string ;
+    #         rdf:value "data:Alcott_Louisa_May cwrc.hasBirthPlace Germantown, Pennsylvania, USA" ],
+    #     [ a oa:TextualBody ;
+    #         dcterms:format "text/turtle"^^xsd:string ;
+    #         rdf:value "data:Alcott_Louisa_May cwrc.hasBirthDate 1832-11-29" ] ;
+    # oa:hasTarget data:Alcott_Louisa_May,
+    #     data:alcolobirthContext_snippet1 ;
+    # oa:motivatedBy oa:describing .
 
-data:alcolohasIntimateRelationshipsContext_describing1 a cwrc:IntimateRelationshipsContext ;
-    rdfs:label "Alcott_Louisa_May hasIntimateRelationshipsContext describing annotation" ;
-    dcterms:subject data:Alcott_Louisa_May,
-        data:Matteson_John ;
-    cwrc:hasIDependencyOn data:alcolohasIntimateRelationshipsContextidentifying1 ;
-    oa:hasBody [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Alcott_Louisa_May cwrc.hasPossiblyEroticRelationshipWith data:Matteson_John" ] ;
-    oa:hasTarget data:Alcott_Louisa_May,
-        data:alcolohasIntimateRelationshipsContext_snippet1 ;
-    oa:motivatedBy oa:describing .
+## birthPosition is in the text, but is not showing here. KM
 
-data:Alcott_Abigail_May a cwrc:NaturalPerson ;
-    cwrc:hasPaidOccupation "Social Worker" ;
-    foaf:name "Alcott, Abigail May" .
+# data:alcolodeathContext_describing1 a cwrc:FriendsAndAssociatesContext ;
+#     rdfs:label "Alcott_Louisa_May deathContext describing annotation" ;
+#     dcterms:subject data:Alcott_Louisa_May,
+#         "1888-03-06" ;
+#     cwrc:hasIDependencyOn data:alcolodeathContextidentifying1 ;
+#     oa:hasBody [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Alcott_Louisa_May cwrc.hasDeathDate 1888-03-06" ] ;
+#     oa:hasTarget data:Alcott_Louisa_May,
+#         data:alcolodeathContext_snippet1 ;
+#     oa:motivatedBy oa:describing .
 
-data:alcoloFriendsAndAssociatesContextidentifying1 oa:hasBody data:Alcott_Louisa_May,
-        data:Anderson_Elizabeth_Garrett,
-        data:Blind_Mathilde,
-        data:Bodichon_Barbara_Leigh_Smith,
-        data:Burnett_Frances_Hodgson,
-        data:Cobbe_Frances_Power,
-        data:Emerson_Ralph_Waldo,
-        data:Gladstone_William_Ewart,
-        data:Ingelow_Jean,
-        data:Thoreau_Henry_David ;
-    oa:hasTarget data:alcoloFriendsAndAssociatesContext_snippet1 ;
-    oa:motivatedBy oa:describing .
+# data:alcolohasIntimateRelationshipsContext_describing1 a cwrc:IntimateRelationshipsContext ;
+#     rdfs:label "Alcott_Louisa_May hasIntimateRelationshipsContext describing annotation" ;
+#     dcterms:subject data:Alcott_Louisa_May,
+#         data:Matteson_John ;
+#     cwrc:hasIDependencyOn data:alcolohasIntimateRelationshipsContextidentifying1 ;
+#     oa:hasBody [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Alcott_Louisa_May cwrc.hasPossiblyEroticRelationshipWith data:Matteson_John" ] ;
+#     oa:hasTarget data:Alcott_Louisa_May,
+#         data:alcolohasIntimateRelationshipsContext_snippet1 ;
+#     oa:motivatedBy oa:describing .
 
-data:alcolo_CulturalFormContext1_identifying a cwrc:CulturalFormContext ;
-    rdfs:label "Alcott, Louisa May CulturalFormContext identifying annotation" ;
-    oa:hasBody data:Alcott_Louisa_May,
-        cwrc:lowerMiddleClass,
-        cwrc:whiteRaceColour,
-        "US"^^xsd:string,
-        "_transcendentalism_"^^xsd:string ;
-    oa:hasTarget data:alcolo_CulturalFormContext1_Snippet ;
-    oa:motivatedBy oa:identifying .
+## John Matteson is not the person in the relationship with Alcott. It was the second name in the string instead. KM.
 
-data:alcolo_PhysicalHealthContext1_Snippet a oa:TextualBody ;
-    rdfs:label "Alcott, Louisa May PhysicalHealthContext snippet" ;
-    dctypes:description "During her illness she was dosed with large quantities of mercury in the form of calomel or mercurous chloride, which was then used to treat typhoid. She suffered from severe headaches and neuralgia as a..."^^xsd:string ;
-    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo#WorkTravelandFriends> .
+# data:Alcott_Abigail_May a cwrc:NaturalPerson ;
+#     cwrc:hasPaidOccupation "Social Worker" ;
+#     foaf:name "Alcott, Abigail May" .
 
-data:alcolo_PoliticalContext1_identifying a cwrc:PoliticalContext ;
-    rdfs:label "Alcott, Louisa May PoliticalContext identifying annotation" ;
-    oa:hasBody data:Alcott_Louisa_May,
-        cwrc:abolitionism ;
-    oa:hasTarget data:alcolo_PoliticalContext1_Snippet ;
-    oa:motivatedBy oa:identifying .
+# data:alcoloFriendsAndAssociatesContextidentifying1 oa:hasBody data:Alcott_Louisa_May,
+#         data:Anderson_Elizabeth_Garrett,
+#         data:Blind_Mathilde,
+#         data:Bodichon_Barbara_Leigh_Smith,
+#         data:Burnett_Frances_Hodgson,
+#         data:Cobbe_Frances_Power,
+#         data:Emerson_Ralph_Waldo,
+#         data:Gladstone_William_Ewart,
+#         data:Ingelow_Jean,
+#         data:Thoreau_Henry_David ;
+#     oa:hasTarget data:alcoloFriendsAndAssociatesContext_snippet1 ;
+#     oa:motivatedBy oa:describing .
 
-data:alcolo_PoliticalContext2_identifying a cwrc:PoliticalContext ;
-    rdfs:label "Alcott, Louisa May PoliticalContext identifying annotation" ;
-    oa:hasBody data:Alcott_Louisa_May,
-        cwrc:suffrage,
-        <http://sws.geonames.org/5084868/> ;
-    oa:hasTarget data:alcolo_PoliticalContext2_Snippet ;
-    oa:motivatedBy oa:identifying .
+# data:alcolo_CulturalFormContext1_identifying a cwrc:CulturalFormContext ;
+#     rdfs:label "Alcott, Louisa May CulturalFormContext identifying annotation" ;
+#     oa:hasBody data:Alcott_Louisa_May,
+#         cwrc:lowerMiddleClass,
+#         cwrc:whiteRaceColour,
+#         "US"^^xsd:string,
+#         "_transcendentalism_"^^xsd:string ;
+#     oa:hasTarget data:alcolo_CulturalFormContext1_Snippet ;
+#     oa:motivatedBy oa:identifying .
 
-data:alcolo_SpatialContext_inhabits_1_identifying a cwrc:SpatialContext ;
-    rdfs:label "Alcott, Louisa May location identifying annotation" ;
-    oa:hasBody data:Alcott_Amos_Bronson,
-        data:Alcott_Louisa_May,
-        cwrc:Transcendental_Wild_Oats_TITLE,
-        <http://sws.geonames.org/4930956/>,
-        <http://sws.geonames.org/5084868/>,
-        <http://sws.geonames.org/5595231/> ;
-    oa:hasTarget data:alcolo_SpatialContext_inhabits_1_Snippet ;
-    oa:motivatedBy oa:identifying .
+# data:alcolo_PhysicalHealthContext1_Snippet a oa:TextualBody ;
+#     rdfs:label "Alcott, Louisa May PhysicalHealthContext snippet" ;
+#     dctypes:description "During her illness she was dosed with large quantities of mercury in the form of calomel or mercurous chloride, which was then used to treat typhoid. She suffered from severe headaches and neuralgia as a..."^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo#WorkTravelandFriends> .
 
-data:alcolo_SpatialContext_travelsTo_2_identifying a cwrc:SpatialContext ;
-    rdfs:label "Alcott, Louisa May location identifying annotation" ;
-    oa:hasBody data:Alcott_Louisa_May,
-        <http://sws.geonames.org/2658434/>,
-        <http://sws.geonames.org/2921044/>,
-        <http://sws.geonames.org/3017382/>,
-        <http://sws.geonames.org/3175395/>,
-        <http://sws.geonames.org/6115047/>,
-        <http://sws.geonames.org/6269131/> ;
-    oa:hasTarget data:alcolo_SpatialContext_travelsTo_2_Snippet ;
-    oa:motivatedBy oa:identifying .
+# data:alcolo_PoliticalContext1_identifying a cwrc:PoliticalContext ;
+#     rdfs:label "Alcott, Louisa May PoliticalContext identifying annotation" ;
+#     oa:hasBody data:Alcott_Louisa_May,
+#         cwrc:abolitionism ;
+#     oa:hasTarget data:alcolo_PoliticalContext1_Snippet ;
+#     oa:motivatedBy oa:identifying .
 
-data:alcolo_WealthContext1_Snippet a oa:TextualBody ;
-    rdfs:label "Alcott, Louisa May WealthContext snippet" ;
-    dctypes:description "Through her writing she became the financial mainstay of her family: her parents, sisters, and nephews and nieces.15"^^xsd:string ;
-    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo#WorkTravelandFriends> .
+# data:alcolo_PoliticalContext2_identifying a cwrc:PoliticalContext ;
+#     rdfs:label "Alcott, Louisa May PoliticalContext identifying annotation" ;
+#     oa:hasBody data:Alcott_Louisa_May,
+#         cwrc:suffrage,
+#         <http://sws.geonames.org/5084868/> ;
+#     oa:hasTarget data:alcolo_PoliticalContext2_Snippet ;
+#     oa:motivatedBy oa:identifying .
 
-data:alcolo_causeofdeath_context0_Snippet a oa:TextualBody ;
-    rdfs:label "Alcott, Louisa May DeathContext snippet " ;
-    dctypes:description "LMA died; the cause given at the time was apoplexy but it was likely intestinal cancer that brought about her death at fifty-five."^^xsd:string ;
-    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo#Death> .
+# data:alcolo_SpatialContext_inhabits_1_identifying a cwrc:SpatialContext ;
+#     rdfs:label "Alcott, Louisa May location identifying annotation" ;
+#     oa:hasBody data:Alcott_Amos_Bronson,
+#         data:Alcott_Louisa_May,
+#         cwrc:Transcendental_Wild_Oats_TITLE,
+#         <http://sws.geonames.org/4930956/>,
+#         <http://sws.geonames.org/5084868/>,
+#         <http://sws.geonames.org/5595231/> ;
+#     oa:hasTarget data:alcolo_SpatialContext_inhabits_1_Snippet ;
+#     oa:motivatedBy oa:identifying .
 
-data:alcolobirthContextidentifying1 oa:hasBody data:Alcott_Louisa_May,
-        "1832-11-29",
-        "Germantown, Pennsylvania, USA" ;
-    oa:hasTarget data:alcolobirthContext_snippet1 ;
-    oa:motivatedBy oa:describing .
+# data:alcolo_SpatialContext_travelsTo_2_identifying a cwrc:SpatialContext ;
+#     rdfs:label "Alcott, Louisa May location identifying annotation" ;
+#     oa:hasBody data:Alcott_Louisa_May,
+#         <http://sws.geonames.org/2658434/>,
+#         <http://sws.geonames.org/2921044/>,
+#         <http://sws.geonames.org/3017382/>,
+#         <http://sws.geonames.org/3175395/>,
+#         <http://sws.geonames.org/6115047/>,
+#         <http://sws.geonames.org/6269131/> ;
+#     oa:hasTarget data:alcolo_SpatialContext_travelsTo_2_Snippet ;
+#     oa:motivatedBy oa:identifying .
 
-data:alcolodeathContextidentifying1 oa:hasBody data:Alcott_Louisa_May,
-        "1888-03-06" ;
-    oa:hasTarget data:alcolodeathContext_snippet1 ;
-    oa:motivatedBy oa:describing .
+# data:alcolo_WealthContext1_Snippet a oa:TextualBody ;
+#     rdfs:label "Alcott, Louisa May WealthContext snippet" ;
+#     dctypes:description "Through her writing she became the financial mainstay of her family: her parents, sisters, and nephews and nieces.15"^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo#WorkTravelandFriends> .
 
-data:alcolohasIntimateRelationshipsContextidentifying1 oa:hasBody data:Alcott_Louisa_May,
-        data:Matteson_John ;
-    oa:hasTarget data:alcolohasIntimateRelationshipsContext_snippet1 ;
-    oa:motivatedBy oa:describing .
+# data:alcolo_causeofdeath_context0_Snippet a oa:TextualBody ;
+#     rdfs:label "Alcott, Louisa May DeathContext snippet " ;
+#     dctypes:description "LMA died; the cause given at the time was apoplexy but it was likely intestinal cancer that brought about her death at fifty-five."^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo#Death> .
 
-data:alcoloFriendsAndAssociatesContext_snippet1 a oa:TextualBody ;
-    rdfs:label "Alcott_Louisa_May FriendsAndAssociatesContext snippet" ;
-    dctypes:description "LMA was a friend of, among others, Frances Hodgson Burnett, Ralph Waldo Emerson, who helped her family manage their financial difficulties, and Henry David Thoreau, who taught science to her and her sisters. While in England she met many interesting persons151 including Barbara Leigh Smith Bodichon, Frances Power Cobbe, Jean Ingelow, Mathilde Blind, Elizabeth Garrett, and William Gladstone.151, 247239" .
+# data:alcolobirthContextidentifying1 oa:hasBody data:Alcott_Louisa_May,
+#         "1832-11-29",
+#         "Germantown, Pennsylvania, USA" ;
+#     oa:hasTarget data:alcolobirthContext_snippet1 ;
+#     oa:motivatedBy oa:describing .
 
-data:alcolo_CulturalFormContext1_Snippet a oa:TextualBody ;
-    rdfs:label "Alcott, Louisa May CulturalFormContext snippet" ;
-    dctypes:description "LMA was raised in a household of middle-class, presumably white, American Transcendentalist thinkers whose philosophies often precluded financial solvency for the Alcott family. Her childhood poverty fuelled her adult writing and earning.16239 The Trancendentalists stand..."^^xsd:string ;
-    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo#BirthandBackground> .
+# data:alcolodeathContextidentifying1 oa:hasBody data:Alcott_Louisa_May,
+#         "1888-03-06" ;
+#     oa:hasTarget data:alcolodeathContext_snippet1 ;
+#     oa:motivatedBy oa:describing .
 
-data:alcolo_PoliticalContext1_Snippet a oa:TextualBody ;
-    rdfs:label "Alcott, Louisa May PoliticalContext snippet" ;
-    dctypes:description "She had also been an ardent abolitionist.26-7"^^xsd:string ;
-    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo#WorkTravelandFriends> .
+# data:alcolohasIntimateRelationshipsContextidentifying1 oa:hasBody data:Alcott_Louisa_May,
+#         data:Matteson_John ;
+#     oa:hasTarget data:alcolohasIntimateRelationshipsContext_snippet1 ;
+#     oa:motivatedBy oa:describing .
 
-data:alcolo_PoliticalContext2_Snippet a oa:TextualBody ;
-    rdfs:label "Alcott, Louisa May PoliticalContext snippet" ;
-    dctypes:description "Around 15 July 1879 A keen suffragist, LMA became the first woman to register her name as a voter in Concord, Massachusetts. 216"^^xsd:string ;
-    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo#WorkTravelandFriends> .
+# data:alcoloFriendsAndAssociatesContext_snippet1 a oa:TextualBody ;
+#     rdfs:label "Alcott_Louisa_May FriendsAndAssociatesContext snippet" ;
+#     dctypes:description "LMA was a friend of, among others, Frances Hodgson Burnett, Ralph Waldo Emerson, who helped her family manage their financial difficulties, and Henry David Thoreau, who taught science to her and her sisters. While in England she met many interesting persons151 including Barbara Leigh Smith Bodichon, Frances Power Cobbe, Jean Ingelow, Mathilde Blind, Elizabeth Garrett, and William Gladstone.151, 247239" .
+#
+# data:alcolo_CulturalFormContext1_Snippet a oa:TextualBody ;
+#     rdfs:label "Alcott, Louisa May CulturalFormContext snippet" ;
+#     dctypes:description "LMA was raised in a household of middle-class, presumably white, American Transcendentalist thinkers whose philosophies often precluded financial solvency for the Alcott family. Her childhood poverty fuelled her adult writing and earning.16239 The Trancendentalists stand..."^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo#BirthandBackground> .
+#
+# data:alcolo_PoliticalContext1_Snippet a oa:TextualBody ;
+#     rdfs:label "Alcott, Louisa May PoliticalContext snippet" ;
+#     dctypes:description "She had also been an ardent abolitionist.26-7"^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo#WorkTravelandFriends> .
 
-data:alcolo_SpatialContext_inhabits_1_Snippet a oa:TextualBody ;
-    rdfs:label "Alcott, Louisa May location snippet" ;
-    dctypes:description "In 1834, LMA and her family moved to Boston, Massachusetts. They moved frequently around Massachusetts for several years after that. In 1843 they lived briefly at Fruitlands, a utopian but ultimately disastrous commune co-founded by..."^^xsd:string ;
-    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo#EarlyYears> .
+# data:alcolo_PoliticalContext2_Snippet a oa:TextualBody ;
+#     rdfs:label "Alcott, Louisa May PoliticalContext snippet" ;
+#     dctypes:description "Around 15 July 1879 A keen suffragist, LMA became the first woman to register her name as a voter in Concord, Massachusetts. 216"^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo#WorkTravelandFriends> .
 
-data:alcolo_SpatialContext_travelsTo_2_Snippet a oa:TextualBody ;
-    rdfs:label "Alcott, Louisa May location snippet" ;
-    dctypes:description "In 1865 LMA gained the opportunity to travel when she accompanied an invalid woman, as her paid companion, on a European tour. They visited Switzerland, Germany, Italy, France, and England. She revisited Europe in April..."^^xsd:string ;
-    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo#WorkTravelandFriends> .
+# data:alcolo_SpatialContext_inhabits_1_Snippet a oa:TextualBody ;
+#     rdfs:label "Alcott, Louisa May location snippet" ;
+#     dctypes:description "In 1834, LMA and her family moved to Boston, Massachusetts. They moved frequently around Massachusetts for several years after that. In 1843 they lived briefly at Fruitlands, a utopian but ultimately disastrous commune co-founded by..."^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo#EarlyYears> .
 
-data:alcolobirthContext_snippet1 a oa:TextualBody ;
-    rdfs:label "Alcott_Louisa_May birthContext snippet" ;
-    dctypes:description "29 November 1832 LMA was born in Germantown near Philadelphia, Pennsylvania, USA, on this day, which was also her father's thirty-third birthday. She was the second of four girls. 23929 November 2007" .
+# data:alcolo_SpatialContext_travelsTo_2_Snippet a oa:TextualBody ;
+#     rdfs:label "Alcott, Louisa May location snippet" ;
+#     dctypes:description "In 1865 LMA gained the opportunity to travel when she accompanied an invalid woman, as her paid companion, on a European tour. They visited Switzerland, Germany, Italy, France, and England. She revisited Europe in April..."^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo#WorkTravelandFriends> .
 
-data:alcolodeathContext_snippet1 a oa:TextualBody ;
-    rdfs:label "Alcott_Louisa_May deathContext snippet" ;
-    dctypes:description "6 March 1888 LMA died; the cause given at the time was apoplexy but it was likely intestinal cancer that brought about her death at fifty-five. 30" .
+# data:alcolobirthContext_snippet1 a oa:TextualBody ;
+#     rdfs:label "Alcott_Louisa_May birthContext snippet" ;
+#     dctypes:description "29 November 1832 LMA was born in Germantown near Philadelphia, Pennsylvania, USA, on this day, which was also her father's thirty-third birthday. She was the second of four girls. 23929 November 2007" .
 
-data:alcolohasIntimateRelationshipsContext_snippet1 a oa:TextualBody ;
-    rdfs:label "Alcott_Louisa_May hasIntimateRelationshipsContext snippet" ;
-    dctypes:description "Biographer John Matteson reports that she was strongly attracted to a young Pole, Ladislas Wisniewski, with whom she spent a brief period in Switzerland and Paris.37" .
+# data:alcolodeathContext_snippet1 a oa:TextualBody ;
+#     rdfs:label "Alcott_Louisa_May deathContext snippet" ;
+#     dctypes:description "6 March 1888 LMA died; the cause given at the time was apoplexy but it was likely intestinal cancer that brought about her death at fifty-five. 30" .
 
-data:Alcott_Amos_Bronson a cwrc:NaturalPerson ;
-    cwrc:hasPaidOccupation "Teacher" ;
-    cwrc:hasVolunteerOccupation "Social Reformer" ;
-    foaf:name "Alcott, Amos Bronson" .
+# data:alcolohasIntimateRelationshipsContext_snippet1 a oa:TextualBody ;
+#     rdfs:label "Alcott_Louisa_May hasIntimateRelationshipsContext snippet" ;
+#     dctypes:description "Biographer John Matteson reports that she was strongly attracted to a young Pole, Ladislas Wisniewski, with whom she spent a brief period in Switzerland and Paris.37" .
 
-data:Anderson_Elizabeth_Garrett a cwrc:NaturalPerson ;
-    foaf:name "Anderson, Elizabeth Garrett" .
+# data:Alcott_Amos_Bronson a cwrc:NaturalPerson ;
+#     cwrc:hasPaidOccupation "Teacher" ;
+#     cwrc:hasVolunteerOccupation "Social Reformer" ;
+#     foaf:name "Alcott, Amos Bronson" .
+#
+# data:Anderson_Elizabeth_Garrett a cwrc:NaturalPerson ;
+#     foaf:name "Anderson, Elizabeth Garrett" .
+#
+# data:Blind_Mathilde a cwrc:NaturalPerson ;
+#     foaf:name "Blind, Mathilde" .
+#
+# data:Bodichon_Barbara_Leigh_Smith a cwrc:NaturalPerson ;
+#     foaf:name "Bodichon, Barbara Leigh Smith" .
+#
+# data:Burnett_Frances_Hodgson a cwrc:NaturalPerson ;
+#     foaf:name "Burnett, Frances Hodgson" .
+#
+# data:Cobbe_Frances_Power a cwrc:NaturalPerson ;
+#     foaf:name "Cobbe, Frances Power" .
+#
+# data:Emerson_Ralph_Waldo a cwrc:NaturalPerson ;
+#     foaf:name "Emerson, Ralph Waldo" .
+#
+# data:Gladstone_William_Ewart a cwrc:NaturalPerson ;
+#     foaf:name "Gladstone, William Ewart" .
+#
+# data:Ingelow_Jean a cwrc:NaturalPerson ;
+#     foaf:name "Ingelow, Jean" .
+#
+# data:Matteson_John a cwrc:NaturalPerson ;
+#     foaf:name "Matteson, John" .
+#
+# data:Thoreau_Henry_David a cwrc:NaturalPerson ;
+#     foaf:name "Thoreau, Henry David" .
 
-data:Blind_Mathilde a cwrc:NaturalPerson ;
-    foaf:name "Blind, Mathilde" .
-
-data:Bodichon_Barbara_Leigh_Smith a cwrc:NaturalPerson ;
-    foaf:name "Bodichon, Barbara Leigh Smith" .
-
-data:Burnett_Frances_Hodgson a cwrc:NaturalPerson ;
-    foaf:name "Burnett, Frances Hodgson" .
-
-data:Cobbe_Frances_Power a cwrc:NaturalPerson ;
-    foaf:name "Cobbe, Frances Power" .
-
-data:Emerson_Ralph_Waldo a cwrc:NaturalPerson ;
-    foaf:name "Emerson, Ralph Waldo" .
-
-data:Gladstone_William_Ewart a cwrc:NaturalPerson ;
-    foaf:name "Gladstone, William Ewart" .
-
-data:Ingelow_Jean a cwrc:NaturalPerson ;
-    foaf:name "Ingelow, Jean" .
-
-data:Matteson_John a cwrc:NaturalPerson ;
-    foaf:name "Matteson, John" .
-
-data:Thoreau_Henry_David a cwrc:NaturalPerson ;
-    foaf:name "Thoreau, Henry David" .
-
-data:Alcott_Louisa_May a cwrc:NaturalPerson ;
-    rdfs:label "Alcott, Louisa May"^^xsd:string ;
-    cwrc:hasActivistInvolvementIn cwrc:abolitionism,
-        cwrc:suffrage ;
-    cwrc:hasBirthDate "1832-11-29" ;
-    cwrc:hasBirthPlace "Germantown, Pennsylvania, USA" ;
-    cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/iiCancer> ;
-    cwrc:hasDeathDate "1888-03-06" ;
-    cwrc:hasFather data:Alcott_Amos_Bronson ;
-    cwrc:hasGender cwrc:woman ;
-    cwrc:hasGenderedPoliticalActivity cwrc:suffrage ;
-    cwrc:hasInterpersonalRelationshipWith data:Anderson_Elizabeth_Garrett,
-        data:Blind_Mathilde,
-        data:Bodichon_Barbara_Leigh_Smith,
-        data:Burnett_Frances_Hodgson,
-        data:Cobbe_Frances_Power,
-        data:Emerson_Ralph_Waldo,
-        data:Gladstone_William_Ewart,
-        data:Ingelow_Jean,
-        data:Thoreau_Henry_David ;
-    cwrc:hasMother data:Alcott_Abigail_May ;
-    cwrc:hasNationalitySelfReported "US"^^xsd:string ;
-    cwrc:hasPossiblyEroticRelationshipWith data:Matteson_John ;
-    cwrc:hasRaceColour cwrc:whiteRaceColour ;
-    cwrc:hasReligion "_transcendentalism_"^^xsd:string ;
+# data:Alcott_Louisa_May a cwrc:NaturalPerson ;
+#     rdfs:label "Alcott, Louisa May"^^xsd:string ;
+#     cwrc:hasActivistInvolvementIn cwrc:abolitionism,
+#         cwrc:suffrage ;
+#     cwrc:hasBirthDate "1832-11-29" ;
+#     cwrc:hasBirthPlace "Germantown, Pennsylvania, USA" ;
+#     cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/iiCancer> ;
+#     cwrc:hasDeathDate "1888-03-06" ;
+#     cwrc:hasFather data:Alcott_Amos_Bronson ;
+#     cwrc:hasGender cwrc:woman ;
+#     cwrc:hasGenderedPoliticalActivity cwrc:suffrage ;
+#     cwrc:hasInterpersonalRelationshipWith data:Anderson_Elizabeth_Garrett,
+#         data:Blind_Mathilde,
+#         data:Bodichon_Barbara_Leigh_Smith,
+#         data:Burnett_Frances_Hodgson,
+#         data:Cobbe_Frances_Power,
+#         data:Emerson_Ralph_Waldo,
+#         data:Gladstone_William_Ewart,
+#         data:Ingelow_Jean,
+#         data:Thoreau_Henry_David ;
+    # cwrc:hasMother data:Alcott_Abigail_May ;
+    # cwrc:hasNationalitySelfReported "US"^^xsd:string ;
+    # cwrc:hasPossiblyEroticRelationshipWith data:Matteson_John ;
+    # cwrc:hasRaceColour cwrc:whiteRaceColour ;
+    # cwrc:hasReligion "_transcendentalism_"^^xsd:string ;
     cwrc:hasReproductiveHistory cwrc:adoption ;
-    cwrc:hasSocialClass cwrc:lowerMiddleClass ;
-    cwrc:travelsTo <http://sws.geonames.org/2658434/>,
-        <http://sws.geonames.org/2921044/>,
-        <http://sws.geonames.org/3017382/>,
-        <http://sws.geonames.org/3175395/>,
-        <http://sws.geonames.org/6115047/>,
-        <http://sws.geonames.org/6269131/> ;
-    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo> ;
-    foaf:name "Alcott, Louisa May"^^xsd:string .
+    ## We don't know where this is coming from ,as 'adoption' isn't tagged in Orlando. See QA document. KM
+
+    # cwrc:hasSocialClass cwrc:lowerMiddleClass ;
+    # cwrc:travelsTo <http://sws.geonames.org/2658434/>,
+    #     <http://sws.geonames.org/2921044/>,
+    #     <http://sws.geonames.org/3017382/>,
+    #     <http://sws.geonames.org/3175395/>,
+    #     <http://sws.geonames.org/6115047/>,
+    #     <http://sws.geonames.org/6269131/> ;
+    # foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo> ;
+    # foaf:name "Alcott, Louisa May"^^xsd:string .
