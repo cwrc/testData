@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://cwrc.ca/schemas/orlando_biography.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
     <?xml-stylesheet type="text/css" href="http://cwrc.ca/templates/css/orlando.css"?>
-        <BIOGRAPHY SEX="FEMALE" PERSON="BRWWRITER">
+        <!-- <BIOGRAPHY SEX="FEMALE" PERSON="BRWWRITER"> -->
             <ORLANDOHEADER TYPE="text">
                 <FILEDESC>
                     <TITLESTMT>
@@ -204,7 +204,7 @@
                 </DIV1>
                 <DIV1>
                     <HEADING>Birth and Context</HEADING>
-                    <BIRTH>
+                   <!--  <BIRTH>
                         <DIV2>
                             <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
                                 <DATE VALUE="1818-07-30">30 July 1818</DATE>
@@ -234,13 +234,13 @@
                                 </P>
                             </SHORTPROSE>
                         </DIV2>
-                    </BIRTH>
+                    </BIRTH> -->
                 </DIV1>
                 <DIV1>
                     <CULTURALFORMATION>
                         <DIV2>
                             <SHORTPROSE>
-                                <P>Of
+                               <!--  <P>Of
                                     <NATIONALHERITAGE FOREBEAR="FATHER">Irish</NATIONALHERITAGE> and
                                     <NATIONALHERITAGE>English</NATIONALHERITAGE> descent, Emily was raised in the
                                     <DENOMINATION>
@@ -253,21 +253,21 @@
                                         <BIBCIT PLACEHOLDER="Chitham, Life of EB 195, 244" DBREF="25506">195, 244</BIBCIT>
                                     </BIBCITS> Virtually all biographical information about her is filtered through the perspectives of others, or inferred from her writings.</P>
                                 <P>
-                                    <NAME STANDARD="Brontë, Emily">EB</NAME> was influentially represented by her sister
+ -->                                   <!--  <NAME STANDARD="Brontë, Emily">EB</NAME> was influentially represented by her sister
                                     <NAME STANDARD="Brontë, Charlotte">Charlotte</NAME>, in her biographical preface to the 1850 edition of
                                     <TITLE TITLETYPE="MONOGRAPHIC">Wuthering Heights</TITLE>, as living apart from the world, a homebody who was
                                     <QUOTE DIRECT="Y">not naturally gregarious</QUOTE> and
                                     <QUOTE DIRECT="Y">had scarcely more practical knowledge of the peasantry amongst whom she lived, than a nun has of the country people who sometimes pass her convent gates.</QUOTE>
                                     <BIBCITS>
                                         <BIBCIT PLACEHOLDER="Charlotte Bronte, Editor's Preface 366" DBREF="26295">366</BIBCIT>
-                                    </BIBCITS>
+                                    </BIBCITS> -->
                                     <NAME STANDARD="Brontë, Emily">EB</NAME>'s own writing, however, suggests a more active interest in the yeoman and peasant classes than her sister would suggest. There is also evidence that she was a competent person who took on many of the practical details of the sisters' household, including managing their investments in railway stock following the death of their father and aunt.</P>
                             </SHORTPROSE>
                         </DIV2>
                     </CULTURALFORMATION>
                 </DIV1>
                 <DIV1>
-                    <HEADING>Family</HEADING>
+                   <!--  <HEADING>Family</HEADING>
                     <FAMILY>
                         <MEMBER RELATION="MOTHER">
                             <DIV2>
@@ -283,8 +283,8 @@
                                     </P>
                                 </SHORTPROSE>
                             </DIV2>
-                        </MEMBER>
-                        <MEMBER RELATION="FATHER">
+                        </MEMBER> -->
+                       <!--  <MEMBER RELATION="FATHER">
                             <DIV2>
                                 <HEADING>Father</HEADING>
                                 <SHORTPROSE>
@@ -304,16 +304,16 @@
                                         <BIBCITS>
                                             <BIBCIT PLACEHOLDER="Barker 2-3, 107-8" DBREF="391">2-3, 107-8</BIBCIT>
                                         </BIBCITS>
-                                    </P>
+                                    </P> -->
                                     <P>Patrick Brontë was ordained late in 1807 and held several curacies, mostly in Yorkshire, where he worked with evangelical fervour to serve far-flung communities.
-                                        <SCHOLARNOTE>
+                                        <!-- <SCHOLARNOTE>
                                             <P>He
                                                 <SIGNIFICANTACTIVITY PHILANTHROPYVOLUNTEER="PHILANTHROPYVOLUNTEERYES" REG="fundraiser">raised money to distribute Bibles to the poor</SIGNIFICANTACTIVITY>, and helped in 1813 to found a
                                                 <ORGNAME STANDARD="Church Missionary Association">Church Missionary Association</ORGNAME> at Bradford, for work in Africa and the East.
                                                 <BIBCITS>
                                                     <BIBCIT PLACEHOLDER="Barker 60-1" DBREF="391">60-1</BIBCIT>
                                                 </BIBCITS>
-                                            </P>
+                                            </P> -->
                                         </SCHOLARNOTE> He also preached strongly against the Luddite activity then taking place in the area. In
                                         <DATE VALUE="1820-02">February 1820</DATE> he took up the perpetual curacy of Haworth, which gave him a modest income of ¥170 per year.
                                         <BIBCITS>
@@ -321,10 +321,10 @@
                                         </BIBCITS>
                                     </P>
                                     <P>Patrick Brontë had
-                                        <JOB REG="author">literary aspirations</JOB> and published several books.
+                                        <!-- <JOB REG="author">literary aspirations</JOB> and published several books. -->
                                         <SCHOLARNOTE>
                                             <P>As early as 1810, he had
-                                                <SIGNIFICANTACTIVITY REG="poet">published a poem</SIGNIFICANTACTIVITY> on didactic subjects, and by 1813 had published two books of similar pieces,
+                                                <!-- <SIGNIFICANTACTIVITY REG="poet">published a poem</SIGNIFICANTACTIVITY> on didactic subjects, and by 1813 had published two books of similar pieces, -->
                                                 <TITLE TITLETYPE="MONOGRAPHIC">Cottage Poems</TITLE> and
                                                 <TITLE TITLETYPE="MONOGRAPHIC">The Rural Minstrel</TITLE>. In 1815 another collection,
                                                 <TITLE TITLETYPE="MONOGRAPHIC">The Cottage in the Wood</TITLE>, inaugurated the spelling
@@ -352,11 +352,12 @@
                                 <SHORTPROSE>
                                     <P>Two of
                                         <NAME STANDARD="Brontë, Emily">EB</NAME>'s sisters,
-                                        <NAME STANDARD="Brontë, Maria,, 1814 - 1825">Maria</NAME> and
+                                        <!-- <NAME STANDARD="Brontë, Maria,, 1814 - 1825">Maria</NAME> and -->
                                         <NAME STANDARD="Brontë, Elizabeth">Elizabeth</NAME>, died before she reached the age of seven. With
                                         <NAME STANDARD="Brontë, Charlotte">Charlotte</NAME>, her elder by two years, and
                                         <NAME STANDARD="Brontë, Anne">Anne</NAME>, her younger by eighteen months, Emily engaged in extensive imaginative play and literary collaboration, along with their brother when he was at home.</P>
                                 </SHORTPROSE>
+                                <!-- AGL: the other sisters don't get picked up via extraction because we are only taking the first name in the shortprose (as per extraction instructions)-->
                             </DIV2>
                         </MEMBER>
                         <MEMBER RELATION="BROTHER">
@@ -365,8 +366,8 @@
                                 <SHORTPROSE>
                                     <P>
                                         <NAME STANDARD="Brontë, Emily">EB</NAME> was supposed by early biographers to have been close to her brother
-                                        <NAME STANDARD="Brontë, Branwell">Branwell</NAME>, who was born on
-                                        <DATE VALUE="1817-06-26">26 June 1817</DATE>, perhaps because of their closeness in age, his wayward temperament, and a supposed similarity to the character of Heathcliff in
+<!--                                         <NAME STANDARD="Brontë, Branwell">Branwell</NAME>, who was born on
+ -->                                        <DATE VALUE="1817-06-26">26 June 1817</DATE>, perhaps because of their closeness in age, his wayward temperament, and a supposed similarity to the character of Heathcliff in
                                         <TITLE TITLETYPE="MONOGRAPHIC">Wuthering Heights</TITLE>. More recent scholars do not believe the two to have been particularly intimate; indeed, Emily seems to have been quite self-contained, even with members of her family.
                                         <BIBCITS>
                                             <BIBCIT PLACEHOLDER="Barker 74" DBREF="391">74</BIBCIT>
@@ -376,7 +377,7 @@
                                 </SHORTPROSE>
                             </DIV2>
                         </MEMBER>
-                        <MEMBER RELATION="AUNT">
+                       <!--  <MEMBER RELATION="AUNT">
                             <DIV2>
                                 <HEADING>Strong Women</HEADING>
                                 <SHORTPROSE>
@@ -393,7 +394,7 @@
                                     </P>
                                 </SHORTPROSE>
                             </DIV2>
-                        </MEMBER>
+                        </MEMBER> -->
                         <DIV2>
                             <SHORTPROSE>
                                 <P>Another important member of the family for many years was their indoor servant, the widowed
@@ -539,7 +540,7 @@
                         <DIV2>
                             <HEADING>Gondal</HEADING>
                             <SHORTPROSE>
-                                <P>During childhood and early adulthood the Brontë siblings produced elaborate fantasy worlds, which they acted out as
+                               <!--  <P>During childhood and early adulthood the Brontë siblings produced elaborate fantasy worlds, which they acted out as
                                     <SOCALLED>plays</SOCALLED>, in part with toy figures. These worlds came to have individualized personae, geographies, and histories, which were recorded in a substantial body of juvenilia. All four children shared in Glass Town Confederation, which later developed into the world of Angria, led by
                                     <NAME STANDARD="Brontë, Charlotte">Charlotte</NAME> and
                                     <NAME STANDARD="Brontë, Branwell">Branwell</NAME>. Emily created the world of Gondal with
@@ -555,13 +556,13 @@
                                             <RESEARCHNOTE>sib: new line in original: using line tag to create new line</RESEARCHNOTE>
                                         </LB>
                                     </QUOTE>
-                                </P>
+                                </P> -->
                             </SHORTPROSE>
                         </DIV2>
                     </LEISUREANDSOCIETY>
                 </DIV1>
                 <DIV1>
-                    <HEALTH ISSUE="PHYSICAL">
+                <!--     <HEALTH ISSUE="PHYSICAL">
                         <DIV2>
                             <SHORTPROSE>
                                 <P>
@@ -574,7 +575,7 @@
                                 </P>
                             </SHORTPROSE>
                         </DIV2>
-                    </HEALTH>
+                    </HEALTH> -->
                 </DIV1>
                 <DIV1>
                     <EDUCATION MODE="INSTITUTIONAL">
@@ -636,7 +637,7 @@
                     </OCCUPATION>
                 </DIV1>
                 <DIV1>
-                    <HEALTH ISSUE="MENTAL">
+                    <!-- <HEALTH ISSUE="MENTAL">
                         <DIV2>
                             <SHORTPROSE>
                                 <P>In a letter to
@@ -653,7 +654,7 @@
                                 </P>
                             </SHORTPROSE>
                         </DIV2>
-                    </HEALTH>
+                    </HEALTH> -->
                 </DIV1>
                 <DIV1>
                     <EDUCATION MODE="INSTITUTIONAL">
@@ -750,7 +751,7 @@
                     </OCCUPATION>
                 </DIV1>
                 <DIV1>
-                    <LOCATION RELATIONTO="TRAVELLED">
+                   <!--  <LOCATION RELATIONTO="TRAVELLED">
                         <DIV2>
                             <SHORTPROSE>
                                 <P>From this time
@@ -767,7 +768,7 @@
                                 </P>
                             </SHORTPROSE>
                         </DIV2>
-                    </LOCATION>
+                    </LOCATION> -->
                 </DIV1>
                 <DIV1>
                     <HEADING>Thrust into Publication?</HEADING>
@@ -825,7 +826,7 @@
                     </FAMILY>
                 </DIV1>
                 <DIV1>
-                    <HEALTH ISSUE="PHYSICAL">
+                    <!-- <HEALTH ISSUE="PHYSICAL">
                         <DIV2>
                             <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
                                 <DATE VALUE="1848-11-07">7 November 1848</DATE>
@@ -835,8 +836,8 @@
                                 <BIBCITS>
                                     <BIBCIT PLACEHOLDER="Charlotte Bronte, Letters 2: 138" DBREF="17685">2: 138</BIBCIT>
                                 </BIBCITS>
-                            </CHRONSTRUCT>
-                            <SHORTPROSE>
+                            </CHRONSTRUCT> -->
+                            <!-- <SHORTPROSE>
                                 <P>Emily refused to answer her sister's anxious questions, consult a doctor, or take any medicine. Although her condition steadily worsened, as late as 7 December Charlotte still held out hope:
                                     <QUOTE DIRECT="Y">I
                                         <EMPH>must</EMPH> cling to the expectation of her recovery; I
@@ -844,14 +845,14 @@
                                     <BIBCITS>
                                         <BIBCIT PLACEHOLDER="Charlotte Bronte, Letters 2: 147" DBREF="17685">2: 147</BIBCIT>
                                     </BIBCITS> Only on the day of Emily's death did she consent to see a doctor.</P>
-                            </SHORTPROSE>
+                            </SHORTPROSE> -->
                         </DIV2>
                     </HEALTH>
                 </DIV1>
                 <DIV1>
                     <DEATH>
                         <DIV2>
-                            <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
+                            <!-- <CHRONSTRUCT RELEVANCE="SELECTIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="SIB">
                                 <DATE VALUE="1848-12-19">19 December 1848</DATE>
                                 <CHRONPROSE>
                                     <NAME STANDARD="Brontë, Emily">EB</NAME> died of
@@ -864,13 +865,13 @@
                                 <BIBCITS>
                                     <BIBCIT PLACEHOLDER="Barker 576" DBREF="391">576</BIBCIT>
                                 </BIBCITS>
-                            </CHRONSTRUCT>
-                            <SHORTPROSE>
+                            </CHRONSTRUCT> -->
+                           <!--  <SHORTPROSE>
                                 <P>She was buried in the vaults of the Haworth Church three days later.
                                     <BIBCITS>
                                         <BIBCIT PLACEHOLDER="Barker 578, 656" DBREF="391">578, 656</BIBCIT>
                                     </BIBCITS>
-                                </P>
+                                </P> -->
                                 <P>The paucity of archival material has meant that her sister Charlotte's interpretation of
                                     <NAME STANDARD="Brontë, Emily">EB</NAME>'s character and the significance of her life, as articulated in the former's posthumous editing of the poems and her
                                     <TITLE TITLETYPE="ANALYTIC" REG="Biographical Notice of Ellis and Acton Bell">Biographical Notice</TITLE> in the 1850 edition, had an enormous impact on subsequent biographies and critical interpretations of
