@@ -190,32 +190,32 @@
 
 # data:bronem_CulturalFormContext2_Snippet a oa:TextualBody ;
 #     rdfs:label "Brontë, Emily CulturalFormContext snippet" ;
-#     dctypes:description "EB was influentially represented by her sister Charlotte, in her biographical preface to the 1850 edition of Wuthering Heights, as living apart from the world, a homebody who was not naturally gregarious and had scarcely..."^^xsd:string ;
+#     dcterms:description "EB was influentially represented by her sister Charlotte, in her biographical preface to the 1850 edition of Wuthering Heights, as living apart from the world, a homebody who was not naturally gregarious and had scarcely..."^^xsd:string ;
 #     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#BirthandContext> .
 
 # data:bronem_LeisureContext1_Snippet a oa:TextualBody ;
 #     rdfs:label "Brontë, Emily LeisureContext snippet" ;
-#     dctypes:description "During childhood and early adulthood the Brontë siblings produced elaborate fantasy worlds, which they acted out as plays, in part with toy figures. These worlds came to have individualized personae, geographies, and histories, which were..."^^xsd:string ;
+#     dcterms:description "During childhood and early adulthood the Brontë siblings produced elaborate fantasy worlds, which they acted out as plays, in part with toy figures. These worlds came to have individualized personae, geographies, and histories, which were..."^^xsd:string ;
 #     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#Gondal> .
 
 # data:bronem_MentalHealthContext2_Snippet a oa:TextualBody ;
 #     rdfs:label "Brontë, Emily MentalHealthContext snippet" ;
-#     dctypes:description "In a letter to Ellen Nussey, Charlotte described her sister's arduous duties there: Hard labour from six in the morning until near eleven at night. with only one half hour of exercise between—this is slaverydlk:..."^^xsd:string ;
+#     dcterms:description "In a letter to Ellen Nussey, Charlotte described her sister's arduous duties there: Hard labour from six in the morning until near eleven at night. with only one half hour of exercise between—this is slaverydlk:..."^^xsd:string ;
 #     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#Teaching> .
 
 # data:bronem_PhysicalHealthContext1_Snippet a oa:TextualBody ;
 #     rdfs:label "Brontë, Emily PhysicalHealthContext snippet" ;
-#     dctypes:description "EB apparently had a very independent character. In a famous incident related to Elizabeth Gaskell by Charlotte, Emily tried to help a possibly rabid dog, only to have it bite her. She immediately went inside..."^^xsd:string ;
+#     dcterms:description "EB apparently had a very independent character. In a famous incident related to Elizabeth Gaskell by Charlotte, Emily tried to help a possibly rabid dog, only to have it bite her. She immediately went inside..."^^xsd:string ;
 #     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#Gondal> .
 
 # data:bronem_PhysicalHealthContext3_Snippet a oa:TextualBody ;
 #     rdfs:label "Brontë, Emily PhysicalHealthContext snippet" ;
-#     dctypes:description "Emily refused to answer her sister's anxious questions, consult a doctor, or take any medicine. Although her condition steadily worsened, as late as 7 December Charlotte still held out hope: I must cling to the..."^^xsd:string ;
+#     dcterms:description "Emily refused to answer her sister's anxious questions, consult a doctor, or take any medicine. Although her condition steadily worsened, as late as 7 December Charlotte still held out hope: I must cling to the..."^^xsd:string ;
 #     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#FinalIllnessandDeath> .
 
 # data:bronem_PhysicalHealthContext4_Snippet a oa:TextualBody ;
 #     rdfs:label "Brontë, Emily PhysicalHealthContext snippet" ;
-#     dctypes:description "7 November 1848 In a letter to her publisher, Charlotte Brontë reported with concern that her sister Emily was too ill to write: she had a cough and fever. 2: 138"^^xsd:string ;
+#     dcterms:description "7 November 1848 In a letter to her publisher, Charlotte Brontë reported with concern that her sister Emily was too ill to write: she had a cough and fever. 2: 138"^^xsd:string ;
 #     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#FinalIllnessandDeath> .
 
 # data:bronem_SpatialContext_travelsTo_1_identifying a cwrc:SpatialContext ;
@@ -228,7 +228,7 @@
 
 # data:bronem_causeofdeath_context0_Snippet a oa:TextualBody ;
 #     rdfs:label "Brontë, Emily DeathContext snippet " ;
-#     dctypes:description "EB died of consumption at the age of thirty, at Haworth in Yorkshire."^^xsd:string ;
+#     dcterms:description "EB died of consumption at the age of thirty, at Haworth in Yorkshire."^^xsd:string ;
 #     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#Death> .
 
 # data:bronembirthContextidentifying1 oa:hasBody data:Brontë_Emily,
@@ -248,22 +248,22 @@
 
 # data:bronem_CulturalFormContext1_Snippet a oa:TextualBody ;
 #     rdfs:label "Brontë, Emily CulturalFormContext snippet" ;
-#     dctypes:description "Of Irish and English descent, Emily was raised in the Church of England as the daughter of a clergyman. Almost nothing is known directly of her personality and opinions; one biographer characterizes her as secretive..."^^xsd:string ;
+#     dcterms:description "Of Irish and English descent, Emily was raised in the Church of England as the daughter of a clergyman. Almost nothing is known directly of her personality and opinions; one biographer characterizes her as secretive..."^^xsd:string ;
 #     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#BirthandContext> .
 
 # data:bronem_SpatialContext_travelsTo_1_Snippet a oa:TextualBody ;
 #     rdfs:label "Brontë, Emily location snippet" ;
-#     dctypes:description "From this time EB stayed close to home, apart from a brief trip that she and Anne made to York in June 1845. During the journey she and Anne pretended they were Royalist prisoners fleeing..."^^xsd:string ;
+#     dcterms:description "From this time EB stayed close to home, apart from a brief trip that she and Anne made to York in June 1845. During the journey she and Anne pretended they were Royalist prisoners fleeing..."^^xsd:string ;
 #     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#Teaching> .
 
 # data:bronembirthContext_snippet1 a oa:TextualBody ;
 #     rdfs:label "Brontë_Emily birthContext snippet" ;
-#     dctypes:description """30 July 1818 Emily Brontë, the fourth of the Brontë daughters, was born in Thornton, near Bradford in Yorkshire . 78
+#     dcterms:description """30 July 1818 Emily Brontë, the fourth of the Brontë daughters, was born in Thornton, near Bradford in Yorkshire . 78
 # She was baptized three weeks later, on August 20. Her eldest sister, Maria, was only four years and three months old. 59, 78""" .
 
 # data:bronemdeathContext_snippet1 a oa:TextualBody ;
 #     rdfs:label "Brontë_Emily deathContext snippet" ;
-#     dctypes:description """19 December 1848 EBdied of consumption at the age of thirty, at Haworth in Yorkshire . 576
+#     dcterms:description """19 December 1848 EBdied of consumption at the age of thirty, at Haworth in Yorkshire . 576
 # She was buried in the vaults of the Haworth Church three days later. 578, 656""" .
 
 #data:Brontë_Emily a cwrc:NaturalPerson ;
