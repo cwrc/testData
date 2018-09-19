@@ -1,0 +1,182 @@
+#149 triples created
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:atwoma_OccupationContext1_describing a cwrc:OccupationContext ;
+    rdfs:label "Atwood, Margaret - Occupation Context describing annotation" ;
+    dcterms:subject data:Atwood_Margaret,
+        cwrc:Macquarie_University_ORG,
+        cwrc:Sir_George_Williams_University_ORG,
+        cwrc:University_of_Alberta_ORG,
+        cwrc:University_of_British_Columbia_ORG,
+        cwrc:University_of_Toronto_ORG,
+        cwrc:York_University_ORG,
+        cwrc:business,
+        cwrc:writerInResidence,
+        <http://sws.geonames.org/2077456/>,
+        <http://sws.geonames.org/5946768/>,
+        <http://sws.geonames.org/6077243/>,
+        <http://sws.geonames.org/6167865/>,
+        <http://sws.geonames.org/6252001/> ;
+    cwrc:hasIDependencyOn data:atwoma_OccupationContext1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:hasEmployer cwrc:University_of_British_Columbia_ORG ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:hasEmployer cwrc:York_University_ORG ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:hasEmployer cwrc:Macquarie_University_ORG ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:hasPaidOccupation cwrc:writerInResidence ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:hasEmployer cwrc:University_of_Toronto_ORG ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:hasEmployer cwrc:Sir_George_Williams_University_ORG ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:hasEmployer cwrc:University_of_Alberta_ORG ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:hasPaidOccupation cwrc:business ."^^xsd:string ] ;
+    oa:hasTarget data:Atwood_Margaret,
+        data:atwoma_OccupationContext1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:atwoma_OccupationContext2_describing a cwrc:OccupationContext ;
+    rdfs:label "Atwood, Margaret - Occupation Context describing annotation" ;
+    dcterms:subject data:Atwood_Margaret,
+        cwrc:Anansi_Press_ORG,
+        cwrc:Writers_Union_of_Canada_ORG,
+        cwrc:dance,
+        cwrc:eventOrganizer,
+        cwrc:fundraiser,
+        <http://sws.geonames.org/6167865/> ;
+    cwrc:hasIDependencyOn data:atwoma_OccupationContext2_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:hasVolunteerOccupation cwrc:dance ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:hasVolunteerOccupation cwrc:fundraiser ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:hasVolunteerOccupation cwrc:eventOrganizer ."^^xsd:string ] ;
+    oa:hasTarget data:Atwood_Margaret,
+        data:atwoma_OccupationContext2_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:atwoma_OccupationContext3_identifying a cwrc:OccupationContext ;
+    rdfs:label "Atwood, Margaret - Occupation Context identifying annotation" ;
+    oa:hasBody data:Atwood_Margaret,
+        data:Gordimer_Nadine,
+        data:Morrison_Toni,
+        cwrc:PEN_International_ORG,
+        cwrc:Writers_Union_of_Canada_ORG ;
+    oa:hasTarget data:atwoma_OccupationContext3_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:Gordimer_Nadine a cwrc:NaturalPerson ;
+    rdfs:label "Gordimer, Nadine"^^xsd:string ;
+    foaf:name "Gordimer, Nadine"^^xsd:string .
+
+data:Morrison_Toni a cwrc:NaturalPerson ;
+    rdfs:label "Morrison, Toni"^^xsd:string ;
+    foaf:name "Morrison, Toni"^^xsd:string .
+
+data:atwoma_OccupationContext1_identifying a cwrc:OccupationContext ;
+    rdfs:label "Atwood, Margaret - Occupation Context identifying annotation" ;
+    oa:hasBody data:Atwood_Margaret,
+        cwrc:Macquarie_University_ORG,
+        cwrc:Sir_George_Williams_University_ORG,
+        cwrc:University_of_Alberta_ORG,
+        cwrc:University_of_British_Columbia_ORG,
+        cwrc:University_of_Toronto_ORG,
+        cwrc:York_University_ORG,
+        cwrc:business,
+        cwrc:writerInResidence,
+        <http://sws.geonames.org/2077456/>,
+        <http://sws.geonames.org/5946768/>,
+        <http://sws.geonames.org/6077243/>,
+        <http://sws.geonames.org/6167865/>,
+        <http://sws.geonames.org/6252001/> ;
+    oa:hasTarget data:atwoma_OccupationContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:atwoma_OccupationContext2_identifying a cwrc:OccupationContext ;
+    rdfs:label "Atwood, Margaret - Occupation Context identifying annotation" ;
+    oa:hasBody data:Atwood_Margaret,
+        cwrc:Anansi_Press_ORG,
+        cwrc:Writers_Union_of_Canada_ORG,
+        cwrc:dance,
+        cwrc:eventOrganizer,
+        cwrc:fundraiser,
+        <http://sws.geonames.org/6167865/> ;
+    oa:hasTarget data:atwoma_OccupationContext2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:atwoma_OccupationContext3_Snippet a oa:TextualBody ;
+    rdfs:label "Atwood, Margaret - Occupation Context snippet" ;
+    dcterms:description "Later, in 1982-3, MA was President of the Writers Union of Canada. She was President of the Canadian branch of PEN International in 1984-6. She became a Vice-President of Pen International on 11 July 2007,..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=atwoma#PublicandLiteraryLife> .
+
+data:atwoma_OccupationContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Atwood, Margaret - Occupation Context snippet" ;
+    dcterms:description "Back in Toronto between periods of study, MA took a job in 1963 with a market research company, and then taught at the University of British Columbia, 1964-5. After this she taught briefly at Sir..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=atwoma#Jobs> .
+
+data:atwoma_OccupationContext2_Snippet a oa:TextualBody ;
+    rdfs:label "Atwood, Margaret - Occupation Context snippet" ;
+    dcterms:description "MA has spoken at length about the literary life in Toronto in the 1960s and 70s: improvisational, inventive, and far from top-heavy with a sense of [its] own importance.20 During 1971-3 she was editor of..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=atwoma#PublicandLiteraryLife> .
+
+data:Atwood_Margaret a cwrc:NaturalPerson ;
+    rdfs:label "Atwood, Margaret"^^xsd:string ;
+    cwrc:hasEmployer cwrc:Macquarie_University_ORG,
+        cwrc:Sir_George_Williams_University_ORG,
+        cwrc:University_of_Alberta_ORG,
+        cwrc:University_of_British_Columbia_ORG,
+        cwrc:University_of_Toronto_ORG,
+        cwrc:York_University_ORG ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasPaidOccupation cwrc:business,
+        cwrc:writerInResidence ;
+    cwrc:hasVolunteerOccupation cwrc:dance,
+        cwrc:eventOrganizer,
+        cwrc:fundraiser ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=atwoma> ;
+    foaf:name "Atwood, Margaret"^^xsd:string .
+

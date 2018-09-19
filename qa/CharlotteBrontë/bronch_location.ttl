@@ -1,0 +1,929 @@
+#823 triples created
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:bronch_SpatialContext-inhabits_1_describing a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context describing annotation" ;
+    dcterms:subject data:Bront_Charlotte,
+        <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/2647278/>,
+        <http://sws.geonames.org/2650225/>,
+        <http://sws.geonames.org/8581589/> ;
+    cwrc:hasEvent data:bronch_inhabits_Event1 ;
+    cwrc:hasIDependencyOn data:bronch_SpatialContext-inhabits_1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:inhabits <http://sws.geonames.org/2650225/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:inhabits <http://sws.geonames.org/2647278/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:inhabits <http://sws.geonames.org/2643743/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:inhabits <http://sws.geonames.org/8581589/> ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_SpatialContext-inhabits_1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_SpatialContext-relocatesTo_1_describing a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context describing annotation" ;
+    dcterms:subject data:Bront_Charlotte,
+        data:Gaskell_Elizabeth,
+        cwrc:The_Life_of_Charlotte_Bront_TITLE,
+        cwrc:Wuthering_Heights_TITLE,
+        <http://sws.geonames.org/2647278/> ;
+    cwrc:hasIDependencyOn data:bronch_SpatialContext-relocatesTo_1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:relocatesTo <http://sws.geonames.org/2647278/> ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_SpatialContext-relocatesTo_1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_SpatialContext-relocatesTo_2_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context identifying annotation" ;
+    oa:hasBody data:Bront_Charlotte ;
+    oa:hasTarget data:bronch_SpatialContext-relocatesTo_2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_SpatialContext-relocatesTo_3_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context identifying annotation" ;
+    oa:hasBody data:Bront_Charlotte ;
+    oa:hasTarget data:bronch_SpatialContext-relocatesTo_3_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_SpatialContext-relocatesTo_4_describing a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context describing annotation" ;
+    dcterms:subject data:Bront_Charlotte,
+        <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/2800866/> ;
+    cwrc:hasEvent data:bronch_relocatesTo_Event1 ;
+    cwrc:hasIDependencyOn data:bronch_SpatialContext-relocatesTo_4_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:relocatesTo <http://sws.geonames.org/2800866/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:relocatesTo <http://sws.geonames.org/2643743/> ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_SpatialContext-relocatesTo_4_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_SpatialContext-relocatesTo_5_describing a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context describing annotation" ;
+    dcterms:subject data:Bront_Charlotte,
+        <http://sws.geonames.org/2647278/> ;
+    cwrc:hasEvent data:bronch_relocatesTo_Event2 ;
+    cwrc:hasIDependencyOn data:bronch_SpatialContext-relocatesTo_5_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:relocatesTo <http://sws.geonames.org/2647278/> ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_SpatialContext-relocatesTo_5_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_SpatialContext-travelsTo_1_describing a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context describing annotation" ;
+    dcterms:subject data:Bront_Charlotte,
+        data:Nussey_Ellen,
+        <http://sws.geonames.org/2654728/> ;
+    cwrc:hasEvent data:bronch_travelsTo_Event1 ;
+    cwrc:hasIDependencyOn data:bronch_SpatialContext-travelsTo_1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:travelsTo <http://sws.geonames.org/2654728/> ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_SpatialContext-travelsTo_1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_SpatialContext-travelsTo_2_describing a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context describing annotation" ;
+    dcterms:subject data:Bront_Charlotte,
+        data:Nussey_Ellen,
+        <http://sws.geonames.org/2638419/> ;
+    cwrc:hasEvent data:bronch_travelsTo_Event2 ;
+    cwrc:hasIDependencyOn data:bronch_SpatialContext-travelsTo_2_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:travelsTo <http://sws.geonames.org/2638419/> ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_SpatialContext-travelsTo_2_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_SpatialContext-travelsTo_3_describing a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context describing annotation" ;
+    dcterms:subject data:Bront_Charlotte,
+        data:Gaskell_Elizabeth,
+        data:Kay-Shuttleworth_Lady_Janet,
+        data:Kay-Shuttleworth_Sir_James_Philips,
+        <http://sws.geonames.org/2633852/>,
+        <http://sws.geonames.org/2645022/> ;
+    cwrc:hasEvent data:bronch_travelsTo_Event3 ;
+    cwrc:hasIDependencyOn data:bronch_SpatialContext-travelsTo_3_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:travelsTo <http://sws.geonames.org/2633852/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:travelsTo <http://sws.geonames.org/2645022/> ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_SpatialContext-travelsTo_3_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_SpatialContext-visits_10_describing a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context describing annotation" ;
+    dcterms:subject data:Bront_Charlotte,
+        data:Smith_George_Murray,
+        <http://sws.geonames.org/2643743/> ;
+    cwrc:hasEvent data:bronch_visits_Event5 ;
+    cwrc:hasIDependencyOn data:bronch_SpatialContext-visits_10_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:visits <http://sws.geonames.org/2643743/> ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_SpatialContext-visits_10_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_SpatialContext-visits_11_describing a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context describing annotation" ;
+    dcterms:subject data:Bront_Charlotte,
+        data:Gaskell_Elizabeth,
+        <http://sws.geonames.org/2643123/> ;
+    cwrc:hasEvent data:bronch_visits_Event6 ;
+    cwrc:hasIDependencyOn data:bronch_SpatialContext-visits_11_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:visits <http://sws.geonames.org/2643123/> ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_SpatialContext-visits_11_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_SpatialContext-visits_12_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context identifying annotation" ;
+    oa:hasBody data:Bront_Charlotte,
+        data:Martineau_Harriet ;
+    oa:hasTarget data:bronch_SpatialContext-visits_12_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_SpatialContext-visits_13_describing a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context describing annotation" ;
+    dcterms:subject data:Bront_Anne,
+        data:Bront_Charlotte,
+        <http://sws.geonames.org/2638419/>,
+        <http://sws.geonames.org/2649463/> ;
+    cwrc:hasEvent data:bronch_visits_Event7 ;
+    cwrc:hasIDependencyOn data:bronch_SpatialContext-visits_13_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:visits <http://sws.geonames.org/2649463/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:visits <http://sws.geonames.org/2638419/> ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_SpatialContext-visits_13_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_SpatialContext-visits_14_describing a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context describing annotation" ;
+    dcterms:subject data:Bront_Charlotte,
+        <http://sws.geonames.org/2643743/> ;
+    cwrc:hasEvent data:bronch_visits_Event8 ;
+    cwrc:hasIDependencyOn data:bronch_SpatialContext-visits_14_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:visits <http://sws.geonames.org/2643743/> ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_SpatialContext-visits_14_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_SpatialContext-visits_15_describing a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context describing annotation" ;
+    dcterms:subject data:Bront_Charlotte,
+        data:Gaskell_Elizabeth,
+        <http://sws.geonames.org/2643123/> ;
+    cwrc:hasEvent data:bronch_visits_Event9 ;
+    cwrc:hasIDependencyOn data:bronch_SpatialContext-visits_15_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:visits <http://sws.geonames.org/2643123/> ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_SpatialContext-visits_15_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_SpatialContext-visits_1_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context identifying annotation" ;
+    oa:hasBody data:Bront_Charlotte,
+        data:Chorley_Henry_Fothergill,
+        data:Forster_John,
+        data:Smith_George_Murray,
+        cwrc:Smith_Elder_and_Co_ORG ;
+    oa:hasTarget data:bronch_SpatialContext-visits_1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_SpatialContext-visits_2_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context identifying annotation" ;
+    oa:hasBody data:Bront_Charlotte,
+        data:Lewes_George_Henry,
+        data:Richmond_George,
+        data:Wellington_Arthur_Wellesley_first_Duke_of,
+        cwrc:Chapel_Royal_ORG,
+        cwrc:House_of_Commons_ORG,
+        cwrc:Society_of_Friends_ORG ;
+    oa:hasTarget data:bronch_SpatialContext-visits_2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_SpatialContext-visits_3_describing a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context describing annotation" ;
+    dcterms:subject data:Bront_Charlotte,
+        data:Martineau_Harriet,
+        data:Thackeray_William_Makepeace,
+        <http://sws.geonames.org/2643743/> ;
+    cwrc:hasEvent data:bronch_visits_Event1 ;
+    cwrc:hasIDependencyOn data:bronch_SpatialContext-visits_3_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:visits <http://sws.geonames.org/2643743/> ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_SpatialContext-visits_3_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_SpatialContext-visits_4_describing a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context describing annotation" ;
+    dcterms:subject data:Bront_Charlotte,
+        data:Procter_Adelaide,
+        data:Ritchie_Anne_Thackeray,
+        data:Smith_George_Murray,
+        <http://sws.geonames.org/2643743/> ;
+    cwrc:hasEvent data:bronch_visits_Event2 ;
+    cwrc:hasIDependencyOn data:bronch_SpatialContext-visits_4_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:visits <http://sws.geonames.org/2643743/> ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_SpatialContext-visits_4_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_SpatialContext-visits_5_describing a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context describing annotation" ;
+    dcterms:subject data:Bront_Charlotte,
+        data:Nussey_Ellen,
+        data:Smith_Eliza,
+        data:Smith_George_Murray,
+        <http://sws.geonames.org/2650225/>,
+        "Brookroyd,Yorkshire,England" ;
+    cwrc:hasEvent data:bronch_visits_Event3 ;
+    cwrc:hasIDependencyOn data:bronch_SpatialContext-visits_5_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:visits \"Brookroyd,Yorkshire,England\" ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:visits <http://sws.geonames.org/2650225/> ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_SpatialContext-visits_5_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_SpatialContext-visits_6_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context identifying annotation" ;
+    oa:hasBody data:Bront_Charlotte ;
+    oa:hasTarget data:bronch_SpatialContext-visits_6_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_SpatialContext-visits_7_describing a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context describing annotation" ;
+    dcterms:subject data:Bront_Charlotte,
+        data:Martineau_Harriet,
+        <http://sws.geonames.org/2645022/>,
+        <http://sws.geonames.org/2657360/> ;
+    cwrc:hasEvent data:bronch_visits_Event4 ;
+    cwrc:hasIDependencyOn data:bronch_SpatialContext-visits_7_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:visits <http://sws.geonames.org/2645022/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:visits <http://sws.geonames.org/2657360/> ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_SpatialContext-visits_7_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_SpatialContext-visits_8_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context identifying annotation" ;
+    oa:hasBody data:Bront_Charlotte,
+        cwrc:Villette_TITLE ;
+    oa:hasTarget data:bronch_SpatialContext-visits_8_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_SpatialContext-visits_9_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context identifying annotation" ;
+    oa:hasBody data:Bront_Charlotte,
+        data:Flix_Elisa,
+        data:Thackeray_William_Makepeace,
+        cwrc:Somerset_House_ORG ;
+    oa:hasTarget data:bronch_SpatialContext-visits_9_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:Chorley_Henry_Fothergill a cwrc:NaturalPerson ;
+    rdfs:label "Chorley, Henry Fothergill"^^xsd:string ;
+    foaf:name "Chorley, Henry Fothergill"^^xsd:string .
+
+data:Flix_Elisa a cwrc:NaturalPerson ;
+    rdfs:label "Flix, Elisa"^^xsd:string ;
+    foaf:name "Flix, Elisa"^^xsd:string .
+
+data:Forster_John a cwrc:NaturalPerson ;
+    rdfs:label "Forster, John"^^xsd:string ;
+    foaf:name "Forster, John"^^xsd:string .
+
+data:Lewes_George_Henry a cwrc:NaturalPerson ;
+    rdfs:label "Lewes, George Henry"^^xsd:string ;
+    foaf:name "Lewes, George Henry"^^xsd:string .
+
+data:Richmond_George a cwrc:NaturalPerson ;
+    rdfs:label "Richmond, George"^^xsd:string ;
+    foaf:name "Richmond, George"^^xsd:string .
+
+data:Wellington_Arthur_Wellesley_first_Duke_of a cwrc:NaturalPerson ;
+    rdfs:label "Wellington, Arthur Wellesley,,, first Duke of"^^xsd:string ;
+    foaf:name "Wellington, Arthur Wellesley,,, first Duke of"^^xsd:string .
+
+data:bronch_SpatialContext-inhabits_1_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:bronch_inhabits_Event1 ;
+    oa:hasBody data:Bront_Charlotte,
+        <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/2647278/>,
+        <http://sws.geonames.org/2650225/>,
+        <http://sws.geonames.org/8581589/> ;
+    oa:hasTarget data:bronch_SpatialContext-inhabits_1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_SpatialContext-relocatesTo_1_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context identifying annotation" ;
+    oa:hasBody data:Bront_Charlotte,
+        data:Gaskell_Elizabeth,
+        cwrc:The_Life_of_Charlotte_Bront_TITLE,
+        cwrc:Wuthering_Heights_TITLE,
+        <http://sws.geonames.org/2647278/> ;
+    oa:hasTarget data:bronch_SpatialContext-relocatesTo_1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_SpatialContext-relocatesTo_2_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Spatial Context snippet" ;
+    dcterms:description "The poor health and high mortality rates in Haworthon a level comparable with Londons worstwere caused by deplorable sanitation and poor water supply.96, 635"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#EarlyLifeinHaworth> .
+
+data:bronch_SpatialContext-relocatesTo_3_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Spatial Context snippet" ;
+    dcterms:description "They were accompanied by their father and Mary and Joe Taylor. CB insisted on seeing the major buildings and galleries.377-8"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#Brussels> .
+
+data:bronch_SpatialContext-relocatesTo_4_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:bronch_relocatesTo_Event1 ;
+    oa:hasBody data:Bront_Charlotte,
+        <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/2800866/> ;
+    oa:hasTarget data:bronch_SpatialContext-relocatesTo_4_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_SpatialContext-relocatesTo_5_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:bronch_relocatesTo_Event2 ;
+    oa:hasBody data:Bront_Charlotte,
+        <http://sws.geonames.org/2647278/> ;
+    oa:hasTarget data:bronch_SpatialContext-relocatesTo_5_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_SpatialContext-travelsTo_1_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:bronch_travelsTo_Event1 ;
+    oa:hasBody data:Bront_Charlotte,
+        data:Nussey_Ellen,
+        <http://sws.geonames.org/2654728/> ;
+    oa:hasTarget data:bronch_SpatialContext-travelsTo_1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_SpatialContext-travelsTo_2_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:bronch_travelsTo_Event2 ;
+    oa:hasBody data:Bront_Charlotte,
+        data:Nussey_Ellen,
+        <http://sws.geonames.org/2638419/> ;
+    oa:hasTarget data:bronch_SpatialContext-travelsTo_2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_SpatialContext-travelsTo_3_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:bronch_travelsTo_Event3 ;
+    oa:hasBody data:Bront_Charlotte,
+        data:Gaskell_Elizabeth,
+        data:Kay-Shuttleworth_Lady_Janet,
+        data:Kay-Shuttleworth_Sir_James_Philips,
+        <http://sws.geonames.org/2633852/>,
+        <http://sws.geonames.org/2645022/> ;
+    oa:hasTarget data:bronch_SpatialContext-travelsTo_3_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_SpatialContext-visits_10_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:bronch_visits_Event5 ;
+    oa:hasBody data:Bront_Charlotte,
+        data:Smith_George_Murray,
+        <http://sws.geonames.org/2643743/> ;
+    oa:hasTarget data:bronch_SpatialContext-visits_10_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_SpatialContext-visits_11_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:bronch_visits_Event6 ;
+    oa:hasBody data:Bront_Charlotte,
+        data:Gaskell_Elizabeth,
+        <http://sws.geonames.org/2643123/> ;
+    oa:hasTarget data:bronch_SpatialContext-visits_11_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_SpatialContext-visits_12_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Spatial Context snippet" ;
+    dcterms:description "Late in the year she refused a second invitation from Martineau, but she did not accept it, bowing to the view of her father and friends that Martineaus atheism made a friendship between them inappropriate.709"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#LiteraryLifeandTravel> .
+
+data:bronch_SpatialContext-visits_13_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:bronch_visits_Event7 ;
+    oa:hasBody data:Bront_Anne,
+        data:Bront_Charlotte,
+        <http://sws.geonames.org/2638419/>,
+        <http://sws.geonames.org/2649463/> ;
+    oa:hasTarget data:bronch_SpatialContext-visits_13_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_SpatialContext-visits_14_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:bronch_visits_Event8 ;
+    oa:hasBody data:Bront_Charlotte,
+        <http://sws.geonames.org/2643743/> ;
+    oa:hasTarget data:bronch_SpatialContext-visits_14_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_SpatialContext-visits_15_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:bronch_visits_Event9 ;
+    oa:hasBody data:Bront_Charlotte,
+        data:Gaskell_Elizabeth,
+        <http://sws.geonames.org/2643123/> ;
+    oa:hasTarget data:bronch_SpatialContext-visits_15_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_SpatialContext-visits_1_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Spatial Context snippet" ;
+    dcterms:description "She stayed at the house of handsome, unmarried George Smith, of Smith, Elder, and Co., and his mother. The night before she left, they hosted a dinner for critics, including John Forster and Henry Chorley.616-17,..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#LiteraryLifeandTravel> .
+
+data:bronch_SpatialContext-visits_2_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Spatial Context snippet" ;
+    dcterms:description "CB also had a confrontation with George Henry Lewes. She attended the House of Commons, the Chapel Royal, where she saw her hero the Duke of Wellington, and a meeting of the Society of Friends...."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#LiteraryLifeandTravel> .
+
+data:bronch_SpatialContext-visits_3_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:bronch_visits_Event1 ;
+    oa:hasBody data:Bront_Charlotte,
+        data:Martineau_Harriet,
+        data:Thackeray_William_Makepeace,
+        <http://sws.geonames.org/2643743/> ;
+    oa:hasTarget data:bronch_SpatialContext-visits_3_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_SpatialContext-visits_4_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:bronch_visits_Event2 ;
+    oa:hasBody data:Bront_Charlotte,
+        data:Procter_Adelaide,
+        data:Ritchie_Anne_Thackeray,
+        data:Smith_George_Murray,
+        <http://sws.geonames.org/2643743/> ;
+    oa:hasTarget data:bronch_SpatialContext-visits_4_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_SpatialContext-visits_5_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:bronch_visits_Event3 ;
+    oa:hasBody data:Bront_Charlotte,
+        data:Nussey_Ellen,
+        data:Smith_Eliza,
+        data:Smith_George_Murray,
+        <http://sws.geonames.org/2650225/>,
+        "Brookroyd,Yorkshire,England" ;
+    oa:hasTarget data:bronch_SpatialContext-visits_5_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_SpatialContext-visits_6_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Spatial Context snippet" ;
+    dcterms:description "The visit lasted a week. Martineau feared CBs nerves might not be up to the experiment and ceased as soon as she began to have an effect on her subject.663-4"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#LiteraryLifeandTravel> .
+
+data:bronch_SpatialContext-visits_7_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Charlotte - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:bronch_visits_Event4 ;
+    oa:hasBody data:Bront_Charlotte,
+        data:Martineau_Harriet,
+        <http://sws.geonames.org/2645022/>,
+        <http://sws.geonames.org/2657360/> ;
+    oa:hasTarget data:bronch_SpatialContext-visits_7_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_SpatialContext-visits_8_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Spatial Context snippet" ;
+    dcterms:description "She stayed with Smith and his mother. He was younger than her by eight years, and their correspondence had become increasingly playful on both sides. He has been read as the original for John Bretton..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#LiteraryLifeandTravel> .
+
+data:bronch_SpatialContext-visits_9_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Spatial Context snippet" ;
+    dcterms:description "During the visit, she attended a Thackeray lecture, viewed paintings at Somerset House, went to the Great Exhibition several times, and saw the great actress Rachel perform twice.Great Exhibition"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#LiteraryLifeandTravel> .
+
+data:bronch_SpatialContext-inhabits_1_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Spatial Context snippet" ;
+    dcterms:description "Mid-July 1850 CB returned home after visiting London, Yorkshire, and Edinburgh. 648"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#LiteraryLifeandTravel> .
+
+data:bronch_SpatialContext-relocatesTo_1_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Spatial Context snippet" ;
+    dcterms:description "In early April 1820, the Bronts moved to Haworth, in the West Riding of Yorkshire, where their father took up the position of perpetual curate. Despite the depiction of the village as an isolated, primitive..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#EarlyLifeinHaworth> .
+
+data:bronch_SpatialContext-relocatesTo_4_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Spatial Context snippet" ;
+    dcterms:description "8 February 1842 Emily and CB left for further schooling in Brussels, stopping for three days in London en route."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#Brussels> .
+
+data:bronch_SpatialContext-relocatesTo_5_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Spatial Context snippet" ;
+    dcterms:description "31 December 1843 CB returned to Haworth from Brussels. 427"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#StruggleandLoss> .
+
+data:bronch_SpatialContext-travelsTo_1_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Spatial Context snippet" ;
+    dcterms:description "Late Summer 1839 CB gained her first experience of rail travel and a first, inspiring sight of the sea during a holiday at Bridlington, Yorkshire, on the east coast, with her friend Ellen Nussey. 315-16"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#WorkingasaGoverness> .
+
+data:bronch_SpatialContext-travelsTo_2_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Spatial Context snippet" ;
+    dcterms:description "23 May 1849 CB reluctantly set out to accompany Anne, whose health was failing rapidly, to Scarborough, together with Ellen Nussey. 581"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#StruggleandLoss> .
+
+data:bronch_SpatialContext-travelsTo_3_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Spatial Context snippet" ;
+    dcterms:description "19-26 August 1850 CB visited her neighbours Sir James and Lady Kay-Shuttleworth in the Lake District, where she met Elizabeth Gaskell. 631, 651, 653417"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#LiteraryLifeandTravel> .
+
+data:bronch_SpatialContext-visits_10_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Spatial Context snippet" ;
+    dcterms:description "Late May 1851 CB visited London, where her relationship with her publisher and friend George Smith turned away from intimacy. 235"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#LiteraryLifeandTravel> .
+
+data:bronch_SpatialContext-visits_11_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Spatial Context snippet" ;
+    dcterms:description "27 June 1851 CB visited Elizabeth Gaskell in Manchester on her way back to Haworth. 681"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#LiteraryLifeandTravel> .
+
+data:bronch_SpatialContext-visits_13_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Spatial Context snippet" ;
+    dcterms:description "Late May-Late June 1852 CB returned to Filey, near Scarborough, to try to improve her health and to visit Annes grave. 696-9"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#LiteraryLifeandTravel> .
+
+data:bronch_SpatialContext-visits_14_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Spatial Context snippet" ;
+    dcterms:description "From 5 January 1853 CB spent a month in London where she visited a range of institutions including prisons, hospitals, financial sights in the City, and the General Post Office. 713-14"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#CourtshipandMarriage> .
+
+data:bronch_SpatialContext-visits_15_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Spatial Context snippet" ;
+    dcterms:description "1 May 1854 CB returned Gaskells visit with a four-day stay in Manchester. 752"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#CourtshipandMarriage> .
+
+data:bronch_SpatialContext-visits_3_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Spatial Context snippet" ;
+    dcterms:description "29 November-15 December 1849 CB visited London, where she met Thackeray and Harriet Martineau, both of whom she admired. 617-22"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#LiteraryLifeandTravel> .
+
+data:bronch_SpatialContext-visits_4_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Spatial Context snippet" ;
+    dcterms:description "End of May 1850 CB again visited the Smiths in London, where she met a number of young female writers, among others Anne Thackeray and Adelaide Procter. 639-43"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#LiteraryLifeandTravel> .
+
+data:bronch_SpatialContext-visits_5_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Spatial Context snippet" ;
+    dcterms:description "25 June 1850 CB went from London to her friend Ellen Nusseys in Yorkshire; from there she went on to Edinburgh to join her friends George Smith and his sister Eliza for a couple of..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#LiteraryLifeandTravel> .
+
+data:bronch_SpatialContext-visits_7_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Spatial Context snippet" ;
+    dcterms:description "16 December 1850 CB visited Harriet Martineau at her home The Knoll, in the Lake District, where she asked her host to mesmerize her. 663-4"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#LiteraryLifeandTravel> .
+
+data:Bront_Anne a cwrc:NaturalPerson ;
+    rdfs:label "Bront, Anne"^^xsd:string ;
+    foaf:name "Bront, Anne"^^xsd:string .
+
+data:Kay-Shuttleworth_Lady_Janet a cwrc:NaturalPerson ;
+    rdfs:label "Kay-Shuttleworth, Lady Janet"^^xsd:string ;
+    foaf:name "Kay-Shuttleworth, Lady Janet"^^xsd:string .
+
+data:Kay-Shuttleworth_Sir_James_Philips a cwrc:NaturalPerson ;
+    rdfs:label "Kay-Shuttleworth, Sir James Philips"^^xsd:string ;
+    foaf:name "Kay-Shuttleworth, Sir James Philips"^^xsd:string .
+
+data:Procter_Adelaide a cwrc:NaturalPerson ;
+    rdfs:label "Procter, Adelaide"^^xsd:string ;
+    foaf:name "Procter, Adelaide"^^xsd:string .
+
+data:Ritchie_Anne_Thackeray a cwrc:NaturalPerson ;
+    rdfs:label "Ritchie, Anne Thackeray"^^xsd:string ;
+    foaf:name "Ritchie, Anne Thackeray"^^xsd:string .
+
+data:Smith_Eliza a cwrc:NaturalPerson ;
+    rdfs:label "Smith, Eliza"^^xsd:string ;
+    foaf:name "Smith, Eliza"^^xsd:string .
+
+data:bronch_inhabits_Event1 a sem:Event ;
+    rdfs:label "Bront, Charlotte - Spatial (inhabits) Event" ;
+    dcterms:description "Mid-July 1850: CB returned home after visiting London, Yorkshire, and Edinburgh." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:PeriodSignificance ;
+    sem:hasActor data:Bront_Charlotte ;
+    sem:hasPlace <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/2647278/>,
+        <http://sws.geonames.org/2650225/>,
+        <http://sws.geonames.org/8581589/> ;
+    sem:hasTime "1850-07-15"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:mediumCertainty .
+
+data:bronch_relocatesTo_Event1 a sem:Event ;
+    rdfs:label "Bront, Charlotte - Spatial (relocatesTo) Event" ;
+    dcterms:description "8 February 1842: Emily and CB left for further schooling in Brussels, stopping for three days in London en route." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:HistoricSignificance ;
+    sem:hasActor data:Bront_Charlotte ;
+    sem:hasPlace <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/2800866/> ;
+    sem:hasTimeStamp "1842-02-08"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:bronch_relocatesTo_Event2 a sem:Event ;
+    rdfs:label "Bront, Charlotte - Spatial (relocatesTo) Event" ;
+    dcterms:description "31 December 1843: CB returned to Haworth from Brussels." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:HistoricSignificance ;
+    sem:hasActor data:Bront_Charlotte ;
+    sem:hasPlace <http://sws.geonames.org/2647278/> ;
+    sem:hasTimeStamp "1843-12-31"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:bronch_travelsTo_Event1 a sem:Event ;
+    rdfs:label "Bront, Charlotte - Spatial (travelsTo) Event" ;
+    dcterms:description "Late Summer 1839: CB gained her first experience of rail travel and a first, inspiring sight of the sea during a holiday at Bridlington, Yorkshire, on the east coast, with her friend Ellen Nussey." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:PeriodSignificance ;
+    sem:hasActor data:Bront_Charlotte,
+        data:Nussey_Ellen ;
+    sem:hasPlace <http://sws.geonames.org/2654728/> ;
+    sem:hasTime "1839-08-31"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:mediumCertainty .
+
+data:bronch_travelsTo_Event2 a sem:Event ;
+    rdfs:label "Bront, Charlotte - Spatial (travelsTo) Event" ;
+    dcterms:description "23 May 1849: CB reluctantly set out to accompany Anne, whose health was failing rapidly, to Scarborough, together with Ellen Nussey." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Bront_Charlotte,
+        data:Nussey_Ellen ;
+    sem:hasPlace <http://sws.geonames.org/2638419/> ;
+    sem:hasTimeStamp "1849-05-23"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:bronch_travelsTo_Event3 a sem:Event ;
+    rdfs:label "Bront, Charlotte - Spatial (travelsTo) Event" ;
+    dcterms:description "19-26 August 1850: CB visited her neighbours Sir James and Lady Kay-Shuttleworth in the Lake District, where she met Elizabeth Gaskell." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:PeriodSignificance ;
+    sem:hasActor data:Bront_Charlotte,
+        data:Gaskell_Elizabeth,
+        data:Kay-Shuttleworth_Lady_Janet,
+        data:Kay-Shuttleworth_Sir_James_Philips ;
+    sem:hasBeginTimeStamp "1850-08-19"^^xsd:date ;
+    sem:hasEndTimeStamp "1850-08-26"^^xsd:date ;
+    sem:hasPlace <http://sws.geonames.org/2633852/>,
+        <http://sws.geonames.org/2645022/> ;
+    sem:timeType cwrc:IntervalTime ;
+    cwrc:hasTimeCertainty cwrc:highCertainty .
+
+data:bronch_visits_Event1 a sem:Event ;
+    rdfs:label "Bront, Charlotte - Spatial (visits) Event" ;
+    dcterms:description "29 November-15 December 1849: CB visited London, where she met Thackeray and Harriet Martineau, both of whom she admired." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:PeriodSignificance ;
+    sem:hasActor data:Bront_Charlotte,
+        data:Martineau_Harriet,
+        data:Thackeray_William_Makepeace ;
+    sem:hasBeginTimeStamp "1849-11-29"^^xsd:date ;
+    sem:hasEndTimeStamp "1849-12-15"^^xsd:date ;
+    sem:hasPlace <http://sws.geonames.org/2643743/> ;
+    sem:timeType cwrc:IntervalTime ;
+    cwrc:hasTimeCertainty cwrc:mediumCertainty .
+
+data:bronch_visits_Event2 a sem:Event ;
+    rdfs:label "Bront, Charlotte - Spatial (visits) Event" ;
+    dcterms:description "End of May 1850: CB again visited the Smiths in London, where she met a number of young female writers, among others Anne Thackeray and Adelaide Procter." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:HistoricSignificance ;
+    sem:hasActor data:Bront_Charlotte,
+        data:Procter_Adelaide,
+        data:Ritchie_Anne_Thackeray,
+        data:Smith_George_Murray ;
+    sem:hasPlace <http://sws.geonames.org/2643743/> ;
+    sem:hasTime "1850-05-30"^^xsd:date,
+        "End of May 1850" ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:mediumCertainty .
+
+data:bronch_visits_Event3 a sem:Event ;
+    rdfs:label "Bront, Charlotte - Spatial (visits) Event" ;
+    dcterms:description "25 June 1850: CB went from London to her friend Ellen Nusseys in Yorkshire; from there she went on to Edinburgh to join her friends George Smith and his sister Eliza for a couple of days." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:PeriodSignificance ;
+    sem:hasActor data:Bront_Charlotte,
+        data:Nussey_Ellen,
+        data:Smith_Eliza,
+        data:Smith_George_Murray ;
+    sem:hasPlace <http://sws.geonames.org/2650225/>,
+        "Brookroyd,Yorkshire,England" ;
+    sem:hasTimeStamp "1850-06-25"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:bronch_visits_Event4 a sem:Event ;
+    rdfs:label "Bront, Charlotte - Spatial (visits) Event" ;
+    dcterms:description "16 December 1850: CB visited Harriet Martineau at her home The Knoll, in the Lake District, where she asked her host to mesmerize her." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:HistoricSignificance ;
+    sem:hasActor data:Bront_Charlotte,
+        data:Martineau_Harriet ;
+    sem:hasPlace <http://sws.geonames.org/2645022/>,
+        <http://sws.geonames.org/2657360/> ;
+    sem:hasTimeStamp "1850-12-16"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:bronch_visits_Event5 a sem:Event ;
+    rdfs:label "Bront, Charlotte - Spatial (visits) Event" ;
+    dcterms:description "Late May 1851: CB visited London, where her relationship with her publisher and friend George Smith turned away from intimacy." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:HistoricSignificance ;
+    sem:hasActor data:Bront_Charlotte,
+        data:Smith_George_Murray ;
+    sem:hasPlace <http://sws.geonames.org/2643743/> ;
+    sem:hasTime "1851-05-28"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:mediumCertainty .
+
+data:bronch_visits_Event6 a sem:Event ;
+    rdfs:label "Bront, Charlotte - Spatial (visits) Event" ;
+    dcterms:description "27 June 1851: CB visited Elizabeth Gaskell in Manchester on her way back to Haworth." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:HistoricSignificance ;
+    sem:hasActor data:Bront_Charlotte,
+        data:Gaskell_Elizabeth ;
+    sem:hasPlace <http://sws.geonames.org/2643123/> ;
+    sem:hasTimeStamp "1851-06-27"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:bronch_visits_Event7 a sem:Event ;
+    rdfs:label "Bront, Charlotte - Spatial (visits) Event" ;
+    dcterms:description "Late May-Late June 1852: CB returned to Filey, near Scarborough, to try to improve her health and to visit Annes grave." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:PeriodSignificance ;
+    sem:hasActor data:Bront_Anne,
+        data:Bront_Charlotte ;
+    sem:hasBeginTimeStamp "1852-05-28"^^xsd:date ;
+    sem:hasEndTimeStamp "1852-06-30"^^xsd:date ;
+    sem:hasPlace <http://sws.geonames.org/2638419/>,
+        <http://sws.geonames.org/2649463/> ;
+    sem:timeType cwrc:IntervalTime ;
+    cwrc:hasTimeCertainty cwrc:mediumCertainty .
+
+data:bronch_visits_Event8 a sem:Event ;
+    rdfs:label "Bront, Charlotte - Spatial (visits) Event" ;
+    dcterms:description "From 5 January 1853: CB spent a month in London where she visited a range of institutions including prisons, hospitals, financial sights in the City, and the General Post Office." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:PeriodSignificance ;
+    sem:hasActor data:Bront_Charlotte ;
+    sem:hasBeginTimeStamp "1853-01-05"^^xsd:date ;
+    sem:hasEndTimeStamp "1853-02-05"^^xsd:date ;
+    sem:hasPlace <http://sws.geonames.org/2643743/> ;
+    sem:timeType cwrc:IntervalTime ;
+    cwrc:hasTimeCertainty cwrc:highCertainty .
+
+data:bronch_visits_Event9 a sem:Event ;
+    rdfs:label "Bront, Charlotte - Spatial (visits) Event" ;
+    dcterms:description "1 May 1854: CB returned Gaskells visit with a four-day stay in Manchester." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:PeriodSignificance ;
+    sem:hasActor data:Bront_Charlotte,
+        data:Gaskell_Elizabeth ;
+    sem:hasPlace <http://sws.geonames.org/2643123/> ;
+    sem:hasTimeStamp "1854-05-01"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:Thackeray_William_Makepeace a cwrc:NaturalPerson ;
+    rdfs:label "Thackeray, William Makepeace"^^xsd:string ;
+    foaf:name "Thackeray, William Makepeace"^^xsd:string .
+
+data:Martineau_Harriet a cwrc:NaturalPerson ;
+    rdfs:label "Martineau, Harriet"^^xsd:string ;
+    foaf:name "Martineau, Harriet"^^xsd:string .
+
+data:Nussey_Ellen a cwrc:NaturalPerson ;
+    rdfs:label "Nussey, Ellen"^^xsd:string ;
+    foaf:name "Nussey, Ellen"^^xsd:string .
+
+data:Smith_George_Murray a cwrc:NaturalPerson ;
+    rdfs:label "Smith, George Murray"^^xsd:string ;
+    foaf:name "Smith, George Murray"^^xsd:string .
+
+data:Gaskell_Elizabeth a cwrc:NaturalPerson ;
+    rdfs:label "Gaskell, Elizabeth"^^xsd:string ;
+    foaf:name "Gaskell, Elizabeth"^^xsd:string .
+
+data:Bront_Charlotte a cwrc:NaturalPerson ;
+    rdfs:label "Bront, Charlotte"^^xsd:string ;
+    cwrc:hasEvent data:bronch_inhabits_Event1,
+        data:bronch_relocatesTo_Event1,
+        data:bronch_relocatesTo_Event2,
+        data:bronch_travelsTo_Event1,
+        data:bronch_travelsTo_Event2,
+        data:bronch_travelsTo_Event3,
+        data:bronch_visits_Event1,
+        data:bronch_visits_Event2,
+        data:bronch_visits_Event3,
+        data:bronch_visits_Event4,
+        data:bronch_visits_Event5,
+        data:bronch_visits_Event6,
+        data:bronch_visits_Event7,
+        data:bronch_visits_Event8,
+        data:bronch_visits_Event9 ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:inhabits <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/2647278/>,
+        <http://sws.geonames.org/2650225/>,
+        <http://sws.geonames.org/8581589/> ;
+    cwrc:relocatesTo <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/2647278/>,
+        <http://sws.geonames.org/2800866/> ;
+    cwrc:travelsTo <http://sws.geonames.org/2633852/>,
+        <http://sws.geonames.org/2638419/>,
+        <http://sws.geonames.org/2645022/>,
+        <http://sws.geonames.org/2654728/> ;
+    cwrc:visits <http://sws.geonames.org/2638419/>,
+        <http://sws.geonames.org/2643123/>,
+        <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/2645022/>,
+        <http://sws.geonames.org/2649463/>,
+        <http://sws.geonames.org/2650225/>,
+        <http://sws.geonames.org/2657360/>,
+        "Brookroyd,Yorkshire,England" ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch> ;
+    foaf:name "Bront, Charlotte"^^xsd:string .
+

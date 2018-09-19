@@ -1,0 +1,211 @@
+#179 triples created
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:atwoma_SpatialContext-inhabits_1_describing a cwrc:SpatialContext ;
+    rdfs:label "Atwood, Margaret - Spatial Context describing annotation" ;
+    dcterms:subject data:Atwood_Margaret,
+        <http://sws.geonames.org/6094817/>,
+        <http://sws.geonames.org/6141439/>,
+        <http://sws.geonames.org/6167865/>,
+        <http://sws.geonames.org/8673950/> ;
+    cwrc:hasIDependencyOn data:atwoma_SpatialContext-inhabits_1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:inhabits <http://sws.geonames.org/6094817/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:inhabits <http://sws.geonames.org/6141439/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:inhabits <http://sws.geonames.org/8673950/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:inhabits <http://sws.geonames.org/6167865/> ."^^xsd:string ] ;
+    oa:hasTarget data:Atwood_Margaret,
+        data:atwoma_SpatialContext-inhabits_1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:atwoma_SpatialContext-inhabits_2_describing a cwrc:SpatialContext ;
+    rdfs:label "Atwood, Margaret - Spatial Context describing annotation" ;
+    dcterms:subject data:Atwood_Margaret,
+        <http://sws.geonames.org/5884051/>,
+        <http://sws.geonames.org/6167865/> ;
+    cwrc:hasIDependencyOn data:atwoma_SpatialContext-inhabits_2_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:inhabits <http://sws.geonames.org/5884051/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:inhabits <http://sws.geonames.org/6167865/> ."^^xsd:string ] ;
+    oa:hasTarget data:Atwood_Margaret,
+        data:atwoma_SpatialContext-inhabits_2_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:atwoma_SpatialContext-visits_1_describing a cwrc:SpatialContext ;
+    rdfs:label "Atwood, Margaret - Spatial Context describing annotation" ;
+    dcterms:subject data:Atwood_Margaret,
+        <http://sws.geonames.org/2077456/>,
+        <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/2950159/>,
+        <http://sws.geonames.org/3017382/>,
+        <http://sws.geonames.org/3175395/>,
+        <http://sws.geonames.org/5909050/>,
+        <http://sws.geonames.org/5946768/>,
+        <http://sws.geonames.org/6252001/> ;
+    cwrc:hasIDependencyOn data:atwoma_SpatialContext-visits_1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:visits <http://sws.geonames.org/2950159/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:visits <http://sws.geonames.org/6252001/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:visits <http://sws.geonames.org/5946768/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:visits <http://sws.geonames.org/2643743/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:visits <http://sws.geonames.org/3017382/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:visits <http://sws.geonames.org/3175395/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:visits <http://sws.geonames.org/5909050/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:visits <http://sws.geonames.org/2077456/> ."^^xsd:string ] ;
+    oa:hasTarget data:Atwood_Margaret,
+        data:atwoma_SpatialContext-visits_1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:atwoma_SpatialContext-visits_2_describing a cwrc:SpatialContext ;
+    rdfs:label "Atwood, Margaret - Spatial Context describing annotation" ;
+    dcterms:subject data:Plaidy_Jean,
+        cwrc:The_Handmaids_Tale_TITLE,
+        <http://sws.geonames.org/2655384/> ;
+    cwrc:hasIDependencyOn data:atwoma_SpatialContext-visits_2_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:visits <http://sws.geonames.org/2655384/> ."^^xsd:string ] ;
+    oa:hasTarget data:Atwood_Margaret,
+        data:atwoma_SpatialContext-visits_2_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:atwoma_SpatialContext-inhabits_1_identifying a cwrc:SpatialContext ;
+    rdfs:label "Atwood, Margaret - Spatial Context identifying annotation" ;
+    oa:hasBody data:Atwood_Margaret,
+        <http://sws.geonames.org/6094817/>,
+        <http://sws.geonames.org/6141439/>,
+        <http://sws.geonames.org/6167865/>,
+        <http://sws.geonames.org/8673950/> ;
+    oa:hasTarget data:atwoma_SpatialContext-inhabits_1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:atwoma_SpatialContext-inhabits_2_identifying a cwrc:SpatialContext ;
+    rdfs:label "Atwood, Margaret - Spatial Context identifying annotation" ;
+    oa:hasBody data:Atwood_Margaret,
+        <http://sws.geonames.org/5884051/>,
+        <http://sws.geonames.org/6167865/> ;
+    oa:hasTarget data:atwoma_SpatialContext-inhabits_2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:atwoma_SpatialContext-visits_1_identifying a cwrc:SpatialContext ;
+    rdfs:label "Atwood, Margaret - Spatial Context identifying annotation" ;
+    oa:hasBody data:Atwood_Margaret,
+        <http://sws.geonames.org/2077456/>,
+        <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/2950159/>,
+        <http://sws.geonames.org/3017382/>,
+        <http://sws.geonames.org/3175395/>,
+        <http://sws.geonames.org/5909050/>,
+        <http://sws.geonames.org/5946768/>,
+        <http://sws.geonames.org/6252001/> ;
+    oa:hasTarget data:atwoma_SpatialContext-visits_1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:atwoma_SpatialContext-visits_2_identifying a cwrc:SpatialContext ;
+    rdfs:label "Atwood, Margaret - Spatial Context identifying annotation" ;
+    oa:hasBody data:Atwood_Margaret,
+        data:Plaidy_Jean,
+        cwrc:The_Handmaids_Tale_TITLE,
+        <http://sws.geonames.org/2655384/> ;
+    oa:hasTarget data:atwoma_SpatialContext-visits_2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:Plaidy_Jean a cwrc:NaturalPerson ;
+    rdfs:label "Plaidy, Jean"^^xsd:string ;
+    foaf:name "Plaidy, Jean"^^xsd:string .
+
+data:atwoma_SpatialContext-inhabits_1_Snippet a oa:TextualBody ;
+    rdfs:label "Atwood, Margaret - Spatial Context snippet" ;
+    dcterms:description "MA spent her childhood in Ottawa, Sault Ste Marie, and Toronto, with summers in the bush area north of Temiscaming.22"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=atwoma#BirthandFamily> .
+
+data:atwoma_SpatialContext-inhabits_2_Snippet a oa:TextualBody ;
+    rdfs:label "Atwood, Margaret - Spatial Context snippet" ;
+    dcterms:description "Apart from these sojourns, and a six-year period living with Gibson and their small daughter on a farm near Alliston, Ontario, MA has lived in Toronto."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=atwoma#PersonalLife> .
+
+data:atwoma_SpatialContext-visits_1_Snippet a oa:TextualBody ;
+    rdfs:label "Atwood, Margaret - Spatial Context snippet" ;
+    dcterms:description "MA has been a lifelong Torontonian, but has lived in widely separated places: British Columbia, Alberta (1968-70), the USA, Australia, and (1970-1) in EuropeLondon, England, France, Italy, and West Berlin."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=atwoma#PersonalLife> .
+
+data:atwoma_SpatialContext-visits_2_Snippet a oa:TextualBody ;
+    rdfs:label "Atwood, Margaret - Spatial Context snippet" ;
+    dcterms:description "In winter 1983 Atwood and Gibson spent six months in England. She mentions both a cobblestone ex-fishermans cottage with cold stone floors and a rectory at Blakeney in Norfolk, reputedly haunted by nuns. She was..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=atwoma#PersonalLife> .
+
+data:Atwood_Margaret a cwrc:NaturalPerson ;
+    rdfs:label "Atwood, Margaret"^^xsd:string ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:inhabits <http://sws.geonames.org/5884051/>,
+        <http://sws.geonames.org/6094817/>,
+        <http://sws.geonames.org/6141439/>,
+        <http://sws.geonames.org/6167865/>,
+        <http://sws.geonames.org/8673950/> ;
+    cwrc:visits <http://sws.geonames.org/2077456/>,
+        <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/2655384/>,
+        <http://sws.geonames.org/2950159/>,
+        <http://sws.geonames.org/3017382/>,
+        <http://sws.geonames.org/3175395/>,
+        <http://sws.geonames.org/5909050/>,
+        <http://sws.geonames.org/5946768/>,
+        <http://sws.geonames.org/6252001/> ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=atwoma> ;
+    foaf:name "Atwood, Margaret"^^xsd:string .
+

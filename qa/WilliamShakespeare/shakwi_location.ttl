@@ -1,0 +1,99 @@
+#61 triples created
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:shakwi_SpatialContext-relocatesTo_1_describing a cwrc:SpatialContext ;
+    rdfs:label "Shakespeare, William - Spatial Context describing annotation" ;
+    dcterms:subject data:Greene_Robert,
+        <http://sws.geonames.org/2636713/>,
+        <http://sws.geonames.org/2643743/> ;
+    cwrc:hasIDependencyOn data:shakwi_SpatialContext-relocatesTo_1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Shakespeare_William cwrc:relocatesTo <http://sws.geonames.org/2643743/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Shakespeare_William cwrc:relocatesTo <http://sws.geonames.org/2636713/> ."^^xsd:string ] ;
+    oa:hasTarget data:Shakespeare_William,
+        data:shakwi_SpatialContext-relocatesTo_1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:shakwi_SpatialContext-visits_1_describing a cwrc:SpatialContext ;
+    rdfs:label "Shakespeare, William - Spatial Context describing annotation" ;
+    dcterms:subject <http://sws.geonames.org/2636713/> ;
+    cwrc:hasIDependencyOn data:shakwi_SpatialContext-visits_1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Shakespeare_William cwrc:visits <http://sws.geonames.org/2636713/> ."^^xsd:string ] ;
+    oa:hasTarget data:Shakespeare_William,
+        data:shakwi_SpatialContext-visits_1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:shakwi_SpatialContext-relocatesTo_1_identifying a cwrc:SpatialContext ;
+    rdfs:label "Shakespeare, William - Spatial Context identifying annotation" ;
+    oa:hasBody data:Greene_Robert,
+        data:Shakespeare_William,
+        <http://sws.geonames.org/2636713/>,
+        <http://sws.geonames.org/2643743/> ;
+    oa:hasTarget data:shakwi_SpatialContext-relocatesTo_1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:shakwi_SpatialContext-visits_1_identifying a cwrc:SpatialContext ;
+    rdfs:label "Shakespeare, William - Spatial Context identifying annotation" ;
+    oa:hasBody data:Shakespeare_William,
+        <http://sws.geonames.org/2636713/> ;
+    oa:hasTarget data:shakwi_SpatialContext-visits_1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:Greene_Robert a cwrc:NaturalPerson ;
+    rdfs:label "Greene, Robert"^^xsd:string ;
+    foaf:name "Greene, Robert"^^xsd:string .
+
+data:shakwi_SpatialContext-relocatesTo_1_Snippet a oa:TextualBody ;
+    rdfs:label "Shakespeare, William - Spatial Context snippet" ;
+    dcterms:description "The date of Shakespeares move from Stratford to London is not known. He was well enough established in the capital to have his writing fiercely attacked (by Robert Greene) some time before September 1592."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=shakwi#EducationMarriage> .
+
+data:shakwi_SpatialContext-visits_1_Snippet a oa:TextualBody ;
+    rdfs:label "Shakespeare, William - Spatial Context snippet" ;
+    dcterms:description "After he became successful he made regular visits to Stratford and followed in his fathers footsteps by buying property in the town."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=shakwi#EducationMarriage> .
+
+data:Shakespeare_William a cwrc:NaturalPerson ;
+    rdfs:label "Shakespeare, William"^^xsd:string ;
+    cwrc:hasGender cwrc:man ;
+    cwrc:relocatesTo <http://sws.geonames.org/2636713/>,
+        <http://sws.geonames.org/2643743/> ;
+    cwrc:visits <http://sws.geonames.org/2636713/> ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=shakwi> ;
+    foaf:name "Shakespeare, William"^^xsd:string .
+

@@ -1,0 +1,151 @@
+#114 triples created
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:alcolo_CulturalFormContext1_describing a cwrc:CulturalFormContext ;
+    rdfs:label "Alcott, Louisa May - CulturalForm Context describing annotation" ;
+    dcterms:subject data:Alcott_Louisa_May,
+        cwrc:lowerMiddleClass,
+        cwrc:whiteRaceColour,
+        "US"^^xsd:string,
+        "_transcendentalism_"^^xsd:string ;
+    cwrc:hasIDependencyOn data:alcolo_CulturalFormContext1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:hasSocialClass cwrc:lowerMiddleClass ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:hasRaceColour cwrc:whiteRaceColour ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:hasNationalitySelfReported \"US\"^^xsd:string ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:hasReligion \"_transcendentalism_\"^^xsd:string ."^^xsd:string ] ;
+    oa:hasTarget data:Alcott_Louisa_May,
+        data:alcolo_CulturalFormContext1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:alcolo_PoliticalContext1_describing a cwrc:PoliticalContext ;
+    rdfs:label "Alcott, Louisa May - Political Context describing annotation" ;
+    dcterms:subject cwrc:abolitionism ;
+    cwrc:hasIDependencyOn data:alcolo_PoliticalContext1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:hasActivistInvolvementIn cwrc:abolitionism ."^^xsd:string ] ;
+    oa:hasTarget data:Alcott_Louisa_May,
+        data:alcolo_PoliticalContext1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:alcolo_PoliticalContext2_describing a cwrc:PoliticalContext ;
+    rdfs:label "Alcott, Louisa May - Political Context describing annotation" ;
+    dcterms:subject data:Alcott_Louisa_May,
+        cwrc:suffrage,
+        <http://sws.geonames.org/5084868/> ;
+    cwrc:hasEvent data:alcolo_Political_Event1 ;
+    cwrc:hasIDependencyOn data:alcolo_PoliticalContext2_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:hasActivistInvolvementIn cwrc:suffrage ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:hasGenderedPoliticalActivity cwrc:suffrage ."^^xsd:string ] ;
+    oa:hasTarget data:Alcott_Louisa_May,
+        data:alcolo_PoliticalContext2_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:alcolo_CulturalFormContext1_identifying a cwrc:CulturalFormContext ;
+    rdfs:label "Alcott, Louisa May - CulturalForm Context identifying annotation" ;
+    oa:hasBody data:Alcott_Louisa_May,
+        cwrc:lowerMiddleClass,
+        cwrc:whiteRaceColour,
+        "US"^^xsd:string,
+        "_transcendentalism_"^^xsd:string ;
+    oa:hasTarget data:alcolo_CulturalFormContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:alcolo_PoliticalContext1_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Alcott, Louisa May - Political Context identifying annotation" ;
+    oa:hasBody data:Alcott_Louisa_May,
+        cwrc:abolitionism ;
+    oa:hasTarget data:alcolo_PoliticalContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:alcolo_PoliticalContext2_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Alcott, Louisa May - Political Context identifying annotation" ;
+    cwrc:hasEvent data:alcolo_Political_Event1 ;
+    oa:hasBody data:Alcott_Louisa_May,
+        cwrc:suffrage,
+        <http://sws.geonames.org/5084868/> ;
+    oa:hasTarget data:alcolo_PoliticalContext2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:alcolo_CulturalFormContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Alcott, Louisa May - CulturalForm Context snippet" ;
+    dcterms:description "LMA was raised in a household of middle-class, presumably white, American Transcendentalist thinkers whose philosophies often precluded financial solvency for the Alcott family. Her childhood poverty fuelled her adult writing and earning.16239 The Trancendentalists stand..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo#BirthandBackground> .
+
+data:alcolo_PoliticalContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Alcott, Louisa May - Political Context snippet" ;
+    dcterms:description "She had also been an ardent abolitionist.26-7"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo#WorkTravelandFriends> .
+
+data:alcolo_PoliticalContext2_Snippet a oa:TextualBody ;
+    rdfs:label "Alcott, Louisa May - Political Context snippet" ;
+    dcterms:description "Around 15 July 1879 A keen suffragist, LMA became the first woman to register her name as a voter in Concord, Massachusetts. 216"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo#WorkTravelandFriends> .
+
+data:alcolo_Political_Event1 a sem:Event ;
+    rdfs:label "Alcott, Louisa May - Political Event" ;
+    dcterms:description "Around 15 July 1879: A keen suffragist, LMA became the first woman to register her name as a voter in Concord, Massachusetts." ;
+    sem:eventType cwrc:DecadeSignficance,
+        cwrc:LiteraryClimate ;
+    sem:hasActor data:Alcott_Louisa_May ;
+    sem:hasPlace <http://sws.geonames.org/5084868/> ;
+    sem:hasTime "1879-07-15"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:mediumCertainty .
+
+data:Alcott_Louisa_May a cwrc:NaturalPerson ;
+    rdfs:label "Alcott, Louisa May"^^xsd:string ;
+    cwrc:hasActivistInvolvementIn cwrc:abolitionism,
+        cwrc:suffrage ;
+    cwrc:hasEvent data:alcolo_Political_Event1 ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasGenderedPoliticalActivity cwrc:suffrage ;
+    cwrc:hasNationalitySelfReported "US"^^xsd:string ;
+    cwrc:hasRaceColour cwrc:whiteRaceColour ;
+    cwrc:hasReligion "_transcendentalism_"^^xsd:string ;
+    cwrc:hasSocialClass cwrc:lowerMiddleClass ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo> ;
+    foaf:name "Alcott, Louisa May"^^xsd:string .
+

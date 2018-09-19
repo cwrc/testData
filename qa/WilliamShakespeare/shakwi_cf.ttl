@@ -1,0 +1,156 @@
+#114 triples created
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:shakwi_ReligionContext1_describing a cwrc:ReligionContext ;
+    rdfs:label "Shakespeare, William - Religion Context describing annotation" ;
+    dcterms:subject data:Greer_Germaine,
+        data:Shakespeare_William,
+        data:Wilson_Richard,
+        data:Wood_Michael,
+        cwrc:Anglican_Church_ORG,
+        cwrc:Roman_Catholic_Church_ORG,
+        cwrc:anglicanism,
+        cwrc:catholicism ;
+    cwrc:hasIDependencyOn data:shakwi_ReligionContext1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Shakespeare_William org:memberOf cwrc:Roman_Catholic_Church_ORG ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Shakespeare_William cwrc:hasReligion cwrc:anglicanism ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Shakespeare_William cwrc:hasReligion cwrc:catholicism ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Shakespeare_William org:memberOf cwrc:Anglican_Church_ORG ."^^xsd:string ] ;
+    oa:hasTarget data:Shakespeare_William,
+        data:shakwi_ReligionContext1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:shakwi_ReligionContext2_identifying a cwrc:ReligionContext ;
+    rdfs:label "Shakespeare, William - Religion Context identifying annotation" ;
+    oa:hasBody data:Shakespeare_William,
+        data:Shapiro_James ;
+    oa:hasTarget data:shakwi_ReligionContext2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:shakwi_ReligionContext3_describing a cwrc:ReligionContext ;
+    rdfs:label "Shakespeare, William - Religion Context describing annotation" ;
+    dcterms:subject data:Shakespeare_William,
+        cwrc:protestantism,
+        <http://sws.geonames.org/2636713/> ;
+    cwrc:hasEvent data:shakwi_Religion_Event1 ;
+    cwrc:hasIDependencyOn data:shakwi_ReligionContext3_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Shakespeare_William cwrc:hasReligion cwrc:protestantism ."^^xsd:string ] ;
+    oa:hasTarget data:Shakespeare_William,
+        data:shakwi_ReligionContext3_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:Shapiro_James a cwrc:NaturalPerson ;
+    rdfs:label "Shapiro, James"^^xsd:string ;
+    foaf:name "Shapiro, James"^^xsd:string .
+
+data:shakwi_ReligionContext1_identifying a cwrc:ReligionContext ;
+    rdfs:label "Shakespeare, William - Religion Context identifying annotation" ;
+    oa:hasBody data:Greer_Germaine,
+        data:Shakespeare_William,
+        data:Wilson_Richard,
+        data:Wood_Michael,
+        cwrc:Anglican_Church_ORG,
+        cwrc:Roman_Catholic_Church_ORG,
+        cwrc:anglicanism,
+        cwrc:catholicism ;
+    oa:hasTarget data:shakwi_ReligionContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:shakwi_ReligionContext2_Snippet a oa:TextualBody ;
+    rdfs:label "Shakespeare, William - Religion Context snippet" ;
+    dcterms:description "Scholars speculating on Shakespeares religion have read this as a symbol either of destruction of the old, concealment of the old, compromise, or (the view of James Shapiro) the layered nature of Elizabethan belief.7"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=shakwi#BirthandBackground> .
+
+data:shakwi_ReligionContext3_identifying a cwrc:ReligionContext ;
+    rdfs:label "Shakespeare, William - Religion Context identifying annotation" ;
+    cwrc:hasEvent data:shakwi_Religion_Event1 ;
+    oa:hasBody data:Shakespeare_William,
+        cwrc:protestantism,
+        <http://sws.geonames.org/2636713/> ;
+    oa:hasTarget data:shakwi_ReligionContext3_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:Greer_Germaine a cwrc:NaturalPerson ;
+    rdfs:label "Greer, Germaine"^^xsd:string ;
+    foaf:name "Greer, Germaine"^^xsd:string .
+
+data:Wilson_Richard a cwrc:NaturalPerson ;
+    rdfs:label "Wilson, Richard"^^xsd:string ;
+    foaf:name "Wilson, Richard"^^xsd:string .
+
+data:Wood_Michael a cwrc:NaturalPerson ;
+    rdfs:label "Wood, Michael"^^xsd:string ;
+    foaf:name "Wood, Michael"^^xsd:string .
+
+data:shakwi_ReligionContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Shakespeare, William - Religion Context snippet" ;
+    dcterms:description "Scholarly debate continues to rage on the question of whether WS subscribed to the Church of England or whether he adhered to the minority and persecuted Old Religion of Catholicism. Supporters of the Catholic thesis..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=shakwi#BirthandBackground> .
+
+data:shakwi_ReligionContext3_Snippet a oa:TextualBody ;
+    rdfs:label "Shakespeare, William - Religion Context snippet" ;
+    dcterms:description "May Day 1571 A medieval painting of the Last Judgement on the walls of the Guild Chapel at Stratford was white-washed over in accordance with new Protestant practice; the father of WS was then bailiff..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=shakwi#BirthandBackground> .
+
+data:shakwi_Religion_Event1 a sem:Event ;
+    rdfs:label "Shakespeare, William - Religion Event" ;
+    dcterms:description "May Day 1571: A medieval painting of the Last Judgement on the walls of the Guild Chapel at Stratford was white-washed over in accordance with new Protestant practice; the father of WS was then bailiff of the town." ;
+    sem:eventType cwrc:DecadeSignficance,
+        cwrc:SocialClimate ;
+    sem:hasActor data:Shakespeare_William ;
+    sem:hasPlace <http://sws.geonames.org/2636713/> ;
+    sem:hasTimeStamp "1571-05-01"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:Shakespeare_William a cwrc:NaturalPerson ;
+    rdfs:label "Shakespeare, William"^^xsd:string ;
+    cwrc:hasEvent data:shakwi_Religion_Event1 ;
+    cwrc:hasGender cwrc:man ;
+    cwrc:hasReligion cwrc:anglicanism,
+        cwrc:catholicism,
+        cwrc:protestantism ;
+    org:memberOf cwrc:Anglican_Church_ORG,
+        cwrc:Roman_Catholic_Church_ORG ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=shakwi> ;
+    foaf:name "Shakespeare, William"^^xsd:string .
+

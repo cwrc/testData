@@ -1,0 +1,218 @@
+#171 triples created
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:bronem_OccupationContext1_describing a cwrc:OccupationContext ;
+    rdfs:label "Bront, Emily - Occupation Context describing annotation" ;
+    dcterms:subject data:Bront_Emily,
+        cwrc:teacher,
+        <http://sws.geonames.org/2637350/>,
+        <http://sws.geonames.org/2647632/>,
+        "Law Hill school" ;
+    cwrc:hasEvent data:bronem_Occupation_Event1 ;
+    cwrc:hasIDependencyOn data:bronem_OccupationContext1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Emily cwrc:hasPaidOccupation cwrc:teacher ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Emily cwrc:hasEmployer \"Law Hill school\" ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Emily,
+        data:bronem_OccupationContext1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronem_OccupationContext2_describing a cwrc:OccupationContext ;
+    rdfs:label "Bront, Emily - Occupation Context describing annotation" ;
+    dcterms:subject data:Branwell_Elizabeth,
+        data:Bront_Emily,
+        cwrc:teacher,
+        "Pensionnat Heger" ;
+    cwrc:hasIDependencyOn data:bronem_OccupationContext2_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Emily cwrc:hasEmployer \"Pensionnat Heger\" ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Emily cwrc:hasPaidOccupation cwrc:teacher ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Emily,
+        data:bronem_OccupationContext2_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronem_OccupationContext3_describing a cwrc:OccupationContext ;
+    rdfs:label "Bront, Emily - Occupation Context describing annotation" ;
+    dcterms:subject data:Bront_Emily,
+        cwrc:housekeeper,
+        <http://sws.geonames.org/2647278/> ;
+    cwrc:hasEvent data:bronem_Occupation_Event2 ;
+    cwrc:hasIDependencyOn data:bronem_OccupationContext3_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Emily cwrc:hasOccupation cwrc:housekeeper ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Emily,
+        data:bronem_OccupationContext3_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronem_OccupationContext4_identifying a cwrc:OccupationContext ;
+    rdfs:label "Bront, Emily - Occupation Context identifying annotation" ;
+    oa:hasBody data:Bront_Emily ;
+    oa:hasTarget data:bronem_OccupationContext4_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronem_OccupationContext5_describing a cwrc:OccupationContext ;
+    rdfs:label "Bront, Emily - Occupation Context describing annotation" ;
+    dcterms:subject data:Bront_Emily,
+        data:Newby_Thomas_Cautley,
+        data:Williams_William_Smith,
+        cwrc:Smith_Elder_and_Co_ORG,
+        cwrc:The_Tenant_of_Wildfell_Hall_TITLE,
+        cwrc:Wuthering_Heights_TITLE,
+        cwrc:writer ;
+    cwrc:hasIDependencyOn data:bronem_OccupationContext5_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Emily cwrc:hasOccupation cwrc:writer ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Emily,
+        data:bronem_OccupationContext5_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronem_OccupationContext1_identifying a cwrc:OccupationContext ;
+    rdfs:label "Bront, Emily - Occupation Context identifying annotation" ;
+    cwrc:hasEvent data:bronem_Occupation_Event1 ;
+    oa:hasBody data:Bront_Emily,
+        cwrc:teacher,
+        <http://sws.geonames.org/2637350/>,
+        <http://sws.geonames.org/2647632/>,
+        "Law Hill school" ;
+    oa:hasTarget data:bronem_OccupationContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronem_OccupationContext2_identifying a cwrc:OccupationContext ;
+    rdfs:label "Bront, Emily - Occupation Context identifying annotation" ;
+    oa:hasBody data:Branwell_Elizabeth,
+        data:Bront_Emily,
+        cwrc:teacher,
+        "Pensionnat Heger" ;
+    oa:hasTarget data:bronem_OccupationContext2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronem_OccupationContext3_identifying a cwrc:OccupationContext ;
+    rdfs:label "Bront, Emily - Occupation Context identifying annotation" ;
+    cwrc:hasEvent data:bronem_Occupation_Event2 ;
+    oa:hasBody data:Bront_Emily,
+        cwrc:housekeeper,
+        <http://sws.geonames.org/2647278/> ;
+    oa:hasTarget data:bronem_OccupationContext3_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronem_OccupationContext4_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Emily - Occupation Context snippet" ;
+    dcterms:description "The school plan went as far as the printing and sending out of prospectuses in the summer of 1844, but, in the words of a diary paper EB wrote in 1845, it was found no..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#Teaching> .
+
+data:bronem_OccupationContext5_identifying a cwrc:OccupationContext ;
+    rdfs:label "Bront, Emily - Occupation Context identifying annotation" ;
+    oa:hasBody data:Bront_Emily,
+        data:Newby_Thomas_Cautley,
+        data:Williams_William_Smith,
+        cwrc:Smith_Elder_and_Co_ORG,
+        cwrc:The_Tenant_of_Wildfell_Hall_TITLE,
+        cwrc:Wuthering_Heights_TITLE,
+        cwrc:writer ;
+    oa:hasTarget data:bronem_OccupationContext5_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:Branwell_Elizabeth a cwrc:NaturalPerson ;
+    rdfs:label "Branwell, Elizabeth"^^xsd:string ;
+    foaf:name "Branwell, Elizabeth"^^xsd:string .
+
+data:Newby_Thomas_Cautley a cwrc:NaturalPerson ;
+    rdfs:label "Newby, Thomas Cautley"^^xsd:string ;
+    foaf:name "Newby, Thomas Cautley"^^xsd:string .
+
+data:Williams_William_Smith a cwrc:NaturalPerson ;
+    rdfs:label "Williams, William Smith"^^xsd:string ;
+    foaf:name "Williams, William Smith"^^xsd:string .
+
+data:bronem_OccupationContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Emily - Occupation Context snippet" ;
+    dcterms:description "September 1838 EB entered six months employment as a teacher at Law Hill school at Southowram outside Halifax. 293, 306-7 Women and Education"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#Teaching> .
+
+data:bronem_OccupationContext2_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Emily - Occupation Context snippet" ;
+    dcterms:description "In August, Charlotte and EB were invited to stay on as teachers in the Pensionnat Heger. They received lessons in exchange for their work. The sisters stayed on as planned, although apparently Emily was again..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#Teaching> .
+
+data:bronem_OccupationContext3_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Emily - Occupation Context snippet" ;
+    dcterms:description "8 November 1842 On her return to Haworth from Brussels, EB again took up the management of the household. 406"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#Teaching> .
+
+data:bronem_OccupationContext5_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Emily - Occupation Context snippet" ;
+    dcterms:description "Charlottes account of EBs response to her discovery of the Gondal poems, and the difficulty she had in persuading Emily to publish, suggests that Emily had no desire to become an author. Of the three..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#ThrustintoPublication> .
+
+data:bronem_Occupation_Event1 a sem:Event ;
+    rdfs:label "Bront, Emily - Occupation Event" ;
+    dcterms:description "September 1838: EB entered six months employment as a teacher at Law Hill school at Southowram outside Halifax." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:PeriodSignificance ;
+    sem:hasActor data:Bront_Emily ;
+    sem:hasPlace <http://sws.geonames.org/2637350/>,
+        <http://sws.geonames.org/2647632/> ;
+    sem:hasTimeStamp "1838-09-" ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:bronem_Occupation_Event2 a sem:Event ;
+    rdfs:label "Bront, Emily - Occupation Event" ;
+    dcterms:description "8 November 1842: On her return to Haworth from Brussels, EB again took up the management of the household." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:HistoricSignificance ;
+    sem:hasActor data:Bront_Emily ;
+    sem:hasPlace <http://sws.geonames.org/2647278/> ;
+    sem:hasTimeStamp "1842-11-08"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:Bront_Emily a cwrc:NaturalPerson ;
+    rdfs:label "Bront, Emily"^^xsd:string ;
+    cwrc:hasEmployer "Law Hill school",
+        "Pensionnat Heger" ;
+    cwrc:hasEvent data:bronem_Occupation_Event1,
+        data:bronem_Occupation_Event2 ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasOccupation cwrc:housekeeper,
+        cwrc:writer ;
+    cwrc:hasPaidOccupation cwrc:teacher ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem> ;
+    foaf:name "Bront, Emily"^^xsd:string .
+

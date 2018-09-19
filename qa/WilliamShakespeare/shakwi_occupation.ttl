@@ -1,0 +1,157 @@
+#108 triples created
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:shakwi_OccupationContext1_describing a cwrc:OccupationContext ;
+    rdfs:label "Shakespeare, William - Occupation Context describing annotation" ;
+    dcterms:subject cwrc:performer ;
+    cwrc:hasIDependencyOn data:shakwi_OccupationContext1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Shakespeare_William cwrc:hasPaidOccupation cwrc:performer ."^^xsd:string ] ;
+    oa:hasTarget data:Shakespeare_William,
+        data:shakwi_OccupationContext1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:shakwi_OccupationContext2_identifying a cwrc:OccupationContext ;
+    rdfs:label "Shakespeare, William - Occupation Context identifying annotation" ;
+    oa:hasBody data:Hunsdon_Henry_Carey_first_Baron,
+        data:Lanyer_Aemilia,
+        data:Shakespeare_William,
+        cwrc:Kings_Men_ORG,
+        <http://sws.geonames.org/2643743/>,
+        "Thames,England" ;
+    oa:hasTarget data:shakwi_OccupationContext2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:shakwi_OccupationContext3_identifying a cwrc:OccupationContext ;
+    rdfs:label "Shakespeare, William - Occupation Context identifying annotation" ;
+    oa:hasBody data:Burbage_Richard,
+        data:Shakespeare_William,
+        <http://sws.geonames.org/2643743/> ;
+    oa:hasTarget data:shakwi_OccupationContext3_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:shakwi_OccupationContext4_identifying a cwrc:OccupationContext ;
+    rdfs:label "Shakespeare, William - Occupation Context identifying annotation" ;
+    cwrc:hasEvent data:shakwi_Occupation_Event1 ;
+    oa:hasBody data:Shakespeare_William,
+        <http://sws.geonames.org/2643743/>,
+        "Thames,England" ;
+    oa:hasTarget data:shakwi_OccupationContext4_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:shakwi_OccupationContext5_identifying a cwrc:OccupationContext ;
+    rdfs:label "Shakespeare, William - Occupation Context identifying annotation" ;
+    cwrc:hasEvent data:shakwi_Occupation_Event2 ;
+    oa:hasBody data:Shakespeare_William,
+        cwrc:Kings_Men_ORG,
+        <http://sws.geonames.org/2643743/> ;
+    oa:hasTarget data:shakwi_OccupationContext5_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:Burbage_Richard a cwrc:NaturalPerson ;
+    rdfs:label "Burbage, Richard"^^xsd:string ;
+    foaf:name "Burbage, Richard"^^xsd:string .
+
+data:Hunsdon_Henry_Carey_first_Baron a cwrc:NaturalPerson ;
+    rdfs:label "Hunsdon, Henry Carey,,, first Baron"^^xsd:string ;
+    foaf:name "Hunsdon, Henry Carey,,, first Baron"^^xsd:string .
+
+data:Lanyer_Aemilia a cwrc:NaturalPerson ;
+    rdfs:label "Lanyer, Aemilia"^^xsd:string ;
+    foaf:name "Lanyer, Aemilia"^^xsd:string .
+
+data:shakwi_OccupationContext1_identifying a cwrc:OccupationContext ;
+    rdfs:label "Shakespeare, William - Occupation Context identifying annotation" ;
+    oa:hasBody data:Shakespeare_William,
+        cwrc:performer ;
+    oa:hasTarget data:shakwi_OccupationContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:shakwi_OccupationContext2_Snippet a oa:TextualBody ;
+    rdfs:label "Shakespeare, William - Occupation Context snippet" ;
+    dcterms:description "From spring 1599 the company acted at the rebuilt Globe in Southwark, on the south bank of the Thames. From 1594 the company was known as the Lord Chamberlains Men, and acted under the aegis..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=shakwi#ActingCareer> .
+
+data:shakwi_OccupationContext3_Snippet a oa:TextualBody ;
+    rdfs:label "Shakespeare, William - Occupation Context snippet" ;
+    dcterms:description "Blackfriars had been built by Richard Burbage in 1596. Apart from the composition of the audience, the biggest difference between it and the public theatres was that here candlelight could replace or supplement daylight. The..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=shakwi#ActingCareer> .
+
+data:shakwi_OccupationContext4_Snippet a oa:TextualBody ;
+    rdfs:label "Shakespeare, William - Occupation Context snippet" ;
+    dcterms:description "28 December 1598 The Theatre in London, home of WSs acting company, was dismantled preparatory to being transported south of the river for re-erection as the Globe. 7"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=shakwi#ActingCareer> .
+
+data:shakwi_OccupationContext5_Snippet a oa:TextualBody ;
+    rdfs:label "Shakespeare, William - Occupation Context snippet" ;
+    dcterms:description "After about 1610 Shakespeares company, now known as the Kings Company of Players, moved their centre of operations to the private Blackfriars Theatre, which drew a wealthier class of patron."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=shakwi#ActingCareer> .
+
+data:shakwi_OccupationContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Shakespeare, William - Occupation Context snippet" ;
+    dcterms:description "Shakespeare is believed to have worked as an actor from soon after his arrival in London, still in his early twenties. He joined a company of players whose name varied with successive patrons."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=shakwi#ActingCareer> .
+
+data:shakwi_Occupation_Event1 a sem:Event ;
+    rdfs:label "Shakespeare, William - Occupation Event" ;
+    dcterms:description "28 December 1598: The Theatre in London, home of WSs acting company, was dismantled preparatory to being transported south of the river for re-erection as the Globe." ;
+    sem:eventType cwrc:DecadeSignficance,
+        cwrc:SocialClimate ;
+    sem:hasActor data:Shakespeare_William ;
+    sem:hasPlace <http://sws.geonames.org/2643743/>,
+        "Thames,England" ;
+    sem:hasTimeStamp "1598-12-28"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:shakwi_Occupation_Event2 a sem:Event ;
+    rdfs:label "Shakespeare, William - Occupation Event" ;
+    dcterms:description "After about 1610: Shakespeares company, now known as the Kings Company of Players, moved their centre of operations to the private Blackfriars Theatre, which drew a wealthier class of patron." ;
+    sem:eventType cwrc:IndividualSignificance,
+        cwrc:LiteraryClimate ;
+    sem:hasActor data:Shakespeare_William,
+        cwrc:Kings_Men_ORG ;
+    sem:hasEarliestBeginTimeStamp "1610--" ;
+    sem:hasPlace <http://sws.geonames.org/2643743/> ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:mediumCertainty .
+
+data:Shakespeare_William a cwrc:NaturalPerson ;
+    rdfs:label "Shakespeare, William"^^xsd:string ;
+    cwrc:hasEvent data:shakwi_Occupation_Event1,
+        data:shakwi_Occupation_Event2 ;
+    cwrc:hasGender cwrc:man ;
+    cwrc:hasPaidOccupation cwrc:performer ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=shakwi> ;
+    foaf:name "Shakespeare, William"^^xsd:string .
+

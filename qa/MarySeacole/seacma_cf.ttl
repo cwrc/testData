@@ -1,0 +1,139 @@
+#104 triples created
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:seacma_PoliticalContext1_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Seacole, Mary - Political Context identifying annotation" ;
+    oa:hasBody data:Seacole_Mary ;
+    oa:hasTarget data:seacma_PoliticalContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:seacma_PoliticalContext2_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Seacole, Mary - Political Context identifying annotation" ;
+    oa:hasBody data:Seacole_Mary ;
+    oa:hasTarget data:seacma_PoliticalContext2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:seacma_RaceEthnicityContext1_describing a cwrc:RaceEthnicityContext ;
+    rdfs:label "Seacole, Mary - RaceEthnicity Context describing annotation" ;
+    dcterms:subject data:Seacole_Mary,
+        cwrc:blackRaceColour,
+        cwrc:creoleEthnicity,
+        cwrc:creoleRaceColour,
+        cwrc:scottishRaceColour,
+        cwrc:whiteRaceColour,
+        "GB-SCT"^^xsd:string,
+        "JM"^^xsd:string,
+        "_yellow_"^^xsd:string ;
+    cwrc:hasIDependencyOn data:seacma_RaceEthnicityContext1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc:hasEthnicitySelfReported cwrc:creoleEthnicity ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc:hasNationalHeritageSelfReported \"JM\"^^xsd:string ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc:hasNationalHeritageSelfReported \"GB-SCT\"^^xsd:string ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc:hasRaceColourSelfReported cwrc:scottishRaceColour ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc:hasRaceColour \"_yellow_\"^^xsd:string ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc:hasRaceColourReported cwrc:blackRaceColour ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc:hasRaceColourSelfReported cwrc:creoleRaceColour ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Seacole_Mary cwrc:hasRaceColourReported cwrc:whiteRaceColour ."^^xsd:string ] ;
+    oa:hasTarget data:Seacole_Mary,
+        data:seacma_RaceEthnicityContext1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:seacma_RaceEthnicityContext2_identifying a cwrc:RaceEthnicityContext ;
+    rdfs:label "Seacole, Mary - RaceEthnicity Context identifying annotation" ;
+    oa:hasBody data:Seacole_Mary ;
+    oa:hasTarget data:seacma_RaceEthnicityContext2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:seacma_PoliticalContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Seacole, Mary - Political Context snippet" ;
+    dcterms:description "The full emancipation of the slaves in Jamaica finally took place in 1838, during the years of MSs marriage. Though she and all those close to her were free already, this event must have made..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=seacma#AnUnprotectedFemale> .
+
+data:seacma_PoliticalContext2_Snippet a oa:TextualBody ;
+    rdfs:label "Seacole, Mary - Political Context snippet" ;
+    dcterms:description "MSs work in the Crimea was driven by a passionate concern for the plight of the ordinary soldier. One memoir by a lieutenant describes her as beloved by the rank and file of the whole..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=seacma#BankruptcyandRecovery> .
+
+data:seacma_RaceEthnicityContext1_identifying a cwrc:RaceEthnicityContext ;
+    rdfs:label "Seacole, Mary - RaceEthnicity Context identifying annotation" ;
+    oa:hasBody data:Seacole_Mary,
+        cwrc:blackRaceColour,
+        cwrc:creoleEthnicity,
+        cwrc:creoleRaceColour,
+        cwrc:scottishRaceColour,
+        cwrc:whiteRaceColour,
+        "GB-SCT"^^xsd:string,
+        "JM"^^xsd:string,
+        "_yellow_"^^xsd:string ;
+    oa:hasTarget data:seacma_RaceEthnicityContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:seacma_RaceEthnicityContext2_Snippet a oa:TextualBody ;
+    rdfs:label "Seacole, Mary - RaceEthnicity Context snippet" ;
+    dcterms:description "Creole originally meant a person born in a colony of parents from elsewhere, whether white or black. This and its secondary meanings were usually inflected by racial prejudice."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=seacma#BirthandHeritage> .
+
+data:seacma_RaceEthnicityContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Seacole, Mary - RaceEthnicity Context snippet" ;
+    dcterms:description "MS was a free-born Jamaican Creole, in the mixed-race sense of the term.Creole originally meant a person born in a colony of parents from elsewhere, whether white or black. This and its secondary meanings were..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=seacma#BirthandHeritage> .
+
+data:Seacole_Mary a cwrc:NaturalPerson ;
+    rdfs:label "Seacole, Mary"^^xsd:string ;
+    cwrc:hasEthnicitySelfReported cwrc:creoleEthnicity ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasNationalHeritageSelfReported "GB-SCT"^^xsd:string,
+        "JM"^^xsd:string ;
+    cwrc:hasRaceColour "_yellow_"^^xsd:string ;
+    cwrc:hasRaceColourReported cwrc:blackRaceColour,
+        cwrc:whiteRaceColour ;
+    cwrc:hasRaceColourSelfReported cwrc:creoleRaceColour,
+        cwrc:scottishRaceColour ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=seacma> ;
+    foaf:name "Seacole, Mary"^^xsd:string .
+

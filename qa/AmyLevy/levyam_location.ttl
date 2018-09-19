@@ -1,0 +1,455 @@
+#392 triples created
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:levyam_SpatialContext-inhabits_1_describing a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy - Spatial Context describing annotation" ;
+    dcterms:subject data:Levy_Amy,
+        <http://sws.geonames.org/2643743/> ;
+    cwrc:hasIDependencyOn data:levyam_SpatialContext-inhabits_1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:inhabits <http://sws.geonames.org/2643743/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:inhabits <http://sws.geonames.org/2643743/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:inhabits <http://sws.geonames.org/2643743/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:inhabits <http://sws.geonames.org/2643743/> ."^^xsd:string ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyam_SpatialContext-inhabits_1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:levyam_SpatialContext-inhabits_2_describing a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy - Spatial Context describing annotation" ;
+    dcterms:subject <http://sws.geonames.org/2654710/> ;
+    cwrc:hasIDependencyOn data:levyam_SpatialContext-inhabits_2_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:inhabits <http://sws.geonames.org/2654710/> ."^^xsd:string ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyam_SpatialContext-inhabits_2_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:levyam_SpatialContext-travelsTo_10_describing a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy - Spatial Context describing annotation" ;
+    dcterms:subject <http://sws.geonames.org/2988507/> ;
+    cwrc:hasIDependencyOn data:levyam_SpatialContext-travelsTo_10_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:travelsTo <http://sws.geonames.org/2988507/> ."^^xsd:string ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyam_SpatialContext-travelsTo_10_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:levyam_SpatialContext-travelsTo_11_identifying a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy - Spatial Context identifying annotation" ;
+    oa:hasBody data:Levy_Amy ;
+    oa:hasTarget data:levyam_SpatialContext-travelsTo_11_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_SpatialContext-travelsTo_12_describing a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy - Spatial Context describing annotation" ;
+    dcterms:subject data:Levy_Amy,
+        <http://sws.geonames.org/3176959/> ;
+    cwrc:hasEvent data:levyam_travelsTo_Event5 ;
+    cwrc:hasIDependencyOn data:levyam_SpatialContext-travelsTo_12_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:travelsTo <http://sws.geonames.org/3176959/> ."^^xsd:string ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyam_SpatialContext-travelsTo_12_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:levyam_SpatialContext-travelsTo_1_identifying a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy - Spatial Context identifying annotation" ;
+    oa:hasBody data:Levy_Amy ;
+    oa:hasTarget data:levyam_SpatialContext-travelsTo_1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_SpatialContext-travelsTo_2_identifying a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy - Spatial Context identifying annotation" ;
+    oa:hasBody data:Levy_Amy ;
+    oa:hasTarget data:levyam_SpatialContext-travelsTo_2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_SpatialContext-travelsTo_3_describing a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy - Spatial Context describing annotation" ;
+    dcterms:subject <http://sws.geonames.org/2654710/>,
+        <http://sws.geonames.org/2994313/>,
+        <http://sws.geonames.org/3021411/> ;
+    cwrc:hasIDependencyOn data:levyam_SpatialContext-travelsTo_3_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:travelsTo <http://sws.geonames.org/2994313/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:travelsTo <http://sws.geonames.org/3021411/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:travelsTo <http://sws.geonames.org/2654710/> ."^^xsd:string ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyam_SpatialContext-travelsTo_3_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:levyam_SpatialContext-travelsTo_4_describing a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy - Spatial Context describing annotation" ;
+    dcterms:subject <http://sws.geonames.org/3038032/>,
+        "Mont Sainte-Odile,Vosges,France" ;
+    cwrc:hasIDependencyOn data:levyam_SpatialContext-travelsTo_4_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:travelsTo \"Mont Sainte-Odile,Vosges,France\" ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:travelsTo <http://sws.geonames.org/3038032/> ."^^xsd:string ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyam_SpatialContext-travelsTo_4_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:levyam_SpatialContext-travelsTo_5_describing a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy - Spatial Context describing annotation" ;
+    dcterms:subject data:Levy_Amy,
+        <http://sws.geonames.org/2935022/> ;
+    cwrc:hasEvent data:levyam_travelsTo_Event1 ;
+    cwrc:hasIDependencyOn data:levyam_SpatialContext-travelsTo_5_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:travelsTo <http://sws.geonames.org/2935022/> ."^^xsd:string ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyam_SpatialContext-travelsTo_5_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:levyam_SpatialContext-travelsTo_6_describing a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy - Spatial Context describing annotation" ;
+    dcterms:subject data:Levy_Amy,
+        <http://sws.geonames.org/2653941/>,
+        <http://sws.geonames.org/2659811/> ;
+    cwrc:hasEvent data:levyam_travelsTo_Event2 ;
+    cwrc:hasIDependencyOn data:levyam_SpatialContext-travelsTo_6_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:travelsTo <http://sws.geonames.org/2653941/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:travelsTo <http://sws.geonames.org/2659811/> ."^^xsd:string ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyam_SpatialContext-travelsTo_6_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:levyam_SpatialContext-travelsTo_7_describing a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy - Spatial Context describing annotation" ;
+    dcterms:subject data:Levy_Amy,
+        <http://sws.geonames.org/2953505/> ;
+    cwrc:hasEvent data:levyam_travelsTo_Event3 ;
+    cwrc:hasIDependencyOn data:levyam_SpatialContext-travelsTo_7_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:travelsTo <http://sws.geonames.org/2953505/> ."^^xsd:string ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyam_SpatialContext-travelsTo_7_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:levyam_SpatialContext-travelsTo_8_identifying a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy - Spatial Context identifying annotation" ;
+    oa:hasBody data:Levy_Amy ;
+    oa:hasTarget data:levyam_SpatialContext-travelsTo_8_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_SpatialContext-travelsTo_9_describing a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy - Spatial Context describing annotation" ;
+    dcterms:subject data:Black_Clementina,
+        data:Browning_Elizabeth_Barrett,
+        data:Browning_Robert,
+        data:Levy_Amy,
+        <http://sws.geonames.org/3176959/> ;
+    cwrc:hasEvent data:levyam_travelsTo_Event4 ;
+    cwrc:hasIDependencyOn data:levyam_SpatialContext-travelsTo_9_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:travelsTo <http://sws.geonames.org/3176959/> ."^^xsd:string ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyam_SpatialContext-travelsTo_9_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:levyam_SpatialContext-inhabits_1_identifying a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy - Spatial Context identifying annotation" ;
+    oa:hasBody data:Levy_Amy,
+        <http://sws.geonames.org/2643743/> ;
+    oa:hasTarget data:levyam_SpatialContext-inhabits_1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_SpatialContext-inhabits_2_identifying a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy - Spatial Context identifying annotation" ;
+    oa:hasBody data:Levy_Amy,
+        <http://sws.geonames.org/2654710/> ;
+    oa:hasTarget data:levyam_SpatialContext-inhabits_2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_SpatialContext-travelsTo_10_identifying a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy - Spatial Context identifying annotation" ;
+    oa:hasBody data:Levy_Amy,
+        <http://sws.geonames.org/2988507/> ;
+    oa:hasTarget data:levyam_SpatialContext-travelsTo_10_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_SpatialContext-travelsTo_11_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy - Spatial Context snippet" ;
+    dcterms:description "On a later page, Beckman gives the date as 18 January, but her account of the days of the week suggests that the 17th is correct.175"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#BacktoFlorence> .
+
+data:levyam_SpatialContext-travelsTo_12_identifying a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:levyam_travelsTo_Event5 ;
+    oa:hasBody data:Levy_Amy,
+        <http://sws.geonames.org/3176959/> ;
+    oa:hasTarget data:levyam_SpatialContext-travelsTo_12_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_SpatialContext-travelsTo_1_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy - Spatial Context snippet" ;
+    dcterms:description "AL took frequent trips around England, visiting friends, or sometimes staying by the seaside for health reasons.200, 115 and n100"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#EarlyTravel> .
+
+data:levyam_SpatialContext-travelsTo_2_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy - Spatial Context snippet" ;
+    dcterms:description "Her six surviving letters from this visit show her as not homesick and not regularly attending the synagogue, but short of money and weathering criticism from home of her dancing, participating in tableaux vivants, and..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#EarlyTravel> .
+
+data:levyam_SpatialContext-travelsTo_3_identifying a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy - Spatial Context identifying annotation" ;
+    oa:hasBody data:Levy_Amy,
+        <http://sws.geonames.org/2654710/>,
+        <http://sws.geonames.org/2994313/>,
+        <http://sws.geonames.org/3021411/> ;
+    oa:hasTarget data:levyam_SpatialContext-travelsTo_3_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_SpatialContext-travelsTo_4_identifying a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy - Spatial Context identifying annotation" ;
+    oa:hasBody data:Levy_Amy,
+        <http://sws.geonames.org/3038032/>,
+        "Mont Sainte-Odile,Vosges,France" ;
+    oa:hasTarget data:levyam_SpatialContext-travelsTo_4_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_SpatialContext-travelsTo_5_identifying a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:levyam_travelsTo_Event1 ;
+    oa:hasBody data:Levy_Amy,
+        <http://sws.geonames.org/2935022/> ;
+    oa:hasTarget data:levyam_SpatialContext-travelsTo_5_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_SpatialContext-travelsTo_6_identifying a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:levyam_travelsTo_Event2 ;
+    oa:hasBody data:Levy_Amy,
+        <http://sws.geonames.org/2653941/>,
+        <http://sws.geonames.org/2659811/> ;
+    oa:hasTarget data:levyam_SpatialContext-travelsTo_6_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_SpatialContext-travelsTo_7_identifying a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:levyam_travelsTo_Event3 ;
+    oa:hasBody data:Levy_Amy,
+        <http://sws.geonames.org/2953505/> ;
+    oa:hasTarget data:levyam_SpatialContext-travelsTo_7_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_SpatialContext-travelsTo_8_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy - Spatial Context snippet" ;
+    dcterms:description "This visit too had a recuperative purpose. But AL loved Florence. She hoped to return at around the same time the following year, but had to put off her trip.258, 265"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#Florence> .
+
+data:levyam_SpatialContext-travelsTo_9_identifying a cwrc:SpatialContext ;
+    rdfs:label "Levy, Amy - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:levyam_travelsTo_Event4 ;
+    oa:hasBody data:Black_Clementina,
+        data:Browning_Elizabeth_Barrett,
+        data:Browning_Robert,
+        data:Levy_Amy,
+        <http://sws.geonames.org/3176959/> ;
+    oa:hasTarget data:levyam_SpatialContext-travelsTo_9_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_SpatialContext-inhabits_1_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy - Spatial Context snippet" ;
+    dcterms:description "AL lived till the end of her life at her parents home. In 1872 they moved from Peckham to 11 Sussex Place, Regents Park, and in 1884 from there to the less expensive Ulster Place,..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#Homes> .
+
+data:levyam_SpatialContext-inhabits_2_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy - Spatial Context snippet" ;
+    dcterms:description "The Levy family owned a second home at Brighton while several of their children attended school there. They kept this house even later, while living in London.217-1845"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#Homes> .
+
+data:levyam_SpatialContext-travelsTo_10_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy - Spatial Context snippet" ;
+    dcterms:description "She returned home via Paris, arriving on 17 January 1889.152, 175 On a later page, Beckman gives the date as 18 January, but her account of the days of the week suggests that the 17th..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#BacktoFlorence> .
+
+data:levyam_SpatialContext-travelsTo_12_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy - Spatial Context snippet" ;
+    dcterms:description "By the end of October 1888 AL left for her second visit to Florence, after finishing reading proof on her second novel. 149"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#BacktoFlorence> .
+
+data:levyam_SpatialContext-travelsTo_3_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy - Spatial Context snippet" ;
+    dcterms:description "The same year, too, she took the ferry from Brighton to Dieppe and visited the seaside resort of Mers-les-Bains in Picardy.55"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#EarlyTravel> .
+
+data:levyam_SpatialContext-travelsTo_4_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy - Spatial Context snippet" ;
+    dcterms:description "In July she and a friend, Blanche Smithname not tagged., had reached were en route for Titisee and had reached Odilienberg (now called in French Mont Sainte-Odile) in the Vosges mountains of Alsace. By 13..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#EarlyTravel> .
+
+data:levyam_SpatialContext-travelsTo_5_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy - Spatial Context snippet" ;
+    dcterms:description "November-December 1881 AL made a visit to Dresden in Germany. 232, 237"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#EarlyTravel> .
+
+data:levyam_SpatialContext-travelsTo_6_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy - Spatial Context snippet" ;
+    dcterms:description "September 1883 AL came to the end of some time spent at Lucerne in Switzerland (after a visit to Cambridge in July). 52-3"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#EarlyTravel> .
+
+data:levyam_SpatialContext-travelsTo_7_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy - Spatial Context snippet" ;
+    dcterms:description "Summer 1884 AL stayed on the Titisee at Baden in Germany, where she enjoyed long basking days but was threatened with depression. 244-6"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#EarlyTravel> .
+
+data:levyam_SpatialContext-travelsTo_9_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy - Spatial Context snippet" ;
+    dcterms:description "Late winter and early spring 1886 AL, with Clementina Black, stayed at Casa Guidi, Florence, once the home of Elizabeth and Robert Browning. 116-17"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#Florence> .
+
+data:Black_Clementina a cwrc:NaturalPerson ;
+    rdfs:label "Black, Clementina"^^xsd:string ;
+    foaf:name "Black, Clementina"^^xsd:string .
+
+data:Browning_Elizabeth_Barrett a cwrc:NaturalPerson ;
+    rdfs:label "Browning, Elizabeth Barrett"^^xsd:string ;
+    foaf:name "Browning, Elizabeth Barrett"^^xsd:string .
+
+data:Browning_Robert a cwrc:NaturalPerson ;
+    rdfs:label "Browning, Robert"^^xsd:string ;
+    foaf:name "Browning, Robert"^^xsd:string .
+
+data:levyam_travelsTo_Event1 a sem:Event ;
+    rdfs:label "Levy, Amy - Spatial (travelsTo) Event" ;
+    dcterms:description "November-December 1881: AL made a visit to Dresden in Germany." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Levy_Amy ;
+    sem:hasBeginTimeStamp "1881-11-10"^^xsd:date ;
+    sem:hasEndTimeStamp "1881-12-08"^^xsd:date ;
+    sem:hasPlace <http://sws.geonames.org/2935022/> ;
+    sem:timeType cwrc:IntervalTime ;
+    cwrc:hasTimeCertainty cwrc:mediumCertainty .
+
+data:levyam_travelsTo_Event2 a sem:Event ;
+    rdfs:label "Levy, Amy - Spatial (travelsTo) Event" ;
+    dcterms:description "September 1883: AL came to the end of some time spent at Lucerne in Switzerland (after a visit to Cambridge in July)." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Levy_Amy ;
+    sem:hasPlace <http://sws.geonames.org/2653941/>,
+        <http://sws.geonames.org/2659811/> ;
+    sem:hasTimeStamp "1882-07-" ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:levyam_travelsTo_Event3 a sem:Event ;
+    rdfs:label "Levy, Amy - Spatial (travelsTo) Event" ;
+    dcterms:description "Summer 1884: AL stayed on the Titisee at Baden in Germany, where she enjoyed long basking days but was threatened with depression." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Levy_Amy ;
+    sem:hasPlace <http://sws.geonames.org/2953505/> ;
+    sem:hasTime "1884-07-",
+        "Summer 1884" ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:mediumCertainty .
+
+data:levyam_travelsTo_Event4 a sem:Event ;
+    rdfs:label "Levy, Amy - Spatial (travelsTo) Event" ;
+    dcterms:description "Late winter and early spring 1886: AL, with Clementina Black, stayed at Casa Guidi, Florence, once the home of Elizabeth and Robert Browning." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Black_Clementina,
+        data:Browning_Elizabeth_Barrett,
+        data:Browning_Robert,
+        data:Levy_Amy ;
+    sem:hasBeginTimeStamp "1886-01-" ;
+    sem:hasEndTimeStamp "1886-03-24"^^xsd:date ;
+    sem:hasPlace <http://sws.geonames.org/3176959/> ;
+    sem:timeType cwrc:IntervalTime ;
+    cwrc:hasTimeCertainty cwrc:mediumCertainty .
+
+data:levyam_travelsTo_Event5 a sem:Event ;
+    rdfs:label "Levy, Amy - Spatial (travelsTo) Event" ;
+    dcterms:description "By the end of October 1888: AL left for her second visit to Florence, after finishing reading proof on her second novel." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Levy_Amy ;
+    sem:hasLatestBeginTimeStamp "1888-10-31"^^xsd:date ;
+    sem:hasPlace <http://sws.geonames.org/3176959/> ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:mediumCertainty .
+
+data:Levy_Amy a cwrc:NaturalPerson ;
+    rdfs:label "Levy, Amy"^^xsd:string ;
+    cwrc:hasEvent data:levyam_travelsTo_Event1,
+        data:levyam_travelsTo_Event2,
+        data:levyam_travelsTo_Event3,
+        data:levyam_travelsTo_Event4,
+        data:levyam_travelsTo_Event5 ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:inhabits <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/2654710/> ;
+    cwrc:travelsTo <http://sws.geonames.org/2653941/>,
+        <http://sws.geonames.org/2654710/>,
+        <http://sws.geonames.org/2659811/>,
+        <http://sws.geonames.org/2935022/>,
+        <http://sws.geonames.org/2953505/>,
+        <http://sws.geonames.org/2988507/>,
+        <http://sws.geonames.org/2994313/>,
+        <http://sws.geonames.org/3021411/>,
+        <http://sws.geonames.org/3038032/>,
+        <http://sws.geonames.org/3176959/>,
+        "Mont Sainte-Odile,Vosges,France" ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam> ;
+    foaf:name "Levy, Amy"^^xsd:string .
+

@@ -1,0 +1,148 @@
+#109 triples created
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:atwoma_CulturalFormContext1_describing a cwrc:CulturalFormContext ;
+    rdfs:label "Atwood, Margaret - CulturalForm Context describing annotation" ;
+    dcterms:subject cwrc:professional,
+        cwrc:whiteRaceColour,
+        "CA"^^xsd:string,
+        "_northern wilderness_"^^xsd:string ;
+    cwrc:hasIDependencyOn data:atwoma_CulturalFormContext1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:hasGeographicHeritage \"_northern wilderness_\"^^xsd:string ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:hasSocialClassSelfReported cwrc:professional ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:hasNationalitySelfReported \"CA\"^^xsd:string ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:hasRaceColour cwrc:whiteRaceColour ."^^xsd:string ] ;
+    oa:hasTarget data:Atwood_Margaret,
+        data:atwoma_CulturalFormContext1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:atwoma_PoliticalContext1_describing a cwrc:PoliticalContext ;
+    rdfs:label "Atwood, Margaret - Political Context describing annotation" ;
+    dcterms:subject data:Atwood_Margaret,
+        data:Erdogan_Asli,
+        data:Erdogan_Recep_Tayyip,
+        cwrc:PEN_International_ORG,
+        cwrc:Somebodys_Daughter_ORG,
+        cwrc:feminism ;
+    cwrc:hasIDependencyOn data:atwoma_PoliticalContext1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:hasPoliticalInvolvementIn cwrc:feminism ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Atwood_Margaret cwrc:hasGenderedPoliticalActivity cwrc:feminism ."^^xsd:string ] ;
+    oa:hasTarget data:Atwood_Margaret,
+        data:atwoma_PoliticalContext1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:atwoma_PoliticalContext2_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Atwood, Margaret - Political Context identifying annotation" ;
+    oa:hasBody data:Atwood_Margaret,
+        data:Zhelisko_Oksana,
+        cwrc:Comic-Con_International_ORG,
+        cwrc:Fanado_ORG,
+        cwrc:The_Handmaids_Tale_TITLE,
+        cwrc:eBay_ORG,
+        <http://sws.geonames.org/5391811/>,
+        <http://sws.geonames.org/5946768/> ;
+    oa:hasTarget data:atwoma_PoliticalContext2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:Zhelisko_Oksana a cwrc:NaturalPerson ;
+    rdfs:label "Zhelisko, Oksana"^^xsd:string ;
+    foaf:name "Zhelisko, Oksana"^^xsd:string .
+
+data:atwoma_CulturalFormContext1_identifying a cwrc:CulturalFormContext ;
+    rdfs:label "Atwood, Margaret - CulturalForm Context identifying annotation" ;
+    oa:hasBody data:Atwood_Margaret,
+        cwrc:professional,
+        cwrc:whiteRaceColour,
+        "CA"^^xsd:string,
+        "_northern wilderness_"^^xsd:string ;
+    oa:hasTarget data:atwoma_CulturalFormContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:atwoma_PoliticalContext1_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Atwood, Margaret - Political Context identifying annotation" ;
+    oa:hasBody data:Atwood_Margaret,
+        data:Erdogan_Asli,
+        data:Erdogan_Recep_Tayyip,
+        cwrc:PEN_International_ORG,
+        cwrc:Somebodys_Daughter_ORG,
+        cwrc:feminism ;
+    oa:hasTarget data:atwoma_PoliticalContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:atwoma_PoliticalContext2_Snippet a oa:TextualBody ;
+    rdfs:label "Atwood, Margaret - Political Context snippet" ;
+    dcterms:description "She is also a pioneer (among writers) in the uses of social media, of new hybrid genres, and of the web in general. In 2012 she launched a web space entitled Fanado (http://fanado.com) designed to..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=atwoma#PublicandLiteraryLife> .
+
+data:Erdogan_Asli a cwrc:NaturalPerson ;
+    rdfs:label "Erdogan, Asli"^^xsd:string ;
+    foaf:name "Erdogan, Asli"^^xsd:string .
+
+data:Erdogan_Recep_Tayyip a cwrc:NaturalPerson ;
+    rdfs:label "Erdogan, Recep Tayyip"^^xsd:string ;
+    foaf:name "Erdogan, Recep Tayyip"^^xsd:string .
+
+data:atwoma_CulturalFormContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Atwood, Margaret - CulturalForm Context snippet" ;
+    dcterms:description "She was born into a white, urban, middle-class Canadian family whose second environment, the northern wilderness, became deeply familiar to her from long summers in the bush where her father did his research."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=atwoma#BirthandFamily> .
+
+data:atwoma_PoliticalContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Atwood, Margaret - Political Context snippet" ;
+    dcterms:description "In middle age MA has taken an increasingly prominent role in shaping opinion on urgent questions confronting Canadians and others living with the new global economy and a single superpower world. In articles, lectures, and..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=atwoma#PublicandLiteraryLife> .
+
+data:Atwood_Margaret a cwrc:NaturalPerson ;
+    rdfs:label "Atwood, Margaret"^^xsd:string ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasGenderedPoliticalActivity cwrc:feminism ;
+    cwrc:hasGeographicHeritage "_northern wilderness_"^^xsd:string ;
+    cwrc:hasNationalitySelfReported "CA"^^xsd:string ;
+    cwrc:hasPoliticalInvolvementIn cwrc:feminism ;
+    cwrc:hasRaceColour cwrc:whiteRaceColour ;
+    cwrc:hasSocialClassSelfReported cwrc:professional ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=atwoma> ;
+    foaf:name "Atwood, Margaret"^^xsd:string .
+

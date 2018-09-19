@@ -1,0 +1,180 @@
+#136 triples created
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:bronch_CulturalFormContext1_describing a cwrc:CulturalFormContext ;
+    rdfs:label "Bront, Charlotte - CulturalForm Context describing annotation" ;
+    dcterms:subject data:Bront_Branwell,
+        data:Bront_Charlotte,
+        cwrc:Anglican_Church_ORG,
+        cwrc:anglicanism,
+        cwrc:professional,
+        "GB-ENG"^^xsd:string,
+        "IE"^^xsd:string ;
+    cwrc:hasIDependencyOn data:bronch_CulturalFormContext1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:hasNationalHeritage \"GB-ENG\"^^xsd:string ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:hasSocialClass cwrc:professional ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte org:memberOf cwrc:Anglican_Church_ORG ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:hasNationalHeritage \"IE\"^^xsd:string ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:hasReligion cwrc:anglicanism ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_CulturalFormContext1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_CulturalFormContext2_identifying a cwrc:CulturalFormContext ;
+    rdfs:label "Bront, Charlotte - CulturalForm Context identifying annotation" ;
+    oa:hasBody data:Bront_Charlotte ;
+    oa:hasTarget data:bronch_CulturalFormContext2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_CulturalFormContext3_describing a cwrc:CulturalFormContext ;
+    rdfs:label "Bront, Charlotte - CulturalForm Context describing annotation" ;
+    dcterms:subject data:Bront_Charlotte,
+        cwrc:conservativePartyUk ;
+    cwrc:hasIDependencyOn data:bronch_CulturalFormContext3_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:hasPoliticalAffiliation cwrc:conservativePartyUk ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_CulturalFormContext3_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_PoliticalContext1_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Bront, Charlotte - Political Context identifying annotation" ;
+    cwrc:hasEvent data:bronch_Political_Event1 ;
+    oa:hasBody data:Bront_Charlotte ;
+    oa:hasTarget data:bronch_PoliticalContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_ReligionContext1_identifying a cwrc:ReligionContext ;
+    rdfs:label "Bront, Charlotte - Religion Context identifying annotation" ;
+    cwrc:hasEvent data:bronch_Religion_Event1 ;
+    oa:hasBody data:Bront_Anne,
+        data:Bront_Charlotte ;
+    oa:hasTarget data:bronch_ReligionContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_CulturalFormContext1_identifying a cwrc:CulturalFormContext ;
+    rdfs:label "Bront, Charlotte - CulturalForm Context identifying annotation" ;
+    oa:hasBody data:Bront_Branwell,
+        data:Bront_Charlotte,
+        cwrc:Anglican_Church_ORG,
+        cwrc:anglicanism,
+        cwrc:professional,
+        "GB-ENG"^^xsd:string,
+        "IE"^^xsd:string ;
+    oa:hasTarget data:bronch_CulturalFormContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_CulturalFormContext2_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - CulturalForm Context snippet" ;
+    dcterms:description "Despite or perhaps because of his brothers participation in late eighteenth-century nationalist insurrection, her father firmly defended the 1801 Act of Union. He publicly supported Catholic Emancipation in 1829, however, despite his generally Tory politics,..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#BirthandBackground> .
+
+data:bronch_CulturalFormContext3_identifying a cwrc:CulturalFormContext ;
+    rdfs:label "Bront, Charlotte - CulturalForm Context identifying annotation" ;
+    oa:hasBody data:Bront_Charlotte,
+        cwrc:conservativePartyUk ;
+    oa:hasTarget data:bronch_CulturalFormContext3_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_PoliticalContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Political Context snippet" ;
+    dcterms:description "17 May 1832 CB expressed her satisfaction that the Lords had thrown out the Reform Bill, which she opposed though her father supported it. Women and Politics 179"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#RoeHeadSchool> .
+
+data:bronch_ReligionContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Religion Context snippet" ;
+    dcterms:description "December 1837 Anne and CB apparently experienced crises of faith around this time; Anne was also seriously ill. 280-1, 284-5"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#DiscontentwithTeaching> .
+
+data:Bront_Anne a cwrc:NaturalPerson ;
+    rdfs:label "Bront, Anne"^^xsd:string ;
+    foaf:name "Bront, Anne"^^xsd:string .
+
+data:Bront_Branwell a cwrc:NaturalPerson ;
+    rdfs:label "Bront, Branwell"^^xsd:string ;
+    foaf:name "Bront, Branwell"^^xsd:string .
+
+data:bronch_CulturalFormContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - CulturalForm Context snippet" ;
+    dcterms:description "CB came from an Irish and English background, Anglican on both sides. Her fathers tireless activity as rector in Haworth and surrounding areas made her a member of a prominent and respectable, if financially strapped,..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#BirthandBackground> .
+
+data:bronch_CulturalFormContext3_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - CulturalForm Context snippet" ;
+    dcterms:description "CBs own political position was complex, though largely Tory and strongly anti-Catholic. Her work is often read as an articulation of the tensions in middle-class Victorian feminism.4, 157"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#BirthandBackground> .
+
+data:bronch_Political_Event1 a sem:Event ;
+    rdfs:label "Bront, Charlotte - Political Event" ;
+    dcterms:description "17 May 1832: CB expressed her satisfaction that the Lords had thrown out the Reform Bill, which she opposed though her father supported it." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:PeriodSignificance ;
+    sem:hasActor data:Bront_Charlotte ;
+    sem:hasTimeStamp "1832-05-17"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:bronch_Religion_Event1 a sem:Event ;
+    rdfs:label "Bront, Charlotte - Religion Event" ;
+    dcterms:description "December 1837: Anne and CB apparently experienced crises of faith around this time; Anne was also seriously ill." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:PeriodSignificance ;
+    sem:hasActor data:Bront_Anne,
+        data:Bront_Charlotte ;
+    sem:hasTimeStamp "1837-12-" ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:Bront_Charlotte a cwrc:NaturalPerson ;
+    rdfs:label "Bront, Charlotte"^^xsd:string ;
+    cwrc:hasEvent data:bronch_Political_Event1,
+        data:bronch_Religion_Event1 ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasNationalHeritage "GB-ENG"^^xsd:string,
+        "IE"^^xsd:string ;
+    cwrc:hasPoliticalAffiliation cwrc:conservativePartyUk ;
+    cwrc:hasReligion cwrc:anglicanism ;
+    cwrc:hasSocialClass cwrc:professional ;
+    org:memberOf cwrc:Anglican_Church_ORG ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch> ;
+    foaf:name "Bront, Charlotte"^^xsd:string .
+

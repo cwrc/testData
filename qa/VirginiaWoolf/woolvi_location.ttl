@@ -1,0 +1,791 @@
+#708 triples created
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:woolvi_SpatialContext-inhabits_10_identifying a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context identifying annotation" ;
+    oa:hasBody data:Lee_Hermione,
+        data:Woolf_Virginia,
+        cwrc:Mrs_Dalloway_TITLE ;
+    oa:hasTarget data:woolvi_SpatialContext-inhabits_10_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SpatialContext-inhabits_11_describing a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context describing annotation" ;
+    dcterms:subject data:Woolf_Leonard,
+        data:Woolf_Virginia,
+        <http://sws.geonames.org/2643743/> ;
+    cwrc:hasEvent data:woolvi_inhabits_Event4 ;
+    cwrc:hasIDependencyOn data:woolvi_SpatialContext-inhabits_11_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:inhabits <http://sws.geonames.org/2643743/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:inhabits <http://sws.geonames.org/2643743/> ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_SpatialContext-inhabits_11_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_SpatialContext-inhabits_1_identifying a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_SpatialContext-inhabits_1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SpatialContext-inhabits_2_describing a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context describing annotation" ;
+    dcterms:subject data:Woolf_Virginia,
+        <http://sws.geonames.org/7293468/> ;
+    cwrc:hasIDependencyOn data:woolvi_SpatialContext-inhabits_2_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:inhabits <http://sws.geonames.org/7293468/> ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_SpatialContext-inhabits_2_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_SpatialContext-inhabits_3_describing a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context describing annotation" ;
+    dcterms:subject data:Woolf_Leonard,
+        data:Woolf_Virginia,
+        <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/2656048/> ;
+    cwrc:hasEvent data:woolvi_inhabits_Event1 ;
+    cwrc:hasIDependencyOn data:woolvi_SpatialContext-inhabits_3_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:inhabits <http://sws.geonames.org/2643743/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:inhabits <http://sws.geonames.org/2656048/> ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_SpatialContext-inhabits_3_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_SpatialContext-inhabits_4_identifying a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_SpatialContext-inhabits_4_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SpatialContext-inhabits_5_describing a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context describing annotation" ;
+    dcterms:subject data:Woolf_Leonard,
+        data:Woolf_Virginia,
+        <http://sws.geonames.org/2643743/> ;
+    cwrc:hasEvent data:woolvi_inhabits_Event2 ;
+    cwrc:hasIDependencyOn data:woolvi_SpatialContext-inhabits_5_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:inhabits <http://sws.geonames.org/2643743/> ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_SpatialContext-inhabits_5_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_SpatialContext-inhabits_6_identifying a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia,
+        cwrc:Rodmell_Labour_Party_ORG,
+        cwrc:Rodmell_Womens_Institute_ORG ;
+    oa:hasTarget data:woolvi_SpatialContext-inhabits_6_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SpatialContext-inhabits_7_describing a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context describing annotation" ;
+    dcterms:subject data:Woolf_Leonard,
+        data:Woolf_Virginia,
+        <http://sws.geonames.org/2639231/>,
+        <http://sws.geonames.org/2644559/> ;
+    cwrc:hasEvent data:woolvi_inhabits_Event3 ;
+    cwrc:hasIDependencyOn data:woolvi_SpatialContext-inhabits_7_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:inhabits <http://sws.geonames.org/2644559/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:inhabits <http://sws.geonames.org/2639231/> ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_SpatialContext-inhabits_7_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_SpatialContext-inhabits_8_identifying a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context identifying annotation" ;
+    oa:hasBody data:Bell_Vanessa,
+        data:Grant_Duncan,
+        data:Joad_C_E_M,
+        data:Joad_Marjorie,
+        data:Woolf_Virginia,
+        cwrc:British_Museum_ORG,
+        cwrc:Hogarth_Press_ORG ;
+    oa:hasTarget data:woolvi_SpatialContext-inhabits_8_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SpatialContext-inhabits_9_identifying a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context identifying annotation" ;
+    oa:hasBody data:Joad_C_E_M,
+        data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_SpatialContext-inhabits_9_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SpatialContext-relocatesTo_1_describing a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context describing annotation" ;
+    dcterms:subject data:Bell_Vanessa,
+        data:Stephen_Caroline_Emelia,
+        <http://sws.geonames.org/2653941/> ;
+    cwrc:hasIDependencyOn data:woolvi_SpatialContext-relocatesTo_1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:relocatesTo <http://sws.geonames.org/2653941/> ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_SpatialContext-relocatesTo_1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_SpatialContext-relocatesTo_2_describing a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context describing annotation" ;
+    dcterms:subject data:Woolf_Virginia,
+        <http://sws.geonames.org/2643743/> ;
+    cwrc:hasEvent data:woolvi_relocatesTo_Event1 ;
+    cwrc:hasIDependencyOn data:woolvi_SpatialContext-relocatesTo_2_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:relocatesTo <http://sws.geonames.org/2643743/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:relocatesTo <http://sws.geonames.org/2643743/> ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_SpatialContext-relocatesTo_2_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_SpatialContext-relocatesTo_3_describing a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context describing annotation" ;
+    dcterms:subject data:Bell_Clive,
+        data:Bell_Vanessa,
+        data:Stephen_Adrian,
+        data:Woolf_Virginia,
+        <http://sws.geonames.org/2643743/> ;
+    cwrc:hasEvent data:woolvi_relocatesTo_Event2 ;
+    cwrc:hasIDependencyOn data:woolvi_SpatialContext-relocatesTo_3_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:relocatesTo <http://sws.geonames.org/2643743/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:relocatesTo <http://sws.geonames.org/2643743/> ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_SpatialContext-relocatesTo_3_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_SpatialContext-relocatesTo_4_describing a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context describing annotation" ;
+    dcterms:subject data:Stephen_Adrian,
+        data:Woolf_Virginia,
+        <http://sws.geonames.org/2643743/> ;
+    cwrc:hasEvent data:woolvi_relocatesTo_Event3 ;
+    cwrc:hasIDependencyOn data:woolvi_SpatialContext-relocatesTo_4_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:relocatesTo <http://sws.geonames.org/2643743/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:relocatesTo <http://sws.geonames.org/2643743/> ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_SpatialContext-relocatesTo_4_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_SpatialContext-relocatesTo_5_describing a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context describing annotation" ;
+    dcterms:subject <http://sws.geonames.org/2643743/> ;
+    cwrc:hasIDependencyOn data:woolvi_SpatialContext-relocatesTo_5_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:relocatesTo <http://sws.geonames.org/2643743/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:relocatesTo <http://sws.geonames.org/2643743/> ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_SpatialContext-relocatesTo_5_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_SpatialContext-travelsTo_1_describing a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context describing annotation" ;
+    dcterms:subject <http://sws.geonames.org/259289/>,
+        <http://sws.geonames.org/264371/> ;
+    cwrc:hasIDependencyOn data:woolvi_SpatialContext-travelsTo_1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:travelsTo <http://sws.geonames.org/264371/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:travelsTo <http://sws.geonames.org/259289/> ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_SpatialContext-travelsTo_1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_SpatialContext-travelsTo_2_describing a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context describing annotation" ;
+    dcterms:subject data:Bell_Vanessa,
+        data:Dickinson_Violet,
+        data:Stephen_Adrian,
+        data:Stephen_Thoby,
+        data:Woolf_Virginia,
+        <http://sws.geonames.org/734890/> ;
+    cwrc:hasEvent data:woolvi_travelsTo_Event1 ;
+    cwrc:hasIDependencyOn data:woolvi_SpatialContext-travelsTo_2_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:travelsTo <http://sws.geonames.org/734890/> ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_SpatialContext-travelsTo_2_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_SpatialContext-travelsTo_3_describing a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context describing annotation" ;
+    dcterms:subject <http://sws.geonames.org/2510769/>,
+        <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/3017382/>,
+        <http://sws.geonames.org/3175395/> ;
+    cwrc:hasIDependencyOn data:woolvi_SpatialContext-travelsTo_3_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:travelsTo <http://sws.geonames.org/2643743/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:travelsTo <http://sws.geonames.org/3175395/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:travelsTo <http://sws.geonames.org/3017382/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:travelsTo <http://sws.geonames.org/2510769/> ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_SpatialContext-travelsTo_3_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_SpatialContext-travelsTo_4_describing a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context describing annotation" ;
+    dcterms:subject data:Hudson_Nan,
+        data:Sackville-West_Vita,
+        data:Sands_Ethel,
+        data:Woolf_Virginia,
+        <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/3021411/>,
+        <http://sws.geonames.org/3030964/>,
+        <http://sws.geonames.org/3036068/> ;
+    cwrc:hasEvent data:woolvi_travelsTo_Event2 ;
+    cwrc:hasIDependencyOn data:woolvi_SpatialContext-travelsTo_4_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:travelsTo <http://sws.geonames.org/3030964/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:travelsTo <http://sws.geonames.org/3021411/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:travelsTo <http://sws.geonames.org/3036068/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:travelsTo <http://sws.geonames.org/2643743/> ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_SpatialContext-travelsTo_4_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_SpatialContext-visits_1_describing a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context describing annotation" ;
+    dcterms:subject data:Woolf_Virginia,
+        cwrc:A_Sketch_of_the_Past_TITLE,
+        cwrc:To_the_Lighthouse_TITLE,
+        <http://sws.geonames.org/11609027/>,
+        <http://sws.geonames.org/2638778/> ;
+    cwrc:hasIDependencyOn data:woolvi_SpatialContext-visits_1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:visits <http://sws.geonames.org/11609027/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:visits <http://sws.geonames.org/2638778/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:visits <http://sws.geonames.org/2638778/> ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_SpatialContext-visits_1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:Grant_Duncan a cwrc:NaturalPerson ;
+    rdfs:label "Grant, Duncan"^^xsd:string ;
+    foaf:name "Grant, Duncan"^^xsd:string .
+
+data:Joad_Marjorie a cwrc:NaturalPerson ;
+    rdfs:label "Joad, Marjorie"^^xsd:string ;
+    foaf:name "Joad, Marjorie"^^xsd:string .
+
+data:Lee_Hermione a cwrc:NaturalPerson ;
+    rdfs:label "Lee, Hermione"^^xsd:string ;
+    foaf:name "Lee, Hermione"^^xsd:string .
+
+data:woolvi_SpatialContext-inhabits_10_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
+    dcterms:description "Hermione Lee notes that during this period [p]assionate celebrations of London filled the diaries and letters and spilled over into Mrs. Dalloway.474"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#ReturntoLondonTavistockSquare> .
+
+data:woolvi_SpatialContext-inhabits_11_identifying a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_inhabits_Event4 ;
+    oa:hasBody data:Woolf_Leonard,
+        data:Woolf_Virginia,
+        <http://sws.geonames.org/2643743/> ;
+    oa:hasTarget data:woolvi_SpatialContext-inhabits_11_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SpatialContext-inhabits_1_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
+    dcterms:description "Virginia grew up in the house at 22 Hyde Park Gate. This is where the Stephen and Duckworth families lived together until Leslie Stephens death. VW remembered the tall, narrow house of her childhood as..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#FirstPlaces> .
+
+data:woolvi_SpatialContext-inhabits_2_identifying a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia,
+        <http://sws.geonames.org/7293468/> ;
+    oa:hasTarget data:woolvi_SpatialContext-inhabits_2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SpatialContext-inhabits_3_identifying a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_inhabits_Event1 ;
+    oa:hasBody data:Woolf_Leonard,
+        data:Woolf_Virginia,
+        <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/2656048/> ;
+    oa:hasTarget data:woolvi_SpatialContext-inhabits_3_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SpatialContext-inhabits_4_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
+    dcterms:description "In March Leonard had leased Hogarth House for five years at a rate of 150 per year. He thought that living just outside London would protect Virginia from the hazardous excitements and pressures of social..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#HogarthHouse> .
+
+data:woolvi_SpatialContext-inhabits_5_identifying a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_inhabits_Event2 ;
+    oa:hasBody data:Woolf_Leonard,
+        data:Woolf_Virginia,
+        <http://sws.geonames.org/2643743/> ;
+    oa:hasTarget data:woolvi_SpatialContext-inhabits_5_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SpatialContext-inhabits_6_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
+    dcterms:description "VW thrived on the energy of London, but the country was a quiet refuge for her. She served as secretary for the Rodmell Labour Party and helped the local Womens Institute produce a play.165"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#HogarthHouse> .
+
+data:woolvi_SpatialContext-inhabits_7_identifying a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_inhabits_Event3 ;
+    oa:hasBody data:Woolf_Leonard,
+        data:Woolf_Virginia,
+        <http://sws.geonames.org/2639231/>,
+        <http://sws.geonames.org/2644559/> ;
+    oa:hasTarget data:woolvi_SpatialContext-inhabits_7_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SpatialContext-inhabits_8_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
+    dcterms:description "Virginia was keen to regain access to the amenities of Londonmusic, the British Museum, social life (her delight in parties, she wrote, was a piece of jewellery I inherit from my mother)2: 250but before leaving..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#ReturntoLondonTavistockSquare> .
+
+data:woolvi_SpatialContext-inhabits_9_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
+    dcterms:description "Thomson was living with C. E. M. Joad, the philosopher, and used his name.2: 592n1"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#ReturntoLondonTavistockSquare> .
+
+data:woolvi_SpatialContext-relocatesTo_1_identifying a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context identifying annotation" ;
+    oa:hasBody data:Bell_Vanessa,
+        data:Stephen_Caroline_Emelia,
+        data:Woolf_Virginia,
+        <http://sws.geonames.org/2653941/> ;
+    oa:hasTarget data:woolvi_SpatialContext-relocatesTo_1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SpatialContext-relocatesTo_2_identifying a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_relocatesTo_Event1 ;
+    oa:hasBody data:Woolf_Virginia,
+        <http://sws.geonames.org/2643743/> ;
+    oa:hasTarget data:woolvi_SpatialContext-relocatesTo_2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SpatialContext-relocatesTo_3_identifying a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_relocatesTo_Event2 ;
+    oa:hasBody data:Bell_Clive,
+        data:Bell_Vanessa,
+        data:Stephen_Adrian,
+        data:Woolf_Virginia,
+        <http://sws.geonames.org/2643743/> ;
+    oa:hasTarget data:woolvi_SpatialContext-relocatesTo_3_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SpatialContext-relocatesTo_4_identifying a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_relocatesTo_Event3 ;
+    oa:hasBody data:Stephen_Adrian,
+        data:Woolf_Virginia,
+        <http://sws.geonames.org/2643743/> ;
+    oa:hasTarget data:woolvi_SpatialContext-relocatesTo_4_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SpatialContext-relocatesTo_5_identifying a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia,
+        <http://sws.geonames.org/2643743/> ;
+    oa:hasTarget data:woolvi_SpatialContext-relocatesTo_5_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SpatialContext-travelsTo_1_identifying a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia,
+        <http://sws.geonames.org/259289/>,
+        <http://sws.geonames.org/264371/> ;
+    oa:hasTarget data:woolvi_SpatialContext-travelsTo_1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SpatialContext-travelsTo_2_identifying a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_travelsTo_Event1 ;
+    oa:hasBody data:Bell_Vanessa,
+        data:Dickinson_Violet,
+        data:Stephen_Adrian,
+        data:Stephen_Thoby,
+        data:Woolf_Virginia,
+        <http://sws.geonames.org/734890/> ;
+    oa:hasTarget data:woolvi_SpatialContext-travelsTo_2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SpatialContext-travelsTo_3_identifying a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia,
+        <http://sws.geonames.org/2510769/>,
+        <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/3017382/>,
+        <http://sws.geonames.org/3175395/> ;
+    oa:hasTarget data:woolvi_SpatialContext-travelsTo_3_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SpatialContext-travelsTo_4_identifying a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_travelsTo_Event2 ;
+    oa:hasBody data:Hudson_Nan,
+        data:Sackville-West_Vita,
+        data:Sands_Ethel,
+        data:Woolf_Virginia,
+        <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/3021411/>,
+        <http://sws.geonames.org/3030964/>,
+        <http://sws.geonames.org/3036068/> ;
+    oa:hasTarget data:woolvi_SpatialContext-travelsTo_4_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SpatialContext-visits_1_identifying a cwrc:SpatialContext ;
+    rdfs:label "Woolf, Virginia - Spatial Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia,
+        cwrc:A_Sketch_of_the_Past_TITLE,
+        cwrc:To_the_Lighthouse_TITLE,
+        <http://sws.geonames.org/11609027/>,
+        <http://sws.geonames.org/2638778/> ;
+    oa:hasTarget data:woolvi_SpatialContext-visits_1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:Joad_C_E_M a cwrc:NaturalPerson ;
+    rdfs:label "Joad, C. E. M."^^xsd:string ;
+    foaf:name "Joad, C. E. M."^^xsd:string .
+
+data:Stephen_Caroline_Emelia a cwrc:NaturalPerson ;
+    rdfs:label "Stephen, Caroline Emelia"^^xsd:string ;
+    foaf:name "Stephen, Caroline Emelia"^^xsd:string .
+
+data:woolvi_SpatialContext-inhabits_11_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
+    dcterms:description "9 January 1924 Eager to return to the excitement of the city after nearly a decade at Hogarth House in Richmond, Virginia and Leonard Woolf purchased a ten-year lease on 52 Tavistock Square, London. 79"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#ReturntoLondonTavistockSquare> .
+
+data:woolvi_SpatialContext-inhabits_2_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
+    dcterms:description "VW and Vanessa had only recently secured Asheham, taking a joint lease on it in October 1911. It became Virginias country home after she gave up Little Talland House (in Firle), which she had named..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#EarlyMarriedYears> .
+
+data:woolvi_SpatialContext-inhabits_3_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
+    dcterms:description "October 1912 Virginia and Leonard Woolf moved to rooms at 13 Cliffords Inn; from this time they began dividing their time between London and Asheham, Virginias house in Beddingham. 3232: 227"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#EarlyMarriedYears> .
+
+data:woolvi_SpatialContext-inhabits_5_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
+    dcterms:description "1 April 1915 VW was brought to Hogarth House in Richmond, the new home of herself and Leonard, seriously ill and attended by four nurses. But by November the twenty dark years were over, and..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#HogarthHouse> .
+
+data:woolvi_SpatialContext-inhabits_7_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
+    dcterms:description "1 July 1919 VW and her husband Leonard purchased their country home, Monks House in the village of Rodmell, near Lewes in Sussex, for 700. The name was invented by a real estate agent and..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#HogarthHouse> .
+
+data:woolvi_SpatialContext-relocatesTo_1_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
+    dcterms:description "Because Virginia was recovering from her breakdown after her fathers death, Vanessa took the primary responsibility for settling the family into their newly independent life. Virginia instead spent some time out of London, staying with..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#GordonSquare> .
+
+data:woolvi_SpatialContext-relocatesTo_2_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
+    dcterms:description "October 1904 After their fathers death, the siblings of Virginia Stephen (later VW) moved from 22 Hyde Park Gate to live independently at 46 Gordon Square, in then unfashionable Bloomsbury; she joined them there in..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#GordonSquare> .
+
+data:woolvi_SpatialContext-relocatesTo_3_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
+    dcterms:description "10 April 1907 Virginia Stephen (later VW) moved to 29 Fitzroy Square to live with her surviving brother, Adrian. Vanessa and Clive Bell took over the former family home at 46 Gordon Square. 11"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#FamilyMilestones> .
+
+data:woolvi_SpatialContext-relocatesTo_4_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
+    dcterms:description "20 November 1911 Virginia Stephen (later VW) moved again, from 29 Fitzroy Square to 38 Brunswick Square, with her brother Adrian and friends. 23"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#FamilyMilestones> .
+
+data:woolvi_SpatialContext-relocatesTo_5_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
+    dcterms:description "The month before the outbreak of the war that everyone had been expecting, Leonard and Virginia Woolf moved from 52 Tavistock Square to 37 Mecklenburgh Square. The new address was also in Bloomsbury."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#SigmundFreud> .
+
+data:woolvi_SpatialContext-travelsTo_1_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
+    dcterms:description "This holiday was marred by sickness and ultimately by calamity. First Vanessa fell ill with appendicitis and forced them all to stop at Corinth, then to split into two groups. Vanessa was cared for in..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#FamilyMilestones> .
+
+data:woolvi_SpatialContext-travelsTo_2_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
+    dcterms:description "8 September 1906 Virginia and Vanessa Stephen (later Woolf and Bell) and Violet Dickinson left England for Greece, where at Olympia on 13 September they met up with Thoby and Adrian Stephen. 10"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#FamilyMilestones> .
+
+data:woolvi_SpatialContext-travelsTo_3_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
+    dcterms:description "On 18 August the couple left England for their honeymoon through France, Spain, and Italy, returning to London in early October.25-6"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#EarlyMarriedYears> .
+
+data:woolvi_SpatialContext-travelsTo_4_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
+    dcterms:description "24 September 1928 VW left London for a one-week tour of Burgundy with Vita Sackville-West. During this trip they also spent time with painters Ethel Sands and Nan Hudson at their home at Auppegard near..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#VitaSackvilleWest> .
+
+data:woolvi_SpatialContext-visits_1_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
+    dcterms:description "VWs imagination attached richly to place. In a well-known passage of A Sketch of the Past, she identifies her earliest memory of Cornwall as the foundation of her consciousness. If life, she says, is a..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#FirstPlaces> .
+
+data:Bell_Clive a cwrc:NaturalPerson ;
+    rdfs:label "Bell, Clive"^^xsd:string ;
+    foaf:name "Bell, Clive"^^xsd:string .
+
+data:Dickinson_Violet a cwrc:NaturalPerson ;
+    rdfs:label "Dickinson, Violet"^^xsd:string ;
+    foaf:name "Dickinson, Violet"^^xsd:string .
+
+data:Hudson_Nan a cwrc:NaturalPerson ;
+    rdfs:label "Hudson, Nan"^^xsd:string ;
+    foaf:name "Hudson, Nan"^^xsd:string .
+
+data:Sackville-West_Vita a cwrc:NaturalPerson ;
+    rdfs:label "Sackville-West, Vita"^^xsd:string ;
+    foaf:name "Sackville-West, Vita"^^xsd:string .
+
+data:Sands_Ethel a cwrc:NaturalPerson ;
+    rdfs:label "Sands, Ethel"^^xsd:string ;
+    foaf:name "Sands, Ethel"^^xsd:string .
+
+data:Stephen_Thoby a cwrc:NaturalPerson ;
+    rdfs:label "Stephen, Thoby"^^xsd:string ;
+    foaf:name "Stephen, Thoby"^^xsd:string .
+
+data:woolvi_inhabits_Event1 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Spatial (inhabits) Event" ;
+    dcterms:description "October 1912: Virginia and Leonard Woolf moved to rooms at 13 Cliffords Inn; from this time they began dividing their time between London and Asheham, Virginias house in Beddingham." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Woolf_Leonard,
+        data:Woolf_Virginia ;
+    sem:hasPlace <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/2656048/> ;
+    sem:hasTime "1912-10-10"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:mediumCertainty .
+
+data:woolvi_inhabits_Event2 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Spatial (inhabits) Event" ;
+    dcterms:description "1 April 1915: VW was brought to Hogarth House in Richmond, the new home of herself and Leonard, seriously ill and attended by four nurses. But by November the twenty dark years were over, and the fertile stretch..." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Woolf_Leonard,
+        data:Woolf_Virginia ;
+    sem:hasPlace <http://sws.geonames.org/2643743/> ;
+    sem:hasTimeStamp "1915-04-01"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:woolvi_inhabits_Event3 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Spatial (inhabits) Event" ;
+    dcterms:description "1 July 1919: VW and her husband Leonard purchased their country home, Monks House in the village of Rodmell, near Lewes in Sussex, for 700. The name was invented by a real estate agent and the house had..." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Woolf_Leonard,
+        data:Woolf_Virginia ;
+    sem:hasPlace <http://sws.geonames.org/2639231/>,
+        <http://sws.geonames.org/2644559/> ;
+    sem:hasTimeStamp "1919-07-01"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:woolvi_inhabits_Event4 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Spatial (inhabits) Event" ;
+    dcterms:description "9 January 1924: Eager to return to the excitement of the city after nearly a decade at Hogarth House in Richmond, Virginia and Leonard Woolf purchased a ten-year lease on 52 Tavistock Square, London." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Woolf_Leonard,
+        data:Woolf_Virginia ;
+    sem:hasPlace <http://sws.geonames.org/2643743/> ;
+    sem:hasTimeStamp "1924-01-09"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:woolvi_relocatesTo_Event1 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Spatial (relocatesTo) Event" ;
+    dcterms:description "October 1904: After their fathers death, the siblings of Virginia Stephen (later VW) moved from 22 Hyde Park Gate to live independently at 46 Gordon Square, in then unfashionable Bloomsbury; she joined them there in January 1905." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Woolf_Virginia ;
+    sem:hasPlace <http://sws.geonames.org/2643743/> ;
+    sem:hasTimeStamp "1904-10-" ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:woolvi_relocatesTo_Event2 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Spatial (relocatesTo) Event" ;
+    dcterms:description "10 April 1907: Virginia Stephen (later VW) moved to 29 Fitzroy Square to live with her surviving brother, Adrian. Vanessa and Clive Bell took over the former family home at 46 Gordon Square." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Bell_Clive,
+        data:Bell_Vanessa,
+        data:Stephen_Adrian,
+        data:Woolf_Virginia ;
+    sem:hasPlace <http://sws.geonames.org/2643743/> ;
+    sem:hasTimeStamp "1907-04-10"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:woolvi_relocatesTo_Event3 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Spatial (relocatesTo) Event" ;
+    dcterms:description "20 November 1911: Virginia Stephen (later VW) moved again, from 29 Fitzroy Square to 38 Brunswick Square, with her brother Adrian and friends." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Stephen_Adrian,
+        data:Woolf_Virginia ;
+    sem:hasPlace <http://sws.geonames.org/2643743/> ;
+    sem:hasTimeStamp "1911-11-20"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:woolvi_travelsTo_Event1 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Spatial (travelsTo) Event" ;
+    dcterms:description "8 September 1906: Virginia and Vanessa Stephen (later Woolf and Bell) and Violet Dickinson left England for Greece, where at Olympia on 13 September they met up with Thoby and Adrian Stephen." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Bell_Vanessa,
+        data:Dickinson_Violet,
+        data:Stephen_Adrian,
+        data:Stephen_Thoby,
+        data:Woolf_Virginia ;
+    sem:hasPlace <http://sws.geonames.org/734890/> ;
+    sem:hasTimeStamp "1906-09-08"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:woolvi_travelsTo_Event2 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Spatial (travelsTo) Event" ;
+    dcterms:description "24 September 1928: VW left London for a one-week tour of Burgundy with Vita Sackville-West. During this trip they also spent time with painters Ethel Sands and Nan Hudson at their home at Auppegard near Dieppe." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:DecadeSignficance ;
+    sem:hasActor data:Hudson_Nan,
+        data:Sackville-West_Vita,
+        data:Sands_Ethel,
+        data:Woolf_Virginia ;
+    sem:hasPlace <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/3021411/>,
+        <http://sws.geonames.org/3030964/>,
+        <http://sws.geonames.org/3036068/> ;
+    sem:hasTimeStamp "1928-09-24"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:Bell_Vanessa a cwrc:NaturalPerson ;
+    rdfs:label "Bell, Vanessa"^^xsd:string ;
+    foaf:name "Bell, Vanessa"^^xsd:string .
+
+data:Stephen_Adrian a cwrc:NaturalPerson ;
+    rdfs:label "Stephen, Adrian"^^xsd:string ;
+    foaf:name "Stephen, Adrian"^^xsd:string .
+
+data:Woolf_Leonard a cwrc:NaturalPerson ;
+    rdfs:label "Woolf, Leonard"^^xsd:string ;
+    foaf:name "Woolf, Leonard"^^xsd:string .
+
+data:Woolf_Virginia a cwrc:NaturalPerson ;
+    rdfs:label "Woolf, Virginia"^^xsd:string ;
+    cwrc:hasEvent data:woolvi_inhabits_Event1,
+        data:woolvi_inhabits_Event2,
+        data:woolvi_inhabits_Event3,
+        data:woolvi_inhabits_Event4,
+        data:woolvi_relocatesTo_Event1,
+        data:woolvi_relocatesTo_Event2,
+        data:woolvi_relocatesTo_Event3,
+        data:woolvi_travelsTo_Event1,
+        data:woolvi_travelsTo_Event2 ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:inhabits <http://sws.geonames.org/2639231/>,
+        <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/2644559/>,
+        <http://sws.geonames.org/2656048/>,
+        <http://sws.geonames.org/7293468/> ;
+    cwrc:relocatesTo <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/2653941/> ;
+    cwrc:travelsTo <http://sws.geonames.org/2510769/>,
+        <http://sws.geonames.org/259289/>,
+        <http://sws.geonames.org/264371/>,
+        <http://sws.geonames.org/2643743/>,
+        <http://sws.geonames.org/3017382/>,
+        <http://sws.geonames.org/3021411/>,
+        <http://sws.geonames.org/3030964/>,
+        <http://sws.geonames.org/3036068/>,
+        <http://sws.geonames.org/3175395/>,
+        <http://sws.geonames.org/734890/> ;
+    cwrc:visits <http://sws.geonames.org/11609027/>,
+        <http://sws.geonames.org/2638778/> ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi> ;
+    foaf:name "Woolf, Virginia"^^xsd:string .
+

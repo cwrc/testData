@@ -1,0 +1,529 @@
+#449 triples created
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:bronch_OccupationContext10_describing a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context describing annotation" ;
+    dcterms:subject data:Bront_Charlotte,
+        cwrc:governess ;
+    cwrc:hasEvent data:bronch_Occupation_Event4 ;
+    cwrc:hasIDependencyOn data:bronch_OccupationContext10_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:hasPaidOccupation cwrc:governess ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_OccupationContext10_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_OccupationContext11_describing a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context describing annotation" ;
+    dcterms:subject data:Bront_Charlotte,
+        cwrc:governess,
+        <http://sws.geonames.org/2639589/>,
+        "CB began working as governess for 20 a year" ;
+    cwrc:hasEvent data:bronch_Occupation_Event5 ;
+    cwrc:hasIDependencyOn data:bronch_OccupationContext11_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:hasOccupationIncome \"CB began working as governess for 20 a year\" ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:hasPaidOccupation cwrc:governess ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_OccupationContext11_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_OccupationContext12_identifying a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context identifying annotation" ;
+    oa:hasBody data:Branwell_Elizabeth,
+        data:Bront_Charlotte ;
+    oa:hasTarget data:bronch_OccupationContext12_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_OccupationContext13_identifying a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context identifying annotation" ;
+    cwrc:hasEvent data:bronch_Occupation_Event6 ;
+    oa:hasBody data:Bront_Charlotte ;
+    oa:hasTarget data:bronch_OccupationContext13_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_OccupationContext14_describing a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context describing annotation" ;
+    dcterms:subject cwrc:teacher,
+        "in exchange for the language lessions they received." ;
+    cwrc:hasIDependencyOn data:bronch_OccupationContext14_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:hasOccupationIncome \"in exchange for the language lessions they received.\" ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:hasPaidOccupation cwrc:teacher ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_OccupationContext14_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_OccupationContext15_describing a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context describing annotation" ;
+    dcterms:subject "Her salary was 16 a year" ;
+    cwrc:hasIDependencyOn data:bronch_OccupationContext15_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:hasOccupationIncome \"Her salary was 16 a year\" ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_OccupationContext15_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_OccupationContext16_describing a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context describing annotation" ;
+    dcterms:subject data:Bront_Charlotte,
+        cwrc:Pensionnat_Heger_ORG,
+        cwrc:teacher,
+        <http://sws.geonames.org/2800866/> ;
+    cwrc:hasEvent data:bronch_Occupation_Event7 ;
+    cwrc:hasIDependencyOn data:bronch_OccupationContext16_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:hasPaidOccupation cwrc:teacher ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_OccupationContext16_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_OccupationContext17_describing a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context describing annotation" ;
+    dcterms:subject cwrc:Jane_Eyre_TITLE,
+        cwrc:teacher ;
+    cwrc:hasIDependencyOn data:bronch_OccupationContext17_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:hasPaidOccupation cwrc:teacher ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_OccupationContext17_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_OccupationContext18_identifying a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context identifying annotation" ;
+    cwrc:hasEvent data:bronch_Occupation_Event8 ;
+    oa:hasBody data:Bront_Charlotte,
+        <http://sws.geonames.org/2647278/> ;
+    oa:hasTarget data:bronch_OccupationContext18_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_OccupationContext1_identifying a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context identifying annotation" ;
+    oa:hasBody data:Bront_Charlotte,
+        cwrc:Messiah_TITLE ;
+    oa:hasTarget data:bronch_OccupationContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_OccupationContext2_describing a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context describing annotation" ;
+    dcterms:subject data:Bront_Anne,
+        data:Bront_Charlotte,
+        data:Bront_Emily,
+        data:Bront_Patrick,
+        cwrc:National_Church_Sunday_School_ORG,
+        cwrc:teacher,
+        <http://sws.geonames.org/2647278/> ;
+    cwrc:hasEvent data:bronch_Occupation_Event1 ;
+    cwrc:hasIDependencyOn data:bronch_OccupationContext2_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:hasVolunteerOccupation cwrc:teacher ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_OccupationContext2_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_OccupationContext3_identifying a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context identifying annotation" ;
+    oa:hasBody data:Bront_Charlotte ;
+    oa:hasTarget data:bronch_OccupationContext3_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_OccupationContext4_describing a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context describing annotation" ;
+    dcterms:subject data:Bront_Charlotte,
+        cwrc:Roe_Head_School_ORG,
+        cwrc:teacher,
+        "Miss Wooler" ;
+    cwrc:hasEvent data:bronch_Occupation_Event2 ;
+    cwrc:hasIDependencyOn data:bronch_OccupationContext4_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:hasPaidOccupation cwrc:teacher ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:hasEmployer \"Miss Wooler\" ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_OccupationContext4_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_OccupationContext5_identifying a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context identifying annotation" ;
+    oa:hasBody data:Bront_Charlotte ;
+    oa:hasTarget data:bronch_OccupationContext5_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_OccupationContext6_identifying a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context identifying annotation" ;
+    oa:hasBody data:Bront_Charlotte ;
+    oa:hasTarget data:bronch_OccupationContext6_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_OccupationContext7_identifying a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context identifying annotation" ;
+    oa:hasBody data:Bront_Charlotte ;
+    oa:hasTarget data:bronch_OccupationContext7_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_OccupationContext8_describing a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context describing annotation" ;
+    dcterms:subject data:Bront_Charlotte,
+        cwrc:teacher ;
+    cwrc:hasEvent data:bronch_Occupation_Event3 ;
+    cwrc:hasIDependencyOn data:bronch_OccupationContext8_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Charlotte cwrc:hasPaidOccupation cwrc:teacher ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Charlotte,
+        data:bronch_OccupationContext8_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronch_OccupationContext9_identifying a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context identifying annotation" ;
+    oa:hasBody data:Bront_Charlotte,
+        data:Taylor_Mary ;
+    oa:hasTarget data:bronch_OccupationContext9_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:Branwell_Elizabeth a cwrc:NaturalPerson ;
+    rdfs:label "Branwell, Elizabeth"^^xsd:string ;
+    foaf:name "Branwell, Elizabeth"^^xsd:string .
+
+data:Taylor_Mary a cwrc:NaturalPerson ;
+    rdfs:label "Taylor, Mary"^^xsd:string ;
+    foaf:name "Taylor, Mary"^^xsd:string .
+
+data:bronch_OccupationContext10_identifying a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context identifying annotation" ;
+    cwrc:hasEvent data:bronch_Occupation_Event4 ;
+    oa:hasBody data:Bront_Charlotte,
+        cwrc:governess ;
+    oa:hasTarget data:bronch_OccupationContext10_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_OccupationContext11_identifying a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context identifying annotation" ;
+    cwrc:hasEvent data:bronch_Occupation_Event5 ;
+    oa:hasBody data:Bront_Charlotte,
+        cwrc:governess,
+        <http://sws.geonames.org/2639589/>,
+        "CB began working as governess for 20 a year" ;
+    oa:hasTarget data:bronch_OccupationContext11_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_OccupationContext12_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Occupation Context snippet" ;
+    dcterms:description "Their aunt Elizabeth Branwell offered to loan them 100 for the purpose, and CB persuaded her to advance some of it to underwrite a period of education in Brussels for herself and Emily.362"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#WorkingasaGoverness> .
+
+data:bronch_OccupationContext13_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Occupation Context snippet" ;
+    dcterms:description "July 1841 The Bront sisters decided to set up a school of their own. 360 Women and Education"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#WorkingasaGoverness> .
+
+data:bronch_OccupationContext14_identifying a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context identifying annotation" ;
+    oa:hasBody data:Bront_Charlotte,
+        cwrc:teacher,
+        "in exchange for the language lessions they received." ;
+    oa:hasTarget data:bronch_OccupationContext14_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_OccupationContext15_identifying a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context identifying annotation" ;
+    oa:hasBody data:Bront_Charlotte,
+        "Her salary was 16 a year" ;
+    oa:hasTarget data:bronch_OccupationContext15_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_OccupationContext16_identifying a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context identifying annotation" ;
+    cwrc:hasEvent data:bronch_Occupation_Event7 ;
+    oa:hasBody data:Bront_Charlotte,
+        cwrc:Pensionnat_Heger_ORG,
+        cwrc:teacher,
+        <http://sws.geonames.org/2800866/> ;
+    oa:hasTarget data:bronch_OccupationContext16_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_OccupationContext17_identifying a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context identifying annotation" ;
+    oa:hasBody data:Bront_Charlotte,
+        cwrc:Jane_Eyre_TITLE,
+        cwrc:teacher ;
+    oa:hasTarget data:bronch_OccupationContext17_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_OccupationContext18_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Occupation Context snippet" ;
+    dcterms:description "Summer 1844 CB unsuccessfully attempted to establish a boarding school for young ladies at the Haworth Parsonage. 439-40 Women and Education"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#StruggleandLoss> .
+
+data:bronch_OccupationContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Occupation Context snippet" ;
+    dcterms:description "During this period, she exchanged visits with Ellen Nussey and continued her collaborative writings with Branwell. The siblings attended concerts of the Haworth Philharmonic Society and, from spring of 1834, concerts such as Handels Messiah..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#Teaching> .
+
+data:bronch_OccupationContext2_identifying a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context identifying annotation" ;
+    cwrc:hasEvent data:bronch_Occupation_Event1 ;
+    oa:hasBody data:Bront_Anne,
+        data:Bront_Charlotte,
+        data:Bront_Emily,
+        data:Bront_Patrick,
+        cwrc:National_Church_Sunday_School_ORG,
+        cwrc:teacher,
+        <http://sws.geonames.org/2647278/> ;
+    oa:hasTarget data:bronch_OccupationContext2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_OccupationContext3_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Occupation Context snippet" ;
+    dcterms:description "Her salary was largely absorbed by the cost of her sister Emilys school fees and their clothing.237"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#DiscontentwithTeaching> .
+
+data:bronch_OccupationContext4_identifying a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context identifying annotation" ;
+    cwrc:hasEvent data:bronch_Occupation_Event2 ;
+    oa:hasBody data:Bront_Charlotte,
+        cwrc:Roe_Head_School_ORG,
+        cwrc:teacher,
+        "Miss Wooler" ;
+    oa:hasTarget data:bronch_OccupationContext4_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_OccupationContext5_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Occupation Context snippet" ;
+    dcterms:description "Emily left in poor health after only a few months. CB attributed the decline to her sisters powerful yearning for home and the moors. Though she too found life at Roe Head confining, she found..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#DiscontentwithTeaching> .
+
+data:bronch_OccupationContext6_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Occupation Context snippet" ;
+    dcterms:description "During the following Christmas holidays, the Bronts servant Tabby Aykroyd fell and shattered her hip; the sisters won a battle with their aunt to keep her at their home and nurse her. She recovered but..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#DiscontentwithTeaching> .
+
+data:bronch_OccupationContext7_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Occupation Context snippet" ;
+    dcterms:description "By August she returned to Roe Head, owing to family financial pressures, but finally resigned for good at Christmas. Her fathers health was visibly deteriorating by this time.292, 298, 296"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#DiscontentwithTeaching> .
+
+data:bronch_OccupationContext8_identifying a cwrc:OccupationContext ;
+    rdfs:label "Bront, Charlotte - Occupation Context identifying annotation" ;
+    cwrc:hasEvent data:bronch_Occupation_Event3 ;
+    oa:hasBody data:Bront_Charlotte,
+        cwrc:teacher ;
+    oa:hasTarget data:bronch_OccupationContext8_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronch_OccupationContext9_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Occupation Context snippet" ;
+    dcterms:description "She found her duties degrading and felt herself publicly humiliated by her employer. She concluded to Emily, a private governess has no existence, is not considered as a living and rational being.310 Her friend Mary..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#WorkingasaGoverness> .
+
+data:bronch_OccupationContext10_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Occupation Context snippet" ;
+    dcterms:description "May-July 1839 CB took a temporary position as a governess not far from Haworth. Women and Education 309-11"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#WorkingasaGoverness> .
+
+data:bronch_OccupationContext11_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Occupation Context snippet" ;
+    dcterms:description "2 March 1841 CB began working as governess for 20 a year at Upperwood House, near Rawdon. 351 Women and Education"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#WorkingasaGoverness> .
+
+data:bronch_OccupationContext14_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Occupation Context snippet" ;
+    dcterms:description "They covered the cost of extending their stay by giving lessons in English and music in exchange for the language lessions they received.384ff, 404"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#Brussels> .
+
+data:bronch_OccupationContext15_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Occupation Context snippet" ;
+    dcterms:description "Her salary was 16 a year. She continued her studies with M. Heger, who insisted that genius requires self-discipline.417"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#Brussels> .
+
+data:bronch_OccupationContext16_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Occupation Context snippet" ;
+    dcterms:description "27 January 1843 Having mourned her aunt, CB returned to the Pensionnat Heger as a teacher, travelling alone to Brussels. 410"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#Brussels> .
+
+data:bronch_OccupationContext17_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Occupation Context snippet" ;
+    dcterms:description "She believed that authorship was closed to her and that teaching was her only option, but reported declining a job in Manchester (as principal teacher at the generous rate of 100 a year) in order..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#StruggleandLoss> .
+
+data:bronch_OccupationContext2_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Occupation Context snippet" ;
+    dcterms:description "Summer 1832 Patrick Bront opened a National Church Sunday School at Haworth, to which Emily, and Anne, and CB contributed by teaching. Women and Education 183"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#Teaching> .
+
+data:bronch_OccupationContext4_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Occupation Context snippet" ;
+    dcterms:description "29 July 1835 CB reluctantly returned to Miss Woolers Roe Head School as a teacher. Women and Education 226"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#DiscontentwithTeaching> .
+
+data:bronch_OccupationContext8_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Charlotte - Occupation Context snippet" ;
+    dcterms:description "Late May 1838 CB left her position as a teacher at Roe Head, convinced that her life depended on relief of her depressed health and spirits. Women and Education 289"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch#DiscontentwithTeaching> .
+
+data:bronch_Occupation_Event6 a sem:Event ;
+    rdfs:label "Bront, Charlotte - Occupation Event" ;
+    dcterms:description "July 1841: The Bront sisters decided to set up a school of their own." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:PeriodSignificance ;
+    sem:hasActor data:Bront_Charlotte ;
+    sem:hasTime "1841-07-19"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:mediumCertainty .
+
+data:bronch_Occupation_Event8 a sem:Event ;
+    rdfs:label "Bront, Charlotte - Occupation Event" ;
+    dcterms:description "Summer 1844: CB unsuccessfully attempted to establish a boarding school for young ladies at the Haworth Parsonage." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:HistoricSignificance ;
+    sem:hasActor data:Bront_Charlotte ;
+    sem:hasPlace <http://sws.geonames.org/2647278/> ;
+    sem:hasTime "1844-06-",
+        "Summer 1844" ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:mediumCertainty .
+
+data:Bront_Anne a cwrc:NaturalPerson ;
+    rdfs:label "Bront, Anne"^^xsd:string ;
+    foaf:name "Bront, Anne"^^xsd:string .
+
+data:Bront_Emily a cwrc:NaturalPerson ;
+    rdfs:label "Bront, Emily"^^xsd:string ;
+    foaf:name "Bront, Emily"^^xsd:string .
+
+data:Bront_Patrick a cwrc:NaturalPerson ;
+    rdfs:label "Bront, Patrick"^^xsd:string ;
+    foaf:name "Bront, Patrick"^^xsd:string .
+
+data:bronch_Occupation_Event1 a sem:Event ;
+    rdfs:label "Bront, Charlotte - Occupation Event" ;
+    dcterms:description "Summer 1832: Patrick Bront opened a National Church Sunday School at Haworth, to which Emily, and Anne, and CB contributed by teaching." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:HistoricSignificance ;
+    sem:hasActor data:Bront_Anne,
+        data:Bront_Charlotte,
+        data:Bront_Emily,
+        data:Bront_Patrick,
+        cwrc:National_Church_Sunday_School_ORG ;
+    sem:hasPlace <http://sws.geonames.org/2647278/> ;
+    sem:hasTime "1832-06-",
+        "Summer 1832" ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:mediumCertainty .
+
+data:bronch_Occupation_Event2 a sem:Event ;
+    rdfs:label "Bront, Charlotte - Occupation Event" ;
+    dcterms:description "29 July 1835: CB reluctantly returned to Miss Woolers Roe Head School as a teacher." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:HistoricSignificance ;
+    sem:hasActor data:Bront_Charlotte,
+        cwrc:Roe_Head_School_ORG ;
+    sem:hasTimeStamp "1835-07-29"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:bronch_Occupation_Event3 a sem:Event ;
+    rdfs:label "Bront, Charlotte - Occupation Event" ;
+    dcterms:description "Late May 1838: CB left her position as a teacher at Roe Head, convinced that her life depended on relief of her depressed health and spirits." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:HistoricSignificance ;
+    sem:hasActor data:Bront_Charlotte ;
+    sem:hasTime "1838-05-23"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:mediumCertainty .
+
+data:bronch_Occupation_Event4 a sem:Event ;
+    rdfs:label "Bront, Charlotte - Occupation Event" ;
+    dcterms:description "May-July 1839: CB took a temporary position as a governess not far from Haworth." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:PeriodSignificance ;
+    sem:hasActor data:Bront_Charlotte ;
+    sem:hasBeginTimeStamp "1839-05-" ;
+    sem:hasEndTimeStamp "1839-07-" ;
+    sem:timeType cwrc:IntervalTime ;
+    cwrc:hasTimeCertainty cwrc:mediumCertainty .
+
+data:bronch_Occupation_Event5 a sem:Event ;
+    rdfs:label "Bront, Charlotte - Occupation Event" ;
+    dcterms:description "2 March 1841: CB began working as governess for 20 a year at Upperwood House, near Rawdon." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:PeriodSignificance ;
+    sem:hasActor data:Bront_Charlotte ;
+    sem:hasPlace <http://sws.geonames.org/2639589/> ;
+    sem:hasTimeStamp "1841-03-02"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:bronch_Occupation_Event7 a sem:Event ;
+    rdfs:label "Bront, Charlotte - Occupation Event" ;
+    dcterms:description "27 January 1843: Having mourned her aunt, CB returned to the Pensionnat Heger as a teacher, travelling alone to Brussels." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:HistoricSignificance ;
+    sem:hasActor data:Bront_Charlotte,
+        cwrc:Pensionnat_Heger_ORG ;
+    sem:hasPlace <http://sws.geonames.org/2800866/> ;
+    sem:hasTimeStamp "1843-01-27"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:Bront_Charlotte a cwrc:NaturalPerson ;
+    rdfs:label "Bront, Charlotte"^^xsd:string ;
+    cwrc:hasEmployer "Miss Wooler" ;
+    cwrc:hasEvent data:bronch_Occupation_Event1,
+        data:bronch_Occupation_Event2,
+        data:bronch_Occupation_Event3,
+        data:bronch_Occupation_Event4,
+        data:bronch_Occupation_Event5,
+        data:bronch_Occupation_Event6,
+        data:bronch_Occupation_Event7,
+        data:bronch_Occupation_Event8 ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasOccupationIncome "CB began working as governess for 20 a year",
+        "Her salary was 16 a year",
+        "in exchange for the language lessions they received." ;
+    cwrc:hasPaidOccupation cwrc:governess,
+        cwrc:teacher ;
+    cwrc:hasVolunteerOccupation cwrc:teacher ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronch> ;
+    foaf:name "Bront, Charlotte"^^xsd:string .
+

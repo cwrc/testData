@@ -1,0 +1,105 @@
+#64 triples created
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:bronem_SpatialContext-relocatesTo_1_describing a cwrc:SpatialContext ;
+    rdfs:label "Bront, Emily - Spatial Context describing annotation" ;
+    dcterms:subject <http://sws.geonames.org/2647278/> ;
+    cwrc:hasIDependencyOn data:bronem_SpatialContext-relocatesTo_1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Emily cwrc:relocatesTo <http://sws.geonames.org/2647278/> ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Emily,
+        data:bronem_SpatialContext-relocatesTo_1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronem_SpatialContext-relocatesTo_2_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Emily - Spatial Context identifying annotation" ;
+    oa:hasBody data:Bront_Emily ;
+    oa:hasTarget data:bronem_SpatialContext-relocatesTo_2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronem_SpatialContext-travelsTo_1_describing a cwrc:SpatialContext ;
+    rdfs:label "Bront, Emily - Spatial Context describing annotation" ;
+    dcterms:subject data:Bront_Anne,
+        data:Bront_Emily,
+        <http://sws.geonames.org/2633352/> ;
+    cwrc:hasIDependencyOn data:bronem_SpatialContext-travelsTo_1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Bront_Emily cwrc:travelsTo <http://sws.geonames.org/2633352/> ."^^xsd:string ] ;
+    oa:hasTarget data:Bront_Emily,
+        data:bronem_SpatialContext-travelsTo_1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:bronem_SpatialContext-relocatesTo_1_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Emily - Spatial Context identifying annotation" ;
+    oa:hasBody data:Bront_Emily,
+        <http://sws.geonames.org/2647278/> ;
+    oa:hasTarget data:bronem_SpatialContext-relocatesTo_1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:bronem_SpatialContext-relocatesTo_2_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Emily - Spatial Context snippet" ;
+    dcterms:description "The Bront children spent much time playing in the garden of the parsonage, and traipsing through the miles of open moorland onto which the house backed. This wild Yorkshire landscape figures largely in EBs poetry..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#ChildhoodandEducation> .
+
+data:bronem_SpatialContext-travelsTo_1_identifying a cwrc:SpatialContext ;
+    rdfs:label "Bront, Emily - Spatial Context identifying annotation" ;
+    oa:hasBody data:Bront_Anne,
+        data:Bront_Emily,
+        <http://sws.geonames.org/2633352/> ;
+    oa:hasTarget data:bronem_SpatialContext-travelsTo_1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:Bront_Anne a cwrc:NaturalPerson ;
+    rdfs:label "Bront, Anne"^^xsd:string ;
+    foaf:name "Bront, Anne"^^xsd:string .
+
+data:bronem_SpatialContext-relocatesTo_1_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Emily - Spatial Context snippet" ;
+    dcterms:description "A few months after the birth of Anne, the family moved to Haworth, in the West Riding of Yorkshire, where her father took up a position as perpetual curate. It was not a well-paid position..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#ChildhoodandEducation> .
+
+data:bronem_SpatialContext-travelsTo_1_Snippet a oa:TextualBody ;
+    rdfs:label "Bront, Emily - Spatial Context snippet" ;
+    dcterms:description "From this time EB stayed close to home, apart from a brief trip that she and Anne made to York in June 1845. During the journey she and Anne pretended they were Royalist prisoners fleeing..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#Teaching> .
+
+data:Bront_Emily a cwrc:NaturalPerson ;
+    rdfs:label "Bront, Emily"^^xsd:string ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:relocatesTo <http://sws.geonames.org/2647278/> ;
+    cwrc:travelsTo <http://sws.geonames.org/2633352/> ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem> ;
+    foaf:name "Bront, Emily"^^xsd:string .
+

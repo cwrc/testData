@@ -1,0 +1,1079 @@
+#957 triples created
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:woolvi_CulturalFormContext1_describing a cwrc:CulturalFormContext ;
+    rdfs:label "Woolf, Virginia - CulturalForm Context describing annotation" ;
+    dcterms:subject data:Woolf_Virginia,
+        cwrc:Society_of_Friends_ORG,
+        cwrc:agnosticism,
+        cwrc:evangelicalism,
+        cwrc:professional,
+        cwrc:quakerism ;
+    cwrc:hasIDependencyOn data:woolvi_CulturalFormContext1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasSocialClassSelfReported cwrc:professional ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasReligion cwrc:agnosticism ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasReligion cwrc:evangelicalism ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia org:memberOf cwrc:Society_of_Friends_ORG ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasReligion cwrc:quakerism ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_CulturalFormContext1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_NationalityContext1_describing a cwrc:NationalityContext ;
+    rdfs:label "Woolf, Virginia - Nationality Context describing annotation" ;
+    dcterms:subject data:Woolf_Virginia,
+        cwrc:Between_the_Acts_TITLE,
+        cwrc:Three_Guineas_TITLE,
+        "GB-ENG"^^xsd:string ;
+    cwrc:hasIDependencyOn data:woolvi_NationalityContext1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasNationality \"GB-ENG\"^^xsd:string ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_NationalityContext1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_PoliticalContext10_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia,
+        cwrc:The_Years_TITLE ;
+    oa:hasTarget data:woolvi_PoliticalContext10_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext11_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    oa:hasBody data:Davies_Margaret_Llewelyn,
+        data:Woolf_Virginia,
+        cwrc:No-Conscription_Fellowship_ORG,
+        cwrc:Times_TITLE ;
+    oa:hasTarget data:woolvi_PoliticalContext11_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext12_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Political_Event1 ;
+    oa:hasBody data:Woolf_Virginia,
+        cwrc:To_the_Lighthouse_TITLE ;
+    oa:hasTarget data:woolvi_PoliticalContext12_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext13_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia,
+        cwrc:Maurice_TITLE,
+        cwrc:Orlando_TITLE ;
+    oa:hasTarget data:woolvi_PoliticalContext13_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext14_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    oa:hasBody data:Biron_Sir_Chartres,
+        data:Woolf_Virginia,
+        cwrc:The_Well_of_Loneliness_TITLE ;
+    oa:hasTarget data:woolvi_PoliticalContext14_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext15_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Political_Event1 ;
+    oa:hasBody data:Forster_E_M,
+        data:Hall_Radclyffe,
+        data:Woolf_Virginia,
+        cwrc:Nation_TITLE,
+        cwrc:The_New_Censorship_TITLE,
+        cwrc:The_Well_of_Loneliness_TITLE ;
+    oa:hasTarget data:woolvi_PoliticalContext15_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext16_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Political_Event2 ;
+    oa:hasBody data:Hall_Radclyffe,
+        data:Woolf_Virginia,
+        cwrc:The_Well_of_Loneliness_TITLE ;
+    oa:hasTarget data:woolvi_PoliticalContext16_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext17_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_PoliticalContext17_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext18_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    oa:hasBody data:Bell_Vanessa,
+        data:Eliot_T_S,
+        data:Hamilton_Cicely,
+        data:Knight_Laura,
+        data:Nicolson_Harold,
+        data:Sackville-West_Vita,
+        data:Strachey_Philippa,
+        data:Woolf_Virginia,
+        cwrc:Professions_for_Women_TITLE,
+        cwrc:The_Years_TITLE,
+        cwrc:Three_Guineas_TITLE ;
+    oa:hasTarget data:woolvi_PoliticalContext18_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext19_describing a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context describing annotation" ;
+    dcterms:subject data:Auden_W_H,
+        data:Bell_Julian_1908_-_1937,
+        data:Lehmann_John,
+        data:Lewis_Wyndham,
+        data:Spender_Stephen,
+        cwrc:Hogarth_Press_ORG,
+        cwrc:anti-Fascism,
+        cwrc:pacifism ;
+    cwrc:hasIDependencyOn data:woolvi_PoliticalContext19_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasPoliticalMembershipIn cwrc:pacifism ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasPoliticalAffiliation cwrc:anti-Fascism ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_PoliticalContext19_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_PoliticalContext1_describing a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context describing annotation" ;
+    dcterms:subject data:Black_Naomi,
+        data:Davies_Margaret_Llewelyn,
+        data:Smyth_Ethel,
+        data:Strachey_Marjorie,
+        data:Strachey_Pernel,
+        data:Strachey_Philippa,
+        data:Woolf_Virginia,
+        cwrc:National_Union_of_Womens_Suffrage_Societies_ORG,
+        cwrc:Night_and_Day_TITLE,
+        cwrc:The_Years_TITLE,
+        cwrc:Three_Guineas_TITLE,
+        cwrc:Womens_Cooperative_Guild_ORG,
+        cwrc:suffrage ;
+    cwrc:hasIDependencyOn data:woolvi_PoliticalContext1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasActivistInvolvementIn cwrc:suffrage ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasGenderedPoliticalActivity cwrc:suffrage ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_PoliticalContext1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_PoliticalContext20_describing a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context describing annotation" ;
+    dcterms:subject cwrc:Artists_International_Association_ORG,
+        cwrc:For_Intellectual_Liberty_ORG,
+        cwrc:International_Association_of_Writers_for_the_Defence_of_Culture_ORG,
+        cwrc:Labour_Party_ORG,
+        cwrc:National_Council_for_Civil_Liberties_ORG,
+        cwrc:National_Peace_Council_ORG,
+        cwrc:anti-Censorship,
+        cwrc:civilLibertarianism,
+        cwrc:internationalism,
+        cwrc:socialism ;
+    cwrc:hasIDependencyOn data:woolvi_PoliticalContext20_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasPoliticalMembershipIn cwrc:civilLibertarianism ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasPoliticalMembershipIn cwrc:socialism ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia org:memberOf cwrc:Labour_Party_ORG ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasGenderedPoliticalActivity cwrc:internationalism ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasGenderedPoliticalActivity cwrc:civilLibertarianism ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasPoliticalMembershipIn cwrc:anti-Censorship ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia org:memberOf cwrc:National_Council_for_Civil_Liberties_ORG ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia org:memberOf cwrc:For_Intellectual_Liberty_ORG ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia org:memberOf cwrc:International_Association_of_Writers_for_the_Defence_of_Culture_ORG ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasPoliticalMembershipIn cwrc:internationalism ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_PoliticalContext20_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_PoliticalContext21_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    oa:hasBody data:George_V_King,
+        data:Woolf_Virginia,
+        cwrc:Three_Guineas_TITLE ;
+    oa:hasTarget data:woolvi_PoliticalContext21_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext22_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    oa:hasBody data:Holtby_Winifred,
+        data:Tomlin_Stephen,
+        data:Woolf_Virginia,
+        cwrc:Virginia_Woolf_A_Critical_Memoir_TITLE ;
+    oa:hasTarget data:woolvi_PoliticalContext22_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext23_describing a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context describing annotation" ;
+    dcterms:subject data:Fawcett_Millicent_Garrett,
+        data:Smyth_Ethel,
+        data:Woolf_Virginia,
+        cwrc:Fawcett_Society_ORG,
+        cwrc:feminism ;
+    cwrc:hasEvent data:woolvi_Political_Event1 ;
+    cwrc:hasIDependencyOn data:woolvi_PoliticalContext23_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasGenderedPoliticalActivity cwrc:feminism ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia org:memberOf cwrc:Fawcett_Society_ORG ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasActivistInvolvementIn cwrc:feminism ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_PoliticalContext23_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_PoliticalContext24_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Political_Event2 ;
+    oa:hasBody data:Stephen_Sir_Leslie,
+        data:Woolf_Virginia,
+        cwrc:Cambridge_University_ORG ;
+    oa:hasTarget data:woolvi_PoliticalContext24_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext25_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Political_Event3 ;
+    oa:hasBody data:Woolf_Virginia,
+        cwrc:University_of_Liverpool_ORG,
+        cwrc:University_of_Manchester_ORG ;
+    oa:hasTarget data:woolvi_PoliticalContext25_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext26_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Political_Event4 ;
+    oa:hasBody data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_PoliticalContext26_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext27_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_PoliticalContext27_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext28_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    oa:hasBody data:Cunard_Nancy,
+        data:Fry_Margery,
+        data:Huxley_Aldous,
+        data:Huxley_Julian,
+        data:Mitchison_Naomi,
+        data:Nicolson_Harold,
+        data:Pankhurst_Sylvia,
+        data:Russell_Bertrand,
+        data:Warner_Sylvia_Townsend,
+        data:Webb_Beatrice,
+        data:West_Rebecca,
+        data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_PoliticalContext28_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext29_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    oa:hasBody data:Smyth_Ethel,
+        data:Woolf_Virginia,
+        <http://sws.geonames.org/2643743/> ;
+    oa:hasTarget data:woolvi_PoliticalContext29_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext2_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    oa:hasBody data:Pankhurst_Christabel,
+        data:Pethick-Lawrence_Emmeline,
+        data:Royden_Maude,
+        data:Woolf_Virginia,
+        cwrc:Britannia_TITLE,
+        cwrc:The_Suffragette_TITLE,
+        cwrc:Womens_International_League_for_Peace_and_Freedom_ORG ;
+    oa:hasTarget data:woolvi_PoliticalContext2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext30_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Political_Event1 ;
+    oa:hasBody data:Woolf_Leonard,
+        data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_PoliticalContext30_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext3_describing a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context describing annotation" ;
+    dcterms:subject data:Case_Janet,
+        data:Davies_Margaret_Llewelyn,
+        data:Woolf_Virginia,
+        cwrc:Peoples_Suffrage_Federation_ORG,
+        cwrc:suffrage ;
+    cwrc:hasEvent data:woolvi_Political_Event1 ;
+    cwrc:hasIDependencyOn data:woolvi_PoliticalContext3_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasActivistInvolvementIn cwrc:suffrage ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasGenderedPoliticalActivity cwrc:suffrage ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_PoliticalContext3_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_PoliticalContext4_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_PoliticalContext4_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext5_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    oa:hasBody data:Forster_E_M,
+        data:Stephen_Adrian,
+        data:Strachey_Ray,
+        data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_PoliticalContext5_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext6_describing a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context describing annotation" ;
+    dcterms:subject data:Woolf_Virginia,
+        cwrc:Fabian_Society_ORG,
+        cwrc:International_Review_TITLE,
+        cwrc:Labour_Party_ORG,
+        cwrc:League_of_Nations_ORG,
+        cwrc:New_Statesman_TITLE,
+        cwrc:anti-War,
+        cwrc:feminism,
+        cwrc:pacifism,
+        cwrc:socialism ;
+    cwrc:hasIDependencyOn data:woolvi_PoliticalContext6_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasPoliticalMembershipIn cwrc:anti-War ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasGenderedPoliticalActivity cwrc:feminism ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasGenderedPoliticalActivity cwrc:anti-War ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasGenderedPoliticalActivity cwrc:socialism ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasGenderedPoliticalActivity cwrc:pacifism ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasPoliticalMembershipIn cwrc:socialism ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasActivistInvolvementIn cwrc:feminism ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasPoliticalMembershipIn cwrc:pacifism ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_PoliticalContext6_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_PoliticalContext7_describing a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context describing annotation" ;
+    dcterms:subject data:Woolf_Virginia,
+        <http://sws.geonames.org/2643743/>,
+        "_womens co-operative guild_"^^xsd:string ;
+    cwrc:hasEvent data:woolvi_Political_Event1 ;
+    cwrc:hasIDependencyOn data:woolvi_PoliticalContext7_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasActivistInvolvementIn \"_womens co-operative guild_\"^^xsd:string ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasGenderedPoliticalActivity \"_womens co-operative guild_\"^^xsd:string ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_PoliticalContext7_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_PoliticalContext8_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_PoliticalContext8_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext9_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Political_Event1 ;
+    oa:hasBody data:Bennett_Arnold,
+        data:MacCarthy_Desmond,
+        data:Woolf_Virginia,
+        cwrc:Our_Women_TITLE,
+        cwrc:The_Intellectual_Status_of_Women_TITLE,
+        cwrc:The_New_Statesman_TITLE ;
+    oa:hasTarget data:woolvi_PoliticalContext9_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SexualityContext1_describing a cwrc:SexualityContext ;
+    rdfs:label "Woolf, Virginia - Sexuality Context describing annotation" ;
+    dcterms:subject data:Woolf_Virginia,
+        <http://sparql.cwrc.ca/ontologies/cwrc#22_Hyde_Park_Gate_TITLE>,
+        cwrc:A_Sketch_of_the_Past_TITLE,
+        cwrc:Moments_of_Being_TITLE,
+        cwrc:Old_Bloomsbury_TITLE,
+        cwrc:sexualityBisexuality ;
+    cwrc:hasIDependencyOn data:woolvi_SexualityContext1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasSexualitySelfReported cwrc:sexualityBisexuality ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_SexualityContext1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:Bell_Vanessa a cwrc:NaturalPerson ;
+    rdfs:label "Bell, Vanessa"^^xsd:string ;
+    foaf:name "Bell, Vanessa"^^xsd:string .
+
+data:Biron_Sir_Chartres a cwrc:NaturalPerson ;
+    rdfs:label "Biron, Sir Chartres"^^xsd:string ;
+    foaf:name "Biron, Sir Chartres"^^xsd:string .
+
+data:Cunard_Nancy a cwrc:NaturalPerson ;
+    rdfs:label "Cunard, Nancy"^^xsd:string ;
+    foaf:name "Cunard, Nancy"^^xsd:string .
+
+data:Eliot_T_S a cwrc:NaturalPerson ;
+    rdfs:label "Eliot, T. S."^^xsd:string ;
+    foaf:name "Eliot, T. S."^^xsd:string .
+
+data:Fry_Margery a cwrc:NaturalPerson ;
+    rdfs:label "Fry, Margery"^^xsd:string ;
+    foaf:name "Fry, Margery"^^xsd:string .
+
+data:George_V_King a cwrc:NaturalPerson ;
+    rdfs:label "George V, King"^^xsd:string ;
+    foaf:name "George V, King"^^xsd:string .
+
+data:Hamilton_Cicely a cwrc:NaturalPerson ;
+    rdfs:label "Hamilton, Cicely"^^xsd:string ;
+    foaf:name "Hamilton, Cicely"^^xsd:string .
+
+data:Holtby_Winifred a cwrc:NaturalPerson ;
+    rdfs:label "Holtby, Winifred"^^xsd:string ;
+    foaf:name "Holtby, Winifred"^^xsd:string .
+
+data:Huxley_Aldous a cwrc:NaturalPerson ;
+    rdfs:label "Huxley, Aldous"^^xsd:string ;
+    foaf:name "Huxley, Aldous"^^xsd:string .
+
+data:Huxley_Julian a cwrc:NaturalPerson ;
+    rdfs:label "Huxley, Julian"^^xsd:string ;
+    foaf:name "Huxley, Julian"^^xsd:string .
+
+data:Knight_Laura a cwrc:NaturalPerson ;
+    rdfs:label "Knight, Laura"^^xsd:string ;
+    foaf:name "Knight, Laura"^^xsd:string .
+
+data:Mitchison_Naomi a cwrc:NaturalPerson ;
+    rdfs:label "Mitchison, Naomi"^^xsd:string ;
+    foaf:name "Mitchison, Naomi"^^xsd:string .
+
+data:Pankhurst_Christabel a cwrc:NaturalPerson ;
+    rdfs:label "Pankhurst, Christabel"^^xsd:string ;
+    foaf:name "Pankhurst, Christabel"^^xsd:string .
+
+data:Pankhurst_Sylvia a cwrc:NaturalPerson ;
+    rdfs:label "Pankhurst, Sylvia"^^xsd:string ;
+    foaf:name "Pankhurst, Sylvia"^^xsd:string .
+
+data:Pethick-Lawrence_Emmeline a cwrc:NaturalPerson ;
+    rdfs:label "Pethick-Lawrence, Emmeline"^^xsd:string ;
+    foaf:name "Pethick-Lawrence, Emmeline"^^xsd:string .
+
+data:Royden_Maude a cwrc:NaturalPerson ;
+    rdfs:label "Royden, Maude"^^xsd:string ;
+    foaf:name "Royden, Maude"^^xsd:string .
+
+data:Russell_Bertrand a cwrc:NaturalPerson ;
+    rdfs:label "Russell, Bertrand"^^xsd:string ;
+    foaf:name "Russell, Bertrand"^^xsd:string .
+
+data:Sackville-West_Vita a cwrc:NaturalPerson ;
+    rdfs:label "Sackville-West, Vita"^^xsd:string ;
+    foaf:name "Sackville-West, Vita"^^xsd:string .
+
+data:Stephen_Adrian a cwrc:NaturalPerson ;
+    rdfs:label "Stephen, Adrian"^^xsd:string ;
+    foaf:name "Stephen, Adrian"^^xsd:string .
+
+data:Strachey_Ray a cwrc:NaturalPerson ;
+    rdfs:label "Strachey, Ray"^^xsd:string ;
+    foaf:name "Strachey, Ray"^^xsd:string .
+
+data:Tomlin_Stephen a cwrc:NaturalPerson ;
+    rdfs:label "Tomlin, Stephen"^^xsd:string ;
+    foaf:name "Tomlin, Stephen"^^xsd:string .
+
+data:Warner_Sylvia_Townsend a cwrc:NaturalPerson ;
+    rdfs:label "Warner, Sylvia Townsend"^^xsd:string ;
+    foaf:name "Warner, Sylvia Townsend"^^xsd:string .
+
+data:Webb_Beatrice a cwrc:NaturalPerson ;
+    rdfs:label "Webb, Beatrice"^^xsd:string ;
+    foaf:name "Webb, Beatrice"^^xsd:string .
+
+data:West_Rebecca a cwrc:NaturalPerson ;
+    rdfs:label "West, Rebecca"^^xsd:string ;
+    foaf:name "West, Rebecca"^^xsd:string .
+
+data:woolvi_CulturalFormContext1_identifying a cwrc:CulturalFormContext ;
+    rdfs:label "Woolf, Virginia - CulturalForm Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia,
+        cwrc:Society_of_Friends_ORG,
+        cwrc:agnosticism,
+        cwrc:evangelicalism,
+        cwrc:professional,
+        cwrc:quakerism ;
+    oa:hasTarget data:woolvi_CulturalFormContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_NationalityContext1_identifying a cwrc:NationalityContext ;
+    rdfs:label "Woolf, Virginia - Nationality Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia,
+        cwrc:Between_the_Acts_TITLE,
+        cwrc:Three_Guineas_TITLE,
+        "GB-ENG"^^xsd:string ;
+    oa:hasTarget data:woolvi_NationalityContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext10_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "The Woolfs first years in Hogarth House were war years. The war in the air astonished and terrified Londoners, most of whom had never seen an aeroplane. In the bitterly cold winter of 1917-18, they..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#WorldWarI> .
+
+data:woolvi_PoliticalContext11_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "Like many of her friends and associates, VW was staunchly anti-war. Her brother Adrian was an active pacifist and secretary of the No-Conscription Fellowship, and she and many friends were COs, or Conscientious Objectors. Moreover,..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#WorldWarI> .
+
+data:woolvi_PoliticalContext12_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "3-12 May 1926 During the General Strike, while VW was writing To the Lighthouse and Leonard helping to circulate a petition for fair treatment of miners after the strike, their house was suddenly filled with..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#SocialandPoliticalActivity> .
+
+data:woolvi_PoliticalContext13_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "Both Forster and VW had written their own homosexual texts: Forsters novel Maurice had circulated privately; and in the month after this VW published Orlando, her secret love-letter to Vita, of which she noted: Sapphism..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#RadclyffeHallandTheWellofLoneliness> .
+
+data:woolvi_PoliticalContext14_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "On 16 November, Sir Chartres Biron ruled The Well of Loneliness obscene, on grounds of its subject-matter, and ordered it destroyed. Though she joined others in condemning censorship of Halls book, VW made it clear..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#RadclyffeHallandTheWellofLoneliness> .
+
+data:woolvi_PoliticalContext15_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "8 September 1928 The New Censorship, a letter to the editor protesting against the suppression of Radclyffe Halls The Well of Loneliness and signed by VW and E. M. Forster, appeared in the Nation. 115..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#RadclyffeHallandTheWellofLoneliness> .
+
+data:woolvi_PoliticalContext16_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "9 November 1928 During the trial of Radclyffe Halls novel The Well of Loneliness, VW attended with many friends and associates in order to give evidence, but the magistrate refused to hear testimony on literary..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#RadclyffeHallandTheWellofLoneliness> .
+
+data:woolvi_PoliticalContext17_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "VWs political voice grew more articulate and emphatic during the last decade of her life."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#ActivismandObscurity> .
+
+data:woolvi_PoliticalContext18_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "The event was organized in part by Pippa Strachey; other guests included Vanessa Bell, Cicely Hamilton, Laura Knight, Vita Sackville-West and Harold Nicolson, and T. S. Eliot. Here Woolf gave a landmark talk, Speech of..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#ActivismandObscurity> .
+
+data:woolvi_PoliticalContext19_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    oa:hasBody data:Auden_W_H,
+        data:Bell_Julian_1908_-_1937,
+        data:Lehmann_John,
+        data:Lewis_Wyndham,
+        data:Spender_Stephen,
+        data:Woolf_Virginia,
+        cwrc:Hogarth_Press_ORG,
+        cwrc:anti-Fascism,
+        cwrc:pacifism ;
+    oa:hasTarget data:woolvi_PoliticalContext19_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext1_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    oa:hasBody data:Black_Naomi,
+        data:Davies_Margaret_Llewelyn,
+        data:Smyth_Ethel,
+        data:Strachey_Marjorie,
+        data:Strachey_Pernel,
+        data:Strachey_Philippa,
+        data:Woolf_Virginia,
+        cwrc:National_Union_of_Womens_Suffrage_Societies_ORG,
+        cwrc:Night_and_Day_TITLE,
+        cwrc:The_Years_TITLE,
+        cwrc:Three_Guineas_TITLE,
+        cwrc:Womens_Cooperative_Guild_ORG,
+        cwrc:suffrage ;
+    oa:hasTarget data:woolvi_PoliticalContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext20_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia,
+        cwrc:Artists_International_Association_ORG,
+        cwrc:For_Intellectual_Liberty_ORG,
+        cwrc:International_Association_of_Writers_for_the_Defence_of_Culture_ORG,
+        cwrc:Labour_Party_ORG,
+        cwrc:National_Council_for_Civil_Liberties_ORG,
+        cwrc:National_Peace_Council_ORG,
+        cwrc:anti-Censorship,
+        cwrc:civilLibertarianism,
+        cwrc:internationalism,
+        cwrc:socialism ;
+    oa:hasTarget data:woolvi_PoliticalContext20_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext21_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "However, she grew to be strongly opposed to most political and cultural institutions in their current form, regardless of their expressed ideologies. Public response to the British monarchy, which on the occasion of the funeral..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#ActivismandObscurity> .
+
+data:woolvi_PoliticalContext22_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "Uncomfortable with marks of public recognition, VW developed a theory of the artistic and political benefits of anonymity. She expressed some measure of dissatisfaction, for instance, first with Stephen Tomlins 1931 bust of her, and..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#ActivismandObscurity> .
+
+data:woolvi_PoliticalContext23_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Political_Event1 ;
+    oa:hasBody data:Fawcett_Millicent_Garrett,
+        data:Smyth_Ethel,
+        data:Woolf_Virginia,
+        cwrc:Fawcett_Society_ORG,
+        cwrc:feminism ;
+    oa:hasTarget data:woolvi_PoliticalContext23_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext24_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "February 1932 VW refused to deliver the Clark lecture series at Cambridge University, thereby also declining to succeed her father, scholar Leslie Stephen, in this honour. 2: 172"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#ActivismandObscurity> .
+
+data:woolvi_PoliticalContext25_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "March 1933 VW rejected on principle an honorary Doctor of Letters degree from the University of Manchester. In March 1939 she rejected another honorary doctorate, from the University of Liverpool. 2: 172155"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#ActivismandObscurity> .
+
+data:woolvi_PoliticalContext26_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "1935 In keeping with her anti-establishment position, VW declined the invitation to become a Companion of Honour. 258"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#ActivismandObscurity> .
+
+data:woolvi_PoliticalContext27_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "Three days into the war, and the day of her first air-raid warning, Woolf wrote: This is the worst of all my lifes experiences.5: 234 She was soon occupied with several pressing themes (artistic and..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#WorldWarII> .
+
+data:woolvi_PoliticalContext28_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "On 10 May Germany had invaded Holland and Belgium. In the event of an invasion of England, they could indeed expect a terrible personal fate, on account of their anti-war politics, Leonards anti-war career and..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#WorldWarII> .
+
+data:woolvi_PoliticalContext29_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "VW was especially devastated by the effects of Nazi air raids on London. She had been inspired by her street haunting for many years, but was now deeply troubled by her views of the wrecked..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#WorldWarII> .
+
+data:woolvi_PoliticalContext2_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "With the declaration of war, however, on 4 August, 1914, VWs politics and those of the NUWSS parted company. The NUWSS supported the government, and on August the sixth resolved to suspend political activity in..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Suffrage> .
+
+data:woolvi_PoliticalContext30_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "15 May 1940 Virginia and Leonard Woolf discussed suicide in the quite probable event of a German invasion of England. They considered carbon monoxide poisoning in their garage, and, later, an overdose of morphia. War..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#WorldWarII> .
+
+data:woolvi_PoliticalContext3_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Political_Event1 ;
+    oa:hasBody data:Case_Janet,
+        data:Davies_Margaret_Llewelyn,
+        data:Woolf_Virginia,
+        cwrc:Peoples_Suffrage_Federation_ORG,
+        cwrc:suffrage ;
+    oa:hasTarget data:woolvi_PoliticalContext3_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext4_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "VW declared [her]self a Fabian in January 1915.348"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#HogarthHouse> .
+
+data:woolvi_PoliticalContext5_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "Each meeting consisted of dinner, followed by an address from a speaker, followed by discussion. Speakers included E. M. Forster, Virginias brother Adrian, and Ray Strachey. About a dozen working-class women attended; class relations were..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#HogarthHouse> .
+
+data:woolvi_PoliticalContext6_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia,
+        cwrc:Fabian_Society_ORG,
+        cwrc:International_Review_TITLE,
+        cwrc:Labour_Party_ORG,
+        cwrc:League_of_Nations_ORG,
+        cwrc:New_Statesman_TITLE,
+        cwrc:anti-War,
+        cwrc:feminism,
+        cwrc:pacifism,
+        cwrc:socialism ;
+    oa:hasTarget data:woolvi_PoliticalContext6_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext7_identifying a cwrc:PoliticalContext ;
+    rdfs:label "Woolf, Virginia - Political Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Political_Event1 ;
+    oa:hasBody data:Woolf_Virginia,
+        <http://sws.geonames.org/2643743/>,
+        "_womens co-operative guild_"^^xsd:string ;
+    oa:hasTarget data:woolvi_PoliticalContext7_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_PoliticalContext8_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "On 2 October Affable Hawk had agreed with Bennett that women are innately inferior to men in intellectual power, and that womens indisputable desire to be dominated is . . . a proof of intellectual..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#HogarthHouse> .
+
+data:woolvi_PoliticalContext9_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "October 1920 VW published in The New Statesman two letters on The Intellectual Status of Women. She was responding to views expressed by Desmond MacCarthy, the Affable Hawk, in a review of Arnold Bennetts Our..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#HogarthHouse> .
+
+data:woolvi_SexualityContext1_identifying a cwrc:SexualityContext ;
+    rdfs:label "Woolf, Virginia - Sexuality Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia,
+        <http://sparql.cwrc.ca/ontologies/cwrc#22_Hyde_Park_Gate_TITLE>,
+        cwrc:A_Sketch_of_the_Past_TITLE,
+        cwrc:Moments_of_Being_TITLE,
+        cwrc:Old_Bloomsbury_TITLE,
+        cwrc:sexualityBisexuality ;
+    oa:hasTarget data:woolvi_SexualityContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:Auden_W_H a cwrc:NaturalPerson ;
+    rdfs:label "Auden, W. H."^^xsd:string ;
+    foaf:name "Auden, W. H."^^xsd:string .
+
+data:Bell_Julian_1908_-_1937 a cwrc:NaturalPerson ;
+    rdfs:label "Bell, Julian,, 1908 - 1937"^^xsd:string ;
+    foaf:name "Bell, Julian,, 1908 - 1937"^^xsd:string .
+
+data:Bennett_Arnold a cwrc:NaturalPerson ;
+    rdfs:label "Bennett, Arnold"^^xsd:string ;
+    foaf:name "Bennett, Arnold"^^xsd:string .
+
+data:Black_Naomi a cwrc:NaturalPerson ;
+    rdfs:label "Black, Naomi"^^xsd:string ;
+    foaf:name "Black, Naomi"^^xsd:string .
+
+data:Lehmann_John a cwrc:NaturalPerson ;
+    rdfs:label "Lehmann, John"^^xsd:string ;
+    foaf:name "Lehmann, John"^^xsd:string .
+
+data:Lewis_Wyndham a cwrc:NaturalPerson ;
+    rdfs:label "Lewis, Wyndham"^^xsd:string ;
+    foaf:name "Lewis, Wyndham"^^xsd:string .
+
+data:MacCarthy_Desmond a cwrc:NaturalPerson ;
+    rdfs:label "MacCarthy, Desmond"^^xsd:string ;
+    foaf:name "MacCarthy, Desmond"^^xsd:string .
+
+data:Nicolson_Harold a cwrc:NaturalPerson ;
+    rdfs:label "Nicolson, Harold"^^xsd:string ;
+    foaf:name "Nicolson, Harold"^^xsd:string .
+
+data:Spender_Stephen a cwrc:NaturalPerson ;
+    rdfs:label "Spender, Stephen"^^xsd:string ;
+    foaf:name "Spender, Stephen"^^xsd:string .
+
+data:Stephen_Sir_Leslie a cwrc:NaturalPerson ;
+    rdfs:label "Stephen, Sir Leslie"^^xsd:string ;
+    foaf:name "Stephen, Sir Leslie"^^xsd:string .
+
+data:Strachey_Marjorie a cwrc:NaturalPerson ;
+    rdfs:label "Strachey, Marjorie"^^xsd:string ;
+    foaf:name "Strachey, Marjorie"^^xsd:string .
+
+data:Strachey_Pernel a cwrc:NaturalPerson ;
+    rdfs:label "Strachey, Pernel"^^xsd:string ;
+    foaf:name "Strachey, Pernel"^^xsd:string .
+
+data:Woolf_Leonard a cwrc:NaturalPerson ;
+    rdfs:label "Woolf, Leonard"^^xsd:string ;
+    foaf:name "Woolf, Leonard"^^xsd:string .
+
+data:woolvi_CulturalFormContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - CulturalForm Context snippet" ;
+    dcterms:description "VW was the daughter not only of an educated man,10 but of one of the most influential intellectuals in late Victorian England. Her family on both sides was part of the intellectual ascendancy.3 Though many..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#InheritanceAncestresses> .
+
+data:woolvi_NationalityContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Nationality Context snippet" ;
+    dcterms:description "In her forties, after watching a village wedding, VW wrote: We dont belong to any class; we thinkers: might as well be French or German. Yet I am English in some way.3: 198 Her calling..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#InheritanceAncestresses> .
+
+data:woolvi_PoliticalContext19_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "Through the 1930s, Woolf struggled to define herself and her work against the rise of Fascism in Europe, to chart the relationship between artistic and political tasks. She and her Bloomsbury friends began to be..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#ActivismandObscurity> .
+
+data:woolvi_PoliticalContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "Virginias work consisted mainly of addressing envelopes, and she committed herself only to some weeks of this at the beginning and end of 1910. But she was also associated with the National Union of Womens..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Suffrage> .
+
+data:woolvi_PoliticalContext20_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "But Woolf recorded in her diary in May 1940: Thinking is my fighting.694 Her thinking manifested itself in various ways. She was involved to varying degrees with a number of leftist associations: the Labour Party,..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#ActivismandObscurity> .
+
+data:woolvi_PoliticalContext23_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "21 January 1931 VW appeared with Ethel Smyth on the platform of the London and National Society for Womens Service (LNSWS, later renamed the Fawcett Society in honour of Millicent Garrett Fawcett). Women and Politics..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#ActivismandObscurity> .
+
+data:woolvi_PoliticalContext3_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "1 January 1910 Virginia Stephen (later VW) offered her support to the suffrage cause in a letter to her friend Janet Case. This led to her brief volunteer work with the Peoples Suffrage Federation which..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Suffrage> .
+
+data:woolvi_PoliticalContext6_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "VWs feminist and socialist views went along with firm opposition to the war, and to the militaristic political structures that had produced the war, which is evident in many of her writings. Leonard was much..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#HogarthHouse> .
+
+data:woolvi_PoliticalContext7_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Political Context snippet" ;
+    dcterms:description "1916-1920 VW organised and chaired twice-monthly meetings of the Richmond Womens Co-operative Guild. 260n"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#HogarthHouse> .
+
+data:woolvi_Political_Event3 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Political Event" ;
+    dcterms:description "March 1933: VW rejected on principle an honorary Doctor of Letters degree from the University of Manchester. In March 1939 she rejected another honorary doctorate, from the University of Liverpool." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Woolf_Virginia,
+        cwrc:University_of_Liverpool_ORG,
+        cwrc:University_of_Manchester_ORG ;
+    sem:hasTimeStamp "1933-03-" ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:woolvi_Political_Event4 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Political Event" ;
+    dcterms:description "1935: In keeping with her anti-establishment position, VW declined the invitation to become a Companion of Honour." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:DecadeSignficance ;
+    sem:hasActor data:Woolf_Virginia ;
+    sem:hasTimeStamp "1935--" ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:woolvi_SexualityContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Sexuality Context snippet" ;
+    dcterms:description "VWs childhood sexual experience was painful, humiliating, and formative, and her adult sexuality has been much discussed since publication of A Sketch of the Past, 22 Hyde Park Gate, and Old Bloomsbury in Moments of..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#InheritanceAncestresses> .
+
+data:Case_Janet a cwrc:NaturalPerson ;
+    rdfs:label "Case, Janet"^^xsd:string ;
+    foaf:name "Case, Janet"^^xsd:string .
+
+data:Fawcett_Millicent_Garrett a cwrc:NaturalPerson ;
+    rdfs:label "Fawcett, Millicent Garrett"^^xsd:string ;
+    foaf:name "Fawcett, Millicent Garrett"^^xsd:string .
+
+data:Forster_E_M a cwrc:NaturalPerson ;
+    rdfs:label "Forster, E. M."^^xsd:string ;
+    foaf:name "Forster, E. M."^^xsd:string .
+
+data:Strachey_Philippa a cwrc:NaturalPerson ;
+    rdfs:label "Strachey, Philippa"^^xsd:string ;
+    foaf:name "Strachey, Philippa"^^xsd:string .
+
+data:woolvi_Political_Event2 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Political Event" ;
+    dcterms:description "9 November 1928: During the trial of Radclyffe Halls novel The Well of Loneliness, VW attended with many friends and associates in order to give evidence, but the magistrate refused to hear testimony on literary merit.",
+        "February 1932: VW refused to deliver the Clark lecture series at Cambridge University, thereby also declining to succeed her father, scholar Leslie Stephen, in this honour." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Hall_Radclyffe,
+        data:Stephen_Sir_Leslie,
+        data:Woolf_Virginia,
+        cwrc:Cambridge_University_ORG,
+        cwrc:The_Well_of_Loneliness_TITLE ;
+    sem:hasTimeStamp "1928-11-09"^^xsd:date,
+        "1932-02-" ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:Hall_Radclyffe a cwrc:NaturalPerson ;
+    rdfs:label "Hall, Radclyffe"^^xsd:string ;
+    foaf:name "Hall, Radclyffe"^^xsd:string .
+
+data:Davies_Margaret_Llewelyn a cwrc:NaturalPerson ;
+    rdfs:label "Davies, Margaret Llewelyn"^^xsd:string ;
+    foaf:name "Davies, Margaret Llewelyn"^^xsd:string .
+
+data:Smyth_Ethel a cwrc:NaturalPerson ;
+    rdfs:label "Smyth, Ethel"^^xsd:string ;
+    foaf:name "Smyth, Ethel"^^xsd:string .
+
+data:woolvi_Political_Event1 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Political Event" ;
+    dcterms:description " October 1920: VW published in The New Statesman two letters on The Intellectual Status of Women. She was responding to views expressed by Desmond MacCarthy, the Affable Hawk, in a review of Arnold Bennetts Our Women 1920.",
+        "1 January 1910: Virginia Stephen (later VW) offered her support to the suffrage cause in a letter to her friend Janet Case. This led to her brief volunteer work with the Peoples Suffrage Federation which was run in...",
+        "15 May 1940: Virginia and Leonard Woolf discussed suicide in the quite probable event of a German invasion of England. They considered carbon monoxide poisoning in their garage, and, later, an overdose of morphia.",
+        "1916-1920: VW organised and chaired twice-monthly meetings of the Richmond Womens Co-operative Guild.",
+        "21 January 1931: VW appeared with Ethel Smyth on the platform of the London and National Society for Womens Service (LNSWS, later renamed the Fawcett Society in honour of Millicent Garrett Fawcett).",
+        "3-12 May 1926: During the General Strike, while VW was writing To the Lighthouse and Leonard helping to circulate a petition for fair treatment of miners after the strike, their house was suddenly filled with visitors, interrupting, arguing,...",
+        "8 September 1928: The New Censorship, a letter to the editor protesting against the suppression of Radclyffe Halls The Well of Loneliness and signed by VW and E. M. Forster, appeared in the Nation." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:DecadeSignficance,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Bennett_Arnold,
+        data:Case_Janet,
+        data:Davies_Margaret_Llewelyn,
+        data:Fawcett_Millicent_Garrett,
+        data:Forster_E_M,
+        data:Hall_Radclyffe,
+        data:MacCarthy_Desmond,
+        data:Smyth_Ethel,
+        data:Woolf_Leonard,
+        data:Woolf_Virginia,
+        cwrc:Fawcett_Society_ORG,
+        cwrc:Nation_TITLE,
+        cwrc:Our_Women_TITLE,
+        cwrc:Peoples_Suffrage_Federation_ORG,
+        cwrc:The_Intellectual_Status_of_Women_TITLE,
+        cwrc:The_New_Censorship_TITLE,
+        cwrc:The_New_Statesman_TITLE,
+        cwrc:The_Well_of_Loneliness_TITLE,
+        cwrc:To_the_Lighthouse_TITLE ;
+    sem:hasBeginTimeStamp "1926-05-03"^^xsd:date,
+        "1916--" ;
+    sem:hasEndTimeStamp "1926-05-12"^^xsd:date,
+        "1920--" ;
+    sem:hasPlace <http://sws.geonames.org/2643743/> ;
+    sem:hasTimeStamp "1910-01-01"^^xsd:date,
+        "1928-09-08"^^xsd:date,
+        "1931-01-21"^^xsd:date,
+        "1940-05-15"^^xsd:date,
+        "1920-10-" ;
+    sem:timeType cwrc:IntervalTime,
+        cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:mediumCertainty .
+
+data:Woolf_Virginia a cwrc:NaturalPerson ;
+    rdfs:label "Woolf, Virginia"^^xsd:string ;
+    cwrc:hasActivistInvolvementIn cwrc:feminism,
+        cwrc:suffrage,
+        "_womens co-operative guild_"^^xsd:string ;
+    cwrc:hasEvent data:woolvi_Political_Event1,
+        data:woolvi_Political_Event2,
+        data:woolvi_Political_Event3,
+        data:woolvi_Political_Event4 ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasGenderedPoliticalActivity cwrc:anti-War,
+        cwrc:civilLibertarianism,
+        cwrc:feminism,
+        cwrc:internationalism,
+        cwrc:pacifism,
+        cwrc:socialism,
+        cwrc:suffrage,
+        "_womens co-operative guild_"^^xsd:string ;
+    cwrc:hasNationality "GB-ENG"^^xsd:string ;
+    cwrc:hasPoliticalAffiliation cwrc:anti-Fascism ;
+    cwrc:hasPoliticalMembershipIn cwrc:anti-Censorship,
+        cwrc:anti-War,
+        cwrc:civilLibertarianism,
+        cwrc:internationalism,
+        cwrc:pacifism,
+        cwrc:socialism ;
+    cwrc:hasReligion cwrc:agnosticism,
+        cwrc:evangelicalism,
+        cwrc:quakerism ;
+    cwrc:hasSexualitySelfReported cwrc:sexualityBisexuality ;
+    cwrc:hasSocialClassSelfReported cwrc:professional ;
+    org:memberOf cwrc:Fawcett_Society_ORG,
+        cwrc:For_Intellectual_Liberty_ORG,
+        cwrc:International_Association_of_Writers_for_the_Defence_of_Culture_ORG,
+        cwrc:Labour_Party_ORG,
+        cwrc:National_Council_for_Civil_Liberties_ORG,
+        cwrc:Society_of_Friends_ORG ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi> ;
+    foaf:name "Woolf, Virginia"^^xsd:string .
+

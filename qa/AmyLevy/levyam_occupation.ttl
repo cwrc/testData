@@ -1,0 +1,152 @@
+#107 triples created
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:levyam_OccupationContext1_describing a cwrc:OccupationContext ;
+    rdfs:label "Levy, Amy - Occupation Context describing annotation" ;
+    dcterms:subject data:Alcott_Louisa_May,
+        data:Levy_Amy,
+        data:Stal_Germaine_de,
+        cwrc:Beaumont_Trust_ORG,
+        cwrc:Corinne_TITLE,
+        cwrc:Little_Women_TITLE,
+        cwrc:visualArtist ;
+    cwrc:hasIDependencyOn data:levyam_OccupationContext1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:hasOccupation cwrc:visualArtist ."^^xsd:string ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyam_OccupationContext1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:levyam_OccupationContext2_identifying a cwrc:OccupationContext ;
+    rdfs:label "Levy, Amy - Occupation Context identifying annotation" ;
+    oa:hasBody data:Levy_Amy,
+        cwrc:Beaumont_Trust_ORG ;
+    oa:hasTarget data:levyam_OccupationContext2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_OccupationContext3_describing a cwrc:OccupationContext ;
+    rdfs:label "Levy, Amy - Occupation Context describing annotation" ;
+    dcterms:subject cwrc:teacher,
+        <http://sws.geonames.org/2935022/> ;
+    cwrc:hasIDependencyOn data:levyam_OccupationContext3_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:hasPaidOccupation cwrc:teacher ."^^xsd:string ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyam_OccupationContext3_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:levyam_OccupationContext4_describing a cwrc:OccupationContext ;
+    rdfs:label "Levy, Amy - Occupation Context describing annotation" ;
+    dcterms:subject data:Black_Clementina,
+        cwrc:Womens_Trade_Union_League_ORG,
+        cwrc:volunteer ;
+    cwrc:hasIDependencyOn data:levyam_OccupationContext4_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Levy_Amy cwrc:hasVolunteerOccupation cwrc:volunteer ."^^xsd:string ] ;
+    oa:hasTarget data:Levy_Amy,
+        data:levyam_OccupationContext4_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:levyam_OccupationContext1_identifying a cwrc:OccupationContext ;
+    rdfs:label "Levy, Amy - Occupation Context identifying annotation" ;
+    oa:hasBody data:Alcott_Louisa_May,
+        data:Levy_Amy,
+        data:Stal_Germaine_de,
+        cwrc:Beaumont_Trust_ORG,
+        cwrc:Corinne_TITLE,
+        cwrc:Little_Women_TITLE,
+        cwrc:visualArtist ;
+    oa:hasTarget data:levyam_OccupationContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_OccupationContext2_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy - Occupation Context snippet" ;
+    dcterms:description "She never worked in a factory, as the erroneous 1912 article maintained; and it was a different A. Levy who was secretary of the Beaumont Trust, an organisation raising money for educating the poor.2, 4,..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#Drawing> .
+
+data:levyam_OccupationContext3_identifying a cwrc:OccupationContext ;
+    rdfs:label "Levy, Amy - Occupation Context identifying annotation" ;
+    oa:hasBody data:Levy_Amy,
+        cwrc:teacher,
+        <http://sws.geonames.org/2935022/> ;
+    oa:hasTarget data:levyam_OccupationContext3_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:levyam_OccupationContext4_identifying a cwrc:OccupationContext ;
+    rdfs:label "Levy, Amy - Occupation Context identifying annotation" ;
+    oa:hasBody data:Black_Clementina,
+        data:Levy_Amy,
+        cwrc:Womens_Trade_Union_League_ORG,
+        cwrc:volunteer ;
+    oa:hasTarget data:levyam_OccupationContext4_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:Alcott_Louisa_May a cwrc:NaturalPerson ;
+    rdfs:label "Alcott, Louisa May"^^xsd:string ;
+    foaf:name "Alcott, Louisa May"^^xsd:string .
+
+data:Black_Clementina a cwrc:NaturalPerson ;
+    rdfs:label "Black, Clementina"^^xsd:string ;
+    foaf:name "Black, Clementina"^^xsd:string .
+
+data:Stal_Germaine_de a cwrc:NaturalPerson ;
+    rdfs:label "Stal, Germaine de"^^xsd:string ;
+    foaf:name "Stal, Germaine de"^^xsd:string .
+
+data:levyam_OccupationContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy - Occupation Context snippet" ;
+    dcterms:description "AL was an accomplished draughtswoman. She drew vivid sketches and scenes. Her topics at an early age included a feminist on a soapbox, and characters from Louisa May Alcotts Little Women and Germaine de Stals..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#Drawing> .
+
+data:levyam_OccupationContext3_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy - Occupation Context snippet" ;
+    dcterms:description "In Dresden she dealt with her need for money by giving private lessons in English to two boys aged eleven and sixteen. Her parents forbade this as improper.43"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#EarlyTravel> .
+
+data:levyam_OccupationContext4_Snippet a oa:TextualBody ;
+    rdfs:label "Levy, Amy - Occupation Context snippet" ;
+    dcterms:description "She also this year helped Clementina Black in the office of the Womens Protective and Provident League.179"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam#ALastYear> .
+
+data:Levy_Amy a cwrc:NaturalPerson ;
+    rdfs:label "Levy, Amy"^^xsd:string ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasOccupation cwrc:visualArtist ;
+    cwrc:hasPaidOccupation cwrc:teacher ;
+    cwrc:hasVolunteerOccupation cwrc:volunteer ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam> ;
+    foaf:name "Levy, Amy"^^xsd:string .
+

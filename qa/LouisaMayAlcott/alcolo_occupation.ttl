@@ -1,0 +1,168 @@
+#133 triples created
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:alcolo_OccupationContext1_describing a cwrc:OccupationContext ;
+    rdfs:label "Alcott, Louisa May - Occupation Context describing annotation" ;
+    dcterms:subject data:Alcott_Louisa_May,
+        cwrc:companion,
+        cwrc:editing,
+        cwrc:governess,
+        cwrc:needlework,
+        cwrc:servant,
+        cwrc:teacher,
+        cwrc:writer ;
+    cwrc:hasIDependencyOn data:alcolo_OccupationContext1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:hasPaidOccupation cwrc:writer ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:hasPaidOccupation cwrc:servant ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:hasPaidOccupation cwrc:teacher ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:hasPaidOccupation cwrc:editing ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:hasPaidOccupation cwrc:needlework ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:hasPaidOccupation cwrc:companion ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:hasPaidOccupation cwrc:governess ."^^xsd:string ] ;
+    oa:hasTarget data:Alcott_Louisa_May,
+        data:alcolo_OccupationContext1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:alcolo_OccupationContext2_describing a cwrc:OccupationContext ;
+    rdfs:label "Alcott, Louisa May - Occupation Context describing annotation" ;
+    dcterms:subject data:Alcott_Louisa_May,
+        cwrc:nursing,
+        <http://sws.geonames.org/4140963/> ;
+    cwrc:hasEvent data:alcolo_Occupation_Event1 ;
+    cwrc:hasIDependencyOn data:alcolo_OccupationContext2_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:hasPaidOccupation cwrc:nursing ."^^xsd:string ] ;
+    oa:hasTarget data:Alcott_Louisa_May,
+        data:alcolo_OccupationContext2_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:alcolo_OccupationContext3_describing a cwrc:OccupationContext ;
+    rdfs:label "Alcott, Louisa May - Occupation Context describing annotation" ;
+    dcterms:subject cwrc:philanthropicVisitor,
+        <http://sws.geonames.org/5140405/> ;
+    cwrc:hasIDependencyOn data:alcolo_OccupationContext3_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:hasVolunteerOccupation cwrc:philanthropicVisitor ."^^xsd:string ] ;
+    oa:hasTarget data:Alcott_Louisa_May,
+        data:alcolo_OccupationContext3_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:alcolo_OccupationContext1_identifying a cwrc:OccupationContext ;
+    rdfs:label "Alcott, Louisa May - Occupation Context identifying annotation" ;
+    oa:hasBody data:Alcott_Louisa_May,
+        cwrc:companion,
+        cwrc:editing,
+        cwrc:governess,
+        cwrc:needlework,
+        cwrc:servant,
+        cwrc:teacher,
+        cwrc:writer ;
+    oa:hasTarget data:alcolo_OccupationContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:alcolo_OccupationContext2_identifying a cwrc:OccupationContext ;
+    rdfs:label "Alcott, Louisa May - Occupation Context identifying annotation" ;
+    cwrc:hasEvent data:alcolo_Occupation_Event1 ;
+    oa:hasBody data:Alcott_Louisa_May,
+        cwrc:nursing,
+        <http://sws.geonames.org/4140963/> ;
+    oa:hasTarget data:alcolo_OccupationContext2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:alcolo_OccupationContext3_identifying a cwrc:OccupationContext ;
+    rdfs:label "Alcott, Louisa May - Occupation Context identifying annotation" ;
+    oa:hasBody data:Alcott_Louisa_May,
+        cwrc:philanthropicVisitor,
+        <http://sws.geonames.org/5140405/> ;
+    oa:hasTarget data:alcolo_OccupationContext3_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:alcolo_OccupationContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Alcott, Louisa May - Occupation Context snippet" ;
+    dcterms:description "LMA began working at an early age to help support her family. She accepted whatever she could find and worked as a governess, editor, teacher, seamstress, paid companion, and domestic. It was her work as..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo#WorkTravelandFriends> .
+
+data:alcolo_OccupationContext2_Snippet a oa:TextualBody ;
+    rdfs:label "Alcott, Louisa May - Occupation Context snippet" ;
+    dcterms:description "11 December 1862-21 January 1863 LMA worked as an army nurse in Washington during the American Civil War until she was taken ill with typhoid pneumonia and returned home. xx, 116"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo#WorkTravelandFriends> .
+
+data:alcolo_OccupationContext3_Snippet a oa:TextualBody ;
+    rdfs:label "Alcott, Louisa May - Occupation Context snippet" ;
+    dcterms:description "Having inherited her parents social reformist attitudes, she spent some of her time visiting prisons and orphanages. She was also present at the Womens Congress in Syracuse.239"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo#WorkTravelandFriends> .
+
+data:alcolo_Occupation_Event1 a sem:Event ;
+    rdfs:label "Alcott, Louisa May - Occupation Event" ;
+    dcterms:description "11 December 1862-21 January 1863: LMA worked as an army nurse in Washington during the American Civil War until she was taken ill with typhoid pneumonia and returned home." ;
+    sem:eventType cwrc:IndividualSignificance,
+        cwrc:LiteraryClimate ;
+    sem:hasActor data:Alcott_Louisa_May ;
+    sem:hasBeginTimeStamp "1862-12-11"^^xsd:date ;
+    sem:hasEndTimeStamp "1863-01-21"^^xsd:date ;
+    sem:hasPlace <http://sws.geonames.org/4140963/> ;
+    sem:timeType cwrc:IntervalTime ;
+    cwrc:hasTimeCertainty cwrc:mediumCertainty .
+
+data:Alcott_Louisa_May a cwrc:NaturalPerson ;
+    rdfs:label "Alcott, Louisa May"^^xsd:string ;
+    cwrc:hasEvent data:alcolo_Occupation_Event1 ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasPaidOccupation cwrc:companion,
+        cwrc:editing,
+        cwrc:governess,
+        cwrc:needlework,
+        cwrc:nursing,
+        cwrc:servant,
+        cwrc:teacher,
+        cwrc:writer ;
+    cwrc:hasVolunteerOccupation cwrc:philanthropicVisitor ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo> ;
+    foaf:name "Alcott, Louisa May"^^xsd:string .
+

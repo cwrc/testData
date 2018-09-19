@@ -1,0 +1,829 @@
+#715 triples created
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:woolvi_OccupationContext10_describing a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context describing annotation" ;
+    dcterms:subject data:Woolf_Virginia,
+        cwrc:editing,
+        cwrc:typeSetter,
+        "_book-binder_"^^xsd:string ;
+    cwrc:hasIDependencyOn data:woolvi_OccupationContext10_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasFamilyBasedOccupation cwrc:typeSetter ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasFamilyBasedOccupation \"_book-binder_\"^^xsd:string ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasFamilyBasedOccupation cwrc:editing ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_OccupationContext10_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_OccupationContext11_describing a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context describing annotation" ;
+    dcterms:subject cwrc:Chatto_and_Windus_ORG,
+        "During the previous fifteen years of its life it had earned an income of 814 per annum (an average which takes in the total of three pounds in 1924 and 2,442 in 1938, its most profitable year up to that point)." ;
+    cwrc:hasIDependencyOn data:woolvi_OccupationContext11_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasOccupationIncome \"During the previous fifteen years of its life it had earned an income of 814 per annum (an average which takes in the total of three pounds in 1924 and 2,442 in 1938, its most profitable year up to that point).\" ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_OccupationContext11_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_OccupationContext12_describing a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context describing annotation" ;
+    dcterms:subject data:Woolf_Leonard,
+        data:Woolf_Virginia,
+        cwrc:printing,
+        <http://sws.geonames.org/2643743/> ;
+    cwrc:hasEvent data:woolvi_Occupation_Event2 ;
+    cwrc:hasIDependencyOn data:woolvi_OccupationContext12_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasFamilyBasedOccupation cwrc:printing ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_OccupationContext12_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_OccupationContext13_identifying a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Occupation_Event3 ;
+    oa:hasBody data:Lehmann_John,
+        data:Woolf_Leonard,
+        data:Woolf_Virginia,
+        cwrc:Hogarth_Press_ORG ;
+    oa:hasTarget data:woolvi_OccupationContext13_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_OccupationContext14_identifying a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia,
+        cwrc:BBC_ORG,
+        cwrc:British_Library_ORG,
+        cwrc:Craftsmanship_TITLE ;
+    oa:hasTarget data:woolvi_OccupationContext14_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_OccupationContext15_describing a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context describing annotation" ;
+    dcterms:subject data:Bell_Angelica,
+        data:Bell_Vanessa,
+        data:Sackville-West_Vita,
+        data:Woolf_Leonard,
+        data:Woolf_Virginia,
+        cwrc:A_Room_of_Ones_Own_TITLE,
+        cwrc:Girton_College_Cambridge_University_ORG,
+        cwrc:Newnham_College_Cambridge_University_ORG,
+        cwrc:professor ;
+    cwrc:hasIDependencyOn data:woolvi_OccupationContext15_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasOccupation cwrc:professor ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_OccupationContext15_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_OccupationContext16_describing a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context describing annotation" ;
+    dcterms:subject data:Woolf_Virginia,
+        cwrc:Cambridge_University_ORG,
+        cwrc:Heretics_Society_ORG,
+        cwrc:London_School_of_Economics_and_Political_Science_University_of_London_ORG,
+        cwrc:Mr_Bennett_and_Mrs_Brown_TITLE,
+        cwrc:professor ;
+    cwrc:hasEvent data:woolvi_Occupation_Event4 ;
+    cwrc:hasIDependencyOn data:woolvi_OccupationContext16_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasOccupation cwrc:professor ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_OccupationContext16_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_OccupationContext17_describing a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context describing annotation" ;
+    dcterms:subject data:Woolf_Leonard,
+        data:Woolf_Virginia,
+        cwrc:Are_Too_Many_Books_Written_and_Published_TITLE,
+        cwrc:BBC_ORG,
+        cwrc:radioIndustry ;
+    cwrc:hasEvent data:woolvi_Occupation_Event5 ;
+    cwrc:hasIDependencyOn data:woolvi_OccupationContext17_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasOccupation cwrc:radioIndustry ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_OccupationContext17_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_OccupationContext18_identifying a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_OccupationContext18_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_OccupationContext19_identifying a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context identifying annotation" ;
+    oa:hasBody data:Robins_Elizabeth,
+        data:Wilberforce_Octavia,
+        data:Woolf_Virginia,
+        cwrc:Hogarth_Press_ORG ;
+    oa:hasTarget data:woolvi_OccupationContext19_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_OccupationContext1_describing a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context describing annotation" ;
+    dcterms:subject data:Gordon_Lyndall,
+        data:Woolf_Virginia,
+        cwrc:reviewer,
+        cwrc:writer ;
+    cwrc:hasIDependencyOn data:woolvi_OccupationContext1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasPaidOccupation cwrc:writer ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasPaidOccupation cwrc:reviewer ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_OccupationContext1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_OccupationContext20_identifying a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_OccupationContext20_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_OccupationContext21_identifying a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_OccupationContext21_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_OccupationContext22_describing a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context describing annotation" ;
+    dcterms:subject data:Woolf_Virginia,
+        cwrc:The_Leaning_Tower_TITLE,
+        cwrc:Womens_Institute_ORG,
+        cwrc:professor,
+        <http://sws.geonames.org/2654710/> ;
+    cwrc:hasEvent data:woolvi_Occupation_Event6 ;
+    cwrc:hasIDependencyOn data:woolvi_OccupationContext22_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasVolunteerOccupation cwrc:professor ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_OccupationContext22_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_OccupationContext23_identifying a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Occupation_Event7 ;
+    oa:hasBody data:Woolf_Virginia,
+        cwrc:Womens_Institute_ORG,
+        <http://sws.geonames.org/2639231/> ;
+    oa:hasTarget data:woolvi_OccupationContext23_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_OccupationContext24_identifying a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Occupation_Event8 ;
+    oa:hasBody data:Forster_E_M,
+        data:Stephen_Sir_Leslie,
+        data:Woolf_Virginia,
+        cwrc:London_Library_ORG ;
+    oa:hasTarget data:woolvi_OccupationContext24_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_OccupationContext2_describing a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context describing annotation" ;
+    dcterms:subject data:Woolf_Virginia,
+        cwrc:Morley_College_ORG,
+        cwrc:teacher,
+        <http://sws.geonames.org/2643743/> ;
+    cwrc:hasEvent data:woolvi_Occupation_Event1 ;
+    cwrc:hasIDependencyOn data:woolvi_OccupationContext2_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasVolunteerOccupation cwrc:teacher ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_OccupationContext2_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_OccupationContext3_describing a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context describing annotation" ;
+    dcterms:subject cwrc:reviewer,
+        cwrc:writer,
+        <http://sws.geonames.org/2639231/>,
+        <http://sws.geonames.org/2643743/> ;
+    cwrc:hasIDependencyOn data:woolvi_OccupationContext3_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasPaidOccupation cwrc:reviewer ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasPaidOccupation cwrc:writer ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_OccupationContext3_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_OccupationContext4_identifying a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context identifying annotation" ;
+    oa:hasBody data:Davies_Margaret_Llewelyn,
+        data:Webb_Beatrice,
+        data:Webb_Sidney,
+        data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_OccupationContext4_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_OccupationContext5_identifying a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia,
+        cwrc:Excelsior_Printing_and_Supply_Company_ORG,
+        cwrc:Hogarth_Press_ORG,
+        cwrc:Two_Stories_TITLE ;
+    oa:hasTarget data:woolvi_OccupationContext5_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_OccupationContext6_identifying a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context identifying annotation" ;
+    oa:hasBody data:Joad_Marjorie,
+        data:Kennedy_Richard,
+        data:Lehmann_John,
+        data:Mansfield_Katherine,
+        data:Partridge_Ralph,
+        data:Rylands_George,
+        data:Sackville-West_Vita,
+        data:Woolf_Virginia,
+        cwrc:A_Boy_at_the_Hogarth_Press_TITLE,
+        cwrc:Kew_Gardens_TITLE,
+        cwrc:Prelude_TITLE,
+        cwrc:The_Mark_on_the_Wall_TITLE,
+        cwrc:Three_Jews_TITLE,
+        cwrc:Thrown_to_the_Woolfs_TITLE,
+        cwrc:Two_Stories_TITLE,
+        <http://sws.geonames.org/11609038/> ;
+    oa:hasTarget data:woolvi_OccupationContext6_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_OccupationContext7_identifying a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context identifying annotation" ;
+    oa:hasBody data:Chekhov_Anton_Pavlovich,
+        data:Eliot_T_S,
+        data:Forster_E_M,
+        data:Freud_Sigmund,
+        data:Fry_Roger,
+        data:Gorky_Maxim,
+        data:Harrison_Jane_Ellen,
+        data:Isherwood_Christopher,
+        data:Mansfield_Katherine,
+        data:Rhondda_Margaret_Haig_Viscountess,
+        data:Sackville-West_Vita,
+        data:Stein_Gertrude,
+        data:Woolf_Virginia,
+        data:Woolmer_J_Howard,
+        cwrc:Biographies_through_the_Eyes_of_Contemporaries_TITLE,
+        cwrc:Day_to_Day_Pamphlets_TITLE,
+        cwrc:Hogarth_Essays_TITLE,
+        cwrc:Hogarth_Lectures_on_Literature_TITLE,
+        cwrc:Hogarth_Letters_TITLE,
+        cwrc:Hogarth_Living_Poets_TITLE,
+        cwrc:Hogarth_Stories_TITLE,
+        cwrc:International_Psycho-Analytical_Institute_ORG,
+        cwrc:International_Psycho-Analytical_Library_TITLE,
+        cwrc:League_of_Nations_ORG,
+        cwrc:Merttens_Lectures_on_War_and_Peace_TITLE,
+        cwrc:Psycho-Analytical_Epitomes_TITLE,
+        cwrc:World-Makers_and_World-Shakers_TITLE,
+        <http://sws.geonames.org/2761369/> ;
+    oa:hasTarget data:woolvi_OccupationContext7_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_OccupationContext8_identifying a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia,
+        data:Woolmer_J_Howard,
+        cwrc:Biographies_through_the_Eyes_of_Contemporaries_TITLE,
+        cwrc:Day_to_Day_Pamphlets_TITLE,
+        cwrc:Hogarth_Essays_TITLE,
+        cwrc:Hogarth_Lectures_on_Literature_TITLE,
+        cwrc:Hogarth_Letters_TITLE,
+        cwrc:Hogarth_Living_Poets_TITLE,
+        cwrc:Hogarth_Stories_TITLE,
+        cwrc:International_Psycho-Analytical_Library_TITLE,
+        cwrc:Merttens_Lectures_on_War_and_Peace_TITLE,
+        cwrc:Psycho-Analytical_Epitomes_TITLE,
+        cwrc:World-Makers_and_World-Shakers_TITLE ;
+    oa:hasTarget data:woolvi_OccupationContext8_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_OccupationContext9_describing a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context describing annotation" ;
+    dcterms:subject data:Bell_Vanessa,
+        data:Woolf_Virginia,
+        cwrc:publishing ;
+    cwrc:hasIDependencyOn data:woolvi_OccupationContext9_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasFamilyBasedOccupation cwrc:publishing ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_OccupationContext9_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:Chekhov_Anton_Pavlovich a cwrc:NaturalPerson ;
+    rdfs:label "Chekhov, Anton Pavlovich"^^xsd:string ;
+    foaf:name "Chekhov, Anton Pavlovich"^^xsd:string .
+
+data:Davies_Margaret_Llewelyn a cwrc:NaturalPerson ;
+    rdfs:label "Davies, Margaret Llewelyn"^^xsd:string ;
+    foaf:name "Davies, Margaret Llewelyn"^^xsd:string .
+
+data:Eliot_T_S a cwrc:NaturalPerson ;
+    rdfs:label "Eliot, T. S."^^xsd:string ;
+    foaf:name "Eliot, T. S."^^xsd:string .
+
+data:Freud_Sigmund a cwrc:NaturalPerson ;
+    rdfs:label "Freud, Sigmund"^^xsd:string ;
+    foaf:name "Freud, Sigmund"^^xsd:string .
+
+data:Fry_Roger a cwrc:NaturalPerson ;
+    rdfs:label "Fry, Roger"^^xsd:string ;
+    foaf:name "Fry, Roger"^^xsd:string .
+
+data:Gorky_Maxim a cwrc:NaturalPerson ;
+    rdfs:label "Gorky, Maxim"^^xsd:string ;
+    foaf:name "Gorky, Maxim"^^xsd:string .
+
+data:Harrison_Jane_Ellen a cwrc:NaturalPerson ;
+    rdfs:label "Harrison, Jane Ellen"^^xsd:string ;
+    foaf:name "Harrison, Jane Ellen"^^xsd:string .
+
+data:Isherwood_Christopher a cwrc:NaturalPerson ;
+    rdfs:label "Isherwood, Christopher"^^xsd:string ;
+    foaf:name "Isherwood, Christopher"^^xsd:string .
+
+data:Joad_Marjorie a cwrc:NaturalPerson ;
+    rdfs:label "Joad, Marjorie"^^xsd:string ;
+    foaf:name "Joad, Marjorie"^^xsd:string .
+
+data:Kennedy_Richard a cwrc:NaturalPerson ;
+    rdfs:label "Kennedy, Richard"^^xsd:string ;
+    foaf:name "Kennedy, Richard"^^xsd:string .
+
+data:Partridge_Ralph a cwrc:NaturalPerson ;
+    rdfs:label "Partridge, Ralph"^^xsd:string ;
+    foaf:name "Partridge, Ralph"^^xsd:string .
+
+data:Rhondda_Margaret_Haig_Viscountess a cwrc:NaturalPerson ;
+    rdfs:label "Rhondda, Margaret Haig,,, Viscountess"^^xsd:string ;
+    foaf:name "Rhondda, Margaret Haig,,, Viscountess"^^xsd:string .
+
+data:Robins_Elizabeth a cwrc:NaturalPerson ;
+    rdfs:label "Robins, Elizabeth"^^xsd:string ;
+    foaf:name "Robins, Elizabeth"^^xsd:string .
+
+data:Rylands_George a cwrc:NaturalPerson ;
+    rdfs:label "Rylands, George"^^xsd:string ;
+    foaf:name "Rylands, George"^^xsd:string .
+
+data:Stein_Gertrude a cwrc:NaturalPerson ;
+    rdfs:label "Stein, Gertrude"^^xsd:string ;
+    foaf:name "Stein, Gertrude"^^xsd:string .
+
+data:Webb_Beatrice a cwrc:NaturalPerson ;
+    rdfs:label "Webb, Beatrice"^^xsd:string ;
+    foaf:name "Webb, Beatrice"^^xsd:string .
+
+data:Webb_Sidney a cwrc:NaturalPerson ;
+    rdfs:label "Webb, Sidney"^^xsd:string ;
+    foaf:name "Webb, Sidney"^^xsd:string .
+
+data:Wilberforce_Octavia a cwrc:NaturalPerson ;
+    rdfs:label "Wilberforce, Octavia"^^xsd:string ;
+    foaf:name "Wilberforce, Octavia"^^xsd:string .
+
+data:woolvi_OccupationContext10_identifying a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia,
+        cwrc:editing,
+        cwrc:typeSetter,
+        "_book-binder_"^^xsd:string ;
+    oa:hasTarget data:woolvi_OccupationContext10_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_OccupationContext11_identifying a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia,
+        cwrc:Chatto_and_Windus_ORG,
+        "During the previous fifteen years of its life it had earned an income of 814 per annum (an average which takes in the total of three pounds in 1924 and 2,442 in 1938, its most profitable year up to that point)." ;
+    oa:hasTarget data:woolvi_OccupationContext11_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_OccupationContext12_identifying a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Occupation_Event2 ;
+    oa:hasBody data:Woolf_Leonard,
+        data:Woolf_Virginia,
+        cwrc:printing,
+        <http://sws.geonames.org/2643743/> ;
+    oa:hasTarget data:woolvi_OccupationContext12_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_OccupationContext13_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
+    dcterms:description "23 February 1938 VW signed an agreement with John Lehmann, selling her share in the Hogarth Press for 3,000; from now on Lehmann was Leonards partner in the press. 3"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#TheHogarthPress> .
+
+data:woolvi_OccupationContext14_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
+    dcterms:description "VW broadcast again, on her own, in 1937. Part of her broadcast (a reading of her essay Craftsmanship) is in the National Sound Archive of the British Library (M7060). The only extant recording of her..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#LecturingBroadcasting> .
+
+data:woolvi_OccupationContext15_identifying a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context identifying annotation" ;
+    oa:hasBody data:Bell_Angelica,
+        data:Bell_Vanessa,
+        data:Sackville-West_Vita,
+        data:Woolf_Leonard,
+        data:Woolf_Virginia,
+        cwrc:A_Room_of_Ones_Own_TITLE,
+        cwrc:Girton_College_Cambridge_University_ORG,
+        cwrc:Newnham_College_Cambridge_University_ORG,
+        cwrc:professor ;
+    oa:hasTarget data:woolvi_OccupationContext15_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_OccupationContext16_identifying a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Occupation_Event4 ;
+    oa:hasBody data:Woolf_Virginia,
+        cwrc:Cambridge_University_ORG,
+        cwrc:Heretics_Society_ORG,
+        cwrc:London_School_of_Economics_and_Political_Science_University_of_London_ORG,
+        cwrc:Mr_Bennett_and_Mrs_Brown_TITLE,
+        cwrc:professor ;
+    oa:hasTarget data:woolvi_OccupationContext16_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_OccupationContext17_identifying a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Occupation_Event5 ;
+    oa:hasBody data:Woolf_Leonard,
+        data:Woolf_Virginia,
+        cwrc:Are_Too_Many_Books_Written_and_Published_TITLE,
+        cwrc:BBC_ORG,
+        cwrc:radioIndustry ;
+    oa:hasTarget data:woolvi_OccupationContext17_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_OccupationContext18_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
+    dcterms:description "Despite the often major disturbances of war, VW continued to work."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#LastOccupations> .
+
+data:woolvi_OccupationContext19_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
+    dcterms:description "In her audience at Brighton were Elizabeth Robins (feminist writer, actress, and Hogarth Press author) and her companion Octavia Wilberforce, a pioneering physician who was soon to become Woolfs doctor.733"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#LastOccupations> .
+
+data:woolvi_OccupationContext1_identifying a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context identifying annotation" ;
+    oa:hasBody data:Gordon_Lyndall,
+        data:Woolf_Virginia,
+        cwrc:reviewer,
+        cwrc:writer ;
+    oa:hasTarget data:woolvi_OccupationContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_OccupationContext20_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
+    dcterms:description "Woolf continued at this time to write and to think carefully about the implications of her writing."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#LastOccupations> .
+
+data:woolvi_OccupationContext21_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
+    dcterms:description "Forster had told Woolf In April 1935 that the library was retaining this policy."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#LastOccupations> .
+
+data:woolvi_OccupationContext22_identifying a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Occupation_Event6 ;
+    oa:hasBody data:Woolf_Virginia,
+        cwrc:The_Leaning_Tower_TITLE,
+        cwrc:Womens_Institute_ORG,
+        cwrc:professor,
+        <http://sws.geonames.org/2654710/> ;
+    oa:hasTarget data:woolvi_OccupationContext22_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_OccupationContext23_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
+    dcterms:description "23 July 1940 VW gave a talk to the Rodmell Womens Institute on her participation in the Dreadnought Hoax of February 1910. 19735"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#LastOccupations> .
+
+data:woolvi_OccupationContext24_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
+    dcterms:description "7 November 1940 VW refused E. M. Forsters request for permission to nominate her to the Committee of the London Library, because of the librarys policy against women members (a policy instituted by her father,..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#LastOccupations> .
+
+data:woolvi_OccupationContext2_identifying a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Occupation_Event1 ;
+    oa:hasBody data:Woolf_Virginia,
+        cwrc:Morley_College_ORG,
+        cwrc:teacher,
+        <http://sws.geonames.org/2643743/> ;
+    oa:hasTarget data:woolvi_OccupationContext2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_OccupationContext3_identifying a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia,
+        cwrc:reviewer,
+        cwrc:writer,
+        <http://sws.geonames.org/2639231/>,
+        <http://sws.geonames.org/2643743/> ;
+    oa:hasTarget data:woolvi_OccupationContext3_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_OccupationContext4_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
+    dcterms:description "The Woolfs were planning to acquire a printing press as early as 22 February 1915, when Virginia wrote to Margaret Llewelyn Davies about their excitement over the prospect: theres a chance of damaging the Webb..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#TheHogarthPress> .
+
+data:woolvi_OccupationContext5_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
+    dcterms:description "Thus they founded the Hogarth Press. The Excelsior Printing and Supply Company charged 19.5s.5d. for a small hand press, some type, and an instruction booklet; but when the press arrived, on 24 April, it had..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#TheHogarthPress> .
+
+data:woolvi_OccupationContext6_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
+    dcterms:description "Once the press was repaired they printed their handbill. Their first book (Two Stories, containing Virginias The Mark on the Wall and Leonards Three Jews) had to be set up and printed two pages at..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#TheHogarthPress> .
+
+data:woolvi_OccupationContext7_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
+    dcterms:description "The Press, which began as therapy and for the purpose of publishing the works of its owners, grew into a major engine of modern culture and thought.371-3 Its political interests were served by enlightened and..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#TheHogarthPress> .
+
+data:woolvi_OccupationContext8_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
+    dcterms:description "The Hogarth Press bibliographer J. Howard Woolmer provides an appendix listing the various series: Hogarth Essays, Hogarth Lectures on Literature, Hogarth Living Poets, Hogarth Stories (two titles only), Hogarth Letters, Merttens Lectures on War and..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#TheHogarthPress> .
+
+data:woolvi_OccupationContext9_identifying a cwrc:OccupationContext ;
+    rdfs:label "Woolf, Virginia - Occupation Context identifying annotation" ;
+    oa:hasBody data:Bell_Vanessa,
+        data:Woolf_Virginia,
+        cwrc:publishing ;
+    oa:hasTarget data:woolvi_OccupationContext9_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:Bell_Angelica a cwrc:NaturalPerson ;
+    rdfs:label "Bell, Angelica"^^xsd:string ;
+    foaf:name "Bell, Angelica"^^xsd:string .
+
+data:Gordon_Lyndall a cwrc:NaturalPerson ;
+    rdfs:label "Gordon, Lyndall"^^xsd:string ;
+    foaf:name "Gordon, Lyndall"^^xsd:string .
+
+data:Mansfield_Katherine a cwrc:NaturalPerson ;
+    rdfs:label "Mansfield, Katherine"^^xsd:string ;
+    foaf:name "Mansfield, Katherine"^^xsd:string .
+
+data:Stephen_Sir_Leslie a cwrc:NaturalPerson ;
+    rdfs:label "Stephen, Sir Leslie"^^xsd:string ;
+    foaf:name "Stephen, Sir Leslie"^^xsd:string .
+
+data:Woolmer_J_Howard a cwrc:NaturalPerson ;
+    rdfs:label "Woolmer, J. Howard"^^xsd:string ;
+    foaf:name "Woolmer, J. Howard"^^xsd:string .
+
+data:woolvi_OccupationContext10_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
+    dcterms:description "VW herself did editorial work and some type-setting and binding, but Leonard took most of the daily decisions and did most of the administrative work, with the Presss gradually growing and often changing staff.363-9"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#TheHogarthPress> .
+
+data:woolvi_OccupationContext11_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
+    dcterms:description "During the previous fifteen years of its life it had earned an income of 814 per annum (an average which takes in the total of three pounds in 1924 and 2,442 in 1938, its most..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#TheHogarthPress> .
+
+data:woolvi_OccupationContext12_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
+    dcterms:description "23 March 1917 Virginia and Leonard Woolf ordered a printing press. It was delivered to Hogarth House in Richmond on 24 April.363 Women and Publishing"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#TheHogarthPress> .
+
+data:woolvi_OccupationContext15_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
+    dcterms:description "In October 1928 VW addressed in turn the students of the two Cambridge womens colleges: first Newnham, then Girton. She developed these lectures on women and writing into A Room of Ones Own (1929).3: 200-1116..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#LecturingBroadcasting> .
+
+data:woolvi_OccupationContext16_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
+    dcterms:description "December 1923 Increasingly in demand as a public speaker, VW lectured at the London School of Economics. Her talk to the Cambridge Heretics Society the following May grew into her essay Mr. Bennett and Mrs...."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#LecturingBroadcasting> .
+
+data:woolvi_OccupationContext17_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
+    dcterms:description "15 July 1927 Virginia and Leonard Woolf gave their first broadcast for the BBCa talk entitled Are Too Many Books Written and Published? Women and Publishing 565"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#LecturingBroadcasting> .
+
+data:woolvi_OccupationContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
+    dcterms:description "This college, founded in 1885, offered evening classes to working women and men. VW lectured and led discussions on English Literature, English History, and Composition until December 1907.5, 13222-3 Her work there began at a..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Work> .
+
+data:woolvi_OccupationContext22_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
+    dcterms:description "27 April 1940 VW addressed the Womens Institute in Brighton; she turned her lecture into the essay The Leaning Tower shortly afterwards. 733"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#LastOccupations> .
+
+data:woolvi_OccupationContext2_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
+    dcterms:description "14 January 1905 Virginia Stephen (later VW) began giving weekly classes at Morley College in Lambeth. 5"^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Work> .
+
+data:woolvi_OccupationContext3_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
+    dcterms:description "By the time the Woolfs were living at Hogarth House and Monks House, Virginia had established a fairly routine schedule, which she recorded in her diary and called her work account. It was sometimes disrupted,..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#DailySchedule> .
+
+data:woolvi_OccupationContext9_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
+    dcterms:description "VW was especially pleased with her new ability to publish her own texts. She later observed: Im the only woman in England free to write what I like.374-5, 818 The Press also allowed for collaboration..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#TheHogarthPress> .
+
+data:woolvi_Occupation_Event3 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Occupation Event" ;
+    dcterms:description "23 February 1938: VW signed an agreement with John Lehmann, selling her share in the Hogarth Press for 3,000; from now on Lehmann was Leonards partner in the press." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:DecadeSignficance ;
+    sem:hasActor data:Lehmann_John,
+        data:Woolf_Leonard,
+        data:Woolf_Virginia,
+        cwrc:Hogarth_Press_ORG ;
+    sem:hasTimeStamp "1938-02-23"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:woolvi_Occupation_Event7 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Occupation Event" ;
+    dcterms:description "23 July 1940: VW gave a talk to the Rodmell Womens Institute on her participation in the Dreadnought Hoax of February 1910." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Woolf_Virginia,
+        cwrc:Womens_Institute_ORG ;
+    sem:hasPlace <http://sws.geonames.org/2639231/> ;
+    sem:hasTimeStamp "1940-07-23"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:woolvi_Occupation_Event8 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Occupation Event" ;
+    dcterms:description "7 November 1940: VW refused E. M. Forsters request for permission to nominate her to the Committee of the London Library, because of the librarys policy against women members (a policy instituted by her father, Leslie Stephen)." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Forster_E_M,
+        data:Stephen_Sir_Leslie,
+        data:Woolf_Virginia,
+        cwrc:London_Library_ORG ;
+    sem:hasTimeStamp "1940-11-07"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:Forster_E_M a cwrc:NaturalPerson ;
+    rdfs:label "Forster, E. M."^^xsd:string ;
+    foaf:name "Forster, E. M."^^xsd:string .
+
+data:Lehmann_John a cwrc:NaturalPerson ;
+    rdfs:label "Lehmann, John"^^xsd:string ;
+    foaf:name "Lehmann, John"^^xsd:string .
+
+data:woolvi_Occupation_Event1 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Occupation Event" ;
+    dcterms:description "14 January 1905: Virginia Stephen (later VW) began giving weekly classes at Morley College in Lambeth." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Woolf_Virginia,
+        cwrc:Morley_College_ORG ;
+    sem:hasPlace <http://sws.geonames.org/2643743/> ;
+    sem:hasTimeStamp "1905-01-14"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:woolvi_Occupation_Event2 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Occupation Event" ;
+    dcterms:description "23 March 1917: Virginia and Leonard Woolf ordered a printing press. It was delivered to Hogarth House in Richmond on 24 April.363" ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:HistoricSignificance ;
+    sem:hasActor data:Woolf_Leonard,
+        data:Woolf_Virginia ;
+    sem:hasPlace <http://sws.geonames.org/2643743/> ;
+    sem:hasTimeStamp "1917-03-23"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:woolvi_Occupation_Event4 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Occupation Event" ;
+    dcterms:description "December 1923: Increasingly in demand as a public speaker, VW lectured at the London School of Economics. Her talk to the Cambridge Heretics Society the following May grew into her essay Mr. Bennett and Mrs. Brown." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Woolf_Virginia,
+        cwrc:Cambridge_University_ORG,
+        cwrc:Heretics_Society_ORG,
+        cwrc:London_School_of_Economics_and_Political_Science_University_of_London_ORG,
+        cwrc:Mr_Bennett_and_Mrs_Brown_TITLE ;
+    sem:hasTimeStamp "1923-12-" ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:woolvi_Occupation_Event5 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Occupation Event" ;
+    dcterms:description "15 July 1927: Virginia and Leonard Woolf gave their first broadcast for the BBCa talk entitled Are Too Many Books Written and Published?" ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:DecadeSignficance ;
+    sem:hasActor data:Woolf_Leonard,
+        data:Woolf_Virginia,
+        cwrc:Are_Too_Many_Books_Written_and_Published_TITLE,
+        cwrc:BBC_ORG ;
+    sem:hasTimeStamp "1927-07-15"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:woolvi_Occupation_Event6 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Occupation Event" ;
+    dcterms:description "27 April 1940: VW addressed the Womens Institute in Brighton; she turned her lecture into the essay The Leaning Tower shortly afterwards." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Woolf_Virginia,
+        cwrc:The_Leaning_Tower_TITLE,
+        cwrc:Womens_Institute_ORG ;
+    sem:hasPlace <http://sws.geonames.org/2654710/> ;
+    sem:hasTimeStamp "1940-04-27"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime .
+
+data:Bell_Vanessa a cwrc:NaturalPerson ;
+    rdfs:label "Bell, Vanessa"^^xsd:string ;
+    foaf:name "Bell, Vanessa"^^xsd:string .
+
+data:Sackville-West_Vita a cwrc:NaturalPerson ;
+    rdfs:label "Sackville-West, Vita"^^xsd:string ;
+    foaf:name "Sackville-West, Vita"^^xsd:string .
+
+data:Woolf_Leonard a cwrc:NaturalPerson ;
+    rdfs:label "Woolf, Leonard"^^xsd:string ;
+    foaf:name "Woolf, Leonard"^^xsd:string .
+
+data:Woolf_Virginia a cwrc:NaturalPerson ;
+    rdfs:label "Woolf, Virginia"^^xsd:string ;
+    cwrc:hasEvent data:woolvi_Occupation_Event1,
+        data:woolvi_Occupation_Event2,
+        data:woolvi_Occupation_Event3,
+        data:woolvi_Occupation_Event4,
+        data:woolvi_Occupation_Event5,
+        data:woolvi_Occupation_Event6,
+        data:woolvi_Occupation_Event7,
+        data:woolvi_Occupation_Event8 ;
+    cwrc:hasFamilyBasedOccupation cwrc:editing,
+        cwrc:printing,
+        cwrc:publishing,
+        cwrc:typeSetter,
+        "_book-binder_"^^xsd:string ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasOccupation cwrc:professor,
+        cwrc:radioIndustry ;
+    cwrc:hasOccupationIncome "During the previous fifteen years of its life it had earned an income of 814 per annum (an average which takes in the total of three pounds in 1924 and 2,442 in 1938, its most profitable year up to that point)." ;
+    cwrc:hasPaidOccupation cwrc:reviewer,
+        cwrc:writer ;
+    cwrc:hasVolunteerOccupation cwrc:professor,
+        cwrc:teacher ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi> ;
+    foaf:name "Woolf, Virginia"^^xsd:string .
+

@@ -1,0 +1,142 @@
+#111 triples created
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:alcolo_SpatialContext-inhabits_1_describing a cwrc:SpatialContext ;
+    rdfs:label "Alcott, Louisa May - Spatial Context describing annotation" ;
+    dcterms:subject data:Alcott_Amos_Bronson,
+        data:Alcott_Louisa_May,
+        cwrc:Transcendental_Wild_Oats_TITLE,
+        <http://sws.geonames.org/4930956/>,
+        <http://sws.geonames.org/5084868/>,
+        <http://sws.geonames.org/5595231/> ;
+    cwrc:hasIDependencyOn data:alcolo_SpatialContext-inhabits_1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:inhabits <http://sws.geonames.org/4930956/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:inhabits <http://sws.geonames.org/4930956/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:inhabits <http://sws.geonames.org/5595231/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:inhabits <http://sws.geonames.org/5084868/> ."^^xsd:string ] ;
+    oa:hasTarget data:Alcott_Louisa_May,
+        data:alcolo_SpatialContext-inhabits_1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:alcolo_SpatialContext-travelsTo_1_describing a cwrc:SpatialContext ;
+    rdfs:label "Alcott, Louisa May - Spatial Context describing annotation" ;
+    dcterms:subject data:Alcott_Louisa_May,
+        <http://sws.geonames.org/2658434/>,
+        <http://sws.geonames.org/2921044/>,
+        <http://sws.geonames.org/3017382/>,
+        <http://sws.geonames.org/3175395/>,
+        <http://sws.geonames.org/6115047/>,
+        <http://sws.geonames.org/6269131/> ;
+    cwrc:hasIDependencyOn data:alcolo_SpatialContext-travelsTo_1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:travelsTo <http://sws.geonames.org/3017382/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:travelsTo <http://sws.geonames.org/2658434/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:travelsTo <http://sws.geonames.org/3175395/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:travelsTo <http://sws.geonames.org/6115047/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:travelsTo <http://sws.geonames.org/2921044/> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Alcott_Louisa_May cwrc:travelsTo <http://sws.geonames.org/6269131/> ."^^xsd:string ] ;
+    oa:hasTarget data:Alcott_Louisa_May,
+        data:alcolo_SpatialContext-travelsTo_1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:alcolo_SpatialContext-inhabits_1_identifying a cwrc:SpatialContext ;
+    rdfs:label "Alcott, Louisa May - Spatial Context identifying annotation" ;
+    oa:hasBody data:Alcott_Amos_Bronson,
+        data:Alcott_Louisa_May,
+        cwrc:Transcendental_Wild_Oats_TITLE,
+        <http://sws.geonames.org/4930956/>,
+        <http://sws.geonames.org/5084868/>,
+        <http://sws.geonames.org/5595231/> ;
+    oa:hasTarget data:alcolo_SpatialContext-inhabits_1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:alcolo_SpatialContext-travelsTo_1_identifying a cwrc:SpatialContext ;
+    rdfs:label "Alcott, Louisa May - Spatial Context identifying annotation" ;
+    oa:hasBody data:Alcott_Louisa_May,
+        <http://sws.geonames.org/2658434/>,
+        <http://sws.geonames.org/2921044/>,
+        <http://sws.geonames.org/3017382/>,
+        <http://sws.geonames.org/3175395/>,
+        <http://sws.geonames.org/6115047/>,
+        <http://sws.geonames.org/6269131/> ;
+    oa:hasTarget data:alcolo_SpatialContext-travelsTo_1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:Alcott_Amos_Bronson a cwrc:NaturalPerson ;
+    rdfs:label "Alcott, Amos Bronson"^^xsd:string ;
+    foaf:name "Alcott, Amos Bronson"^^xsd:string .
+
+data:alcolo_SpatialContext-inhabits_1_Snippet a oa:TextualBody ;
+    rdfs:label "Alcott, Louisa May - Spatial Context snippet" ;
+    dcterms:description "In 1834, LMA and her family moved to Boston, Massachusetts. They moved frequently around Massachusetts for several years after that. In 1843 they lived briefly at Fruitlands, a utopian but ultimately disastrous commune co-founded by..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo#EarlyYears> .
+
+data:alcolo_SpatialContext-travelsTo_1_Snippet a oa:TextualBody ;
+    rdfs:label "Alcott, Louisa May - Spatial Context snippet" ;
+    dcterms:description "In 1865 LMA gained the opportunity to travel when she accompanied an invalid woman, as her paid companion, on a European tour. They visited Switzerland, Germany, Italy, France, and England. She revisited Europe in April..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo#WorkTravelandFriends> .
+
+data:Alcott_Louisa_May a cwrc:NaturalPerson ;
+    rdfs:label "Alcott, Louisa May"^^xsd:string ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:inhabits <http://sws.geonames.org/4930956/>,
+        <http://sws.geonames.org/5084868/>,
+        <http://sws.geonames.org/5595231/> ;
+    cwrc:travelsTo <http://sws.geonames.org/2658434/>,
+        <http://sws.geonames.org/2921044/>,
+        <http://sws.geonames.org/3017382/>,
+        <http://sws.geonames.org/3175395/>,
+        <http://sws.geonames.org/6115047/>,
+        <http://sws.geonames.org/6269131/> ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=alcolo> ;
+    foaf:name "Alcott, Louisa May"^^xsd:string .
+
