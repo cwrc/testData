@@ -1583,7 +1583,7 @@
                     </LOCATION>
                 </DIV1>
                 <DIV1>
-                    <OCCUPATION>
+                    <!-- <OCCUPATION>
                         <DIV2>
                             <HEADING>Work</HEADING>
                             <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="KDC">
@@ -1600,7 +1600,7 @@
                                 <BIBCITS>
                                     <BIBCIT PLACEHOLDER="Bishop 5" DBREF="107908">5</BIBCIT>
                                 </BIBCITS>
-                            </CHRONSTRUCT>
+                            </CHRONSTRUCT> -->
                             <SHORTPROSE>
                                 <P>This college, founded in 1885, offered evening classes to working women and men.
                                     <NAME STANDARD="Woolf, Virginia">VW</NAME> lectured and led discussions on English Literature, English History, and Composition until
@@ -3559,7 +3559,7 @@
                     <HEADING>Return to London: Tavistock Square</HEADING>
                     <LOCATION RELATIONTO="LIVED">
                         <DIV2>
-                            <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="KDC">
+                            <!-- <CHRONSTRUCT RELEVANCE="COMPREHENSIVE" CHRONCOLUMN="BRITISHWOMENWRITERS" RESP="KDC">
                                 <DATE VALUE="1924-01-09">9 January 1924</DATE>
                                 <CHRONPROSE>Eager to return to the excitement of the city after nearly a decade at
                                     <PLACE>
@@ -3581,7 +3581,7 @@
                                 <BIBCITS>
                                     <BIBCIT PLACEHOLDER="Bishop 79" DBREF="107908">79</BIBCIT>
                                 </BIBCITS>
-                            </CHRONSTRUCT>
+                            </CHRONSTRUCT> -->
                             <SHORTPROSE>
                                 <P>Virginia was keen to regain access to the amenities of London—music, the
                                     <ORGNAME STANDARD="British Museum">British Museum</ORGNAME>, social life (her delight in parties, she wrote, was
@@ -3612,7 +3612,7 @@
                                             </BIBCITS>
                                         </P>
                                     </SCHOLARNOTE>
-                                </P>
+                             <!--    </P>
                                 <P>
                                     <NAME STANDARD="Lee, Hermione">Hermione Lee</NAME> notes that during this period
                                     <QUOTE DIRECT="Y">[p]assionate celebrations of London filled the diaries and letters and spilled over into
@@ -3620,7 +3620,7 @@
                                     <BIBCITS>
                                         <BIBCIT PLACEHOLDER="Lee 474" DBREF="108301">474</BIBCIT>
                                     </BIBCITS>
-                                </P>
+                                </P> -->
                             </SHORTPROSE>
                         </DIV2>
                     </LOCATION>
