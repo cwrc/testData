@@ -305,7 +305,7 @@
 	prov:createdBy cwrc:originalOrlandoAuthor .
 
 <http://www.cwrc.ca/cwrcdata/PJInstitutionalEducationContext>
-	rdfs:hasLabel: """After attending a reservation school for three years, PJ left home to attend the Brantford Collegiate Institute."""@en ;
+	rdfs:hasLabel """After attending a reservation school for three years, PJ left home to attend the Brantford Collegiate Institute."""@en ;
 	a nif:Conetxt, nif:Sentence ;
 	dcterms:partOf <http://www.cwrc.ca/cwrcdata/PaulineJohnson_Main_Document>;
 	prov:createdBy cwrc:originalOrlandoAuthor .
