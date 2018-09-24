@@ -97,7 +97,7 @@
 
 <http://www.cwrc.ca/cwrcdata/BrantfordCentralSchool>
   	a foaf:Organization ;
-  	foaf:name: "Brantford Central School"@en ;
+  	foaf:name "Brantford Central School"@en ;
   	rdfs:label "Brantford Central School"@en ;
 	# JC - We decided to use rdf:type where possible to assign multiple types to our instances
   	a cwrc:GrammarSchool, cwrc:PrimarySchool, cwrc:CoEducationalSchool . # We will use rdf:type here
@@ -245,7 +245,7 @@
 
 <http://www.cwrc.ca/cwrcdata/BrantfordCollegiateInstitute>
  	a foaf:Organization ;
- 	foaf:name: "Brantford Collegiate Institute"@en ;
+ 	foaf:name "Brantford Collegiate Institute"@en ;
  	rdfs:label "Brantford Collegiate Institute"@en .
 
 #People go here
