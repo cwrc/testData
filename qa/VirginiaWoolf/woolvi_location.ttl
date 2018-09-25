@@ -31,13 +31,13 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:woolvi_SpatialContext-inhabits_10_identifying a cwrc:SpatialContext ;
-    rdfs:label "Woolf, Virginia - Spatial Context identifying annotation" ;
-    oa:hasBody data:Lee_Hermione,
-        data:Woolf_Virginia,
-        cwrc:Mrs_Dalloway_TITLE ;
-    oa:hasTarget data:woolvi_SpatialContext-inhabits_10_Snippet ;
-    oa:motivatedBy oa:identifying .
+# data:woolvi_SpatialContext-inhabits_10_identifying a cwrc:SpatialContext ;
+#     rdfs:label "Woolf, Virginia - Spatial Context identifying annotation" ;
+#     oa:hasBody data:Lee_Hermione,
+#         data:Woolf_Virginia,
+#         cwrc:Mrs_Dalloway_TITLE ;
+#     oa:hasTarget data:woolvi_SpatialContext-inhabits_11_Snippet ;
+#     oa:motivatedBy oa:identifying .
 
 data:woolvi_SpatialContext-inhabits_11_describing a cwrc:SpatialContext ;
     rdfs:label "Woolf, Virginia - Spatial Context describing annotation" ;
@@ -352,19 +352,19 @@ data:Lee_Hermione a cwrc:NaturalPerson ;
     rdfs:label "Lee, Hermione"^^xsd:string ;
     foaf:name "Lee, Hermione"^^xsd:string .
 
-data:woolvi_SpatialContext-inhabits_10_Snippet a oa:TextualBody ;
-    rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
-    dcterms:description "Hermione Lee notes that during this period [p]assionate celebrations of London filled the diaries and letters and spilled over into Mrs. Dalloway.474"^^xsd:string ;
-    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#ReturntoLondonTavistockSquare> .
+# data:woolvi_SpatialContext-inhabits_10_Snippet a oa:TextualBody ;
+#     rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
+#     dcterms:description "Hermione Lee notes that during this period [p]assionate celebrations of London filled the diaries and letters and spilled over into Mrs. Dalloway.474"^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#ReturntoLondonTavistockSquare> .
 
-data:woolvi_SpatialContext-inhabits_11_identifying a cwrc:SpatialContext ;
-    rdfs:label "Woolf, Virginia - Spatial Context identifying annotation" ;
-    cwrc:hasEvent data:woolvi_inhabits_Event4 ;
-    oa:hasBody data:Woolf_Leonard,
-        data:Woolf_Virginia,
-        <http://sws.geonames.org/2643743/> ;
-    oa:hasTarget data:woolvi_SpatialContext-inhabits_11_Snippet ;
-    oa:motivatedBy oa:identifying .
+# data:woolvi_SpatialContext-inhabits_11_identifying a cwrc:SpatialContext ;
+#     rdfs:label "Woolf, Virginia - Spatial Context identifying annotation" ;
+#     cwrc:hasEvent data:woolvi_inhabits_Event4 ;
+#     oa:hasBody data:Woolf_Leonard,
+#         data:Woolf_Virginia,
+#         <http://sws.geonames.org/2643743/> ;
+#     oa:hasTarget data:woolvi_SpatialContext-inhabits_11_Snippet ;
+#     oa:motivatedBy oa:identifying .
 
 data:woolvi_SpatialContext-inhabits_1_Snippet a oa:TextualBody ;
     rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
@@ -533,10 +533,10 @@ data:Stephen_Caroline_Emelia a cwrc:NaturalPerson ;
     rdfs:label "Stephen, Caroline Emelia"^^xsd:string ;
     foaf:name "Stephen, Caroline Emelia"^^xsd:string .
 
-data:woolvi_SpatialContext-inhabits_11_Snippet a oa:TextualBody ;
-    rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
-    dcterms:description "9 January 1924 Eager to return to the excitement of the city after nearly a decade at Hogarth House in Richmond, Virginia and Leonard Woolf purchased a ten-year lease on 52 Tavistock Square, London. 79"^^xsd:string ;
-    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#ReturntoLondonTavistockSquare> .
+# data:woolvi_SpatialContext-inhabits_11_Snippet a oa:TextualBody ;
+#     rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
+#     dcterms:description "9 January 1924 Eager to return to the excitement of the city after nearly a decade at Hogarth House in Richmond, Virginia and Leonard Woolf purchased a ten-year lease on 52 Tavistock Square, London. 79"^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#ReturntoLondonTavistockSquare> .
 
 data:woolvi_SpatialContext-inhabits_2_Snippet a oa:TextualBody ;
     rdfs:label "Woolf, Virginia - Spatial Context snippet" ;
@@ -668,16 +668,16 @@ data:woolvi_inhabits_Event3 a sem:Event ;
     sem:hasTimeStamp "1919-07-01"^^xsd:date ;
     sem:timeType cwrc:PunctiveTime .
 
-data:woolvi_inhabits_Event4 a sem:Event ;
-    rdfs:label "Woolf, Virginia - Spatial (inhabits) Event" ;
-    dcterms:description "9 January 1924: Eager to return to the excitement of the city after nearly a decade at Hogarth House in Richmond, Virginia and Leonard Woolf purchased a ten-year lease on 52 Tavistock Square, London." ;
-    sem:eventType cwrc:BritishWomenLiteraryClimate,
-        cwrc:IndividualSignificance ;
-    sem:hasActor data:Woolf_Leonard,
-        data:Woolf_Virginia ;
-    sem:hasPlace <http://sws.geonames.org/2643743/> ;
-    sem:hasTimeStamp "1924-01-09"^^xsd:date ;
-    sem:timeType cwrc:PunctiveTime .
+# data:woolvi_inhabits_Event4 a sem:Event ;
+#     rdfs:label "Woolf, Virginia - Spatial (inhabits) Event" ;
+#     dcterms:description "9 January 1924: Eager to return to the excitement of the city after nearly a decade at Hogarth House in Richmond, Virginia and Leonard Woolf purchased a ten-year lease on 52 Tavistock Square, London." ;
+#     sem:eventType cwrc:BritishWomenLiteraryClimate,
+#         cwrc:IndividualSignificance ;
+#     sem:hasActor data:Woolf_Leonard,
+#         data:Woolf_Virginia ;
+#     sem:hasPlace <http://sws.geonames.org/2643743/> ;
+#     sem:hasTimeStamp "1924-01-09"^^xsd:date ;
+#     sem:timeType cwrc:PunctiveTime .
 
 data:woolvi_relocatesTo_Event1 a sem:Event ;
     rdfs:label "Woolf, Virginia - Spatial (relocatesTo) Event" ;
@@ -760,7 +760,7 @@ data:Woolf_Virginia a cwrc:NaturalPerson ;
     cwrc:hasEvent data:woolvi_inhabits_Event1,
         data:woolvi_inhabits_Event2,
         data:woolvi_inhabits_Event3,
-        data:woolvi_inhabits_Event4,
+        # data:woolvi_inhabits_Event4,
         data:woolvi_relocatesTo_Event1,
         data:woolvi_relocatesTo_Event2,
         data:woolvi_relocatesTo_Event3,
@@ -768,7 +768,7 @@ data:Woolf_Virginia a cwrc:NaturalPerson ;
         data:woolvi_travelsTo_Event2 ;
     cwrc:hasGender cwrc:woman ;
     cwrc:inhabits <http://sws.geonames.org/2639231/>,
-        <http://sws.geonames.org/2643743/>,
+        # <http://sws.geonames.org/2643743/>,
         <http://sws.geonames.org/2644559/>,
         <http://sws.geonames.org/2656048/>,
         <http://sws.geonames.org/7293468/> ;
@@ -788,4 +788,3 @@ data:Woolf_Virginia a cwrc:NaturalPerson ;
         <http://sws.geonames.org/2638778/> ;
     foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi> ;
     foaf:name "Woolf, Virginia"^^xsd:string .
-
