@@ -31,33 +31,33 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:woolvi_CulturalFormContext1_describing a cwrc:CulturalFormContext ;
-    rdfs:label "Woolf, Virginia - CulturalForm Context describing annotation" ;
-    dcterms:subject data:Woolf_Virginia,
-        cwrc:Society_of_Friends_ORG,
-        cwrc:agnosticism,
-        cwrc:evangelicalism,
-        cwrc:professional,
-        cwrc:quakerism ;
-    cwrc:hasIDependencyOn data:woolvi_CulturalFormContext1_identifying ;
-    oa:hasBody [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Woolf_Virginia org:memberOf cwrc:Society_of_Friends_ORG ."^^xsd:string ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Woolf_Virginia cwrc:hasReligion cwrc:evangelicalism ."^^xsd:string ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Woolf_Virginia cwrc:hasReligion cwrc:agnosticism ."^^xsd:string ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Woolf_Virginia cwrc:hasSocialClassSelfReported cwrc:professional ."^^xsd:string ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Woolf_Virginia cwrc:hasReligion cwrc:quakerism ."^^xsd:string ] ;
-    oa:hasTarget data:Woolf_Virginia,
-        data:woolvi_CulturalFormContext1_Snippet ;
-    oa:motivatedBy oa:describing .
+# data:woolvi_CulturalFormContext1_describing a cwrc:CulturalFormContext ;
+#     rdfs:label "Woolf, Virginia - CulturalForm Context describing annotation" ;
+#     dcterms:subject data:Woolf_Virginia,
+#         cwrc:Society_of_Friends_ORG,
+#         cwrc:agnosticism,
+#         cwrc:evangelicalism,
+#         cwrc:professional,
+#         cwrc:quakerism ;
+#     cwrc:hasIDependencyOn data:woolvi_CulturalFormContext1_identifying ;
+#     oa:hasBody [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Woolf_Virginia org:memberOf cwrc:Society_of_Friends_ORG ."^^xsd:string ],
+#         [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Woolf_Virginia cwrc:hasReligion cwrc:evangelicalism ."^^xsd:string ],
+#         [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Woolf_Virginia cwrc:hasReligion cwrc:agnosticism ."^^xsd:string ],
+#         [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Woolf_Virginia cwrc:hasSocialClassSelfReported cwrc:professional ."^^xsd:string ],
+#         [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Woolf_Virginia cwrc:hasReligion cwrc:quakerism ."^^xsd:string ] ;
+#     oa:hasTarget data:Woolf_Virginia,
+#         data:woolvi_CulturalFormContext1_Snippet ;
+#     oa:motivatedBy oa:describing .
 
 data:woolvi_NationalityContext1_describing a cwrc:NationalityContext ;
     rdfs:label "Woolf, Virginia - Nationality Context describing annotation" ;
@@ -587,16 +587,16 @@ data:West_Rebecca a cwrc:NaturalPerson ;
     rdfs:label "West, Rebecca"^^xsd:string ;
     foaf:name "West, Rebecca"^^xsd:string .
 
-data:woolvi_CulturalFormContext1_identifying a cwrc:CulturalFormContext ;
-    rdfs:label "Woolf, Virginia - CulturalForm Context identifying annotation" ;
-    oa:hasBody data:Woolf_Virginia,
-        cwrc:Society_of_Friends_ORG,
-        cwrc:agnosticism,
-        cwrc:evangelicalism,
-        cwrc:professional,
-        cwrc:quakerism ;
-    oa:hasTarget data:woolvi_CulturalFormContext1_Snippet ;
-    oa:motivatedBy oa:identifying .
+# data:woolvi_CulturalFormContext1_identifying a cwrc:CulturalFormContext ;
+#     rdfs:label "Woolf, Virginia - CulturalForm Context identifying annotation" ;
+#     oa:hasBody data:Woolf_Virginia,
+#         cwrc:Society_of_Friends_ORG,
+#         cwrc:agnosticism,
+#         cwrc:evangelicalism,
+#         cwrc:professional,
+#         cwrc:quakerism ;
+#     oa:hasTarget data:woolvi_CulturalFormContext1_Snippet ;
+#     oa:motivatedBy oa:identifying .
 
 data:woolvi_NationalityContext1_identifying a cwrc:NationalityContext ;
     rdfs:label "Woolf, Virginia - Nationality Context identifying annotation" ;
@@ -879,10 +879,10 @@ data:Woolf_Leonard a cwrc:NaturalPerson ;
     rdfs:label "Woolf, Leonard"^^xsd:string ;
     foaf:name "Woolf, Leonard"^^xsd:string .
 
-data:woolvi_CulturalFormContext1_Snippet a oa:TextualBody ;
-    rdfs:label "Woolf, Virginia - CulturalForm Context snippet" ;
-    dcterms:description "VW was the daughter not only of an educated man,10 but of one of the most influential intellectuals in late Victorian England. Her family on both sides was part of the intellectual ascendancy.3 Though many..."^^xsd:string ;
-    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#InheritanceAncestresses> .
+# data:woolvi_CulturalFormContext1_Snippet a oa:TextualBody ;
+#     rdfs:label "Woolf, Virginia - CulturalForm Context snippet" ;
+#     dcterms:description "VW was the daughter not only of an educated man,10 but of one of the most influential intellectuals in late Victorian England. Her family on both sides was part of the intellectual ascendancy.3 Though many..."^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#InheritanceAncestresses> .
 
 data:woolvi_NationalityContext1_Snippet a oa:TextualBody ;
     rdfs:label "Woolf, Virginia - Nationality Context snippet" ;
@@ -1117,17 +1117,16 @@ data:Woolf_Virginia a cwrc:NaturalPerson ;
         cwrc:internationalism,
         cwrc:pacifism,
         cwrc:socialism ;
-    cwrc:hasReligion cwrc:agnosticism,
-        cwrc:evangelicalism,
-        cwrc:quakerism ;
+    # cwrc:hasReligion cwrc:agnosticism,
+    #     cwrc:evangelicalism,
+    #     cwrc:quakerism ;
     cwrc:hasSexualitySelfReported cwrc:sexualityBisexuality ;
-    cwrc:hasSocialClassSelfReported cwrc:professional ;
+    # cwrc:hasSocialClassSelfReported cwrc:professional ;
     org:memberOf cwrc:Fawcett_Society_ORG,
         cwrc:For_Intellectual_Liberty_ORG,
         cwrc:International_Association_of_Writers_for_the_Defence_of_Culture_ORG,
         cwrc:Labour_Party_ORG,
         cwrc:National_Council_for_Civil_Liberties_ORG,
-        cwrc:Society_of_Friends_ORG ;
+        # cwrc:Society_of_Friends_ORG ;
     foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi> ;
     foaf:name "Woolf, Virginia"^^xsd:string .
-
