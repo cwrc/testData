@@ -1,0 +1,704 @@
+#567 triples created
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:woolvi_LeisureContext1_identifying a cwrc:LeisureContext ;
+    rdfs:label "Woolf, Virginia - Leisure Context identifying annotation" ;
+    oa:hasBody data:Buxton_Anthony,
+        data:Grant_Duncan,
+        data:Lee_Hermione,
+        data:Ridley_Guy,
+        data:Woolf_Virginia,
+        cwrc:Royal_Navy_ORG ;
+    oa:hasTarget data:woolvi_LeisureContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_LeisureContext2_identifying a cwrc:LeisureContext ;
+    rdfs:label "Woolf, Virginia - Leisure Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Leisure_Event1 ;
+    oa:hasBody data:Cole_Horace,
+        data:Stephen_Adrian,
+        data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_LeisureContext2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_LeisureContext3_identifying a cwrc:LeisureContext ;
+    rdfs:label "Woolf, Virginia - Leisure Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_LeisureContext3_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_LeisureContext4_identifying a cwrc:LeisureContext ;
+    rdfs:label "Woolf, Virginia - Leisure Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Leisure_Event2 ;
+    oa:hasBody data:Beaton_Cecil,
+        data:Duckworth_Gerald,
+        data:Woolf_Virginia,
+        cwrc:Cecil_Beaton_The_Book_of_Beauty_1930_TITLE ;
+    oa:hasTarget data:woolvi_LeisureContext4_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_MentalHealthContext10_identifying a cwrc:MentalHealthContext ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_MentalHealthContext10_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_MentalHealthContext11_identifying a cwrc:MentalHealthContext ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_MentalHealthContext11_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_MentalHealthContext12_identifying a cwrc:MentalHealthContext ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context identifying annotation" ;
+    oa:hasBody data:Thomas_Jean,
+        data:Woolf_Virginia,
+        <http://sws.geonames.org/2643743/> ;
+    oa:hasTarget data:woolvi_MentalHealthContext12_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_MentalHealthContext13_identifying a cwrc:MentalHealthContext ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context identifying annotation" ;
+    oa:hasBody data:Stephen_Julia,
+        data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_MentalHealthContext13_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_MentalHealthContext14_identifying a cwrc:MentalHealthContext ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_MentalHealth_Event3 ;
+    oa:hasBody data:Woolf_Virginia,
+        <http://sws.geonames.org/2643743/> ;
+    oa:hasTarget data:woolvi_MentalHealthContext14_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_MentalHealthContext15_identifying a cwrc:MentalHealthContext ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_MentalHealth_Event4 ;
+    oa:hasBody data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_MentalHealthContext15_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_MentalHealthContext16_identifying a cwrc:MentalHealthContext ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context identifying annotation" ;
+    oa:hasBody data:Hitler_Adolf,
+        data:Woolf_Leonard,
+        data:Woolf_Virginia,
+        "Rhineland,Germany" ;
+    oa:hasTarget data:woolvi_MentalHealthContext16_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_MentalHealthContext17_identifying a cwrc:MentalHealthContext ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context identifying annotation" ;
+    oa:hasBody data:Wilberforce_Octavia,
+        data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_MentalHealthContext17_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_MentalHealthContext18_identifying a cwrc:MentalHealthContext ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context identifying annotation" ;
+    oa:hasBody data:Bowen_Elizabeth,
+        data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_MentalHealthContext18_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_MentalHealthContext19_identifying a cwrc:MentalHealthContext ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context identifying annotation" ;
+    oa:hasBody data:Mulvihill_Maureen_E,
+        data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_MentalHealthContext19_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_MentalHealthContext1_identifying a cwrc:MentalHealthContext ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context identifying annotation" ;
+    oa:hasBody data:Lee_Hermione,
+        data:Rose_Phyllis,
+        data:Woolf_Virginia,
+        cwrc:To_the_Lighthouse_TITLE ;
+    oa:hasTarget data:woolvi_MentalHealthContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_MentalHealthContext2_identifying a cwrc:MentalHealthContext ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context identifying annotation" ;
+    oa:hasBody data:Stephen_Thoby,
+        data:Woolf_Virginia,
+        <http://sws.geonames.org/2643743/> ;
+    oa:hasTarget data:woolvi_MentalHealthContext2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_MentalHealthContext3_identifying a cwrc:MentalHealthContext ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia,
+        cwrc:Sketch_made_in_summer_1939_TITLE ;
+    oa:hasTarget data:woolvi_MentalHealthContext3_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_MentalHealthContext4_identifying a cwrc:MentalHealthContext ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_MentalHealthContext4_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_MentalHealthContext5_identifying a cwrc:MentalHealthContext ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context identifying annotation" ;
+    oa:hasBody data:Dickinson_Violet,
+        data:Stephen_Sir_Leslie,
+        data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_MentalHealthContext5_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_MentalHealthContext6_identifying a cwrc:MentalHealthContext ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_MentalHealth_Event1 ;
+    oa:hasBody data:Duckworth_Stella,
+        data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_MentalHealthContext6_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_MentalHealthContext8_identifying a cwrc:MentalHealthContext ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia,
+        <http://sws.geonames.org/11609027/>,
+        <http://sws.geonames.org/2656048/> ;
+    oa:hasTarget data:woolvi_MentalHealthContext8_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_MentalHealthContext9_identifying a cwrc:MentalHealthContext ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context identifying annotation" ;
+    oa:hasBody data:Woolf_Leonard,
+        data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_MentalHealthContext9_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_ViolenceContext10_identifying a cwrc:ViolenceContext ;
+    rdfs:label "Woolf, Virginia - Violence Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Violence_Event4 ;
+    oa:hasBody data:Woolf_Leonard,
+        data:Woolf_Virginia,
+        <http://sws.geonames.org/2643743/> ;
+    oa:hasTarget data:woolvi_ViolenceContext10_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_ViolenceContext11_identifying a cwrc:ViolenceContext ;
+    rdfs:label "Woolf, Virginia - Violence Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Violence_Event5 ;
+    oa:hasBody data:Woolf_Leonard,
+        data:Woolf_Virginia,
+        <http://sws.geonames.org/2643743/> ;
+    oa:hasTarget data:woolvi_ViolenceContext11_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_ViolenceContext1_identifying a cwrc:ViolenceContext ;
+    rdfs:label "Woolf, Virginia - Violence Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_ViolenceContext1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_ViolenceContext2_identifying a cwrc:ViolenceContext ;
+    rdfs:label "Woolf, Virginia - Violence Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia,
+        <http://sparql.cwrc.ca/ontologies/cwrc#22_Hyde_Park_Gate_TITLE>,
+        cwrc:Memoir_Club_ORG,
+        cwrc:Old_Bloomsbury_TITLE ;
+    oa:hasTarget data:woolvi_ViolenceContext2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_ViolenceContext3_identifying a cwrc:ViolenceContext ;
+    rdfs:label "Woolf, Virginia - Violence Context identifying annotation" ;
+    oa:hasBody data:DeSalvo_Louise,
+        data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_ViolenceContext3_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_ViolenceContext4_identifying a cwrc:ViolenceContext ;
+    rdfs:label "Woolf, Virginia - Violence Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Violence_Event1 ;
+    oa:hasBody data:Duckworth_George,
+        data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_ViolenceContext4_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_ViolenceContext5_identifying a cwrc:ViolenceContext ;
+    rdfs:label "Woolf, Virginia - Violence Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Violence_Event2 ;
+    oa:hasBody data:Duckworth_George,
+        data:Stephen_Sir_Leslie,
+        data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_ViolenceContext5_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_ViolenceContext6_identifying a cwrc:ViolenceContext ;
+    rdfs:label "Woolf, Virginia - Violence Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia,
+        cwrc:A_Sketch_of_the_Past_TITLE ;
+    oa:hasTarget data:woolvi_ViolenceContext6_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_ViolenceContext7_identifying a cwrc:ViolenceContext ;
+    rdfs:label "Woolf, Virginia - Violence Context identifying annotation" ;
+    oa:hasBody data:Lee_Hermione,
+        data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_ViolenceContext7_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_ViolenceContext8_identifying a cwrc:ViolenceContext ;
+    rdfs:label "Woolf, Virginia - Violence Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_Violence_Event3 ;
+    oa:hasBody data:Duckworth_Gerald,
+        data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_ViolenceContext8_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_ViolenceContext9_identifying a cwrc:ViolenceContext ;
+    rdfs:label "Woolf, Virginia - Violence Context identifying annotation" ;
+    oa:hasBody data:Sackville-West_Vita,
+        data:Woolf_Virginia,
+        <http://sws.geonames.org/2639231/> ;
+    oa:hasTarget data:woolvi_ViolenceContext9_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_WomensHealthContext7_identifying a cwrc:WomensHealthContext ;
+    rdfs:label "Woolf, Virginia - WomensHealth Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_WomensHealth_Event2 ;
+    oa:hasBody data:Woolf_Leonard,
+        data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_WomensHealthContext7_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:Bowen_Elizabeth a cwrc:NaturalPerson ;
+    rdfs:label "Bowen, Elizabeth"^^xsd:string ;
+    foaf:name "Bowen, Elizabeth"^^xsd:string .
+
+data:Buxton_Anthony a cwrc:NaturalPerson ;
+    rdfs:label "Buxton, Anthony"^^xsd:string ;
+    foaf:name "Buxton, Anthony"^^xsd:string .
+
+data:DeSalvo_Louise a cwrc:NaturalPerson ;
+    rdfs:label "DeSalvo, Louise"^^xsd:string ;
+    foaf:name "DeSalvo, Louise"^^xsd:string .
+
+data:Dickinson_Violet a cwrc:NaturalPerson ;
+    rdfs:label "Dickinson, Violet"^^xsd:string ;
+    foaf:name "Dickinson, Violet"^^xsd:string .
+
+data:Grant_Duncan a cwrc:NaturalPerson ;
+    rdfs:label "Grant, Duncan"^^xsd:string ;
+    foaf:name "Grant, Duncan"^^xsd:string .
+
+data:Hitler_Adolf a cwrc:NaturalPerson ;
+    rdfs:label "Hitler, Adolf"^^xsd:string ;
+    foaf:name "Hitler, Adolf"^^xsd:string .
+
+data:Mulvihill_Maureen_E a cwrc:NaturalPerson ;
+    rdfs:label "Mulvihill, Maureen E."^^xsd:string ;
+    foaf:name "Mulvihill, Maureen E."^^xsd:string .
+
+data:Ridley_Guy a cwrc:NaturalPerson ;
+    rdfs:label "Ridley, Guy"^^xsd:string ;
+    foaf:name "Ridley, Guy"^^xsd:string .
+
+data:Rose_Phyllis a cwrc:NaturalPerson ;
+    rdfs:label "Rose, Phyllis"^^xsd:string ;
+    foaf:name "Rose, Phyllis"^^xsd:string .
+
+data:Sackville-West_Vita a cwrc:NaturalPerson ;
+    rdfs:label "Sackville-West, Vita"^^xsd:string ;
+    foaf:name "Sackville-West, Vita"^^xsd:string .
+
+data:Stephen_Julia a cwrc:NaturalPerson ;
+    rdfs:label "Stephen, Julia"^^xsd:string ;
+    foaf:name "Stephen, Julia"^^xsd:string .
+
+data:Stephen_Thoby a cwrc:NaturalPerson ;
+    rdfs:label "Stephen, Thoby"^^xsd:string ;
+    foaf:name "Stephen, Thoby"^^xsd:string .
+
+data:Thomas_Jean a cwrc:NaturalPerson ;
+    rdfs:label "Thomas, Jean"^^xsd:string ;
+    foaf:name "Thomas, Jean"^^xsd:string .
+
+data:Wilberforce_Octavia a cwrc:NaturalPerson ;
+    rdfs:label "Wilberforce, Octavia"^^xsd:string ;
+    foaf:name "Wilberforce, Octavia"^^xsd:string .
+
+data:woolvi_LeisureContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Leisure Context snippet" ;
+    dcterms:description "With Adrian Stephen, Duncan Grant, Guy Ridley, and Anthony Buxton, she toured the premier battleship HMS Dreadnought impersonating the Emperor of Abyssinia and his entourage. Virginia was disguised as Prince Mendax (Latin for liar). The..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#SubversionandSatire> .
+
+data:woolvi_LeisureContext2_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Leisure Context snippet" ;
+    dcterms:description "10 February 1910 Recruited to the plot at a late moment, Virginia Stephen (later VW) participated in the Dreadnought Hoax organized by Adrian Stephen and Horace Cole."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#SubversionandSatire> .
+
+data:woolvi_LeisureContext3_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Leisure Context snippet" ;
+    dcterms:description "Beaton's character sketch indicates that the image of VW which persisted for several later decades—as ethereal, asexual, and feeble—was already growing at the height of her contemporary fame and influence. Beaton (who had a professional..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#SocialandPoliticalActivity> .
+
+data:woolvi_LeisureContext4_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Leisure Context snippet" ;
+    dcterms:description "1930 After VW turned down his request to photograph her, Cecil Beaton included two drawings and a negative character sketch of her in his Book of Beauty, which was issued by the publishing firm of..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#SocialandPoliticalActivity> .
+
+data:woolvi_MentalHealthContext10_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context snippet" ;
+    dcterms:description "Information about VW's early breakdowns is scant. For those after 1912, however, Leonard provided the witness of his minutely kept diaries . . . coded in Tamil and Sinhalese, letters, and memoirs. Lee summarizes Leonard's..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#IllnessanditsInterpretation> .
+
+data:woolvi_MentalHealthContext11_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context snippet" ;
+    dcterms:description "Modern Woolf scholars are likely to reject the notion that VW was, as her family liked to joke, mad as a hatter, and to believe, as Lyndall Gordon does, that her instability had some biochemical..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#IllnessanditsInterpretation> .
+
+data:woolvi_MentalHealthContext12_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context snippet" ;
+    dcterms:description "VW was troubled by a range of intermittent mental and physical problems as an adult. They varied from mild to almost unbearably severe, and included anxiety attacks, hallucinations, fevers, headaches, and an extreme reluctance (or..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#IllnessanditsInterpretation> .
+
+data:woolvi_MentalHealthContext13_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context snippet" ;
+    dcterms:description "VW's varying reactions to her own illnesses included guilt about what she saw as her lack of mental and moral control over her body; deep anger toward her physicians and the larger operational codes of..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#IllnessanditsInterpretation> .
+
+data:woolvi_MentalHealthContext14_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context snippet" ;
+    dcterms:description "9 September 1913 After several months of illness, during which she was sent to Burley, the private Twickenham nursing home where she had been in 1910, VW attempted suicide by taking an overdose of the..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#EarlyMarriedYears> .
+
+data:woolvi_MentalHealthContext15_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context snippet" ;
+    dcterms:description "18 February 1915 VW was in the early stages of another serious nervous breakdown; it lasted until June, when her condition began a slow improvement."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#EarlyMarriedYears> .
+
+data:woolvi_MentalHealthContext16_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context snippet" ;
+    dcterms:description "In March and April 1936 VW had a period of threatened breakdown. This was a time of overwork against the clock (not uncommon in her professional life), of the visible political threat of Hitler (who..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#GainsandLosses> .
+
+data:woolvi_MentalHealthContext17_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context snippet" ;
+    dcterms:description "In considering the various issues which prepared the ground for VW's suicide, critics have noted her feelings of horror about the war, her writing, her past, and most particularly the prospect of another mental and..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#FinalCrisisandDeath> .
+
+data:woolvi_MentalHealthContext18_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context snippet" ;
+    dcterms:description "But it is difficult to mark precisely when she moved to a depressed and then to a suicidal state. Elizabeth Bowen last visited VW on 13 and 14 February, and later recalled: I remember her..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#FinalCrisisandDeath> .
+
+data:woolvi_MentalHealthContext19_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context snippet" ;
+    dcterms:description "Commentary and analysis on her death does not abate. Maureen E. Mulvihill argues in a recent essay that Woolf 's suicide had a larger logic as response to a combination of external factors, apart from..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#FinalCrisisandDeath> .
+
+data:woolvi_MentalHealthContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context snippet" ;
+    dcterms:description "Virginia was thirteen: this death ended her childhood and provoked her first nervous breakdown. She said later that her mother's death was the greatest disaster that could happen, and she remained preoccupied by her lost..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Mother> .
+
+data:woolvi_MentalHealthContext2_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context snippet" ;
+    dcterms:description "Years later, looking back, VW attached to this time a shift in her creative development, the sharpening of her sensations and thoughts. She met her brother Thoby at Paddington Station when he came to Julia's..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Mother> .
+
+data:woolvi_MentalHealthContext3_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context snippet" ;
+    dcterms:description "This childhood suffered a series of heavy blows. Virginia's early sexual molestation was followed by a series of terrible deaths: her mother's, when she was thirteen; Stella's, when she was fifteen. These losses, suffered when..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#EarlyBreakdowns> .
+
+data:woolvi_MentalHealthContext4_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context snippet" ;
+    dcterms:description "Later VW felt that this loss was in some ways worse than her mother's. Lee writes that her irritability in her 1897 journal, her nervousness and her attacks of the fidgets, can be read as..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#EarlyBreakdowns> .
+
+data:woolvi_MentalHealthContext5_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context snippet" ;
+    dcterms:description "Shortly after the death of her father in May 1904, Virginia Stephen experienced a second and more serious nervous breakdown. She was nursed for nearly three months at the home of her friend Violet Dickinson,..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#EarlyBreakdowns> .
+
+data:woolvi_MentalHealthContext6_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context snippet" ;
+    dcterms:description "19 July 1897 The recently married Stella Duckworth, VW's half-sister, died at the age of twenty-eight."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#EarlyBreakdowns> .
+
+data:woolvi_MentalHealthContext8_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context snippet" ;
+    dcterms:description "In October 1913, VW stayed in George Duckworth's house, becoming once more the dependant of the man who, for her, epitomized sexual abuse and social power. She then continued her rest cure at Asheham and..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#EarlyMarriedYears> .
+
+data:woolvi_MentalHealthContext9_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - MentalHealth Context snippet" ;
+    dcterms:description "VW refused to see Leonard for two months, sent disturbing letters to friends, and was reported to have attacked her nurses."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#EarlyMarriedYears> .
+
+data:woolvi_ViolenceContext10_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Violence Context snippet" ;
+    dcterms:description "14 September 1940 A time-bomb caused significant damage to 37 Mecklenburgh Square, which had been Virginia and Leonard Woolf's London residence since August 1939 (they were not there at the time)."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#WorldWarII> .
+
+data:woolvi_ViolenceContext11_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Violence Context snippet" ;
+    dcterms:description "16 October 1940 The recent and longtime London home of Virginia and Leonard Woolf, 52 Tavistock Square, was destroyed by a bomb."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#WorldWarII> .
+
+data:woolvi_ViolenceContext1_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Violence Context snippet" ;
+    dcterms:description "After Julia's and Stella's deaths, writes Lyndall Gordon, there was no controlling George . . . who would prowl by night, and pounce. At the same time: Shame and Victorian proprieties forbade mention of this."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#George> .
+
+data:woolvi_ViolenceContext2_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Violence Context snippet" ;
+    dcterms:description "VW described the incidents much later in 22 Hyde Park Gate, 1921, and Old Bloomsbury, 1922, both talks prepared for her friends in the Memoir Club. She also wrote about them to Vanessa."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#George> .
+
+data:woolvi_ViolenceContext3_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Violence Context snippet" ;
+    dcterms:description "Mark Hussey writes that the incest that Woolf suffered has been variously euphemized by several of her biographers and other critics. Hermione Lee, who sees George as one of the tyrants in VW's childhood, finds..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#George> .
+
+data:woolvi_ViolenceContext4_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Violence Context snippet" ;
+    dcterms:description "From about 1900 Virginia Stephen endured the sexual aggression of her half-brother George Duckworth. After returning from the fashionable balls and parties he escorted her to, he would pursue her into her bedroom and fondle..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#George> .
+
+data:woolvi_ViolenceContext5_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Violence Context snippet" ;
+    dcterms:description "September 1903 As Virginia Stephen's father was dying, Virginia's half-brother George Duckworth fondled her several times in a manner that amounted to sexual assault."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#George> .
+
+data:woolvi_ViolenceContext6_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Violence Context snippet" ;
+    dcterms:description "In A Sketch of the Past, VW describes Gerald molesting her as a very small child. He was, as Lee writes, the first culprit in the distressing and contentious matter of Virginia Stephen's abuse as..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Gerald> .
+
+data:woolvi_ViolenceContext7_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Violence Context snippet" ;
+    dcterms:description "VW did not discuss this incident specifically until the last years of her life. Hermione Lee, who considers the matter as fully as possible, argues that it would be rash to ignore or belittle the..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Gerald> .
+
+data:woolvi_ViolenceContext8_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Violence Context snippet" ;
+    dcterms:description "Summer 1888 The six-year-old Virginia Stephen (later VW) was sexually abused by her half-brother Gerald Duckworth, who was then eighteen. He left her with lasting feelings of shame."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Gerald> .
+
+data:woolvi_ViolenceContext9_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - Violence Context snippet" ;
+    dcterms:description "The Woolfs suffered in most of the ways that many civilians suffered from the early phases of the war. Their house at Rodmell lay (like Vita Sackville-West's) beneath the flight-paths of German and Allied planes..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#WorldWarII> .
+
+data:woolvi_WomensHealthContext7_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - WomensHealth Context snippet" ;
+    dcterms:description "13 January 1913 Leonard Woolf began keeping a daily record of VW's health; he also continued his consultation with physicians about whether she should bear children."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#EarlyMarriedYears> .
+
+data:Beaton_Cecil a cwrc:NaturalPerson ;
+    rdfs:label "Beaton, Cecil"^^xsd:string ;
+    foaf:name "Beaton, Cecil"^^xsd:string .
+
+data:Cole_Horace a cwrc:NaturalPerson ;
+    rdfs:label "Cole, Horace"^^xsd:string ;
+    foaf:name "Cole, Horace"^^xsd:string .
+
+data:Duckworth_Stella a cwrc:NaturalPerson ;
+    rdfs:label "Duckworth, Stella"^^xsd:string ;
+    foaf:name "Duckworth, Stella"^^xsd:string .
+
+data:Stephen_Adrian a cwrc:NaturalPerson ;
+    rdfs:label "Stephen, Adrian"^^xsd:string ;
+    foaf:name "Stephen, Adrian"^^xsd:string .
+
+data:woolvi_Leisure_Event1 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Leisure Event" ;
+    dcterms:description "10 February 1910: Recruited to the plot at a late moment, Virginia Stephen (later VW) participated in the Dreadnought Hoax organized by Adrian Stephen and Horace Cole." ;
+    sem:eventType cwrc:DecadeSignficance,
+        cwrc:SocialClimate ;
+    sem:hasActor data:Cole_Horace,
+        data:Stephen_Adrian,
+        data:Woolf_Virginia ;
+    sem:hasTimeStamp "1910-02-10"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:highCertainty .
+
+data:woolvi_Leisure_Event2 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Leisure Event" ;
+    dcterms:description "1930: After VW turned down his request to photograph her, Cecil Beaton included two drawings and a negative character sketch of her in his Book of Beauty, which was issued by the publishing firm of Gerald..." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Beaton_Cecil,
+        data:Duckworth_Gerald,
+        data:Woolf_Virginia,
+        cwrc:Cecil_Beaton_The_Book_of_Beauty_1930_TITLE ;
+    sem:hasTimeStamp "1930"^^xsd:gYear ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:highCertainty .
+
+data:woolvi_MentalHealth_Event1 a sem:Event ;
+    rdfs:label "Woolf, Virginia - MentalHealth Event" ;
+    dcterms:description "19 July 1897: The recently married Stella Duckworth, VW's half-sister, died at the age of twenty-eight." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Duckworth_Stella,
+        data:Woolf_Virginia ;
+    sem:hasTimeStamp "1897-07-19"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:highCertainty .
+
+data:woolvi_MentalHealth_Event3 a sem:Event ;
+    rdfs:label "Woolf, Virginia - MentalHealth Event" ;
+    dcterms:description "9 September 1913: After several months of illness, during which she was sent to Burley, the private Twickenham nursing home where she had been in 1910, VW attempted suicide by taking an overdose of the sedative veronal. She..." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:DecadeSignficance ;
+    sem:hasActor data:Woolf_Virginia ;
+    sem:hasPlace <http://sws.geonames.org/2643743/> ;
+    sem:hasTimeStamp "1913-09-09"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:highCertainty .
+
+data:woolvi_MentalHealth_Event4 a sem:Event ;
+    rdfs:label "Woolf, Virginia - MentalHealth Event" ;
+    dcterms:description "18 February 1915: VW was in the early stages of another serious nervous breakdown; it lasted until June, when her condition began a slow improvement." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Woolf_Virginia ;
+    sem:hasTimeStamp "1915-02-18"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:highCertainty .
+
+data:woolvi_Violence_Event1 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Violence Event" ;
+    dcterms:description "From about 1900: Virginia Stephen endured the sexual aggression of her half-brother George Duckworth. After returning from the fashionable balls and parties he escorted her to, he would pursue her into her bedroom and fondle her." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:DecadeSignficance ;
+    sem:hasActor data:Duckworth_George,
+        data:Woolf_Virginia ;
+    sem:hasEarliestBeginTimeStamp "1900-01"^^xsd:gYearMonth ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:mediumCertainty .
+
+data:woolvi_Violence_Event2 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Violence Event" ;
+    dcterms:description "September 1903: As Virginia Stephen's father was dying, Virginia's half-brother George Duckworth fondled her several times in a manner that amounted to sexual assault." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Duckworth_George,
+        data:Stephen_Sir_Leslie,
+        data:Woolf_Virginia ;
+    sem:hasTimeStamp "1903-09"^^xsd:gYearMonth ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:highCertainty .
+
+data:woolvi_Violence_Event3 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Violence Event" ;
+    dcterms:description "Summer 1888: The six-year-old Virginia Stephen (later VW) was sexually abused by her half-brother Gerald Duckworth, who was then eighteen. He left her with lasting feelings of shame." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Duckworth_Gerald,
+        data:Woolf_Virginia ;
+    sem:hasTime "1888-07"^^xsd:gYearMonth,
+        "Summer 1888" ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:mediumCertainty .
+
+data:woolvi_Violence_Event4 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Violence Event" ;
+    dcterms:description "14 September 1940: A time-bomb caused significant damage to 37 Mecklenburgh Square, which had been Virginia and Leonard Woolf's London residence since August 1939 (they were not there at the time)." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Woolf_Leonard,
+        data:Woolf_Virginia ;
+    sem:hasPlace <http://sws.geonames.org/2643743/> ;
+    sem:hasTimeStamp "1940-09-14"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:highCertainty .
+
+data:woolvi_Violence_Event5 a sem:Event ;
+    rdfs:label "Woolf, Virginia - Violence Event" ;
+    dcterms:description "16 October 1940: The recent and longtime London home of Virginia and Leonard Woolf, 52 Tavistock Square, was destroyed by a bomb." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Woolf_Leonard,
+        data:Woolf_Virginia ;
+    sem:hasPlace <http://sws.geonames.org/2643743/> ;
+    sem:hasTimeStamp "1940-10-16"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:highCertainty .
+
+data:woolvi_WomensHealth_Event2 a sem:Event ;
+    rdfs:label "Woolf, Virginia - WomensHealth Event" ;
+    dcterms:description "13 January 1913: Leonard Woolf began keeping a daily record of VW's health; he also continued his consultation with physicians about whether she should bear children." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Woolf_Leonard,
+        data:Woolf_Virginia ;
+    sem:hasTimeStamp "1913-01-13"^^xsd:date ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:highCertainty .
+
+data:Lee_Hermione a cwrc:NaturalPerson ;
+    rdfs:label "Lee, Hermione"^^xsd:string ;
+    foaf:name "Lee, Hermione"^^xsd:string .
+
+data:Stephen_Sir_Leslie a cwrc:NaturalPerson ;
+    rdfs:label "Stephen, Sir Leslie"^^xsd:string ;
+    foaf:name "Stephen, Sir Leslie"^^xsd:string .
+
+data:Duckworth_George a cwrc:NaturalPerson ;
+    rdfs:label "Duckworth, George"^^xsd:string ;
+    foaf:name "Duckworth, George"^^xsd:string .
+
+data:Duckworth_Gerald a cwrc:NaturalPerson ;
+    rdfs:label "Duckworth, Gerald"^^xsd:string ;
+    foaf:name "Duckworth, Gerald"^^xsd:string .
+
+data:Woolf_Leonard a cwrc:NaturalPerson ;
+    rdfs:label "Woolf, Leonard"^^xsd:string ;
+    foaf:name "Woolf, Leonard"^^xsd:string .
+
+data:Woolf_Virginia a cwrc:NaturalPerson ;
+    rdfs:label "Woolf, Virginia"^^xsd:string ;
+    cwrc:hasEvent data:woolvi_Leisure_Event1,
+        data:woolvi_Leisure_Event2,
+        data:woolvi_MentalHealth_Event1,
+        data:woolvi_MentalHealth_Event3,
+        data:woolvi_MentalHealth_Event4,
+        data:woolvi_Violence_Event1,
+        data:woolvi_Violence_Event2,
+        data:woolvi_Violence_Event3,
+        data:woolvi_Violence_Event4,
+        data:woolvi_Violence_Event5,
+        data:woolvi_WomensHealth_Event2 ;
+    cwrc:hasGender cwrc:woman ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi> ;
+    foaf:name "Woolf, Virginia"^^xsd:string .
+
