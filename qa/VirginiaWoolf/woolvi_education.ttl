@@ -1,0 +1,489 @@
+#416 triples created
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:woolvi_DomesticEducationContext_1_describing a cwrc:DomesticEducationContext ;
+    rdfs:label "Woolf, Virginia - DomesticEducation Context describing annotation" ;
+    dcterms:subject data:Bell_Vanessa,
+        data:Stephen_Julia,
+        data:Stephen_Sir_Leslie,
+        <http://id.loc.gov/authorities/subjects/sh85035659>,
+        <http://id.loc.gov/authorities/subjects/sh85054365>,
+        <http://id.loc.gov/authorities/subjects/sh85061212>,
+        <http://id.loc.gov/authorities/subjects/sh85074944>,
+        <http://id.loc.gov/authorities/subjects/sh85082139>,
+        <http://id.loc.gov/authorities/subjects/sh85101722>,
+        <http://id.loc.gov/authorities/subjects/sh85122827>,
+        <http://id.loc.gov/vocabulary/languages/fre> ;
+    cwrc:hasIDependencyOn data:woolvi_DomesticEducationContext_1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85101722> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85054365> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasInstructor data:Stephen_Sir_Leslie ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85082139> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/vocabulary/languages/fre> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasCompanion data:Bell_Vanessa ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85035659> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasInstructor data:Stephen_Julia ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85122827> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85061212> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85074944> ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_DomesticEducationContext_1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_InstitutionalEducationContext_1_describing a cwrc:InstitutionalEducationContext ;
+    rdfs:label "Woolf, Virginia - InstitutionalEducation Context describing annotation" ;
+    dcterms:subject data:Case_Janet,
+        data:Homer,
+        data:Plato,
+        data:Sophocles,
+        data:Æschylus ;
+    cwrc:hasIDependencyOn data:woolvi_InstitutionalEducationContext_1_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasInstructor data:Case_Janet ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_InstitutionalEducationContext_1_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_InstitutionalEducationContext_2_identifying a cwrc:InstitutionalEducationContext ;
+    rdfs:label "Woolf, Virginia - InstitutionalEducation Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia,
+        cwrc:Bloomsbury_Group_ORG,
+        cwrc:Moments_of_Being_TITLE ;
+    oa:hasTarget data:woolvi_InstitutionalEducationContext_2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_InstitutionalEducationContext_3_identifying a cwrc:InstitutionalEducationContext ;
+    rdfs:label "Woolf, Virginia - InstitutionalEducation Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_InstitutionalEducationContext_3_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_InstitutionalEducationContext_4_describing a cwrc:InstitutionalEducationContext ;
+    rdfs:label "Woolf, Virginia - InstitutionalEducation Context describing annotation" ;
+    dcterms:subject data:Warr_George,
+        data:Woolf_Virginia,
+        <http://id.loc.gov/authorities/subjects/sh85026450>,
+        <http://id.loc.gov/authorities/subjects/sh85074944>,
+        cwrc:Kings_College_University_of_London_ORG,
+        <http://sws.geonames.org/2643743/> ;
+    cwrc:hasEvent data:woolvi_InstitutionalEducation_Event1 ;
+    cwrc:hasIDependencyOn data:woolvi_InstitutionalEducationContext_4_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasInstructor data:Warr_George ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85074944> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85026450> ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_InstitutionalEducationContext_4_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_InstitutionalEducationContext_5_describing a cwrc:InstitutionalEducationContext ;
+    rdfs:label "Woolf, Virginia - InstitutionalEducation Context describing annotation" ;
+    dcterms:subject data:Pater_Clara,
+        data:Pater_Walter,
+        data:Woolf_Virginia,
+        <http://id.loc.gov/authorities/subjects/sh85057151>,
+        <http://id.loc.gov/authorities/subjects/sh85074944> ;
+    cwrc:hasEvent data:woolvi_InstitutionalEducation_Event2 ;
+    cwrc:hasIDependencyOn data:woolvi_InstitutionalEducationContext_5_identifying ;
+    oa:hasBody [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85074944> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasInstructor data:Pater_Clara ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85057151> ."^^xsd:string ] ;
+    oa:hasTarget data:Woolf_Virginia,
+        data:woolvi_InstitutionalEducationContext_5_Snippet ;
+    oa:motivatedBy oa:describing .
+
+data:woolvi_SelfTaughtEducationContext_1_identifying a cwrc:SelfTaughtEducationContext ;
+    rdfs:label "Woolf, Virginia - SelfTaughtEducation Context identifying annotation" ;
+    oa:hasBody data:Lee_Hermione,
+        data:Woolf_Virginia,
+        cwrc:Euphrosyne_TITLE,
+        cwrc:Three_Guineas_TITLE,
+        cwrc:Virginia_Woolf_A_Biography_TITLE ;
+    oa:hasTarget data:woolvi_SelfTaughtEducationContext_1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SelfTaughtEducationContext_2_identifying a cwrc:SelfTaughtEducationContext ;
+    rdfs:label "Woolf, Virginia - SelfTaughtEducation Context identifying annotation" ;
+    oa:hasBody data:Woolf_Virginia,
+        cwrc:Euphrosyne_TITLE,
+        cwrc:Virginia_Woolf_A_Biography_TITLE ;
+    oa:hasTarget data:woolvi_SelfTaughtEducationContext_2_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SelfTaughtEducationContext_3_identifying a cwrc:SelfTaughtEducationContext ;
+    rdfs:label "Woolf, Virginia - SelfTaughtEducation Context identifying annotation" ;
+    oa:hasBody data:Gordon_Lyndall,
+        data:Stephen_Sir_Leslie,
+        data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_SelfTaughtEducationContext_3_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SelfTaughtEducationContext_4_identifying a cwrc:SelfTaughtEducationContext ;
+    rdfs:label "Woolf, Virginia - SelfTaughtEducation Context identifying annotation" ;
+    oa:hasBody data:Arnold_Thomas_1795_-_1842,
+        data:Barlow_Nora,
+        data:Brontë_Charlotte,
+        data:Carlyle_Thomas,
+        data:Craik_Dinah_Mulock,
+        data:Darwin_Charles,
+        data:Dickens_Charles,
+        data:Eliot_George,
+        data:Hakluyt_Richard,
+        data:James_Henry,
+        data:Macaulay_Thomas_Babington_first_Baron,
+        data:Pepys_Samuel,
+        data:Thackeray_William_Makepeace,
+        data:Trollope_Anthony,
+        data:Woolf_Virginia,
+        cwrc:The_Voyage_Out_TITLE ;
+    oa:hasTarget data:woolvi_SelfTaughtEducationContext_4_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SelfTaughtEducationContext_5_identifying a cwrc:SelfTaughtEducationContext ;
+    rdfs:label "Woolf, Virginia - SelfTaughtEducation Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_SelfTaughtEducation_Event1 ;
+    oa:hasBody data:Stephen_Sir_Leslie,
+        data:Woolf_Virginia ;
+    oa:hasTarget data:woolvi_SelfTaughtEducationContext_5_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:Arnold_Thomas_1795_-_1842 a cwrc:NaturalPerson ;
+    rdfs:label "Arnold, Thomas,, 1795 - 1842"^^xsd:string ;
+    foaf:name "Arnold, Thomas,, 1795 - 1842"^^xsd:string .
+
+data:Barlow_Nora a cwrc:NaturalPerson ;
+    rdfs:label "Barlow, Nora"^^xsd:string ;
+    foaf:name "Barlow, Nora"^^xsd:string .
+
+data:Brontë_Charlotte a cwrc:NaturalPerson ;
+    rdfs:label "Brontë, Charlotte"^^xsd:string ;
+    foaf:name "Brontë, Charlotte"^^xsd:string .
+
+data:Carlyle_Thomas a cwrc:NaturalPerson ;
+    rdfs:label "Carlyle, Thomas"^^xsd:string ;
+    foaf:name "Carlyle, Thomas"^^xsd:string .
+
+data:Craik_Dinah_Mulock a cwrc:NaturalPerson ;
+    rdfs:label "Craik, Dinah Mulock"^^xsd:string ;
+    foaf:name "Craik, Dinah Mulock"^^xsd:string .
+
+data:Darwin_Charles a cwrc:NaturalPerson ;
+    rdfs:label "Darwin, Charles"^^xsd:string ;
+    foaf:name "Darwin, Charles"^^xsd:string .
+
+data:Dickens_Charles a cwrc:NaturalPerson ;
+    rdfs:label "Dickens, Charles"^^xsd:string ;
+    foaf:name "Dickens, Charles"^^xsd:string .
+
+data:Eliot_George a cwrc:NaturalPerson ;
+    rdfs:label "Eliot, George"^^xsd:string ;
+    foaf:name "Eliot, George"^^xsd:string .
+
+data:Gordon_Lyndall a cwrc:NaturalPerson ;
+    rdfs:label "Gordon, Lyndall"^^xsd:string ;
+    foaf:name "Gordon, Lyndall"^^xsd:string .
+
+data:Hakluyt_Richard a cwrc:NaturalPerson ;
+    rdfs:label "Hakluyt, Richard"^^xsd:string ;
+    foaf:name "Hakluyt, Richard"^^xsd:string .
+
+data:James_Henry a cwrc:NaturalPerson ;
+    rdfs:label "James, Henry"^^xsd:string ;
+    foaf:name "James, Henry"^^xsd:string .
+
+data:Lee_Hermione a cwrc:NaturalPerson ;
+    rdfs:label "Lee, Hermione"^^xsd:string ;
+    foaf:name "Lee, Hermione"^^xsd:string .
+
+data:Macaulay_Thomas_Babington_first_Baron a cwrc:NaturalPerson ;
+    rdfs:label "Macaulay, Thomas Babington,,, first Baron"^^xsd:string ;
+    foaf:name "Macaulay, Thomas Babington,,, first Baron"^^xsd:string .
+
+data:Pepys_Samuel a cwrc:NaturalPerson ;
+    rdfs:label "Pepys, Samuel"^^xsd:string ;
+    foaf:name "Pepys, Samuel"^^xsd:string .
+
+data:Thackeray_William_Makepeace a cwrc:NaturalPerson ;
+    rdfs:label "Thackeray, William Makepeace"^^xsd:string ;
+    foaf:name "Thackeray, William Makepeace"^^xsd:string .
+
+data:Trollope_Anthony a cwrc:NaturalPerson ;
+    rdfs:label "Trollope, Anthony"^^xsd:string ;
+    foaf:name "Trollope, Anthony"^^xsd:string .
+
+data:woolvi_DomesticEducationContext_1_identifying a cwrc:DomesticEducationContext ;
+    rdfs:label "Woolf, Virginia - DomesticEducation Context identifying annotation" ;
+    oa:hasBody data:Bell_Vanessa,
+        data:Stephen_Julia,
+        data:Stephen_Sir_Leslie,
+        data:Woolf_Virginia,
+        <http://id.loc.gov/authorities/subjects/sh85035659>,
+        <http://id.loc.gov/authorities/subjects/sh85054365>,
+        <http://id.loc.gov/authorities/subjects/sh85061212>,
+        <http://id.loc.gov/authorities/subjects/sh85074944>,
+        <http://id.loc.gov/authorities/subjects/sh85082139>,
+        <http://id.loc.gov/authorities/subjects/sh85101722>,
+        <http://id.loc.gov/authorities/subjects/sh85122827>,
+        <http://id.loc.gov/vocabulary/languages/fre> ;
+    oa:hasTarget data:woolvi_DomesticEducationContext_1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_InstitutionalEducationContext_1_identifying a cwrc:InstitutionalEducationContext ;
+    rdfs:label "Woolf, Virginia - InstitutionalEducation Context identifying annotation" ;
+    oa:hasBody data:Case_Janet,
+        data:Homer,
+        data:Plato,
+        data:Sophocles,
+        data:Woolf_Virginia,
+        data:Æschylus ;
+    oa:hasTarget data:woolvi_InstitutionalEducationContext_1_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_InstitutionalEducationContext_2_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - InstitutionalEducation Context snippet" ;
+    dcterms:description "Nevertheless, Virginia continued to feel her educational isolation, especially after her brother Thoby had gone up to Cambridge. Theres nothing like talk as an educator I'm sure, she wrote to him.In handwriting Woolf often omits..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Education> .
+
+data:woolvi_InstitutionalEducationContext_3_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - InstitutionalEducation Context snippet" ;
+    dcterms:description "In handwriting Woolf often omits apostrophes."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Education> .
+
+data:woolvi_InstitutionalEducationContext_4_identifying a cwrc:InstitutionalEducationContext ;
+    rdfs:label "Woolf, Virginia - InstitutionalEducation Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_InstitutionalEducation_Event1 ;
+    oa:hasBody data:Warr_George,
+        data:Woolf_Virginia,
+        <http://id.loc.gov/authorities/subjects/sh85026450>,
+        <http://id.loc.gov/authorities/subjects/sh85074944>,
+        cwrc:Kings_College_University_of_London_ORG,
+        <http://sws.geonames.org/2643743/> ;
+    oa:hasTarget data:woolvi_InstitutionalEducationContext_4_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_InstitutionalEducationContext_5_identifying a cwrc:InstitutionalEducationContext ;
+    rdfs:label "Woolf, Virginia - InstitutionalEducation Context identifying annotation" ;
+    cwrc:hasEvent data:woolvi_InstitutionalEducation_Event2 ;
+    oa:hasBody data:Pater_Clara,
+        data:Pater_Walter,
+        data:Woolf_Virginia,
+        <http://id.loc.gov/authorities/subjects/sh85057151>,
+        <http://id.loc.gov/authorities/subjects/sh85074944> ;
+    oa:hasTarget data:woolvi_InstitutionalEducationContext_5_Snippet ;
+    oa:motivatedBy oa:identifying .
+
+data:woolvi_SelfTaughtEducationContext_1_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - SelfTaughtEducation Context snippet" ;
+    dcterms:description "Both Virginia and Vanessa felt that they were uneducated, and VW felt intellectually deprived, regretting all her life that she had never competed with other children. She also, however, commented caustically on the advantage of..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Education> .
+
+data:woolvi_SelfTaughtEducationContext_2_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - SelfTaughtEducation Context snippet" ;
+    dcterms:description "She wrote this in an unpublished review of Euphrosyne, privately printed in 1905, a collection of poems by her brother Thoby Stephen and various male friends. The review is printed in an appendix to the..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Education> .
+
+data:woolvi_SelfTaughtEducationContext_3_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - SelfTaughtEducation Context snippet" ;
+    dcterms:description "Allowed uncensored access to her father's library, she made rich use of it. Leslie Stephen once commented to himself that Ginia is devouring books, almost faster than I like. Her habit of voracious reading, continued..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Education> .
+
+data:woolvi_SelfTaughtEducationContext_4_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - SelfTaughtEducation Context snippet" ;
+    dcterms:description "Between 1 January and 30 June 1897, her reading included but was not limited to the following: Charlotte Brontë, Lady Barlow (a commentator on Charles Darwin), Dinah Mulock Craik, George Eliot, Thomas Arnold, Thomas Carlyle,..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Education> .
+
+data:woolvi_SelfTaughtEducationContext_5_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - SelfTaughtEducation Context snippet" ;
+    dcterms:description "By January 1897 Virginia Stephen (later VW) was reading widely and almost without restriction in her father's library. This was to have a profound impact on her creative and critical work."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Education> .
+
+data:Homer a cwrc:NaturalPerson ;
+    rdfs:label "Homer"^^xsd:string ;
+    foaf:name "Homer"^^xsd:string .
+
+data:Plato a cwrc:NaturalPerson ;
+    rdfs:label "Plato"^^xsd:string ;
+    foaf:name "Plato"^^xsd:string .
+
+data:Sophocles a cwrc:NaturalPerson ;
+    rdfs:label "Sophocles"^^xsd:string ;
+    foaf:name "Sophocles"^^xsd:string .
+
+data:woolvi_DomesticEducationContext_1_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - DomesticEducation Context snippet" ;
+    dcterms:description "Virginia Woolf was educated at home. As a very young girl, she was tutored by her mother in Latin, French, and history. When she was between thirteen and fifteen, her father gave her lessons for..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Education> .
+
+data:woolvi_InstitutionalEducationContext_1_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - InstitutionalEducation Context snippet" ;
+    dcterms:description "Virginia read Aeschylus, Homer, Sophocles, and Plato, among others, with Clara Pater. In 1902, however, the Cambridge-educated Janet Case, who was a feminist as well as a classicist, took over as tutor, and with her..."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Education> .
+
+data:woolvi_InstitutionalEducationContext_4_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - InstitutionalEducation Context snippet" ;
+    dcterms:description "October 1897 Virginia Stephen (later VW) began studying Latin and classics with Dr George Warr at the Kensington Ladies' Department of King's College, London. She did not take the exams, however."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Education> .
+
+data:woolvi_InstitutionalEducationContext_5_Snippet a oa:TextualBody ;
+    rdfs:label "Woolf, Virginia - InstitutionalEducation Context snippet" ;
+    dcterms:description "September 1898 Virginia Stephen (later VW) began attending Latin classes taught by Clara Pater (sister of Walter). They began on Greek in 1899, and it seems that the following year Virginia switched to private lessons."^^xsd:string ;
+    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Education> .
+
+data:woolvi_SelfTaughtEducation_Event1 a sem:Event ;
+    rdfs:label "Woolf, Virginia - SelfTaughtEducation Event" ;
+    dcterms:description "By January 1897: Virginia Stephen (later VW) was reading widely and almost without restriction in her father's library. This was to have a profound impact on her creative and critical work." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Stephen_Sir_Leslie,
+        data:Woolf_Virginia ;
+    sem:hasLatestBeginTimeStamp "1897-01"^^xsd:gYearMonth ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:mediumCertainty .
+
+data:Æschylus a cwrc:NaturalPerson ;
+    rdfs:label "Æschylus"^^xsd:string ;
+    foaf:name "Æschylus"^^xsd:string .
+
+data:Bell_Vanessa a cwrc:NaturalPerson ;
+    rdfs:label "Bell, Vanessa"^^xsd:string ;
+    foaf:name "Bell, Vanessa"^^xsd:string .
+
+data:Case_Janet a cwrc:NaturalPerson ;
+    rdfs:label "Case, Janet"^^xsd:string ;
+    foaf:name "Case, Janet"^^xsd:string .
+
+data:Pater_Walter a cwrc:NaturalPerson ;
+    rdfs:label "Pater, Walter"^^xsd:string ;
+    foaf:name "Pater, Walter"^^xsd:string .
+
+data:Stephen_Julia a cwrc:NaturalPerson ;
+    rdfs:label "Stephen, Julia"^^xsd:string ;
+    foaf:name "Stephen, Julia"^^xsd:string .
+
+data:woolvi_InstitutionalEducation_Event1 a sem:Event ;
+    rdfs:label "Woolf, Virginia - InstitutionalEducation Event" ;
+    dcterms:description "October 1897: Virginia Stephen (later VW) began studying Latin and classics with Dr George Warr at the Kensington Ladies' Department of King's College, London. She did not take the exams, however." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Warr_George,
+        data:Woolf_Virginia,
+        cwrc:Kings_College_University_of_London_ORG ;
+    sem:hasPlace <http://sws.geonames.org/2643743/> ;
+    sem:hasTimeStamp "1897-10"^^xsd:gYearMonth ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:highCertainty .
+
+data:woolvi_InstitutionalEducation_Event2 a sem:Event ;
+    rdfs:label "Woolf, Virginia - InstitutionalEducation Event" ;
+    dcterms:description "September 1898: Virginia Stephen (later VW) began attending Latin classes taught by Clara Pater (sister of Walter). They began on Greek in 1899, and it seems that the following year Virginia switched to private lessons." ;
+    sem:eventType cwrc:BritishWomenLiteraryClimate,
+        cwrc:IndividualSignificance ;
+    sem:hasActor data:Pater_Clara,
+        data:Pater_Walter,
+        data:Woolf_Virginia ;
+    sem:hasTimeStamp "1898-09"^^xsd:gYearMonth ;
+    sem:timeType cwrc:PunctiveTime ;
+    cwrc:hasTimeCertainty cwrc:highCertainty .
+
+data:Pater_Clara a cwrc:NaturalPerson ;
+    rdfs:label "Pater, Clara"^^xsd:string ;
+    foaf:name "Pater, Clara"^^xsd:string .
+
+data:Warr_George a cwrc:NaturalPerson ;
+    rdfs:label "Warr, George"^^xsd:string ;
+    foaf:name "Warr, George"^^xsd:string .
+
+data:Stephen_Sir_Leslie a cwrc:NaturalPerson ;
+    rdfs:label "Stephen, Sir Leslie"^^xsd:string ;
+    foaf:name "Stephen, Sir Leslie"^^xsd:string .
+
+data:Woolf_Virginia a cwrc:NaturalPerson ;
+    rdfs:label "Woolf, Virginia"^^xsd:string ;
+    cwrc:hasCompanion data:Bell_Vanessa ;
+    cwrc:hasEvent data:woolvi_InstitutionalEducation_Event1,
+        data:woolvi_InstitutionalEducation_Event2,
+        data:woolvi_SelfTaughtEducation_Event1 ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasInstructor data:Case_Janet,
+        data:Pater_Clara,
+        data:Stephen_Julia,
+        data:Stephen_Sir_Leslie,
+        data:Warr_George ;
+    cwrc:studies <http://id.loc.gov/authorities/subjects/sh85026450>,
+        <http://id.loc.gov/authorities/subjects/sh85035659>,
+        <http://id.loc.gov/authorities/subjects/sh85054365>,
+        <http://id.loc.gov/authorities/subjects/sh85057151>,
+        <http://id.loc.gov/authorities/subjects/sh85061212>,
+        <http://id.loc.gov/authorities/subjects/sh85074944>,
+        <http://id.loc.gov/authorities/subjects/sh85082139>,
+        <http://id.loc.gov/authorities/subjects/sh85101722>,
+        <http://id.loc.gov/authorities/subjects/sh85122827>,
+        <http://id.loc.gov/vocabulary/languages/fre> ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi> ;
+    foaf:name "Woolf, Virginia"^^xsd:string .
+
