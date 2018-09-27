@@ -672,10 +672,10 @@ data:woolvi_OccupationContext22_Snippet a oa:TextualBody ;
     dcterms:description "27 April 1940 VW addressed the Womens Institute in Brighton; she turned her lecture into the essay The Leaning Tower shortly afterwards. 733"^^xsd:string ;
     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#LastOccupations> .
 
-data:woolvi_OccupationContext2_Snippet a oa:TextualBody ;
-    rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
-    dcterms:description "14 January 1905 Virginia Stephen (later VW) began giving weekly classes at Morley College in Lambeth. 5"^^xsd:string ;
-    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Work> .
+# data:woolvi_OccupationContext2_Snippet a oa:TextualBody ;
+#     rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
+#     dcterms:description "14 January 1905 Virginia Stephen (later VW) began giving weekly classes at Morley College in Lambeth. 5"^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Work> .
 
 data:woolvi_OccupationContext3_Snippet a oa:TextualBody ;
     rdfs:label "Woolf, Virginia - Occupation Context snippet" ;
@@ -730,16 +730,16 @@ data:Lehmann_John a cwrc:NaturalPerson ;
     rdfs:label "Lehmann, John"^^xsd:string ;
     foaf:name "Lehmann, John"^^xsd:string .
 
-data:woolvi_Occupation_Event1 a sem:Event ;
-    rdfs:label "Woolf, Virginia - Occupation Event" ;
-    dcterms:description "14 January 1905: Virginia Stephen (later VW) began giving weekly classes at Morley College in Lambeth." ;
-    sem:eventType cwrc:BritishWomenLiteraryClimate,
-        cwrc:IndividualSignificance ;
-    sem:hasActor data:Woolf_Virginia,
-        cwrc:Morley_College_ORG ;
-    sem:hasPlace <http://sws.geonames.org/2643743/> ;
-    sem:hasTimeStamp "1905-01-14"^^xsd:date ;
-    sem:timeType cwrc:PunctiveTime .
+# data:woolvi_Occupation_Event1 a sem:Event ;
+#     rdfs:label "Woolf, Virginia - Occupation Event" ;
+#     dcterms:description "14 January 1905: Virginia Stephen (later VW) began giving weekly classes at Morley College in Lambeth." ;
+#     sem:eventType cwrc:BritishWomenLiteraryClimate,
+#         cwrc:IndividualSignificance ;
+#     sem:hasActor data:Woolf_Virginia,
+#         cwrc:Morley_College_ORG ;
+#     sem:hasPlace <http://sws.geonames.org/2643743/> ;
+#     sem:hasTimeStamp "1905-01-14"^^xsd:date ;
+#     sem:timeType cwrc:PunctiveTime .
 
 data:woolvi_Occupation_Event2 a sem:Event ;
     rdfs:label "Woolf, Virginia - Occupation Event" ;
@@ -803,7 +803,7 @@ data:Woolf_Leonard a cwrc:NaturalPerson ;
 
 data:Woolf_Virginia a cwrc:NaturalPerson ;
     rdfs:label "Woolf, Virginia"^^xsd:string ;
-    cwrc:hasEvent data:woolvi_Occupation_Event1,
+    # cwrc:hasEvent data:woolvi_Occupation_Event1,
         data:woolvi_Occupation_Event2,
         data:woolvi_Occupation_Event3,
         data:woolvi_Occupation_Event4,
@@ -823,7 +823,6 @@ data:Woolf_Virginia a cwrc:NaturalPerson ;
     cwrc:hasPaidOccupation cwrc:reviewer,
         cwrc:writer ;
     cwrc:hasVolunteerOccupation cwrc:professor,
-        cwrc:teacher ;
+        # cwrc:teacher ;
     foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi> ;
     foaf:name "Woolf, Virginia"^^xsd:string .
-
