@@ -1,4 +1,4 @@
-#360 triples created
+#416 triples created
 @prefix as: <http://www.w3.org/ns/activitystreams#> .
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
@@ -48,17 +48,37 @@ data:woolvi_DomesticEducationContext_1_describing a cwrc:DomesticEducationContex
     cwrc:hasIDependencyOn data:woolvi_DomesticEducationContext_1_identifying ;
     oa:hasBody [ a oa:TextualBody ;
             dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value """data:Woolf_Virginia cwrc:hasCompanion data:Bell_Vanessa ;
-    cwrc:hasInstructor data:Stephen_Julia,
-        data:Stephen_Sir_Leslie ;
-    cwrc:studies <http://id.loc.gov/authorities/subjects/sh85035659>,
-        <http://id.loc.gov/authorities/subjects/sh85054365>,
-        <http://id.loc.gov/authorities/subjects/sh85061212>,
-        <http://id.loc.gov/authorities/subjects/sh85074944>,
-        <http://id.loc.gov/authorities/subjects/sh85082139>,
-        <http://id.loc.gov/authorities/subjects/sh85101722>,
-        <http://id.loc.gov/authorities/subjects/sh85122827>,
-        <http://id.loc.gov/vocabulary/languages/fre> ."""^^xsd:string ] ;
+            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85101722> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85054365> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasInstructor data:Stephen_Sir_Leslie ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85082139> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/vocabulary/languages/fre> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasCompanion data:Bell_Vanessa ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85035659> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasInstructor data:Stephen_Julia ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85122827> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85061212> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85074944> ."^^xsd:string ] ;
     oa:hasTarget data:Woolf_Virginia,
         data:woolvi_DomesticEducationContext_1_Snippet ;
     oa:motivatedBy oa:describing .
@@ -104,9 +124,13 @@ data:woolvi_InstitutionalEducationContext_4_describing a cwrc:InstitutionalEduca
     cwrc:hasIDependencyOn data:woolvi_InstitutionalEducationContext_4_identifying ;
     oa:hasBody [ a oa:TextualBody ;
             dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value """data:Woolf_Virginia cwrc:hasInstructor data:Warr_George ;
-    cwrc:studies <http://id.loc.gov/authorities/subjects/sh85026450>,
-        <http://id.loc.gov/authorities/subjects/sh85074944> ."""^^xsd:string ] ;
+            rdf:value "data:Woolf_Virginia cwrc:hasInstructor data:Warr_George ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85074944> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85026450> ."^^xsd:string ] ;
     oa:hasTarget data:Woolf_Virginia,
         data:woolvi_InstitutionalEducationContext_4_Snippet ;
     oa:motivatedBy oa:describing .
@@ -122,9 +146,13 @@ data:woolvi_InstitutionalEducationContext_5_describing a cwrc:InstitutionalEduca
     cwrc:hasIDependencyOn data:woolvi_InstitutionalEducationContext_5_identifying ;
     oa:hasBody [ a oa:TextualBody ;
             dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value """data:Woolf_Virginia cwrc:hasInstructor data:Pater_Clara ;
-    cwrc:studies <http://id.loc.gov/authorities/subjects/sh85057151>,
-        <http://id.loc.gov/authorities/subjects/sh85074944> ."""^^xsd:string ] ;
+            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85074944> ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:hasInstructor data:Pater_Clara ."^^xsd:string ],
+        [ a oa:TextualBody ;
+            dcterms:format "text/turtle"^^xsd:string ;
+            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85057151> ."^^xsd:string ] ;
     oa:hasTarget data:Woolf_Virginia,
         data:woolvi_InstitutionalEducationContext_5_Snippet ;
     oa:motivatedBy oa:describing .
