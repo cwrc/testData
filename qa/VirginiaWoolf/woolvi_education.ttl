@@ -112,28 +112,28 @@ data:woolvi_InstitutionalEducationContext_3_identifying a cwrc:InstitutionalEduc
     oa:hasTarget data:woolvi_InstitutionalEducationContext_3_Snippet ;
     oa:motivatedBy oa:identifying .
 
-data:woolvi_InstitutionalEducationContext_4_describing a cwrc:InstitutionalEducationContext ;
-    rdfs:label "Woolf, Virginia - InstitutionalEducation Context describing annotation" ;
-    dcterms:subject data:Warr_George,
-        data:Woolf_Virginia,
-        <http://id.loc.gov/authorities/subjects/sh85026450>,
-        <http://id.loc.gov/authorities/subjects/sh85074944>,
-        cwrc:Kings_College_University_of_London_ORG,
-        <http://sws.geonames.org/2643743/> ;
-    cwrc:hasEvent data:woolvi_InstitutionalEducation_Event1 ;
-    cwrc:hasIDependencyOn data:woolvi_InstitutionalEducationContext_4_identifying ;
-    oa:hasBody [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Woolf_Virginia cwrc:hasInstructor data:Warr_George ."^^xsd:string ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85074944> ."^^xsd:string ],
-        [ a oa:TextualBody ;
-            dcterms:format "text/turtle"^^xsd:string ;
-            rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85026450> ."^^xsd:string ] ;
-    oa:hasTarget data:Woolf_Virginia,
-        data:woolvi_InstitutionalEducationContext_4_Snippet ;
-    oa:motivatedBy oa:describing .
+# data:woolvi_InstitutionalEducationContext_4_describing a cwrc:InstitutionalEducationContext ;
+#     rdfs:label "Woolf, Virginia - InstitutionalEducation Context describing annotation" ;
+#     dcterms:subject data:Warr_George,
+#         data:Woolf_Virginia,
+#         <http://id.loc.gov/authorities/subjects/sh85026450>,
+#         <http://id.loc.gov/authorities/subjects/sh85074944>,
+#         cwrc:Kings_College_University_of_London_ORG,
+#         <http://sws.geonames.org/2643743/> ;
+#     cwrc:hasEvent data:woolvi_InstitutionalEducation_Event1 ;
+#     cwrc:hasIDependencyOn data:woolvi_InstitutionalEducationContext_4_identifying ;
+#     oa:hasBody [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Woolf_Virginia cwrc:hasInstructor data:Warr_George ."^^xsd:string ],
+#         [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85074944> ."^^xsd:string ],
+#         [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Woolf_Virginia cwrc:studies <http://id.loc.gov/authorities/subjects/sh85026450> ."^^xsd:string ] ;
+#     oa:hasTarget data:Woolf_Virginia,
+#         data:woolvi_InstitutionalEducationContext_4_Snippet ;
+#     oa:motivatedBy oa:describing .
 
 data:woolvi_InstitutionalEducationContext_5_describing a cwrc:InstitutionalEducationContext ;
     rdfs:label "Woolf, Virginia - InstitutionalEducation Context describing annotation" ;
@@ -314,17 +314,17 @@ data:woolvi_InstitutionalEducationContext_3_Snippet a oa:TextualBody ;
     dcterms:description "In handwriting Woolf often omits apostrophes."^^xsd:string ;
     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Education> .
 
-data:woolvi_InstitutionalEducationContext_4_identifying a cwrc:InstitutionalEducationContext ;
-    rdfs:label "Woolf, Virginia - InstitutionalEducation Context identifying annotation" ;
-    cwrc:hasEvent data:woolvi_InstitutionalEducation_Event1 ;
-    oa:hasBody data:Warr_George,
-        data:Woolf_Virginia,
-        <http://id.loc.gov/authorities/subjects/sh85026450>,
-        <http://id.loc.gov/authorities/subjects/sh85074944>,
-        cwrc:Kings_College_University_of_London_ORG,
-        <http://sws.geonames.org/2643743/> ;
-    oa:hasTarget data:woolvi_InstitutionalEducationContext_4_Snippet ;
-    oa:motivatedBy oa:identifying .
+# data:woolvi_InstitutionalEducationContext_4_identifying a cwrc:InstitutionalEducationContext ;
+#     rdfs:label "Woolf, Virginia - InstitutionalEducation Context identifying annotation" ;
+#     cwrc:hasEvent data:woolvi_InstitutionalEducation_Event1 ;
+#     oa:hasBody data:Warr_George,
+#         data:Woolf_Virginia,
+#         <http://id.loc.gov/authorities/subjects/sh85026450>,
+#         <http://id.loc.gov/authorities/subjects/sh85074944>,
+#         cwrc:Kings_College_University_of_London_ORG,
+#         <http://sws.geonames.org/2643743/> ;
+#     oa:hasTarget data:woolvi_InstitutionalEducationContext_4_Snippet ;
+#     oa:motivatedBy oa:identifying .
 
 data:woolvi_InstitutionalEducationContext_5_identifying a cwrc:InstitutionalEducationContext ;
     rdfs:label "Woolf, Virginia - InstitutionalEducation Context identifying annotation" ;
@@ -384,10 +384,10 @@ data:woolvi_InstitutionalEducationContext_1_Snippet a oa:TextualBody ;
     dcterms:description "Virginia read Aeschylus, Homer, Sophocles, and Plato, among others, with Clara Pater. In 1902, however, the Cambridge-educated Janet Case, who was a feminist as well as a classicist, took over as tutor, and with her..."^^xsd:string ;
     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Education> .
 
-data:woolvi_InstitutionalEducationContext_4_Snippet a oa:TextualBody ;
-    rdfs:label "Woolf, Virginia - InstitutionalEducation Context snippet" ;
-    dcterms:description "October 1897 Virginia Stephen (later VW) began studying Latin and classics with Dr George Warr at the Kensington Ladies' Department of King's College, London. She did not take the exams, however."^^xsd:string ;
-    oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Education> .
+# data:woolvi_InstitutionalEducationContext_4_Snippet a oa:TextualBody ;
+#     rdfs:label "Woolf, Virginia - InstitutionalEducation Context snippet" ;
+#     dcterms:description "October 1897 Virginia Stephen (later VW) began studying Latin and classics with Dr George Warr at the Kensington Ladies' Department of King's College, London. She did not take the exams, however."^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi#Education> .
 
 data:woolvi_InstitutionalEducationContext_5_Snippet a oa:TextualBody ;
     rdfs:label "Woolf, Virginia - InstitutionalEducation Context snippet" ;
@@ -425,18 +425,18 @@ data:Stephen_Julia a cwrc:NaturalPerson ;
     rdfs:label "Stephen, Julia"^^xsd:string ;
     foaf:name "Stephen, Julia"^^xsd:string .
 
-data:woolvi_InstitutionalEducation_Event1 a sem:Event ;
-    rdfs:label "Woolf, Virginia - InstitutionalEducation Event" ;
-    dcterms:description "October 1897: Virginia Stephen (later VW) began studying Latin and classics with Dr George Warr at the Kensington Ladies' Department of King's College, London. She did not take the exams, however." ;
-    sem:eventType cwrc:BritishWomenLiteraryClimate,
-        cwrc:IndividualSignificance ;
-    sem:hasActor data:Warr_George,
-        data:Woolf_Virginia,
-        cwrc:Kings_College_University_of_London_ORG ;
-    sem:hasPlace <http://sws.geonames.org/2643743/> ;
-    sem:hasTimeStamp "1897-10"^^xsd:gYearMonth ;
-    sem:timeType cwrc:PunctiveTime ;
-    cwrc:hasTimeCertainty cwrc:highCertainty .
+# data:woolvi_InstitutionalEducation_Event1 a sem:Event ;
+#     rdfs:label "Woolf, Virginia - InstitutionalEducation Event" ;
+#     dcterms:description "October 1897: Virginia Stephen (later VW) began studying Latin and classics with Dr George Warr at the Kensington Ladies' Department of King's College, London. She did not take the exams, however." ;
+#     sem:eventType cwrc:BritishWomenLiteraryClimate,
+#         cwrc:IndividualSignificance ;
+#     sem:hasActor data:Warr_George,
+#         data:Woolf_Virginia,
+#         cwrc:Kings_College_University_of_London_ORG ;
+#     sem:hasPlace <http://sws.geonames.org/2643743/> ;
+#     sem:hasTimeStamp "1897-10"^^xsd:gYearMonth ;
+#     sem:timeType cwrc:PunctiveTime ;
+#     cwrc:hasTimeCertainty cwrc:highCertainty .
 
 data:woolvi_InstitutionalEducation_Event2 a sem:Event ;
     rdfs:label "Woolf, Virginia - InstitutionalEducation Event" ;
@@ -473,17 +473,16 @@ data:Woolf_Virginia a cwrc:NaturalPerson ;
         data:Pater_Clara,
         data:Stephen_Julia,
         data:Stephen_Sir_Leslie,
-        data:Warr_George ;
-    cwrc:studies <http://id.loc.gov/authorities/subjects/sh85026450>,
+#        data:Warr_George ;
+#   cwrc:studies <http://id.loc.gov/authorities/subjects/sh85026450>,
         <http://id.loc.gov/authorities/subjects/sh85035659>,
         <http://id.loc.gov/authorities/subjects/sh85054365>,
         <http://id.loc.gov/authorities/subjects/sh85057151>,
         <http://id.loc.gov/authorities/subjects/sh85061212>,
-        <http://id.loc.gov/authorities/subjects/sh85074944>,
+#        <http://id.loc.gov/authorities/subjects/sh85074944>,
         <http://id.loc.gov/authorities/subjects/sh85082139>,
         <http://id.loc.gov/authorities/subjects/sh85101722>,
         <http://id.loc.gov/authorities/subjects/sh85122827>,
         <http://id.loc.gov/vocabulary/languages/fre> ;
     foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=woolvi> ;
     foaf:name "Woolf, Virginia"^^xsd:string .
-

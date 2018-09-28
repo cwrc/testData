@@ -1,0 +1,289 @@
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix ii: <http://sparql.cwrc.ca/ontologies/ii> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# data:bronem_CulturalFormContext1_describing a cwrc:CulturalFormContext ;
+#     rdfs:label "Brontë, Emily CulturalFormContext describing annotation" ;
+#     dcterms:subject cwrc:Anglican_Church_ORG,
+# #        cwrc:anglicanism,
+# #        cwrc:professional,
+#         "GB-ENG"^^xsd:string,
+#         "IE"^^xsd:string ;
+#     cwrc:hasIDependencyOn data:bronem_CulturalFormContext1_identifying ;
+    # oa:hasBody [ a oa:TextualBody ;
+    #         dcterms:format "text/turtle"^^xsd:string ;
+    #         rdf:value "data:Brontë_Emily cwrc:hasSocialClass cwrc:professional ."^^xsd:string ],
+    #     [ a oa:TextualBody ;
+    #         dcterms:format "text/turtle"^^xsd:string ;
+    #         rdf:value "data:Brontë_Emily org:memberOf cwrc:Anglican_Church_ORG ."^^xsd:string ],
+    #     [ a oa:TextualBody ;
+    #         dcterms:format "text/turtle"^^xsd:string ;
+    #         rdf:value "data:Brontë_Emily cwrc:hasNationalHeritage \"IE\"^^xsd:string ."^^xsd:string ],
+    #     [ a oa:TextualBody ;
+    #         dcterms:format "text/turtle"^^xsd:string ;
+    #         rdf:value "data:Brontë_Emily cwrc:hasReligion cwrc:anglicanism ."^^xsd:string ],
+    #     [ a oa:TextualBody ;
+    #         dcterms:format "text/turtle"^^xsd:string ;
+    #         rdf:value "data:Brontë_Emily cwrc:hasNationalHeritage \"GB-ENG\"^^xsd:string ."^^xsd:string ] ;
+    # oa:hasTarget data:Brontë_Emily,
+    #     data:bronem_CulturalFormContext1_Snippet ;
+    # oa:motivatedBy oa:describing .
+
+# data:bronem_CulturalFormContext2_identifying a cwrc:CulturalFormContext ;
+#     rdfs:label "Brontë, Emily CulturalFormContext identifying annotation" ;
+#     oa:hasBody data:Brontë_Charlotte,
+#         data:Brontë_Emily,
+#         cwrc:Wuthering_Heights_TITLE ;
+#     oa:hasTarget data:bronem_CulturalFormContext2_Snippet ;
+#     oa:motivatedBy oa:identifying .
+
+# data:bronem_LeisureContext1_identifying a cwrc:LeisureContext ;
+#     rdfs:label "Brontë, Emily LeisureContext identifying annotation" ;
+#     oa:hasBody data:Brontë_Anne,
+#         data:Brontë_Branwell,
+#         data:Brontë_Charlotte,
+#         data:Brontë_Emily ;
+#     oa:hasTarget data:bronem_LeisureContext1_Snippet ;
+#     oa:motivatedBy oa:identifying .
+
+# data:bronem_MentalHealthContext2_identifying a cwrc:MentalHealthContext ;
+#     rdfs:label "Brontë, Emily MentalHealthContext identifying annotation" ;
+#     oa:hasBody data:Brontë_Emily,
+#         data:Nussey_Ellen ;
+#     oa:hasTarget data:bronem_MentalHealthContext2_Snippet ;
+#     oa:motivatedBy oa:identifying .
+
+# data:bronem_PhysicalHealthContext1_identifying a cwrc:PhysicalHealthContext ;
+#     rdfs:label "Brontë, Emily PhysicalHealthContext identifying annotation" ;
+#     oa:hasBody data:Brontë_Charlotte,
+#         data:Brontë_Emily,
+#         data:Gaskell_Elizabeth ;
+#     oa:hasTarget data:bronem_PhysicalHealthContext1_Snippet ;
+#     oa:motivatedBy oa:identifying .
+
+# data:bronem_PhysicalHealthContext3_identifying a cwrc:PhysicalHealthContext ;
+#     rdfs:label "Brontë, Emily PhysicalHealthContext identifying annotation" ;
+#     oa:hasBody data:Brontë_Emily ;
+#     oa:hasTarget data:bronem_PhysicalHealthContext3_Snippet ;
+#     oa:motivatedBy oa:identifying .
+
+# data:bronem_PhysicalHealthContext4_identifying a cwrc:PhysicalHealthContext ;
+#     rdfs:label "Brontë, Emily PhysicalHealthContext identifying annotation" ;
+#     oa:hasBody data:Brontë_Charlotte,
+#         data:Brontë_Emily ;
+#     oa:hasTarget data:bronem_PhysicalHealthContext4_Snippet ;
+#     oa:motivatedBy oa:identifying .
+
+# data:bronem_SpatialContext_travelsTo_1_describing a cwrc:SpatialContext ;
+#     rdfs:label "Brontë, Emily location describing annotation" ;
+#     dcterms:subject data:Brontë_Anne,
+#         data:Brontë_Emily,
+#         <http://sws.geonames.org/2633352/> ;
+#     cwrc:hasIDependencyOn data:bronem_SpatialContext_travelsTo_1_identifying ;
+#     oa:hasBody [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Brontë_Emily cwrc:travelsTo <http://sws.geonames.org/2633352/> ."^^xsd:string ] ;
+#     oa:hasTarget data:Brontë_Emily,
+#         data:bronem_SpatialContext_travelsTo_1_Snippet ;
+    # oa:motivatedBy oa:describing .
+
+# data:bronem_causeofdeath_context0_describing a cwrc:DeathContext ;
+#     rdfs:label "Brontë, Emily DeathContext describing annotation" ;
+#     dcterms:subject data:Brontë_Emily,
+#         <http://sparql.cwrc.ca/ontologies/iiTuberculosis> ;
+#     oa:hasBody [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Brontë_Emily cwrc:hasCauseOfDeath ii:Tuberculosis ."^^xsd:string ] ;
+#     oa:hasTarget data:Brontë_Emily,
+#         data:bronem_causeofdeath_context0_Snippet ;
+#     oa:motivatedBy oa:describing .
+
+# data:bronembirthContext_describing1 a cwrc:FriendsAndAssociatesContext ;
+#     rdfs:label "Brontë_Emily birthContext describing annotation" ;
+#     dcterms:subject data:Brontë_Emily,
+#         "1818-07-30",
+#         "Thornton, Yorkshire, England" ;
+#     cwrc:hasIDependencyOn data:bronembirthContextidentifying1 ;
+#     oa:hasBody [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Brontë_Emily cwrc.hasBirthPlace Thornton, Yorkshire, England" ],
+#         [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Brontë_Emily cwrc.hasBirthDate 1818-07-30" ] ;
+#     oa:hasTarget data:Brontë_Emily,
+#         data:bronembirthContext_snippet1 ;
+#     oa:motivatedBy oa:describing .
+
+# data:bronemdeathContext_describing1 a cwrc:FriendsAndAssociatesContext ;
+#     rdfs:label "Brontë_Emily deathContext describing annotation" ;
+#     dcterms:subject data:Brontë_Emily,
+#         "1848-12-19",
+#         "Haworth, Yorkshire, England" ;
+#     cwrc:hasIDependencyOn data:bronemdeathContextidentifying1 ;
+#     oa:hasBody [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Brontë_Emily cwrc.hasDeathPlace Haworth, Yorkshire, England" ],
+#         [ a oa:TextualBody ;
+#             dcterms:format "text/turtle"^^xsd:string ;
+#             rdf:value "data:Brontë_Emily cwrc.hasDeathDate 1848-12-19" ] ;
+#     oa:hasTarget data:Brontë_Emily,
+#         data:bronemdeathContext_snippet1 ;
+#     oa:motivatedBy oa:describing .
+
+# data:Branwell_Elizabeth a cwrc:NaturalPerson ;
+#     foaf:name "Branwell, Elizabeth" .
+
+# data:Brontë_Maria_1814_-_1825 a cwrc:NaturalPerson ;
+#     foaf:name "Brontë, Maria,, 1814 - 1825" .
+
+# data:Brontë_Maria_Branwell a cwrc:NaturalPerson ;
+#     cwrc:hasOccupation "Writer" ;
+#     foaf:name "Brontë, Maria Branwell" .
+
+# data:Brontë_Patrick a cwrc:NaturalPerson ;
+#     cwrc:hasOccupation "Poet" ;
+#     cwrc:hasPaidOccupation "Author",
+#         "Clergyman",
+#         "Tutor" ;
+#     cwrc:hasVolunteerOccupation "Fundraiser" ;
+#     foaf:name "Brontë, Patrick" .
+
+# data:bronem_CulturalFormContext1_identifying a cwrc:CulturalFormContext ;
+#     rdfs:label "Brontë, Emily CulturalFormContext identifying annotation" ;
+#     oa:hasBody data:Brontë_Emily,
+#         cwrc:Anglican_Church_ORG,
+#         cwrc:anglicanism,
+#         cwrc:professional,
+#         "GB-ENG"^^xsd:string,
+#         "IE"^^xsd:string ;
+#     oa:hasTarget data:bronem_CulturalFormContext1_Snippet ;
+#     oa:motivatedBy oa:identifying .
+
+# data:bronem_CulturalFormContext2_Snippet a oa:TextualBody ;
+#     rdfs:label "Brontë, Emily CulturalFormContext snippet" ;
+#     dctypes:description "EB was influentially represented by her sister Charlotte, in her biographical preface to the 1850 edition of Wuthering Heights, as living apart from the world, a homebody who was not naturally gregarious and had scarcely..."^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#BirthandContext> .
+
+# data:bronem_LeisureContext1_Snippet a oa:TextualBody ;
+#     rdfs:label "Brontë, Emily LeisureContext snippet" ;
+#     dctypes:description "During childhood and early adulthood the Brontë siblings produced elaborate fantasy worlds, which they acted out as plays, in part with toy figures. These worlds came to have individualized personae, geographies, and histories, which were..."^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#Gondal> .
+
+# data:bronem_MentalHealthContext2_Snippet a oa:TextualBody ;
+#     rdfs:label "Brontë, Emily MentalHealthContext snippet" ;
+#     dctypes:description "In a letter to Ellen Nussey, Charlotte described her sister's arduous duties there: Hard labour from six in the morning until near eleven at night. with only one half hour of exercise between—this is slaverydlk:..."^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#Teaching> .
+
+# data:bronem_PhysicalHealthContext1_Snippet a oa:TextualBody ;
+#     rdfs:label "Brontë, Emily PhysicalHealthContext snippet" ;
+#     dctypes:description "EB apparently had a very independent character. In a famous incident related to Elizabeth Gaskell by Charlotte, Emily tried to help a possibly rabid dog, only to have it bite her. She immediately went inside..."^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#Gondal> .
+
+# data:bronem_PhysicalHealthContext3_Snippet a oa:TextualBody ;
+#     rdfs:label "Brontë, Emily PhysicalHealthContext snippet" ;
+#     dctypes:description "Emily refused to answer her sister's anxious questions, consult a doctor, or take any medicine. Although her condition steadily worsened, as late as 7 December Charlotte still held out hope: I must cling to the..."^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#FinalIllnessandDeath> .
+
+# data:bronem_PhysicalHealthContext4_Snippet a oa:TextualBody ;
+#     rdfs:label "Brontë, Emily PhysicalHealthContext snippet" ;
+#     dctypes:description "7 November 1848 In a letter to her publisher, Charlotte Brontë reported with concern that her sister Emily was too ill to write: she had a cough and fever. 2: 138"^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#FinalIllnessandDeath> .
+
+# data:bronem_SpatialContext_travelsTo_1_identifying a cwrc:SpatialContext ;
+#     rdfs:label "Brontë, Emily location identifying annotation" ;
+#     oa:hasBody data:Brontë_Anne,
+#         data:Brontë_Emily,
+#         <http://sws.geonames.org/2633352/> ;
+#     oa:hasTarget data:bronem_SpatialContext_travelsTo_1_Snippet ;
+#     oa:motivatedBy oa:identifying .
+
+# data:bronem_causeofdeath_context0_Snippet a oa:TextualBody ;
+#     rdfs:label "Brontë, Emily DeathContext snippet " ;
+#     dctypes:description "EB died of consumption at the age of thirty, at Haworth in Yorkshire."^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#Death> .
+
+# data:bronembirthContextidentifying1 oa:hasBody data:Brontë_Emily,
+#         "1818-07-30",
+#         "Thornton, Yorkshire, England" ;
+#     oa:hasTarget data:bronembirthContext_snippet1 ;
+#     oa:motivatedBy oa:describing .
+
+# data:bronemdeathContextidentifying1 oa:hasBody data:Brontë_Emily,
+#         "1848-12-19",
+#         "Haworth, Yorkshire, England" ;
+#     oa:hasTarget data:bronemdeathContext_snippet1 ;
+#     oa:motivatedBy oa:describing .
+
+# data:Brontë_Branwell a cwrc:NaturalPerson ;
+#     foaf:name "Brontë, Branwell" .
+
+# data:bronem_CulturalFormContext1_Snippet a oa:TextualBody ;
+#     rdfs:label "Brontë, Emily CulturalFormContext snippet" ;
+#     dctypes:description "Of Irish and English descent, Emily was raised in the Church of England as the daughter of a clergyman. Almost nothing is known directly of her personality and opinions; one biographer characterizes her as secretive..."^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#BirthandContext> .
+
+# data:bronem_SpatialContext_travelsTo_1_Snippet a oa:TextualBody ;
+#     rdfs:label "Brontë, Emily location snippet" ;
+#     dctypes:description "From this time EB stayed close to home, apart from a brief trip that she and Anne made to York in June 1845. During the journey she and Anne pretended they were Royalist prisoners fleeing..."^^xsd:string ;
+#     oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem#Teaching> .
+
+# data:bronembirthContext_snippet1 a oa:TextualBody ;
+#     rdfs:label "Brontë_Emily birthContext snippet" ;
+#     dctypes:description """30 July 1818 Emily Brontë, the fourth of the Brontë daughters, was born in Thornton, near Bradford in Yorkshire . 78
+# She was baptized three weeks later, on August 20. Her eldest sister, Maria, was only four years and three months old. 59, 78""" .
+
+# data:bronemdeathContext_snippet1 a oa:TextualBody ;
+#     rdfs:label "Brontë_Emily deathContext snippet" ;
+#     dctypes:description """19 December 1848 EBdied of consumption at the age of thirty, at Haworth in Yorkshire . 576
+# She was buried in the vaults of the Haworth Church three days later. 578, 656""" .
+
+#data:Brontë_Emily a cwrc:NaturalPerson ;
+#    rdfs:label "Brontë, Emily"^^xsd:string ;
+#    cwrc:hasAunt data:Branwell_Elizabeth ;
+#    cwrc:hasBirthDate "1818-07-30" ;
+#    cwrc:hasBirthPlace "Thornton, Yorkshire, England" ;
+#    cwrc:hasBrother data:Brontë_Branwell ;
+#    cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/iiTuberculosis> ;
+#    cwrc:hasDeathDate "1848-12-19" ;
+#    cwrc:hasDeathPlace "Haworth, Yorkshire, England" ;
+#    cwrc:hasFather data:Brontë_Patrick ;
+#    cwrc:hasGender cwrc:woman ;
+#    cwrc:hasMother data:Brontë_Maria_Branwell ;
+#    cwrc:hasNationalHeritage "GB-ENG"^^xsd:string,
+#        "IE"^^xsd:string ;
+#    cwrc:hasReligion cwrc:anglicanism ;
+#    cwrc:hasSister data:Brontë_Maria_1814_-_1825 ;
+#    cwrc:hasSocialClass cwrc:professional ;
+#    cwrc:travelsTo <http://sws.geonames.org/2633352/> ;
+#    org:memberOf cwrc:Anglican_Church_ORG ;
+#    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bronem> ;
+#    foaf:name "Brontë, Emily"^^xsd:string .
