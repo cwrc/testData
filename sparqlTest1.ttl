@@ -16,84 +16,355 @@
 
 <http://cwrc.ca/cwrcdata/Alcott_Louisa_May> cwrc:hasBirthDate "1832-11-29"^^xsd:date ;
 	rdfs:label "Alcott, Louisa May"^^xsd:string ;
-	cwrc:hasPaidOccupation cwrc:companion , cwrc:editing , cwrc:governess , cwrc:needlework , cwrc:nursing , cwrc:servant , cwrc:teacher , cwrc:writer .
+	cwrc:hasPaidOccupation cwrc:teacher .
 
-<http://cwrc.ca/cwrcdata/Besant_Annie> cwrc:hasBirthDate "1847-10-01"^^xsd:date ;
-	rdfs:label "Besant, Annie"^^xsd:string ;
-	cwrc:hasPaidOccupation cwrc:clericalWork , cwrc:governess .
+<http://cwrc.ca/cwrcdata/Black_Clementina> cwrc:hasBirthDate "1853-07-27"^^xsd:date ;
+	rdfs:label "Black, Clementina"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
 
 <http://cwrc.ca/cwrcdata/Brontë_Charlotte> cwrc:hasBirthDate "1816-04-21"^^xsd:date ;
 	rdfs:label "Brontë, Charlotte"^^xsd:string ;
-	cwrc:hasPaidOccupation cwrc:governess , cwrc:teacher .
+	cwrc:hasPaidOccupation cwrc:teacher ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
 
-<http://cwrc.ca/cwrcdata/Kortright_Fanny_Aikin> cwrc:hasBirthDate "1821-01-28"^^xsd:date ;
-	rdfs:label "Kortright, Fanny Aikin"^^xsd:string ;
-	cwrc:hasPaidOccupation cwrc:educationalAdministration , cwrc:governess .
+<http://cwrc.ca/cwrcdata/Burnett_Frances_Hodgson> cwrc:hasBirthDate "1849-11-24"^^xsd:date ;
+	rdfs:label "Burnett, Frances Hodgson"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Byron_Augusta_Ada> cwrc:hasBirthDate "1815-12-10"^^xsd:date ;
+	rdfs:label "Byron, Augusta Ada"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Cable_Mildred> cwrc:hasBirthDate "1878-02-21"^^xsd:date ;
+	rdfs:label "Cable, Mildred"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Coleridge_Christabel> cwrc:hasBirthDate "1843-05-25"^^xsd:date ;
+	rdfs:label "Coleridge, Christabel"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Farr_Florence> cwrc:hasBirthDate "1860-07-07"^^xsd:date ;
+	rdfs:label "Farr, Florence"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Gawthorpe_Mary> cwrc:hasBirthDate "1881-01-12"^^xsd:date ;
+	rdfs:label "Gawthorpe, Mary"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Gilman_Charlotte_Perkins> cwrc:hasBirthDate "1860-07-03"^^xsd:date ;
+	rdfs:label "Gilman, Charlotte Perkins"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Glasier_Katharine_Bruce> cwrc:hasBirthDate "1867-09-25"^^xsd:date ;
+	rdfs:label "Glasier, Katharine Bruce"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Grand_Sarah> cwrc:hasBirthDate "1854-06-10"^^xsd:date ;
+	rdfs:label "Grand, Sarah"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Greenwell_Dora> cwrc:hasBirthDate "1821-12-06"^^xsd:date ;
+	rdfs:label "Greenwell, Dora"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Hamilton_Mary_Agnes> cwrc:hasBirthDate "1882-07-08"^^xsd:date ;
+	rdfs:label "Hamilton, Mary Agnes"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Harrison_Jane_Ellen> cwrc:hasBirthDate "1850-09-09"^^xsd:date ;
+	rdfs:label "Harrison, Jane Ellen"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Howitt_Anna_Mary> cwrc:hasBirthDate "1824-01-15"^^xsd:date ;
+	rdfs:label "Howitt, Anna Mary"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Kemble_Adelaide> cwrc:hasBirthDate "1815-11-06"^^xsd:date ;
+	rdfs:label "Kemble, Adelaide"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Lyall_Edna> cwrc:hasBirthDate "1857-03-25"^^xsd:date ;
+	rdfs:label "Lyall, Edna"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Lytton_Constance> cwrc:hasBirthDate "1869-02-12"^^xsd:date ;
+	rdfs:label "Lytton, Constance"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Macaulay_Rose> cwrc:hasBirthDate "1881-08-01"^^xsd:date ;
+	rdfs:label "Macaulay, Rose"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Marsden_Dora> cwrc:hasBirthDate "1882-03-05"^^xsd:date ;
+	rdfs:label "Marsden, Dora"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Morrell_Lady_Ottoline> cwrc:hasBirthDate "1873-06-16"^^xsd:date ;
+	rdfs:label "Morrell, Lady Ottoline"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Nightingale_Florence> cwrc:hasBirthDate "1820-05-12"^^xsd:date ;
+	rdfs:label "Nightingale, Florence"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Peard_Frances_Mary> cwrc:hasBirthDate "1835-05-16"^^xsd:date ;
+	rdfs:label "Peard, Frances Mary"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
 
 <http://cwrc.ca/cwrcdata/Rossetti_Christina> cwrc:hasBirthDate "1830-12-05"^^xsd:date ;
 	rdfs:label "Rossetti, Christina"^^xsd:string ;
-	cwrc:hasPaidOccupation cwrc:governess , cwrc:teacher .
+	cwrc:hasFamilyBasedOccupation cwrc:teacher ;
+	cwrc:hasPaidOccupation cwrc:teacher ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
 
-<http://cwrc.ca/cwrcdata/Schreiner_Olive> cwrc:hasBirthDate "1855-03-24"^^xsd:date ;
-	rdfs:label "Schreiner, Olive"^^xsd:string ;
-	cwrc:hasPaidOccupation cwrc:governess , cwrc:writer .
+<http://cwrc.ca/cwrcdata/Royden_Maude> cwrc:hasBirthDate "1876-11-23"^^xsd:date ;
+	rdfs:label "Royden, Maude"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
 
-<http://cwrc.ca/cwrcdata/Brazil_Angela> cwrc:hasBirthDate "1869-11-30"^^xsd:date ;
-	rdfs:label "Brazil, Angela"^^xsd:string ;
-	cwrc:hasPaidOccupation cwrc:governess .
+<http://cwrc.ca/cwrcdata/Sewell_Elizabeth> cwrc:hasBirthDate "1815-02-19"^^xsd:date ;
+	rdfs:label "Sewell, Elizabeth"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
 
-<http://cwrc.ca/cwrcdata/Chant_Laura_Ormiston> cwrc:hasBirthDate "1848-10-09"^^xsd:date ;
-	rdfs:label "Chant, Laura Ormiston"^^xsd:string ;
-	cwrc:hasPaidOccupation cwrc:companion , cwrc:governess , cwrc:nursing , cwrc:teacher , cwrc:mentalHealthProfessional .
+<http://cwrc.ca/cwrcdata/Sharp_Evelyn> cwrc:hasBirthDate "1869-08-04"^^xsd:date ;
+	rdfs:label "Sharp, Evelyn"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
 
-<http://cwrc.ca/cwrcdata/Garnett_Constance> cwrc:hasBirthDate "1861-12-19"^^xsd:date ;
-	rdfs:label "Garnett, Constance"^^xsd:string ;
-	cwrc:hasPaidOccupation "Translator" , cwrc:academic , cwrc:governess , cwrc:librarian , cwrc:translator .
+<http://cwrc.ca/cwrcdata/Steel_Flora_Annie> cwrc:hasBirthDate "1847-04-02"^^xsd:date ;
+	rdfs:label "Steel, Flora Annie"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
 
-<http://cwrc.ca/cwrcdata/Leonowens_Anna> cwrc:hasBirthDate "1831-11-06"^^xsd:date ;
-	rdfs:label "Leonowens, Anna"^^xsd:string ;
-	cwrc:hasPaidOccupation cwrc:academic , cwrc:educationalAdministration , cwrc:governess , cwrc:journalist , cwrc:professor , cwrc:teacher , cwrc:translator , cwrc:writer .
+<http://cwrc.ca/cwrcdata/Voynich_Ethel_Lilian> cwrc:hasBirthDate "1864-05-11"^^xsd:date ;
+	rdfs:label "Voynich, Ethel Lilian"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
 
-<http://cwrc.ca/cwrcdata/Richardson_Dorothy> cwrc:hasBirthDate "1873-05-17"^^xsd:date ;
-	rdfs:label "Richardson, Dorothy"^^xsd:string ;
-	cwrc:hasPaidOccupation cwrc:clericalWork , cwrc:governess , cwrc:healthCareProvider , cwrc:journalist , cwrc:teacher , cwrc:writer .
+<http://cwrc.ca/cwrcdata/Weaver_Harriet_Shaw> cwrc:hasBirthDate "1876-09-01"^^xsd:date ;
+	rdfs:label "Weaver, Harriet Shaw"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Wells_H_G> cwrc:hasBirthDate "1866-09-21"^^xsd:date ;
+	rdfs:label "Wells, H. G."^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Woolf_Virginia> cwrc:hasBirthDate "1882-01-25"^^xsd:date ;
+	rdfs:label "Woolf, Virginia"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
 
 <http://cwrc.ca/cwrcdata/Shaw_Flora> cwrc:hasBirthDate "1852-12-19"^^xsd:date ;
 	rdfs:label "Shaw, Flora"^^xsd:string ;
-	cwrc:hasVolunteerOccupation cwrc:governess , cwrc:hostess , cwrc:housekeeper , cwrc:nursing , cwrc:refugeeWork , cwrc:teacher , cwrc:lobbyist .
+	cwrc:hasPaidOccupation cwrc:teacher ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Sidgwick_Ethel> cwrc:hasBirthDate "1877-12-20"^^xsd:date ;
+	rdfs:label "Sidgwick, Ethel"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Smedley_Constance> cwrc:hasBirthDate "1876-06-20"^^xsd:date ;
+	rdfs:label "Smedley, Constance"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Stopes_Charlotte> cwrc:hasBirthDate "1840-02-05"^^xsd:date ;
+	rdfs:label "Stopes, Charlotte"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Taylor_Mary> cwrc:hasBirthDate "1817-02-26"^^xsd:date ;
+	rdfs:label "Taylor, Mary"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Tucker_Charlotte_Maria> cwrc:hasBirthDate "1821-05-08"^^xsd:date ;
+	rdfs:label "Tucker, Charlotte Maria"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Tytler_Harriet> cwrc:hasBirthDate "1828-10-03"^^xsd:date ;
+	rdfs:label "Tytler, Harriet"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Tytler_Sarah> cwrc:hasBirthDate "1827-03-04"^^xsd:date ;
+	rdfs:label "Tytler, Sarah"^^xsd:string ;
+	cwrc:hasFamilyBasedOccupation cwrc:teacher ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Wickham_Anna> cwrc:hasBirthDate "1883-05-07"^^xsd:date ;
+	rdfs:label "Wickham, Anna"^^xsd:string ;
+	cwrc:hasFamilyBasedOccupation cwrc:teacher ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Allen_Grant> cwrc:hasBirthDate "1848-02-24"^^xsd:date ;
+	rdfs:label "Allen, Grant"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
 
 <http://cwrc.ca/cwrcdata/Barker_Mary_Anne> cwrc:hasBirthDate "1831-05-29"^^xsd:date ;
 	rdfs:label "Barker, Mary Anne"^^xsd:string ;
-	cwrc:hasPaidOccupation "_writing_"^^xsd:string , cwrc:academic , cwrc:editing , cwrc:farming , cwrc:governess , cwrc:journalist , cwrc:teacher , cwrc:writer .
+	cwrc:hasPaidOccupation cwrc:teacher ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
 
-<http://cwrc.ca/cwrcdata/Brontë_Anne> cwrc:hasBirthDate "1820-01-17"^^xsd:date ;
-	rdfs:label "Brontë, Anne"^^xsd:string ;
-	cwrc:hasPaidOccupation cwrc:governess .
+<http://cwrc.ca/cwrcdata/Brontë_Emily> cwrc:hasBirthDate "1818-07-30"^^xsd:date ;
+	rdfs:label "Brontë, Emily"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
 
-<http://cwrc.ca/cwrcdata/Harper_Frances_E_W> cwrc:hasBirthDate "1825-09-24"^^xsd:date ;
-	rdfs:label "Harper, Frances E. W."^^xsd:string ;
-	cwrc:hasPaidOccupation "_school administrator_"^^xsd:string , cwrc:governess , cwrc:housekeeper , cwrc:professor , cwrc:servant , cwrc:teacher .
+<http://cwrc.ca/cwrcdata/Bussy_Dorothy> cwrc:hasBirthDate "1865-07-24"^^xsd:date ;
+	rdfs:label "Bussy, Dorothy"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
 
-<http://cwrc.ca/cwrcdata/Havergal_Frances_Ridley> cwrc:hasBirthDate "1836-12-14"^^xsd:date ;
-	rdfs:label "Havergal, Frances Ridley"^^xsd:string ;
-	cwrc:hasVolunteerOccupation cwrc:founder , cwrc:governess , cwrc:religious , cwrc:teacher , cwrc:mountaineering .
+<http://cwrc.ca/cwrcdata/Campbell_Lady_Colin> cwrc:hasBirthDate "1857-05-03"^^xsd:date ;
+	rdfs:label "Campbell, Lady Colin"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
 
-<http://cwrc.ca/cwrcdata/Hickey_Emily> cwrc:hasBirthDate "1845-04-12"^^xsd:date ;
-	rdfs:label "Hickey, Emily"^^xsd:string ;
-	cwrc:hasPaidOccupation cwrc:clericalWork , cwrc:companion , cwrc:governess , cwrc:teacher .
+<http://cwrc.ca/cwrcdata/Cary_Mary_Ann_Shadd> cwrc:hasBirthDate "1823-10-09"^^xsd:date ;
+	rdfs:label "Cary, Mary Ann Shadd"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
 
-<http://cwrc.ca/cwrcdata/Linskill_Mary> cwrc:hasBirthDate "1840-12-13"^^xsd:date ;
-	rdfs:label "Linskill, Mary"^^xsd:string ;
-	cwrc:hasPaidOccupation cwrc:companion , cwrc:dressmaking , cwrc:governess , cwrc:teacher , cwrc:writer , cwrc:matron .
+<http://cwrc.ca/cwrcdata/Clapperton_Jane_Hume> cwrc:hasBirthDate "1832-09-22"^^xsd:date ;
+	rdfs:label "Clapperton, Jane Hume"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
 
-<http://cwrc.ca/cwrcdata/Lynch_Hannah> cwrc:hasBirthDate "1859-03-25"^^xsd:date ;
-	rdfs:label "Lynch, Hannah"^^xsd:string ;
-	cwrc:hasPaidOccupation "_editig_"^^xsd:string , cwrc:governess , cwrc:journalist , cwrc:translator , cwrc:writer .
+<http://cwrc.ca/cwrcdata/Coleridge_Mary_Elizabeth> cwrc:hasBirthDate "1861-09-23"^^xsd:date ;
+	rdfs:label "Coleridge, Mary Elizabeth"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Ewing_Juliana_Horatia> cwrc:hasBirthDate "1841-08-03"^^xsd:date ;
+	rdfs:label "Ewing, Juliana Horatia"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Yonge_Charlotte> cwrc:hasBirthDate "1823-08-11"^^xsd:date ;
+	rdfs:label "Yonge, Charlotte"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Aguilar_Grace> cwrc:hasBirthDate "1816-06-02"^^xsd:date ;
+	rdfs:label "Aguilar, Grace"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Banks_Isabella> cwrc:hasBirthDate "1821-03-25"^^xsd:date ;
+	rdfs:label "Banks, Isabella"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Blackwell_Antoinette_Brown> cwrc:hasBirthDate "1825-05-20"^^xsd:date ;
+	rdfs:label "Blackwell, Antoinette Brown"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Carey_Rosa_Nouchette> cwrc:hasBirthDate "1840-09-24"^^xsd:date ;
+	rdfs:label "Carey, Rosa Nouchette"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Cather_Willa> cwrc:hasBirthDate "1873-12-07"^^xsd:date ;
+	rdfs:label "Cather, Willa"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Chant_Laura_Ormiston> cwrc:hasBirthDate "1848-10-09"^^xsd:date ;
+	rdfs:label "Chant, Laura Ormiston"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Craik_Dinah_Mulock> cwrc:hasBirthDate "1826-04-20"^^xsd:date ;
+	rdfs:label "Craik, Dinah Mulock"^^xsd:string ;
+	cwrc:hasFamilyBasedOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Davis_Rebecca_Harding> cwrc:hasBirthDate "1831-06-24"^^xsd:date ;
+	rdfs:label "Davis, Rebecca Harding"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Duncan_Sara_Jeannette> cwrc:hasBirthDate "1861-12-22"^^xsd:date ;
+	rdfs:label "Duncan, Sara Jeannette"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Innes_Kathleen_E> cwrc:hasBirthDate "1883-01-15"^^xsd:date ;
+	rdfs:label "Innes, Kathleen E."^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Jex-Blake_Sophia> cwrc:hasBirthDate "1840-01-21"^^xsd:date ;
+	rdfs:label "Jex-Blake, Sophia"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Leonowens_Anna> cwrc:hasBirthDate "1831-11-06"^^xsd:date ;
+	rdfs:label "Leonowens, Anna"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Levy_Amy> cwrc:hasBirthDate "1861-11-10"^^xsd:date ;
+	rdfs:label "Levy, Amy"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Mario_Jessie_White> cwrc:hasBirthDate "1832-05-09"^^xsd:date ;
+	rdfs:label "Mario, Jessie White"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Markievicz_Constance_Countess> cwrc:hasBirthDate "1868-02-04"^^xsd:date ;
+	rdfs:label "Markievicz, Constance,,, Countess"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Marsh_Catherine> cwrc:hasBirthDate "1818-09-15"^^xsd:date ;
+	rdfs:label "Marsh, Catherine"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Marshall_Emma> cwrc:hasBirthDate "1828-09-29"^^xsd:date ;
+	rdfs:label "Marshall, Emma"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Naden_Constance> cwrc:hasBirthDate "1858-01-24"^^xsd:date ;
+	rdfs:label "Naden, Constance"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Procter_Adelaide> cwrc:hasBirthDate "1825-10-30"^^xsd:date ;
+	rdfs:label "Procter, Adelaide"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Richardson_Dorothy> cwrc:hasBirthDate "1873-05-17"^^xsd:date ;
+	rdfs:label "Richardson, Dorothy"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Richardson_Henry_Handel> cwrc:hasBirthDate "1870-01-03"^^xsd:date ;
+	rdfs:label "Richardson, Henry Handel"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Veley_Margaret> cwrc:hasBirthDate "1843-05-12"^^xsd:date ;
+	rdfs:label "Veley, Margaret"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
 
 <http://cwrc.ca/cwrcdata/Worboise_Emma_Jane> cwrc:hasBirthDate "1825-04-20"^^xsd:date ;
 	rdfs:label "Worboise, Emma Jane"^^xsd:string ;
-	cwrc:hasPaidOccupation cwrc:governess , cwrc:teacher .
+	cwrc:hasPaidOccupation cwrc:teacher .
 
 <http://cwrc.ca/cwrcdata/Brame_Charlotte_Mary> cwrc:hasBirthDate "1836-11-01"^^xsd:date ;
 	rdfs:label "Brame, Charlotte Mary"^^xsd:string ;
-	cwrc:hasPaidOccupation cwrc:governess , cwrc:journalist , cwrc:writer .
+	cwrc:hasFamilyBasedOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Hamilton_Cicely> cwrc:hasBirthDate "1872-06-15"^^xsd:date ;
+	rdfs:label "Hamilton, Cicely"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Harper_Frances_E_W> cwrc:hasBirthDate "1825-09-24"^^xsd:date ;
+	rdfs:label "Harper, Frances E. W."^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Havergal_Frances_Ridley> cwrc:hasBirthDate "1836-12-14"^^xsd:date ;
+	rdfs:label "Havergal, Frances Ridley"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Hickey_Emily> cwrc:hasBirthDate "1845-04-12"^^xsd:date ;
+	rdfs:label "Hickey, Emily"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Klickmann_Flora> cwrc:hasBirthDate "1867-01-26"^^xsd:date ;
+	rdfs:label "Klickmann, Flora"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Le_Plongeon_Alice_Dixon> cwrc:hasBirthDate "1851-12-21"^^xsd:date ;
+	rdfs:label "Le Plongeon, Alice Dixon"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Linskill_Mary> cwrc:hasBirthDate "1840-12-13"^^xsd:date ;
+	rdfs:label "Linskill, Mary"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher ;
+	cwrc:hasVolunteerOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Montgomery_L_M> cwrc:hasBirthDate "1874-11-30"^^xsd:date ;
+	rdfs:label "Montgomery, L. M."^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:teacher .
+
+<http://cwrc.ca/cwrcdata/Moss_Marion> cwrc:hasBirthDate "1821-10-22"^^xsd:date ;
+	rdfs:label "Moss, Marion"^^xsd:string ;
+	cwrc:hasFamilyBasedOccupation cwrc:teacher .
