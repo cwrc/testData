@@ -1,0 +1,22 @@
+PREFIX marcrel: <http://id.loc.gov/vocabulary/relators/>
+PREFIX cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
+PREFIX genre: <http://sparql.cwrc.ca/ontologies/genre#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+CONSTRUCT {
+  ?person cwrc:hasBirthDate ?birthDate .
+  ?person rdfs:label ?label .
+  ?person ?p cwrc:governess .
+  ?person rdfs:label ?label .
+}
+WHERE {
+  ?person a cwrc:NaturalPerson .
+  ?person cwrc:hasBirthDate ?birthDate .
+  ?person rdfs:label ?label .
+  ?person ?p cwrc:governess .
+  FILTER ((?birthDate >= '1814-01-01'^^xsd:date) && (?birthDate <= '1884-01-01'^^xsd:date))
+    
+} LIMIT 100
