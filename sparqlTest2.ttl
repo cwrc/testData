@@ -1,22 +1,99 @@
-PREFIX marcrel: <http://id.loc.gov/vocabulary/relators/>
-PREFIX cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
-PREFIX genre: <http://sparql.cwrc.ca/ontologies/genre#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
+@prefix marcrel: <http://id.loc.gov/vocabulary/relators/> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix genre: <http://sparql.cwrc.ca/ontologies/genre#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix hint: <http://www.bigdata.com/queryHints#> .
+@prefix bd: <http://www.bigdata.com/rdf#> .
+@prefix bds: <http://www.bigdata.com/rdf/search#> .
 
-CONSTRUCT {
-  ?person cwrc:hasBirthDate ?birthDate .
-  ?person rdfs:label ?label .
-  ?person ?p cwrc:governess .
-  ?person rdfs:label ?label .
-}
-WHERE {
-  ?person a cwrc:NaturalPerson .
-  ?person cwrc:hasBirthDate ?birthDate .
-  ?person rdfs:label ?label .
-  ?person ?p cwrc:governess .
-  FILTER ((?birthDate >= '1814-01-01'^^xsd:date) && (?birthDate <= '1884-01-01'^^xsd:date))
-    
-} LIMIT 100
+<http://cwrc.ca/cwrcdata/Alcott_Louisa_May> cwrc:hasBirthDate "1832-11-29"^^xsd:date ;
+	rdfs:label "Alcott, Louisa May"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:governess .
+
+<http://cwrc.ca/cwrcdata/Besant_Annie> cwrc:hasBirthDate "1847-10-01"^^xsd:date ;
+	rdfs:label "Besant, Annie"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:governess .
+
+<http://cwrc.ca/cwrcdata/Brontë_Charlotte> cwrc:hasBirthDate "1816-04-21"^^xsd:date ;
+	rdfs:label "Brontë, Charlotte"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:governess .
+
+<http://cwrc.ca/cwrcdata/Kortright_Fanny_Aikin> cwrc:hasBirthDate "1821-01-28"^^xsd:date ;
+	rdfs:label "Kortright, Fanny Aikin"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:governess .
+
+<http://cwrc.ca/cwrcdata/Rossetti_Christina> cwrc:hasBirthDate "1830-12-05"^^xsd:date ;
+	rdfs:label "Rossetti, Christina"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:governess .
+
+<http://cwrc.ca/cwrcdata/Schreiner_Olive> cwrc:hasBirthDate "1855-03-24"^^xsd:date ;
+	rdfs:label "Schreiner, Olive"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:governess .
+
+<http://cwrc.ca/cwrcdata/Brazil_Angela> cwrc:hasBirthDate "1869-11-30"^^xsd:date ;
+	rdfs:label "Brazil, Angela"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:governess .
+
+<http://cwrc.ca/cwrcdata/Chant_Laura_Ormiston> cwrc:hasBirthDate "1848-10-09"^^xsd:date ;
+	rdfs:label "Chant, Laura Ormiston"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:governess .
+
+<http://cwrc.ca/cwrcdata/Garnett_Constance> cwrc:hasBirthDate "1861-12-19"^^xsd:date ;
+	rdfs:label "Garnett, Constance"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:governess .
+
+<http://cwrc.ca/cwrcdata/Leonowens_Anna> cwrc:hasBirthDate "1831-11-06"^^xsd:date ;
+	rdfs:label "Leonowens, Anna"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:governess .
+
+<http://cwrc.ca/cwrcdata/Richardson_Dorothy> cwrc:hasBirthDate "1873-05-17"^^xsd:date ;
+	rdfs:label "Richardson, Dorothy"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:governess .
+
+<http://cwrc.ca/cwrcdata/Shaw_Flora> cwrc:hasBirthDate "1852-12-19"^^xsd:date ;
+	rdfs:label "Shaw, Flora"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:governess .
+
+<http://cwrc.ca/cwrcdata/Barker_Mary_Anne> cwrc:hasBirthDate "1831-05-29"^^xsd:date ;
+	rdfs:label "Barker, Mary Anne"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:governess .
+
+<http://cwrc.ca/cwrcdata/Brontë_Anne> cwrc:hasBirthDate "1820-01-17"^^xsd:date ;
+	rdfs:label "Brontë, Anne"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:governess .
+
+<http://cwrc.ca/cwrcdata/Harper_Frances_E_W> cwrc:hasBirthDate "1825-09-24"^^xsd:date ;
+	rdfs:label "Harper, Frances E. W."^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:governess .
+
+<http://cwrc.ca/cwrcdata/Havergal_Frances_Ridley> cwrc:hasBirthDate "1836-12-14"^^xsd:date ;
+	rdfs:label "Havergal, Frances Ridley"^^xsd:string ;
+	cwrc:hasVolunteerOccupation cwrc:governess .
+
+<http://cwrc.ca/cwrcdata/Hickey_Emily> cwrc:hasBirthDate "1845-04-12"^^xsd:date ;
+	rdfs:label "Hickey, Emily"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:governess .
+
+<http://cwrc.ca/cwrcdata/Linskill_Mary> cwrc:hasBirthDate "1840-12-13"^^xsd:date ;
+	rdfs:label "Linskill, Mary"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:governess .
+
+<http://cwrc.ca/cwrcdata/Lynch_Hannah> cwrc:hasBirthDate "1859-03-25"^^xsd:date ;
+	rdfs:label "Lynch, Hannah"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:governess .
+
+<http://cwrc.ca/cwrcdata/Worboise_Emma_Jane> cwrc:hasBirthDate "1825-04-20"^^xsd:date ;
+	rdfs:label "Worboise, Emma Jane"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:governess .
+
+<http://cwrc.ca/cwrcdata/Brame_Charlotte_Mary> cwrc:hasBirthDate "1836-11-01"^^xsd:date ;
+	rdfs:label "Brame, Charlotte Mary"^^xsd:string ;
+	cwrc:hasPaidOccupation cwrc:governess .
