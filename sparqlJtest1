@@ -1,13 +1,3 @@
-CWRC SPARQL
-Home
-CWRC SPARQL
-Documentation
-Release Notes
-Queryx
-+
-http://sparql.cwrc.ca/sparql
-
-2000
 PREFIX marcrel: <http://id.loc.gov/vocabulary/relators/>
 PREFIX cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
