@@ -1,0 +1,760 @@
+CWRC SPARQL
+Home
+CWRC SPARQL
+Documentation
+Release Notes
+Queryx
++
+http://sparql.cwrc.ca/sparql
+
+2000
+PREFIX marcrel: <http://id.loc.gov/vocabulary/relators/>
+PREFIX cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
+PREFIX genre: <http://sparql.cwrc.ca/ontologies/genre#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+​
+CONSTRUCT {
+  ?person cwrc:hasBirthDate ?birthDate .
+  ?person rdfs:label ?label .
+  ?person ?property cwrc:judaism .
+  ?person ?p ?o .
+}
+WHERE {
+  ?person a cwrc:NaturalPerson .
+  ?person cwrc:hasBirthDate ?birthDate .
+  ?person rdfs:label ?label .
+  ?person ?property cwrc:judaism .
+  ?person ?p ?o .
+} LIMIT 2000
+​
+​
+</>
+
+@prefix marcrel: <http://id.loc.gov/vocabulary/relators/> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix genre: <http://sparql.cwrc.ca/ontologies/genre#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix hint: <http://www.bigdata.com/queryHints#> .
+@prefix bd: <http://www.bigdata.com/rdf#> .
+@prefix bds: <http://www.bigdata.com/rdf/search#> .
+​
+<http://cwrc.ca/cwrcdata/Spark_Muriel> cwrc:hasBirthDate "1918-02-01"^^xsd:date ;
+    rdfs:label "Spark, Muriel"^^xsd:string ;
+    cwrc:hasReligion cwrc:judaism ;
+    cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Knopf_Blanche> ;
+    cwrc:hasReligionSelfReported cwrc:judaism ;
+    cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Sitwell_Edith> , <http://cwrc.ca/cwrcdata/Auw_Ivan_von> , <http://cwrc.ca/cwrcdata/Brooke-Rose_Christine> , <http://cwrc.ca/cwrcdata/Campbell_Roy> , <http://cwrc.ca/cwrcdata/Friedmann_Rudolph> , <http://cwrc.ca/cwrcdata/Heath-Stubbs_John> , <http://cwrc.ca/cwrcdata/Heppenstall_Rayner> , <http://cwrc.ca/cwrcdata/Highsmith_Patricia> , <http://cwrc.ca/cwrcdata/Humphreys_T_Christmas> , <http://cwrc.ca/cwrcdata/Lazzari_Tiny> , <http://cwrc.ca/cwrcdata/Methven_Colin> , <http://cwrc.ca/cwrcdata/Palmer_Herbert> , <http://cwrc.ca/cwrcdata/Pietrkiewicz_Jerzy> , <http://cwrc.ca/cwrcdata/Sewell_Brocard> , <http://cwrc.ca/cwrcdata/Seymour_William_Kean> , <http://cwrc.ca/cwrcdata/Stanford_Derek> , <http://cwrc.ca/cwrcdata/Stannard_Martin> , <http://cwrc.ca/cwrcdata/Stopes_Marie> , <http://cwrc.ca/cwrcdata/Strachan_Tony> , <http://cwrc.ca/cwrcdata/Tate_Allen> , <http://cwrc.ca/cwrcdata/Wade_Rosalind> ;
+    cwrc:hasIntimateRelationshipWith <http://cwrc.ca/cwrcdata/Bassett_Woody> , <http://cwrc.ca/cwrcdata/Jardine_Penelope> ;
+    cwrc:hasOccupationIncome "Her salary was six pounds a week" , "Her salary was thirty pounds per month" , "She received no pay, but only free tuition in shorthand and typing" , "She was paid ¥4.17s.6d. a week." , "three pounds a month, which gradually increased to twice that sum" ;
+    cwrc:hasPaidOccupation cwrc:clericalWork , cwrc:editing , cwrc:journalist , cwrc:publishing , cwrc:teacher , cwrc:writer , cwrc:writerInResidence ;
+    cwrc:hasPossiblyEroticRelationshipWith <http://cwrc.ca/cwrcdata/Sergeant_Howard> ;
+    cwrc:inhabits <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2650225/> , <http://sws.geonames.org/3169070/> , <http://sws.geonames.org/3165361/> , <http://sws.geonames.org/3182884/> , <http://sws.geonames.org/878675/> , <http://sws.geonames.org/886763/> , <http://sws.geonames.org/890422/> ;
+    cwrc:migratesFrom <http://sws.geonames.org/6269131/> , <http://sws.geonames.org/5128581/> ;
+    cwrc:migratesTo <http://sws.geonames.org/5128581/> , <http://sws.geonames.org/2266877/> , <http://sws.geonames.org/3172328/> .
+​
+<http://cwrc.ca/cwrcdata/Leavis_Q_D> cwrc:hasBirthDate "1906-12-07"^^xsd:date ;
+    rdfs:label "Leavis, Q. D."^^xsd:string ;
+    cwrc:hasReligionSelfReported cwrc:judaism ;
+    cwrc:hasNationalHeritage "PL"^^xsd:string ;
+    cwrc:hasNationalHeritageSelfReported "GB-ENG"^^xsd:string ;
+    cwrc:hasSexualitySelfReported cwrc:heterosexual ;
+    cwrc:hasBirthPlace <http://sws.geonames.org/2643743/> ;
+    cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_circulatory_system> ;
+    cwrc:hasChildren "3" ;
+    cwrc:hasCredential cwrc:bachelorOfArts ;
+    cwrc:hasDeathDate "1981-03-17"^^xsd:date ;
+    cwrc:hasDeathPlace <http://sws.geonames.org/2653941/> ;
+    cwrc:hasEmployer cwrc:Cambridge_University_ORG , cwrc:Churchill_College_Cambridge_University_ORG , cwrc:Gonville_and_Caius_College_Cambridge_University_ORG , cwrc:Newnham_College_Cambridge_University_ORG ;
+    cwrc:hasEroticRelationshipWith <http://cwrc.ca/cwrcdata/Leavis_F_R> ;
+    cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Jameson_Storm> , <http://cwrc.ca/cwrcdata/Bradbrook_Muriel> , <http://cwrc.ca/cwrcdata/Empson_William> , <http://cwrc.ca/cwrcdata/Johnson_William_Ernest> , <http://cwrc.ca/cwrcdata/Leavis_F_R> , <http://cwrc.ca/cwrcdata/OMalley_Dorothy> , <http://cwrc.ca/cwrcdata/Wittgenstein_Ludwig> ;
+    cwrc:hasPaidOccupation cwrc:academic , cwrc:editing , cwrc:manager , cwrc:teacher , cwrc:writer ;
+    cwrc:relocatesTo <http://sws.geonames.org/2653941/> ;
+    cwrc:studies <http://id.loc.gov/authorities/subjects/sh85059867> , <http://id.loc.gov/authorities/subjects/sh99001562> ;
+    <http://www.w3.org/ns/org#memberOf> cwrc:Jewish_Students_Society_ORG ;
+    a cwrc:NaturalPerson ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=leavqd> ;
+    foaf:name "Leavis, Q. D."^^xsd:string .
+​
+<http://cwrc.ca/cwrcdata/Marx_Karl> cwrc:hasBirthDate "1818-05-05"^^xsd:date ;
+    rdfs:label "Marx, Karl"^^xsd:string ;
+    cwrc:hasReligion cwrc:judaism ;
+    cwrc:hasDaughter <http://cwrc.ca/cwrcdata/Marx_Eleanor> ;
+    cwrc:hasEthnicity cwrc:jewishEthnicity ;
+    cwrc:hasEvent <http://cwrc.ca/cwrcdata/marxka_migratesTo_Event1> , <http://cwrc.ca/cwrcdata/marxka_Political_Event1> ;
+    cwrc:hasGender cwrc:man ;
+    cwrc:hasReligion cwrc:protestantism ;
+    cwrc:hasSocialClass cwrc:professional ;
+    cwrc:hasWife <http://cwrc.ca/cwrcdata/Marx_Jenny> ;
+    cwrc:hasActivistInvolvementIn cwrc:socialism , cwrc:First_International_Working_Mens_Association_ORG , cwrc:League_of_the_Communists_ORG ;
+    cwrc:hasBirthPlace <http://sws.geonames.org/2821164/> ;
+    cwrc:hasDeathDate "1883-03-14"^^xsd:date ;
+    cwrc:hasDeathPlace <http://sws.geonames.org/2643743/> ;
+    cwrc:hasGenderedPoliticalActivity cwrc:socialism , cwrc:First_International_Working_Mens_Association_ORG , cwrc:League_of_the_Communists_ORG ;
+    cwrc:hasPaidOccupation cwrc:editing , cwrc:journalist , cwrc:philosopher , cwrc:socialScientist ;
+    cwrc:migratesFrom <http://sws.geonames.org/2921044/> ;
+    <http://www.w3.org/ns/org#memberOf> cwrc:First_International_Working_Mens_Association_ORG , cwrc:League_of_the_Communists_ORG ;
+    a cwrc:NaturalPerson ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=marxka> ;
+    foaf:name "Marx, Karl"^^xsd:string .
+​
+<http://cwrc.ca/cwrcdata/Spark_Muriel> cwrc:hasAunt <http://cwrc.ca/cwrcdata/Spark_Muriel_Aunt> ;
+    cwrc:hasAward <http://cwrc.ca/cwrcdata/bursary> ;
+    cwrc:hasBrother <http://cwrc.ca/cwrcdata/Camberg_Philip> ;
+    cwrc:hasChild "1" ;
+    cwrc:hasCompanion <http://cwrc.ca/cwrcdata/Cowell_Frances_Niven> ;
+    cwrc:hasEthnicity cwrc:jewishEthnicity ;
+    cwrc:hasEvent <http://cwrc.ca/cwrcdata/sparmu_inhabits_Event1> , <http://cwrc.ca/cwrcdata/sparmu_InstitutionalEducation_Event1> , <http://cwrc.ca/cwrcdata/sparmu_MentalHealth_Event1> , <http://cwrc.ca/cwrcdata/sparmu_migratesTo_Event1> , <http://cwrc.ca/cwrcdata/sparmu_migratesTo_Event2> , <http://cwrc.ca/cwrcdata/sparmu_migratesTo_Event3> , <http://cwrc.ca/cwrcdata/sparmu_Occupation_Event1> , <http://cwrc.ca/cwrcdata/sparmu_Occupation_Event2> , <http://cwrc.ca/cwrcdata/sparmu_Occupation_Event3> , <http://cwrc.ca/cwrcdata/sparmu_Occupation_Event4> , <http://cwrc.ca/cwrcdata/sparmu_Religion_Event1> , <http://cwrc.ca/cwrcdata/sparmu_Religion_Event2> , <http://cwrc.ca/cwrcdata/sparmu_relocatesTo_Event1> , <http://cwrc.ca/cwrcdata/sparmu_travelsTo_Event1> ;
+    cwrc:hasFather <http://cwrc.ca/cwrcdata/Camberg_Bernard> ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasGrandMother <http://cwrc.ca/cwrcdata/Uezzell_Adelaide> ;
+    cwrc:hasHusband <http://cwrc.ca/cwrcdata/Spark_Muriel_Husband> , <http://cwrc.ca/cwrcdata/Spark_Sydney_Oswald> ;
+    cwrc:hasInstructor <http://cwrc.ca/cwrcdata/Kay_Christina> , <http://cwrc.ca/cwrcdata/Rule_Charlotte_Brodie> ;
+    cwrc:hasMother <http://cwrc.ca/cwrcdata/Uezzell_Sarah_Elizabeth_Maude> ;
+    cwrc:hasNationalHeritageSelfReported "GB-ENG"^^xsd:string ;
+    cwrc:hasNationality "GB"^^xsd:string , "GB-SCT"^^xsd:string , cwrc:europeanNationalIdentity ;
+    cwrc:hasNationalitySelfReported "GB-SCT"^^xsd:string ;
+    cwrc:hasReligion cwrc:presbyterianism ;
+    cwrc:hasReligionSelfReported cwrc:anglicanism , cwrc:catholicism , cwrc:paganism ;
+    cwrc:hasSocialClass cwrc:shopkeepers ;
+    cwrc:hasSocialClassSelfReported cwrc:lowerMiddleClass , cwrc:skilledCraftpersonArtisan ;
+    cwrc:hasSon <http://cwrc.ca/cwrcdata/Spark_Muriel_Son_A> , <http://cwrc.ca/cwrcdata/Spark_Muriel_Son_B> ;
+    cwrc:hasBirthPlace <http://sws.geonames.org/6697585/> ;
+    cwrc:hasBirthPosition cwrc:youngestChild ;
+    cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Cancer> ;
+    cwrc:hasDeathDate "2006-04-13"^^xsd:date ;
+    cwrc:hasDeathPlace <http://sws.geonames.org/3176959/> ;
+    cwrc:hasEmployer "a public relations man" , "Argentor" , "European Affairs" , "insurance companies" , "tea company" , cwrc:Foreign_Office_ORG , <http://cwrc.ca/cwrcdata/Delmer_Sefton> , cwrc:British_Institute_of_Political_Research_ORG , cwrc:Falcon_Press_ORG , cwrc:Peter_Owen_ORG , cwrc:Poetry_Society_ORG ;
+    cwrc:hasEroticRelationshipWith <http://cwrc.ca/cwrcdata/intimate_relationship> , <http://cwrc.ca/cwrcdata/Sergeant_Howard> ;
+    cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Braybrooke_Neville> , <http://cwrc.ca/cwrcdata/English_Isobel> , <http://cwrc.ca/cwrcdata/Greene_Graham> , <http://cwrc.ca/cwrcdata/Knopf_Alfred> ;
+    cwrc:migratesTo <http://sws.geonames.org/3369157/> ;
+    cwrc:relocatesTo <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2644210/> , <http://sws.geonames.org/2650225/> , <http://sws.geonames.org/3369157/> ;
+    cwrc:studies <http://id.loc.gov/authorities/subjects/sh85061212> , <http://id.loc.gov/authorities/subjects/sh85074944> , <http://id.loc.gov/authorities/subjects/sh8511855> , <http://id.loc.gov/authorities/subjects/sh96010368> ;
+    cwrc:travelsTo "India" , "Bethlehem,Israel" , "British Virgin Islands" , "UK" , <http://sws.geonames.org/1227603/> , <http://sws.geonames.org/250441/> , <http://sws.geonames.org/2673730/> , <http://sws.geonames.org/281184/> , <http://sws.geonames.org/2921044/> , <http://sws.geonames.org/294640/> , <http://sws.geonames.org/3017382/> , <http://sws.geonames.org/3169070/> , <http://sws.geonames.org/3530597/> , <http://sws.geonames.org/6252001/> , <http://sws.geonames.org/293397/> , <http://sws.geonames.org/293418/> , <http://sws.geonames.org/294098/> , <http://www.geonames.org/294522/kefar-nahum.html> ;
+    cwrc:visits <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2650225/> , <http://sws.geonames.org/2965140/> , <http://sws.geonames.org/2988507/> , <http://sws.geonames.org/2634677/> , <http://sws.geonames.org/2656716/> , <http://sws.geonames.org/2966911/> ;
+    <http://www.w3.org/ns/org#memberOf> cwrc:Anglican_Church_ORG , cwrc:Presbyterian_Church_ORG , cwrc:Roman_Catholic_Church_ORG ;
+    a cwrc:NaturalPerson ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=sparmu> ;
+    foaf:name "Spark, Muriel"^^xsd:string .
+​
+<http://cwrc.ca/cwrcdata/Stein_Gertrude> cwrc:hasBirthDate "1874-02-03"^^xsd:date ;
+    rdfs:label "Stein, Gertrude"^^xsd:string ;
+    cwrc:hasReligionSelfReported cwrc:judaism ;
+    cwrc:hasBrother <http://cwrc.ca/cwrcdata/Stein_Leo> ;
+    cwrc:hasContestedBehaviour "GS began to distinguish herself as a woman medical student44 in response to a remark by an influential professor, William..." , "GS's relationship with William James, who taught both psychology and philosophy, was remarkable. On her examination booklet she reportedly wrote,..." , "On 5 June 1901, at a medical school faculty meeting, William Osler moved to withhold the degree of Doctor of..." , "When a fellow student appealed: Gertrude Gertrude remember the cause of women, GS replied, you don't know what it is..." ;
+    cwrc:hasEthnicitySelfReported cwrc:jewishEthnicity ;
+    cwrc:hasEvent <http://cwrc.ca/cwrcdata/steige_InstitutionalEducation_Event1> , <http://cwrc.ca/cwrcdata/steige_InstitutionalEducation_Event2> , <http://cwrc.ca/cwrcdata/steige_InstitutionalEducation_Event3> , <http://cwrc.ca/cwrcdata/steige_Occupation_Event1> , <http://cwrc.ca/cwrcdata/steige_Occupation_Event2> , <http://cwrc.ca/cwrcdata/steige_Occupation_Event3> , <http://cwrc.ca/cwrcdata/steige_Occupation_Event4> , <http://cwrc.ca/cwrcdata/steige_Occupation_Event5> , <http://cwrc.ca/cwrcdata/steige_Occupation_Event6> , <http://cwrc.ca/cwrcdata/steige_Occupation_Event7> , <http://cwrc.ca/cwrcdata/steige_relocatesTo_Event1> , <http://cwrc.ca/cwrcdata/steige_travelsTo_Event1> .
+​
+<http://cwrc.ca/cwrcdata/Cixous_Hélène> cwrc:hasBirthDate "1937-06-05"^^xsd:date ;
+    rdfs:label "Cixous, Hélène"^^xsd:string ;
+    cwrc:hasReligionSelfReported cwrc:judaism ;
+    cwrc:hasAward <http://cwrc.ca/cwrcdata/Agrégation> ;
+    cwrc:hasBrother <http://cwrc.ca/cwrcdata/Cixous_Hélène_Brother> ;
+    cwrc:hasEthnicity cwrc:arabEthnicity ;
+    cwrc:hasEthnicitySelfReported cwrc:jewishEthnicity ;
+    cwrc:hasEvent <http://cwrc.ca/cwrcdata/cixohe_InstitutionalEducation_Event1> , <http://cwrc.ca/cwrcdata/cixohe_Occupation_Event1> ;
+    cwrc:hasFather <http://cwrc.ca/cwrcdata/Cixous_Georges> ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasGeographicHeritage <http://sws.geonames.org/2589581/> ;
+    cwrc:hasGrandFather <http://cwrc.ca/cwrcdata/Cixous_Hélène_Grandfather> ;
+    cwrc:hasGrandMother <http://cwrc.ca/cwrcdata/Cixous_Hélène_Grandmother> ;
+    cwrc:hasHusband <http://cwrc.ca/cwrcdata/Berger_Guy> ;
+    cwrc:hasLinguisticAbility <http://id.loc.gov/vocabulary/languages/eng> , <http://id.loc.gov/vocabulary/languages/fre> , <http://id.loc.gov/vocabulary/languages/ara> , <http://id.loc.gov/vocabulary/languages/heb> ;
+    cwrc:hasMother <http://cwrc.ca/cwrcdata/Cixous_Eva> ;
+    cwrc:hasNationalHeritageSelfReported "DE"^^xsd:string , "FR"^^xsd:string ;
+    cwrc:hasNationality "DZ"^^xsd:string , "FR"^^xsd:string ;
+    cwrc:hasNativeLinguisticAbility <http://id.loc.gov/vocabulary/languages/ger> , <http://id.loc.gov/vocabulary/languages/spa> ;
+    cwrc:hasRaceColour cwrc:blackRaceColour , cwrc:whiteRaceColour ;
+    cwrc:hasReligion cwrc:catholicism ;
+    cwrc:hasActivistInvolvementIn cwrc:anti-Antisemitism , cwrc:anti-Racism , cwrc:feminism , cwrc:socialism ;
+    cwrc:hasBirthPlace <http://sws.geonames.org/2485926/> ;
+    cwrc:hasBirthPosition cwrc:eldestChild ;
+    cwrc:hasChildren "3" ;
+    cwrc:hasCredential cwrc:bachelorOfArts , cwrc:doctorOfPhilosophy , cwrc:postgraduateDegree , cwrc:teachingQualification ;
+    cwrc:hasCredentialSubject <http://id.loc.gov/authorities/subjects/sh85133052> , <http://id.loc.gov/authorities/subjects/sh96010368> ;
+    cwrc:hasEmployer cwrc:Columbia_University_ORG , cwrc:Dartmouth_College_ORG , cwrc:Sorbonne_University_of_Paris_ORG , cwrc:Université_de_Paris_VIII_ORG , cwrc:University_of_Bordeaux_ORG , cwrc:University_of_Nanterre_ORG , cwrc:Yale_University_ORG ;
+    cwrc:hasGenderedPoliticalActivity cwrc:anti-Antisemitism , cwrc:anti-Racism , cwrc:feminism , cwrc:socialism ;
+    cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Deleuze_Gilles> , <http://cwrc.ca/cwrcdata/Derrida_Jacques> , <http://cwrc.ca/cwrcdata/Foucault_Michel> , <http://cwrc.ca/cwrcdata/Genette_Gérard> , <http://cwrc.ca/cwrcdata/Lacan_Jacques> , <http://cwrc.ca/cwrcdata/Todorov_Tzvetan> ;
+    cwrc:hasPaidOccupation "_university instructor_"^^xsd:string , cwrc:academic , cwrc:teacher ;
+    cwrc:migratesFrom <http://sws.geonames.org/2589581/> ;
+    cwrc:studies "_james joyce, manuscripts_"^^xsd:string , "_robertson jeffers, works_"^^xsd:string , <http://id.loc.gov/authorities/subjects/sh85043777> , <http://id.loc.gov/authorities/subjects/sh85133052> , <http://id.loc.gov/authorities/subjects/sh96010368> , <http://id.loc.gov/authorities/subjects/sh99001562> , cwrc:Antony_and_Cleopatra_TITLE , cwrc:The_Tempest_TITLE ;
+    cwrc:travelsTo <http://sws.geonames.org/1831722/> , <http://sws.geonames.org/2856883/> ;
+    <http://www.w3.org/ns/org#memberOf> cwrc:Mouvement_de_libération_des_femmes_ORG , cwrc:Roman_Catholic_Church_ORG ;
+    a cwrc:NaturalPerson ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=cixohe> ;
+    foaf:name "Cixous, Hélène"^^xsd:string .
+​
+<http://cwrc.ca/cwrcdata/Leavis_Q_D> cwrc:hasAward <http://cwrc.ca/cwrcdata/scholarship> , <http://cwrc.ca/cwrcdata/Amy_Mary_Preston_Read_scholarship> , <http://cwrc.ca/cwrcdata/Charity_Reeves_Prize> , <http://cwrc.ca/cwrcdata/Ottolie_Hancock_Research_Fellow> , <http://cwrc.ca/cwrcdata/Thomas_Montefiore_Prize> ;
+    cwrc:hasChild <http://cwrc.ca/cwrcdata/Leavis_Ralph> ;
+    cwrc:hasEthnicitySelfReported cwrc:jewishEthnicity ;
+    cwrc:hasEvent <http://cwrc.ca/cwrcdata/leavqd_InstitutionalEducation_Event1> , <http://cwrc.ca/cwrcdata/leavqd_InstitutionalEducation_Event2> , <http://cwrc.ca/cwrcdata/leavqd_InstitutionalEducation_Event3> , <http://cwrc.ca/cwrcdata/leavqd_InstitutionalEducation_Event4> , <http://cwrc.ca/cwrcdata/leavqd_Occupation_Event1> , <http://cwrc.ca/cwrcdata/leavqd_Occupation_Event2> , <http://cwrc.ca/cwrcdata/leavqd_Occupation_Event3> , <http://cwrc.ca/cwrcdata/leavqd_PhysicalHealth_Event1> , <http://cwrc.ca/cwrcdata/leavqd_relocatesTo_Event1> ;
+    cwrc:hasFather <http://cwrc.ca/cwrcdata/Roth_Morris> ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasHusband <http://cwrc.ca/cwrcdata/Leavis_F_R> ;
+    cwrc:hasInstructor <http://cwrc.ca/cwrcdata/Richards_Ivor_Armstrong> ;
+    cwrc:hasMother <http://cwrc.ca/cwrcdata/Roth_Jenny> ;
+    cwrc:hasNationalHeritage "DE"^^xsd:string .
+​
+<http://cwrc.ca/cwrcdata/Laski_Marghanita> cwrc:hasBirthDate "1915-10-24"^^xsd:date ;
+    rdfs:label "Laski, Marghanita"^^xsd:string ;
+    cwrc:hasReligionSelfReported cwrc:judaism ;
+    cwrc:hasActivistInvolvementIn cwrc:liberalism ;
+    cwrc:hasReligion cwrc:judaism ;
+    cwrc:hasActivistInvolvementIn cwrc:socialism ;
+    cwrc:hasReligionReported cwrc:judaism ;
+    cwrc:hasBirthPlace <http://sws.geonames.org/2643123/> ;
+    cwrc:hasBirthPosition cwrc:eldestChild ;
+    cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_respiratory_system> ;
+    cwrc:hasChildren "2" ;
+    cwrc:hasCredential cwrc:bachelorOfArts ;
+    cwrc:hasDeathDate "1988-02-06"^^xsd:date ;
+    cwrc:hasDeathPlace <http://sws.geonames.org/2643743/> ;
+    cwrc:hasGenderedPoliticalActivity cwrc:anti-NuclearMovement , cwrc:artsAdvocacy , cwrc:liberalism , cwrc:socialism ;
+    cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Cooper_Lettice> , <http://cwrc.ca/cwrcdata/Jenkins_Elizabeth> , <http://cwrc.ca/cwrcdata/Kennedy_Margaret> , <http://cwrc.ca/cwrcdata/Battiscombe_Georgina> , <http://cwrc.ca/cwrcdata/Miller_Betty> ;
+    cwrc:hasPaidOccupation "_panellist_"^^xsd:string , cwrc:chairperson , cwrc:farming , cwrc:intelligenceWork , cwrc:journalist , cwrc:nursing , cwrc:publishing ;
+    cwrc:hasVolunteerOccupation "_member_"^^xsd:string , cwrc:committeeMember , cwrc:artsAdvocate , cwrc:linguist ;
+    cwrc:inhabits <http://sws.geonames.org/2640729/> , <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/3017382/> ;
+    cwrc:studies <http://id.loc.gov/authorities/subjects/sh85037197> .
+​
+<http://cwrc.ca/cwrcdata/Levertov_Denise> cwrc:hasBirthDate "1923-10-24"^^xsd:date ;
+    rdfs:label "Levertov, Denise"^^xsd:string ;
+    cwrc:hasReligion cwrc:judaism ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levede> ;
+    foaf:name "Levertov, Denise"^^xsd:string .
+​
+<http://cwrc.ca/cwrcdata/Levy_Amy> cwrc:hasBirthDate "1861-11-10"^^xsd:date ;
+    rdfs:label "Levy, Amy"^^xsd:string ;
+    cwrc:hasReligionSelfReported cwrc:judaism ;
+    cwrc:hasBrother <http://cwrc.ca/cwrcdata/Levy_Amy_Brother> ;
+    cwrc:hasCompanion <http://cwrc.ca/cwrcdata/Garnett_Constance> ;
+    cwrc:hasEthnicity cwrc:jewishEthnicity ;
+    cwrc:hasEvent <http://cwrc.ca/cwrcdata/levyam_InstitutionalEducation_Event1> , <http://cwrc.ca/cwrcdata/levyam_InstitutionalEducation_Event2> , <http://cwrc.ca/cwrcdata/levyam_travelsTo_Event1> , <http://cwrc.ca/cwrcdata/levyam_travelsTo_Event2> , <http://cwrc.ca/cwrcdata/levyam_travelsTo_Event3> , <http://cwrc.ca/cwrcdata/levyam_travelsTo_Event4> , <http://cwrc.ca/cwrcdata/levyam_travelsTo_Event5> , <http://cwrc.ca/cwrcdata/levyam_Wealth_Event1> ;
+    cwrc:hasFather <http://cwrc.ca/cwrcdata/Levy_Lewis> ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasInstructor <http://cwrc.ca/cwrcdata/Creak_Edith> ;
+    cwrc:hasMother <http://cwrc.ca/cwrcdata/Levy_Isabelle> ;
+    cwrc:hasNationalHeritageSelfReported "GB-ENG"^^xsd:string ;
+    cwrc:hasReligion cwrc:anglicanism ;
+    cwrc:hasSexuality cwrc:lesbian ;
+    cwrc:hasSister <http://cwrc.ca/cwrcdata/Levy_Amy_Sister> ;
+    cwrc:hasSocialClass cwrc:upper-middleClass ;
+    cwrc:hasBirthPlace <http://sws.geonames.org/2643743/> ;
+    cwrc:hasBirthPosition cwrc:eldestChild ;
+    cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Intentional_self-harm> ;
+    cwrc:hasDeathDate "1889-09-10"^^xsd:date ;
+    cwrc:hasDeathPlace <http://sws.geonames.org/2643743/> ;
+    cwrc:hasEroticRelationshipWith <http://cwrc.ca/cwrcdata/Lee_Vernon> , <http://cwrc.ca/cwrcdata/Creak_Edith> ;
+    cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Black_Clementina> , <http://cwrc.ca/cwrcdata/Fawcett_Millicent_Garrett> , <http://cwrc.ca/cwrcdata/Lee_Vernon> , <http://cwrc.ca/cwrcdata/Marx_Eleanor> , <http://cwrc.ca/cwrcdata/Robinson_A_Mary_F> , <http://cwrc.ca/cwrcdata/Schreiner_Olive> , <http://cwrc.ca/cwrcdata/Shaw_George_Bernard> , <http://cwrc.ca/cwrcdata/Webb_Beatrice> , <http://cwrc.ca/cwrcdata/Yeats_W_B> , <http://cwrc.ca/cwrcdata/Birrell_Augustine> , <http://cwrc.ca/cwrcdata/Cornford_Frances> , <http://cwrc.ca/cwrcdata/Garnett_Constance> , <http://cwrc.ca/cwrcdata/Lee_Sidney> , <http://cwrc.ca/cwrcdata/Pearson_Karl> , <http://cwrc.ca/cwrcdata/Blomfield_Dorothy> , <http://cwrc.ca/cwrcdata/Darwin_Ellen_Wordsworth> , <http://cwrc.ca/cwrcdata/Harkness_Margaret> , <http://cwrc.ca/cwrcdata/Radford_Dollie_Maitland> , <http://cwrc.ca/cwrcdata/Thomas_Bertha> , <http://cwrc.ca/cwrcdata/Zimmern_Helen> ;
+    cwrc:hasPaidOccupation cwrc:teacher ;
+    cwrc:hasPossiblyEroticRelationshipWith <http://cwrc.ca/cwrcdata/Beckman_Linda_Hunt> ;
+    cwrc:hasVolunteerOccupation cwrc:visualArtist , cwrc:volunteer ;
+    cwrc:inhabits <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2654710/> ;
+    cwrc:studies <http://id.loc.gov/vocabulary/languages/fre> , <http://id.loc.gov/authorities/subjects/sh85054037> , <http://id.loc.gov/authorities/subjects/sh85054365> , <http://id.loc.gov/authorities/subjects/sh85057151> , <http://id.loc.gov/authorities/subjects/sh85074944> , <http://id.loc.gov/authorities/subjects/sh85058059> ;
+    cwrc:travelsTo "Mont Sainte-Odile,Vosges,France" , <http://sws.geonames.org/2653941/> , <http://sws.geonames.org/2654710/> , <http://sws.geonames.org/2935022/> , <http://sws.geonames.org/2988507/> , <http://sws.geonames.org/3021411/> , <http://sws.geonames.org/3176959/> , <http://sws.geonames.org/2659811/> , <http://sws.geonames.org/2953505/> , <http://sws.geonames.org/2994313/> , <http://sws.geonames.org/3038032/> ;
+    <http://www.w3.org/ns/org#memberOf> cwrc:Anglican_Church_ORG , cwrc:Judaism_ORG ;
+    a cwrc:NaturalPerson ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam> ;
+    foaf:name "Levy, Amy"^^xsd:string .
+​
+<http://cwrc.ca/cwrcdata/Pinter_Harold> cwrc:hasBirthDate "1930-10-10"^^xsd:date ;
+    rdfs:label "Pinter, Harold"^^xsd:string ;
+    cwrc:hasReligionSelfReported cwrc:judaism ;
+    cwrc:hasChild "1" ;
+    cwrc:hasEthnicitySelfReported cwrc:jewishEthnicity ;
+    cwrc:hasEvent <http://cwrc.ca/cwrcdata/pintha_Occupation_Event1> , <http://cwrc.ca/cwrcdata/pintha_Political_Event1> , <http://cwrc.ca/cwrcdata/pintha_travelsTo_Event1> ;
+    cwrc:hasFather <http://cwrc.ca/cwrcdata/Pinter_Jack> ;
+    cwrc:hasGender cwrc:man ;
+    cwrc:hasInstructor <http://cwrc.ca/cwrcdata/Brearley_Joe> ;
+    cwrc:hasMother <http://cwrc.ca/cwrcdata/Pinter_Frances> ;
+    cwrc:hasReligion cwrc:catholicism ;
+    cwrc:hasReligionSelfReported cwrc:atheism ;
+    cwrc:hasSexualitySelfReported cwrc:heterosexual ;
+    cwrc:hasSocialClass cwrc:nobility ;
+    cwrc:hasSocialClassSelfReported cwrc:professional , cwrc:skilledCraftpersonArtisan ;
+    cwrc:hasWife <http://cwrc.ca/cwrcdata/Fraser_Antonia> , <http://cwrc.ca/cwrcdata/Merchant_Vivien> ;
+    cwrc:hasActivistInvolvementIn "_social democratic_"^^xsd:string .
+​
+<http://cwrc.ca/cwrcdata/Angelou_Maya> cwrc:hasBirthDate "1928-04-04"^^xsd:date ;
+    rdfs:label "Angelou, Maya"^^xsd:string ;
+    cwrc:hasReligion cwrc:judaism ;
+    cwrc:hasSon <http://cwrc.ca/cwrcdata/Johnson_Guy_Bailey> ;
+    cwrc:hasUncle <http://cwrc.ca/cwrcdata/Angelou_Maya_Uncle> ;
+    cwrc:interpersonalRelationship <http://cwrc.ca/cwrcdata/Clidell_Daddy> ;
+    cwrc:hasActivistInvolvementIn "_africanist_"^^xsd:string , cwrc:blackAnti-Oppression , cwrc:civilRights , cwrc:womanism , cwrc:democrat ;
+    cwrc:hasBirthPlace <http://sws.geonames.org/6955119/> ;
+    cwrc:hasBirthPosition cwrc:eldestChild ;
+    cwrc:hasDeathDate "2014-05-28"^^xsd:date ;
+    cwrc:hasDeathPlace <http://sws.geonames.org/4499612/> ;
+    cwrc:hasEmployer "African Review" , "Arab Observer" , "Ghanaian Times" , "Mrs Cullinan" , cwrc:UCLA_ORG , <http://cwrc.ca/cwrcdata/Richards_Bea> , cwrc:Abbey_Theatre_ORG , cwrc:California_State_University_ORG , cwrc:Market_Street_Railway_Company_ORG , cwrc:Theatre_of_Being_ORG , cwrc:University_of_Ghana_ORG , cwrc:University_of_Kansas_ORG , cwrc:Wake_Forest_University_ORG , cwrc:Wichita_State_University_ORG ;
+    cwrc:hasEroticRelationshipWith <http://cwrc.ca/cwrcdata/intimate_relationship> , <http://cwrc.ca/cwrcdata/Make_Vusumzi> , <http://cwrc.ca/cwrcdata/McPherson_Dolly> ;
+    cwrc:hasGenderedPoliticalActivity "_africanist_"^^xsd:string , cwrc:blackAnti-Oppression , cwrc:civilRights , cwrc:womanism , cwrc:democrat ;
+    cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Baldwin_James> , <http://cwrc.ca/cwrcdata/Broadnax_Ivonne> , <http://cwrc.ca/cwrcdata/Guy_Rosa> ;
+    cwrc:hasOccupationIncome "Having no such degree, MA was employed and paid on the same scale as local Ghanaians, not foreign staff: the equivalent of about two hundred US dollars monthly." ;
+    cwrc:hasPaidOccupation cwrc:academic , cwrc:clericalWork , cwrc:editing , cwrc:journalist , cwrc:music , cwrc:performer , cwrc:retail , cwrc:theatreWork , cwrc:writer ;
+    cwrc:hasVolunteerOccupation cwrc:committeeMember , cwrc:manservant ;
+    cwrc:inhabits <http://sws.geonames.org/5128581/> , <http://sws.geonames.org/5332921/> , <http://sws.geonames.org/4499612/> ;
+    cwrc:relocatesTo <http://sws.geonames.org/5128581/> , <http://sws.geonames.org/5332921/> , <http://sws.geonames.org/5368361/> , <http://sws.geonames.org/6955119/> , <http://sws.geonames.org/3621911/> , <http://sws.geonames.org/4132194/> , <http://sws.geonames.org/5378538/> , <http://sws.geonames.org/5855797/> ;
+    cwrc:studies <http://id.loc.gov/authorities/subjects/sh85007163> , <http://id.loc.gov/authorities/subjects/sh85035659> , <http://id.loc.gov/authorities/subjects/sh85039316> , <http://id.loc.gov/authorities/subjects/sh85077507> , cwrc:A_Tale_of_Two_Cities_TITLE , cwrc:Beowulf_TITLE ;
+    cwrc:travelsTo <http://sws.geonames.org/264371/> , <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2659994/> , <http://sws.geonames.org/2925533/> , <http://sws.geonames.org/2950159/> , <http://sws.geonames.org/2988507/> , <http://sws.geonames.org/2995469/> , <http://sws.geonames.org/3128760/> , <http://sws.geonames.org/3164603/> , <http://sws.geonames.org/3169070/> , <http://sws.geonames.org/3173435/> , <http://sws.geonames.org/3176219/> , <http://sws.geonames.org/360630/> , <http://sws.geonames.org/361058/> , <http://sws.geonames.org/6077243/> , <http://sws.geonames.org/2299646/> , <http://sws.geonames.org/2300660/> , <http://sws.geonames.org/2363686/> , <http://sws.geonames.org/2542007/> , <http://sws.geonames.org/293397/> , <http://sws.geonames.org/3164527/> , <http://sws.geonames.org/3165524/> , <http://sws.geonames.org/3186886/> , <http://sws.geonames.org/792680/> ;
+    <http://www.w3.org/ns/org#memberOf> cwrc:Christian_Science_ORG , cwrc:Judaism_ORG , cwrc:Democratic_Party_ORG , cwrc:Organization_of_African-American_Unity_ORG ;
+    a cwrc:NaturalPerson ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=angema> ;
+    foaf:name "Angelou, Maya"^^xsd:string .
+​
+<http://cwrc.ca/cwrcdata/Arendt_Hannah> cwrc:hasBirthDate "1906-10-14"^^xsd:date ;
+    rdfs:label "Arendt, Hannah"^^xsd:string ;
+    cwrc:hasReligionSelfReported cwrc:judaism ;
+    cwrc:hasAward <http://cwrc.ca/cwrcdata/gold_medal> .
+​
+<http://cwrc.ca/cwrcdata/Stein_Gertrude> cwrc:hasEvent <http://cwrc.ca/cwrcdata/steige_visits_Event1> , <http://cwrc.ca/cwrcdata/steige_WomensHealth_Event1> ;
+    cwrc:hasFather <http://cwrc.ca/cwrcdata/Stein_Daniel> ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasGeographicHeritageSelfReported <http://www.geonames.org/2921044> ;
+    cwrc:hasInstructor <http://cwrc.ca/cwrcdata/James_William_1842_-_1910> , <http://cwrc.ca/cwrcdata/Moody_William_Vaughn> , <http://cwrc.ca/cwrcdata/Münsterberg_Hugo> , <http://cwrc.ca/cwrcdata/Osler_Sir_William> ;
+    cwrc:hasMother <http://cwrc.ca/cwrcdata/Stein_Amelia> ;
+    cwrc:hasNationalHeritageSelfReported "US"^^xsd:string ;
+    cwrc:hasRaceColourSelfReported cwrc:whiteRaceColour ;
+    cwrc:hasSexuality cwrc:lesbian ;
+    cwrc:hasSexualityReported cwrc:lesbian ;
+    cwrc:hasSister <http://cwrc.ca/cwrcdata/Stein_Bertha> ;
+    cwrc:hasSocialClassSelfReported cwrc:professional ;
+    cwrc:hasBirthPlace "Allegheny,Pennsylvania,USA" ;
+    cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Cancer> ;
+    cwrc:hasChildren "5" ;
+    cwrc:hasCredential "_in may 1898, after completing a latin requirement, gs graduated magna cum laude in philosophy from radcliffe college. she was now fully qualified for admission to johns hopkins._"^^xsd:string , cwrc:undergraduateDegree ;
+    cwrc:hasCredentialSubject <http://id.loc.gov/authorities/subjects/sh85074944> , <http://id.loc.gov/authorities/subjects/sh99005065> ;
+    cwrc:hasDeathDate "1946-07-27"^^xsd:date ;
+    cwrc:hasDeathPlace <http://sws.geonames.org/2990634/> ;
+    cwrc:hasEroticRelationshipWith <http://cwrc.ca/cwrcdata/Toklas_Alice_B> ;
+    cwrc:hasGenderedPoliticalActivity cwrc:feminism ;
+    cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Barney_Natalie_Clifford> , <http://cwrc.ca/cwrcdata/Beach_Sylvia> , <http://cwrc.ca/cwrcdata/Bell_Clive> , <http://cwrc.ca/cwrcdata/Bell_Vanessa> , <http://cwrc.ca/cwrcdata/Cunard_Nancy> , <http://cwrc.ca/cwrcdata/Fitzgerald_F_Scott> , <http://cwrc.ca/cwrcdata/Hemingway_Ernest> , <http://cwrc.ca/cwrcdata/Lewis_Wyndham> , <http://cwrc.ca/cwrcdata/Morrell_Lady_Ottoline> , <http://cwrc.ca/cwrcdata/Pound_Ezra> , <http://cwrc.ca/cwrcdata/Sitwell_Edith> , <http://cwrc.ca/cwrcdata/Williams_William_Carlos> , <http://cwrc.ca/cwrcdata/Barnes_Djuna> , <http://cwrc.ca/cwrcdata/DIsraeli_Isaac> , <http://cwrc.ca/cwrcdata/Fry_Roger> , <http://cwrc.ca/cwrcdata/H_D> , <http://cwrc.ca/cwrcdata/Jacob_Max> , <http://cwrc.ca/cwrcdata/John_Augustus> , <http://cwrc.ca/cwrcdata/Loy_Mina> , <http://cwrc.ca/cwrcdata/Matisse_Henri> , <http://cwrc.ca/cwrcdata/Picasso_Pablo> , <http://cwrc.ca/cwrcdata/Stein_Leo> , <http://cwrc.ca/cwrcdata/Toklas_Alice_B> , <http://cwrc.ca/cwrcdata/Vechten_Carl_Van> , <http://cwrc.ca/cwrcdata/Anderson_Sherwood> , <http://cwrc.ca/cwrcdata/Apollinaire_Guillaume> , <http://cwrc.ca/cwrcdata/Braque_Georges> , <http://cwrc.ca/cwrcdata/Buss_Kate> , <http://cwrc.ca/cwrcdata/Cunard_Emerald> , <http://cwrc.ca/cwrcdata/Faÿ_Bernard> , <http://cwrc.ca/cwrcdata/Gramont_Elisabeth_de> , <http://cwrc.ca/cwrcdata/Hartley_Marsden> , <http://cwrc.ca/cwrcdata/Lamb_Henry> , <http://cwrc.ca/cwrcdata/Lane_John> , <http://cwrc.ca/cwrcdata/Laurencin_Marie> , <http://cwrc.ca/cwrcdata/Olivier_Fernande> , <http://cwrc.ca/cwrcdata/Rousseau_Hénri> , <http://cwrc.ca/cwrcdata/Salmon_André> , <http://cwrc.ca/cwrcdata/Vallotan_Felix> ;
+    cwrc:hasNonEroticRelationshipWith <http://cwrc.ca/cwrcdata/Solomons_Leon> ;
+    cwrc:hasPoliticalMembershipIn cwrc:feminism ;
+    cwrc:hasPossiblyEroticRelationshipWith <http://cwrc.ca/cwrcdata/Bookstaver_May> ;
+    cwrc:hasVolunteerOccupation "_obstetrical assistant_"^^xsd:string , cwrc:hostess , cwrc:philanthropist , cwrc:professor , cwrc:publishing , cwrc:volunteer , cwrc:warWork , cwrc:collector ;
+    cwrc:inhabits "Bilignin,France" , <http://sws.geonames.org/2988507/> , <http://sws.geonames.org/2996944/> , <http://sws.geonames.org/3022093/> ;
+    cwrc:relocatesTo <http://sws.geonames.org/2761369/> , <http://sws.geonames.org/2988507/> , <http://sws.geonames.org/4347778/> , <http://sws.geonames.org/5128581/> , <http://sws.geonames.org/6252001/> , <http://sws.geonames.org/5378538/> ;
+    cwrc:studies <http://id.loc.gov/authorities/subjects/sh85074944> , <http://id.loc.gov/authorities/subjects/sh85083064> , <http://id.loc.gov/authorities/subjects/sh85108459> , <http://id.loc.gov/authorities/subjects/sh96010368> , <http://id.loc.gov/authorities/subjects/sh99005065> ;
+    cwrc:travelsTo "Lockridge,Wiltshire,England" , <http://sws.geonames.org/2647365/> , <http://sws.geonames.org/2988507/> , <http://sws.geonames.org/2512989/> , <http://sws.geonames.org/2995603/> , <http://sws.geonames.org/3165048/> .
+​
+<http://cwrc.ca/cwrcdata/Arendt_Hannah> cwrc:hasContestedBehaviour "At fifteen her intellectual erudition or her prickly personality led to her expulsion from secondary school, after she quarrelled with..." ;
+    cwrc:hasEthnicitySelfReported cwrc:jewishEthnicity ;
+    cwrc:hasEvent <http://cwrc.ca/cwrcdata/arenha_InstitutionalEducation_Event1> , <http://cwrc.ca/cwrcdata/arenha_migratesTo_Event1> , <http://cwrc.ca/cwrcdata/arenha_PhysicalHealth_Event1> ;
+    cwrc:hasFather <http://cwrc.ca/cwrcdata/Arendt_Paul> ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasHusband <http://cwrc.ca/cwrcdata/Blücher_Heinrich> , <http://cwrc.ca/cwrcdata/Stern_Günther> ;
+    cwrc:hasInstructor <http://cwrc.ca/cwrcdata/Heidegger_Martin> , <http://cwrc.ca/cwrcdata/Jaspers_Karl> ;
+    cwrc:hasMother <http://cwrc.ca/cwrcdata/Arendt_Martha> ;
+    cwrc:hasNationalHeritage "RU"^^xsd:string ;
+    cwrc:hasNationalitySelfReported "DE"^^xsd:string , "US"^^xsd:string , cwrc:statelessNationalIdentity ;
+    cwrc:hasSocialClass cwrc:entrepreneurial-industrialist ;
+    cwrc:hasStepFather <http://cwrc.ca/cwrcdata/Beerwald_Martin> ;
+    cwrc:hasActivistInvolvementIn cwrc:anti-Fascism , cwrc:internationalism , cwrc:zionism ;
+    cwrc:hasBirthPlace <http://sws.geonames.org/6554238/> ;
+    cwrc:hasBirthPosition cwrc:onlyChild ;
+    cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Myocardial_infarction_heart_attack> ;
+    cwrc:hasCredential cwrc:doctorOfPhilosophy ;
+    cwrc:hasDeathDate "1975-12-04"^^xsd:date ;
+    cwrc:hasDeathPlace <http://sws.geonames.org/5128581/> ;
+    cwrc:hasEmployer "German-language paper Aufbau" , cwrc:University_of_California_at_Berkeley_ORG , <http://cwrc.ca/cwrcdata/Blumenfeld_Kurt> , cwrc:Brooklyn_College_ORG , cwrc:Jewish_Agency_ORG , cwrc:Jewish_Cultural_Reconstruction_ORG , cwrc:New_School_for_Social_Research_ORG , cwrc:Princeton_University_ORG , cwrc:Schocken_ORG , cwrc:University_of_Chicago_ORG , cwrc:Wesleyan_University_ORG , cwrc:Youth_Aliyah_ORG ;
+    cwrc:hasEroticRelationshipWith <http://cwrc.ca/cwrcdata/Grumach_Ernst> ;
+    cwrc:hasGenderedPoliticalActivity cwrc:anti-Fascism , cwrc:internationalism , cwrc:zionism ;
+    cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Eliot_T_S> , <http://cwrc.ca/cwrcdata/Benjamin_Walter> , <http://cwrc.ca/cwrcdata/Blücher_Heinrich> , <http://cwrc.ca/cwrcdata/Blumenfeld_Kurt> , <http://cwrc.ca/cwrcdata/Broch_Hermann> , <http://cwrc.ca/cwrcdata/Frankel_Hilde> , <http://cwrc.ca/cwrcdata/Gray_J_Glenn> , <http://cwrc.ca/cwrcdata/Grumach_Ernst> , <http://cwrc.ca/cwrcdata/Heidegger_Martin> , <http://cwrc.ca/cwrcdata/Jarrell_Randall> , <http://cwrc.ca/cwrcdata/Jaspers_Karl> , <http://cwrc.ca/cwrcdata/McCarthy_Mary> , <http://cwrc.ca/cwrcdata/Mendelssohn_Anna> , <http://cwrc.ca/cwrcdata/Mendelssohn_Felix> , <http://cwrc.ca/cwrcdata/Mendelssohn_Moses> , <http://cwrc.ca/cwrcdata/Tillich_Paul> , <http://cwrc.ca/cwrcdata/Varnhagen_Rahel> ;
+    cwrc:hasNonEroticRelationshipWith <http://cwrc.ca/cwrcdata/Auden_W_H> ;
+    cwrc:hasPaidOccupation cwrc:academic , cwrc:editing , cwrc:journalist , cwrc:philanthropist , cwrc:researcher , cwrc:writer , cwrc:director ;
+    cwrc:hasReproductiveHistory cwrc:childlessness ;
+    cwrc:inhabits <http://sws.geonames.org/5128581/> ;
+    cwrc:migratesFrom <http://sws.geonames.org/2950159/> , <http://sws.geonames.org/2988507/> ;
+    cwrc:migratesTo <http://sws.geonames.org/2267057/> , <http://sws.geonames.org/2988507/> ;
+    cwrc:relocatesTo "Kaliningrad,Russia" , <http://sws.geonames.org/2925533/> , <http://sws.geonames.org/2950159/> , <http://sws.geonames.org/2988507/> , <http://sws.geonames.org/6554238/> ;
+    cwrc:studies <http://id.loc.gov/authorities/subjects/sh85134665> , <http://id.loc.gov/authorities/subjects/sh99005065> ;
+    cwrc:travelsTo <http://sws.geonames.org/281184/> , <http://sws.geonames.org/294801/> , <http://sws.geonames.org/250745/> , <http://sws.geonames.org/2523083/> ;
+    cwrc:visits <http://sws.geonames.org/6269131/> , <http://sws.geonames.org/2523118/> , <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2657832/> , <http://sws.geonames.org/2661604/> , <http://sws.geonames.org/281184/> , <http://sws.geonames.org/2921044/> , <http://sws.geonames.org/2988507/> , <http://sws.geonames.org/390903/> ;
+    <http://www.w3.org/ns/org#memberOf> cwrc:Judaism_ORG , cwrc:Zionism_ORG ;
+    a cwrc:NaturalPerson ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=arenha> ;
+    foaf:name "Arendt, Hannah"^^xsd:string .
+​
+<http://cwrc.ca/cwrcdata/Fainlight_Ruth> cwrc:hasBirthDate "1931-05-02"^^xsd:date ;
+    rdfs:label "Fainlight, Ruth"^^xsd:string ;
+    cwrc:hasReligion cwrc:judaism ;
+    cwrc:hasAunt <http://cwrc.ca/cwrcdata/Goldman_Emma> ;
+    cwrc:hasBrother <http://cwrc.ca/cwrcdata/Fainlight_Harry> ;
+    cwrc:hasContestedBehaviour "In response she tucked her skirt up short, pulled her belt low on her hips, and just camped it up...." ;
+    cwrc:hasEthnicitySelfReported cwrc:jewishEthnicity ;
+    cwrc:hasEvent <http://cwrc.ca/cwrcdata/fainru_relocatesTo_Event1> ;
+    cwrc:hasFather <http://cwrc.ca/cwrcdata/Fainlight_Ruth_Father> ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasGeographicHeritage <http://sws.geonames.org/6252001/> ;
+    cwrc:hasHusband <http://cwrc.ca/cwrcdata/Sillitoe_Alan> , <http://cwrc.ca/cwrcdata/Fainlight_Ruth_Husband> ;
+    cwrc:hasInstructor <http://cwrc.ca/cwrcdata/Graves_Robert_von_Ranke> ;
+    cwrc:hasMother <http://cwrc.ca/cwrcdata/Fainlight_Ruth_Mother> ;
+    cwrc:hasNationalHeritageSelfReported "PL"^^xsd:string , "US"^^xsd:string , "UA"^^xsd:string ;
+    cwrc:hasNationalitySelfReported "GB-ENG"^^xsd:string , "US"^^xsd:string ;
+    cwrc:hasReligionSelfReported cwrc:agnosticism ;
+    cwrc:hasSocialClass cwrc:urban-industrialUnskilled ;
+    cwrc:hasSocialClassSelfReported cwrc:professional ;
+    cwrc:hasSon <http://cwrc.ca/cwrcdata/Fainlight_Ruth_Son> ;
+    cwrc:hasActivistInvolvementIn cwrc:feminism ;
+    cwrc:hasBirthPlace <http://sws.geonames.org/5128581/> ;
+    cwrc:hasBirthPosition cwrc:eldestChild ;
+    cwrc:hasChildren "2" ;
+    cwrc:hasEmployer cwrc:Market_Research_ORG , cwrc:Vanderbilt_University_ORG ;
+    cwrc:hasGenderedPoliticalActivity cwrc:feminism ;
+    cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Amichai_Yehudah> , <http://cwrc.ca/cwrcdata/Bowles_Jane> , <http://cwrc.ca/cwrcdata/Feinstein_Elaine> , <http://cwrc.ca/cwrcdata/Graves_Robert_von_Ranke> , <http://cwrc.ca/cwrcdata/Hughes_Ted> , <http://cwrc.ca/cwrcdata/Plath_Sylvia> , <http://cwrc.ca/cwrcdata/Sillitoe_Alan> , <http://cwrc.ca/cwrcdata/Stevenson_Anne> , <http://cwrc.ca/cwrcdata/Wevill_Assia> , <http://cwrc.ca/cwrcdata/Akhmatova_Anna> , <http://cwrc.ca/cwrcdata/Bowles_Paul> , <http://cwrc.ca/cwrcdata/Graves_Beryl> , <http://cwrc.ca/cwrcdata/Laraçuen_Aemilia> , <http://cwrc.ca/cwrcdata/Logue_Christopher> , <http://cwrc.ca/cwrcdata/Simon_Juli> ;
+    cwrc:hasIntimateRelationshipWith <http://cwrc.ca/cwrcdata/Sillitoe_Alan> ;
+    cwrc:hasPaidOccupation cwrc:business , cwrc:publicReader , cwrc:teacher , cwrc:writer , cwrc:travelling ;
+    cwrc:hasVolunteerOccupation cwrc:literaryPrizeAdjudicator ;
+    cwrc:inhabits <http://sws.geonames.org/2510769/> , <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/294640/> , <http://sws.geonames.org/5128581/> , <http://sws.geonames.org/2542007/> , <http://sws.geonames.org/11609046/> , <http://sws.geonames.org/2651218/> , <http://sws.geonames.org/3007671/> , <http://sws.geonames.org/4744709/> ;
+    cwrc:relocatesTo "Puerto Soller,Mallorca,Spain" , "Strait of Gibraltar" , <http://sws.geonames.org/11863037/> , <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/3021411/> , <http://sws.geonames.org/2514239/> , <http://sws.geonames.org/2530335/> , <http://sws.geonames.org/2994497/> , <http://sws.geonames.org/2510821/> , <http://sws.geonames.org/2521978/> , <http://sws.geonames.org/2633999/> ;
+    cwrc:studies <http://id.loc.gov/authorities/subjects/sh85007461> , <http://id.loc.gov/authorities/subjects/sh85039408> , <http://id.loc.gov/authorities/subjects/sh85061212> , <http://id.loc.gov/authorities/subjects/sh85096661> , <http://id.loc.gov/authorities/subjects/sh85103704> , <http://id.loc.gov/authorities/subjects/sh96010368> , cwrc:Rhapsody_on_a_Windy_Night_TITLE ;
+    cwrc:travelsTo "India" , "Moscow,Russian Federation" , <http://sws.geonames.org/1861060/> , <http://sws.geonames.org/498817/> , <http://sws.geonames.org/6255150/> , <http://sws.geonames.org/6255149/> ;
+    cwrc:visits "Deyá,Mallorca,Spain" , <http://sws.geonames.org/2530335/> ;
+    a cwrc:NaturalPerson ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=fainru> ;
+    foaf:name "Fainlight, Ruth"^^xsd:string .
+​
+<http://cwrc.ca/cwrcdata/Farjeon_Eleanor> cwrc:hasBirthDate "1881-02-13"^^xsd:date ;
+    rdfs:label "Farjeon, Eleanor"^^xsd:string ;
+    cwrc:hasReligionReported cwrc:judaism ;
+    cwrc:hasBrother <http://cwrc.ca/cwrcdata/Farjeon_Harry> , <http://cwrc.ca/cwrcdata/Farjeon_Herbert> ;
+    cwrc:hasEthnicitySelfReported cwrc:jewishEthnicity ;
+    cwrc:hasEvent <http://cwrc.ca/cwrcdata/farjel_travelsTo_Event1> , <http://cwrc.ca/cwrcdata/farjel_visits_Event1> ;
+    cwrc:hasFather <http://cwrc.ca/cwrcdata/Farjeon_Benjamin_Leopold> ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasGrandFather <http://cwrc.ca/cwrcdata/Jefferson_Joseph> ;
+    cwrc:hasMother <http://cwrc.ca/cwrcdata/Farjeon_Margaret> ;
+    cwrc:hasNationalHeritage "US"^^xsd:string ;
+    cwrc:hasNationality "GB-ENG"^^xsd:string ;
+    cwrc:hasReligion cwrc:catholicism ;
+    cwrc:hasReligionSelfReported cwrc:catholicism ;
+    cwrc:hasBirthPlace <http://sws.geonames.org/2643743/> ;
+    cwrc:hasBirthPosition cwrc:eldestChild ;
+    cwrc:hasBurialPlace <http://sws.geonames.org/2643743/> ;
+    cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_respiratory_system> ;
+    cwrc:hasDeathDate "1965-06-05"^^xsd:date ;
+    cwrc:hasDeathPlace <http://sws.geonames.org/2643743/> ;
+    cwrc:hasEmployer cwrc:Womens_Emergency_Corps_ORG ;
+    cwrc:hasEroticRelationshipWith <http://cwrc.ca/cwrcdata/Earle_George_Chester> , <http://cwrc.ca/cwrcdata/Kraber_Tony> , <http://cwrc.ca/cwrcdata/Thomas_Edward> ;
+    cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Lawrence_D_H> , <http://cwrc.ca/cwrcdata/Meynell_Alice> , <http://cwrc.ca/cwrcdata/Frost_Robert> , <http://cwrc.ca/cwrcdata/Garnett_David> , <http://cwrc.ca/cwrcdata/Lawrence_Frieda> , <http://cwrc.ca/cwrcdata/Meynell_Viola> , <http://cwrc.ca/cwrcdata/Meynell_Wilfrid> , <http://cwrc.ca/cwrcdata/Abercrombie_Lascelles> , <http://cwrc.ca/cwrcdata/Bax_Arnold> , <http://cwrc.ca/cwrcdata/Bax_Clifford> , <http://cwrc.ca/cwrcdata/Colwell_Eileen> , <http://cwrc.ca/cwrcdata/Hess_Myra> , <http://cwrc.ca/cwrcdata/Lampel_Otto> , <http://cwrc.ca/cwrcdata/Myers_Elizabeth> , <http://cwrc.ca/cwrcdata/Ustinov_Peter> ;
+    cwrc:hasNonEroticRelationshipWith <http://cwrc.ca/cwrcdata/Blakelock_Denys> ;
+    cwrc:hasPaidOccupation cwrc:clericalWork ;
+    cwrc:hasReproductiveHistory cwrc:childlessness ;
+    cwrc:hasVolunteerOccupation cwrc:committeeMember , cwrc:nursing ;
+    cwrc:inhabits <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2644559/> , <http://sws.geonames.org/2644813/> , <http://sws.geonames.org/2646527/> ;
+    cwrc:studies cwrc:The_Countesse_of_Pembrokes_Arcadia_TITLE ;
+    cwrc:travelsTo <http://sws.geonames.org/2988507/> , <http://sws.geonames.org/3176959/> , <http://sws.geonames.org/6254926/> , <http://sws.geonames.org/3177019/> ;
+    <http://www.w3.org/ns/org#memberOf> cwrc:Roman_Catholic_Church_ORG ;
+    a cwrc:NaturalPerson ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=farjel> ;
+    foaf:name "Farjeon, Eleanor" , "Farjeon, Eleanor"^^xsd:string .
+​
+<http://cwrc.ca/cwrcdata/Feinstein_Elaine> cwrc:hasBirthDate "1930-10-24"^^xsd:date ;
+    rdfs:label "Feinstein, Elaine"^^xsd:string ;
+    cwrc:hasReligionSelfReported cwrc:judaism ;
+    cwrc:hasAward <http://cwrc.ca/cwrcdata/Open_Exhibition> ;
+    cwrc:hasEthnicitySelfReported cwrc:jewishEthnicity ;
+    cwrc:hasEvent <http://cwrc.ca/cwrcdata/feinel_InstitutionalEducation_Event1> , <http://cwrc.ca/cwrcdata/feinel_Occupation_Event1> , <http://cwrc.ca/cwrcdata/feinel_Occupation_Event2> , <http://cwrc.ca/cwrcdata/feinel_Occupation_Event3> ;
+    cwrc:hasFather <http://cwrc.ca/cwrcdata/Feinstein_Elaine_Father> ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasGeographicHeritage <http://sws.geonames.org/2017370/> , <http://sws.geonames.org/698740/> ;
+    cwrc:hasHusband <http://cwrc.ca/cwrcdata/Feinstein_Arnold> ;
+    cwrc:hasInstructor <http://cwrc.ca/cwrcdata/Lewis_C_S> ;
+    cwrc:hasMother <http://cwrc.ca/cwrcdata/Feinstein_Elaine_Mother> ;
+    cwrc:hasNationalitySelfReported "GB-ENG"^^xsd:string ;
+    cwrc:hasActivistInvolvementIn cwrc:zionism ;
+    cwrc:hasBirthPlace <http://sws.geonames.org/2655198/> ;
+    cwrc:hasBirthPosition cwrc:onlyChild ;
+    cwrc:hasChildren "3" ;
+    cwrc:hasCohabitant <http://cwrc.ca/cwrcdata/Feinstein_Arnold> ;
+    cwrc:hasCredential cwrc:bachelorOfArts , cwrc:mastersDegree ;
+    cwrc:hasEmployer cwrc:Bishops_Stortford_Training_College_ORG , cwrc:Cambridge_University_ORG , cwrc:Cambridge_University_Press_ORG , cwrc:University_of_Essex_ORG , cwrc:Workers_Educational_Association_ORG ;
+    cwrc:hasGenderedPoliticalActivity cwrc:zionism ;
+    cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Steiner_George> , <http://cwrc.ca/cwrcdata/Akhmadulina_Bella> , <http://cwrc.ca/cwrcdata/Amichai_Yehudah> , <http://cwrc.ca/cwrcdata/Carter_Angela> , <http://cwrc.ca/cwrcdata/Dorn_Ed> , <http://cwrc.ca/cwrcdata/Fainlight_Ruth> , <http://cwrc.ca/cwrcdata/Harwood_Lee> , <http://cwrc.ca/cwrcdata/Henry_Adrian> , <http://cwrc.ca/cwrcdata/Hughes_Olwyn> , <http://cwrc.ca/cwrcdata/Hughes_Ted> , <http://cwrc.ca/cwrcdata/Lahr_John> , <http://cwrc.ca/cwrcdata/McGough_Roger> , <http://cwrc.ca/cwrcdata/Padel_Ruth> , <http://cwrc.ca/cwrcdata/Patten_Brian> , <http://cwrc.ca/cwrcdata/Pickard_Tom> , <http://cwrc.ca/cwrcdata/Rubens_Bernice> , <http://cwrc.ca/cwrcdata/Sillitoe_Alan> , <http://cwrc.ca/cwrcdata/Tennant_Emma> .
+​
+<http://cwrc.ca/cwrcdata/Stein_Gertrude> cwrc:visits <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2988507/> ;
+    a cwrc:NaturalPerson ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=steige> ;
+    foaf:name "Stein, Gertrude"^^xsd:string .
+​
+<http://cwrc.ca/cwrcdata/Stern_G_B> cwrc:hasBirthDate "1890-06-17"^^xsd:date ;
+    rdfs:label "Stern, G. B."^^xsd:string ;
+    cwrc:hasReligion cwrc:judaism ;
+    cwrc:hasEthnicity cwrc:jewishEthnicity ;
+    cwrc:hasReligionSelfReported cwrc:judaism ;
+    cwrc:hasEvent <http://cwrc.ca/cwrcdata/stergb_Biography_Event1> , <http://cwrc.ca/cwrcdata/stergb_Religion_Event1> , <http://cwrc.ca/cwrcdata/stergb_visits_Event1> ;
+    cwrc:hasFather <http://cwrc.ca/cwrcdata/Stern_G_B_Father> ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasGeographicHeritage "_austria_"^^xsd:string , <http://www.geonames.org/2921044> , <http://www.geonames.org/3077311> ;
+    cwrc:hasHusband <http://cwrc.ca/cwrcdata/Holdsworth_Geoffrey_Lisle> ;
+    cwrc:hasMother <http://cwrc.ca/cwrcdata/Stern_G_B_Mother> ;
+    cwrc:hasNationalHeritageSelfReported "GB-ENG"^^xsd:string ;
+    cwrc:hasReligion cwrc:catholicism ;
+    cwrc:hasSister <http://cwrc.ca/cwrcdata/Stern_G_B_Sister> ;
+    cwrc:hasSocialClassSelfReported cwrc:nobility , cwrc:professional ;
+    cwrc:interpersonalRelationship <http://cwrc.ca/cwrcdata/Rakonitz_Anastasia> ;
+    cwrc:hasActivistInvolvementIn "_apolitical_"^^xsd:string , "_tariff reformer_"^^xsd:string , cwrc:liberalism , cwrc:socialism ;
+    cwrc:hasBirthPlace <http://sws.geonames.org/2643743/> ;
+    cwrc:hasBirthPosition cwrc:youngestChild ;
+    cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Cerebrovascular_disease_stroke> ;
+    cwrc:hasDeathDate "1973-09-18"^^xsd:date ;
+    cwrc:hasDeathPlace <http://sws.geonames.org/2634869/> ;
+    cwrc:hasGenderedPoliticalActivity "_apolitical_"^^xsd:string , "_tariff reformer_"^^xsd:string , cwrc:liberalism , cwrc:socialism ;
+    cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Austen_Jane> , <http://cwrc.ca/cwrcdata/Beerbohm_Max> , <http://cwrc.ca/cwrcdata/Coward_Noël> , <http://cwrc.ca/cwrcdata/Glyn_Elinor> , <http://cwrc.ca/cwrcdata/Macaulay_Rose> , <http://cwrc.ca/cwrcdata/Sinclair_May> , <http://cwrc.ca/cwrcdata/Wells_H_G> , <http://cwrc.ca/cwrcdata/West_Rebecca> , <http://cwrc.ca/cwrcdata/Kaye-Smith_Sheila> , <http://cwrc.ca/cwrcdata/Maugham_William_Somerset> , <http://cwrc.ca/cwrcdata/Mew_Charlotte> , <http://cwrc.ca/cwrcdata/Priestley_J_B> , <http://cwrc.ca/cwrcdata/Van_Druten_John> , <http://cwrc.ca/cwrcdata/Steen_Marguerite> .
+​
+<http://cwrc.ca/cwrcdata/Rubens_Bernice> cwrc:hasBirthDate "1923-07-26"^^xsd:date ;
+    rdfs:label "Rubens, Bernice"^^xsd:string ;
+    cwrc:hasReligionSelfReported cwrc:judaism ;
+    cwrc:travelsTo <http://sws.geonames.org/2886242/> , <http://sws.geonames.org/2925533/> , <http://sws.geonames.org/294640/> , <http://sws.geonames.org/3173435/> , <http://sws.geonames.org/3562981/> , <http://sws.geonames.org/953987/> , <http://sws.geonames.org/1168579/> , <http://sws.geonames.org/1642673/> , <http://sws.geonames.org/2300660/> , <http://sws.geonames.org/2514239/> , <http://sws.geonames.org/3923057/> , <http://sws.geonames.org/932692/> , <http://sws.geonames.org/1694008/> , <http://sws.geonames.org/2659792/> , <http://sws.geonames.org/2815248/> , <http://sws.geonames.org/4033681/> ;
+    a cwrc:NaturalPerson ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=rubebe> ;
+    foaf:name "Rubens, Bernice"^^xsd:string .
+​
+<http://cwrc.ca/cwrcdata/Schütze_Gladys_Henrietta> cwrc:hasBirthDate "1884-07-06"^^xsd:date ;
+    rdfs:label "Schütze, Gladys Henrietta"^^xsd:string ;
+    cwrc:hasReligion cwrc:judaism ;
+    cwrc:hasEthnicitySelfReported cwrc:jewishEthnicity ;
+    cwrc:hasEvent <http://cwrc.ca/cwrcdata/schugl_Political_Event1> , <http://cwrc.ca/cwrcdata/schugl_Political_Event2> , <http://cwrc.ca/cwrcdata/schugl_travelsTo_Event1> , <http://cwrc.ca/cwrcdata/schugl_travelsTo_Event2> , <http://cwrc.ca/cwrcdata/schugl_visits_Event1> ;
+    cwrc:hasFather <http://cwrc.ca/cwrcdata/Raphael_Arthur_Lewis> ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasGrandFather <http://cwrc.ca/cwrcdata/Moses_Assur> ;
+    cwrc:hasHusband <http://cwrc.ca/cwrcdata/Mendl_Louis> , <http://cwrc.ca/cwrcdata/Schütze_Harry_Leslie> ;
+    cwrc:hasInstructor <http://cwrc.ca/cwrcdata/Albanesi_Carlo> , <http://cwrc.ca/cwrcdata/Frohnstein_Rose> , <http://cwrc.ca/cwrcdata/Girard_Marie> , <http://cwrc.ca/cwrcdata/Titsie_Mademoiselle> ;
+    cwrc:hasMother <http://cwrc.ca/cwrcdata/Raphael_Marianna_Florette_Moses> ;
+    cwrc:hasNationality "DE"^^xsd:string ;
+    cwrc:hasNationalitySelfReported "GB"^^xsd:string ;
+    cwrc:hasReligionSelfReported cwrc:anglicanism ;
+    cwrc:interpersonalRelationship <http://cwrc.ca/cwrcdata/Schütze_Gladys_Henrietta_Other> ;
+    cwrc:hasActivistInvolvementIn cwrc:anti-Fascism , cwrc:anti-Imperialism , cwrc:liberalism , cwrc:pacifism , cwrc:pro-BoerWar , cwrc:radicalism , cwrc:suffrage ;
+    cwrc:hasBirthPlace <http://sws.geonames.org/2643743/> ;
+    cwrc:hasDeathDate "1946-07-19"^^xsd:date ;
+    cwrc:hasDeathPlace <http://sws.geonames.org/2661552/> ;
+    cwrc:hasEmployer "Daily Herald" , "Weekly Herald" ;
+    cwrc:hasGenderedPoliticalActivity cwrc:anti-Fascism , cwrc:anti-Imperialism , cwrc:liberalism , cwrc:pacifism , cwrc:pro-BoerWar , cwrc:radicalism , cwrc:suffrage ;
+    cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Duncan_Isadora> , <http://cwrc.ca/cwrcdata/Galsworthy_John> , <http://cwrc.ca/cwrcdata/Lee_Vernon> , <http://cwrc.ca/cwrcdata/MacDonald_James_Ramsay> , <http://cwrc.ca/cwrcdata/Nevinson_Henry> , <http://cwrc.ca/cwrcdata/Pankhurst_Christabel> , <http://cwrc.ca/cwrcdata/Pankhurst_Emmeline> , <http://cwrc.ca/cwrcdata/Pethick-Lawrence_Emmeline> , <http://cwrc.ca/cwrcdata/Russell_Bertrand> , <http://cwrc.ca/cwrcdata/Schreiner_Olive> , <http://cwrc.ca/cwrcdata/Scott_Catharine_Amy_Dawson> , <http://cwrc.ca/cwrcdata/Sinclair_May> , <http://cwrc.ca/cwrcdata/Wilson_Romer> , <http://cwrc.ca/cwrcdata/Armfield_Maxwell> , <http://cwrc.ca/cwrcdata/Barry_William> , <http://cwrc.ca/cwrcdata/Ervine_St_John> , <http://cwrc.ca/cwrcdata/Jacobs_W_W> , <http://cwrc.ca/cwrcdata/Jerome_Jerome_K> , <http://cwrc.ca/cwrcdata/MacConnell_Sarah> , <http://cwrc.ca/cwrcdata/Montgomery_Bernard_Law> , <http://cwrc.ca/cwrcdata/Pain_Barry> , <http://cwrc.ca/cwrcdata/Pett_Ridge_William> , <http://cwrc.ca/cwrcdata/Raphael_Betsy> , <http://cwrc.ca/cwrcdata/Raphael_Jack> , <http://cwrc.ca/cwrcdata/Sheppard_Dick> , <http://cwrc.ca/cwrcdata/Smedley_Constance> , <http://cwrc.ca/cwrcdata/Thurston_Ernest_Temple> , <http://cwrc.ca/cwrcdata/Walpole_Hugh> , <http://cwrc.ca/cwrcdata/White_Florence_1886_-_1961> , <http://cwrc.ca/cwrcdata/White_Percy> , <http://cwrc.ca/cwrcdata/Wickham_Anna> ;
+    cwrc:hasPaidOccupation cwrc:journalist , cwrc:writer ;
+    cwrc:hasReproductiveHistory cwrc:childlessness ;
+    cwrc:hasVolunteerOccupation "_humanitarian worker_"^^xsd:string , cwrc:accountant , cwrc:charityWorker , cwrc:fundraiser , cwrc:hostess .
+​
+<http://cwrc.ca/cwrcdata/Rich_Adrienne> cwrc:hasBirthDate "1929-05-16"^^xsd:date ;
+    rdfs:label "Rich, Adrienne"^^xsd:string ;
+    cwrc:hasReligionSelfReported cwrc:judaism ;
+    cwrc:hasEmployer cwrc:Rutgers_University_ORG , cwrc:University_of_Chicago_ORG , cwrc:Brandeis_University_ORG , cwrc:Bryn_Mawr_College_ORG , cwrc:City_University_of_New_York_ORG , cwrc:Cornell_University_ORG , cwrc:Pacific_Oaks_College_ORG , cwrc:San_Jose_State_University_ORG , cwrc:Scripps_College_ORG , cwrc:Stanford_University_ORG ;
+    cwrc:hasGenderedPoliticalActivity cwrc:feminism ;
+    cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Jordan_June> , <http://cwrc.ca/cwrcdata/Bambara_Toni_Cade> , <http://cwrc.ca/cwrcdata/Cumming_Robert> , <http://cwrc.ca/cwrcdata/Neal_Larry> ;
+    cwrc:hasPaidOccupation cwrc:academic , cwrc:teacher ;
+    cwrc:relocatesTo <http://sws.geonames.org/5128581/> , <http://sws.geonames.org/5393052/> ;
+    cwrc:travelsTo <http://sws.geonames.org/2640729/> , <http://sws.geonames.org/2750405/> , <http://sws.geonames.org/3175395/> ;
+    <http://www.w3.org/ns/org#memberOf> cwrc:Anglican_Church_ORG , cwrc:Black_Panthers_ORG ;
+    a cwrc:NaturalPerson ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=richad> ;
+    foaf:name "Rich, Adrienne"^^xsd:string .
+​
+<http://cwrc.ca/cwrcdata/Rubens_Bernice> cwrc:hasBrother <http://cwrc.ca/cwrcdata/Gross_Hugo> , <http://cwrc.ca/cwrcdata/Reuben_Cyril> ;
+    cwrc:hasContestedBehaviour "At first she often skipped her homework, however, in favour of angling for boys." , "She and her siblings would sometimes steal chocolate from Woolworths (never from a corner shop where they would have known..." ;
+    cwrc:hasEthnicitySelfReported cwrc:jewishEthnicity ;
+    cwrc:hasEvent <http://cwrc.ca/cwrcdata/rubebe_InstitutionalEducation_Event1> , <http://cwrc.ca/cwrcdata/rubebe_Occupation_Event1> ;
+    cwrc:hasFather <http://cwrc.ca/cwrcdata/Reuben_Eli> ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasHusband <http://cwrc.ca/cwrcdata/Nassauer_Rudi> ;
+    cwrc:hasMother <http://cwrc.ca/cwrcdata/Reuben_Dorothy> ;
+    cwrc:hasNationalHeritageSelfReported "PL"^^xsd:string , "LV"^^xsd:string ;
+    cwrc:hasNationalityReported "GB-WLS"^^xsd:string ;
+    cwrc:hasSister <http://cwrc.ca/cwrcdata/Rubens_Bernice_Sister> ;
+    cwrc:hasActivistInvolvementIn cwrc:anti-Antisemitism , cwrc:anti-Racism , cwrc:socialism , cwrc:zionism ;
+    cwrc:hasBirthPlace <http://sws.geonames.org/3333241/> ;
+    cwrc:hasBirthPosition cwrc:eldestChild ;
+    cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Cerebrovascular_disease_stroke> ;
+    cwrc:hasChildren "2" ;
+    cwrc:hasCredential cwrc:bachelorOfArts ;
+    cwrc:hasDeathDate "2004-10-13"^^xsd:date ;
+    cwrc:hasDeathPlace <http://sws.geonames.org/2643743/> ;
+    cwrc:hasEmployer cwrc:Burgess_Hill_School_ORG , cwrc:Handsworth_Grammar_School_ORG , cwrc:National_Society_for_Mentally_Handicapped_Children_ORG , cwrc:Society_for_the_Blind_ORG , cwrc:United_Nations_ORG ;
+    cwrc:hasEroticRelationshipWith <http://cwrc.ca/cwrcdata/Conradi_Peter_J> , <http://cwrc.ca/cwrcdata/intimate_relationship> ;
+    cwrc:hasGenderedPoliticalActivity cwrc:anti-Antisemitism , cwrc:anti-Racism , cwrc:socialism , cwrc:zionism ;
+    cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Laurence_Mike> , <http://cwrc.ca/cwrcdata/Laurence_Parvin> , <http://cwrc.ca/cwrcdata/Abse_Dannie> , <http://cwrc.ca/cwrcdata/Bailey_Paul> , <http://cwrc.ca/cwrcdata/Bainbridge_Beryl> , <http://cwrc.ca/cwrcdata/Canetti_Elias> , <http://cwrc.ca/cwrcdata/Mercer_David> , <http://cwrc.ca/cwrcdata/Mortimer_Penelope> ;
+    cwrc:hasNonEroticRelationshipWith <http://cwrc.ca/cwrcdata/intimate_relationship> ;
+    cwrc:hasOccupationIncome "where the pay was very little," ;
+    cwrc:hasPaidOccupation cwrc:filmIndustry , cwrc:performer , cwrc:professor , cwrc:servant , cwrc:teacher , cwrc:writer ;
+    cwrc:hasVolunteerOccupation cwrc:associationInvolvement , cwrc:filmIndustry , cwrc:publicReader ;
+    cwrc:inhabits <http://sws.geonames.org/2643743/> ;
+    cwrc:relocatesTo <http://sws.geonames.org/3333241/> ;
+    cwrc:studies <http://id.loc.gov/authorities/subjects/sh96010368> , cwrc:Beowulf_TITLE , cwrc:Horizon_TITLE , cwrc:Pegs_Paper_TITLE , cwrc:The_Well_of_Loneliness_TITLE ;
+    cwrc:travelsTo "India" , <http://sws.geonames.org/1227603/> , <http://sws.geonames.org/1643084/> , <http://sws.geonames.org/1861060/> , <http://sws.geonames.org/2017370/> , <http://sws.geonames.org/2077456/> , <http://sws.geonames.org/2186224/> .
+​
+<http://cwrc.ca/cwrcdata/Pinter_Harold> cwrc:hasActivistInvolvementIn cwrc:anti-NuclearMovement , cwrc:conservatism , cwrc:humanRights , cwrc:internationalism , cwrc:pacifism , cwrc:socialism ;
+    cwrc:hasBirthPlace <http://sws.geonames.org/2643743/> ;
+    cwrc:hasBirthPosition cwrc:onlyChild ;
+    cwrc:hasDeathDate "2008-12-24"^^xsd:date ;
+    cwrc:hasDeathPlace <http://sws.geonames.org/2643743/> ;
+    cwrc:hasEmployer <http://cwrc.ca/cwrcdata/McMaster_Anew> , <http://cwrc.ca/cwrcdata/Wolfit_Donald> , cwrc:National_Theatre_ORG ;
+    cwrc:hasEroticRelationshipWith <http://cwrc.ca/cwrcdata/Bakewell_Joan> , <http://cwrc.ca/cwrcdata/Fraser_Antonia> ;
+    cwrc:hasGenderedPoliticalActivity "_social democratic_"^^xsd:string , cwrc:anti-NuclearMovement , cwrc:conservatism , cwrc:humanRights , cwrc:internationalism , cwrc:pacifism , cwrc:socialism ;
+    cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Manning_Olivia> , <http://cwrc.ca/cwrcdata/Smith_Reginald_Donald> , <http://cwrc.ca/cwrcdata/Ashcroft_Peggy> , <http://cwrc.ca/cwrcdata/Gray_Simon> , <http://cwrc.ca/cwrcdata/Mercer_David> , <http://cwrc.ca/cwrcdata/Spiegel_Sam> ;
+    cwrc:hasPaidOccupation "Writer" , cwrc:performer , cwrc:theatreWork , cwrc:writer ;
+    cwrc:inhabits <http://sws.geonames.org/2643743/> ;
+    cwrc:relocatesTo <http://sws.geonames.org/11609027/> , <http://sws.geonames.org/2643743/> ;
+    cwrc:studies <http://id.loc.gov/authorities/subjects/sh85039316> , <http://id.loc.gov/authorities/subjects/sh85103704> , <http://id.loc.gov/authorities/subjects/sh96010368> , <http://id.loc.gov/authorities/subjects/sh85046328> ;
+    cwrc:travelsTo <http://sws.geonames.org/2655984/> , <http://sws.geonames.org/2911298/> , <http://sws.geonames.org/294640/> , <http://sws.geonames.org/2950159/> , <http://sws.geonames.org/298795/> , <http://sws.geonames.org/2988507/> , <http://sws.geonames.org/3077311/> , <http://sws.geonames.org/3164603/> , <http://sws.geonames.org/3176959/> , <http://sws.geonames.org/3489940/> , <http://sws.geonames.org/3723988/> , <http://sws.geonames.org/4140963/> , <http://sws.geonames.org/5128581/> , <http://vocab.getty.edu/tgn/7001181> , <http://sws.geonames.org/3186886/> , <http://sws.geonames.org/934292/> , <http://sws.geonames.org/2523920/> ;
+    <http://www.w3.org/ns/org#memberOf> cwrc:Judaism_ORG , cwrc:Roman_Catholic_Church_ORG , cwrc:PEN_International_ORG ;
+    a cwrc:NaturalPerson ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=pintha> ;
+    foaf:name "Pinter, Harold" , "Pinter, Harold"^^xsd:string .
+​
+<http://cwrc.ca/cwrcdata/Rich_Adrienne> cwrc:hasAward <http://cwrc.ca/cwrcdata/cum_laude> , <http://cwrc.ca/cwrcdata/Guggenheim_fellowship> , <http://cwrc.ca/cwrcdata/Phi_Beta_Kappa> ;
+    cwrc:hasEvent <http://cwrc.ca/cwrcdata/richad_InstitutionalEducation_Event1> , <http://cwrc.ca/cwrcdata/richad_InstitutionalEducation_Event2> , <http://cwrc.ca/cwrcdata/richad_Occupation_Event1> , <http://cwrc.ca/cwrcdata/richad_Occupation_Event2> , <http://cwrc.ca/cwrcdata/richad_Occupation_Event3> , <http://cwrc.ca/cwrcdata/richad_Occupation_Event4> , <http://cwrc.ca/cwrcdata/richad_Political_Event1> , <http://cwrc.ca/cwrcdata/richad_Political_Event2> , <http://cwrc.ca/cwrcdata/richad_relocatesTo_Event1> , <http://cwrc.ca/cwrcdata/richad_relocatesTo_Event2> , <http://cwrc.ca/cwrcdata/richad_Sexuality_Event1> ;
+    cwrc:hasFather <http://cwrc.ca/cwrcdata/Rich_Arnold_Rice> ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasHusband <http://cwrc.ca/cwrcdata/Conrad_Alfred> ;
+    cwrc:hasMother <http://cwrc.ca/cwrcdata/Rich_Helen> ;
+    cwrc:hasNationalitySelfReported "US"^^xsd:string ;
+    cwrc:hasRaceColour cwrc:whiteRaceColour ;
+    cwrc:hasReligionReported cwrc:anglicanism , cwrc:protestantism ;
+    cwrc:hasSexualitySelfReported cwrc:lesbian ;
+    cwrc:hasSocialClassSelfReported cwrc:professional ;
+    cwrc:hasSon <http://cwrc.ca/cwrcdata/Rich_Adrienne_Son> ;
+    cwrc:hasActivistInvolvementIn cwrc:anti-War , cwrc:feminism , cwrc:Black_Panthers_ORG ;
+    cwrc:hasBirthPlace <http://sws.geonames.org/4347778/> ;
+    cwrc:hasChildren "3" ;
+    cwrc:hasDeathDate "2012-03-27"^^xsd:date ;
+    cwrc:hasDeathPlace <http://sws.geonames.org/5393052/> ;
+    cwrc:hasEmployer cwrc:Columbia_University_ORG .
+​
+<http://cwrc.ca/cwrcdata/Stern_G_B> cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Wolfe_Humbert> ;
+    cwrc:hasPossiblyEroticRelationshipWith <http://cwrc.ca/cwrcdata/intimate_relationship> ;
+    cwrc:hasVolunteerOccupation cwrc:careGiver ;
+    cwrc:inhabits <http://sws.geonames.org/11609027/> , <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/3173906/> ;
+    cwrc:relocatesTo <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2655348/> , <http://sws.geonames.org/7300944/> ;
+    cwrc:studies <http://id.loc.gov/authorities/subjects/sh85043777> , <http://id.loc.gov/authorities/subjects/sh85000691> , <http://id.loc.gov/authorities/subjects/sh85061212> , <http://id.loc.gov/authorities/subjects/sh85074583> , <http://id.loc.gov/authorities/subjects/sh85101722> , cwrc:Elsie_Dinsmore_TITLE , cwrc:Home_Influence_TITLE , cwrc:The_Daisy_Chain_TITLE , cwrc:The_Mothers_Recompense_TITLE ;
+    cwrc:visits "Thames,England" , "Sligachan,Skye,Scotland" , <http://sws.geonames.org/2654635/> , <http://sws.geonames.org/2647204/> , <http://sws.geonames.org/2653239/> , <http://sws.geonames.org/5357527/> , <http://sws.geonames.org/5392952/> , <http://sws.geonames.org/7294449/> , <http://sws.geonames.org/3037464/> ;
+    <http://www.w3.org/ns/org#memberOf> cwrc:Roman_Catholic_Church_ORG ;
+    a cwrc:NaturalPerson ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=stergb> ;
+    foaf:name "Stern, G. B."^^xsd:string .
+​
+<http://cwrc.ca/cwrcdata/Aguilar_Grace> cwrc:hasBirthDate "1816-06-02"^^xsd:date ;
+    rdfs:label "Aguilar, Grace"^^xsd:string ;
+    cwrc:hasReligion cwrc:judaism ;
+    cwrc:hasAunt <http://cwrc.ca/cwrcdata/Aguilar_Grace_Aunt> ;
+    cwrc:hasReligionSelfReported cwrc:judaism ;
+    cwrc:hasBrother <http://cwrc.ca/cwrcdata/Aguilar_Emanuel_Jr> ;
+    cwrc:hasEthnicity cwrc:jewishEthnicity ;
+    cwrc:hasEvent <http://cwrc.ca/cwrcdata/aguigr_Occupation_Event1> , <http://cwrc.ca/cwrcdata/aguigr_PhysicalHealth_Event1> , <http://cwrc.ca/cwrcdata/aguigr_PhysicalHealth_Event2> , <http://cwrc.ca/cwrcdata/aguigr_PhysicalHealth_Event3> , <http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event1> , <http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event2> , <http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event3> ;
+    cwrc:hasFather <http://cwrc.ca/cwrcdata/Aguilar_Emanuel_Sr> ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasMother <http://cwrc.ca/cwrcdata/Aguilar_Sarah> ;
+    cwrc:hasNationalHeritage "ES"^^xsd:string , "PT"^^xsd:string ;
+    cwrc:hasNationalitySelfReported "GB-ENG"^^xsd:string , cwrc:jewishNationalIdentity , cwrc:sephardicJewishNationalIdentity ;
+    cwrc:hasRaceColour cwrc:whiteRaceColour ;
+    cwrc:hasReligion cwrc:catholicism , cwrc:christianity , cwrc:protestantism ;
+    cwrc:hasSocialClass cwrc:entrepreneurial-industrialist ;
+    cwrc:hasActivistInvolvementIn cwrc:zionism ;
+    cwrc:hasAncestor <http://cwrc.ca/cwrcdata/Fernandez_Benjamin_Dias> ;
+    cwrc:hasBirthPlace <http://sws.geonames.org/2643743/> ;
+    cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Tuberculosis> ;
+    cwrc:hasDeathDate "1847-09-16"^^xsd:date ;
+    cwrc:hasDeathPlace <http://sws.geonames.org/2925533/> ;
+    cwrc:hasGenderedPoliticalActivity cwrc:zionism ;
+    cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Howitt_Mary> , <http://cwrc.ca/cwrcdata/Bowles_Caroline> , <http://cwrc.ca/cwrcdata/Crosland_Camilla> , <http://cwrc.ca/cwrcdata/Hall_Anna_Maria> , <http://cwrc.ca/cwrcdata/Hemans_Felicia> , <http://cwrc.ca/cwrcdata/Scott_Sir_Walter> ;
+    cwrc:hasPaidOccupation cwrc:teacher , cwrc:writer ;
+    cwrc:hasVolunteerOccupation cwrc:charityWorker ;
+    cwrc:relocatesTo <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2654710/> , <http://sws.geonames.org/11609025/> ;
+    cwrc:studies <http://id.loc.gov/authorities/subjects/sh85035659> , <http://id.loc.gov/authorities/subjects/sh85039408> , <http://id.loc.gov/authorities/subjects/sh85061212> , <http://id.loc.gov/authorities/subjects/sh85077507> , <http://id.loc.gov/authorities/subjects/sh85088961> , <http://id.loc.gov/authorities/subjects/sh85101722> , <http://id.loc.gov/authorities/subjects/sh85120542> , <http://id.loc.gov/authorities/subjects/sh85122827> , <http://id.loc.gov/authorities/subjects/sh85134665> ;
+    cwrc:visits <http://sws.geonames.org/2925533/> , <http://sws.geonames.org/2835382/> ;
+    <http://www.w3.org/ns/org#memberOf> cwrc:Roman_Catholic_Church_ORG ;
+    a cwrc:NaturalPerson ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=aguigr> ;
+    foaf:name "Aguilar, Grace"^^xsd:string .
+​
+<http://cwrc.ca/cwrcdata/Angelou_Maya> cwrc:hasBrother <http://cwrc.ca/cwrcdata/Johnson_Bailey_junior> ;
+    cwrc:hasContestedBehaviour "at fourteen, after spending time with her father and her father's violently hostile partner, she ran away and dropped out..." ;
+    cwrc:hasFather <http://cwrc.ca/cwrcdata/Johnson_Bailey_senior> ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasGeographicHeritage <http://sws.geonames.org/4132194/> ;
+    cwrc:hasGrandMother <http://cwrc.ca/cwrcdata/Henderson_Annie> ;
+    cwrc:hasHusband <http://cwrc.ca/cwrcdata/Angelopulos_Enistasious> , <http://cwrc.ca/cwrcdata/Feu_Paul_du> ;
+    cwrc:hasInstructor <http://cwrc.ca/cwrcdata/Flowers_Bertha> , <http://cwrc.ca/cwrcdata/Graham_Martha> ;
+    cwrc:hasMother <http://cwrc.ca/cwrcdata/Baxter_Vivian> ;
+    cwrc:hasRaceColourSelfReported cwrc:blackRaceColour ;
+    cwrc:hasReligion "_christian sciencd_"^^xsd:string .
+​
+<http://cwrc.ca/cwrcdata/Laski_Marghanita> cwrc:studies <http://id.loc.gov/authorities/subjects/sh96010368> , <http://id.loc.gov/vocabulary/languages/ang> ;
+    <http://www.w3.org/ns/org#memberOf> cwrc:Campaign_for_Nuclear_Disarmament_ORG ;
+    a cwrc:NaturalPerson ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=laskma> ;
+    foaf:name "Laski, Marghanita"^^xsd:string .
+​
+<http://cwrc.ca/cwrcdata/Levertov_Denise> cwrc:hasChild "1" ;
+    cwrc:hasEthnicitySelfReported cwrc:jewishEthnicity ;
+    cwrc:hasEvent <http://cwrc.ca/cwrcdata/levede_CulturalForm_Event1> , <http://cwrc.ca/cwrcdata/levede_migratesTo_Event1> , <http://cwrc.ca/cwrcdata/levede_Occupation_Event1> , <http://cwrc.ca/cwrcdata/levede_Political_Event1> , <http://cwrc.ca/cwrcdata/levede_travelsTo_Event1> , <http://cwrc.ca/cwrcdata/levede_travelsTo_Event2> , <http://cwrc.ca/cwrcdata/levede_travelsTo_Event3> ;
+    cwrc:hasFather <http://cwrc.ca/cwrcdata/Levertoff_Paul> ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasHusband <http://cwrc.ca/cwrcdata/Goodman_Mitchell> ;
+    cwrc:hasMother <http://cwrc.ca/cwrcdata/Levertoff_Beatrice> ;
+    cwrc:hasNationalHeritageSelfReported "GB-WLS"^^xsd:string , "RU"^^xsd:string ;
+    cwrc:hasNationality "GB-ENG"^^xsd:string ;
+    cwrc:hasNationalitySelfReported "US"^^xsd:string ;
+    cwrc:hasReligion cwrc:anglicanism ;
+    cwrc:hasReligionSelfReported "_roman cathollic_"^^xsd:string ;
+    cwrc:hasSexuality "_homophobic_"^^xsd:string ;
+    cwrc:hasSexualitySelfReported cwrc:heterosexual ;
+    cwrc:hasSister <http://cwrc.ca/cwrcdata/Levertov_Denise_Sister> ;
+    cwrc:hasSocialClassSelfReported cwrc:professional ;
+    cwrc:hasActivistInvolvementIn cwrc:anti-NuclearMovement , cwrc:anti-Racism , cwrc:anti-War , cwrc:communism , cwrc:environmentalism , cwrc:internationalism ;
+    cwrc:hasBirthPlace <http://sws.geonames.org/2646277/> ;
+    cwrc:hasBirthPosition cwrc:youngestChild ;
+    cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Cancer> ;
+    cwrc:hasDeathDate "1997-12-20"^^xsd:date ;
+    cwrc:hasDeathPlace <http://sws.geonames.org/5809844/> ;
+    cwrc:hasEmployer "antique shop" , "bookshop" ;
+    cwrc:hasGenderedPoliticalActivity cwrc:anti-NuclearMovement , cwrc:anti-Racism , cwrc:anti-War , cwrc:communism , cwrc:environmentalism , cwrc:internationalism ;
+    cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Williams_William_Carlos> , <http://cwrc.ca/cwrcdata/Creeley_Robert> , <http://cwrc.ca/cwrcdata/Duncan_Robert> , <http://cwrc.ca/cwrcdata/Olson_Charles> , <http://cwrc.ca/cwrcdata/Read_Herbert> , <http://cwrc.ca/cwrcdata/Rexroth_Kenneth> , <http://cwrc.ca/cwrcdata/Rich_Adrienne> ;
+    cwrc:hasPaidOccupation cwrc:nursing , cwrc:retail , cwrc:teacher ;
+    cwrc:inhabits <http://sws.geonames.org/2646277/> ;
+    cwrc:migratesTo <http://sws.geonames.org/5128581/> ;
+    cwrc:relocatesTo <http://sws.geonames.org/4931482/> , <http://sws.geonames.org/4955085/> , <http://sws.geonames.org/5398563/> , <http://sws.geonames.org/5809844/> ;
+    cwrc:studies <http://id.loc.gov/vocabulary/languages/fre> , <http://id.loc.gov/authorities/subjects/sh85007461> , <http://id.loc.gov/authorities/subjects/sh85061212> , <http://id.loc.gov/authorities/subjects/sh85101722> , <http://id.loc.gov/authorities/subjects/sh85011275> ;
+    cwrc:travelsTo "Moscow,Russian Federation" , <http://sws.geonames.org/6269131/> , <http://sws.geonames.org/1581130/> , <http://sws.geonames.org/2017370/> , <http://sws.geonames.org/2077456/> , <http://sws.geonames.org/3522509/> , <http://sws.geonames.org/4005539/> , <http://sws.geonames.org/4980455/> , <http://sws.geonames.org/727011/> ;
+    cwrc:visits <http://sws.geonames.org/3038354/> ;
+    <http://www.w3.org/ns/org#memberOf> cwrc:Anglican_Church_ORG , cwrc:Judaism_ORG , cwrc:Roman_Catholic_Church_ORG ;
+    a cwrc:NaturalPerson .
+​
+<http://cwrc.ca/cwrcdata/Feinstein_Elaine> cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Weldon_Fay> ;
+    cwrc:hasOccupationIncome "She earned money the family sorely needed (in part for school fees)" ;
+    cwrc:hasPaidOccupation cwrc:academic , cwrc:editing , cwrc:professor , cwrc:teacher , cwrc:writer , cwrc:writerInResidence ;
+    cwrc:hasPossiblyEroticRelationshipWith <http://cwrc.ca/cwrcdata/intimate_relationship> ;
+    cwrc:hasVolunteerOccupation cwrc:publicReader ;
+    cwrc:inhabits <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2653941/> , <http://sws.geonames.org/2654710/> , <http://sws.geonames.org/2635414/> , <http://sws.geonames.org/2644668/> , <http://sws.geonames.org/2656686/> ;
+    cwrc:relatesSpatiallyTo <http://sws.geonames.org/2644210/> ;
+    cwrc:relocatesTo <http://sws.geonames.org/2644668/> ;
+    cwrc:studies <http://id.loc.gov/authorities/subjects/sh85043777> , <http://id.loc.gov/authorities/subjects/sh85075145> , <http://id.loc.gov/authorities/subjects/sh85082139> , <http://id.loc.gov/authorities/subjects/sh8511855> ;
+    cwrc:travelsTo <http://sws.geonames.org/294640/> , <http://sws.geonames.org/1880252/> , <http://sws.geonames.org/3133895/> ;
+    cwrc:visits "Moscow,Russian Federation" , <http://sws.geonames.org/2661604/> , <http://sws.geonames.org/2988507/> , <http://sws.geonames.org/3077311/> , <http://sws.geonames.org/498817/> , <http://sws.geonames.org/798544/> ;
+    a cwrc:NaturalPerson ;
+    foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=feinel> ;
+    foaf:name "Feinstein, Elaine"^^xsd:string .
+​
+<http://cwrc.ca/cwrcdata/Laski_Marghanita> cwrc:hasEthnicitySelfReported cwrc:jewishEthnicity ;
+    cwrc:hasEvent <http://cwrc.ca/cwrcdata/laskma_InstitutionalEducation_Event1> , <http://cwrc.ca/cwrcdata/laskma_Leisure_Event1> , <http://cwrc.ca/cwrcdata/laskma_Occupation_Event1> , <http://cwrc.ca/cwrcdata/laskma_Occupation_Event2> , <http://cwrc.ca/cwrcdata/laskma_Political_Event1> ;
+    cwrc:hasFather <http://cwrc.ca/cwrcdata/Laski_Neville_Jonas> ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasGrandFather <http://cwrc.ca/cwrcdata/Gaster_Moses> ;
+    cwrc:hasHusband <http://cwrc.ca/cwrcdata/Howard_John_Eldred> ;
+    cwrc:hasMother <http://cwrc.ca/cwrcdata/Laski_Seraphina> ;
+    cwrc:hasNationalHeritageReported "RO"^^xsd:string ;
+    cwrc:hasNationalitySelfReported "GB-ENG"^^xsd:string ;
+    cwrc:hasReligionSelfReported cwrc:atheism ;
+    cwrc:hasSocialClassSelfReported cwrc:professional ;
+    cwrc:hasUncle <http://cwrc.ca/cwrcdata/Laski_Harold> ;
+    cwrc:hasActivistInvolvementIn cwrc:anti-NuclearMovement , cwrc:artsAdvocacy .
+​
