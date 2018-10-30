@@ -1,0 +1,863 @@
+@prefix marcrel: <http://id.loc.gov/vocabulary/relators/> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix genre: <http://sparql.cwrc.ca/ontologies/genre#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix hint: <http://www.bigdata.com/queryHints#> .
+@prefix bd: <http://www.bigdata.com/rdf#> .
+@prefix bds: <http://www.bigdata.com/rdf/search#> .
+
+<http://cwrc.ca/cwrcdata/Coleridge_Sara> cwrc:hasDeathDate "1852-05-03"^^xsd:date ;
+	rdfs:label "Coleridge, Sara"^^xsd:string ;
+	cwrc:hasReligion cwrc:unitarianism ;
+	cwrc:studies <http://id.loc.gov/authorities/subjects/sh2002011436> , <http://id.loc.gov/authorities/subjects/sh85061212> , <http://id.loc.gov/authorities/subjects/sh85068806> , <http://id.loc.gov/authorities/subjects/sh85074944> , <http://id.loc.gov/authorities/subjects/sh85077507> , <http://id.loc.gov/authorities/subjects/sh85088762> , <http://id.loc.gov/authorities/subjects/sh85112599> , <http://id.loc.gov/authorities/subjects/sh85134665> , <http://id.loc.gov/vocabulary/languages/spa> ;
+	cwrc:travelsTo <http://sws.geonames.org/2643743/> ;
+	cwrc:visits "Grasmere,Cumbria,England" , <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2640834/> , <http://sws.geonames.org/2646279/> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Anglican_Church_ORG , cwrc:Unitarian_Church_ORG ;
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=coles2> ;
+	foaf:name "Coleridge, Sara" , "Coleridge, Sara"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Fuller_Margaret> cwrc:hasDeathDate "1850-07-19"^^xsd:date ;
+	rdfs:label "Fuller, Margaret"^^xsd:string ;
+	cwrc:hasReligion cwrc:unitarianism ;
+	cwrc:hasChild "1" ;
+	cwrc:hasContestedBehaviour "Soon afterwards, her increasing wilfulness and bravado prompted her father to send her to a boarding school, Miss Prescott's Young..." ;
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/fullma_Occupation_Event1> , <http://cwrc.ca/cwrcdata/fullma_Occupation_Event2> , <http://cwrc.ca/cwrcdata/fullma_travelsTo_Event1> , <http://cwrc.ca/cwrcdata/fullma_travelsTo_Event2> , <http://cwrc.ca/cwrcdata/fullma_travelsTo_Event3> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Fuller_Timothy> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasHusband <http://cwrc.ca/cwrcdata/Browning_Elizabeth_Barrett> , <http://cwrc.ca/cwrcdata/Ossoli_Giovanni_Angelo> ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Fuller_Margarett_Crane> ;
+	cwrc:hasReligion "_transcendentalism_"^^xsd:string ;
+	cwrc:interpersonalRelationship <http://cwrc.ca/cwrcdata/Fuller_Buckminster> ;
+	cwrc:hasActivistInvolvementIn cwrc:italianNationalism ;
+	cwrc:hasBirthDate "1810-05-23"^^xsd:date ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/4932005/> ;
+	cwrc:hasBirthPosition cwrc:eldestChild ;
+	cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Drowning> ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/5846264/> ;
+	cwrc:hasGenderedPoliticalActivity cwrc:italianNationalism ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Alcott_Amos_Bronson> , <http://cwrc.ca/cwrcdata/Browning_Elizabeth_Barrett> , <http://cwrc.ca/cwrcdata/Browning_Robert> , <http://cwrc.ca/cwrcdata/Carlyle_Thomas> , <http://cwrc.ca/cwrcdata/Child_Lydia_Maria> , <http://cwrc.ca/cwrcdata/Emerson_Ralph_Waldo> , <http://cwrc.ca/cwrcdata/Hawthorne_Nathaniel> , <http://cwrc.ca/cwrcdata/Howe_Julia_Ward> , <http://cwrc.ca/cwrcdata/Howitt_Mary> , <http://cwrc.ca/cwrcdata/Martineau_Harriet> , <http://cwrc.ca/cwrcdata/Sand_George> , <http://cwrc.ca/cwrcdata/Thoreau_Henry_David> , <http://cwrc.ca/cwrcdata/Mickievicz_Adam> , <http://cwrc.ca/cwrcdata/Peabody_Elizabeth_Palmer> , <http://cwrc.ca/cwrcdata/Stanton_Elizabeth_Cady> ;
+	cwrc:hasOccupationIncome "Members paid for their attendance, and MF was able to support herself and her family with the money she made from them" ;
+	cwrc:hasPaidOccupation cwrc:journalist , cwrc:teacher , cwrc:writer ;
+	cwrc:hasVolunteerOccupation cwrc:nursing ;
+	cwrc:inhabits <http://sws.geonames.org/3169070/> ;
+	cwrc:studies <http://id.loc.gov/vocabulary/languages/fre> , <http://id.loc.gov/authorities/subjects/sh85026450> , <http://id.loc.gov/authorities/subjects/sh85035659> , <http://id.loc.gov/authorities/subjects/sh85054365> , <http://id.loc.gov/authorities/subjects/sh85057151> , <http://id.loc.gov/authorities/subjects/sh85061212> , <http://id.loc.gov/authorities/subjects/sh85068806> , <http://id.loc.gov/authorities/subjects/sh85074944> , <http://id.loc.gov/authorities/subjects/sh85082139> , <http://id.loc.gov/authorities/subjects/sh85088762> , <http://id.loc.gov/authorities/subjects/sh85124003> ;
+	cwrc:travelsTo <http://sws.geonames.org/6269131/> , <http://sws.geonames.org/2638360/> , <http://sws.geonames.org/3017382/> , <http://sws.geonames.org/3175395/> , <http://sws.geonames.org/3176219/> , <http://sws.geonames.org/4887398/> , <http://sws.geonames.org/5128723/> , <http://sws.geonames.org/5263045/> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Unitarian_Church_ORG ;
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=fullma> ;
+	foaf:name "Fuller, Margaret"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Gaskell_Elizabeth> cwrc:hasDeathDate "1865-11-12"^^xsd:date ;
+	rdfs:label "Gaskell, Elizabeth"^^xsd:string ;
+	cwrc:hasReligionSelfReported cwrc:unitarianism ;
+	cwrc:hasAunt <http://cwrc.ca/cwrcdata/Lumb_Hannah> ;
+	cwrc:hasBrother <http://cwrc.ca/cwrcdata/Stevenson_John_1798_-_1828> ;
+	cwrc:hasChild <http://cwrc.ca/cwrcdata/Gaskell_Marianne> ;
+	cwrc:hasDaughter <http://cwrc.ca/cwrcdata/Gaskell_Marianne> ;
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/gaskel_InstitutionalEducation_Event1> , <http://cwrc.ca/cwrcdata/gaskel_Leisure_Event1> , <http://cwrc.ca/cwrcdata/gaskel_Leisure_Event2> , <http://cwrc.ca/cwrcdata/gaskel_Occupation_Event1> , <http://cwrc.ca/cwrcdata/gaskel_Occupation_Event2> , <http://cwrc.ca/cwrcdata/gaskel_Occupation_Event3> , <http://cwrc.ca/cwrcdata/gaskel_Political_Event1> , <http://cwrc.ca/cwrcdata/gaskel_relocatesTo_Event1> , <http://cwrc.ca/cwrcdata/gaskel_relocatesTo_Event2> , <http://cwrc.ca/cwrcdata/gaskel_travelsTo_Event1> , <http://cwrc.ca/cwrcdata/gaskel_travelsTo_Event2> , <http://cwrc.ca/cwrcdata/gaskel_travelsTo_Event3> , <http://cwrc.ca/cwrcdata/gaskel_travelsTo_Event4> , <http://cwrc.ca/cwrcdata/gaskel_visits_Event1> , <http://cwrc.ca/cwrcdata/gaskel_visits_Event2> , <http://cwrc.ca/cwrcdata/gaskel_Wealth_Event1> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Stevenson_William> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasHusband <http://cwrc.ca/cwrcdata/Gaskell_William_1805_-_1884> ;
+	cwrc:hasInstructor <http://cwrc.ca/cwrcdata/Byerley_Maria> , <http://cwrc.ca/cwrcdata/Lumb_Hannah> ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Stevenson_Elizabeth> ;
+	cwrc:hasNationalitySelfReported "GB-ENG"^^xsd:string ;
+	cwrc:hasSocialClassSelfReported cwrc:professional ;
+	cwrc:hasSon <http://cwrc.ca/cwrcdata/Gaskell_William_1844_-_1845> ;
+	cwrc:hasActivistInvolvementIn "_non-chartist_"^^xsd:string , "_pro-corn-law_"^^xsd:string , cwrc:italianNationalism ;
+	cwrc:hasBirthDate "1810-09-29"^^xsd:date ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/2643743/> ;
+	cwrc:hasBirthPosition cwrc:youngestChild ;
+	cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Cerebrovascular_disease_stroke> ;
+	cwrc:hasChildren "7" ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/2646687/> ;
+	cwrc:hasGenderedPoliticalActivity "_non-chartist_"^^xsd:string , "_pro-corn-law_"^^xsd:string ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Bodichon_Barbara_Leigh_Smith> , <http://cwrc.ca/cwrcdata/Brontë_Charlotte> , <http://cwrc.ca/cwrcdata/Browning_Elizabeth_Barrett> , <http://cwrc.ca/cwrcdata/Browning_Robert> , <http://cwrc.ca/cwrcdata/Carlyle_Jane_Welsh> , <http://cwrc.ca/cwrcdata/Carlyle_Thomas> , <http://cwrc.ca/cwrcdata/Dickens_Charles> , <http://cwrc.ca/cwrcdata/Eliot_George> , <http://cwrc.ca/cwrcdata/Hill_Octavia> , <http://cwrc.ca/cwrcdata/Howitt_Mary> , <http://cwrc.ca/cwrcdata/Jameson_Anna_Brownell> , <http://cwrc.ca/cwrcdata/Jewsbury_Geraldine> , <http://cwrc.ca/cwrcdata/Lewes_George_Henry> , <http://cwrc.ca/cwrcdata/Martineau_Harriet> , <http://cwrc.ca/cwrcdata/Nightingale_Florence> , <http://cwrc.ca/cwrcdata/Parkes_Bessie_Rayner> , <http://cwrc.ca/cwrcdata/Rossetti_Dante_Gabriel> , <http://cwrc.ca/cwrcdata/Ruskin_Effie> , <http://cwrc.ca/cwrcdata/Ruskin_John> , <http://cwrc.ca/cwrcdata/Stowe_Harriet_Beecher> , <http://cwrc.ca/cwrcdata/Wedgwood_Julia> , <http://cwrc.ca/cwrcdata/Wordsworth_William> , <http://cwrc.ca/cwrcdata/Forster_John> , <http://cwrc.ca/cwrcdata/Fox_Eliza_Bridell> , <http://cwrc.ca/cwrcdata/Hearn_Ann> , <http://cwrc.ca/cwrcdata/Hill_Miranda> , <http://cwrc.ca/cwrcdata/Howitt_William> , <http://cwrc.ca/cwrcdata/Hunt_William_Holman> , <http://cwrc.ca/cwrcdata/Kay-Shuttleworth_Lady_Janet> , <http://cwrc.ca/cwrcdata/Kay-Shuttleworth_Sir_James_Philips> , <http://cwrc.ca/cwrcdata/Liggins_Joseph> , <http://cwrc.ca/cwrcdata/Madge_Travers> , <http://cwrc.ca/cwrcdata/Meteyard_Eliza> , <http://cwrc.ca/cwrcdata/Procter_Adelaide> , <http://cwrc.ca/cwrcdata/Smith_George_Murray> , <http://cwrc.ca/cwrcdata/Story_Emelyn_Wetmore> , <http://cwrc.ca/cwrcdata/Story_William_Wetmore> , <http://cwrc.ca/cwrcdata/Unsworth_Anna> , <http://cwrc.ca/cwrcdata/Winkworth_Catherine> , <http://cwrc.ca/cwrcdata/Winkworth_Emily> , <http://cwrc.ca/cwrcdata/Winkworth_Susanna> ;
+	cwrc:hasNonEroticRelationshipWith <http://cwrc.ca/cwrcdata/Norton_Charles_Eliot> ;
+	cwrc:hasPaidOccupation "Curate" ;
+	cwrc:hasVolunteerOccupation "_minister's wife_"^^xsd:string , cwrc:charityWorker , cwrc:educationalAdministration , cwrc:foodDistribution , cwrc:fundraiser , cwrc:philanthropicVisitor , cwrc:teacher ;
+	cwrc:inhabits <http://sws.geonames.org/2643123/> , <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2645093/> ;
+	cwrc:relocatesTo <http://sws.geonames.org/2643123/> ;
+	cwrc:studies <http://id.loc.gov/authorities/subjects/sh85053986> , <http://id.loc.gov/authorities/subjects/sh85061212> , <http://id.loc.gov/authorities/subjects/sh85068806> , <http://id.loc.gov/authorities/subjects/sh85074944> , <http://id.loc.gov/authorities/subjects/sh85088762> , <http://id.loc.gov/authorities/subjects/sh96010368> , cwrc:Fabulous_Histories_TITLE , cwrc:Hymns_in_Prose_for_Children_TITLE , cwrc:Lessons_for_Children_TITLE ;
+	cwrc:travelsTo <http://sws.geonames.org/2634895/> , <http://sws.geonames.org/2634135/> , <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2907911/> , <http://sws.geonames.org/2921044/> , <http://sws.geonames.org/2988507/> .
+
+<http://cwrc.ca/cwrcdata/Opie_Amelia> cwrc:hasDeathDate "1853-12-02"^^xsd:date ;
+	rdfs:label "Opie, Amelia"^^xsd:string ;
+	cwrc:hasReligionSelfReported cwrc:unitarianism ;
+	cwrc:hasActivistInvolvementIn cwrc:abolitionism ;
+	cwrc:hasReligion cwrc:unitarianism ;
+	cwrc:hasActivistInvolvementIn cwrc:anti-War , cwrc:jacobinism , cwrc:radicalism , cwrc:republicanism ;
+	cwrc:hasBirthDate "1769-11-12"^^xsd:date ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/2641181/> ;
+	cwrc:hasBirthPosition cwrc:onlyChild ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/2641181/> ;
+	cwrc:hasEroticRelationshipWith <http://cwrc.ca/cwrcdata/Holcroft_Thomas> ;
+	cwrc:hasGenderedPoliticalActivity cwrc:abolitionism , cwrc:anti-War , cwrc:jacobinism , cwrc:radicalism , cwrc:republicanism ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Barbauld_Anna_Letitia> , <http://cwrc.ca/cwrcdata/Bray_Anna_Eliza> , <http://cwrc.ca/cwrcdata/Byron_George_Gordon_sixth_Baron> , <http://cwrc.ca/cwrcdata/Cosway_Maria> , <http://cwrc.ca/cwrcdata/Edgeworth_Maria> , <http://cwrc.ca/cwrcdata/Fox_Charles_James> , <http://cwrc.ca/cwrcdata/Godwin_William> , <http://cwrc.ca/cwrcdata/Holcroft_Thomas> , <http://cwrc.ca/cwrcdata/Mitford_Mary_Russell> , <http://cwrc.ca/cwrcdata/Reynolds_Sir_Joshua> , <http://cwrc.ca/cwrcdata/Sheridan_Richard_Brinsley> , <http://cwrc.ca/cwrcdata/Siddons_Sarah> , <http://cwrc.ca/cwrcdata/Turner_Joseph_Mallord_William> , <http://cwrc.ca/cwrcdata/Wollstonecraft_Mary> , <http://cwrc.ca/cwrcdata/Aikin_John_the_younger> , <http://cwrc.ca/cwrcdata/Cooper_James_Fenimore> , <http://cwrc.ca/cwrcdata/Cork_Mary_Boyle_Countess_of> , <http://cwrc.ca/cwrcdata/Cuvier_Georges> , <http://cwrc.ca/cwrcdata/David_Jacques-Louis> , <http://cwrc.ca/cwrcdata/Fry_Elizabeth> , <http://cwrc.ca/cwrcdata/Gurney_John_Joseph> , <http://cwrc.ca/cwrcdata/Hayley_William> , <http://cwrc.ca/cwrcdata/Inchbald_Elizabeth> , <http://cwrc.ca/cwrcdata/Kościuszko_Tadeusz_Andrzej_Bonawentura> , <http://cwrc.ca/cwrcdata/Lafayette_Marie-Josef_marquis_de> , <http://cwrc.ca/cwrcdata/Lamb_Lady_Caroline> , <http://cwrc.ca/cwrcdata/Lemaistre_Elizabeth> , <http://cwrc.ca/cwrcdata/Northcote_James> , <http://cwrc.ca/cwrcdata/Plumptre_Annabella> , <http://cwrc.ca/cwrcdata/Plumptre_Anne> , <http://cwrc.ca/cwrcdata/Plumptre_Robert> , <http://cwrc.ca/cwrcdata/Scott_Sir_Walter> , <http://cwrc.ca/cwrcdata/Staël_Germaine_de> , <http://cwrc.ca/cwrcdata/Taylor_Susannah> , <http://cwrc.ca/cwrcdata/West_Benjamin> .
+
+<http://cwrc.ca/cwrcdata/Bodichon_Barbara_Leigh_Smith> cwrc:hasDeathDate "1891-06-11"^^xsd:date ;
+	rdfs:label "Bodichon, Barbara Leigh Smith"^^xsd:string ;
+	cwrc:hasReligion cwrc:unitarianism ;
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/bodiba_InstitutionalEducation_Event1> , <http://cwrc.ca/cwrcdata/bodiba_MentalHealth_Event1> , <http://cwrc.ca/cwrcdata/bodiba_Occupation_Event1> , <http://cwrc.ca/cwrcdata/bodiba_Occupation_Event2> , <http://cwrc.ca/cwrcdata/bodiba_Occupation_Event3> , <http://cwrc.ca/cwrcdata/bodiba_Occupation_Event4> , <http://cwrc.ca/cwrcdata/bodiba_Occupation_Event5> , <http://cwrc.ca/cwrcdata/bodiba_Occupation_Event6> , <http://cwrc.ca/cwrcdata/bodiba_Occupation_Event7> , <http://cwrc.ca/cwrcdata/bodiba_Occupation_Event8> , <http://cwrc.ca/cwrcdata/bodiba_PhysicalHealth_Event2> , <http://cwrc.ca/cwrcdata/bodiba_PhysicalHealth_Event3> , <http://cwrc.ca/cwrcdata/bodiba_Political_Event1> , <http://cwrc.ca/cwrcdata/bodiba_Political_Event10> , <http://cwrc.ca/cwrcdata/bodiba_Political_Event11> , <http://cwrc.ca/cwrcdata/bodiba_Political_Event12> , <http://cwrc.ca/cwrcdata/bodiba_Political_Event13> , <http://cwrc.ca/cwrcdata/bodiba_Political_Event14> , <http://cwrc.ca/cwrcdata/bodiba_Political_Event2> , <http://cwrc.ca/cwrcdata/bodiba_Political_Event3> , <http://cwrc.ca/cwrcdata/bodiba_Political_Event4> , <http://cwrc.ca/cwrcdata/bodiba_Political_Event5> , <http://cwrc.ca/cwrcdata/bodiba_Political_Event6> , <http://cwrc.ca/cwrcdata/bodiba_Political_Event7> , <http://cwrc.ca/cwrcdata/bodiba_Political_Event8> , <http://cwrc.ca/cwrcdata/bodiba_Political_Event9> , <http://cwrc.ca/cwrcdata/bodiba_Religion_Event1> , <http://cwrc.ca/cwrcdata/bodiba_travelsTo_Event1> , <http://cwrc.ca/cwrcdata/bodiba_travelsTo_Event2> , <http://cwrc.ca/cwrcdata/bodiba_travelsTo_Event3> , <http://cwrc.ca/cwrcdata/bodiba_visits_Event1> , <http://cwrc.ca/cwrcdata/bodiba_Wealth_Event1> , <http://cwrc.ca/cwrcdata/bodiba_Wealth_Event2> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Smith_Benjamin_Leigh> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasHusband <http://cwrc.ca/cwrcdata/Bodichon_Eugène> ;
+	cwrc:hasInstructor <http://cwrc.ca/cwrcdata/Buchanan_James> , <http://cwrc.ca/cwrcdata/Cary_Francis_S> , <http://cwrc.ca/cwrcdata/Hunt_William_Henry> ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Longen_Annie> ;
+	cwrc:hasReligion cwrc:agnosticism , cwrc:catholicism , cwrc:occultism , cwrc:spiritualism ;
+	cwrc:hasSocialClass cwrc:professional , cwrc:urban-industrialUnskilled ;
+	cwrc:hasActivistInvolvementIn "_campaigning against the married women's property laws_"^^xsd:string , cwrc:feminism , cwrc:radicalism , cwrc:suffrage ;
+	cwrc:hasBirthDate "1827-04-08"^^xsd:date ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/2634671/> ;
+	cwrc:hasBirthPosition cwrc:eldestChild ;
+	cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Cerebrovascular_disease_stroke> ;
+	cwrc:hasEroticRelationshipWith <http://cwrc.ca/cwrcdata/Chapman_John> ;
+	cwrc:hasGenderedPoliticalActivity "_campaigning against the married women's property laws_"^^xsd:string , cwrc:feminism , cwrc:radicalism , cwrc:suffrage ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Betham-Edwards_Matilda> , <http://cwrc.ca/cwrcdata/Blackwell_Elizabeth_1821_-_1910> , <http://cwrc.ca/cwrcdata/Eliot_George> , <http://cwrc.ca/cwrcdata/Howitt_Anna_Mary> , <http://cwrc.ca/cwrcdata/Howitt_Mary> , <http://cwrc.ca/cwrcdata/Jameson_Anna_Brownell> , <http://cwrc.ca/cwrcdata/Lewes_George_Henry> , <http://cwrc.ca/cwrcdata/Parkes_Bessie_Rayner> , <http://cwrc.ca/cwrcdata/Rossetti_Dante_Gabriel> , <http://cwrc.ca/cwrcdata/Siddal_Elizabeth> , <http://cwrc.ca/cwrcdata/Ayrton_Hertha> , <http://cwrc.ca/cwrcdata/Gould_Barbara_Bodichon> , <http://cwrc.ca/cwrcdata/Lewes_Thornton> , <http://cwrc.ca/cwrcdata/Procter_Adelaide> ;
+	cwrc:hasPaidOccupation "Writer" , "Artist" , cwrc:founder ;
+	cwrc:hasReproductiveHistory cwrc:childlessness ;
+	cwrc:hasVolunteerOccupation "_feminist organization founder_"^^xsd:string , "_the school, which was heavily subsidised by smith and cost sixpence a week to its pupils, also mixed classes, drawing on local tradespeople's children as well as smith's connections: one of the students was the son of italian nationalist garibaldi.60, 62_"^^xsd:string , cwrc:designer , cwrc:farming , cwrc:founder , cwrc:hostess , cwrc:publishing , cwrc:visualArtist , cwrc:writer ;
+	cwrc:inhabits <http://sws.geonames.org/2507480/> ;
+	cwrc:studies <http://id.loc.gov/authorities/subjects/sh85007461> , <http://id.loc.gov/authorities/subjects/sh85096661> ;
+	cwrc:travelsTo <http://sws.geonames.org/2658434/> , <http://sws.geonames.org/2782113/> , <http://sws.geonames.org/2802361/> , <http://sws.geonames.org/2921044/> , <http://sws.geonames.org/3169070/> , <http://sws.geonames.org/6252001/> , <http://sws.geonames.org/6255148/> ;
+	cwrc:visits "La Celle St Cloud,France" , <http://sws.geonames.org/2643743/> .
+
+<http://cwrc.ca/cwrcdata/Jebb_Ann> cwrc:hasDeathDate "1812-01-20"^^xsd:date ;
+	rdfs:label "Jebb, Ann"^^xsd:string ;
+	cwrc:hasReligion cwrc:unitarianism ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Brand_Hollis_Thomas> , <http://cwrc.ca/cwrcdata/Jennings_Henry_Constantine> , <http://cwrc.ca/cwrcdata/Lambert_James> , <http://cwrc.ca/cwrcdata/Lofft_Capel> , <http://cwrc.ca/cwrcdata/Meadley_George_Wilson> , <http://cwrc.ca/cwrcdata/Paley_William> , <http://cwrc.ca/cwrcdata/Wyvill_Christopher> ;
+	cwrc:hasReproductiveHistory cwrc:childlessness ;
+	cwrc:inhabits <http://sws.geonames.org/2647428/> , <http://sws.geonames.org/2653941/> , <http://sws.geonames.org/2654327/> , <http://sws.geonames.org/2644239/> , <http://sws.geonames.org/7294328/> ;
+	cwrc:relocatesTo <http://sws.geonames.org/2643743/> ;
+	cwrc:visits <http://sws.geonames.org/2654142/> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Anglican_Church_ORG , cwrc:Unitarian_Church_ORG .
+
+<http://cwrc.ca/cwrcdata/Hutton_Catherine> cwrc:hasDeathDate "1844-03-30"^^xsd:date ;
+	rdfs:label "Hutton, Catherine"^^xsd:string ;
+	cwrc:hasReligion cwrc:unitarianism ;
+	cwrc:hasVolunteerOccupation cwrc:cooking , cwrc:gardener , cwrc:housekeeper .
+
+<http://cwrc.ca/cwrcdata/Jebb_Ann> a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=jebban> ;
+	foaf:name "Jebb, Ann"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Jevons_Mary_Anne_the_elder> cwrc:hasDeathDate "1845-11-13"^^xsd:date ;
+	rdfs:label "Jevons, Mary Anne,, the elder"^^xsd:string ;
+	cwrc:hasReligionSelfReported cwrc:unitarianism ;
+	cwrc:hasBrother <http://cwrc.ca/cwrcdata/Roscoe_William_Stanley> ;
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/jevoma_inhabits_Event1> , <http://cwrc.ca/cwrcdata/jevoma_relocatesTo_Event1> , <http://cwrc.ca/cwrcdata/jevoma_relocatesTo_Event2> , <http://cwrc.ca/cwrcdata/jevoma_relocatesTo_Event3> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Roscoe_William_1753_-_1831> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasHusband <http://cwrc.ca/cwrcdata/Jevons_Thomas> ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Roscoe_Jane> ;
+	cwrc:hasNationalitySelfReported "GB-ENG"^^xsd:string ;
+	cwrc:hasNiece <http://cwrc.ca/cwrcdata/Sandbach_Margaret> ;
+	cwrc:hasRaceColour cwrc:whiteRaceColour ;
+	cwrc:hasSister <http://cwrc.ca/cwrcdata/Hornblower_Jane_Elizabeth> ;
+	cwrc:hasSocialClass cwrc:professional , cwrc:servants , cwrc:shopkeepers ;
+	cwrc:hasSon <http://cwrc.ca/cwrcdata/Jevons_William_Stanley> ;
+	cwrc:hasActivistInvolvementIn cwrc:parliamentaryReform ;
+	cwrc:hasBirthDate "1795-08-05"^^xsd:date ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/2644210/> ;
+	cwrc:hasBirthPosition cwrc:eldestChild ;
+	cwrc:hasChildren "11" ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/2643743/> ;
+	cwrc:hasGenderedPoliticalActivity cwrc:parliamentaryReform ;
+	cwrc:hasPaidOccupation "Editor" , "Poet" , cwrc:editing , cwrc:writer ;
+	cwrc:hasVolunteerOccupation cwrc:teacher ;
+	cwrc:inhabits <http://sws.geonames.org/2644210/> ;
+	cwrc:relocatesTo <http://sws.geonames.org/2644210/> ;
+	cwrc:studies <http://id.loc.gov/authorities/subjects/sh2002006384> , <http://id.loc.gov/authorities/subjects/sh85061212> , <http://id.loc.gov/authorities/subjects/sh85077507> , <http://id.loc.gov/authorities/subjects/sh85078106> , <http://id.loc.gov/authorities/subjects/sh85082139> , <http://id.loc.gov/authorities/subjects/sh8511855> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Unitarian_Church_ORG ;
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=jevoma> ;
+	foaf:name "Jevons, Mary Anne,, the elder" , "Jevons, Mary Anne,, the elder"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Opie_Amelia> cwrc:hasEvent <http://cwrc.ca/cwrcdata/opieam_Political_Event1> , <http://cwrc.ca/cwrcdata/opieam_Religion_Event1> , <http://cwrc.ca/cwrcdata/opieam_travelsTo_Event1> , <http://cwrc.ca/cwrcdata/opieam_travelsTo_Event2> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Alderson_James> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasHusband <http://cwrc.ca/cwrcdata/Opie_John> ;
+	cwrc:hasInstructor <http://cwrc.ca/cwrcdata/Taylor_Susannah> ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Savannah> ;
+	cwrc:hasNationalitySelfReported "GB-ENG"^^xsd:string ;
+	cwrc:hasReligion cwrc:dissentProtestant ;
+	cwrc:hasReligionSelfReported cwrc:quakerism ;
+	cwrc:hasSocialClass cwrc:professional .
+
+<http://cwrc.ca/cwrcdata/Martineau_Harriet> cwrc:hasDeathDate "1876-06-27"^^xsd:date ;
+	rdfs:label "Martineau, Harriet"^^xsd:string ;
+	cwrc:hasReligionSelfReported cwrc:unitarianism ;
+	cwrc:hasNationalHeritageSelfReported "FR"^^xsd:string ;
+	cwrc:hasNationalitySelfReported "GB-ENG"^^xsd:string ;
+	cwrc:hasNiece <http://cwrc.ca/cwrcdata/Martineau_Maria> ;
+	cwrc:hasRaceColour cwrc:whiteRaceColour ;
+	cwrc:hasReligionReported cwrc:atheism , cwrc:huguenotNationalHeritage ;
+	cwrc:hasReligionSelfReported cwrc:agnosticism , cwrc:atheism , cwrc:deism , cwrc:fatalism ;
+	cwrc:hasSister <http://cwrc.ca/cwrcdata/Higginson_Ellen> ;
+	cwrc:hasSocialClassSelfReported cwrc:professional ;
+	cwrc:hasActivistInvolvementIn "_anti-corn law_"^^xsd:string , "_salary reform_"^^xsd:string , "_tariff reform_"^^xsd:string , cwrc:abolitionism , cwrc:anti-ContagiousDiseasesAct , cwrc:anti-CorporalPunishment , cwrc:feminism , cwrc:housingMovement , cwrc:liberalism , cwrc:poorLawReform , cwrc:prisonReform , cwrc:propertyLawReform , cwrc:radicalism , cwrc:suffrage , cwrc:womensEducationReform ;
+	cwrc:hasBirthDate "1802-06-12"^^xsd:date ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/2641181/> ;
+	cwrc:hasBirthPosition cwrc:eldestChild ;
+	cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Cancer_of_ovary> ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/2657360/> ;
+	cwrc:hasEmployer <http://cwrc.ca/cwrcdata/Fox_William_Johnson> ;
+	cwrc:hasGenderedPoliticalActivity "_anti-corn law_"^^xsd:string , "_salary reform_"^^xsd:string , "_tariff reform_"^^xsd:string , cwrc:abolitionism , cwrc:anti-ContagiousDiseasesAct , cwrc:anti-CorporalPunishment , cwrc:feminism , cwrc:housingMovement , cwrc:liberalism , cwrc:poorLawReform , cwrc:prisonReform , cwrc:propertyLawReform , cwrc:radicalism , cwrc:suffrage , cwrc:womensEducationReform ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Aikin_Lucy> , <http://cwrc.ca/cwrcdata/Alcott_Amos_Bronson> , <http://cwrc.ca/cwrcdata/Alcott_Louisa_May> , <http://cwrc.ca/cwrcdata/Arnold_Mary_Penrose> , <http://cwrc.ca/cwrcdata/Arnold_Thomas_1795_-_1842> , <http://cwrc.ca/cwrcdata/Atkinson_Henry_George> , <http://cwrc.ca/cwrcdata/Austin_Sarah> , <http://cwrc.ca/cwrcdata/Baillie_Joanna> , <http://cwrc.ca/cwrcdata/Barbauld_Anna_Letitia> , <http://cwrc.ca/cwrcdata/Baring_Lady_Harriet> , <http://cwrc.ca/cwrcdata/Berry_Mary> , <http://cwrc.ca/cwrcdata/Bremer_Fredrika> , <http://cwrc.ca/cwrcdata/Bright_Jacob> , <http://cwrc.ca/cwrcdata/Brontë_Charlotte> , <http://cwrc.ca/cwrcdata/Brougham_Henry_Peter_Baron> , <http://cwrc.ca/cwrcdata/Browning_Elizabeth_Barrett> , <http://cwrc.ca/cwrcdata/Buller_Charles> , <http://cwrc.ca/cwrcdata/Byron_George_Gordon_sixth_Baron> , <http://cwrc.ca/cwrcdata/Carlyle_Jane_Welsh> , <http://cwrc.ca/cwrcdata/Carlyle_Thomas> , <http://cwrc.ca/cwrcdata/Darwin_Erasmus_Alvey> , <http://cwrc.ca/cwrcdata/Edgeworth_Maria> , <http://cwrc.ca/cwrcdata/Eliot_George> , <http://cwrc.ca/cwrcdata/Emerson_Ralph_Waldo> , <http://cwrc.ca/cwrcdata/Fuller_Margaret> , <http://cwrc.ca/cwrcdata/Gaskell_Elizabeth> , <http://cwrc.ca/cwrcdata/Graves_Robert_Perceval> , <http://cwrc.ca/cwrcdata/Grote_George> , <http://cwrc.ca/cwrcdata/Grote_Harriet> , <http://cwrc.ca/cwrcdata/Hallam_Arthur_Henry> , <http://cwrc.ca/cwrcdata/Hallam_Henry> , <http://cwrc.ca/cwrcdata/Hawthorne_Nathaniel> , <http://cwrc.ca/cwrcdata/Houghton_Richard_Monckton_Milnes_first_Baron> , <http://cwrc.ca/cwrcdata/Jameson_Anna_Brownell> , <http://cwrc.ca/cwrcdata/Jeffrey_Francis_Lord> , <http://cwrc.ca/cwrcdata/Kelty_Mary_Ann> , <http://cwrc.ca/cwrcdata/Kemble_Adelaide> , <http://cwrc.ca/cwrcdata/Kemble_Fanny> , <http://cwrc.ca/cwrcdata/Ker_Lady_Elizabeth> , <http://cwrc.ca/cwrcdata/Lewes_George_Henry> , <http://cwrc.ca/cwrcdata/Lockhart_John_Gibson> , <http://cwrc.ca/cwrcdata/Lytton_Edward_George_Earle_Lytton_Bulwer-Lytton_first_Baron> , <http://cwrc.ca/cwrcdata/Malthus_Thomas_Robert> , <http://cwrc.ca/cwrcdata/Marsh_Anne> , <http://cwrc.ca/cwrcdata/Milnes_Richard_Monckton> , <http://cwrc.ca/cwrcdata/Mitford_Mary_Russell> , <http://cwrc.ca/cwrcdata/Moore_Thomas> , <http://cwrc.ca/cwrcdata/Morgan_Sydney_Owenson_Lady> , <http://cwrc.ca/cwrcdata/Nightingale_Florence> , <http://cwrc.ca/cwrcdata/Noel_Byron_Anne_Isabella_Baroness> .
+
+<http://cwrc.ca/cwrcdata/Sewell_Mary> cwrc:hasDeathDate "1884-06-10"^^xsd:date ;
+	rdfs:label "Sewell, Mary"^^xsd:string ;
+	cwrc:hasReligion cwrc:unitarianism ;
+	cwrc:studies <http://id.loc.gov/authorities/subjects/sh85061212> , <http://id.loc.gov/authorities/subjects/sh85103704> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Anglican_Church_ORG , cwrc:Society_of_Friends_ORG , cwrc:Unitarian_Church_ORG ;
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=sewema> ;
+	foaf:name "Sewell, Mary" , "Sewell, Mary"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Adams_Sarah_Flower> cwrc:hasDeathDate "1848-08-14"^^xsd:date ;
+	rdfs:label "Adams, Sarah Flower"^^xsd:string ;
+	cwrc:hasReligion cwrc:unitarianism ;
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/adamsa_inhabits_Event1> , <http://cwrc.ca/cwrcdata/adamsa_inhabits_Event2> , <http://cwrc.ca/cwrcdata/adamsa_Leisure_Event1> , <http://cwrc.ca/cwrcdata/adamsa_relocatesTo_Event1> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Flower_Benjamin> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasGuardian <http://cwrc.ca/cwrcdata/Flower_Eliza> ;
+	cwrc:hasHusband <http://cwrc.ca/cwrcdata/Adams_William_Bridges> ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Flower_Eliza> ;
+	cwrc:hasNationality "GB-ENG"^^xsd:string ;
+	cwrc:hasRaceColour cwrc:whiteRaceColour ;
+	cwrc:hasSister <http://cwrc.ca/cwrcdata/Flower_Eliza> ;
+	cwrc:interpersonalRelationship <http://cwrc.ca/cwrcdata/Martineau_Harriet> ;
+	cwrc:hasActivistInvolvementIn cwrc:socialism ;
+	cwrc:hasBirthDate "1805-02-22"^^xsd:date ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/2647461/> ;
+	cwrc:hasBurialPlace <http://sws.geonames.org/2647461/> ;
+	cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Tuberculosis> ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/2643743/> ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Browning_Robert> , <http://cwrc.ca/cwrcdata/Martineau_Harriet> , <http://cwrc.ca/cwrcdata/Mill_John_Stuart> , <http://cwrc.ca/cwrcdata/Taylor_Harriet> , <http://cwrc.ca/cwrcdata/Clarke_Mary_Cowden> , <http://cwrc.ca/cwrcdata/Linton_William_James> , <http://cwrc.ca/cwrcdata/Novello_Vincent> , <http://cwrc.ca/cwrcdata/Flower_Benjamin> ;
+	cwrc:hasPaidOccupation cwrc:performer , cwrc:writer ;
+	cwrc:hasReproductiveHistory cwrc:childlessness ;
+	cwrc:inhabits <http://sws.geonames.org/2643743/> ;
+	cwrc:relocatesTo <http://sws.geonames.org/2643743/> ;
+	cwrc:studies <http://id.loc.gov/authorities/subjects/sh85112599> ;
+	cwrc:travelsTo <http://sws.geonames.org/11609015/> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Unitarian_Church_ORG ;
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=adamsa> ;
+	foaf:name "Adams, Sarah Flower"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Cook_Eliza> cwrc:hasDeathDate "1889-09-23"^^xsd:date ;
+	rdfs:label "Cook, Eliza"^^xsd:string ;
+	cwrc:hasReligion cwrc:unitarianism ;
+	cwrc:hasBrother <http://cwrc.ca/cwrcdata/Cook_Eliza_Brother> ;
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/cookel_PhysicalHealth_Event1> , <http://cwrc.ca/cwrcdata/cookel_relocatesTo_Event1> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Cook_Joseph> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Cook_Eliza_Mother> ;
+	cwrc:hasNiece <http://cwrc.ca/cwrcdata/Cook_Eliza_Niece> ;
+	cwrc:hasSexuality cwrc:lesbian ;
+	cwrc:hasSocialClass cwrc:entrepreneurial-industrialist , cwrc:skilledCraftpersonArtisan , cwrc:workingClass ;
+	cwrc:hasActivistInvolvementIn cwrc:feminism , cwrc:radicalism ;
+	cwrc:hasBirthDate "1812-12-24"^^xsd:date ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/2643743/> ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/2643743/> ;
+	cwrc:hasGenderedPoliticalActivity cwrc:feminism , cwrc:radicalism ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Norton_Caroline> , <http://cwrc.ca/cwrcdata/Jerdan_William> , <http://cwrc.ca/cwrcdata/Brown_William_Wells> , <http://cwrc.ca/cwrcdata/Forrester_Alfred_Henry> , <http://cwrc.ca/cwrcdata/Osgood_Frances> ;
+	cwrc:hasNonEroticRelationshipWith <http://cwrc.ca/cwrcdata/intimate_relationship> ;
+	cwrc:hasPaidOccupation cwrc:journalist , cwrc:publishing ;
+	cwrc:hasPossiblyEroticRelationshipWith <http://cwrc.ca/cwrcdata/Harmer_James> ;
+	cwrc:relocatesTo <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2646557/> ;
+	cwrc:travelsTo <http://sws.geonames.org/2654710/> , <http://sws.geonames.org/11609031/> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Unitarian_Church_ORG ;
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=cookel> ;
+	foaf:name "Cook, Eliza"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Harwood_Isabella_Neil> cwrc:hasDeathDate "1888-05-29"^^xsd:date ;
+	rdfs:label "Harwood, Isabella Neil"^^xsd:string ;
+	cwrc:hasReligionSelfReported cwrc:unitarianism ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Harwood_Phillip> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Neil_Isabella> ;
+	cwrc:hasNationalHeritage "GB-SCT"^^xsd:string ;
+	cwrc:hasNationalHeritageSelfReported "GB-ENG"^^xsd:string ;
+	cwrc:hasSocialClassSelfReported cwrc:professional ;
+	cwrc:hasBirthDate "1837-06-14"^^xsd:date ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/2654726/> ;
+	cwrc:hasBirthPosition cwrc:onlyChild ;
+	cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Cancer> .
+
+<http://cwrc.ca/cwrcdata/Gaskell_Elizabeth> cwrc:travelsTo <http://sws.geonames.org/3169070/> , <http://sws.geonames.org/9610282/> , <http://sws.geonames.org/2645093/> , <http://sws.geonames.org/2647278/> , <http://sws.geonames.org/2659172/> , <http://sws.geonames.org/2660581/> , <http://sws.geonames.org/2660647/> , <http://sws.geonames.org/3337388/> ;
+	cwrc:visits <http://sws.geonames.org/2641673/> , <http://sws.geonames.org/2643123/> , <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2642447/> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Unitarian_Church_ORG ;
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=gaskel> ;
+	foaf:name "Gaskell, Elizabeth" , "Gaskell, Elizabeth"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Marsh_Anne> cwrc:hasDeathDate "1874-10-05"^^xsd:date ;
+	rdfs:label "Marsh, Anne"^^xsd:string ;
+	cwrc:hasReligion cwrc:unitarianism ;
+	cwrc:hasAunt <http://cwrc.ca/cwrcdata/Stamford_Hannah> ;
+	cwrc:hasBrother <http://cwrc.ca/cwrcdata/Marsh_Anne_Brother> ;
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/marsan_PhysicalHealth_Event1> , <http://cwrc.ca/cwrcdata/marsan_relocatesTo_Event1> , <http://cwrc.ca/cwrcdata/marsan_Wealth_Event1> , <http://cwrc.ca/cwrcdata/marsan_Wealth_Event2> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Caldwell_James_d_1838> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasHusband <http://cwrc.ca/cwrcdata/Caldwell_Anne> , <http://cwrc.ca/cwrcdata/Marsh_Arthur_Cuthbert> ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Caldwell_Elizabeth> ;
+	cwrc:hasNationalHeritage "GB-SCT"^^xsd:string ;
+	cwrc:hasNationality "GB-ENG"^^xsd:string ;
+	cwrc:hasSocialClass cwrc:gentry , cwrc:lowerMiddleClass ;
+	cwrc:hasSon <http://cwrc.ca/cwrcdata/Marsh_Martin_William_James> ;
+	cwrc:interpersonalRelationship <http://cwrc.ca/cwrcdata/Holland_Sir_Henry_1788_-_1873> ;
+	cwrc:hasActivistInvolvementIn cwrc:conservatism ;
+	cwrc:hasBirthDate "1791-01-09"^^xsd:date ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/6620315/> ;
+	cwrc:hasChildren "8" ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/6620315/> ;
+	cwrc:hasGenderedPoliticalActivity cwrc:conservatism ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Martineau_Harriet> , <http://cwrc.ca/cwrcdata/Smith_Sydney> , <http://cwrc.ca/cwrcdata/Staël_Germaine_de> , <http://cwrc.ca/cwrcdata/Wedgwood_Josiah_1730_-_1795> , <http://cwrc.ca/cwrcdata/Wedgwood_Sarah> ;
+	cwrc:hasVolunteerOccupation cwrc:farming , cwrc:teacher ;
+	cwrc:inhabits <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2647116/> ;
+	cwrc:relocatesTo <http://sws.geonames.org/3031133/> , <http://sws.geonames.org/2634677/> , <http://sws.geonames.org/2649817/> , <http://sws.geonames.org/2641217/> ;
+	cwrc:studies "_french and english history_"^^xsd:string , <http://id.loc.gov/authorities/subjects/sh85043777> , <http://id.loc.gov/authorities/subjects/sh85112599> , cwrc:Lessons_for_Children_TITLE , cwrc:LAllegro_TITLE , cwrc:Reliques_of_Ancient_English_Poetry_TITLE ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Unitarian_Church_ORG ;
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=marsan> ;
+	foaf:name "Marsh, Anne"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Martineau_Harriet> cwrc:hasBrother <http://cwrc.ca/cwrcdata/Martineau_James> , <http://cwrc.ca/cwrcdata/Martineau_Thomas_1795_-_1824> ;
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/martha_DomesticEducation_Event1> , <http://cwrc.ca/cwrcdata/martha_InstitutionalEducation_Event1> , <http://cwrc.ca/cwrcdata/martha_PhysicalHealth_Event1> , <http://cwrc.ca/cwrcdata/martha_PhysicalHealth_Event2> , <http://cwrc.ca/cwrcdata/martha_PhysicalHealth_Event4> , <http://cwrc.ca/cwrcdata/martha_Political_Event1> , <http://cwrc.ca/cwrcdata/martha_relocatesTo_Event1> , <http://cwrc.ca/cwrcdata/martha_relocatesTo_Event2> , <http://cwrc.ca/cwrcdata/martha_relocatesTo_Event3> , <http://cwrc.ca/cwrcdata/martha_travelsTo_Event1> , <http://cwrc.ca/cwrcdata/martha_travelsTo_Event2> , <http://cwrc.ca/cwrcdata/martha_travelsTo_Event3> , <http://cwrc.ca/cwrcdata/martha_travelsTo_Event4> , <http://cwrc.ca/cwrcdata/martha_travelsTo_Event5> , <http://cwrc.ca/cwrcdata/martha_visits_Event1> , <http://cwrc.ca/cwrcdata/martha_Wealth_Event1> , <http://cwrc.ca/cwrcdata/martha_Wealth_Event2> , <http://cwrc.ca/cwrcdata/martha_WomensHealth_Event3> , <http://cwrc.ca/cwrcdata/martha_inhabits_Event1> , <http://cwrc.ca/cwrcdata/martha_PhysicalHealth_Event5> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Martineau_Thomas_1764_-_1826> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasGeographicHeritage <http://sws.geonames.org/2641181/> ;
+	cwrc:hasInstructor <http://cwrc.ca/cwrcdata/Carpenter_Lant> , <http://cwrc.ca/cwrcdata/Martineau_Henry> , <http://cwrc.ca/cwrcdata/Martineau_Thomas_1795_-_1824> , <http://cwrc.ca/cwrcdata/Perry_Isaac> , <http://cwrc.ca/cwrcdata/Rankin_Ann_Cole> , <http://cwrc.ca/cwrcdata/Wilberforce_William> , <http://cwrc.ca/cwrcdata/Greenhow_Elizabeth> ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Martineau_Elizabeth> .
+
+<http://cwrc.ca/cwrcdata/Carpenter_Mary> cwrc:hasDeathDate "1877-06-15"^^xsd:date ;
+	rdfs:label "Carpenter, Mary"^^xsd:string ;
+	cwrc:hasReligionSelfReported cwrc:unitarianism ;
+	cwrc:travelsTo <http://sws.geonames.org/5907990/> , <http://sws.geonames.org/6077243/> , <http://sws.geonames.org/6087892/> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Unitarian_Church_ORG ;
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=carpma> ;
+	foaf:name "Carpenter, Mary"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Child_Lydia_Maria> cwrc:hasDeathDate "1880-10-20"^^xsd:date ;
+	rdfs:label "Child, Lydia Maria"^^xsd:string ;
+	cwrc:hasReligionSelfReported cwrc:unitarianism ;
+	cwrc:hasBrother <http://cwrc.ca/cwrcdata/Child_Lydia_Maria_Brother> ;
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/chilly_relocatesTo_Event1> , <http://cwrc.ca/cwrcdata/chilly_relocatesTo_Event2> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Francis_David_Convers> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasHusband <http://cwrc.ca/cwrcdata/Child_David_Lee> ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Francis_Susannah_Rand> ;
+	cwrc:hasNationalitySelfReported "US"^^xsd:string ;
+	cwrc:hasReligion cwrc:calvinism , cwrc:swedenborgianism ;
+	cwrc:hasReligionSelfReported cwrc:agnosticism , cwrc:christianity ;
+	cwrc:hasActivistInvolvementIn cwrc:abolitionism , cwrc:feminism ;
+	cwrc:hasBirthDate "1802-02-11"^^xsd:date ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/5740099/> ;
+	cwrc:hasBirthPosition cwrc:youngestChild ;
+	cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Myocardial_infarction_heart_attack> ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/4954654/> ;
+	cwrc:hasEmployer cwrc:American_Anti-Slavery_Society_ORG ;
+	cwrc:hasGenderedPoliticalActivity cwrc:abolitionism , cwrc:feminism ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Fuller_Margaret> ;
+	cwrc:hasOccupationIncome "at a salary of a thousand dollars a year." ;
+	cwrc:hasPaidOccupation cwrc:boardingHouseKeeper , cwrc:editing , cwrc:teacher , cwrc:writer ;
+	cwrc:hasReproductiveHistory cwrc:childlessness ;
+	cwrc:relocatesTo <http://sws.geonames.org/5128581/> , <http://sws.geonames.org/4945819/> , <http://sws.geonames.org/4954654/> ;
+	cwrc:studies <http://id.loc.gov/authorities/subjects/sh85133052> , cwrc:Paradise_Lost_TITLE ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Unitarian_Church_ORG ;
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=chilly> ;
+	foaf:name "Child, Lydia Maria"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Coleridge_Sara> cwrc:hasBrother <http://cwrc.ca/cwrcdata/Coleridge_Hartley> ;
+	cwrc:hasDaughter <http://cwrc.ca/cwrcdata/Coleridge_Edith> ;
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/coles2_MentalHealth_Event2> , <http://cwrc.ca/cwrcdata/coles2_MentalHealth_Event4> , <http://cwrc.ca/cwrcdata/coles2_PhysicalHealth_Event1> , <http://cwrc.ca/cwrcdata/coles2_SelfTaughtEducation_Event1> , <http://cwrc.ca/cwrcdata/coles2_travelsTo_Event1> , <http://cwrc.ca/cwrcdata/coles2_Wealth_Event1> , <http://cwrc.ca/cwrcdata/coles2_WomensHealth_Event3> , <http://cwrc.ca/cwrcdata/coles2_WomensHealth_Event5> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Coleridge_Samuel_Taylor> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasHusband <http://cwrc.ca/cwrcdata/Coleridge_Henry_Nelson> ;
+	cwrc:hasInstructor <http://cwrc.ca/cwrcdata/Southey_Robert> ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Coleridge_Sarah> ;
+	cwrc:hasRaceColour cwrc:whiteRaceColour ;
+	cwrc:hasReligion cwrc:anglicanism ;
+	cwrc:hasSocialClass cwrc:professional ;
+	cwrc:hasSon <http://cwrc.ca/cwrcdata/Coleridge_Herbert> ;
+	cwrc:hasUncle <http://cwrc.ca/cwrcdata/Southey_Robert> ;
+	cwrc:hasBirthDate "1802-12-22"^^xsd:date ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/2645756/> ;
+	cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Cancer> ;
+	cwrc:hasChildren "2" ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/2643743/> ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Baillie_Joanna> , <http://cwrc.ca/cwrcdata/Browning_Elizabeth_Barrett> , <http://cwrc.ca/cwrcdata/Carlyle_Thomas> , <http://cwrc.ca/cwrcdata/Gaskell_Elizabeth> , <http://cwrc.ca/cwrcdata/Gladstone_William_Ewart> , <http://cwrc.ca/cwrcdata/Jameson_Anna_Brownell> , <http://cwrc.ca/cwrcdata/Macaulay_Thomas_Babington_first_Baron> , <http://cwrc.ca/cwrcdata/Martineau_Harriet> , <http://cwrc.ca/cwrcdata/Rigby_Elizabeth> , <http://cwrc.ca/cwrcdata/Taylor_Sir_Henry> , <http://cwrc.ca/cwrcdata/Wordsworth_William> , <http://cwrc.ca/cwrcdata/Jewsbury_Maria_Jane> , <http://cwrc.ca/cwrcdata/Southey_Edith> , <http://cwrc.ca/cwrcdata/Vere_Aubrey_Thomas_de> , <http://cwrc.ca/cwrcdata/Wordsworth_Dorothy> , <http://cwrc.ca/cwrcdata/Maurice_John_Frederick_Denison> ;
+	cwrc:hasPaidOccupation "Writer" , "Editor" , "Reviewer" ;
+	cwrc:hasPossiblyEroticRelationshipWith <http://cwrc.ca/cwrcdata/Coleridge_Henry_Nelson> ;
+	cwrc:inhabits <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2645756/> ;
+	cwrc:relocatesTo <http://sws.geonames.org/2643743/> ;
+	cwrc:studies <http://id.loc.gov/vocabulary/languages/fre> .
+
+<http://cwrc.ca/cwrcdata/Bodichon_Barbara_Leigh_Smith> cwrc:visits <http://sws.geonames.org/5102578/> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Roman_Catholic_Church_ORG , cwrc:Unitarian_Church_ORG ;
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bodiba> ;
+	foaf:name "Bodichon, Barbara Leigh Smith" , "Bodichon, Barbara Leigh Smith"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Carpenter_Mary> cwrc:hasBrother <http://cwrc.ca/cwrcdata/Carpenter_William_Benjamin> ;
+	cwrc:hasDaughter <http://cwrc.ca/cwrcdata/Carpenter_Mary_Daughter> ;
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/carpma_Occupation_Event1> , <http://cwrc.ca/cwrcdata/carpma_Occupation_Event2> , <http://cwrc.ca/cwrcdata/carpma_Occupation_Event3> , <http://cwrc.ca/cwrcdata/carpma_Occupation_Event4> , <http://cwrc.ca/cwrcdata/carpma_Occupation_Event5> , <http://cwrc.ca/cwrcdata/carpma_Occupation_Event6> , <http://cwrc.ca/cwrcdata/carpma_Occupation_Event7> , <http://cwrc.ca/cwrcdata/carpma_Occupation_Event8> , <http://cwrc.ca/cwrcdata/carpma_Occupation_Event9> , <http://cwrc.ca/cwrcdata/carpma_Political_Event1> , <http://cwrc.ca/cwrcdata/carpma_Political_Event2> , <http://cwrc.ca/cwrcdata/carpma_travelsTo_Event1> , <http://cwrc.ca/cwrcdata/carpma_travelsTo_Event2> , <http://cwrc.ca/cwrcdata/carpma_travelsTo_Event3> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Carpenter_Lant> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Carpenter_Anna> ;
+	cwrc:hasNationality "GB-ENG"^^xsd:string ;
+	cwrc:hasReligion cwrc:hinduism ;
+	cwrc:hasReligionSelfReported cwrc:puritanism ;
+	cwrc:hasSexuality cwrc:sexualityCelibacy ;
+	cwrc:hasSister <http://cwrc.ca/cwrcdata/Carpenter_Mary_Sister> ;
+	cwrc:hasSocialClass cwrc:professional ;
+	cwrc:hasActivistInvolvementIn "_addressing the local suffrage society and assuring its members of her support_"^^xsd:string , cwrc:abolitionism ;
+	cwrc:hasBirthDate "1807-04-03"^^xsd:date ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/2649808/> ;
+	cwrc:hasBurialPlace <http://sws.geonames.org/2654675/> ;
+	cwrc:hasCohabitant <http://cwrc.ca/cwrcdata/Cobbe_Frances_Power> ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/2654675/> ;
+	cwrc:hasGenderedPoliticalActivity "_addressing the local suffrage society and assuring its members of her support_"^^xsd:string , cwrc:abolitionism ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Cobbe_Frances_Power> , <http://cwrc.ca/cwrcdata/Douglass_Frederick> , <http://cwrc.ca/cwrcdata/Howe_Julia_Ward> , <http://cwrc.ca/cwrcdata/Mott_Lucretia> , <http://cwrc.ca/cwrcdata/Noel_Byron_Anne_Isabella_Baroness> , <http://cwrc.ca/cwrcdata/Roy_Rammohun> , <http://cwrc.ca/cwrcdata/Tuckerman_Joseph> ;
+	cwrc:hasPaidOccupation cwrc:educationalAdministration , cwrc:governess , cwrc:teacher ;
+	cwrc:hasVolunteerOccupation cwrc:eventOrganizer , cwrc:philanthropist , cwrc:publicSpeaker , cwrc:reformer , cwrc:visualArtist , cwrc:writer ;
+	cwrc:inhabits <http://sws.geonames.org/2654675/> ;
+	cwrc:relocatesTo "Odsey,Cambridgeshire,England" , <http://sws.geonames.org/11609015/> , <http://sws.geonames.org/11609036/> , <http://sws.geonames.org/2649808/> , <http://sws.geonames.org/2654675/> ;
+	cwrc:studies <http://id.loc.gov/authorities/subjects/sh85057151> , <http://id.loc.gov/authorities/subjects/sh85061212> , <http://id.loc.gov/authorities/subjects/sh85082139> , <http://id.loc.gov/authorities/subjects/sh8511855> , <http://id.loc.gov/authorities/subjects/sh85145673> ;
+	cwrc:travelsTo "India" , "Dhaka,India" , "Goalondo,India" , "Hartfort,Connecticut,USA" , "Kolkata,,India" , "Mahabaleshwar,India" , "Pune,India" , "Six Nations Reserve,Canada" , "Vadodara,India" , "Washington,DC,USA" , <http://sws.geonames.org/6269131/> , <http://sws.geonames.org/1253405/> , <http://sws.geonames.org/1255364/> , <http://sws.geonames.org/1264527/> , <http://sws.geonames.org/1275004/> , <http://sws.geonames.org/1275339/> , <http://sws.geonames.org/1278994/> , <http://sws.geonames.org/1279233/> , <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/294640/> , <http://sws.geonames.org/2963370/> , <http://sws.geonames.org/2964574/> , <http://sws.geonames.org/2988507/> , <http://sws.geonames.org/4347778/> , <http://sws.geonames.org/4560349/> , <http://sws.geonames.org/4762894/> , <http://sws.geonames.org/4930956/> , <http://sws.geonames.org/5101798/> , <http://sws.geonames.org/5128581/> .
+
+<http://cwrc.ca/cwrcdata/Scott_Mary> cwrc:hasDeathDate "1793-06-05"^^xsd:date ;
+	rdfs:label "Scott, Mary"^^xsd:string ;
+	cwrc:hasReligionSelfReported cwrc:unitarianism ;
+	cwrc:hasEroticRelationshipWith <http://cwrc.ca/cwrcdata/Taylor_John_1753_-_1817> ;
+	cwrc:hasReligion cwrc:unitarianism ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Cowper_William> , <http://cwrc.ca/cwrcdata/Johnson_Samuel> , <http://cwrc.ca/cwrcdata/Seward_Anna> , <http://cwrc.ca/cwrcdata/Williams_Helen_Maria> , <http://cwrc.ca/cwrcdata/Hanway_Jonas> , <http://cwrc.ca/cwrcdata/Reeve_Clara> , <http://cwrc.ca/cwrcdata/Steele_Anne> ;
+	cwrc:inhabits <http://sws.geonames.org/2654675/> , <http://sws.geonames.org/2646265/> ;
+	cwrc:studies <http://id.loc.gov/authorities/subjects/sh85077507> , <http://id.loc.gov/authorities/subjects/sh85077531> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Anglican_Church_ORG , cwrc:Society_of_Friends_ORG , cwrc:Unitarian_Church_ORG ;
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=scotma> ;
+	foaf:name "Scott, Mary"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Sedgwick_Catharine_Maria> cwrc:hasDeathDate "1867-07-31"^^xsd:date ;
+	rdfs:label "Sedgwick, Catharine Maria"^^xsd:string ;
+	cwrc:hasReligionSelfReported cwrc:unitarianism ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Sedgwick_Theodore> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Sedgwick_Pamela> ;
+	cwrc:hasNationalitySelfReported "US"^^xsd:string ;
+	cwrc:hasRaceColour cwrc:whiteRaceColour ;
+	cwrc:hasReligionSelfReported cwrc:congregationalism ;
+	cwrc:hasSocialClassSelfReported cwrc:professional ;
+	cwrc:interpersonalRelationship <http://cwrc.ca/cwrcdata/Freeman_Elizabeth> ;
+	cwrc:hasBirthDate "1789-12-28"^^xsd:date ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/4952078/> ;
+	cwrc:hasBirthPosition cwrc:eldestChild ;
+	cwrc:hasBurialPlace <http://sws.geonames.org/4952078/> ;
+	cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Paralysis> ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/4930956/> ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Bremer_Fredrika> , <http://cwrc.ca/cwrcdata/Edgeworth_Maria> , <http://cwrc.ca/cwrcdata/Jameson_Anna_Brownell> , <http://cwrc.ca/cwrcdata/Kemble_Fanny> , <http://cwrc.ca/cwrcdata/Martineau_Harriet> , <http://cwrc.ca/cwrcdata/Fern_Fanny> , <http://cwrc.ca/cwrcdata/Sigourney_Lydia_Howard> ;
+	cwrc:hasPaidOccupation cwrc:teacher ;
+	cwrc:hasPossiblyEroticRelationshipWith <http://cwrc.ca/cwrcdata/Jarvis_William> ;
+	cwrc:hasReproductiveHistory cwrc:childlessness ;
+	cwrc:hasVolunteerOccupation cwrc:philanthropicVisitor ;
+	cwrc:inhabits <http://sws.geonames.org/5128581/> , <http://sws.geonames.org/6254926/> ;
+	cwrc:studies <http://id.loc.gov/vocabulary/languages/fre> , <http://id.loc.gov/authorities/subjects/sh85035659> , <http://id.loc.gov/authorities/subjects/sh85042701> ;
+	cwrc:travelsTo <http://sws.geonames.org/6269131/> , <http://sws.geonames.org/2658434/> , <http://sws.geonames.org/2802361/> , <http://sws.geonames.org/2921044/> , <http://sws.geonames.org/3017382/> , <http://sws.geonames.org/3175395/> ;
+	cwrc:visits <http://sws.geonames.org/4140963/> , <http://sws.geonames.org/6077243/> , <http://sws.geonames.org/6087892/> , <http://sws.geonames.org/6254927/> , <http://sws.geonames.org/6254928/> , <http://sws.geonames.org/4896861/> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Congregational_Church_ORG , cwrc:Unitarian_Church_ORG ;
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=sedgca> ;
+	foaf:name "Sedgwick, Catharine Maria"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Sewell_Mary> cwrc:hasContestedBehaviour "she read novels from the circulating library secretly in bed." ;
+	cwrc:hasDaughter <http://cwrc.ca/cwrcdata/Sewell_Anna> ;
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/sewema_relocatesTo_Event1> , <http://cwrc.ca/cwrcdata/sewema_relocatesTo_Event2> , <http://cwrc.ca/cwrcdata/sewema_relocatesTo_Event3> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Wright_John_d_1854> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasHusband <http://cwrc.ca/cwrcdata/Sewell_Isaac> ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Wright_Ann> ;
+	cwrc:hasReligionSelfReported cwrc:anglicanism , cwrc:quakerism ;
+	cwrc:hasSon <http://cwrc.ca/cwrcdata/Sewell_Anna> , <http://cwrc.ca/cwrcdata/Sewell_Philip> ;
+	cwrc:hasActivistInvolvementIn cwrc:abolitionism , cwrc:temperanceMovement ;
+	cwrc:hasBirthDate "1797-04-06"^^xsd:date ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/2636503/> ;
+	cwrc:hasBirthPosition cwrc:eldestChild ;
+	cwrc:hasBurialPlace "Lammas,Norfolk,England" ;
+	cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_respiratory_system> ;
+	cwrc:hasChildren "2" ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/7301865/> ;
+	cwrc:hasGenderedPoliticalActivity cwrc:abolitionism , cwrc:temperanceMovement ;
+	cwrc:hasPaidOccupation "Poet" , "Children'S Writer" , cwrc:governess , cwrc:teacher ;
+	cwrc:hasVolunteerOccupation cwrc:activist , cwrc:educationalAdministration , cwrc:librarian , cwrc:teacher ;
+	cwrc:inhabits <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2647984/> , <http://sws.geonames.org/7301835/> ;
+	cwrc:relocatesTo <http://sws.geonames.org/2641181/> , <http://sws.geonames.org/2653192/> , <http://sws.geonames.org/2654675/> , <http://sws.geonames.org/2654710/> , <http://sws.geonames.org/2656173/> , <http://sws.geonames.org/2633983/> , <http://sws.geonames.org/2641319/> , <http://sws.geonames.org/2647248/> , <http://sws.geonames.org/7301865/> .
+
+<http://cwrc.ca/cwrcdata/Harwood_Isabella_Neil> cwrc:hasDeathPlace <http://sws.geonames.org/2647356/> ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Blind_Mathilde> , <http://cwrc.ca/cwrcdata/Brown_Ford_Madox> , <http://cwrc.ca/cwrcdata/Morris_William> , <http://cwrc.ca/cwrcdata/Rossetti_Dante_Gabriel> , <http://cwrc.ca/cwrcdata/Swinburne_Algernon_Charles> , <http://cwrc.ca/cwrcdata/Horne_Richard_Hengist> , <http://cwrc.ca/cwrcdata/Miller_Joaquin> , <http://cwrc.ca/cwrcdata/Harwood_Phillip> , <http://cwrc.ca/cwrcdata/Heath_Caroline> , <http://cwrc.ca/cwrcdata/Marston_Westland> , <http://cwrc.ca/cwrcdata/Neilson_Adelaide> , <http://cwrc.ca/cwrcdata/Wallis_Miss> , <http://cwrc.ca/cwrcdata/Wills_William_Gorman> ;
+	cwrc:hasReproductiveHistory cwrc:childlessness ;
+	cwrc:inhabits <http://sws.geonames.org/2643743/> ;
+	cwrc:relocatesTo <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2647356/> , <http://sws.geonames.org/2654726/> ;
+	cwrc:studies <http://id.loc.gov/authorities/subjects/sh85088762> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Unitarian_Church_ORG ;
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=harwis> ;
+	foaf:name "Harwood, Isabella Neil"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Manning_Anne> cwrc:hasDeathDate "1879-09-14"^^xsd:date ;
+	rdfs:label "Manning, Anne"^^xsd:string ;
+	cwrc:hasReligion cwrc:unitarianism ;
+	cwrc:hasAward <http://cwrc.ca/cwrcdata/gold_medal_from_the_Royal_Academy_of_Arts> ;
+	cwrc:hasBrother <http://cwrc.ca/cwrcdata/Manning_William_Oke_1809_-_1878> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Manning_William_Oke_1778_-_1859> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasGrandFather <http://cwrc.ca/cwrcdata/Gibson_Frederick> , <http://cwrc.ca/cwrcdata/Manning_James> ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Gibson_Joan_Whatmore> ;
+	cwrc:hasNationality "GB-ENG"^^xsd:string ;
+	cwrc:hasReligion cwrc:anglicanism ;
+	cwrc:hasSocialClassSelfReported cwrc:professional ;
+	cwrc:hasBirthDate "1807-02-17"^^xsd:date ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/2643743/> ;
+	cwrc:hasBirthPosition cwrc:eldestChild ;
+	cwrc:hasBurialPlace <http://sws.geonames.org/2642642/> ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/2639022/> ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Yonge_Charlotte> , <http://cwrc.ca/cwrcdata/Batty_Beatrice_Braithwaite> ;
+	cwrc:hasReproductiveHistory cwrc:childlessness ;
+	cwrc:hasVolunteerOccupation cwrc:teacher , cwrc:visualArtist , cwrc:botanist ;
+	cwrc:inhabits <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2639506/> , <http://sws.geonames.org/2640409/> ;
+	cwrc:relocatesTo <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2642642/> , <http://sws.geonames.org/2638662/> ;
+	cwrc:studies <http://id.loc.gov/authorities/subjects/sh85009003> , <http://id.loc.gov/authorities/subjects/sh85015976> , <http://id.loc.gov/authorities/subjects/sh85061212> , <http://id.loc.gov/authorities/subjects/sh85074583> , <http://id.loc.gov/authorities/subjects/sh85088762> , <http://id.loc.gov/authorities/subjects/sh85096661> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Anglican_Church_ORG , cwrc:Unitarian_Church_ORG ;
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=mannan> ;
+	foaf:name "Manning, Anne"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Morton_Sarah_Wentworth> cwrc:hasDeathDate "1846-05-14"^^xsd:date ;
+	rdfs:label "Morton, Sarah Wentworth"^^xsd:string ;
+	cwrc:hasReligion cwrc:unitarianism ;
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/mortsa_relocatesTo_Event1> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Morton_Sarah_Wentworth_Father> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasHusband <http://cwrc.ca/cwrcdata/Morton_Perez> ;
+	cwrc:hasInstructor <http://cwrc.ca/cwrcdata/Trumbull_John> ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Morton_Sarah_Wentworth_Mother> ;
+	cwrc:hasNationalHeritageSelfReported "GB-WLS"^^xsd:string ;
+	cwrc:hasNationality "GB"^^xsd:string ;
+	cwrc:hasNationalitySelfReported "US"^^xsd:string ;
+	cwrc:hasReligionSelfReported cwrc:anglicanism ;
+	cwrc:hasSister <http://cwrc.ca/cwrcdata/Morton_Sarah_Wentworth_Sister> ;
+	cwrc:hasSocialClass cwrc:entrepreneurial-industrialist ;
+	cwrc:hasSocialClassSelfReported cwrc:gentry ;
+	cwrc:hasActivistInvolvementIn cwrc:abolitionism , cwrc:americanNationalism , cwrc:patriotism , cwrc:republicanism ;
+	cwrc:hasBirthDate "1759-08-29"^^xsd:date ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/4930956/> ;
+	cwrc:hasBirthPosition cwrc:eldestChild ;
+	cwrc:hasChildren "6" ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/4948247/> ;
+	cwrc:hasGenderedPoliticalActivity cwrc:abolitionism , cwrc:americanNationalism , cwrc:patriotism , cwrc:republicanism ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Adams_Abigail> , <http://cwrc.ca/cwrcdata/Payne_Robert_Treat_Jr> , <http://cwrc.ca/cwrcdata/Stuart_Gilbert_1755_-_1828> ;
+	cwrc:hasVolunteerOccupation cwrc:philanthropist ;
+	cwrc:inhabits <http://sws.geonames.org/4930956/> .
+
+<http://cwrc.ca/cwrcdata/Sandbach_Margaret> cwrc:hasDeathDate "1852-06-23"^^xsd:date ;
+	rdfs:label "Sandbach, Margaret"^^xsd:string ;
+	cwrc:hasReligion cwrc:unitarianism ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=sandma> ;
+	foaf:name "Sandbach, Margaret" , "Sandbach, Margaret"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Taylor_Harriet> cwrc:hasDeathDate "1858-11-03"^^xsd:date ;
+	rdfs:label "Taylor, Harriet"^^xsd:string ;
+	cwrc:hasReligion cwrc:unitarianism ;
+	cwrc:hasDaughter <http://cwrc.ca/cwrcdata/Taylor_Helen> ;
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/taylha_inhabits_Event1> , <http://cwrc.ca/cwrcdata/taylha_PhysicalHealth_Event1> , <http://cwrc.ca/cwrcdata/taylha_PhysicalHealth_Event2> , <http://cwrc.ca/cwrcdata/taylha_PhysicalHealth_Event3> , <http://cwrc.ca/cwrcdata/taylha_travelsTo_Event1> , <http://cwrc.ca/cwrcdata/taylha_visits_Event1> , <http://cwrc.ca/cwrcdata/taylha_visits_Event2> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Hardy_Thomas_surgeon> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasHusband <http://cwrc.ca/cwrcdata/Mill_John_Stuart> , <http://cwrc.ca/cwrcdata/Taylor_Algernon> , <http://cwrc.ca/cwrcdata/Taylor_John_d_1849> ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Hardy_Harriet> ;
+	cwrc:hasNationalHeritageSelfReported "GB-ENG"^^xsd:string ;
+	cwrc:hasSocialClass cwrc:gentry ;
+	cwrc:hasSocialClassSelfReported cwrc:professional ;
+	cwrc:hasSon <http://cwrc.ca/cwrcdata/Taylor_Herbert> ;
+	cwrc:hasActivistInvolvementIn cwrc:feminism , cwrc:womensEnfranchisement ;
+	cwrc:hasBirthDate "1807-10-10"^^xsd:date ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/2643743/> ;
+	cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Pneumonia> ;
+	cwrc:hasChildren "3" ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/3035681/> ;
+	cwrc:hasEroticRelationshipWith <http://cwrc.ca/cwrcdata/Mill_John_Stuart> ;
+	cwrc:hasGenderedPoliticalActivity cwrc:feminism , cwrc:womensEnfranchisement ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Austin_Sarah> , <http://cwrc.ca/cwrcdata/Carlyle_Jane_Welsh> , <http://cwrc.ca/cwrcdata/Carlyle_Thomas> , <http://cwrc.ca/cwrcdata/Grote_Harriet> , <http://cwrc.ca/cwrcdata/Martineau_Harriet> , <http://cwrc.ca/cwrcdata/Mill_John_Stuart> , <http://cwrc.ca/cwrcdata/Fox_William_Johnson> , <http://cwrc.ca/cwrcdata/Adams_Sarah_Flower> , <http://cwrc.ca/cwrcdata/Flower_Eliza> ;
+	cwrc:hasPaidOccupation cwrc:critic , cwrc:journalist , cwrc:philosopher , cwrc:writer ;
+	cwrc:hasVolunteerOccupation "Feminism" , cwrc:careGiver , cwrc:nursing , cwrc:writer ;
+	cwrc:inhabits <http://sws.geonames.org/2634825/> , <http://sws.geonames.org/2643743/> ;
+	cwrc:studies <http://id.loc.gov/vocabulary/languages/fre> , <http://id.loc.gov/authorities/subjects/sh85054365> ;
+	cwrc:travelsTo <http://sws.geonames.org/6269131/> , <http://sws.geonames.org/2659994/> , <http://sws.geonames.org/2660646/> , <http://sws.geonames.org/2921044/> , <http://sws.geonames.org/2988507/> , <http://sws.geonames.org/3176219/> ;
+	cwrc:visits <http://sws.geonames.org/2635650/> , <http://sws.geonames.org/2988507/> , <http://sws.geonames.org/3017382/> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Unitarian_Church_ORG ;
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=taylha> ;
+	foaf:name "Taylor, Harriet" , "Taylor, Harriet"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Duff_Gordon_Lucie> cwrc:hasDeathDate "1869-07-14"^^xsd:date ;
+	rdfs:label "Duff Gordon, Lucie"^^xsd:string ;
+	cwrc:hasReligion cwrc:unitarianism ;
+	cwrc:hasContestedBehaviour "Her mother voiced some anxiety about Lucie's development. The child had grown very tall, and, Sarah Austin said, though she..." ;
+	cwrc:hasDaughter <http://cwrc.ca/cwrcdata/Duff_Gordon_Urania> , <http://cwrc.ca/cwrcdata/Ross_Janet> ;
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/dufflu_inhabits_Event1> , <http://cwrc.ca/cwrcdata/dufflu_InstitutionalEducation_Event1> , <http://cwrc.ca/cwrcdata/dufflu_PhysicalHealth_Event1> , <http://cwrc.ca/cwrcdata/dufflu_PhysicalHealth_Event2> , <http://cwrc.ca/cwrcdata/dufflu_Political_Event1> , <http://cwrc.ca/cwrcdata/dufflu_Religion_Event1> , <http://cwrc.ca/cwrcdata/dufflu_relocatesTo_Event1> , <http://cwrc.ca/cwrcdata/dufflu_relocatesTo_Event2> , <http://cwrc.ca/cwrcdata/dufflu_travelsTo_Event1> , <http://cwrc.ca/cwrcdata/dufflu_travelsTo_Event2> , <http://cwrc.ca/cwrcdata/dufflu_travelsTo_Event3> , <http://cwrc.ca/cwrcdata/dufflu_travelsTo_Event4> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Austin_John_1790_-_1859> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasGeographicHeritage <http://www.geonames.org/6269131> ;
+	cwrc:hasGrandDaughter <http://cwrc.ca/cwrcdata/Duff_Gordon_Maurice> ;
+	cwrc:hasHusband <http://cwrc.ca/cwrcdata/Duff_Gordon_Sir_Alexander> ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Austin_Sarah> ;
+	cwrc:hasRaceColour cwrc:whiteRaceColour ;
+	cwrc:hasReligion cwrc:agnosticism , cwrc:atheism , cwrc:islam ;
+	cwrc:hasReligionReported cwrc:utilitarianism ;
+	cwrc:hasReligionSelfReported cwrc:anglicanism ;
+	cwrc:hasSocialClassSelfReported cwrc:professional ;
+	cwrc:hasSon <http://cwrc.ca/cwrcdata/Duff_Gordon_Maurice> .
+
+<http://cwrc.ca/cwrcdata/Martineau_Harriet> cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Polidori_John_W> , <http://cwrc.ca/cwrcdata/Reid_Elizabeth_Jesser> , <http://cwrc.ca/cwrcdata/Rossetti_Christina> , <http://cwrc.ca/cwrcdata/Somerville_Mary> , <http://cwrc.ca/cwrcdata/Sterling_John> , <http://cwrc.ca/cwrcdata/Taylor_Emily> , <http://cwrc.ca/cwrcdata/Urquhart_David> , <http://cwrc.ca/cwrcdata/Wedgwood_Frances> , <http://cwrc.ca/cwrcdata/Wedgwood_Hensleigh> , <http://cwrc.ca/cwrcdata/Wedgwood_Julia> , <http://cwrc.ca/cwrcdata/Durham_John_George_Lambton_first_Earl_of> ;
+	cwrc:hasOccupationIncome "W. J. Fox agreed to pay her ¥15 a year for her reviewing for the The Monthly Repository" ;
+	cwrc:hasPaidOccupation cwrc:farming , cwrc:journalist , cwrc:needlework , cwrc:writer ;
+	cwrc:hasPossiblyEroticRelationshipWith <http://cwrc.ca/cwrcdata/Worthington_John_Hugh> ;
+	cwrc:hasVolunteerOccupation cwrc:designer ;
+	cwrc:inhabits <http://sws.geonames.org/2635269/> , <http://sws.geonames.org/2641673/> , <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/6252001/> ;
+	cwrc:relocatesTo "Grasmere,Cumbria,England" , <http://sws.geonames.org/11609030/> , <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2645022/> , <http://sws.geonames.org/2657360/> ;
+	cwrc:studies <http://id.loc.gov/vocabulary/languages/fre> , <http://id.loc.gov/authorities/subjects/sh85007163> , <http://id.loc.gov/authorities/subjects/sh85054365> , <http://id.loc.gov/authorities/subjects/sh85061212> , <http://id.loc.gov/authorities/subjects/sh85068806> , <http://id.loc.gov/authorities/subjects/sh85074944> , <http://id.loc.gov/authorities/subjects/sh85078106> , <http://id.loc.gov/authorities/subjects/sh85082139> , <http://id.loc.gov/authorities/subjects/sh85090601> , <http://id.loc.gov/authorities/subjects/sh85103704> , <http://id.loc.gov/authorities/subjects/sh85148637> , cwrc:Bible_TITLE , cwrc:Hymns_in_Prose_for_Children_TITLE , <http://id.loc.gov/authorities/subjects/sh85113628> ;
+	cwrc:travelsTo "" , "North Africa" , <http://sws.geonames.org/2638360/> , <http://sws.geonames.org/2645022/> , <http://sws.geonames.org/2655603/> , <http://sws.geonames.org/3175395/> , <http://sws.geonames.org/357994/> , <http://sws.geonames.org/4140963/> , <http://sws.geonames.org/4347778/> , <http://sws.geonames.org/4508722/> , <http://sws.geonames.org/4560349/> , <http://sws.geonames.org/4574324/> , <http://sws.geonames.org/4887398/> , <http://sws.geonames.org/4990729/> , <http://sws.geonames.org/5101760/> , <http://sws.geonames.org/5128581/> , <http://sws.geonames.org/6252001/> , <http://sws.geonames.org/6254926/> , <http://sws.geonames.org/6254928/> , <http://vocab.getty.edu/tgn/7001181> , <http://sws.geonames.org/4297983/> , <http://sws.geonames.org/6269133/> ;
+	cwrc:visits <http://sws.geonames.org/2964574/> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Anti-Corn_Law_League_ORG , cwrc:Unitarian_Church_ORG ;
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=martha> ;
+	foaf:name "Martineau, Harriet" , "Martineau, Harriet"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Sandbach_Margaret> cwrc:hasAunt <http://cwrc.ca/cwrcdata/Jevons_Mary_Anne_the_elder> ;
+	cwrc:hasBrother <http://cwrc.ca/cwrcdata/Roscoe_Edward_Henry> ;
+	cwrc:hasCousin <http://cwrc.ca/cwrcdata/Roscoe_William_Caldwell> ;
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/sandma_PhysicalHealth_Event1> , <http://cwrc.ca/cwrcdata/sandma_travelsTo_Event1> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Roscoe_Edward_1785_-_1834> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasGrandFather <http://cwrc.ca/cwrcdata/Roscoe_William_1753_-_1831> ;
+	cwrc:hasHusband <http://cwrc.ca/cwrcdata/Sandbach_Henry_Robertson> ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Roscoe_Margaret> ;
+	cwrc:hasRaceColour cwrc:whiteRaceColour ;
+	cwrc:hasUncle <http://cwrc.ca/cwrcdata/Roscoe_William_Stanley> ;
+	cwrc:hasBirthDate "1812-04-28"^^xsd:date ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/2644210/> ;
+	cwrc:hasBirthPosition cwrc:eldestChild ;
+	cwrc:hasBurialPlace <http://sws.geonames.org/2644027/> ;
+	cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Cancer> ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/2644027/> ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Rigby_Elizabeth> , <http://cwrc.ca/cwrcdata/Gibson_John> ;
+	cwrc:hasPaidOccupation "Writer" ;
+	cwrc:hasReproductiveHistory cwrc:childlessness ;
+	cwrc:hasVolunteerOccupation cwrc:writer ;
+	cwrc:studies <http://id.loc.gov/authorities/subjects/sh85026450> ;
+	cwrc:travelsTo <http://sws.geonames.org/3169070/> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Unitarian_Church_ORG ;
+	a cwrc:NaturalPerson .
+
+<http://cwrc.ca/cwrcdata/Duff_Gordon_Lucie> cwrc:studies <http://id.loc.gov/authorities/childrensSubjects/sj96004806> , <http://id.loc.gov/authorities/subjects/sh85007163> , <http://id.loc.gov/authorities/subjects/sh85026450> , <http://id.loc.gov/authorities/subjects/sh85053986> , <http://id.loc.gov/authorities/subjects/sh85054365> , <http://id.loc.gov/authorities/subjects/sh85057151> , <http://id.loc.gov/authorities/subjects/sh85074944> , <http://id.loc.gov/authorities/subjects/sh85082139> , <http://id.loc.gov/authorities/subjects/sh85148637> , <http://id.loc.gov/authorities/subjects/sh99005065> ;
+	cwrc:travelsTo <http://sws.geonames.org/6269131/> , <http://sws.geonames.org/2647356/> , <http://sws.geonames.org/276781/> , <http://sws.geonames.org/2802361/> , <http://sws.geonames.org/2988507/> , <http://sws.geonames.org/3017382/> , <http://sws.geonames.org/3031133/> , <http://sws.geonames.org/3077311/> , <http://sws.geonames.org/360630/> , <http://sws.geonames.org/361058/> , <http://vocab.getty.edu/page/tgn/7016540> , <http://sws.geonames.org/360502/> ;
+	cwrc:visits <http://sws.geonames.org/2988507/> , <http://sws.geonames.org/2634204/> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Anglican_Church_ORG , cwrc:Unitarian_Church_ORG ;
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=dufflu> ;
+	foaf:name "Duff Gordon, Lucie" , "Duff Gordon, Lucie"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Hays_Matilda> cwrc:hasDeathDate "1897-07-03"^^xsd:date ;
+	rdfs:label "Hays, Matilda"^^xsd:string ;
+	cwrc:hasReligion cwrc:unitarianism ;
+	cwrc:hasEthnicity cwrc:europeanEthnicity ;
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/haysm2_Occupation_Event1> , <http://cwrc.ca/cwrcdata/haysm2_Political_Event1> , <http://cwrc.ca/cwrcdata/haysm2_travelsTo_Event1> , <http://cwrc.ca/cwrcdata/haysm2_travelsTo_Event2> , <http://cwrc.ca/cwrcdata/haysm2_travelsTo_Event3> , <http://cwrc.ca/cwrcdata/haysm2_travelsTo_Event4> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Hays_Matilda_Father> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasGeographicHeritage <http://sws.geonames.org/7729891/> ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Hays_Matilda_Mother> ;
+	cwrc:hasNationalitySelfReported "GB-ENG"^^xsd:string ;
+	cwrc:hasRaceColour cwrc:whiteRaceColour ;
+	cwrc:hasSexuality cwrc:lesbian ;
+	cwrc:hasSexualitySelfReported "_cross-dressing_"^^xsd:string ;
+	cwrc:hasSocialClass cwrc:entrepreneurial-industrialist ;
+	cwrc:hasActivistInvolvementIn cwrc:feminism , cwrc:radicalism ;
+	cwrc:hasBirthDate "1820-09-08"^^xsd:date ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/2643743/> ;
+	cwrc:hasCohabitant <http://cwrc.ca/cwrcdata/Browning_Elizabeth_Barrett> , <http://cwrc.ca/cwrcdata/Cushman_Charlotte> ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/2644210/> ;
+	cwrc:hasGenderedPoliticalActivity cwrc:feminism , cwrc:radicalism ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Blagden_Isa> , <http://cwrc.ca/cwrcdata/Browning_Elizabeth_Barrett> , <http://cwrc.ca/cwrcdata/Browning_Robert> , <http://cwrc.ca/cwrcdata/Cushman_Charlotte> , <http://cwrc.ca/cwrcdata/Davies_Emily> , <http://cwrc.ca/cwrcdata/Faithfull_Emily> , <http://cwrc.ca/cwrcdata/Howitt_Mary> , <http://cwrc.ca/cwrcdata/Jameson_Anna_Brownell> , <http://cwrc.ca/cwrcdata/Jewsbury_Geraldine> , <http://cwrc.ca/cwrcdata/Lewes_George_Henry> , <http://cwrc.ca/cwrcdata/Parkes_Bessie_Rayner> , <http://cwrc.ca/cwrcdata/Ashurst_Eliza> , <http://cwrc.ca/cwrcdata/Craig_Isa> , <http://cwrc.ca/cwrcdata/Laurence_Samuel> , <http://cwrc.ca/cwrcdata/Lippincott_Sara_Jane> , <http://cwrc.ca/cwrcdata/Macready_William_Charles> , <http://cwrc.ca/cwrcdata/Meteyard_Eliza> , <http://cwrc.ca/cwrcdata/Monson_Theodosia_Baroness> ;
+	cwrc:hasNonEroticRelationshipWith <http://cwrc.ca/cwrcdata/Cushman_Charlotte> ;
+	cwrc:hasPaidOccupation cwrc:companion , cwrc:editing , cwrc:performer , cwrc:writer ;
+	cwrc:hasPossiblyEroticRelationshipWith <http://cwrc.ca/cwrcdata/Browning_Elizabeth_Barrett> , <http://cwrc.ca/cwrcdata/Cushman_Charlotte> , <http://cwrc.ca/cwrcdata/Procter_Adelaide> , <http://cwrc.ca/cwrcdata/Stebbins_Emma> ;
+	cwrc:hasVolunteerOccupation cwrc:feminism , cwrc:publishing ;
+	cwrc:studies <http://id.loc.gov/vocabulary/languages/fre> ;
+	cwrc:travelsTo <http://sws.geonames.org/6269131/> , <http://sws.geonames.org/3169070/> , <http://sws.geonames.org/3175395/> , <http://sws.geonames.org/4508722/> , <http://sws.geonames.org/4930956/> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Unitarian_Church_ORG ;
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=haysm2> ;
+	foaf:name "Hays, Matilda"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Hutton_Catherine> cwrc:hasBrother <http://cwrc.ca/cwrcdata/Hutton_Thomas> ;
+	cwrc:hasCousin <http://cwrc.ca/cwrcdata/Hutton_Charles_1737_-_1823> .
+
+<http://cwrc.ca/cwrcdata/Opie_Amelia> cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Williams_Helen_Maria> ;
+	cwrc:hasNonEroticRelationshipWith <http://cwrc.ca/cwrcdata/Stuart_Lord_Herbert> ;
+	cwrc:hasPaidOccupation cwrc:writer ;
+	cwrc:hasReproductiveHistory cwrc:childlessness ;
+	cwrc:hasVolunteerOccupation cwrc:performer , cwrc:philanthropist ;
+	cwrc:inhabits <http://sws.geonames.org/2641181/> , <http://sws.geonames.org/2643743/> ;
+	cwrc:relocatesTo <http://sws.geonames.org/2641181/> , <http://sws.geonames.org/2643743/> ;
+	cwrc:studies <http://id.loc.gov/vocabulary/languages/fre> , <http://id.loc.gov/authorities/subjects/sh85061212> , <http://id.loc.gov/authorities/subjects/sh85077507> , <http://id.loc.gov/authorities/subjects/sh85088762> ;
+	cwrc:travelsTo "Rhine River" , <http://sws.geonames.org/11609027/> , <http://sws.geonames.org/2638360/> , <http://sws.geonames.org/2645022/> , <http://sws.geonames.org/2658434/> , <http://sws.geonames.org/2988507/> , <http://sws.geonames.org/3172394/> , <http://sws.geonames.org/2651930/> ;
+	cwrc:visits <http://sws.geonames.org/2643743/> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Society_of_Friends_ORG , cwrc:Unitarian_Church_ORG , cwrc:Dissenters_ORG ;
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=opieam> ;
+	foaf:name "Opie, Amelia"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Scott_Mary> cwrc:hasDaughter <http://cwrc.ca/cwrcdata/Scott_Robert_of_Bath> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Scott_Russell> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasHusband <http://cwrc.ca/cwrcdata/Scott_Mary_Husband> , <http://cwrc.ca/cwrcdata/Taylor_John_1753_-_1817> ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Scott_Mary_Mother> ;
+	cwrc:hasReligion cwrc:anglicanism , cwrc:dissentProtestant , cwrc:quakerism ;
+	cwrc:hasReligionSelfReported cwrc:quakerism ;
+	cwrc:hasSocialClass cwrc:entrepreneurial-industrialist ;
+	cwrc:hasSon <http://cwrc.ca/cwrcdata/Taylor_John_Edward> ;
+	cwrc:hasBirthDate "1751"^^xsd:gYear ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/2642549/> ;
+	cwrc:hasChildren "2" ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/2654675/> .
+
+<http://cwrc.ca/cwrcdata/Hutton_Catherine> cwrc:hasEvent <http://cwrc.ca/cwrcdata/huttca_PhysicalHealth_Event1> , <http://cwrc.ca/cwrcdata/huttca_Political_Event1> , <http://cwrc.ca/cwrcdata/huttca_Wealth_Event1> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Hutton_William_1723_-_1815> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Hutton_Catherine_Mother> ;
+	cwrc:hasNationality "GB-ENG"^^xsd:string ;
+	cwrc:hasReligionSelfReported cwrc:dissentProtestant , cwrc:quakerism ;
+	cwrc:hasSocialClassSelfReported cwrc:entrepreneurial-industrialist ;
+	cwrc:hasActivistInvolvementIn cwrc:abolitionism , cwrc:dissentProtestant ;
+	cwrc:hasBirthDate "1756-02-11"^^xsd:date ;
+	cwrc:hasGenderedPoliticalActivity cwrc:abolitionism , cwrc:dissentProtestant ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Byron_George_Gordon_sixth_Baron> , <http://cwrc.ca/cwrcdata/Dickens_Charles> , <http://cwrc.ca/cwrcdata/Lytton_Edward_George_Earle_Lytton_Bulwer-Lytton_first_Baron> , <http://cwrc.ca/cwrcdata/Macaulay_Catharine> , <http://cwrc.ca/cwrcdata/Arnold_Elizabeth_d_1802> , <http://cwrc.ca/cwrcdata/Bage_Robert> , <http://cwrc.ca/cwrcdata/Burney_Sarah_Harriet> , <http://cwrc.ca/cwrcdata/Coltman_Elizabeth_Cartwright> , <http://cwrc.ca/cwrcdata/Coltman_Mary_Ann> , <http://cwrc.ca/cwrcdata/Heyrick_Elizabeth> , <http://cwrc.ca/cwrcdata/Leigh_Augusta_Byron> , <http://cwrc.ca/cwrcdata/Phillips_Richard> , <http://cwrc.ca/cwrcdata/Scott_Sir_Walter> , <http://cwrc.ca/cwrcdata/Thorpe_Markham_John> , <http://cwrc.ca/cwrcdata/Upcott_William> ;
+	cwrc:hasNonEroticRelationshipWith <http://cwrc.ca/cwrcdata/intimate_relationship> ;
+	cwrc:hasVolunteerOccupation cwrc:music , cwrc:needlework , cwrc:nursing , cwrc:collector ;
+	cwrc:relocatesTo <http://sws.geonames.org/2655603/> , <http://sws.geonames.org/2638635/> ;
+	cwrc:studies <http://id.loc.gov/authorities/subjects/sh85053986> , <http://id.loc.gov/authorities/subjects/sh85061212> ;
+	cwrc:visits "Barmouth,Gwynedd,Wales" , "Llandidrod Wells,Brecknockshire,Wales" , <http://sws.geonames.org/11609047/> , <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2655459/> , <http://sws.geonames.org/2657782/> , <http://sws.geonames.org/2648063/> , <http://sws.geonames.org/2654142/> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Society_of_Friends_ORG , cwrc:Unitarian_Church_ORG , cwrc:Dissenters_ORG ;
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=huttca> ;
+	foaf:name "Hutton, Catherine"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Jebb_Ann> cwrc:hasEvent <http://cwrc.ca/cwrcdata/jebban_inhabits_Event1> , <http://cwrc.ca/cwrcdata/jebban_relocatesTo_Event1> , <http://cwrc.ca/cwrcdata/jebban_relocatesTo_Event2> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Jebb_Ann_Father> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasHusband <http://cwrc.ca/cwrcdata/Jebb_John> ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Jebb_Ann_Mother> ;
+	cwrc:hasNationalHeritage "GB-ENG"^^xsd:string ;
+	cwrc:hasReligion cwrc:anglicanism ;
+	cwrc:hasSocialClass cwrc:nobility , cwrc:professional ;
+	cwrc:hasActivistInvolvementIn cwrc:abolitionism , cwrc:anti-Imperialism , cwrc:anti-War , cwrc:irishRepublicanism , cwrc:parliamentaryReform , cwrc:pro-Catholicism , cwrc:radicalism , cwrc:socialReform , cwrc:suffrage ;
+	cwrc:hasBirthDate "1735-11-09"^^xsd:date ;
+	cwrc:hasBirthPlace "King's Rippon,Huntingdonshire,England" ;
+	cwrc:hasBirthPosition cwrc:eldestChild ;
+	cwrc:hasBurialPlace <http://sws.geonames.org/2643743/> ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/2643743/> ;
+	cwrc:hasGenderedPoliticalActivity cwrc:abolitionism , cwrc:anti-Imperialism , cwrc:anti-War , cwrc:irishRepublicanism , cwrc:parliamentaryReform , cwrc:pro-Catholicism , cwrc:radicalism , cwrc:socialReform , cwrc:suffrage ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Cartwright_John> , <http://cwrc.ca/cwrcdata/Disney_John> , <http://cwrc.ca/cwrcdata/Dyer_George> , <http://cwrc.ca/cwrcdata/Lindsey_Theophilus> , <http://cwrc.ca/cwrcdata/Plumptre_Anne> , <http://cwrc.ca/cwrcdata/Priestley_Joseph> , <http://cwrc.ca/cwrcdata/Radcliffe_Ann> , <http://cwrc.ca/cwrcdata/Seward_Anna> .
+
+<http://cwrc.ca/cwrcdata/Morton_Sarah_Wentworth> cwrc:relocatesTo <http://sws.geonames.org/4930956/> , <http://sws.geonames.org/4931181/> , <http://sws.geonames.org/4949151/> ;
+	cwrc:studies <http://id.loc.gov/authorities/subjects/sh85061212> , <http://id.loc.gov/authorities/subjects/sh85077507> ;
+	cwrc:visits <http://sws.geonames.org/4140963/> , <http://sws.geonames.org/4560349/> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Anglican_Church_ORG , cwrc:Unitarian_Church_ORG ;
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=mortsa> ;
+	foaf:name "Morton, Sarah Wentworth"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Hawkshaw_Ann> cwrc:hasDeathDate "1885-04-29"^^xsd:date ;
+	rdfs:label "Hawkshaw, Ann"^^xsd:string ;
+	cwrc:hasReligion cwrc:unitarianism ;
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/hawkan_relocatesTo_Event1> , <http://cwrc.ca/cwrcdata/hawkan_relocatesTo_Event2> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Jackson_Mary_Clark> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasHusband <http://cwrc.ca/cwrcdata/Hawkshaw_Sir_John> ;
+	cwrc:hasNationalitySelfReported "GB-ENG"^^xsd:string ;
+	cwrc:hasRaceColour cwrc:whiteRaceColour ;
+	cwrc:hasReligion cwrc:anglicanism , cwrc:independentMethodistConnexion ;
+	cwrc:hasSocialClass cwrc:rural-unskilled , cwrc:yeoman-farmer ;
+	cwrc:hasSocialClassSelfReported cwrc:professional ;
+	cwrc:hasSon <http://cwrc.ca/cwrcdata/Hawkshaw_John_Clarke> ;
+	cwrc:hasBirthDate "1812-10-14"^^xsd:date ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/2647970/> ;
+	cwrc:hasChildren "4" ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/2643743/> ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Gaskell_Elizabeth> , <http://cwrc.ca/cwrcdata/Bamford_Samuel> ;
+	cwrc:relocatesTo <http://sws.geonames.org/2643123/> , <http://sws.geonames.org/2643743/> ;
+	cwrc:studies <http://id.loc.gov/authorities/subjects/sh85061212> ;
+	cwrc:visits "Hollycombe,Sussex,England" , <http://sws.geonames.org/2644419/> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Anglican_Church_ORG , cwrc:Unitarian_Church_ORG , cwrc:Independent_Methodist_Church_ORG ;
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=hawkan> ;
+	foaf:name "Hawkshaw, Ann"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Swanwick_Anna> cwrc:hasDeathDate "1899-11-02"^^xsd:date ;
+	rdfs:label "Swanwick, Anna"^^xsd:string ;
+	cwrc:hasReligion cwrc:unitarianism ;
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/swanan_DomesticEducation_Event1> , <http://cwrc.ca/cwrcdata/swanan_PhysicalHealth_Event1> , <http://cwrc.ca/cwrcdata/swanan_Political_Event1> , <http://cwrc.ca/cwrcdata/swanan_Political_Event2> , <http://cwrc.ca/cwrcdata/swanan_Political_Event3> , <http://cwrc.ca/cwrcdata/swanan_Political_Event4> , <http://cwrc.ca/cwrcdata/swanan_Political_Event5> , <http://cwrc.ca/cwrcdata/swanan_relocatesTo_Event1> , <http://cwrc.ca/cwrcdata/swanan_travelsTo_Event1> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Swanwick_John> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasInstructor <http://cwrc.ca/cwrcdata/Martineau_James> , <http://cwrc.ca/cwrcdata/Panizzi_Anthony> ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Swanwick_Hannah> ;
+	cwrc:hasSister <http://cwrc.ca/cwrcdata/Swanwick_Anna_Sister> , <http://cwrc.ca/cwrcdata/Swanwick_Catherine> ;
+	cwrc:hasSocialClass cwrc:entrepreneurial-industrialist ;
+	cwrc:hasActivistInvolvementIn "_married women's control of their own property_"^^xsd:string , cwrc:anti-ContagiousDiseasesAct , cwrc:liberalism , cwrc:marriageLawReform , cwrc:suffrage , cwrc:womensEducationReform ;
+	cwrc:hasBirthDate "1813-06-22"^^xsd:date ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/2644210/> ;
+	cwrc:hasBirthPosition cwrc:youngestChild ;
+	cwrc:hasBurialPlace <http://sws.geonames.org/2643743/> ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/2639022/> ;
+	cwrc:hasGenderedPoliticalActivity "_married women's control of their own property_"^^xsd:string , cwrc:anti-ContagiousDiseasesAct , cwrc:liberalism , cwrc:marriageLawReform , cwrc:suffrage , cwrc:womensEducationReform ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Bremer_Fredrika> , <http://cwrc.ca/cwrcdata/Browning_Robert> , <http://cwrc.ca/cwrcdata/Carlyle_Thomas> , <http://cwrc.ca/cwrcdata/Cobbe_Frances_Power> , <http://cwrc.ca/cwrcdata/Gladstone_William_Ewart> , <http://cwrc.ca/cwrcdata/Huxley_Thomas_Henry> , <http://cwrc.ca/cwrcdata/Jameson_Anna_Brownell> , <http://cwrc.ca/cwrcdata/Martineau_James> , <http://cwrc.ca/cwrcdata/Newman_Francis_William> , <http://cwrc.ca/cwrcdata/Rigby_Elizabeth> , <http://cwrc.ca/cwrcdata/Shakespeare_William> , <http://cwrc.ca/cwrcdata/Tennyson_Alfred> , <http://cwrc.ca/cwrcdata/Coleridge_Samuel_Taylor> , <http://cwrc.ca/cwrcdata/Wordsworth_William> , <http://cwrc.ca/cwrcdata/Charles_Elizabeth> , <http://cwrc.ca/cwrcdata/Faucit_Helen> , <http://cwrc.ca/cwrcdata/Gladstone_Catherine> , <http://cwrc.ca/cwrcdata/Robinson_Henry_Crabb> ;
+	cwrc:studies <http://id.loc.gov/authorities/subjects/sh85082139> , <http://id.loc.gov/authorities/subjects/sh99005065> , cwrc:Comus_TITLE , cwrc:LAllegro_TITLE , cwrc:Paradiso_TITLE ;
+	cwrc:travelsTo "Alps" , <http://sws.geonames.org/2658434/> , <http://sws.geonames.org/2761369/> , <http://sws.geonames.org/2763586/> , <http://sws.geonames.org/2921044/> , <http://sws.geonames.org/2950159/> , <http://sws.geonames.org/3169070/> , <http://sws.geonames.org/3172394/> , <http://vocab.getty.edu/page/tgn/7030436> ;
+	cwrc:visits <http://sws.geonames.org/2636510/> , <http://sws.geonames.org/2656396/> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Unitarian_Church_ORG ;
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=swanan> ;
+	foaf:name "Swanwick, Anna"^^xsd:string ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Faraday_Michael> , <http://cwrc.ca/cwrcdata/MacDonald_George_1824_-_1905> , <http://cwrc.ca/cwrcdata/Retzius_Anna_Hierta> ;
+	cwrc:hasVolunteerOccupation cwrc:professor ;
+	cwrc:inhabits <http://sws.geonames.org/2643743/> ;
+	cwrc:relocatesTo <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2644210/> ;
+	cwrc:studies <http://id.loc.gov/authorities/subjects/sh85026450> , <http://id.loc.gov/authorities/subjects/sh85053986> , <http://id.loc.gov/authorities/subjects/sh85054365> , <http://id.loc.gov/authorities/subjects/sh85057151> , <http://id.loc.gov/authorities/subjects/sh85059867> .
+
+<http://cwrc.ca/cwrcdata/Duff_Gordon_Lucie> cwrc:interpersonalRelationship <http://cwrc.ca/cwrcdata/Beevor_Antony> ;
+	cwrc:hasActivistInvolvementIn cwrc:anti-Imperialism , cwrc:liberalism ;
+	cwrc:hasBirthDate "1821-06-24"^^xsd:date ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/2643743/> ;
+	cwrc:hasBirthPosition cwrc:onlyChild ;
+	cwrc:hasBurialPlace <http://sws.geonames.org/360630/> ;
+	cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Tuberculosis> ;
+	cwrc:hasChildren "4" ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/358683/> ;
+	cwrc:hasGenderedPoliticalActivity cwrc:anti-Imperialism , cwrc:liberalism ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Bentham_Jeremy> , <http://cwrc.ca/cwrcdata/Carlyle_Jane_Welsh> , <http://cwrc.ca/cwrcdata/Carlyle_Thomas> , <http://cwrc.ca/cwrcdata/Dickens_Charles> , <http://cwrc.ca/cwrcdata/Grote_George> , <http://cwrc.ca/cwrcdata/Grote_Harriet> , <http://cwrc.ca/cwrcdata/Lansdowne_Henry_Petty-Fitzmaurice_third_Marquess_of> , <http://cwrc.ca/cwrcdata/Macaulay_Thomas_Babington_first_Baron> , <http://cwrc.ca/cwrcdata/Martineau_Harriet> , <http://cwrc.ca/cwrcdata/Mill_James> , <http://cwrc.ca/cwrcdata/Mill_John_Stuart> , <http://cwrc.ca/cwrcdata/Milnes_Richard_Monckton> , <http://cwrc.ca/cwrcdata/Moore_Thomas> , <http://cwrc.ca/cwrcdata/Norton_Caroline> , <http://cwrc.ca/cwrcdata/Smith_Sydney> , <http://cwrc.ca/cwrcdata/Taylor_Harriet> , <http://cwrc.ca/cwrcdata/Taylor_Sir_Henry> , <http://cwrc.ca/cwrcdata/Tennyson_Alfred> , <http://cwrc.ca/cwrcdata/Thackeray_William_Makepeace> , <http://cwrc.ca/cwrcdata/Victoria_Queen> , <http://cwrc.ca/cwrcdata/Alexandra_of_Denmark_Queen_of_England> , <http://cwrc.ca/cwrcdata/Comte_Auguste> , <http://cwrc.ca/cwrcdata/Cousin_Victor> , <http://cwrc.ca/cwrcdata/Duff_Gordon_Sir_Alexander> , <http://cwrc.ca/cwrcdata/Eden_Emily> , <http://cwrc.ca/cwrcdata/Edward_VII_King> , <http://cwrc.ca/cwrcdata/Forster_John> , <http://cwrc.ca/cwrcdata/Fox_William_Johnson> , <http://cwrc.ca/cwrcdata/Halaweh_Omar_Abu> , <http://cwrc.ca/cwrcdata/Heine_Heinrich> , <http://cwrc.ca/cwrcdata/Hilaire_Jules_Barthélemy_Saint> , <http://cwrc.ca/cwrcdata/Meredith_George> , <http://cwrc.ca/cwrcdata/Monteagle_Thomas_Spring_Rice_first_Baron> , <http://cwrc.ca/cwrcdata/Napoleon_III_Emperor_of_France> , <http://cwrc.ca/cwrcdata/Ranke_Leopold_von> , <http://cwrc.ca/cwrcdata/Reeve_Henry> , <http://cwrc.ca/cwrcdata/Taylor_Tom> , <http://cwrc.ca/cwrcdata/Vigny_Alfred_de> , <http://cwrc.ca/cwrcdata/Wailly_Léon_de> , <http://cwrc.ca/cwrcdata/Warburton_Elliot> ;
+	cwrc:hasPaidOccupation "Writer" ;
+	cwrc:hasVolunteerOccupation cwrc:founder , cwrc:healthCareProvider , cwrc:writer ;
+	cwrc:inhabits <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2907911/> , <http://sws.geonames.org/11609041/> , <http://sws.geonames.org/2946447/> ;
+	cwrc:relocatesTo <http://sws.geonames.org/2562770/> , <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/3031133/> , <http://sws.geonames.org/2649911/> ;
+	cwrc:studies <http://id.loc.gov/authorities/subjects/sh85043777> , <http://id.loc.gov/vocabulary/languages/fre> .
