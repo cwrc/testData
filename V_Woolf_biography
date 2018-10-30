@@ -1,4 +1,3 @@
-#1004 triples created
 @prefix as: <http://www.w3.org/ns/activitystreams#> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix bio: <http://purl.org/vocab/bio/0.1/> .
