@@ -14,38 +14,90 @@
 @prefix bd: <http://www.bigdata.com/rdf#> .
 @prefix bds: <http://www.bigdata.com/rdf/search#> .
 
-<http://cwrc.ca/cwrcdata/Dacre_Charlotte> cwrc:hasDeathDate "1825-11-07"^^xsd:date ;
-	rdfs:label "Dacre, Charlotte"^^xsd:string ;
-	cwrc:hasBrother <http://cwrc.ca/cwrcdata/Dacre_Charlotte_Brother_A> , <http://cwrc.ca/cwrcdata/Dacre_Charlotte_Brother_B> ;
+<http://cwrc.ca/cwrcdata/Aguilar_Grace> cwrc:hasDeathDate "1847-09-16"^^xsd:date ;
+	rdfs:label "Aguilar, Grace"^^xsd:string ;
+	cwrc:hasAunt <http://cwrc.ca/cwrcdata/Aguilar_Grace_Aunt> ;
+	cwrc:hasBrother <http://cwrc.ca/cwrcdata/Aguilar_Emanuel_Jr> ;
 	cwrc:hasEthnicity cwrc:jewishEthnicity ;
-	cwrc:hasFather <http://cwrc.ca/cwrcdata/King_John_1753_-_1824> ;
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/aguigr_Occupation_Event1> , <http://cwrc.ca/cwrcdata/aguigr_PhysicalHealth_Event1> , <http://cwrc.ca/cwrcdata/aguigr_PhysicalHealth_Event2> , <http://cwrc.ca/cwrcdata/aguigr_PhysicalHealth_Event3> , <http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event1> , <http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event2> , <http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event3> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Aguilar_Emanuel_Sr> ;
 	cwrc:hasGender cwrc:woman ;
-	cwrc:hasGeographicHeritage <http://sws.geonames.org/2264397/> , <http://sws.geonames.org/2643743/> ;
-	cwrc:hasGrandMother <http://cwrc.ca/cwrcdata/Dacre_Charlotte_Grandmother> ;
-	cwrc:hasHusband <http://cwrc.ca/cwrcdata/Byrne_Nicholas> ;
-	cwrc:hasMother <http://cwrc.ca/cwrcdata/Dacre_Charlotte_Mother> ;
-	cwrc:hasReligion cwrc:anglicanism , cwrc:judaism ;
-	cwrc:hasSister <http://cwrc.ca/cwrcdata/King_Sophia> ;
-	cwrc:hasSocialClass cwrc:entrepreneurial-industrialist , cwrc:gentry , cwrc:indigent ;
-	cwrc:hasActivistInvolvementIn cwrc:conservativePartyUk , cwrc:whiggism ;
-	cwrc:hasBirthDate "1771 to 1772" ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Aguilar_Sarah> ;
+	cwrc:hasNationalHeritage "ES"^^xsd:string , "PT"^^xsd:string ;
+	cwrc:hasReligionSelfReported cwrc:judaism ;
+	cwrc:hasSocialClass cwrc:entrepreneurial-industrialist ;
+	cwrc:hasAncestor <http://cwrc.ca/cwrcdata/Fernandez_Benjamin_Dias> ;
+	cwrc:hasBirthDate "1816-06-02"^^xsd:date ;
 	cwrc:hasBirthPlace <http://sws.geonames.org/2643743/> ;
-	cwrc:hasBirthPosition cwrc:eldestChild ;
-	cwrc:hasChildren "3" ;
-	cwrc:hasCohabitant <http://cwrc.ca/cwrcdata/Byrne_Nicholas> ;
+	cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Tuberculosis> ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/2925533/> ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Howitt_Mary> , <http://cwrc.ca/cwrcdata/Bowles_Caroline> ;
+	cwrc:hasNationalitySelfReported "GB-ENG"^^xsd:string , cwrc:jewishNationalIdentity , cwrc:sephardicJewishNationalIdentity ;
+	cwrc:hasPoliticalAffiliation cwrc:zionism .
+
+<http://cwrc.ca/cwrcdata/Levy_Amy> cwrc:hasDeathDate "1889-09-10"^^xsd:date ;
+	rdfs:label "Levy, Amy"^^xsd:string ;
+	cwrc:hasBrother <http://cwrc.ca/cwrcdata/Levy_Amy_Brother> ;
+	cwrc:hasCompanion <http://cwrc.ca/cwrcdata/Garnett_Constance> ;
+	cwrc:hasEthnicity cwrc:jewishEthnicity ;
+	cwrc:hasEvent <http://cwrc.ca/cwrcdata/levyam_InstitutionalEducation_Event1> , <http://cwrc.ca/cwrcdata/levyam_InstitutionalEducation_Event2> , <http://cwrc.ca/cwrcdata/levyam_travelsTo_Event1> , <http://cwrc.ca/cwrcdata/levyam_travelsTo_Event2> , <http://cwrc.ca/cwrcdata/levyam_travelsTo_Event3> , <http://cwrc.ca/cwrcdata/levyam_travelsTo_Event4> , <http://cwrc.ca/cwrcdata/levyam_travelsTo_Event5> , <http://cwrc.ca/cwrcdata/levyam_Wealth_Event1> ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/Levy_Lewis> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasInstructor <http://cwrc.ca/cwrcdata/Creak_Edith> ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Levy_Isabelle> ;
+	cwrc:hasNationalHeritageSelfReported "GB-ENG"^^xsd:string ;
+	cwrc:hasReligion cwrc:anglicanism ;
+	cwrc:hasReligionSelfReported cwrc:judaism ;
+	cwrc:hasSexuality cwrc:lesbian ;
+	cwrc:hasSister <http://cwrc.ca/cwrcdata/Levy_Amy_Sister> ;
+	cwrc:hasSocialClass cwrc:upper-middleClass ;
+	cwrc:hasBirthDate "1861-11-10"^^xsd:date ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/2643743/> ;
+	cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Intentional_self-harm> ;
 	cwrc:hasDeathPlace <http://sws.geonames.org/2643743/> ;
-	cwrc:hasEroticRelationshipWith <http://cwrc.ca/cwrcdata/Byrne_Nicholas> ;
-	cwrc:hasGenderedPoliticalActivity cwrc:conservativePartyUk , cwrc:whiggism ;
-	cwrc:inhabits "Thames,England" , <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/3175395/> , <http://sws.geonames.org/2650188/> ;
-	<http://www.w3.org/ns/org#memberOf> cwrc:Anglican_Church_ORG ;
+	cwrc:hasEroticRelationshipWith <http://cwrc.ca/cwrcdata/Lee_Vernon> , <http://cwrc.ca/cwrcdata/Creak_Edith> ;
+	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Black_Clementina> , <http://cwrc.ca/cwrcdata/Fawcett_Millicent_Garrett> , <http://cwrc.ca/cwrcdata/Lee_Vernon> , <http://cwrc.ca/cwrcdata/Marx_Eleanor> , <http://cwrc.ca/cwrcdata/Robinson_A_Mary_F> , <http://cwrc.ca/cwrcdata/Schreiner_Olive> .
+
+<http://cwrc.ca/cwrcdata/Aguilar_Grace> cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Crosland_Camilla> , <http://cwrc.ca/cwrcdata/Hall_Anna_Maria> , <http://cwrc.ca/cwrcdata/Hemans_Felicia> , <http://cwrc.ca/cwrcdata/Scott_Sir_Walter> ;
+	cwrc:hasRaceColour cwrc:whiteRaceColour ;
+	cwrc:hasReligion cwrc:catholicism , cwrc:christianity , cwrc:judaism , cwrc:protestantism .
+
+<http://cwrc.ca/cwrcdata/Levy_Amy> cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Shaw_George_Bernard> , <http://cwrc.ca/cwrcdata/Webb_Beatrice> , <http://cwrc.ca/cwrcdata/Yeats_W_B> , <http://cwrc.ca/cwrcdata/Birrell_Augustine> , <http://cwrc.ca/cwrcdata/Cornford_Frances> , <http://cwrc.ca/cwrcdata/Garnett_Constance> , <http://cwrc.ca/cwrcdata/Lee_Sidney> , <http://cwrc.ca/cwrcdata/Pearson_Karl> , <http://cwrc.ca/cwrcdata/Blomfield_Dorothy> , <http://cwrc.ca/cwrcdata/Darwin_Ellen_Wordsworth> , <http://cwrc.ca/cwrcdata/Harkness_Margaret> , <http://cwrc.ca/cwrcdata/Radford_Dollie_Maitland> , <http://cwrc.ca/cwrcdata/Thomas_Bertha> , <http://cwrc.ca/cwrcdata/Zimmern_Helen> ;
+	cwrc:hasPaidOccupation cwrc:teacher ;
+	cwrc:hasPossiblyEroticRelationshipWith <http://cwrc.ca/cwrcdata/Beckman_Linda_Hunt> ;
+	cwrc:hasVolunteerOccupation cwrc:volunteer ;
+	cwrc:inhabits <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2654710/> ;
+	cwrc:studies <http://id.loc.gov/vocabulary/languages/fre> , <http://id.loc.gov/authorities/subjects/sh85054037> , <http://id.loc.gov/authorities/subjects/sh85054365> , <http://id.loc.gov/authorities/subjects/sh85057151> , <http://id.loc.gov/authorities/subjects/sh85074944> , <http://id.loc.gov/authorities/subjects/sh85058059> ;
+	cwrc:travelsTo "Mont Sainte-Odile,Vosges,France" , <http://sws.geonames.org/2653941/> , <http://sws.geonames.org/2654710/> , <http://sws.geonames.org/2935022/> , <http://sws.geonames.org/2988507/> , <http://sws.geonames.org/3021411/> , <http://sws.geonames.org/3176959/> , <http://sws.geonames.org/2659811/> .
+
+<http://cwrc.ca/cwrcdata/Aguilar_Grace> cwrc:hasPaidOccupation cwrc:teacher , cwrc:writer ;
+	cwrc:hasVolunteerOccupation cwrc:charityWorker ;
+	cwrc:relocatesTo <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2654710/> , <http://sws.geonames.org/11609025/> ;
+	cwrc:studies <http://id.loc.gov/authorities/subjects/sh85035659> , <http://id.loc.gov/authorities/subjects/sh85039408> , <http://id.loc.gov/authorities/subjects/sh85061212> , <http://id.loc.gov/authorities/subjects/sh85077507> ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=aguigr> ;
+	foaf:name "Aguilar, Grace"^^xsd:string ;
+	cwrc:studies <http://id.loc.gov/authorities/subjects/sh85088961> , <http://id.loc.gov/authorities/subjects/sh85101722> , <http://id.loc.gov/authorities/subjects/sh85120542> , <http://id.loc.gov/authorities/subjects/sh85122827> , <http://id.loc.gov/authorities/subjects/sh85134665> .
+
+<http://cwrc.ca/cwrcdata/Bristow_Amelia> cwrc:hasDeathDate "1860-03-18"^^xsd:date ;
+	rdfs:label "Bristow, Amelia"^^xsd:string ;
+	cwrc:hasNationalHeritage "PL"^^xsd:string ;
+	cwrc:hasReligionSelfReported cwrc:christianity , cwrc:judaism ;
+	cwrc:hasSocialClass cwrc:middleClass ;
+	cwrc:hasBirthDate "1783-07-19"^^xsd:date ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/2643743/> ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/2643743/> ;
+	cwrc:hasPaidOccupation cwrc:needlework , cwrc:writer ;
+	cwrc:inhabits <http://sws.geonames.org/2643743/> ;
 	a cwrc:NaturalPerson ;
-	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=dacrch> ;
-	foaf:name "Dacre, Charlotte"^^xsd:string .
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=brisam> ;
+	foaf:name "Bristow, Amelia"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Aguilar_Grace> cwrc:visits <http://sws.geonames.org/2925533/> , <http://sws.geonames.org/2835382/> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Roman_Catholic_Church_ORG ;
+	a cwrc:NaturalPerson .
 
 <http://cwrc.ca/cwrcdata/Gooch_Elizabeth_Sarah> cwrc:hasDeathDate "1807-06-07"^^xsd:date ;
 	rdfs:label "Gooch, Elizabeth Sarah"^^xsd:string ;
-	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=goocel> ;
-	foaf:name "Gooch, Elizabeth Sarah"^^xsd:string ;
 	cwrc:hasAunt <http://cwrc.ca/cwrcdata/Galway_Elizabeth_Monckton-Arundell_Viscountess> ;
 	cwrc:hasEthnicity cwrc:jewishEthnicity ;
 	cwrc:hasEvent <http://cwrc.ca/cwrcdata/goocel_Biography_Event1> , <http://cwrc.ca/cwrcdata/goocel_Occupation_Event1> , <http://cwrc.ca/cwrcdata/goocel_travelsTo_Event1> , <http://cwrc.ca/cwrcdata/goocel_Wealth_Event1> ;
@@ -67,17 +119,9 @@
 	cwrc:relocatesTo "Egglestone,Durham,England" , <http://sws.geonames.org/6269131/> , <http://sws.geonames.org/2639323/> , <http://sws.geonames.org/3017382/> , <http://sws.geonames.org/2640132/> , <http://sws.geonames.org/2655548/> ;
 	cwrc:travelsTo <http://sws.geonames.org/2648579/> , <http://sws.geonames.org/2654675/> , <http://sws.geonames.org/2658434/> , <http://sws.geonames.org/8581589/> , <http://sws.geonames.org/2653225/> ;
 	<http://www.w3.org/ns/org#memberOf> cwrc:Anglican_Church_ORG ;
-	a cwrc:NaturalPerson .
-
-<http://cwrc.ca/cwrcdata/Levy_Amy> cwrc:hasDeathDate "1889-09-10"^^xsd:date ;
-	rdfs:label "Levy, Amy"^^xsd:string ;
-	cwrc:hasBirthDate "1861-11-10"^^xsd:date ;
-	cwrc:hasBirthPlace <http://sws.geonames.org/2643743/> ;
-	cwrc:hasBirthPosition cwrc:eldestChild ;
-	cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Intentional_self-harm> ;
-	cwrc:hasDeathPlace <http://sws.geonames.org/2643743/> ;
-	cwrc:hasEroticRelationshipWith <http://cwrc.ca/cwrcdata/Lee_Vernon> , <http://cwrc.ca/cwrcdata/Creak_Edith> ;
-	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Black_Clementina> , <http://cwrc.ca/cwrcdata/Fawcett_Millicent_Garrett> , <http://cwrc.ca/cwrcdata/Lee_Vernon> , <http://cwrc.ca/cwrcdata/Marx_Eleanor> , <http://cwrc.ca/cwrcdata/Robinson_A_Mary_F> , <http://cwrc.ca/cwrcdata/Schreiner_Olive> , <http://cwrc.ca/cwrcdata/Shaw_George_Bernard> , <http://cwrc.ca/cwrcdata/Webb_Beatrice> , <http://cwrc.ca/cwrcdata/Yeats_W_B> .
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=goocel> ;
+	foaf:name "Gooch, Elizabeth Sarah"^^xsd:string .
 
 <http://cwrc.ca/cwrcdata/Blind_Mathilde> cwrc:hasDeathDate "1896-11-26"^^xsd:date ;
 	rdfs:label "Blind, Mathilde"^^xsd:string ;
@@ -104,42 +148,49 @@
 	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Brown_Ford_Madox> , <http://cwrc.ca/cwrcdata/Gosse_Edmund> , <http://cwrc.ca/cwrcdata/Lee_Vernon> , <http://cwrc.ca/cwrcdata/Robinson_A_Mary_F> , <http://cwrc.ca/cwrcdata/Rossetti_William_Michael> , <http://cwrc.ca/cwrcdata/Schreiner_Olive> , <http://cwrc.ca/cwrcdata/Swinburne_Algernon_Charles> , <http://cwrc.ca/cwrcdata/Webster_Augusta> , <http://cwrc.ca/cwrcdata/Caird_Mona> , <http://cwrc.ca/cwrcdata/Conway_Moncure_D> , <http://cwrc.ca/cwrcdata/Garnett_Richard_1835_-_1906> , <http://cwrc.ca/cwrcdata/Levy_Amy> , <http://cwrc.ca/cwrcdata/Mazzini_Giuseppe> , <http://cwrc.ca/cwrcdata/Meyers_Terry_L> , <http://cwrc.ca/cwrcdata/Mond_Louis> ;
 	cwrc:hasIntimateRelationshipWith <http://cwrc.ca/cwrcdata/intimate_relationship> ;
 	cwrc:hasPossiblyEroticRelationshipWith <http://cwrc.ca/cwrcdata/intimate_relationship> ;
-	cwrc:hasVolunteerOccupation cwrc:professor ;
 	cwrc:inhabits <http://sws.geonames.org/2643123/> ;
 	cwrc:relocatesTo <http://sws.geonames.org/6269131/> , <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2802361/> , <http://sws.geonames.org/2988507/> ;
 	cwrc:studies <http://id.loc.gov/authorities/subjects/sh85054037> , <http://id.loc.gov/authorities/subjects/sh85074944> , <http://id.loc.gov/authorities/subjects/sh85055994> , <http://id.loc.gov/vocabulary/languages/gmh> ;
 	cwrc:travelsTo <http://sws.geonames.org/2638360/> , <http://sws.geonames.org/3017382/> , <http://sws.geonames.org/3175395/> , <http://sws.geonames.org/357994/> , <http://sws.geonames.org/11609021/> , <http://sws.geonames.org/2657023/> ;
 	cwrc:visits <http://sws.geonames.org/2636713/> , <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2661786/> ;
+	cwrc:hasOccupation cwrc:professor ;
 	a cwrc:NaturalPerson ;
 	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=blinma> ;
 	foaf:name "Blind, Mathilde"^^xsd:string .
 
-<http://cwrc.ca/cwrcdata/Levy_Amy> cwrc:hasBrother <http://cwrc.ca/cwrcdata/Levy_Amy_Brother> ;
-	cwrc:hasCompanion <http://cwrc.ca/cwrcdata/Garnett_Constance> ;
-	cwrc:hasEthnicity cwrc:jewishEthnicity ;
-	cwrc:hasEvent <http://cwrc.ca/cwrcdata/levyam_InstitutionalEducation_Event1> , <http://cwrc.ca/cwrcdata/levyam_InstitutionalEducation_Event2> , <http://cwrc.ca/cwrcdata/levyam_travelsTo_Event1> , <http://cwrc.ca/cwrcdata/levyam_travelsTo_Event2> , <http://cwrc.ca/cwrcdata/levyam_travelsTo_Event3> , <http://cwrc.ca/cwrcdata/levyam_travelsTo_Event4> , <http://cwrc.ca/cwrcdata/levyam_travelsTo_Event5> , <http://cwrc.ca/cwrcdata/levyam_Wealth_Event1> ;
-	cwrc:hasFather <http://cwrc.ca/cwrcdata/Levy_Lewis> ;
-	cwrc:hasGender cwrc:woman ;
-	cwrc:hasInstructor <http://cwrc.ca/cwrcdata/Creak_Edith> ;
-	cwrc:hasMother <http://cwrc.ca/cwrcdata/Levy_Isabelle> ;
-	cwrc:hasNationalHeritageSelfReported "GB-ENG"^^xsd:string ;
-	cwrc:hasReligion cwrc:anglicanism ;
-	cwrc:hasReligionSelfReported cwrc:judaism ;
-	cwrc:hasSexuality cwrc:lesbian ;
-	cwrc:hasSister <http://cwrc.ca/cwrcdata/Levy_Amy_Sister> ;
-	cwrc:hasSocialClass cwrc:upper-middleClass ;
-	cwrc:inhabits <http://sws.geonames.org/2654710/> ;
-	cwrc:studies <http://id.loc.gov/vocabulary/languages/fre> , <http://id.loc.gov/authorities/subjects/sh85054037> , <http://id.loc.gov/authorities/subjects/sh85054365> , <http://id.loc.gov/authorities/subjects/sh85057151> , <http://id.loc.gov/authorities/subjects/sh85074944> , <http://id.loc.gov/authorities/subjects/sh85058059> ;
-	cwrc:travelsTo "Mont Sainte-Odile,Vosges,France" , <http://sws.geonames.org/2653941/> , <http://sws.geonames.org/2654710/> , <http://sws.geonames.org/2935022/> , <http://sws.geonames.org/2988507/> , <http://sws.geonames.org/3021411/> , <http://sws.geonames.org/3176959/> , <http://sws.geonames.org/2659811/> , <http://sws.geonames.org/2953505/> , <http://sws.geonames.org/2994313/> , <http://sws.geonames.org/3038032/> ;
+<http://cwrc.ca/cwrcdata/Levy_Amy> cwrc:travelsTo <http://sws.geonames.org/2953505/> , <http://sws.geonames.org/2994313/> , <http://sws.geonames.org/3038032/> ;
 	<http://www.w3.org/ns/org#memberOf> cwrc:Anglican_Church_ORG , cwrc:Judaism_ORG ;
+	cwrc:hasOccupation cwrc:visualArtist ;
 	a cwrc:NaturalPerson ;
 	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=levyam> ;
-	foaf:name "Levy, Amy"^^xsd:string ;
-	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Birrell_Augustine> , <http://cwrc.ca/cwrcdata/Cornford_Frances> , <http://cwrc.ca/cwrcdata/Garnett_Constance> , <http://cwrc.ca/cwrcdata/Lee_Sidney> , <http://cwrc.ca/cwrcdata/Pearson_Karl> , <http://cwrc.ca/cwrcdata/Blomfield_Dorothy> , <http://cwrc.ca/cwrcdata/Darwin_Ellen_Wordsworth> , <http://cwrc.ca/cwrcdata/Harkness_Margaret> , <http://cwrc.ca/cwrcdata/Radford_Dollie_Maitland> , <http://cwrc.ca/cwrcdata/Thomas_Bertha> , <http://cwrc.ca/cwrcdata/Zimmern_Helen> ;
-	cwrc:hasPaidOccupation cwrc:teacher ;
-	cwrc:hasPossiblyEroticRelationshipWith <http://cwrc.ca/cwrcdata/Beckman_Linda_Hunt> ;
-	cwrc:hasVolunteerOccupation cwrc:visualArtist , cwrc:volunteer ;
-	cwrc:inhabits <http://sws.geonames.org/2643743/> .
+	foaf:name "Levy, Amy"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Dacre_Charlotte> cwrc:hasDeathDate "1825-11-07"^^xsd:date ;
+	rdfs:label "Dacre, Charlotte"^^xsd:string ;
+	cwrc:hasBrother <http://cwrc.ca/cwrcdata/Dacre_Charlotte_Brother_A> , <http://cwrc.ca/cwrcdata/Dacre_Charlotte_Brother_B> ;
+	cwrc:hasEthnicity cwrc:jewishEthnicity ;
+	cwrc:hasFather <http://cwrc.ca/cwrcdata/King_John_1753_-_1824> ;
+	cwrc:hasGender cwrc:woman ;
+	cwrc:hasGeographicHeritage <http://sws.geonames.org/2264397/> , <http://sws.geonames.org/2643743/> ;
+	cwrc:hasGrandMother <http://cwrc.ca/cwrcdata/Dacre_Charlotte_Grandmother> ;
+	cwrc:hasHusband <http://cwrc.ca/cwrcdata/Byrne_Nicholas> ;
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Dacre_Charlotte_Mother> ;
+	cwrc:hasPoliticalAffiliation cwrc:conservativePartyUk ;
+	cwrc:hasReligion cwrc:anglicanism , cwrc:judaism ;
+	cwrc:hasSister <http://cwrc.ca/cwrcdata/King_Sophia> ;
+	cwrc:hasSocialClass cwrc:entrepreneurial-industrialist , cwrc:gentry , cwrc:indigent ;
+	cwrc:hasBirthDate "1771 to 1772" ;
+	cwrc:hasBirthPlace <http://sws.geonames.org/2643743/> ;
+	cwrc:hasChildren "3" ;
+	cwrc:hasCohabitant <http://cwrc.ca/cwrcdata/Byrne_Nicholas> ;
+	cwrc:hasDeathPlace <http://sws.geonames.org/2643743/> ;
+	cwrc:hasEroticRelationshipWith <http://cwrc.ca/cwrcdata/Byrne_Nicholas> ;
+	cwrc:hasPoliticalInvolvementIn cwrc:whiggism ;
+	cwrc:inhabits "Thames,England" , <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/3175395/> , <http://sws.geonames.org/2650188/> ;
+	<http://www.w3.org/ns/org#memberOf> cwrc:Anglican_Church_ORG ;
+	a cwrc:NaturalPerson ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=dacrch> ;
+	foaf:name "Dacre, Charlotte"^^xsd:string .
 
 <http://cwrc.ca/cwrcdata/Montefiore_Charlotte> cwrc:hasDeathDate "1854-07-02"^^xsd:date ;
 	rdfs:label "Montefiore, Charlotte"^^xsd:string ;
@@ -155,69 +206,20 @@
 	cwrc:hasUncle <http://cwrc.ca/cwrcdata/Montefiore_Moses> ;
 	cwrc:hasBirthDate "1818"^^xsd:gYear ;
 	cwrc:hasBirthPlace <http://sws.geonames.org/2643743/> ;
-	cwrc:hasBirthPosition cwrc:eldestChild ;
 	cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Pregnancy_or_childbirth> ;
 	cwrc:hasDeathPlace <http://sws.geonames.org/2642605/> ;
 	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Aguilar_Grace> , <http://cwrc.ca/cwrcdata/Galchinsky_Michael> , <http://cwrc.ca/cwrcdata/Sola_Abraham_de> ;
 	cwrc:hasReproductiveHistory cwrc:childlessness ;
-	cwrc:hasVolunteerOccupation "_educationalist_"^^xsd:string , "_founder of charitable organizations_"^^xsd:string , cwrc:reliefWork ;
+	cwrc:hasVolunteerOccupation "_founder of charitable organizations_"^^xsd:string , cwrc:reliefWork ;
 	cwrc:studies <http://id.loc.gov/authorities/subjects/sh85045096> ;
 	cwrc:visits <http://sws.geonames.org/2636510/> ;
+	cwrc:hasOccupation "_educationalist_"^^xsd:string ;
 	a cwrc:NaturalPerson ;
 	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=montc2> ;
 	foaf:name "Montefiore, Charlotte"^^xsd:string .
 
-<http://cwrc.ca/cwrcdata/Bristow_Amelia> cwrc:hasDeathDate "1860-03-18"^^xsd:date ;
-	rdfs:label "Bristow, Amelia"^^xsd:string ;
-	cwrc:hasEvent <http://cwrc.ca/cwrcdata/brisam_Religion_Event1> , <http://cwrc.ca/cwrcdata/brisam_Wealth_Event1> , <http://cwrc.ca/cwrcdata/brisam_Wealth_Event2> ;
+<http://cwrc.ca/cwrcdata/Bristow_Amelia> cwrc:hasEvent <http://cwrc.ca/cwrcdata/brisam_Religion_Event1> , <http://cwrc.ca/cwrcdata/brisam_Wealth_Event1> , <http://cwrc.ca/cwrcdata/brisam_Wealth_Event2> ;
 	cwrc:hasFather <http://cwrc.ca/cwrcdata/Solomon_Simon> ;
 	cwrc:hasGender cwrc:woman ;
 	cwrc:hasHusband <http://cwrc.ca/cwrcdata/Bristow_William> ;
-	cwrc:hasMother <http://cwrc.ca/cwrcdata/Solomon_Rachel> ;
-	cwrc:hasNationalHeritage "PL"^^xsd:string ;
-	cwrc:hasReligionSelfReported cwrc:christianity , cwrc:judaism ;
-	cwrc:hasSocialClass cwrc:middleClass ;
-	cwrc:hasBirthDate "1783-07-19"^^xsd:date ;
-	cwrc:hasBirthPlace <http://sws.geonames.org/2643743/> ;
-	cwrc:hasDeathPlace <http://sws.geonames.org/2643743/> ;
-	cwrc:hasPaidOccupation cwrc:needlework , cwrc:writer ;
-	cwrc:inhabits <http://sws.geonames.org/2643743/> ;
-	a cwrc:NaturalPerson ;
-	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=brisam> ;
-	foaf:name "Bristow, Amelia"^^xsd:string .
-
-<http://cwrc.ca/cwrcdata/Aguilar_Grace> cwrc:hasDeathDate "1847-09-16"^^xsd:date ;
-	rdfs:label "Aguilar, Grace"^^xsd:string ;
-	cwrc:hasAunt <http://cwrc.ca/cwrcdata/Aguilar_Grace_Aunt> ;
-	cwrc:hasBrother <http://cwrc.ca/cwrcdata/Aguilar_Emanuel_Jr> ;
-	cwrc:hasEthnicity cwrc:jewishEthnicity ;
-	cwrc:hasEvent <http://cwrc.ca/cwrcdata/aguigr_Occupation_Event1> , <http://cwrc.ca/cwrcdata/aguigr_PhysicalHealth_Event1> , <http://cwrc.ca/cwrcdata/aguigr_PhysicalHealth_Event2> , <http://cwrc.ca/cwrcdata/aguigr_PhysicalHealth_Event3> , <http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event1> , <http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event2> , <http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event3> ;
-	cwrc:hasFather <http://cwrc.ca/cwrcdata/Aguilar_Emanuel_Sr> ;
-	cwrc:hasGender cwrc:woman ;
-	cwrc:hasMother <http://cwrc.ca/cwrcdata/Aguilar_Sarah> ;
-	cwrc:hasNationalHeritage "ES"^^xsd:string , "PT"^^xsd:string ;
-	cwrc:hasNationalitySelfReported "GB-ENG"^^xsd:string , cwrc:jewishNationalIdentity , cwrc:sephardicJewishNationalIdentity ;
-	cwrc:hasRaceColour cwrc:whiteRaceColour ;
-	cwrc:hasReligion cwrc:catholicism , cwrc:christianity , cwrc:judaism , cwrc:protestantism ;
-	cwrc:hasReligionSelfReported cwrc:judaism ;
-	cwrc:hasSocialClass cwrc:entrepreneurial-industrialist ;
-	cwrc:hasBirthPlace <http://sws.geonames.org/2643743/> ;
-	cwrc:hasCauseOfDeath <http://sparql.cwrc.ca/ontologies/ii#Tuberculosis> ;
-	cwrc:hasDeathPlace <http://sws.geonames.org/2925533/> ;
-	cwrc:hasGenderedPoliticalActivity cwrc:zionism ;
-	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Howitt_Mary> , <http://cwrc.ca/cwrcdata/Bowles_Caroline> , <http://cwrc.ca/cwrcdata/Crosland_Camilla> ;
-	cwrc:hasActivistInvolvementIn cwrc:zionism ;
-	cwrc:hasAncestor <http://cwrc.ca/cwrcdata/Fernandez_Benjamin_Dias> ;
-	cwrc:hasBirthDate "1816-06-02"^^xsd:date ;
-	cwrc:hasInterpersonalRelationshipWith <http://cwrc.ca/cwrcdata/Hall_Anna_Maria> , <http://cwrc.ca/cwrcdata/Hemans_Felicia> , <http://cwrc.ca/cwrcdata/Scott_Sir_Walter> ;
-	cwrc:relocatesTo <http://sws.geonames.org/2654710/> , <http://sws.geonames.org/11609025/> ;
-	cwrc:studies <http://id.loc.gov/authorities/subjects/sh85035659> , <http://id.loc.gov/authorities/subjects/sh85039408> ;
-	cwrc:hasPaidOccupation cwrc:teacher , cwrc:writer ;
-	cwrc:hasVolunteerOccupation cwrc:charityWorker ;
-	cwrc:relocatesTo <http://sws.geonames.org/2643743/> ;
-	a cwrc:NaturalPerson ;
-	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=aguigr> ;
-	foaf:name "Aguilar, Grace"^^xsd:string ;
-	cwrc:studies <http://id.loc.gov/authorities/subjects/sh85061212> , <http://id.loc.gov/authorities/subjects/sh85077507> , <http://id.loc.gov/authorities/subjects/sh85088961> , <http://id.loc.gov/authorities/subjects/sh85101722> , <http://id.loc.gov/authorities/subjects/sh85120542> , <http://id.loc.gov/authorities/subjects/sh85122827> , <http://id.loc.gov/authorities/subjects/sh85134665> ;
-	cwrc:visits <http://sws.geonames.org/2925533/> , <http://sws.geonames.org/2835382/> ;
-	<http://www.w3.org/ns/org#memberOf> cwrc:Roman_Catholic_Church_ORG .
+	cwrc:hasMother <http://cwrc.ca/cwrcdata/Solomon_Rachel> .
