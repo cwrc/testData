@@ -1,0 +1,223 @@
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix hint: <http://www.bigdata.com/queryHints#> .
+@prefix bd: <http://www.bigdata.com/rdf#> .
+@prefix bds: <http://www.bigdata.com/rdf/search#> .
+
+<http://cwrc.ca/cwrcdata/Aguilar_Grace> rdfs:label "Aguilar, Grace"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/aguigr_BirthContext_1_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/aguigr_BirthContext_1_describing_Snippet> .
+
+<http://cwrc.ca/cwrcdata/aguigr_BirthContext_1_describing_Snippet> dc:description "2 June 1816 GA was born at Hackney in North London. She was the Aguilars' eldest child and only daughter. She had two brothers who were at least eight years younger than she."^^xsd:string ;
+	oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=aguigr#BirthandInfluences> ;
+	a oa:TextualBody ;
+	rdfs:label "Aguilar, Grace - Birth Context snippet" .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing_Snippet> .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing_Snippet> dc:description "September 1828 GA and her family moved from Hackney in North London to Devon."^^xsd:string ;
+	oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=aguigr#EvolvingFaithandLiteraryConnections> ;
+	a oa:TextualBody ;
+	rdfs:label "Aguilar, Grace - Spatial Context snippet" .
+
+<http://cwrc.ca/cwrcdata/crosca_FriendAndAssociatesContext_1_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/crosca_FriendAndAssociatesContext_1_describing_Snippet> .
+
+<http://cwrc.ca/cwrcdata/crosca_FriendAndAssociatesContext_1_describing_Snippet> dc:description "CC's friends and acquaintances were varying and numerous. In her youth the radical politician John Cartwright was a neighbour. Her literary work as an adult led to the formation of a number of lasting friendships...."^^xsd:string ;
+	oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=crosca#SocialCircle> ;
+	a oa:TextualBody ;
+	rdfs:label "Crosland, Camilla - FriendsAndAssociates Context snippet" .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_2_describing> cwrc:hasEvent <http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event2> .
+
+<http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event2> dc:description "By 1838: GA moved with her family from Devon to Brighton." ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/eventType> cwrc:BritishWomenLiteraryClimate , cwrc:IndividualSignificance ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <http://cwrc.ca/cwrcdata/Aguilar_Grace> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasPlace> <http://sws.geonames.org/2654710/> , <http://sws.geonames.org/11609025/> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/timeType> cwrc:PunctiveTime ;
+	cwrc:hasTimeCertainty cwrc:mediumCertainty ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestBeginTimeStamp> "1838"^^xsd:gYear ;
+	a <http://semanticweb.cs.vu.nl/2009/11/sem/Event> ;
+	rdfs:label "Aguilar, Grace - Spatial (relocatesTo) Event" .
+
+<http://cwrc.ca/cwrcdata/aguigr_FriendAndAssociatesContext_1_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/aguigr_FriendAndAssociatesContext_1_describing_Snippet> .
+
+<http://cwrc.ca/cwrcdata/aguigr_FriendAndAssociatesContext_1_describing_Snippet> dc:description "Early 1833 GA met Caroline Bowles (later Southey) at a ball in Teignmouth in Devon. Bowles and her circle likened the young woman who enjoyed dancing and singing to Walter Scott's Flora McIvor."^^xsd:string ;
+	oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=aguigr#EvolvingFaithandLiteraryConnections> ;
+	a oa:TextualBody ;
+	rdfs:label "Aguilar, Grace - FriendsAndAssociates Context snippet" .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_2_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_2_describing_Snippet> .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_2_describing_Snippet> dc:description "By 1838 GA moved with her family from Devon to Brighton."^^xsd:string ;
+	oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=aguigr#EvolvingFaithandLiteraryConnections> ;
+	a oa:TextualBody ;
+	rdfs:label "Aguilar, Grace - Spatial Context snippet" .
+
+<http://cwrc.ca/cwrcdata/hemafe_FriendAndAssociatesContext_3_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/hemafe_FriendAndAssociatesContext_3_describing_Snippet> .
+
+<http://cwrc.ca/cwrcdata/hemafe_FriendAndAssociatesContext_3_describing_Snippet> dc:description "Maria Jane Jewsbury FH's literary correspondents and friends included Grace Aguilar, Joanna Baillie (whose Beacon she recalled reading when very young), and Mary Howitt. She was acquainted with Maria Jane Jewsbury, at least by letter,..."^^xsd:string ;
+	oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=hemafe#MariaJaneJewsbury> ;
+	a oa:TextualBody ;
+	rdfs:label "Hemans, Felicia - FriendsAndAssociates Context snippet" .
+
+<http://cwrc.ca/cwrcdata/aguigr_OccupationContext2_describing> cwrc:hasEvent <http://cwrc.ca/cwrcdata/aguigr_Occupation_Event1> .
+
+<http://cwrc.ca/cwrcdata/aguigr_Occupation_Event1> dc:description "By March 1842: GA and her mother were running a small private boarding school in Hackney for boys aged four to ten; subjects included Religion, English, and Hebrew." ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/eventType> cwrc:BritishWomenLiteraryClimate , cwrc:DecadeSignficance ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <http://cwrc.ca/cwrcdata/Aguilar_Grace> , <http://cwrc.ca/cwrcdata/Aguilar_Sarah> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasPlace> <http://sws.geonames.org/2643743/> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/timeType> cwrc:PunctiveTime ;
+	cwrc:hasTimeCertainty cwrc:mediumCertainty ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestBeginTimeStamp> "1842-03"^^xsd:gYearMonth ;
+	a <http://semanticweb.cs.vu.nl/2009/11/sem/Event> ;
+	rdfs:label "Aguilar, Grace - Occupation Event" .
+
+<http://cwrc.ca/cwrcdata/aguigr_DeathContext_1_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/aguigr_DeathContext_1_describing_Snippet> .
+
+<http://cwrc.ca/cwrcdata/aguigr_DeathContext_1_describing_Snippet> dc:description "16 September 1847 GA died at the age of thirty-one in Frankfurt, Germany, of complications she had suffered following measles and tuberculosis. Her grave is in the Jewish burial ground in Frankfurt, near the wall..."^^xsd:string ;
+	oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=aguigr#Death> ;
+	a oa:TextualBody ;
+	rdfs:label "Aguilar, Grace - Death Context snippet" .
+
+<http://cwrc.ca/cwrcdata/aguigr_DomesticEducationContext_1_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/aguigr_DomesticEducationContext_1_describing_Snippet> .
+
+<http://cwrc.ca/cwrcdata/aguigr_DomesticEducationContext_1_describing_Snippet> dc:description "GA, a voracious reader, was educated chiefly by her mother and directed in her studies by both parents. Anna Maria Hall reported that GA had learned to read almost by intuition and was impressed by..."^^xsd:string ;
+	oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=aguigr#Education> ;
+	a oa:TextualBody ;
+	rdfs:label "Aguilar, Grace - DomesticEducation Context snippet" .
+
+<http://cwrc.ca/cwrcdata/aguigr_OccupationContext2_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/aguigr_OccupationContext2_describing_Snippet> .
+
+<http://cwrc.ca/cwrcdata/aguigr_OccupationContext2_describing_Snippet> dc:description "By March 1842 GA and her mother were running a small private boarding school in Hackney for boys aged four to ten; subjects included Religion, English, and Hebrew. Women and Education"^^xsd:string ;
+	oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=aguigr#Teaching> ;
+	a oa:TextualBody ;
+	rdfs:label "Aguilar, Grace - Occupation Context snippet" .
+
+<http://cwrc.ca/cwrcdata/aguigr_OccupationContext3_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/aguigr_OccupationContext3_describing_Snippet> .
+
+<http://cwrc.ca/cwrcdata/aguigr_OccupationContext3_describing_Snippet> dc:description "GA's need to rely on her writing for part of her income in the wake of her father's death may have prompted her to seek to publish the novel she had written ten years earlier:..."^^xsd:string ;
+	oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=aguigr#Recognition> ;
+	a oa:TextualBody ;
+	rdfs:label "Aguilar, Grace - Occupation Context snippet" .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-visits_1_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/aguigr_SpatialContext-visits_1_describing_Snippet> .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-visits_1_describing_Snippet> dc:description "During the last summer of her life, GA travelled to Germany (Frankfurt and the spa of Schwalbach), hoping to benefit her failing health."^^xsd:string ;
+	oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=aguigr#LastIllnessLastTravel> ;
+	a oa:TextualBody ;
+	rdfs:label "Aguilar, Grace - Spatial Context snippet" .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_3_describing> cwrc:hasEvent <http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event3> .
+
+<http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event3> dc:description "By early 1842: GA had moved with her family from Brighton back to Hackney." ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/eventType> cwrc:BritishWomenLiteraryClimate , cwrc:HistoricSignificance ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <http://cwrc.ca/cwrcdata/Aguilar_Grace> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasPlace> <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2654710/> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/timeType> cwrc:PunctiveTime ;
+	cwrc:hasTimeCertainty cwrc:mediumCertainty ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestBeginTimeStamp> "1842-02"^^xsd:gYearMonth ;
+	a <http://semanticweb.cs.vu.nl/2009/11/sem/Event> ;
+	rdfs:label "Aguilar, Grace - Spatial (relocatesTo) Event" .
+
+<http://cwrc.ca/cwrcdata/aguigr_CulturalFormContext1_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/aguigr_CulturalFormContext1_Snippet> .
+
+<http://cwrc.ca/cwrcdata/aguigr_CulturalFormContext1_Snippet> dc:description "Both of GA's parents were presumably white and of Jewish descent; her family belonged to the middle class."^^xsd:string ;
+	oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=aguigr#BirthandInfluences> ;
+	a oa:TextualBody ;
+	rdfs:label "Aguilar, Grace - CulturalForm Context snippet" .
+
+<http://cwrc.ca/cwrcdata/aguigr_CulturalFormContext2_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/aguigr_CulturalFormContext2_Snippet> .
+
+<http://cwrc.ca/cwrcdata/aguigr_CulturalFormContext2_Snippet> dc:description "Her father's family was from Spain and her mother's family was from Portugal. GA was English by birth, and she was full of praise for her country as a land of tolerance and freedom: England..."^^xsd:string ;
+	oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=aguigr#BirthandInfluences> ;
+	a oa:TextualBody ;
+	rdfs:label "Aguilar, Grace - CulturalForm Context snippet" .
+
+<http://cwrc.ca/cwrcdata/aguigr_CulturalFormContext1_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/aguigr_CulturalFormContext1_describing_Snippet> .
+
+<http://cwrc.ca/cwrcdata/aguigr_CulturalFormContext1_describing_Snippet> dc:description "Both of GA's parents were presumably white and of Jewish descent; her family belonged to the middle class."^^xsd:string ;
+	oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=aguigr#BirthandInfluences> ;
+	a oa:TextualBody ;
+	rdfs:label "Aguilar, Grace - CulturalForm Context snippet" .
+
+<http://cwrc.ca/cwrcdata/aguigr_CulturalFormContext2_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/aguigr_CulturalFormContext2_describing_Snippet> .
+
+<http://cwrc.ca/cwrcdata/aguigr_CulturalFormContext2_describing_Snippet> dc:description "Her father's family was from Spain and her mother's family was from Portugal. GA was English by birth, and she was full of praise for her country as a land of tolerance and freedom: England..."^^xsd:string ;
+	oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=aguigr#BirthandInfluences> ;
+	a oa:TextualBody ;
+	rdfs:label "Aguilar, Grace - CulturalForm Context snippet" .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_3_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_3_describing_Snippet> .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_3_describing_Snippet> dc:description "By early 1842 GA had moved with her family from Brighton back to Hackney."^^xsd:string ;
+	oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=aguigr#EvolvingFaithandLiteraryConnections> ;
+	a oa:TextualBody ;
+	rdfs:label "Aguilar, Grace - Spatial Context snippet" .
+
+<http://cwrc.ca/cwrcdata/chopka_DomesticEducationContext_1_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/chopka_DomesticEducationContext_1_describing_Snippet> .
+
+<http://cwrc.ca/cwrcdata/chopka_DomesticEducationContext_1_describing_Snippet> dc:description "Following her father's death, her education was supplemented by her maternal great-grandmother Victoire Verdon Charleville, who placed a particular emphasis on French and music.The young Kate O'Flaherty was also a voracious reader, and enjoyed the..."^^xsd:string ;
+	oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=chopka#EarlyYears> ;
+	a oa:TextualBody ;
+	rdfs:label "Chopin, Kate - DomesticEducation Context snippet" .
+
+<http://cwrc.ca/cwrcdata/montc2_FriendAndAssociatesContext_1_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/montc2_FriendAndAssociatesContext_1_describing_Snippet> .
+
+<http://cwrc.ca/cwrcdata/montc2_FriendAndAssociatesContext_1_describing_Snippet> dc:description "CM moved in a considerably higher stratum of society than her contemporary Grace Aguilar. It is possible, however, that they corresponded during their collaboration for the Cheap Jewish Library. In a letter to their mutual..."^^xsd:string ;
+	oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=montc2#Society> ;
+	a oa:TextualBody ;
+	rdfs:label "Montefiore, Charlotte - FriendsAndAssociates Context snippet" .
+
+<http://cwrc.ca/cwrcdata/aguigr_ReligionContext1_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/aguigr_ReligionContext1_Snippet> .
+
+<http://cwrc.ca/cwrcdata/aguigr_ReligionContext1_Snippet> dc:description "GA's writings treat in detail the Jewish faith to which she strongly adhered, and she often focuses on the persecution and prejudice which Jews suffered throughout the nineteenth century, as well as historically. As critic..."^^xsd:string ;
+	oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=aguigr#BirthandInfluences> ;
+	a oa:TextualBody ;
+	rdfs:label "Aguilar, Grace - Religion Context snippet" .
+
+<http://cwrc.ca/cwrcdata/aguigr_DomesticEducationContext_2_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/aguigr_DomesticEducationContext_2_describing_Snippet> .
+
+<http://cwrc.ca/cwrcdata/aguigr_DomesticEducationContext_2_describing_Snippet> dc:description "In addition to singing, sewing, sketching, and dancing—until her mother requested that she should not waltz, after which no solicitation could . . . tempt her—GA also played the piano and took up the harp..."^^xsd:string ;
+	oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=aguigr#Education> ;
+	a oa:TextualBody ;
+	rdfs:label "Aguilar, Grace - DomesticEducation Context snippet" .
+
+<http://cwrc.ca/cwrcdata/aguigr_ReligionContext1_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/aguigr_ReligionContext1_describing_Snippet> .
+
+<http://cwrc.ca/cwrcdata/aguigr_ReligionContext1_describing_Snippet> dc:description "GA's writings treat in detail the Jewish faith to which she strongly adhered, and she often focuses on the persecution and prejudice which Jews suffered throughout the nineteenth century, as well as historically. As critic..."^^xsd:string ;
+	oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=aguigr#BirthandInfluences> ;
+	a oa:TextualBody ;
+	rdfs:label "Aguilar, Grace - Religion Context snippet" .
+
+<http://cwrc.ca/cwrcdata/stergb_DomesticEducationContext_1_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/stergb_DomesticEducationContext_1_describing_Snippet> .
+
+<http://cwrc.ca/cwrcdata/stergb_DomesticEducationContext_1_describing_Snippet> dc:description "At first Gladys was taught at home by governesses: the stout, comical angel Fräulein Sanders, followed by several lunatics, one elderly nymphomaniac (unsuccessful) and a prostitute (that is, a governess who was dismissed when a..."^^xsd:string ;
+	oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=stergb#Education> ;
+	a oa:TextualBody ;
+	rdfs:label "Stern, G. B. - DomesticEducation Context snippet" .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing> cwrc:hasEvent <http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event1> .
+
+<http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event1> dc:description "September 1828: GA and her family moved from Hackney in North London to Devon." ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/eventType> cwrc:BritishWomenLiteraryClimate , cwrc:IndividualSignificance ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <http://cwrc.ca/cwrcdata/Aguilar_Grace> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasPlace> <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/11609025/> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasTimeStamp> "1828-09"^^xsd:gYearMonth ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/timeType> cwrc:PunctiveTime ;
+	a <http://semanticweb.cs.vu.nl/2009/11/sem/Event> ;
+	rdfs:label "Aguilar, Grace - Spatial (relocatesTo) Event" .
+
+<http://cwrc.ca/cwrcdata/aguigr_causeofdeath_context0_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/aguigr_causeofdeath_context0_Snippet> .
+
+<http://cwrc.ca/cwrcdata/aguigr_causeofdeath_context0_Snippet> dc:description "GA died at the age of thirty-one in Frankfurt, Germany, of complications she had suffered following measles and tuberculosis."^^xsd:string ;
+	oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=aguigr#Death> ;
+	a oa:TextualBody ;
+	rdfs:label "Aguilar, Grace DeathContext snippet" .
