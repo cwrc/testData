@@ -77,6 +77,8 @@ _:t2028865 <http://purl.org/dc/terms/format> "text/turtle"^^xsd:string .
 
 <http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_identifying> rdfs:label "Aguilar, Grace - Spatial Context identifying annotation" .
 
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing> rdfs:label "Aguilar, Grace - Spatial Context describing annotation" .
+
 <http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing_Snippet> .
 
 <http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing_Snippet> rdfs:label "Aguilar, Grace - Spatial Context snippet" .
@@ -113,6 +115,10 @@ rdfs:label "London"@en.
 
 <http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_identifying> a <http://sparql.cwrc.ca/ontologies/cwrc#SpatialContext> ;
 	oa:hasBody <http://sws.geonames.org/2643743/> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#SpatialContext> rdfs:label "SpatialContext"@en.
+
+<http://sws.geonames.org/2643743/> rdfs:label "Frankfurt"@en.
 
 <http://cwrc.ca/cwrcdata/Aguilar_Grace> <http://sparql.cwrc.ca/ontologies/cwrc#visits> <http://sws.geonames.org/2925533/> .
 
