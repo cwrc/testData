@@ -111,7 +111,7 @@ rdfs:label "London"@en.
 	foaf:name "Roman Catholic Church" ;
 	<http://www.w3.org/2004/02/skos/core#altLabel> "Catholic Church" .
 
-<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_identifying> a <http://sparql.cwrc.ca/ontologies/cwrc#SpatialContext> oa:hasBody <http://sws.geonames.org/2643743/>.
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_identifying> a <http://sparql.cwrc.ca/ontologies/cwrc#SpatialContext> oa:hasBody <http://sws.geonames.org/2643743/.
 
 <http://sws.geonames.org/2643743/> rdfs:label "London"@en.
 
