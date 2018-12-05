@@ -118,7 +118,7 @@ rdfs:label "London"@en.
 
 <http://sparql.cwrc.ca/ontologies/cwrc#SpatialContext> rdfs:label "SpatialContext"@en.
 
-<http://sws.geonames.org/2643743/> rdfs:label "Frankfurt"@en.
+<http://sws.geonames.org/2643743/> rdfs:label "London"@en.
 
 <http://cwrc.ca/cwrcdata/Aguilar_Grace> <http://sparql.cwrc.ca/ontologies/cwrc#visits> <http://sws.geonames.org/2925533/> .
 
