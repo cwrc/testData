@@ -1,0 +1,550 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix hint: <http://www.bigdata.com/queryHints#> .
+@prefix bd: <http://www.bigdata.com/rdf#> .
+@prefix bds: <http://www.bigdata.com/rdf/search#> .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing> <http://purl.org/dc/terms/subject> <http://cwrc.ca/cwrcdata/Aguilar_Grace> .
+
+<http://cwrc.ca/cwrcdata/Aguilar_Grace> <http://sparql.cwrc.ca/ontologies/cwrc#hasNationalitySelfReported> "GB-ENG"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/Aguilar_Grace> .
+
+<http://cwrc.ca/cwrcdata/Aguilar_Grace> <http://sparql.cwrc.ca/ontologies/cwrc#hasNationalHeritage> "ES"^^xsd:string , "PT"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing> <http://sparql.cwrc.ca/ontologies/cwrc#hasEvent> <http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event1> .
+
+<http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event1> rdfs:label "Aguilar, Grace - Spatial (relocatesTo) Event" ;
+	<http://purl.org/dc/terms/description> "September 1828: GA and her family moved from Hackney in North London to Devon." .
+
+<http://cwrc.ca/cwrcdata/Aguilar_Grace> <http://sparql.cwrc.ca/ontologies/cwrc#hasBirthDate> "1816-06-02"^^xsd:date ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasDeathDate> "1847-09-16"^^xsd:date .
+
+<http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event1> <http://semanticweb.cs.vu.nl/2009/11/sem/hasTimeStamp> "1828-09"^^xsd:gYearMonth .
+
+<http://cwrc.ca/cwrcdata/Aguilar_Grace> <http://sparql.cwrc.ca/ontologies/cwrc#hasReligion> <http://sparql.cwrc.ca/ontologies/cwrc#catholicism> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#catholicism> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://dbpedia.org/resource/Catholic_Church> , <http://vocab.getty.edu/aat/300073730> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasOrganization> <http://sparql.cwrc.ca/ontologies/cwrc#Roman_Catholic_Church_ORG> ;
+	a <http://sparql.cwrc.ca/ontologies/cwrc#Religion> , <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:comment "The description for this term is indebted to the Getty Art & Architecture Thesaurus."@en , "La description de ce terme est basée sur celle de DBPedia."@fr ;
+	rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2018-06-25> ;
+	rdfs:label "Roman Catholicism"@en , "Catolicismo"@es , "Catolicismo Romano"@es , "Catholicisme"@fr , "Katholicisme"@nl , "Katholiek"@nl , "Rooms-Katholicisme"@nl ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Catholic Church"@en , "Catholicism"@en , "Roman Catholic Church"@en ;
+	<http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://sparql.cwrc.ca/ontologies/cwrc#christianity> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "\"Verwijst naar de richting van het christendom die zich kenmerkt door een uniforme, hoogontwikkelde rituele canon en organisatiestructuur met een doctrine die wortelt in de leer van de apostelen van Jezus Christus in de 1ste eeuw, in de theologie van de Alexandrijnse school en in het augustijner gedachtegoed. In deze godsdienstige richting wordt het geloof beschouwd als een aanvaarding van de openbaring; de openbaring heeft de vorm van een doctrine. In juridische zin verwijst de term naar de richting van het christendom die zich onderscheidt als een verenigd, monolithisch sacramenteel systeem onder het bestuur van het pauselijk gezag. Gedurende het grootste deel van de geschiedenis van dit systeem was de paus gevestigd in Rome en daarom wordt 'rooms-katholicisme' vaak gebruikt om dit begrip te onderscheiden van de orthodoxe katholieke kerk.\" <a href=\"#cwrc:db2f8571-a773-4068-a35f-34262950bb8f\">(Getty, 2017)</a>"@nl , "\"Refers to the branch of Christianity characterized by a uniform, highly developed ritual canon and organisational structure with doctrinal roots based in the teachings of the Apostles of Jesus Christ in the first century, in the Alexandrian school of theology, and in Augustinian thought. In this religious branch, faith is considered an acceptance of revelation; revelation appears as doctrine. In juridical terms, it refers to the branch of Christianity distinguished as a unified, monolithic sacramental system under the governance of papal authority. Throughout much of its history, the seat of the Pope has been in Rome, thus \"Roman Catholicism\" is often used to distinguish this concept from the Orthodox Catholic church.\" <a href=\"#cwrc:db2f8571-a773-4068-a35f-34262950bb8f\">(Getty, 2017)</a>"@en , "«L'Église catholique, ou Église catholique, apostolique et romaine, est la plus grande Église chrétienne avec plus d'un milliard de fidèles. Elle réunit l'ensemble des chrétiens en communion avec le pape et les évêques qui sont considérés par les catholiques comme étant les successeurs des apôtres de Jésus-Christ. L'Église catholique est l'une des plus vieilles institutions religieuses au monde et a joué un rôle important dans l'histoire, surtout du monde occidental. La foi de l'Église catholique est résumée par le symbole de Nicée et elle se caractérise par la célébration des sept sacrements dont le plus important est l'Eucharistie célébré liturgiquement durant la messe. Selon son propre catéchisme, l'Église catholique est composée de trois parties qui ne forment qu'une seule Église placée sous Jésus-Christ : l'Église militante, l'Église triomphante et l'Église souffrante correspondant respectivement à l'ensemble des fidèles sur terre, l'ensemble des saints qui sont au ciel et l'ensemble des âmes qui sont au purgatoire. L'Église catholique sur terre se conçoit comme une communion d'Églises locales ou particulières, c'est-à-dire ayant chacune un territoire et un évêque à sa tête. Celles-ci sont chacune pleinement l'Église catholique dans la mesure où elles sont en communion avec le pape, qui est l'évêque de Rome et considéré comme étant le successeur de saint Pierre, et en communion les unes avec les autres. L'Église catholique se définit comme une institution à la fois humaine et divine : «société parfaite en dépit de l'imperfection de ses membres». En plus d'être l'ensemble des baptisés, elle est aussi une institution et un clergé organisés de façon hiérarchique. Une très grande majorité des catholiques (au moins 98 %) sont de l'Église latine, mais il existe aussi des catholiques de différentes Églises catholiques orientales.» <a href=\"#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a\">(DBpedia, 2017)</a>"@fr , "\"Se refiere a la rama del cristianismo caracterizada por un canon ritual uniforme y altamente desarrollado y una estructura organizacional con raíces doctrinales basadas en las enseñanzas de los Apostoles de Jesucristo en la primera centuria, en la Escuela Alejandrina de teología, y en el pensamiento agustiniano. En esta rama de la religión, la fe es considerada como una aceptación de revelación; la revelación aparece como doctrina. Se refiere a la rama del cristianismo caracterizada por un canon ritual uniforme y altamente desarrollado y una estructura organizacional con raíces doctrinales basadas en las enseñanzas de los Apóstoles de Jesucristo en el primer siglo, en la Escuela Alejandrina de teología, y en el pensamiento agustiniano. En esta rama de la religión, la fe es considerada como una aceptación de revelación; la revelación aparece como doctrina. En términos jurídicos, se refiere a la rama del Cristianismo distinguido como sistema sacramental unificado, monolítico bajo gobierno de la autoridad papal. A través de la mayor parte de su historia, \"la silla del papal\" ha estado en Roma, mediante este concepto el Catolicismo Romano se distingue de la Iglesia Católica Ortodoxa.\" <a href=\"#cwrc:db2f8571-a773-4068-a35f-34262950bb8f\">(Getty, 2017)</a>"@es ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://sparql.cwrc.ca/ontologies/cwrc#Religion> ;
+	<http://rdfs.org/ns/void#inDataset> <http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition> .
+
+<http://cwrc.ca/cwrcdata/Aguilar_Grace> <http://sparql.cwrc.ca/ontologies/cwrc#hasReligion> <http://sparql.cwrc.ca/ontologies/cwrc#christianity> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#christianity> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://dbpedia.org/resource/Christianity> , <http://vocab.getty.edu/aat/300073711> ;
+	<http://www.w3.org/2004/02/skos/core#narrowerTransitive> <http://sparql.cwrc.ca/ontologies/cwrc#buddhism> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasOrganization> <http://sparql.cwrc.ca/ontologies/cwrc#Christianity_ORG> ;
+	a <http://sparql.cwrc.ca/ontologies/cwrc#Religion> , <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:comment "The description for this term is indebted to the Getty Art & Architecture Thesaurus."@en , "La description de ce terme est basée sur celle de DBPedia."@fr ;
+	rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2018-06-25> ;
+	rdfs:label "Christianity"@en , "Cristianismo"@es , "Christianisme"@fr , "Christelijk"@nl , "Christendom"@nl , "基督教"@zh-hant , "jī dū jiāo"@zh-latn-pinyin-x-hanyu , "ji du jiao"@zh-latn-pinyin-x-notone , "chi tu chiao"@zh-latn-wadegile ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Christian"@en .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing> oa:hasBody _:t1944855 .
+
+_:t1944855 <http://purl.org/dc/terms/format> "text/turtle"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing> oa:hasBody _:t1946386 .
+
+_:t1946386 <http://purl.org/dc/terms/format> "text/turtle"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing> oa:hasBody _:t2028847 .
+
+_:t2028847 <http://purl.org/dc/terms/format> "text/turtle"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing> oa:hasBody _:t2028865 .
+
+_:t2028865 <http://purl.org/dc/terms/format> "text/turtle"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Aguilar_Grace> rdfs:label "Aguilar, Grace"^^xsd:string ;
+	foaf:name "Aguilar, Grace"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing> <http://sparql.cwrc.ca/ontologies/cwrc#hasIDependencyOn> <http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_identifying> .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_identifying> rdfs:label "Aguilar, Grace - Spatial Context identifying annotation" .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing_Snippet> .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing_Snippet> rdfs:label "Aguilar, Grace - Spatial Context snippet" .
+
+_:t1944855 rdf:value "data:Aguilar_Grace cwrc:relocatesTo <http://sws.geonames.org/11609025/> ."^^xsd:string .
+
+_:t2028847 rdf:value "data:Aguilar_Grace cwrc:relocatesTo <http://sws.geonames.org/11609025/> ."^^xsd:string .
+
+_:t1946386 rdf:value "data:Aguilar_Grace cwrc:relocatesTo <http://sws.geonames.org/2643743/> ."^^xsd:string .
+
+_:t2028865 rdf:value "data:Aguilar_Grace cwrc:relocatesTo <http://sws.geonames.org/2643743/> ."^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing_Snippet> <http://purl.org/dc/terms/description> "September 1828 GA and her family moved from Hackney in North London to Devon."^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Aguilar_Grace> a <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> a owl:Class ;
+	rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2018-06-25> ;
+	rdfs:label "natural person"@en , "personne physique"@fr ;
+	rdfs:subClassOf foaf:Person ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A human being who is alive, or was alive at some point in time. Natural persons may be fictionalized, in which case they are also classed as a <a href=\"#FictionalPerson\">fictional person</a>."@en , "Être humain en vie ou ayant vécu à un moment donné. Les personnes physiques peuvent être objets de fiction, auquel cas elles sont classées en tant que <a href=\"#FictionalPerson\">personne fictive</a>."@fr .
+
+<http://cwrc.ca/cwrcdata/Aguilar_Grace> <http://sparql.cwrc.ca/ontologies/cwrc#studies> <http://id.loc.gov/authorities/subjects/sh85039408> , <http://id.loc.gov/authorities/subjects/sh85061212> , <http://id.loc.gov/authorities/subjects/sh85077507> , <http://id.loc.gov/authorities/subjects/sh85088961> , <http://id.loc.gov/authorities/subjects/sh85101722> , <http://id.loc.gov/authorities/subjects/sh85120542> , <http://id.loc.gov/authorities/subjects/sh85122827> , <http://id.loc.gov/authorities/subjects/sh85134665> ;
+	<http://www.w3.org/ns/org#memberOf> <http://sparql.cwrc.ca/ontologies/cwrc#Roman_Catholic_Church_ORG> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Roman_Catholic_Church_ORG> a <http://sparql.cwrc.ca/ontologies/cwrc#PoliticalOrganization> , <http://sparql.cwrc.ca/ontologies/cwrc#ReligiousOrganization> ;
+	rdfs:label "Roman Catholic Church" ;
+	foaf:name "Roman Catholic Church" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Catholic Church" .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_identifying> a <http://sparql.cwrc.ca/ontologies/cwrc#SpatialContext> ;
+	oa:hasBody <http://sws.geonames.org/2643743/> .
+
+<http://cwrc.ca/cwrcdata/Aguilar_Grace> <http://sparql.cwrc.ca/ontologies/cwrc#visits> <http://sws.geonames.org/2925533/> .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_identifying> oa:motivatedBy oa:identifying .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing_Snippet> a oa:TextualBody .
+
+_:t1944855 a oa:TextualBody .
+
+_:t1946386 a oa:TextualBody .
+
+_:t2028847 a oa:TextualBody .
+
+_:t2028865 a oa:TextualBody .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_identifying> <http://sparql.cwrc.ca/ontologies/cwrc#hasEvent> <http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event1> .
+
+<http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event1> <http://semanticweb.cs.vu.nl/2009/11/sem/eventType> <http://sparql.cwrc.ca/ontologies/cwrc#BritishWomenLiteraryClimate> , <http://sparql.cwrc.ca/ontologies/cwrc#IndividualSignificance> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <http://cwrc.ca/cwrcdata/Aguilar_Grace> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasPlace> <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/11609025/> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/timeType> <http://sparql.cwrc.ca/ontologies/cwrc#PunctiveTime> ;
+	a <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_identifying> oa:hasBody <http://cwrc.ca/cwrcdata/Aguilar_Grace> .
+
+<http://cwrc.ca/cwrcdata/Aguilar_Grace> <http://sparql.cwrc.ca/ontologies/cwrc#hasAunt> <http://cwrc.ca/cwrcdata/Aguilar_Grace_Aunt> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasBrother> <http://cwrc.ca/cwrcdata/Aguilar_Emanuel_Jr> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasEthnicity> <http://sparql.cwrc.ca/ontologies/cwrc#jewishEthnicity> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasEvent> <http://cwrc.ca/cwrcdata/aguigr_Occupation_Event1> , <http://cwrc.ca/cwrcdata/aguigr_PhysicalHealth_Event1> , <http://cwrc.ca/cwrcdata/aguigr_PhysicalHealth_Event2> , <http://cwrc.ca/cwrcdata/aguigr_PhysicalHealth_Event3> , <http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event1> , <http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event2> , <http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event3> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasFather> <http://cwrc.ca/cwrcdata/Aguilar_Emanuel_Sr> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasGender> <http://sparql.cwrc.ca/ontologies/cwrc#woman> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasMother> <http://cwrc.ca/cwrcdata/Aguilar_Sarah> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasNationalitySelfReported> <http://sparql.cwrc.ca/ontologies/cwrc#jewishNationalIdentity> , <http://sparql.cwrc.ca/ontologies/cwrc#sephardicJewishNationalIdentity> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasPoliticalAffiliation> <http://sparql.cwrc.ca/ontologies/cwrc#zionism> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasRaceColour> <http://sparql.cwrc.ca/ontologies/cwrc#whiteRaceColour> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasReligion> <http://sparql.cwrc.ca/ontologies/cwrc#judaism> , <http://sparql.cwrc.ca/ontologies/cwrc#protestantism> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasReligionSelfReported> <http://sparql.cwrc.ca/ontologies/cwrc#judaism> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasSocialClass> <http://sparql.cwrc.ca/ontologies/cwrc#entrepreneurial-industrialist> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasAncestor> <http://cwrc.ca/cwrcdata/Fernandez_Benjamin_Dias> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasBirthPlace> <http://sws.geonames.org/2643743/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasCauseOfDeath> <http://sparql.cwrc.ca/ontologies/ii#Tuberculosis> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasDeathPlace> <http://sws.geonames.org/2925533/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasInterpersonalRelationshipWith> <http://cwrc.ca/cwrcdata/Howitt_Mary> , <http://cwrc.ca/cwrcdata/Bowles_Caroline> , <http://cwrc.ca/cwrcdata/Crosland_Camilla> , <http://cwrc.ca/cwrcdata/Hall_Anna_Maria> , <http://cwrc.ca/cwrcdata/Hemans_Felicia> , <http://cwrc.ca/cwrcdata/Scott_Sir_Walter> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasPaidOccupation> <http://sparql.cwrc.ca/ontologies/cwrc#teacher> , <http://sparql.cwrc.ca/ontologies/cwrc#writer> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasVolunteerOccupation> <http://sparql.cwrc.ca/ontologies/cwrc#charityWorker> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#relocatesTo> <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2654710/> , <http://sws.geonames.org/11609025/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#studies> <http://id.loc.gov/authorities/subjects/sh85035659> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#visits> <http://sws.geonames.org/2835382/> ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=aguigr> .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_identifying> oa:hasBody <http://sws.geonames.org/11609025/> .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing_Snippet> oa:hasSource <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=aguigr#EvolvingFaithandLiteraryConnections> .
+
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_identifying> oa:hasTarget <http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing_Snippet> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#judaism> <http://www.w3.org/2004/02/skos/core#definition> "\"Verwijst naar de monotheïstische religie van het joodse volk, waarbij het geloof centraal staat dat de oude Israëlieten de aanwezigheid van God ervoeren in menselijke gebeurtenissen. Joden geloven dat één God de Israëlieten uit hun gevangenschap in Egypte heeft bevrijd, de structuur van een gemeenschappelijk en individueel leven aan hen heeft onthuld en hen heeft uitverkoren als een heilig volk dat als voorbeeld moest dienen voor de gehele mensheid. De Hebreeuwse bijbel en de Talmoed zijn de belangrijkste bronnen voor de spirituele en ethische principes van het jodendom. Deze religie, waarvan de oorsprong teruggaat naar de tijd van Abraham, legt meer de nadruk op het tot uitdrukking brengen van het geloof in de vorm van rituelen dan in de vorm van abstracte doctrines. De sabbat, die begint bij zonsondergang op vrijdag en eindigt bij zonsondergang op zaterdag, is een centraal element van de religie; er is ook een jaarlijkse cyclus van religieuze feestdagen en vastendagen. Het jodendom heeft een zeer uiteenlopende ontwikkelingsgeschiedenis die bijna 4000 jaar beslaat en is uitgemond in diverse stromingen: de orthodoxe, conservatieve en reformistische stroming.\" <a href=\"#cwrc:db2f8571-a773-4068-a35f-34262950bb8f\">(Getty, 2017)</a>"@nl , "«Pour l'Encyclopædia Britannica, le mot judaïsme recouvre la religion des Juifs, ainsi que la théologie, la loi et les traditions culturelles du peuple juif, constitué des descendants des Israélites provenant de l'antique terre d'Israël et des quelques minorités les ayant rejoints par la conversion et s'étant mélangées à eux au fil de leur diaspora de deux millénaires. Pour un juif orthodoxe comme Daniel Boyarin, le judaïsme est «l'ensemble des rituels et des autres pratiques, des croyances et des valeurs, des loyautés historiques et politiques qui constituent l'allégeance au peuple d'Israël», mais le judaïsme n'est ni une religion ni une foi, selon Boyarin. Ainsi Bernard-Henri Lévy affirme que «la tâche des Juifs comme tels est d'être irréligieux», dans la mesure où la religion, telle qu'on la conçoit en théologie, édifiée par une croyance, par des dogmes, par une instance suprême, centrale et doctrinale, n'appartient pas à l'esprit du judaïsme, selon lui. Le judaïsme comporte des éléments religieux, mais ne s'y limite pas puisqu'il contient des coutumes non spécifiquement religieuses – outre des codes de conduite, des lois, des rites – et qu'il fonde plus largement encore une «culture juive». Néanmoins, par convention, on parle habituellement du judaïsme comme d'une «religion», mais il ne faut pas l'entendre au sens strict, selon des historiens des religions comme Simon Claude Mimouni ou Daniel Boyarin, ou des philosophes comme Léo Strauss ou Bernard-Henri Lévy. Selon ses textes fondateurs, en particulier le Tanakh, la foi des anciens Israélites et de leurs descendants les Juifs, est fondée sur une alliance contractée entre Dieu et Abraham, qui a ensuite été renouvelée entre Dieu et Moïse. Les juifs fondent le judaïsme sur la religion abrahamique qui fleurira ensuite dans la Loi mosaïque (la Torah, les Nevi'im et les Ketouvim), collectivement désignés par l'acronyme Tanakh, dont le texte constitue la Miqra ou Bible hébraïque. Cette religion se fonde sur le culte du Dieu d'Abraham, d'Isaac et de Jacob, au Nom ineffable, qu'elle conçoit comme une Essence éternelle (YHWH), qui détient tous les pouvoirs (Elohim), transcendant le Seigneur des Seigneurs (Adonaï) qu'elle considère Un et Unique et qu'elle qualifie ainsi : omnipotent, omniscient, omniprésent, juste et miséricordieux. Cette religion professe aussi que le rassemblement de toutes les puissances (Elohim) manifesta le créateur du monde qui continue de s'impliquer dans sa destinée en faisant irruption dans l'Histoire dont il révèle la dimension d'Histoire Sainte, comme lorsqu'il fit sortir d'Égypte les enfants d'Israël. Les cohanim, ou prêtres, du Temple de Jérusalem, par deux fois détruit, assuraient son culte. Certains groupes juifs, comme les Ésséniens, s'opposaient à la centralité du culte à Jérusalem. La seconde destruction du Temple de Jérusalem et la dispersion des juifs dans le monde donna naissance à plusieurs traditions religieuses juives. Si la majorité des juifs se regroupèrent autour de l'élaboration du Talmud par les rabbanim, un mouvement strictement scripturaliste, dit Karaïsme, s'opposa à la codification de la tradition orale, tandis que d'autres groupes éloignés, comme les Beta d'Israël en Éthiopie, ignorèrent cette évolution et se développèrent en vase clos. Le judaïsme est l'une des plus anciennes traditions religieuses du monothéisme exclusif encore pratiquées aujourd'hui. Les valeurs et l'histoire du peuple juif sont à la source des deux autres religions abrahamiques, le christianisme et l'islam. Il n'est toutefois pas à la base du samaritanisme, qui est une tradition israélite très tôt distincte du judaïsme de Jérusalem, ni du zoroastrisme, lui-même issu du mazdéisme.» <a href=\"#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a\">(DBpedia, 2017)</a>"@fr ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://sparql.cwrc.ca/ontologies/cwrc#Religion> ;
+	<http://rdfs.org/ns/void#inDataset> <http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#protestantism> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://dbpedia.org/resource/Protestantism> , <http://vocab.getty.edu/aat/300073735> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasOrganization> <http://sparql.cwrc.ca/ontologies/cwrc#Anglican_Church_ORG> , <http://sparql.cwrc.ca/ontologies/cwrc#Protestant_Church_ORG> ;
+	a <http://sparql.cwrc.ca/ontologies/cwrc#Religion> , <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:comment "The description for this term is indebted to the Getty Art & Architecture Thesaurus."@en , "La description de ce terme est basée sur celle de DBPedia."@fr ;
+	rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2018-06-25> ;
+	rdfs:label "Protestantism"@en , "protestantismo"@es , "protestantisme"@fr , "protestant"@nl , "protestantisme"@nl , "抗羅宗"@zh-hant , "新教"@zh-hant , "xīn jiāo"@zh-latn-pinyin-x-hanyu , "xin jiao"@zh-latn-pinyin-x-notone , "hsin chiao"@zh-latn-wadegile ;
+	<http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://sparql.cwrc.ca/ontologies/cwrc#christianity> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "\"El término general para tipos de fe cristiana originadas a partir de la Reforma. Aunque las formas tempranas del protestantismo fueron aquellas que obedecían a Lutero, Calvino y Zwinglio, el término ahora incluye la mayoría de las denominaciones no Romanas o no Ortodoxas. El caracter común de los protestantes incluye la justificación de la fe por la fe, la autoridad de la sagrada escritura y el sacerdocio de todos los fieles, por el que cada creyente puede oir la confesión de los pecados, no siendo exclusivo del clero. protestantes quieren estar cerca al estilo de fe de la primera Iglesia el cual sienten ha sido opacado en las prácticas católicas. El término deriva desde la palabra \"protestari\" que significa no sólo protestar sino que reconocer o confesar. Característica común.\" <a href=\"#cwrc:db2f8571-a773-4068-a35f-34262950bb8f\">(Getty, 2017)</a>"@es , "\"De algemene term voor typen christelijk geloof die zijn ontstaan tijdens de Reformatie. Hoewel de vroegste vormen van protestantisme werden beoefend door de volgelingen van Luther, Calvijn en Zwingli, wordt de term tegenwoordig gebruikt voor de meeste overtuigingen die niet rooms-katholiek of orthodox zijn. Protestanten willen dichter bij de geloofsstijl van de vroege kerk staan, die volgens hen in de katholieke praktijk overschaduwd is geraakt. De term is afkomstig van het woord 'protestari', wat niet alleen 'protesteren' betekent, maar ook 'belijden'. Enkele algemene kenmerken van het protestantisme zijn: rechtvaardiging door het geloof alleen, de berusting van alle gezag bij de Bijbel en de leer dat alle gelovigen zelf hun zonden aan God kunnen belijden, waarbij het aanhoren van de biecht niet alleen aan priesters is voorbehouden.\" <a href=\"#cwrc:db2f8571-a773-4068-a35f-34262950bb8f\">(Getty, 2017)</a>"@nl , "«Le protestantisme est l'une des principales branches du christianisme avec le catholicisme et l'orthodoxie. Entendu largement, le protestantisme est l'ensemble des groupements «issus, directement ou non, de la Réforme et qui rejettent l'autorité du pape». Selon cette perspective, le protestantisme englobe des mouvements variés allant des luthériens passant par les évangéliques, jusqu'aux quakers.» <a href=\"#cwrc:db2f8571-a773-4068-a35f-34262950bb8f\">(DBpedia, 2017)</a>"@fr , "\"泛稱源自宗教改革的各式基督信仰。雖然早期的新教形式是指遵循路德(Luther)、喀爾文(Calvin)，以及茨溫利(Zwingli)的派別，但現在新教這個詞彙包含了大部分非羅馬天主教或非正教的派別。新教徒希望能更接近早期教會信仰，認為天主教將之變得晦澀難解。本詞彙衍生自\"protestari\"，不僅意指抗議，更要坦白或懺悔。新教的常見特色包括因純信而稱義、經典的權威性、信徒皆牧師，所以不是只有牧師才能聽取認罪懺悔。\" <a href=\"#cwrc:db2f8571-a773-4068-a35f-34262950bb8f\">(Getty, 2017)</a>"@zh-hant , "\"The general term for types of Christian faith originating from the Reformation. Although the early forms of Protestantism were those who followed Luther, Calvin, and Zwingli, the term now includes most non-Roman Catholic or non-Orthodox denominations. Protestants want to be closer to the style of faith of the early Church which they feel has been obscured in Catholic practices. The term derives from the word 'protestari' which means not only to protest but to avow or confess. Common characteristics of Protestantism include the justification by faith alone, the authority of scripture, and the priesthood of all believers, in which not only the clergy are able to hear the confession of sin.\" <a href=\"#cwrc:db2f8571-a773-4068-a35f-34262950bb8f\">(Getty, 2017)</a>"@en ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://sparql.cwrc.ca/ontologies/cwrc#Religion> ;
+	<http://rdfs.org/ns/void#inDataset> <http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#whiteRaceColour> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://dbpedia.org/resource/White_people> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#representedBy> <http://sparql.cwrc.ca/ontologies/cwrc#whiteLabel> ;
+	a <http://sparql.cwrc.ca/ontologies/cwrc#RaceColour> , <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:comment "The description for this term is indebted to DBpedia."@en , "La description de ce terme est basée sur celle de DBPedia."@fr ;
+	rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2018-06-25> ;
+	rdfs:label "white"@en , "blanc"@fr ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "presumably white"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://rdf.muninn-project.org/ontologies/appearances#SkinColorSimpleWhite> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "«Le terme Blanc est employé, dans le langage courant, pour désigner des êtres humains caractérisés notamment par une couleur de peau claire. Le terme est généralement employé pour désigner les individus présentant des caractéristiques physiques qui sont historiquement associées aux populations européennes. La définition d'un «individu blanc» diffère sensiblement d'après les contextes historiques, légaux, culturels, et géographiques. Dans certains contextes, en particulier aux États-Unis, le terme «caucasien» est utilisé comme synonyme. D'un point de vue biologique, la peau blanche est une adaptation génétique issue de la sélection naturelle favorisant la synthèse de la vitamine D en milieu faiblement ensoleillé en permettant une pénétration plus profonde des rayons de soleil dans l'épiderme du fait d'un taux de mélanine plus bas. Les latitudes tempérées sont moins soumises aux risques liés au rayonnement ultraviolet, à l'inverse des milieux fortement ensoleillés dans lesquels les individus ont la peau plus foncée.» <a href=\"http://dbpedia.org/page/Blanc_(humain)\">(DBpedia, 2017)</a>"@fr , "\"White people is a racial classification specifier, used for people of Europid ancestry, with the exact implications dependent on context. The contemporary usage of 'white people' or a 'white race' as a large group of (mainly European) populations contrasting with 'black', American Indian, colored' or non-white originates in the 17th century. It is today particularly used as a racial classifier in multiracial societies, such as the United States (White American), the United Kingdom (White British), Brazil (White Brazilian), and South Africa (White South African). Various social constructions of whiteness have been significant to national identity, public policy, religion, population statistics, racial segregation, affirmative action, white privilege, eugenics, racial marginalization and racial quotas. The term 'white race' or 'white people' entered the major European languages in the later 17th century, in the context of racialized slavery and unequal status in European colonies. Description of populations as 'white' in reference to their skin color predates this notion and is found in Greco-Roman ethnography and other ancient sources. Scholarship on race generally distinguishes the modern concept from pre-modern descriptions of collective difference.\" <a href=\"http://dbpedia.org/page/White_people\">(DBpedia, 2017)</a>"@en ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://sparql.cwrc.ca/ontologies/cwrc#RaceColour> ;
+	<http://rdfs.org/ns/void#inDataset> <http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#woman> <http://sparql.cwrc.ca/ontologies/cwrc#representedBy> <http://sparql.cwrc.ca/ontologies/cwrc#womanLabel> ;
+	a <http://sparql.cwrc.ca/ontologies/cwrc#Gender> .
+
+<http://cwrc.ca/cwrcdata/Howitt_Mary> <http://sparql.cwrc.ca/ontologies/cwrc#hasEvent> <http://cwrc.ca/cwrcdata/howima_relocatesTo_Event1> , <http://cwrc.ca/cwrcdata/howima_relocatesTo_Event2> , <http://cwrc.ca/cwrcdata/howima_relocatesTo_Event3> , <http://cwrc.ca/cwrcdata/howima_relocatesTo_Event4> , <http://cwrc.ca/cwrcdata/howima_visits_Event1> , <http://cwrc.ca/cwrcdata/howima_visits_Event2> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasFather> <http://cwrc.ca/cwrcdata/Botham_Samuel> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasGender> <http://sparql.cwrc.ca/ontologies/cwrc#woman> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasHusband> <http://cwrc.ca/cwrcdata/Howitt_William> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasInstructor> <http://cwrc.ca/cwrcdata/Kilham_Hannah> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasMother> <http://cwrc.ca/cwrcdata/Botham_Ann> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasNationalHeritage> "FR"^^xsd:string ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasNationality> "GB-ENG"^^xsd:string ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasReligion> <http://sparql.cwrc.ca/ontologies/cwrc#catholicism> , <http://sparql.cwrc.ca/ontologies/cwrc#occultism> , <http://sparql.cwrc.ca/ontologies/cwrc#quakerism> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasReligionSelfReported> <http://sparql.cwrc.ca/ontologies/cwrc#quakerism> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasSister> <http://cwrc.ca/cwrcdata/Harrison_Anna> , <http://cwrc.ca/cwrcdata/Howitt_Mary_Sister> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasSocialClass> <http://sparql.cwrc.ca/ontologies/cwrc#lowerMiddleClass> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasSon> <http://cwrc.ca/cwrcdata/Howitt_Alfred_William> , <http://cwrc.ca/cwrcdata/Howitt_Charles_Botham> , <http://cwrc.ca/cwrcdata/Howitt_Claude_Middleton> , <http://cwrc.ca/cwrcdata/Howitt_Herbert_Charleton> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasBirthDate> "1799-03-12"^^xsd:date ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasBirthPlace> "Whitecliffe,Gloucestershire,England" ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasBurialPlace> <http://sws.geonames.org/3169070/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasCauseOfDeath> <http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_respiratory_system> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasChildren> "7" ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasDeathDate> "1888-01-30"^^xsd:date ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasDeathPlace> <http://sws.geonames.org/3169070/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasGenderedPoliticalActivity> <http://sparql.cwrc.ca/ontologies/cwrc#suffrage> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasInterpersonalRelationshipWith> <http://cwrc.ca/cwrcdata/Alcott_Louisa_May> , <http://cwrc.ca/cwrcdata/Andersen_Hans_Christian> , <http://cwrc.ca/cwrcdata/Blackwell_Elizabeth_1821_-_1910> , <http://cwrc.ca/cwrcdata/Bodichon_Barbara_Leigh_Smith> , <http://cwrc.ca/cwrcdata/Broughton_Rhoda> , <http://cwrc.ca/cwrcdata/Browning_Elizabeth_Barrett> , <http://cwrc.ca/cwrcdata/Browning_Robert> , <http://cwrc.ca/cwrcdata/Chapman_John> , <http://cwrc.ca/cwrcdata/Dickens_Charles> , <http://cwrc.ca/cwrcdata/Douglass_Frederick> , <http://cwrc.ca/cwrcdata/Emerson_Ralph_Waldo> , <http://cwrc.ca/cwrcdata/Fuller_Margaret> , <http://cwrc.ca/cwrcdata/Gaskell_Elizabeth> , <http://cwrc.ca/cwrcdata/Hill_Octavia> , <http://cwrc.ca/cwrcdata/Hunt_Leigh> , <http://cwrc.ca/cwrcdata/Jameson_Anna_Brownell> , <http://cwrc.ca/cwrcdata/Johnstone_Christian_Isobel> , <http://cwrc.ca/cwrcdata/Martineau_Harriet> , <http://cwrc.ca/cwrcdata/Mitford_Mary_Russell> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#woman> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2018-06-25> ;
+	rdfs:label "woman"@en , "femme"@fr ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "FEMALE"@en ;
+	<http://www.w3.org/2004/02/skos/core#definition> "Indique l'identification ou l'assignation au genre féminin, et qui est souvent mais non nécessairement de sexe féminin. «On ne naît pas femme, on le devient»: Simone de Beauvoir, Le deuxième sexe <a href=\"#cwrc:c6a678e5-8fc6-41bc-8631-7cfb7116017e\"> (1973) </a>"@fr , "Indicates a subject identification with or labelling as the gender woman, and who is often but not necessarily understood to be sexed female. \"One is not born, but rather becomes, woman\" <a href=\"#cwrc:c6a678e5-8fc6-41bc-8631-7cfb7116017e\"> (Simone de Beauvoir, 1973)</a>"@en ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://sparql.cwrc.ca/ontologies/cwrc#Gender> ;
+	<http://rdfs.org/ns/void#inDataset> <http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#zionism> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://dbpedia.org/resource/Zionism> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasOrganization> <http://sparql.cwrc.ca/ontologies/cwrc#Zionism_ORG> ;
+	a <http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation> , <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:comment "The description for this term is indebted to DBpedia."@en , "La description de ce terme est basée sur celle de DBPedia."@fr ;
+	rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2018-06-25> ;
+	rdfs:label "Zionism"@en , "Sionisme"@fr ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "zionist"@en , "proto-Zionist"@en ;
+	<http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://sparql.cwrc.ca/ontologies/cwrc#nationalism> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "\"Zionism is a nationalist political movement of Jews and Jewish culture that supports the re-establishment of a Jewish homeland in the territory defined as the historic Land of Israel (roughly corresponding to Palestine, Canaan or the Holy Land). Zionism emerged in the late 19th century in central and eastern Europe as a national revival movement, in reaction to anti-Semitic and exclusionary nationalist movements in Europe. Soon after this, most leaders of the movement associated the main goal with creating the desired state in Palestine, then an area controlled by the Ottoman Empire. Until 1948, the primary goals of Zionism were the re-establishment of Jewish sovereignty in the Land of Israel, ingathering of the exiles, and liberation of Jews from the antisemitic discrimination and persecution that they experienced during their diaspora. Since the establishment of the State of Israel in 1948, Zionism continues primarily to advocate on behalf of Israel and address threats to its continued existence and security. A religious variety of Zionism supports Jews upholding their Jewish identity defined as adherence to religious Judaism, opposes the assimilation of Jews into other societies, and has advocated the return of Jews to Israel as a means for Jews to be a majority nation in their own state. A variety of Zionism, called cultural Zionism, founded and represented most prominently by Ahad Ha'am, fostered a secular vision of a Jewish \"spiritual center\" in Israel. Unlike Herzl, the founder of political Zionism, Ahad Ha'am strived for Israel to be \"a Jewish state and not merely a state of Jews\". Advocates of Zionism view it as a national liberation movement for the repatriation of a persecuted people residing as minorities in a variety of nations to their ancestral homeland. Critics of Zionism view it as a colonialist, racist, and exceptionalist ideology that led advocates to violence during Mandatory Palestine, followed by the forced exodus of Palestinians, and the subsequent denial of their human rights.\" <a href=\"#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a\">(DBpedia, 2017)</a>"@en , "«Le sionisme est une idéologie politique fondée sur un sentiment national juif, décrite comme nationaliste par les uns et comme émancipatrice par les autres, prônant l'existence d'un centre territorial ou étatique peuplé par les Juifs en Terre d'Israël (Eretz Israël). À la naissance du mouvement, à la fin du XIXe siècle, ce territoire correspondait à la Palestine ottomane, puis après la Première Guerre mondiale à la partie occidentale de la Palestine mandataire. Sur un plan idéologique et institutionnel, le sionisme entend œuvrer à donner ou redonner aux Juifs un statut perdu depuis l'annexion du Royaume d'Israël par l'Empire assyrien en -720, à savoir celui d'un peuple disposant d'un territoire. Il faut le différencier du post-sionisme, qui veut donner une orientation laïque à l'État d'Israël, normaliser les relations avec les Palestiniens, et du néo-sionisme, qui milite pour la migration des Palestiniens et des Arabes israéliens vers les autres pays arabes. Le mouvement sioniste est né parmi les communautés ashkénazes d'Europe centrale et orientale sous la pression des pogroms, mais aussi en Europe occidentale, à la suite du choc causé par l'affaire Dreyfus – qui compte parmi les motifs du lancement du Congrès sioniste par Theodor Herzl. Bien qu'ayant des caractères spécifiques du fait de la dispersion des Juifs, cette idéologie est contemporaine de l'affirmation d'autres nationalismes en Europe.» <a href=\"#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a\">(DBpedia, 2017)</a>"@fr ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation> ;
+	<http://www.w3.org/2004/02/skos/core#related> <http://sparql.cwrc.ca/ontologies/cwrc#anti-Antisemitism> ;
+	<http://rdfs.org/ns/void#inDataset> <http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#sephardicJewishNationalIdentity> a <http://sparql.cwrc.ca/ontologies/cwrc#NationalIdentity> , <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2018-06-25> ;
+	rdfs:label ""@fr , "Sephardic Jewish"@en ;
+	<http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://sparql.cwrc.ca/ontologies/cwrc#jewishNationalIdentity> ;
+	<http://www.w3.org/2004/02/skos/core#definition> ""@fr , "Indicates a subject's identification with or labelling as Sephardic Jewish as a national identity."@en ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://sparql.cwrc.ca/ontologies/cwrc#NationalIdentity> ;
+	<http://rdfs.org/ns/void#inDataset> <http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition> .
+
+<http://cwrc.ca/cwrcdata/Howitt_Mary> <http://sparql.cwrc.ca/ontologies/cwrc#hasBrother> <http://cwrc.ca/cwrcdata/Howitt_Mary_Brother> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasDaughter> <http://cwrc.ca/cwrcdata/Howitt_Anna_Mary> , <http://cwrc.ca/cwrcdata/Howitt_Margaret> , <http://cwrc.ca/cwrcdata/Howitt_Mary_Daughter> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasEvent> <http://cwrc.ca/cwrcdata/howima_inhabits_Event1> , <http://cwrc.ca/cwrcdata/howima_inhabits_Event2> , <http://cwrc.ca/cwrcdata/howima_InstitutionalEducation_Event1> , <http://cwrc.ca/cwrcdata/howima_InstitutionalEducation_Event2> , <http://cwrc.ca/cwrcdata/howima_InstitutionalEducation_Event3> , <http://cwrc.ca/cwrcdata/howima_Political_Event1> , <http://cwrc.ca/cwrcdata/howima_Political_Event2> , <http://cwrc.ca/cwrcdata/howima_Religion_Event1> , <http://cwrc.ca/cwrcdata/howima_Religion_Event2> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#christianity> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://sparql.cwrc.ca/ontologies/cwrc#abrahamicReligions> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "\"發展於西元一世紀的世界宗教與文化，跟隨拿薩勒(Nazareth)耶穌基督的教誨。源於猶太傳統及舊約聖經。教義包括相信耶穌之死與救贖復活。此教融合信仰傳統、儀式，及某種形式的教會權威或領導。\" <a href=\"#cwrc:db2f8571-a773-4068-a35f-34262950bb8f\">(Getty, 2017)</a>"@zh-hant , "«Le christianisme est une religion abrahamique fondée sur l'enseignement, la personne et la vie de Jésus de Nazareth tels qu'ils sont interprétés par la tradition chrétienne à partir du Nouveau Testament de la Bible. Il s'agit d'une religion du salut considérant Jésus-Christ comme le Messie annoncé par les prophètes dans l'Ancien Testament qui vient sauver l'humanité du Mal et la faire participer à la vie de Dieu. La foi en la résurrection de Jésus est au cœur du christianisme car elle signifie le début d'une humanité nouvelle libérée du Mal. Les premières communautés chrétiennes naissent au Ier siècle en Judée et dans les grandes villes de la diaspora juive telles que Rome, Éphèse, Antioche et Alexandrie. Le christianisme se développe dès le IIe siècle dans l'Empire romain, dont il devient la religion officielle au IVe siècle, mais aussi en Perse, en Inde et en Éthiopie. Au Moyen-Âge, le christianisme devint majoritaire en Europe, tandis qu'il s'amenuise face à l'islam dans les régions où il est né. Depuis le XVIe siècle, il est devenu la religion la plus importante de la planète par son expansion en Amérique et, plus tard, en Afrique. Il est actuellement présent dans tous les pays du monde. Les Églises chrétiennes sont classiquement regroupées en trois principales branches : le catholicisme, le christianisme orthodoxe et le protestantisme représentant respectivement 50%, 12% et 37% du total des chrétiens en 2010. À la mi-2015, le nombre total de chrétiens dans le monde est évalué à 2,419 milliards, ce qui en fait la religion comptant le plus grand nombre de fidèles au monde devant l'islam qui en compte environ 1,6 milliard.» <a href=\"#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a\">(DBpedia, 2017)</a>"@fr , "\"Verwijst naar de wereldreligie en -cultuur die in de eerste eeuw n. Chr. tot ontwikkeling kwam op basis van de leer van Jezus Christus van Nazareth. De wortels van deze religie liggen in de joodse traditie en het Oude Testament. Een van de kenmerkende grondbeginselen is het geloof in de dood en wederopstanding van Jezus. De religie omvat een traditie van geloof, rituelen en een vorm van kerkelijke autoriteit of leiderschap.\" <a href=\"#cwrc:db2f8571-a773-4068-a35f-34262950bb8f\">(Getty, 2017)</a>"@nl , "\"Se refiere a la religión y cultura que se desarrolló en la primera centuria, guiado por la creencia y reverencia por la vida, enseñanza, muerte y resurrección redentiva de Jesucristo de Nazaret. La religión incorpora una tradición de fe, ritual y una forma de iglesia de autoridad y liderazgo.\" <a href=\"#cwrc:db2f8571-a773-4068-a35f-34262950bb8f\">(Getty, 2017)</a>"@es , "\"Refers to the world religion and culture that developed in the first century CE, driven by the teachings of Jesus Christ of Nazareth. Its roots are in the Judaic tradition and the Old Testament. The tenets include a belief in the death and redemptive resurrection of Jesus. The religion incorporates a tradition of faith, ritual, and a form of church authority or leadership.\" <a href=\"#cwrc:db2f8571-a773-4068-a35f-34262950bb8f\">(Getty, 2017)</a>"@en ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://sparql.cwrc.ca/ontologies/cwrc#Religion> ;
+	<http://rdfs.org/ns/void#inDataset> <http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#entrepreneurial-industrialist> a <http://sparql.cwrc.ca/ontologies/cwrc#SocialClass> , <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2018-06-25> ;
+	rdfs:label "entrepreneurial"@en , "entreprenariat"@fr ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "ENTREPRENEURIAL-INDUSTRIALIST"@en ;
+	<http://www.w3.org/2004/02/skos/core#definition> "Cette classe comprend les propriétaires de grandes entreprises comme les usines, les individus qui soutiennent ces entreprises en y investissant des fonds, ou plus particulièrement les femmes et les filles de ces derniers, telles que Elizabeth Montagu ou Beatrice Webb, pour les périodes historiques anciennes au cours desquelles les les agents économiques étaient rarement des femmes."@fr , "This class comprises the owners of large-scale enterprises such as factories, those who back such enterprises through investing money, or especially in the earlier historical periods when women were rarely economic agents, the wives and daughters of those who do, for instance, Elizabeth Montagu or Beatrice Webb.<a href=\"#cwrc:d596c4a0-ecaf-4739-8a58-3e0af7dba4c7\">(Brown, 2006)</a>"@en ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://sparql.cwrc.ca/ontologies/cwrc#SocialClass> ;
+	<http://rdfs.org/ns/void#inDataset> <http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#jewishEthnicity> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://dbpedia.org/resource/Jews> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#representedBy> <http://sparql.cwrc.ca/ontologies/cwrc#jewishLabel> ;
+	a <http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity> , <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:comment "The description for this term is indebted to DBpedia."@en , "La description de ce terme est basée sur celle de DBPedia."@fr ;
+	rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2018-06-25> ;
+	rdfs:label "Jewish"@en , "Juif"@fr ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "a Jewish"@en , "Jew"@en , "Jewish"@en , "Jewry"@en , "Jews"@en , "Judaism"@en , "one-quarter Jewish"@en ;
+	<http://www.w3.org/2004/02/skos/core#definition> "«Les Juifs (en hébreu : יְהוּדִים / yehoudim, en grec ancien : Ἰουδαῖοι / Ioudaĩoi, en latin : Iudaei, etc.) sont les membres d'un peuple lié à sa propre religion, le judaïsme, et au sens large du terme à une appartenance ethnique et religieuse.      La tradition juive relie leur ascendance aux patriarches Abraham, Isaac et Jacob également appelé Israël. Ils peuplent la Judée et le royaume d'Israël, structurant leur quotidien autour de la Bible hébraïque, laquelle comprend les cinq Livres de la Torah attribués à Moïse, les Livres des prophètes ultérieurs et d'autres écrits. La Bible définit leurs croyances, leur histoire, leur identité nationale et légifère dans tous les domaines de leur vie.      À la suite des aléas de leur histoire, les Juifs migrent ou sont déportés de la Judée et essaiment à travers le monde. La diaspora juive résulte principalement de la conjonction de deux facteurs, une volonté d'essaimage et la nécessité de fuir des persécutions. Tentant de conserver leur mode de vie ancestral au sein des populations avoisinantes dans lesquelles ils s'acculturent, ils développent des traditions religieuses, culinaires et des langues propres ainsi que d'autres traits spécifiques. Réciproquement, ils exercent un certain attrait sur leurs populations d'accueil et l'on enregistre dans l'Empire romain un nombre important de conversions au judaïsme. L'impact et la proportion de ces conversions font débat au sein des historiens. Leur histoire sur plus de deux millénaires en Europe est marquée par des persécutions qui culminent au xxe siècle avec la Shoah.      Les grandes révolutions de l'ère moderne entraînent chez nombre d'entre eux une perte ou un abandon de tout ou partie des repères traditionnels. Plusieurs tentatives sont menées pour les redéfinir en tant qu'entité confessionnelle, nationale ou culturelle de sorte qu'en français, l'usage commun distingue entre les Juifs (avec une majuscule — les 'personnes descendant de l'ancien peuple d'Israël') et les juifs (sans majuscule — 'personnes qui professent le judaïsme').      Le nombre total des Juifs contemporains est difficile à estimer avec précision, et fait l'objet de controverses, mais, selon une estimation effectuée en 2013, il serait d'environ 13,8 millions. La majorité d'entre eux vit en Israël et aux États-Unis, et les autres principalement en Europe, au Canada et en Amérique latine.» <a href=\"http://dbpedia.org/page/Juifs\">(DBpedia, 2017)</a>"@fr , "\"The Jews (/dʒuːz/; Hebrew: יְהוּדִים ISO 259-3 Yehudim, Israeli pronunciation [jehuˈdim]), also known as the Jewish people, are an ethnoreligious group originating from the Israelites, or Hebrews, of the Ancient Near East. Jewish ethnicity, nationhood and religion are strongly interrelated, as Judaism is the traditional faith of the Jewish nation, while its observance varies from strict observance to complete nonobservance. Jews originated as a national and religious group in the Middle East during the second millennium BCE, in the part of the Levant known as the Land of Israel. The Merneptah Stele appears to confirm the existence of a people of Israel, associated with the god El, somewhere in Canaan as far back as the 13th century BCE (Late Bronze Age). The Israelites, as an outgrowth of the Canaanite population, consolidated their hold with the emergence of the Kingdom of Israel, and the Kingdom of Judah. Some consider that these Canaanite sedentary Israelites melded with incoming nomadic groups known as 'Hebrews'. Though few sources in the Bible mention the exilic periods in detail, the experience of diaspora life, from the Ancient Egyptian rule over the Levant, to Assyrian Captivity and Exile, to Babylonian Captivity and Exile, to Seleucid Imperial rule, to the Roman occupation, and the historical relations between Israelites and their homeland, became a major feature of Jewish history, identity and memory. The worldwide Jewish population reached a peak of 16.7 million prior to World War II, but approximately 6 million Jews were systematically murdered during the Holocaust. Since then the population has slowly risen again, and as of 2015 was estimated at 14.3 million by the Berman Jewish DataBank, or less than 0.2% of the total world population (roughly one in every 514 people). According to the report, about 43% of all Jews reside in Israel (6.4 million), and 40% in the United States (5.7 million), with most of the remainder living in Europe (1.4 million) and Canada (0.4 million). These numbers include all those who self-identified as Jews in a socio-demographic study or were identified as such by a respondent in the same household. The exact world Jewish population, however, is difficult to measure. In addition to issues with census methodology, disputes among proponents of halakhic, secular, political, and ancestral identification factors regarding who is a Jew may affect the figure considerably depending on the source. Israel is the only country where Jews form a majority of the population. The modern State of Israel was established as a Jewish state and defines itself as such in its Declaration of Independence and Basic Laws. Its Law of Return grants the right of citizenship to any Jew who requests it. Despite their small percentage of the world's population, Jews have significantly influenced and contributed to human progress in many fields, including philosophy, ethics, literature, business, fine arts and architecture, religion, music, theatre and cinema, medicine, as well as science and technology, both historically and in modern times.\" <a href=\"http://dbpedia.org/page/Jews\">(DBpedia, 2017)</a>"@en ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://sparql.cwrc.ca/ontologies/cwrc#Ethnicity> ;
+	<http://rdfs.org/ns/void#inDataset> <http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#jewishNationalIdentity> <http://sparql.cwrc.ca/ontologies/cwrc#representedBy> <http://sparql.cwrc.ca/ontologies/cwrc#jewishLabel> ;
+	a <http://sparql.cwrc.ca/ontologies/cwrc#NationalIdentity> , <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2018-06-25> ;
+	rdfs:label "Jewish"@en , "Juif"@fr ;
+	<http://www.w3.org/2004/02/skos/core#closeMatch> <http://dbpedia.org/resource/Israelis> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "Indicates a subject's identification with or labelling as Jewish or Israeli as a national identity."@en , "Indique qu'un sujet s'identifie à ou s'est vu assigner une identité nationale juive ou israélienne."@fr ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://sparql.cwrc.ca/ontologies/cwrc#NationalIdentity> ;
+	<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://dbpedia.org/resource/Zionism> ;
+	<http://rdfs.org/ns/void#inDataset> <http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#judaism> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://dbpedia.org/resource/Judaism> , <http://vocab.getty.edu/aat/300073723> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#representedBy> <http://sparql.cwrc.ca/ontologies/cwrc#jewishLabel> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasOrganization> <http://sparql.cwrc.ca/ontologies/cwrc#Jewish_Students_Society_ORG> , <http://sparql.cwrc.ca/ontologies/cwrc#Judaism_ORG> ;
+	a <http://sparql.cwrc.ca/ontologies/cwrc#Religion> , <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:comment "The description for this term is indebted to the Getty Art & Architecture Thesaurus."@en , "La description de ce terme est basée sur celle de DBPedia."@fr ;
+	rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2018-06-25> ;
+	rdfs:label "Judaism"@en , "Judaísmo"@es , "Judaïsme"@fr , "Jodendom"@nl , "Joods"@nl , "猶太教"@zh-hant , "yóu tài jiāo"@zh-latn-pinyin-x-hanyu , "you tai jiao"@zh-latn-pinyin-x-notone , "yu t'ai chiao"@zh-latn-wadegile ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Jewish"@en ;
+	<http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://sparql.cwrc.ca/ontologies/cwrc#abrahamicReligions> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "\"Refers to the monotheistic religion of the Jewish people, central to which is the belief that the ancient Israelites experienced God's presence in human events. Jews believe that the one God delivered the Israelites out of bondage in Egypt, revealed the structure of communal and individual life to them, and chose them to be a holy nation of people able to set an example for all humankind. The Hebrew Bible and Talmud are the two primary sources for Judaism's spiritual and ethical principles. The religion, which traces its origins to Abraham, places more emphasis on expressing beliefs through ritual rather than through abstract doctrine. The Sabbath, beginning on sunset on Friday and ending at sunset on Saturday, is the central religious observance; there is also an annual cycle of religious festivals and days of fasting. Judaism has had a diverse history of development over almost 4000 years, with a number of resulting branches in modern times, namely Orthodox, Conservative, and Reform.\" <a href=\"#cwrc:db2f8571-a773-4068-a35f-34262950bb8f\">(Getty, 2017)</a>"@en , "\"Se refiere a la religión monoteista del pueblo judío, para los cuales es central la creencia que los antiguos israelitas experimentaron la presencia de Dios en los eventos humanos. Los judíos creen que el Dios único salvó los israelistas de la esclavitud en Egipto, revelándoles la estructura de la vida comunal e individual y eligiéndolos para ser una nación sagrada de personas capaces de dar un ejemplo para toda la humanidad. La Biblia Hebrea y el Talmud son dos fuentes primarias de la espiritualidad judía y de los principios éticos.Los orígenes de la religión se remontan a los tiempos de Abraham, poniendo mayor énfasis en expresar la creencia con rituales más bien que con doctrinas abstractas. El Shabbat, que comienza con la puesta de sol del viernes y termina con la puesta de sol del sábado, es la observancia religiosa central; hay también un ciclo anual de fiestas religiosas y días de ayuno. El judaísmo ha tenido un desarrollo diverso a lo largo de la historia de casi 4.000 años, con un gran número de ramas resultantes en épocas modernas, concretamente ortodoxas, conservadoras, y reformistas.\" <a href=\"#cwrc:db2f8571-a773-4068-a35f-34262950bb8f\">(Getty, 2017)</a>"@es , "\"猶太人的一神論宗教，相信古代以色列人於人類事件中體驗到神的存在。猶太人相信這唯一的神使他們脫離埃及的奴役，向他們揭示公共及個人生活的結構，並選擇他們為聖國子民，以為全人類樹立榜樣。《希伯來聖經(Hebrew Bible)》與《塔爾穆德(Talmud)》為猶太教精神與道德原則的兩大來源。猶太教源於亞伯拉罕，較強調以儀式而非抽象的教條表達信仰。遵循信仰的重心為安息日，從週五的日落開始到週日的日出結束；另外每年還有宗教節慶和齋戒日。猶太教經過將近四千年的發展，衍生出許多現代的分支，即正統派猶太教(Orthodox)、保守派猶太教(Conservative)，與改革派猶太教(Reform.)。\" <a href=\"#cwrc:db2f8571-a773-4068-a35f-34262950bb8f\">(Getty, 2017)</a>"@zh-hant .
+
+<http://cwrc.ca/cwrcdata/Aguilar_Sarah> a <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+	rdfs:label "Aguilar, Sarah"^^xsd:string ;
+	foaf:name "Aguilar, Sarah" , "Aguilar, Sarah"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Bowles_Caroline> <http://sparql.cwrc.ca/ontologies/cwrc#hasEvent> <http://cwrc.ca/cwrcdata/bowlca_Biography_Event1> , <http://cwrc.ca/cwrcdata/bowlca_PhysicalHealth_Event1> , <http://cwrc.ca/cwrcdata/bowlca_relocatesTo_Event1> , <http://cwrc.ca/cwrcdata/bowlca_relocatesTo_Event2> , <http://cwrc.ca/cwrcdata/bowlca_relocatesTo_Event3> , <http://cwrc.ca/cwrcdata/bowlca_Wealth_Event1> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasFather> <http://cwrc.ca/cwrcdata/Bowles_Charles> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasGender> <http://sparql.cwrc.ca/ontologies/cwrc#woman> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasGeographicHeritage> <http://sws.geonames.org/9610282/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasGeographicHeritageSelfReported> <http://www.geonames.org/3017382> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasGrandMother> <http://cwrc.ca/cwrcdata/Burrard_Magdalen_Ann> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasHusband> <http://cwrc.ca/cwrcdata/Southey_Edith> , <http://cwrc.ca/cwrcdata/Southey_Robert> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasInstructor> <http://cwrc.ca/cwrcdata/Gilpin_William> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasMother> <http://cwrc.ca/cwrcdata/Bowles_Anne> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasReligion> <http://sparql.cwrc.ca/ontologies/cwrc#paganism> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasReligionSelfReported> <http://sparql.cwrc.ca/ontologies/cwrc#anglicanism> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasSocialClass> <http://sparql.cwrc.ca/ontologies/cwrc#nobility> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasStepBrother> <http://cwrc.ca/cwrcdata/Bowles_Charles> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasStepDaughter> <http://cwrc.ca/cwrcdata/Warter_Edith_May> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasBirthDate> "1786-12-06"^^xsd:date ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasBirthPlace> <http://sws.geonames.org/2643312/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasBirthPosition> <http://sparql.cwrc.ca/ontologies/cwrc#onlyChild> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasDeathDate> "1854-07-20"^^xsd:date ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasDeathPlace> <http://sws.geonames.org/2643312/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasInterpersonalRelationshipWith> <http://cwrc.ca/cwrcdata/Bray_Anna_Eliza> , <http://cwrc.ca/cwrcdata/Browning_Elizabeth_Barrett> , <http://cwrc.ca/cwrcdata/Coleridge_Sara> , <http://cwrc.ca/cwrcdata/Howitt_Mary> , <http://cwrc.ca/cwrcdata/Mitford_Mary_Russell> , <http://cwrc.ca/cwrcdata/Wilson_John_1785_-_1854> , <http://cwrc.ca/cwrcdata/Wordsworth_William> , <http://cwrc.ca/cwrcdata/Burney_Sarah_Harriet> , <http://cwrc.ca/cwrcdata/Hall_Samuel_Carter> , <http://cwrc.ca/cwrcdata/Howitt_William> , <http://cwrc.ca/cwrcdata/Jewsbury_Maria_Jane> , <http://cwrc.ca/cwrcdata/Robinson_Henry_Crabb> , <http://cwrc.ca/cwrcdata/Southey_Robert> , <http://cwrc.ca/cwrcdata/Blain_Virginia> , <http://cwrc.ca/cwrcdata/Miles_Alfred_H> , <http://cwrc.ca/cwrcdata/Southey_Henry_Herbert> , <http://cwrc.ca/cwrcdata/Southey_Katharine> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasIntimateRelationshipWith> <http://cwrc.ca/cwrcdata/Southey_Robert> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasPaidOccupation> "Writer" , <http://sparql.cwrc.ca/ontologies/cwrc#visualArtist> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasPoliticalInvolvementIn> <http://sparql.cwrc.ca/ontologies/cwrc#conservatism> .
+
+<http://cwrc.ca/cwrcdata/Howitt_Mary> <http://sparql.cwrc.ca/ontologies/cwrc#travelsTo> <http://sws.geonames.org/2658434/> , <http://sws.geonames.org/2921044/> , <http://sws.geonames.org/3017382/> , <http://sws.geonames.org/3175395/> , <http://sws.geonames.org/2640452/> , <http://sws.geonames.org/2640549/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#visits> "Potteries,England" , <http://sws.geonames.org/2634895/> , <http://sws.geonames.org/2638360/> , <http://sws.geonames.org/2644210/> , <http://sws.geonames.org/2645022/> , <http://sws.geonames.org/2657896/> , <http://sws.geonames.org/2658434/> , <http://sws.geonames.org/2800866/> , <http://sws.geonames.org/2635043/> , <http://sws.geonames.org/2636841/> , <http://sws.geonames.org/2644668/> , <http://sws.geonames.org/2647525/> ;
+	<http://www.w3.org/ns/org#memberOf> <http://sparql.cwrc.ca/ontologies/cwrc#Roman_Catholic_Church_ORG> , <http://sparql.cwrc.ca/ontologies/cwrc#Society_of_Friends_ORG> ;
+	a <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+	rdfs:label "Howitt, Mary"^^xsd:string ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=howima> ;
+	foaf:name "Howitt, Mary" , "Howitt, Mary"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/aguigr_Occupation_Event1> <http://semanticweb.cs.vu.nl/2009/11/sem/eventType> <http://sparql.cwrc.ca/ontologies/cwrc#BritishWomenLiteraryClimate> , <http://sparql.cwrc.ca/ontologies/cwrc#DecadeSignficance> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <http://cwrc.ca/cwrcdata/Aguilar_Grace> , <http://cwrc.ca/cwrcdata/Aguilar_Sarah> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasPlace> <http://sws.geonames.org/2643743/> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/timeType> <http://sparql.cwrc.ca/ontologies/cwrc#PunctiveTime> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasTimeCertainty> <http://sparql.cwrc.ca/ontologies/cwrc#mediumCertainty> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestBeginTimeStamp> "1842-03"^^xsd:gYearMonth ;
+	a <http://semanticweb.cs.vu.nl/2009/11/sem/Event> ;
+	rdfs:label "Aguilar, Grace - Occupation Event" ;
+	<http://purl.org/dc/terms/description> "By March 1842: GA and her mother were running a small private boarding school in Hackney for boys aged four to ten; subjects included Religion, English, and Hebrew." .
+
+<http://cwrc.ca/cwrcdata/aguigr_PhysicalHealth_Event1> <http://semanticweb.cs.vu.nl/2009/11/sem/eventType> <http://sparql.cwrc.ca/ontologies/cwrc#BritishWomenLiteraryClimate> , <http://sparql.cwrc.ca/ontologies/cwrc#IndividualSignificance> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <http://cwrc.ca/cwrcdata/Aguilar_Grace> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasTime> "1837"^^xsd:gYear ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/timeType> <http://sparql.cwrc.ca/ontologies/cwrc#PunctiveTime> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasTimeCertainty> <http://sparql.cwrc.ca/ontologies/cwrc#mediumCertainty> ;
+	a <http://semanticweb.cs.vu.nl/2009/11/sem/Event> ;
+	rdfs:label "Aguilar, Grace - PhysicalHealth Event" ;
+	<http://purl.org/dc/terms/description> "Around 1837: GA suffered from the measles; her health was thereafter precarious." .
+
+<http://cwrc.ca/cwrcdata/aguigr_PhysicalHealth_Event2> <http://semanticweb.cs.vu.nl/2009/11/sem/eventType> <http://sparql.cwrc.ca/ontologies/cwrc#BritishWomenLiteraryClimate> , <http://sparql.cwrc.ca/ontologies/cwrc#IndividualSignificance> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <http://cwrc.ca/cwrcdata/Aguilar_Grace> , <http://cwrc.ca/cwrcdata/Aguilar_Sarah> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasPlace> <http://sws.geonames.org/6269131/> , <http://sws.geonames.org/2921044/> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/timeType> <http://sparql.cwrc.ca/ontologies/cwrc#PunctiveTime> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasTimeCertainty> <http://sparql.cwrc.ca/ontologies/cwrc#mediumCertainty> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestBeginTimeStamp> "1847-06-17"^^xsd:date ;
+	a <http://semanticweb.cs.vu.nl/2009/11/sem/Event> ;
+	rdfs:label "Aguilar, Grace - PhysicalHealth Event" ;
+	<http://purl.org/dc/terms/description> "16 or 17 June 1847: GA and her mother left England for Germany, to seek a consultation with an eminent German physician about Grace's condition." .
+
+<http://cwrc.ca/cwrcdata/aguigr_PhysicalHealth_Event3> <http://semanticweb.cs.vu.nl/2009/11/sem/eventType> <http://sparql.cwrc.ca/ontologies/cwrc#BritishWomenLiteraryClimate> , <http://sparql.cwrc.ca/ontologies/cwrc#IndividualSignificance> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <http://cwrc.ca/cwrcdata/Aguilar_Grace> , <http://cwrc.ca/cwrcdata/Aguilar_Sarah> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasPlace> <http://sws.geonames.org/2925533/> , <http://sws.geonames.org/2835382/> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasTime> "Summer 1847" , "1847-08-05"^^xsd:date ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/timeType> <http://sparql.cwrc.ca/ontologies/cwrc#PunctiveTime> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasTimeCertainty> <http://sparql.cwrc.ca/ontologies/cwrc#mediumCertainty> ;
+	a <http://semanticweb.cs.vu.nl/2009/11/sem/Event> ;
+	rdfs:label "Aguilar, Grace - PhysicalHealth Event" ;
+	<http://purl.org/dc/terms/description> "Summer 1847: GA and her mother repaired to the steel baths at Schwalbach for several weeks, still hoping her health would improve; thereafter they returned to Frankfurt, where she lived only a few weeks longer." .
+
+<http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event2> <http://semanticweb.cs.vu.nl/2009/11/sem/eventType> <http://sparql.cwrc.ca/ontologies/cwrc#BritishWomenLiteraryClimate> , <http://sparql.cwrc.ca/ontologies/cwrc#IndividualSignificance> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <http://cwrc.ca/cwrcdata/Aguilar_Grace> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasPlace> <http://sws.geonames.org/2654710/> , <http://sws.geonames.org/11609025/> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/timeType> <http://sparql.cwrc.ca/ontologies/cwrc#PunctiveTime> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasTimeCertainty> <http://sparql.cwrc.ca/ontologies/cwrc#mediumCertainty> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestBeginTimeStamp> "1838"^^xsd:gYear ;
+	a <http://semanticweb.cs.vu.nl/2009/11/sem/Event> ;
+	rdfs:label "Aguilar, Grace - Spatial (relocatesTo) Event" .
+
+<http://cwrc.ca/cwrcdata/Howitt_Mary> <http://sparql.cwrc.ca/ontologies/cwrc#hasInterpersonalRelationshipWith> <http://cwrc.ca/cwrcdata/Parkes_Bessie_Rayner> , <http://cwrc.ca/cwrcdata/Stowe_Harriet_Beecher> , <http://cwrc.ca/cwrcdata/Tennyson_Alfred> , <http://cwrc.ca/cwrcdata/Thoreau_Henry_David> , <http://cwrc.ca/cwrcdata/Wordsworth_William> , <http://cwrc.ca/cwrcdata/Bateman_Henry> , <http://cwrc.ca/cwrcdata/Bowles_Caroline> , <http://cwrc.ca/cwrcdata/Dunicliff_Joy> , <http://cwrc.ca/cwrcdata/Foley_Margaret> , <http://cwrc.ca/cwrcdata/Fox_William_Johnson> , <http://cwrc.ca/cwrcdata/Fry_Elizabeth> , <http://cwrc.ca/cwrcdata/Garrison_William_Lloyd> , <http://cwrc.ca/cwrcdata/Hall_Anna_Maria> , <http://cwrc.ca/cwrcdata/Hall_Samuel_Carter> , <http://cwrc.ca/cwrcdata/Hemans_Felicia> , <http://cwrc.ca/cwrcdata/Horne_Richard_Hengist> , <http://cwrc.ca/cwrcdata/Howitt_William> , <http://cwrc.ca/cwrcdata/L_E_L> , <http://cwrc.ca/cwrcdata/Meteyard_Eliza> , <http://cwrc.ca/cwrcdata/Smiles_Samuel> , <http://cwrc.ca/cwrcdata/Smith_Benjamin_Leigh> , <http://cwrc.ca/cwrcdata/Watts_Alaric> , <http://cwrc.ca/cwrcdata/Watts_Priscilla_Maden> , <http://cwrc.ca/cwrcdata/Wordsworth_Dora> , <http://cwrc.ca/cwrcdata/Wordsworth_Mary> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasPaidOccupation> "Writer" ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasPoliticalMembershipIn> <http://sparql.cwrc.ca/ontologies/cwrc#suffrage> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasVolunteerOccupation> <http://sparql.cwrc.ca/ontologies/cwrc#missionaryWork> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#inhabits> "Mayr-am-Hof,Tyrol,Germany" , "Whitecliffe,Gloucestershire,England" , <http://sws.geonames.org/2657896/> , <http://sws.geonames.org/3169070/> , <http://sws.geonames.org/2635043/> , <http://sws.geonames.org/2641170/> , <http://sws.geonames.org/2652591/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#relocatesTo> <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2647356/> , <http://sws.geonames.org/2907911/> , <http://sws.geonames.org/10239921/> , <http://sws.geonames.org/2649911/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#studies> <http://id.loc.gov/authorities/subjects/sh85053986> , <http://id.loc.gov/authorities/subjects/sh85074944> , <http://id.loc.gov/authorities/subjects/sh85082139> , <http://id.loc.gov/authorities/subjects/sh99005058> , <http://sparql.cwrc.ca/ontologies/cwrc#Hymns_in_Prose_for_Children_TITLE> , <http://id.loc.gov/vocabulary/languages/swe> , <http://sparql.cwrc.ca/ontologies/cwrc#A_Catechism_and_Confession_of_Faith_TITLE> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#travelsTo> "Rhine River" , <http://sws.geonames.org/11609015/> .
+
+<http://cwrc.ca/cwrcdata/Bowles_Caroline> <http://sparql.cwrc.ca/ontologies/cwrc#hasPossiblyEroticRelationshipWith> <http://cwrc.ca/cwrcdata/intimate_relationship> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasReproductiveHistory> <http://sparql.cwrc.ca/ontologies/cwrc#childlessness> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#relocatesTo> <http://sws.geonames.org/2645756/> , <http://sws.geonames.org/2643312/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#studies> <http://id.loc.gov/authorities/subjects/sh85039408> , <http://id.loc.gov/authorities/subjects/sh85111662> , <http://id.loc.gov/authorities/subjects/sh85148637> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#visits> <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2645022/> , <http://sws.geonames.org/2654675/> , <http://sws.geonames.org/2653972/> ;
+	<http://www.w3.org/ns/org#memberOf> <http://sparql.cwrc.ca/ontologies/cwrc#Anglican_Church_ORG> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasOccupation> <http://sparql.cwrc.ca/ontologies/cwrc#writer> ;
+	a <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+	rdfs:label "Bowles, Caroline"^^xsd:string ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=bowlca> ;
+	foaf:name "Bowles, Caroline" , "Bowles, Caroline"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Crosland_Camilla> <http://sparql.cwrc.ca/ontologies/cwrc#hasBrother> <http://cwrc.ca/cwrcdata/Toulmin_Edward> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasEvent> <http://cwrc.ca/cwrcdata/crosca_Occupation_Event1> , <http://cwrc.ca/cwrcdata/crosca_PhysicalHealth_Event1> , <http://cwrc.ca/cwrcdata/crosca_travelsTo_Event1> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasFather> <http://cwrc.ca/cwrcdata/Toulmin_William> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasGender> <http://sparql.cwrc.ca/ontologies/cwrc#woman> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasHusband> <http://cwrc.ca/cwrcdata/Crosland_Newton> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasMother> <http://cwrc.ca/cwrcdata/Toulmin_Sarah_Wright> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasNationalHeritage> "FR"^^xsd:string ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasNationalHeritageSelfReported> "GB-ENG"^^xsd:string ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasRaceColour> <http://sparql.cwrc.ca/ontologies/cwrc#whiteRaceColour> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasReligion> "astrology"^^xsd:string , <http://sparql.cwrc.ca/ontologies/cwrc#occultism> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasReligionSelfReported> <http://sparql.cwrc.ca/ontologies/cwrc#occultism> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasSocialClass> <http://sparql.cwrc.ca/ontologies/cwrc#gentry> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasBirthDate> "1812-06-09"^^xsd:date ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasBirthPlace> <http://sws.geonames.org/2643743/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasBirthPosition> <http://sparql.cwrc.ca/ontologies/cwrc#eldestChild> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasBurialPlace> <http://sws.geonames.org/2643743/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasDeathDate> "1895-02-16"^^xsd:date ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasDeathPlace> <http://sws.geonames.org/2643743/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasEmployer> "The Keepsake" , "Friendship's Offering" ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasInterpersonalRelationshipWith> <http://cwrc.ca/cwrcdata/Blessington_Marguerite_Gardiner_Countess_of> , <http://cwrc.ca/cwrcdata/Browning_Elizabeth_Barrett> , <http://cwrc.ca/cwrcdata/Browning_Robert> , <http://cwrc.ca/cwrcdata/Chorley_Henry_Fothergill> , <http://cwrc.ca/cwrcdata/Crowe_Catherine> , <http://cwrc.ca/cwrcdata/Cushman_Charlotte> , <http://cwrc.ca/cwrcdata/Fuller_Margaret> , <http://cwrc.ca/cwrcdata/Hawthorne_Nathaniel> , <http://cwrc.ca/cwrcdata/Howitt_Mary> .
+
+<http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event2> <http://purl.org/dc/terms/description> "By 1838: GA moved with her family from Devon to Brighton." .
+
+<http://cwrc.ca/cwrcdata/aguigr_relocatesTo_Event3> <http://semanticweb.cs.vu.nl/2009/11/sem/eventType> <http://sparql.cwrc.ca/ontologies/cwrc#BritishWomenLiteraryClimate> , <http://sparql.cwrc.ca/ontologies/cwrc#HistoricSignificance> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <http://cwrc.ca/cwrcdata/Aguilar_Grace> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasPlace> <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2654710/> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/timeType> <http://sparql.cwrc.ca/ontologies/cwrc#PunctiveTime> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasTimeCertainty> <http://sparql.cwrc.ca/ontologies/cwrc#mediumCertainty> ;
+	<http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestBeginTimeStamp> "1842-02"^^xsd:gYearMonth ;
+	a <http://semanticweb.cs.vu.nl/2009/11/sem/Event> ;
+	rdfs:label "Aguilar, Grace - Spatial (relocatesTo) Event" ;
+	<http://purl.org/dc/terms/description> "By early 1842: GA had moved with her family from Brighton back to Hackney." .
+
+<http://cwrc.ca/cwrcdata/Aguilar_Emanuel_Jr> <http://sparql.cwrc.ca/ontologies/cwrc#hasPaidOccupation> "Midshipman" ;
+	a <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+	foaf:name "Aguilar, Emanuel,, Jr" .
+
+<http://cwrc.ca/cwrcdata/Aguilar_Emanuel_Sr> <http://sparql.cwrc.ca/ontologies/cwrc#hasPaidOccupation> "Merchant" ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasOccupation> "Lay Leader, Or Parnas" ;
+	a <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+	foaf:name "Aguilar, Emanuel,, Sr" .
+
+<http://cwrc.ca/cwrcdata/Aguilar_Grace_Aunt> a <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> .
+
+<http://sparql.cwrc.ca/ontologies/ii#Tuberculosis> <http://www.w3.org/2004/02/skos/core#altLabel> "Consumption"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Hall_Anna_Maria> <http://sparql.cwrc.ca/ontologies/cwrc#hasMother> <http://cwrc.ca/cwrcdata/Fielding_Sarah_Elizabeth> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasNationalHeritageSelfReported> "FR"^^xsd:string ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasNationalitySelfReported> "IE"^^xsd:string ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasReligionSelfReported> <http://sparql.cwrc.ca/ontologies/cwrc#anglicanism> , <http://sparql.cwrc.ca/ontologies/cwrc#occultism> , <http://sparql.cwrc.ca/ontologies/cwrc#protestantism> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasSocialClassSelfReported> <http://sparql.cwrc.ca/ontologies/cwrc#lowerMiddleClass> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasBirthDate> "1800-01-06"^^xsd:date ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasBirthPlace> <http://sws.geonames.org/2964574/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasBurialPlace> <http://sws.geonames.org/2657676/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasDeathDate> "1881-01-30"^^xsd:date ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasDeathPlace> <http://sws.geonames.org/2650376/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasGenderedPoliticalActivity> <http://sparql.cwrc.ca/ontologies/cwrc#anti-Suffrage> , <http://sparql.cwrc.ca/ontologies/cwrc#feminism> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasInterpersonalRelationshipWith> <http://cwrc.ca/cwrcdata/Dickens_Charles> , <http://cwrc.ca/cwrcdata/Howitt_Mary> , <http://cwrc.ca/cwrcdata/Craik_Dinah_Mulock> , <http://cwrc.ca/cwrcdata/Croker_Thomas_Crofton> , <http://cwrc.ca/cwrcdata/Faucit_Helen> , <http://cwrc.ca/cwrcdata/Hickey_William> , <http://cwrc.ca/cwrcdata/Lytton_Rosina_Bulwer_Lytton_Baroness> , <http://cwrc.ca/cwrcdata/Meteyard_Eliza> , <http://cwrc.ca/cwrcdata/Oliphant_Margaret> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasPaidOccupation> <http://sparql.cwrc.ca/ontologies/cwrc#editing> , <http://sparql.cwrc.ca/ontologies/cwrc#writer> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasPoliticalInvolvementIn> <http://sparql.cwrc.ca/ontologies/cwrc#anti-Suffrage> , <http://sparql.cwrc.ca/ontologies/cwrc#feminism> , <http://sparql.cwrc.ca/ontologies/cwrc#temperanceMovement> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasReproductiveHistory> <http://sparql.cwrc.ca/ontologies/cwrc#childlessness> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasVolunteerOccupation> "_amh was instrumental in founding the hospital for consumption at brompton. she also helped to found the governesses' benevolent institution asylum, the home for decayed gentlewoman, and the nightingale fund_"^^xsd:string , "_sympathetic to the plight of street musicians, amh later worked on their behalf, and witnessed with sorrow the crusade against them, which she regarded as a cruelty_"^^xsd:string ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#inhabits> <http://sws.geonames.org/2643743/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#relocatesTo> "Graigie,Wexford,Ireland" , <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2650376/> , <http://sws.geonames.org/2657676/> , <http://sws.geonames.org/2960964/> , <http://sws.geonames.org/3226277/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#travelsTo> <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/3226277/> ;
+	<http://www.w3.org/ns/org#memberOf> <http://sparql.cwrc.ca/ontologies/cwrc#Anglican_Church_ORG> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasOccupation> <http://sparql.cwrc.ca/ontologies/cwrc#philanthropist> ;
+	a <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+	rdfs:label "Hall, Anna Maria"^^xsd:string ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=hallan> ;
+	foaf:name "Hall, Anna Maria"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Hemans_Felicia> <http://sparql.cwrc.ca/ontologies/cwrc#hasBrother> <http://cwrc.ca/cwrcdata/Brown_George_Baxter> , <http://cwrc.ca/cwrcdata/Browne_Claude_Scott> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasEvent> <http://cwrc.ca/cwrcdata/hemafe_migratesTo_Event1> , <http://cwrc.ca/cwrcdata/hemafe_relocatesTo_Event1> , <http://cwrc.ca/cwrcdata/hemafe_relocatesTo_Event2> , <http://cwrc.ca/cwrcdata/hemafe_relocatesTo_Event3> , <http://cwrc.ca/cwrcdata/hemafe_relocatesTo_Event4> , <http://cwrc.ca/cwrcdata/hemafe_relocatesTo_Event5> , <http://cwrc.ca/cwrcdata/hemafe_travelsTo_Event1> , <http://cwrc.ca/cwrcdata/hemafe_travelsTo_Event2> , <http://cwrc.ca/cwrcdata/hemafe_visits_Event1> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasFather> <http://cwrc.ca/cwrcdata/Browne_George> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasGender> <http://sparql.cwrc.ca/ontologies/cwrc#woman> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasGeographicHeritage> <http://sws.geonames.org/3175395/> , <http://www.geonames.org/6269131> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasGeographicHeritageSelfReported> <http://www.geonames.org/11609047> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasHusband> <http://cwrc.ca/cwrcdata/Hemans_Alfred> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasMother> <http://cwrc.ca/cwrcdata/Browne_Felicity_Dorothea> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasNationalHeritage> "DE"^^xsd:string , "IE"^^xsd:string , "IT"^^xsd:string ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasNationalHeritageSelfReported> "GB-ENG"^^xsd:string ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasNationalitySelfReported> "GB-ENG"^^xsd:string ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasSocialClass> <http://sparql.cwrc.ca/ontologies/cwrc#entrepreneurial-industrialist> , <http://sparql.cwrc.ca/ontologies/cwrc#gentry> , <http://sparql.cwrc.ca/ontologies/cwrc#yeoman-farmer> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasSon> <http://cwrc.ca/cwrcdata/Hemans_Arthur_Wynne> , <http://cwrc.ca/cwrcdata/Hemans_Claude_Lewis> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasBirthDate> "1793-09-25"^^xsd:date ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasBirthPlace> <http://sws.geonames.org/2644210/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasBurialPlace> <http://sws.geonames.org/2964574/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasCauseOfDeath> <http://sparql.cwrc.ca/ontologies/ii#Cholera> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasChildren> "5" ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasDeathDate> "1835-05-16"^^xsd:date ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasDeathPlace> <http://sws.geonames.org/2964574/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasInterpersonalRelationshipWith> <http://cwrc.ca/cwrcdata/Baillie_Joanna> , <http://cwrc.ca/cwrcdata/Blackwood_William> , <http://cwrc.ca/cwrcdata/Chorley_Henry_Fothergill> , <http://cwrc.ca/cwrcdata/Graves_Robert_Perceval> , <http://cwrc.ca/cwrcdata/Howitt_Mary> , <http://cwrc.ca/cwrcdata/Jeffrey_Francis_Lord> , <http://cwrc.ca/cwrcdata/Jewsbury_Geraldine> , <http://cwrc.ca/cwrcdata/Mitford_Mary_Russell> , <http://cwrc.ca/cwrcdata/Morgan_Sydney_Owenson_Lady> , <http://cwrc.ca/cwrcdata/Wilson_John_1785_-_1854> , <http://cwrc.ca/cwrcdata/Wordsworth_William> , <http://cwrc.ca/cwrcdata/Aguilar_Grace> , <http://cwrc.ca/cwrcdata/Fletcher_Angus> , <http://cwrc.ca/cwrcdata/Grant_Anne> , <http://cwrc.ca/cwrcdata/Hamilton_Caroline> , <http://cwrc.ca/cwrcdata/Hamilton_William_Rowan> , <http://cwrc.ca/cwrcdata/Heber_Reginald> , <http://cwrc.ca/cwrcdata/Jewsbury_Maria_Jane> , <http://cwrc.ca/cwrcdata/Lawrence_Rose> , <http://cwrc.ca/cwrcdata/Paganini_Niccolò> , <http://cwrc.ca/cwrcdata/Scott_Sir_Walter> , <http://cwrc.ca/cwrcdata/Whately_Richard> , <http://cwrc.ca/cwrcdata/White_Blanco> , <http://cwrc.ca/cwrcdata/Wordsworth_Dora> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#relocatesTo> "Abergele,Powys,Wales" , "Bronwylfa,Flintshire,Wales" , "St Asaph,Denbighshire,Wales" , <http://sws.geonames.org/2644210/> , <http://sws.geonames.org/2964574/> , <http://sws.geonames.org/2634646/> , <http://sws.geonames.org/6691008/> , <http://sws.geonames.org/7297866/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#studies> <http://id.loc.gov/vocabulary/languages/fre> , <http://id.loc.gov/authorities/subjects/sh85039408> , <http://id.loc.gov/authorities/subjects/sh85054365> , <http://id.loc.gov/authorities/subjects/sh85068806> , <http://id.loc.gov/authorities/subjects/sh85074944> , <http://id.loc.gov/authorities/subjects/sh85088762> , <http://id.loc.gov/authorities/subjects/sh85105344> , <http://id.loc.gov/authorities/subjects/sh85122827> , <http://id.loc.gov/vocabulary/languages/spa> , <http://id.loc.gov/authorities/subjects/sh85043556> , <http://sparql.cwrc.ca/ontologies/cwrc#Europe_TITLE> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#travelsTo> <http://sws.geonames.org/11609030/> , <http://sws.geonames.org/2638360/> , <http://sws.geonames.org/2645022/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#visits> <http://sws.geonames.org/2643743/> ;
+	a <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+	rdfs:label "Hemans, Felicia"^^xsd:string ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=hemafe> ;
+	foaf:name "Hemans, Felicia"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Scott_Sir_Walter> <http://sparql.cwrc.ca/ontologies/cwrc#hasEvent> <http://cwrc.ca/cwrcdata/scotwa_Wealth_Event1> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasGender> <http://sparql.cwrc.ca/ontologies/cwrc#man> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasBirthDate> "1771-08-15"^^xsd:date ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasBirthPlace> <http://sws.geonames.org/2650225/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasCauseOfDeath> <http://sparql.cwrc.ca/ontologies/ii#Cerebrovascular_diseases_stroke> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasDeathDate> "1832-09-21"^^xsd:date ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasDeathPlace> <http://sws.geonames.org/2642769/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasPaidOccupation> <http://sparql.cwrc.ca/ontologies/cwrc#writer> ;
+	a <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+	rdfs:label "Scott, Sir Walter"^^xsd:string ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=scotwa> ;
+	foaf:name "Scott, Sir Walter" , "Scott, Sir Walter"^^xsd:string .
+
+<http://sparql.cwrc.ca/ontologies/ii#Tuberculosis> <http://sparql.cwrc.ca/ontologies/ii#hasCWRCCode> "1.4"^^xsd:string ;
+	<http://sparql.cwrc.ca/ontologies/ii#hasWHOCode> "5-4"^^xsd:string ;
+	a owl:NamedIndividual , <http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases> ;
+	rdfs:label "Tuberculosis"@en .
+
+<http://cwrc.ca/cwrcdata/Crosland_Camilla> <http://sparql.cwrc.ca/ontologies/cwrc#hasInterpersonalRelationshipWith> <http://cwrc.ca/cwrcdata/Jewsbury_Geraldine> , <http://cwrc.ca/cwrcdata/Mitchell_Sally> , <http://cwrc.ca/cwrcdata/Mitford_Mary_Russell> , <http://cwrc.ca/cwrcdata/Moore_Thomas> , <http://cwrc.ca/cwrcdata/Stowe_Harriet_Beecher> , <http://cwrc.ca/cwrcdata/Aguilar_Grace> , <http://cwrc.ca/cwrcdata/Browne_Frances> , <http://cwrc.ca/cwrcdata/Cartwright_John> , <http://cwrc.ca/cwrcdata/Chambers_Robert_1802_-_1871> , <http://cwrc.ca/cwrcdata/Chambers_William> , <http://cwrc.ca/cwrcdata/Clarke_Mary_Cowden> , <http://cwrc.ca/cwrcdata/Craik_Dinah_Mulock> , <http://cwrc.ca/cwrcdata/Crosland_Newton> , <http://cwrc.ca/cwrcdata/Disraeli_Benjamin> , <http://cwrc.ca/cwrcdata/Howitt_William> , <http://cwrc.ca/cwrcdata/Napoleon_III_Emperor_of_France> , <http://cwrc.ca/cwrcdata/Power_Marguerite_A> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasOccupationIncome> "In the 1840s she was making about sixty pounds a year by her teaching." ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasPaidOccupation> <http://sparql.cwrc.ca/ontologies/cwrc#editing> , <http://sparql.cwrc.ca/ontologies/cwrc#governess> , <http://sparql.cwrc.ca/ontologies/cwrc#needlework> , <http://sparql.cwrc.ca/ontologies/cwrc#teacher> , <http://sparql.cwrc.ca/ontologies/cwrc#visualArtist> , <http://sparql.cwrc.ca/ontologies/cwrc#writer> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasPoliticalMembershipIn> <http://sparql.cwrc.ca/ontologies/cwrc#conservatism> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasReproductiveHistory> <http://sparql.cwrc.ca/ontologies/cwrc#childlessness> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#inhabits> <http://sws.geonames.org/2643743/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#relocatesTo> <http://sws.geonames.org/2643743/> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#studies> <http://id.loc.gov/vocabulary/languages/fre> , <http://id.loc.gov/authorities/subjects/sh85068806> , <http://id.loc.gov/authorities/subjects/sh85060322> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#travelsTo> <http://sws.geonames.org/3175395/> , <http://sws.geonames.org/3176959/> ;
+	a <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+	rdfs:label "Crosland, Camilla"^^xsd:string ;
+	foaf:isPrimaryTopicOf <http://orlando.cambridge.org/protected/svPeople?formname=r&people_tab=3&person_id=crosca> ;
+	foaf:name "Crosland, Camilla"^^xsd:string .
+
+<http://cwrc.ca/cwrcdata/Fernandez_Benjamin_Dias> <http://sparql.cwrc.ca/ontologies/cwrc#hasPaidOccupation> "Religious Writer" ;
+	a <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+	foaf:name "Fernandez, Benjamin Dias" .
+
+<http://cwrc.ca/cwrcdata/Hall_Anna_Maria> <http://sparql.cwrc.ca/ontologies/cwrc#hasChild> "1" ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasDaughter> <http://cwrc.ca/cwrcdata/Hall_Maria_Louisa> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasEvent> <http://cwrc.ca/cwrcdata/hallan_PhysicalHealth_Event1> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasFather> <http://cwrc.ca/cwrcdata/Hall_Anna_Maria_Father> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasGender> <http://sparql.cwrc.ca/ontologies/cwrc#woman> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasGeographicHeritageSelfReported> <http://www.geonames.org/2963597> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasGrandFather> <http://cwrc.ca/cwrcdata/Carr_George> , <http://cwrc.ca/cwrcdata/Hall_Anna_Maria_Grandfather> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasGrandMother> <http://cwrc.ca/cwrcdata/Hall_Anna_Maria_Grandmother> ;
+	<http://sparql.cwrc.ca/ontologies/cwrc#hasHusband> <http://cwrc.ca/cwrcdata/Hall_Samuel_Carter> .
