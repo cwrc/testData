@@ -79,21 +79,21 @@ _:t2028865 <http://purl.org/dc/terms/format> "text/turtle"^^xsd:string .
 
 <http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing> rdfs:label "Aguilar, Grace - Spatial Context describing annotation" .
 
+<http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing> oa:motivatedBy oa:describing .
+
 <http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing> oa:hasTarget <http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing_Snippet> .
 
 <http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing_Snippet> rdfs:label "Aguilar, Grace - Spatial Context snippet" .
 
-_:t1944855 rdf:value "data:Aguilar_Grace cwrc:relocatesTo <http://sws.geonames.org/11609025/> ."^^xsd:string ;
- rdfs:label "Devon"@en.
+<http://sws.geonames.org/11609025/> rdfs:label "Devon"@en.
 
-_:t2028847 rdf:value "data:Aguilar_Grace cwrc:relocatesTo <http://sws.geonames.org/11609025/> ."^^xsd:string ;
-rdfs:label "Devon"@en.
+_:t1944855 rdf:value "data:Aguilar_Grace cwrc:relocatesTo <http://sws.geonames.org/11609025/> ."^^xsd:string .
 
-_:t1946386 rdf:value "data:Aguilar_Grace cwrc:relocatesTo <http://sws.geonames.org/2643743/> ."^^xsd:string ;
-rdfs:label "London"@en.
+_:t2028847 rdf:value "data:Aguilar_Grace cwrc:relocatesTo <http://sws.geonames.org/11609025/> ."^^xsd:string .
 
-_:t2028865 rdf:value "data:Aguilar_Grace cwrc:relocatesTo <http://sws.geonames.org/2643743/> ."^^xsd:string ;
-rdfs:label "London"@en.
+_:t1946386 rdf:value "data:Aguilar_Grace cwrc:relocatesTo <http://sws.geonames.org/2643743/> ."^^xsd:string .
+
+_:t2028865 rdf:value "data:Aguilar_Grace cwrc:relocatesTo <http://sws.geonames.org/2643743/> ."^^xsd:string .
 
 <http://cwrc.ca/cwrcdata/aguigr_SpatialContext-relocatesTo_1_describing_Snippet> <http://purl.org/dc/terms/description> "September 1828 GA and her family moved from Hackney in North London to Devon."^^xsd:string .
 
