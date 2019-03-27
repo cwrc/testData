@@ -1,0 +1,31 @@
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix cnt:   <http://www.w3.org/2011/content#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix pelagios: <http://pelagios.github.io/vocab/terms#> .
+
+<https://recogito.pelagios.org/document/hxwv6a6awnflgj#9ac740cb-b762-4fc2-8c2d-d7fd8402ff54>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/hxwv6a6awnflgj> .
+
+<https://recogito.pelagios.org/document/hxwv6a6awnflgj#44bc49ff-461b-4e2e-9130-20a26461d0e2>
+        a             oa:Annotation ;
+        oa:hasBody    <http://sws.geonames.org/2950157> ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/hxwv6a6awnflgj> .
+
+<https://recogito.pelagios.org/document/hxwv6a6awnflgj#7b015a77-e890-4641-a5f7-cdc992216811>
+        a             oa:Annotation ;
+        oa:hasBody    <http://sws.geonames.org/2950157> ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/hxwv6a6awnflgj> .
+
+<https://recogito.pelagios.org/document/hxwv6a6awnflgj#4afd03ca-21f5-4872-a54d-9efbcc20b38a>
+        a             oa:Annotation ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/hxwv6a6awnflgj> .
+
+<https://recogito.pelagios.org/document/hxwv6a6awnflgj#5f87d8d1-354f-4233-89eb-422c4372969b>
+        a             oa:Annotation ;
+        oa:hasBody    <http://sws.geonames.org/2921044> ;
+        oa:hasTarget  <https://recogito.pelagios.org/document/hxwv6a6awnflgj> .
+
+<https://recogito.pelagios.org/document/hxwv6a6awnflgj>
+        a              pelagios:AnnotatedThing ;
+        dcterms:title  "Favorites.txt" .
