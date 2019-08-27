@@ -145,9 +145,9 @@
 	#this event is taking place within the Educational context. Only items that are directly related to the event in the tagging scheme are included here. KM
 	a cwrc:writingClimateEvent ; #This comes from the CHRONColumn tag KM
 	cwrc:hasInstitution cwrc:brantfordCentralSchool ;
-	cwrc:hasLocation geonames:brantford ;
+	cwrc:hasLocation <http://sws.geonames.org/5907990> ;
 	cwrc:hasInstitution cwrc:countyModelSchool ;
-	cwrc:hasLocation geonames:brantford ;
+	cwrc:hasLocation <http://sws.geonames.org/5907990> ;
 	rdfs:Label "SJD began formal schooling at Central School in Brantford." ;
 	cwrc:hasFactor <http://cwrc.ca/cwrcdata/SJDInstitutionalEducation>; # If this event relates to the education context it is a factor
 	time:hasBeginning <http://cwrc.ca/cwrcdata/SJDInstitutionalEducationEventFormalSchooling_StartDate> ;
