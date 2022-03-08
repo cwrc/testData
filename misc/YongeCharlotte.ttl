@@ -1,0 +1,2123 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix data: <http://cwrc.ca/cwrcdata/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix genre: <http://sparql.cwrc.ca/ontologies/genre#> .
+@prefix ii: <http://sparql.cwrc.ca/ontologies/ii#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prism: <http://prismstandard.org/namespaces/1.2/basic/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://commons.cwrc.ca/orlando:8bb3cba8-2daf-48a8-b868-04d9783c25d2>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Moberly, Mary,, writer" .
+
+<https://commons.cwrc.ca/orlando:e8d87f71-ee24-4d2d-b6e7-94805ffd610a>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Bonavia-Hunt, Dorothy Alice" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#English_Housewifery_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "English Housewifery" .
+
+<https://commons.cwrc.ca/orlando:afebbe98-134f-4b37-b867-a754a84ca466>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Alleyne, Frances" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#anglicanism>
+        a       <http://xmlns.com/foaf/0.1/Organization> , <http://sparql.cwrc.ca/ontologies/cwrc#Religion> , <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "英國聖公會 (英國國教)"@zh-hant , "Anglicanism"@en , "Iglesia de Inglaterra"@es , "Anglicanismo"@es , "Anglicaans (kerk van Engeland)"@nl , "ying guo sheng gong hui"@zh-latn-pinyin-x-notone , "ying kuo sheng kung hui"@zh-latn-wadegile , "Église d'Angleterre"@fr , "yīng guó shèng gōng huì"@zh-latn-pinyin-x-hanyu .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#The_Happy_Families_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "The Happy Families" .
+
+<https://commons.cwrc.ca/orlando:fc37570e-161c-42c7-a8ae-f1f64fd78eb7>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Cressman, Luther" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesSociallyTo>
+                <https://commons.cwrc.ca/orlando:e9d2ef7b-63cd-45cc-9bcb-331a856b4484> , <https://commons.cwrc.ca/orlando:fc37570e-161c-42c7-a8ae-f1f64fd78eb7> , <https://commons.cwrc.ca/orlando:1dcfa1ee-ad7d-477f-81c6-d73aaa28a73c> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Heartsease_or_The_Brothers_Wife_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Heartsease; or, The Brother's Wife" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#teacher>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#Occupation> , <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "teacher"@en , ""@fr .
+
+<https://commons.cwrc.ca/orlando:480fc36f-4775-4548-b9bf-3d40553cb246>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Patteson, Sir John" .
+
+<https://commons.cwrc.ca/orlando:f526971b-8446-4c75-8d3c-189f5e0d1710>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Jenkins, Elizabeth" .
+
+<https://commons.cwrc.ca/orlando:ba0454f8-ca46-4128-9a1e-dfbe621c8508>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Hicks Beach, Susan Emily Christian" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#tractarianMovement>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#Religion> , <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "tractarianisme"@fr , "Tractarian Movement"@en .
+
+<https://commons.cwrc.ca/orlando:7e052ca5-1ccc-4cf9-b747-70639d54e0f7>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Sherwood, Mary Martha" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#The_Tatler_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "The Tatler" .
+
+<https://commons.cwrc.ca/orlando:c320208d-2cd2-4549-b86f-5d3402edb0ab>
+        a       <http://www.w3.org/ns/org#Organization> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Girls' Friendly Society" .
+
+<https://commons.cwrc.ca/orlando:b7918a50-aec9-44ab-84c4-d71e9c478d67>
+        a       <http://id.loc.gov/ontologies/bibframe/Text> , <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "The Spanish Bride" .
+
+<https://commons.cwrc.ca/orlando:8fc428d8-5576-41a2-b164-8f52ad4678e9>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Corelli, Marie" .
+
+<https://commons.cwrc.ca/orlando:f5b5c522-4ae2-4810-92b5-f55918152b20>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Ségur, Sophie,,, comtesse de" .
+
+<https://commons.cwrc.ca/orlando:1a64679d-c346-4cd5-a436-887a12d79710>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Kingsley, Charles,  1819 - 1875" , "Kingsley, Charles,, 1819 - 1875" .
+
+<https://commons.cwrc.ca/orlando:712cf669-43cd-4015-a3be-1fdf8bf31273>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "New Poems" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#quotes>
+                <https://commons.cwrc.ca/orlando:21075066-0fa4-4dc7-9450-719abb2c9e53> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> .
+
+<https://commons.cwrc.ca/orlando:af795ef2-ecf5-45cd-9cc9-7fab0048c69f>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Yonge, William Crawley" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasChild>
+                <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> .
+
+<https://commons.cwrc.ca/orlando:de6380c7-b4ab-451d-b0e0-efb6e4da730a>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Fanshawe, Ann,  Lady" , "Fanshawe, Ann,,, Lady" .
+
+<https://commons.cwrc.ca/orlando:a6dec362-4c3c-4745-9d64-ab3409e63e1e>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Mackereth, Marian" .
+
+<https://commons.cwrc.ca/orlando:3d4d62f9-f4c6-4279-9809-8c2d0377f12f>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Holt, Emily Sarah" .
+
+<https://commons.cwrc.ca/orlando:f642ab42-a9dc-410b-95d2-4b6b5a759075>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Duke, Elizabeth" .
+
+<https://commons.cwrc.ca/orlando:5c3752f0-740f-484e-88f9-ceeb08e7062e>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Keble, John" .
+
+<https://commons.cwrc.ca/orlando:d2a3f2b4-dc86-4b79-95cc-ff30a657bdec>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Alexander, William,  1824 - 1911" , "Alexander, William,, 1824 - 1911" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#The_Heir_of_Redclyffe_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "The Heir of Redclyffe" .
+
+<https://commons.cwrc.ca/orlando:a0b85dc2-675c-495b-b625-fb126b35661b>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Guest, Charlotte" .
+
+<https://commons.cwrc.ca/orlando:a677eb2c-b889-44b9-b0ac-636c2b74a927>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Fielding, Sarah" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasInfluenceOn>
+                <http://sparql.cwrc.ca/ontologies/cwrc#Sarah_Fielding_The_Governess_1749_TITLE> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:7e052ca5-1ccc-4cf9-b747-70639d54e0f7> .
+
+<https://commons.cwrc.ca/orlando:701beb70-b93b-4935-9955-5120f5f3ec09>
+        a       <http://id.loc.gov/ontologies/bibframe/Agent> , <http://www.w3.org/ns/org#Organization> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "National Trust" .
+
+<https://commons.cwrc.ca/orlando:6fb092ff-c19f-474b-9405-133005d65076>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#ReligiousSchool> , <http://sparql.cwrc.ca/ontologies/cwrc#SecondarySchool> , <http://sparql.cwrc.ca/ontologies/cwrc#SingleSexSchool> , <http://sparql.cwrc.ca/ontologies/cwrc#PrivateSchool> , <http://sparql.cwrc.ca/ontologies/cwrc#EducationalOrganization> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Winchester College" .
+
+<https://commons.cwrc.ca/orlando:29405e03-b9e6-4e4e-a7ae-990d3c1371d5>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Irving, Sir Henry" .
+
+<https://commons.cwrc.ca/orlando:0e4edd96-2a8c-4eef-a4f7-3e8d174f7cf5>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Coleridge, Christabel" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasInterpersonalRelationshipWith>
+                <https://commons.cwrc.ca/orlando:bba69296-f13b-4b1b-9e90-275829e4b092> , <https://commons.cwrc.ca/orlando:0d30c098-ba1d-4402-a0d1-c067ef3ef188> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:dd1a597d-6a64-4577-a524-fdbe8900ab45> , <https://commons.cwrc.ca/orlando:ad3e5121-3e32-4936-9e10-355141209661> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesSociallyTo>
+                <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> .
+
+<https://commons.cwrc.ca/orlando:cb70ba67-c9f5-4b72-b9a0-824e597efb40>
+        a       <http://www.w3.org/ns/org#Organization> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "C. Hoare and Co." .
+
+<https://commons.cwrc.ca/orlando:db087a07-add4-4cba-b923-31df0f8648b7>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Bernhardt, Sarah" .
+
+<https://commons.cwrc.ca/orlando:46a3b72e-3f66-43eb-8a94-6c458640b120>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Kennedy, Margaret" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasInterpersonalRelationshipWith>
+                <https://commons.cwrc.ca/orlando:d029c9d4-feac-4eb9-86ba-53abd9f4b6f2> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:3fc39177-a0d4-433d-b5df-1ffb4cef68b1> , <https://commons.cwrc.ca/orlando:62d71ec4-df8d-4b75-a274-d1aec5e17595> , <https://commons.cwrc.ca/orlando:ad9bbdff-a024-4e70-8e63-340d0ea89346> , <https://commons.cwrc.ca/orlando:377f7921-1573-41a4-ba5c-294717588533> , <https://commons.cwrc.ca/orlando:f526971b-8446-4c75-8d3c-189f5e0d1710> .
+
+<https://commons.cwrc.ca/orlando:d4753efa-0c2e-4a53-ad6a-a18cd6201496>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Pembroke, Mary Sidney Herbert,  Countess of" , "Pembroke, Mary Sidney Herbert,,, Countess of" .
+
+<https://commons.cwrc.ca/orlando:1ecbd1cb-3b27-4a1c-adb1-9777f1c49a04>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Lamb, Charles,  1775 - 1834" , "Lamb, Charles,, 1775 - 1834" .
+
+<https://commons.cwrc.ca/orlando:e72eea54-a01c-4c6e-9a26-fce088e7157c>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Sayers, Dorothy L." .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#The_Barnacle_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "The Barnacle" .
+
+<https://commons.cwrc.ca/orlando:26a4b4d7-dc57-44bc-aeec-bf096dad74c1>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "FitzGerald, Edward" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasInterpersonalRelationshipWith>
+                <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:daeb189c-6470-4cb8-ac0a-82979b81faf8> , <https://commons.cwrc.ca/orlando:dca30947-feee-44db-820e-bbcc21038396> , <https://commons.cwrc.ca/orlando:6315e747-c757-448c-be99-8f4a8ca854ad> , <https://commons.cwrc.ca/orlando:7fa078f1-e346-4d74-a9c4-4e3e57e80cad> .
+
+<https://commons.cwrc.ca/orlando:ee8e39a1-5690-438f-b572-42bde3d38c73>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Wilde, Oscar" .
+
+<https://commons.cwrc.ca/orlando:d101f344-d1a5-4fb7-8c98-d23127112d8f>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Beck, A. M. de" .
+
+<https://commons.cwrc.ca/orlando:e5f4f4db-711f-4204-90cd-18454cff6b67>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Cross, Victoria" .
+
+<https://commons.cwrc.ca/orlando:5f0f5485-d14f-4c47-8ee2-6493336c5cb7>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Ritchie, Anne Thackeray" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasInterpersonalRelationshipWith>
+                <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:50ebb38b-92ab-4fa8-b23a-16d918902fd3> , <https://commons.cwrc.ca/orlando:9308c943-ac98-4296-bd0d-03e4149578fa> , <https://commons.cwrc.ca/orlando:8efa7b58-ef11-453f-878d-e7ac9a870062> , <https://commons.cwrc.ca/orlando:c81c2fc3-a335-4b43-9ee8-8c7cdc2248b5> , <https://commons.cwrc.ca/orlando:8f882281-1024-4fb4-a5af-0e9573244c24> .
+
+<https://commons.cwrc.ca/orlando:55ac16d5-7dd1-40d4-95f5-2324fe707e70>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Nightingale, Florence" .
+
+<https://commons.cwrc.ca/orlando:fdd7af05-6958-4e6d-afe2-8b65d1bac8da>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Raverat, Gwen" .
+
+<https://commons.cwrc.ca/orlando:b77ff80b-ed14-451c-a2a1-b091a8c4748f>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Owen, Frances Mary" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#woman>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#Gender> , <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "femme"@fr , "woman"@en .
+
+<https://commons.cwrc.ca/orlando:8e02e83c-cf2d-4eb0-ba30-2670b841d145>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Aldenham, Henry Hucks Gibbs,,, first Baron" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#The_Daisy_Chain_TITLE>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#EducationalText> , <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "The Daisy Chain" .
+
+<https://commons.cwrc.ca/orlando:e0c99839-701f-4667-ad9f-16e1af624d4f>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Stretton, Julia" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesByCulturalFormTo>
+                <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesByEducationTo>
+                <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> .
+
+<https://commons.cwrc.ca/orlando:c11a5d9c-bfd7-4c72-8e1d-2c5311892c65>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Emerson, Ralph Waldo" .
+
+<https://commons.cwrc.ca/orlando:8e18fa98-ebdc-4e2e-9eb2-97b2f4b22a15>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Mozley, Harriett" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasInfluenceOn>
+                <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <http://sparql.cwrc.ca/ontologies/cwrc#The_Heir_of_Redclyffe_TITLE> .
+
+<https://commons.cwrc.ca/orlando:7a4b3ab7-2d6e-4492-aa36-c010e384fc61>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Harberton, Florence,,, Viscountess" .
+
+<https://commons.cwrc.ca/orlando:c45069b3-c965-438f-903f-65ce2d1f1934>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Marshall, Emma" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasInterpersonalRelationshipWith>
+                <https://commons.cwrc.ca/orlando:b77ff80b-ed14-451c-a2a1-b091a8c4748f> , <https://commons.cwrc.ca/orlando:6e925d01-7af3-4c00-9f50-fb64f171555c> , <https://commons.cwrc.ca/orlando:b38f77de-79d8-463a-b61f-187851c47c9c> , <https://commons.cwrc.ca/orlando:e08c4962-2346-4f89-9640-f6988c6475ed> , <https://commons.cwrc.ca/orlando:afebbe98-134f-4b37-b867-a754a84ca466> , <https://commons.cwrc.ca/orlando:416f7845-4329-4273-8c0e-b0d052a31633> , <https://commons.cwrc.ca/orlando:f436551e-2222-4f49-98e8-08766d3adfd7> , <https://commons.cwrc.ca/orlando:8bb3cba8-2daf-48a8-b868-04d9783c25d2> , <https://commons.cwrc.ca/orlando:e742a795-19ac-4adb-b7d0-7e5c865616fd> , <https://commons.cwrc.ca/orlando:1a64679d-c346-4cd5-a436-887a12d79710> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> .
+
+<https://commons.cwrc.ca/orlando:cb5fe29c-1681-4d19-898f-530d0b06c056>
+        a       <http://id.loc.gov/ontologies/bibframe/Text> , <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Out of Africa" .
+
+<https://commons.cwrc.ca/orlando:294ea13f-024b-461c-a598-011e649b35fa>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Dickens, Charles" .
+
+<https://commons.cwrc.ca/orlando:54ca496f-e068-4151-b634-160ecd1df482_host_0>
+        a       <http://id.loc.gov/ontologies/bibframe/Text> , <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Oxford English Dictionary" .
+
+<https://commons.cwrc.ca/orlando:dcfaed05-25c5-424d-8d1b-e368ad78f797>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Trimmer, Sarah" .
+
+<https://commons.cwrc.ca/orlando:18977bb7-8c01-47df-946f-819cf4837870>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Bellasis, Edward" .
+
+<https://commons.cwrc.ca/orlando:9f3d0944-2c01-44d5-9a58-2e8d49885992>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Delaney, Shelagh" .
+
+<https://commons.cwrc.ca/orlando:fccfc554-bee2-4aa3-bd07-c1f12915e86a>
+        a       <http://id.loc.gov/ontologies/bibframe/Text> , <http://sparql.cwrc.ca/ontologies/cwrc#EducationalText> , <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Pilgrim's Progress" .
+
+<https://commons.cwrc.ca/orlando:736a913b-1f20-4a74-a9cd-39d238dd7437>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Charles, Elizabeth" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasLiteraryInfluence>
+                <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> .
+
+<https://commons.cwrc.ca/orlando:9c1e546b-e294-4837-9acc-c40196493ae0>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Dyson, Marianne" .
+
+<https://commons.cwrc.ca/orlando:8f882281-1024-4fb4-a5af-0e9573244c24>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Lowndes, Marie Belloc" .
+
+<https://commons.cwrc.ca/orlando:df1f48b8-361d-4d21-be97-c0c2cf62cb5e>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Edgeworth, Richard Lovell" .
+
+<https://commons.cwrc.ca/orlando:cf31f8e7-ff5a-463a-adb8-20d1e1c5d8a3>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Shakespeare, William" .
+
+<https://commons.cwrc.ca/orlando:cf97cb73-31a4-425b-a871-cf6858c449dd>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#ReligiousOrganization> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Oxford Movement" .
+
+<https://commons.cwrc.ca/orlando:ce9dd632-a24f-4deb-ba9c-3c1e9f0c3d05>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Edgeworth, Maria" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Amabel_and_Mary_Verena_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Amabel and Mary Verena" .
+
+<https://commons.cwrc.ca/orlando:68bc309a-7b85-445e-bec3-64ebca47b60e>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "More, Hannah" .
+
+<https://commons.cwrc.ca/orlando:3fc39177-a0d4-433d-b5df-1ffb4cef68b1>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Macaulay, Rose" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasLiteraryInfluence>
+                <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:673f93b8-fb57-40ae-b9d5-dcbe4513168c> .
+
+<https://commons.cwrc.ca/orlando:786af6bf-09d1-4a67-8eb5-33babc7a0553>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Moberly, May" .
+
+<https://commons.cwrc.ca/orlando:50ebb38b-92ab-4fa8-b23a-16d918902fd3>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Ward, Mary Augusta" .
+
+<https://commons.cwrc.ca/orlando:df864c75-7c0b-4694-a0f6-51477fe67657>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Burnett, Frances Hodgson" .
+
+<https://commons.cwrc.ca/orlando:416f7845-4329-4273-8c0e-b0d052a31633>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Kingsley, Fanny" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Dombey_and_Son_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Dombey and Son" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Daily_Chronicle_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Daily Chronicle" .
+
+<https://commons.cwrc.ca/orlando:dca30947-feee-44db-820e-bbcc21038396>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Eliot, George" .
+
+<https://commons.cwrc.ca/orlando:88582af3-3499-4f35-b9fa-2f19ed80d5f1>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Mozley, Anne" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#alludesTo>
+                <http://sparql.cwrc.ca/ontologies/cwrc#The_Clever_Woman_of_the_Family_TITLE> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesSociallyTo>
+                <http://sparql.cwrc.ca/ontologies/cwrc#English_Housewifery_TITLE> , <https://commons.cwrc.ca/orlando:9bac177d-e828-4063-9e9b-4442745e85e6> , <https://commons.cwrc.ca/orlando:73d8a268-27b6-4329-b952-5969fc7c61ad> , <https://commons.cwrc.ca/orlando:adcb66f2-08d5-4193-a45c-e518a50186cf> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:cc074635-6861-4e7f-ab1c-86b4379104d8> , <https://commons.cwrc.ca/orlando:fccfc554-bee2-4aa3-bd07-c1f12915e86a> , <https://commons.cwrc.ca/orlando:dee00314-32f1-4f76-9ca0-d8bf8b0c4dd7> .
+
+<https://commons.cwrc.ca/orlando:e40db7ca-65f5-416c-a6b6-854f41f50bc9>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Linskill, Mary" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasInterpersonalRelationshipWith>
+                <https://commons.cwrc.ca/orlando:a6dec362-4c3c-4745-9d64-ab3409e63e1e> , <https://commons.cwrc.ca/orlando:076a1f51-433f-420c-a676-b5ee9c22de5f> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:dca30947-feee-44db-820e-bbcc21038396> , <https://commons.cwrc.ca/orlando:7fa078f1-e346-4d74-a9c4-4e3e57e80cad> .
+
+<https://commons.cwrc.ca/orlando:eedd1543-30e5-4845-aa11-47ecfe0c3ea5>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Lowell, James Russell" .
+
+<https://commons.cwrc.ca/orlando:cc399544-250a-44fa-b6d9-076b1f2b8613>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Sienkiewicz, Henryk" .
+
+<https://commons.cwrc.ca/orlando:036a12fd-74ce-4b68-9149-849e5779b2c1>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Moberly, Anne" .
+
+<https://commons.cwrc.ca/orlando:6d01a2b8-0f2e-4bea-8cf3-516f29689fc2>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Dinesen, Isak" .
+
+<https://commons.cwrc.ca/orlando:37bfdd52-e355-4dfa-aa91-bf3d6ff74dc3>
+        a       <http://www.w3.org/ns/org#Organization> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "No-Crinoline League" .
+
+<https://commons.cwrc.ca/orlando:7476dd1d-451b-421b-8e7d-7f85cd2f1f57>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Besant, Sir Walter" .
+
+<https://commons.cwrc.ca/orlando:97411749-0cd9-44a0-adba-17b378dda10a>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Heathcote, Sir William" .
+
+<https://commons.cwrc.ca/orlando:ad9bbdff-a024-4e70-8e63-340d0ea89346>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Cooper, Lettice" .
+
+<https://commons.cwrc.ca/orlando:62d71ec4-df8d-4b75-a274-d1aec5e17595>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Laski, Marghanita" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasWritingRelationTo>
+                <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <http://sparql.cwrc.ca/ontologies/cwrc#Times_TITLE> , <http://sparql.cwrc.ca/ontologies/cwrc#Times_Literary_Supplement_TITLE> , <https://commons.cwrc.ca/orlando:54ca496f-e068-4151-b634-160ecd1df482_host_0> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesByLeisureTo>
+                <https://commons.cwrc.ca/orlando:2480842a-60ad-4ec1-a003-29f67872c532> , <https://commons.cwrc.ca/orlando:ad9bbdff-a024-4e70-8e63-340d0ea89346> , <https://commons.cwrc.ca/orlando:f526971b-8446-4c75-8d3c-189f5e0d1710> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:8920c37f-89e4-456b-8ab1-6d90572504f8> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#His_Hour_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "His Hour" .
+
+<https://commons.cwrc.ca/orlando:00a4f41b-b07d-405f-a2ef-0aeddde98e1d>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Manning, Anne" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#associatedViaHealthWith>
+                <https://commons.cwrc.ca/orlando:b01f2427-b3fd-4a55-b909-861f7508f47e> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasInterpersonalRelationshipWith>
+                <https://commons.cwrc.ca/orlando:b01f2427-b3fd-4a55-b909-861f7508f47e> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasSpatialRelationTo>
+                <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesByCulturalFormTo>
+                <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesByEducationTo>
+                <https://commons.cwrc.ca/orlando:5e7db920-59da-45b3-b20f-b1a9eb9cf3d8> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:673f93b8-fb57-40ae-b9d5-dcbe4513168c> , <https://commons.cwrc.ca/orlando:e655e632-fc5b-45de-88e5-163cdb5fef5c> , <http://sparql.cwrc.ca/ontologies/cwrc#Flower_Girl_TITLE> , <https://commons.cwrc.ca/orlando:cf31f8e7-ff5a-463a-adb8-20d1e1c5d8a3> .
+
+<https://commons.cwrc.ca/orlando:4543a51d-6623-422f-aad8-b963789aed78>
+        a       <http://id.loc.gov/ontologies/bibframe/Text> , <http://sparql.cwrc.ca/ontologies/cwrc#EducationalText> , <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Fabulous Histories" .
+
+<https://commons.cwrc.ca/orlando:ba52bf3b-bce3-434d-97e3-0fc67589a4de>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "A Dangerous Delight: Women and Power in the Church" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#quotes>
+                <https://commons.cwrc.ca/orlando:edd3ee08-ffd5-4b51-8550-f875127ddb64> , <https://commons.cwrc.ca/orlando:c0f623b5-cc07-4b3b-9b71-e0db9c6d6749> , <https://commons.cwrc.ca/orlando:b7dbbe7e-c0ac-43a7-9b71-8536eb050564> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:e72eea54-a01c-4c6e-9a26-fce088e7157c> , <https://commons.cwrc.ca/orlando:55ac16d5-7dd1-40d4-95f5-2324fe707e70> .
+
+<https://commons.cwrc.ca/orlando:df094880-c4d3-4cd5-ad3a-36c2b75c81e7>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Pusey, Edward Bouverie" .
+
+<https://commons.cwrc.ca/orlando:2e591f4b-689c-46f9-a2f8-c328aeb21eb2>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#PrivateSchool> , <http://sparql.cwrc.ca/ontologies/cwrc#EducationalOrganization> , <http://id.loc.gov/ontologies/bibframe/Agent> , <http://sparql.cwrc.ca/ontologies/cwrc#ReligiousSchool> , <http://sparql.cwrc.ca/ontologies/cwrc#SingleSexSchool> , <http://sparql.cwrc.ca/ontologies/cwrc#CoEducationalSchool> , <http://sparql.cwrc.ca/ontologies/cwrc#PostSecondarySchool> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Oxford" , "Oxford University" , "Somerville College,, Oxford University" .
+
+<https://commons.cwrc.ca/orlando:5505f181-494f-4c47-9978-b260cb5f58c3>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Keble, Charlotte" .
+
+<https://commons.cwrc.ca/orlando:6b0af5cb-f759-4d69-8eeb-2f17eb29b31a>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Coleridge, Samuel Taylor" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Tom_Thumb_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Tom Thumb" .
+
+<https://commons.cwrc.ca/orlando:1dcfa1ee-ad7d-477f-81c6-d73aaa28a73c>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Banner, Lois W." .
+
+<https://commons.cwrc.ca/orlando:21075066-0fa4-4dc7-9450-719abb2c9e53>
+        a       <http://id.loc.gov/ontologies/bibframe/Text> , <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "The Pillars of the House" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Carrots_Just_a_Little_Boy_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\"Carrots\": Just a Little Boy" .
+
+<https://commons.cwrc.ca/orlando:ffcfd0e4-71ad-4c67-981e-cd49f62eca2c>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Walford, Lucy" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasLiteraryInfluence>
+                <https://commons.cwrc.ca/orlando:b914de1f-c588-4946-9b24-1ab026afbaff> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:aaf5a6c3-91e7-4097-b076-830cd0f4d6fb> , <http://sparql.cwrc.ca/ontologies/cwrc#Mr_Smith_TITLE> , <https://commons.cwrc.ca/orlando:6fef404f-b4c8-4eae-b27b-7798e0248f09> , <https://commons.cwrc.ca/orlando:772c02be-78f8-4c43-bf10-2be3ee77ce92> , <https://commons.cwrc.ca/orlando:eedf7193-d84c-4ecb-a8d1-d5cd46cf78af> , <http://sparql.cwrc.ca/ontologies/cwrc#Little_Duke_The_TITLE> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesByEducationTo>
+                <https://commons.cwrc.ca/orlando:b914de1f-c588-4946-9b24-1ab026afbaff> , <https://commons.cwrc.ca/orlando:d042a35b-32fa-46e6-9a4e-33bff67ae070> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:eedf7193-d84c-4ecb-a8d1-d5cd46cf78af> .
+
+<https://commons.cwrc.ca/orlando:14c64d7b-4f21-45ca-b98d-50975357e2ac>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Wood, Ellen" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Times_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Times" .
+
+<https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Yonge, Charlotte" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasApproximateBirthDate>
+                "1823-08-11"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasApproximateDeathDate>
+                "1901-03-24"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasBiographicalRelationTo>
+                <http://sws.geonames.org/2633858/> , <https://commons.cwrc.ca/orlando:6fb092ff-c19f-474b-9405-133005d65076> , <https://commons.cwrc.ca/orlando:c0f3d723-7b28-4d44-8d7f-dda09d7ae691> , <https://commons.cwrc.ca/orlando:2e591f4b-689c-46f9-a2f8-c328aeb21eb2> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasBirthPlace>
+                <http://sws.geonames.org/2640853/> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasBirthPosition>
+                <http://sparql.cwrc.ca/ontologies/cwrc#eldestChild> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasBrother>
+                <https://commons.cwrc.ca/orlando:b3cd4643-37c2-4ee6-90c0-6bb4d2128d9d> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasCauseOfDeath>
+                <http://sparql.cwrc.ca/ontologies/ii#Pleurisy> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasCohabitant>
+                <https://commons.cwrc.ca/orlando:93a1c093-f555-4f81-be43-79d7802b5470> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasDeathPlace>
+                <http://sws.geonames.org/2640853/> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasFamilialInfluence>
+                <http://sparql.cwrc.ca/ontologies/cwrc#The_Heir_of_Redclyffe_TITLE> , <https://commons.cwrc.ca/orlando:9c1e546b-e294-4837-9acc-c40196493ae0> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasFather>
+                <https://commons.cwrc.ca/orlando:af795ef2-ecf5-45cd-9cc9-7fab0048c69f> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasGender>
+                <http://sparql.cwrc.ca/ontologies/cwrc#woman> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasGenderReported>
+                <http://sparql.cwrc.ca/ontologies/cwrc#woman> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasInfluenceOn>
+                <https://commons.cwrc.ca/orlando:27329ccf-2a19-4879-8d24-a3bd76791b27> , <https://commons.cwrc.ca/orlando:1a64679d-c346-4cd5-a436-887a12d79710> , <https://commons.cwrc.ca/orlando:d83f9007-052f-4aaa-b2a8-6ed641721f3d> , <https://commons.cwrc.ca/orlando:b429d131-5b11-4639-b765-bbf6fb3d3681> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasInterpersonalRelationshipWith>
+                <https://commons.cwrc.ca/orlando:97411749-0cd9-44a0-adba-17b378dda10a> , <https://commons.cwrc.ca/orlando:5505f181-494f-4c47-9978-b260cb5f58c3> , <https://commons.cwrc.ca/orlando:9c1e546b-e294-4837-9acc-c40196493ae0> , <https://commons.cwrc.ca/orlando:786af6bf-09d1-4a67-8eb5-33babc7a0553> , <https://commons.cwrc.ca/orlando:0e4edd96-2a8c-4eef-a4f7-3e8d174f7cf5> , <https://commons.cwrc.ca/orlando:96592df0-77bf-47ca-98be-e0d11fd3515f> , <https://commons.cwrc.ca/orlando:717544ad-e2ce-4621-8ce8-9750df4636ba> , <https://commons.cwrc.ca/orlando:f5ce77dc-172a-4275-811b-0045e133dcc7> , <https://commons.cwrc.ca/orlando:45bcfe0f-c8f2-474f-9af0-cbfe0d0e262f> , <https://commons.cwrc.ca/orlando:5c3752f0-740f-484e-88f9-ceeb08e7062e> , <https://commons.cwrc.ca/orlando:3bbb4134-7791-4adc-a33d-b33f3a6053b8> , <https://commons.cwrc.ca/orlando:a99b5c98-f7b0-4dcc-971e-774c9cdf5c21> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasLiteraryInfluence>
+                <https://commons.cwrc.ca/orlando:92563421-a5a7-4052-8465-63d5b4c0a339> , <https://commons.cwrc.ca/orlando:ec7ae5ac-8fb2-4a08-b5fb-3cd485a339dd> , <https://commons.cwrc.ca/orlando:7e803cd6-88ec-4165-ade5-8c682afd8c24> , <https://commons.cwrc.ca/orlando:5c3752f0-740f-484e-88f9-ceeb08e7062e> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasMother>
+                <https://commons.cwrc.ca/orlando:f14873d1-25fe-4c9a-800c-f74b5c8d16cb> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasNationalHeritage>
+                "ISO-3166-2:GB-ENG" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasOccupation>
+                "CY undertook the advising of a group of girls and young women calling themselves the goslings; she periodically met with some of them in London." ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasOccupation>
+                <http://sparql.cwrc.ca/ontologies/cwrc#historian> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasPaidOccupation>
+                <http://sparql.cwrc.ca/ontologies/cwrc#teacher> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasPoliticalAffiliation>
+                <http://sparql.cwrc.ca/ontologies/cwrc#highToryism> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasProfile>
+                "CY was a staggeringly prolific author. Her more than two hundred works include domestic and historical novels for both adults and children, biographies, history and language textbooks, religious manuals, and a fragment of autobiography. She..." ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasReligion>
+                <http://sparql.cwrc.ca/ontologies/cwrc#tractarianMovement> , <http://sparql.cwrc.ca/ontologies/cwrc#anglicanism> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasReligionSelfReported>
+                <http://sparql.cwrc.ca/ontologies/cwrc#anglicanism> , <http://sparql.cwrc.ca/ontologies/cwrc#tractarianMovement> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasSocialClass>
+                <http://sparql.cwrc.ca/ontologies/cwrc#professional> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasSpatialRelationTo>
+                <https://commons.cwrc.ca/orlando:24c33b7c-d8c7-42ba-9f87-6b068020769b> , <https://commons.cwrc.ca/orlando:b3cd4643-37c2-4ee6-90c0-6bb4d2128d9d> , <http://sws.geonames.org/2640853/> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasVolunteerOccupation>
+                "CY donated the profits from her books to Anglican causes" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasVolunteerOccupation>
+                <http://sparql.cwrc.ca/ontologies/cwrc#missionaryWork> , <http://sparql.cwrc.ca/ontologies/cwrc#teacher> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasWritingRelationTo>
+                <https://commons.cwrc.ca/orlando:2480842a-60ad-4ec1-a003-29f67872c532> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#imitates>
+                <http://sparql.cwrc.ca/ontologies/cwrc#Practical_Work_in_Sunday_Schools_TITLE> , <https://commons.cwrc.ca/orlando:68bc309a-7b85-445e-bec3-64ebca47b60e> , <https://commons.cwrc.ca/orlando:dcfaed05-25c5-424d-8d1b-e368ad78f797> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#inhabits>
+                <http://sws.geonames.org/2640853/> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesByCulturalFormTo>
+                <http://sparql.cwrc.ca/ontologies/cwrc#Tom_Thumb_TITLE> , <https://commons.cwrc.ca/orlando:21075066-0fa4-4dc7-9450-719abb2c9e53> , <http://sparql.cwrc.ca/ontologies/cwrc#The_Clever_Woman_of_the_Family_TITLE> , <https://commons.cwrc.ca/orlando:5c3752f0-740f-484e-88f9-ceeb08e7062e> , <http://sws.geonames.org/2634801/> , <https://commons.cwrc.ca/orlando:9683fb4e-bb44-4925-bd0b-ac1176b8026f> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesByDeathTo>
+                <https://commons.cwrc.ca/orlando:772c02be-78f8-4c43-bf10-2be3ee77ce92> , <https://commons.cwrc.ca/orlando:5c3752f0-740f-484e-88f9-ceeb08e7062e> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesByEducationTo>
+                <https://commons.cwrc.ca/orlando:5f030fe3-b3a4-4c19-87a0-366ff940d352> , <https://commons.cwrc.ca/orlando:df1f48b8-361d-4d21-be97-c0c2cf62cb5e> , <https://commons.cwrc.ca/orlando:673f93b8-fb57-40ae-b9d5-dcbe4513168c> , <http://sparql.cwrc.ca/ontologies/cwrc#The_History_of_the_Robins_TITLE> , <https://commons.cwrc.ca/orlando:ce9dd632-a24f-4deb-ba9c-3c1e9f0c3d05> , <https://commons.cwrc.ca/orlando:dcfaed05-25c5-424d-8d1b-e368ad78f797> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesByLeisureTo>
+                <http://sws.geonames.org/2654675/> , <https://commons.cwrc.ca/orlando:701beb70-b93b-4935-9955-5120f5f3ec09> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesByOccupationTo>
+                <https://commons.cwrc.ca/orlando:ea70b1d7-1827-42f6-93fb-d15121ea1678> , <https://commons.cwrc.ca/orlando:0e4edd96-2a8c-4eef-a4f7-3e8d174f7cf5> , <https://commons.cwrc.ca/orlando:ad3e5121-3e32-4936-9e10-355141209661> , <https://commons.cwrc.ca/orlando:96592df0-77bf-47ca-98be-e0d11fd3515f> , <http://sws.geonames.org/2643743/> , <https://commons.cwrc.ca/orlando:da0e0740-f107-4034-989b-dc0a298e4dfa> , <https://commons.cwrc.ca/orlando:036a12fd-74ce-4b68-9149-849e5779b2c1> , <http://sws.geonames.org/2640853/> , <https://commons.cwrc.ca/orlando:3bbb4134-7791-4adc-a33d-b33f3a6053b8> , <https://commons.cwrc.ca/orlando:059530ac-5be8-4cab-8626-c0bf1d5565c8> , <https://commons.cwrc.ca/orlando:50ebb38b-92ab-4fa8-b23a-16d918902fd3> , <http://sparql.cwrc.ca/ontologies/cwrc#The_Barnacle_TITLE> , <https://commons.cwrc.ca/orlando:dd2ee276-b334-4afc-9c20-96cedf25efd3> , <https://commons.cwrc.ca/orlando:c320208d-2cd2-4549-b86f-5d3402edb0ab> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesEconomicallyTo>
+                <http://sparql.cwrc.ca/ontologies/cwrc#The_Daisy_Chain_TITLE> , <https://commons.cwrc.ca/orlando:cb70ba67-c9f5-4b72-b9a0-824e597efb40> , <http://sws.geonames.org/7729899/> , <https://commons.cwrc.ca/orlando:b3cd4643-37c2-4ee6-90c0-6bb4d2128d9d> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesSociallyTo>
+                <https://commons.cwrc.ca/orlando:3ce4164b-885d-47dc-bd9b-59e865acf9f0> , <https://commons.cwrc.ca/orlando:f642ab42-a9dc-410b-95d2-4b6b5a759075> , <https://commons.cwrc.ca/orlando:7e803cd6-88ec-4165-ade5-8c682afd8c24> , <https://commons.cwrc.ca/orlando:6b0af5cb-f759-4d69-8eeb-2f17eb29b31a> , <http://sws.geonames.org/2633858/> , <https://commons.cwrc.ca/orlando:dfabe169-b912-48c6-a01c-c4d075837591> , <https://commons.cwrc.ca/orlando:26ac3d92-1dfc-455c-be85-9b06106feca2> , <http://sws.geonames.org/2654675/> , <https://commons.cwrc.ca/orlando:480fc36f-4775-4548-b9bf-3d40553cb246> , <https://commons.cwrc.ca/orlando:1f9bd454-9132-4733-b63d-3f5e8edd1ed4> , <https://commons.cwrc.ca/orlando:036a12fd-74ce-4b68-9149-849e5779b2c1> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relocatesTo>
+                <http://sws.geonames.org/2640853/> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#studies>
+                <http://id.loc.gov/authorities/subjects/sh85054037> , <http://id.loc.gov/authorities/subjects/sh85082139> , <http://id.loc.gov/authorities/subjects/sh85097123> , <http://id.loc.gov/authorities/subjects/sh85074944> , <https://commons.cwrc.ca/orlando:4543a51d-6623-422f-aad8-b963789aed78> , <http://id.loc.gov/authorities/subjects/sh85121304> , <http://id.loc.gov/authorities/subjects/sh85068806> , <http://id.loc.gov/vocabulary/languages/spa> , <http://id.loc.gov/authorities/subjects/sh85015976> , <http://id.loc.gov/authorities/subjects/sh85077507> , <https://commons.cwrc.ca/orlando:dcfaed05-25c5-424d-8d1b-e368ad78f797_Oeuvre> , <http://id.loc.gov/authorities/subjects/sh85061212> , <http://id.loc.gov/vocabulary/languages/fre> , <http://id.loc.gov/authorities/subjects/sh85054365> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#travelsTo>
+                <http://sws.geonames.org/9610282/> , <http://sws.geonames.org/2963597/> , <http://sws.geonames.org/11609015/> , <http://sws.geonames.org/2988507/> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#visits>
+                "Puslinch,Devon,England" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#visits>
+                <http://sws.geonames.org/2643743/> , <http://sws.geonames.org/2640729/> .
+
+<https://commons.cwrc.ca/orlando:e9d2ef7b-63cd-45cc-9bcb-331a856b4484>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Alcott, Louisa May" .
+
+<https://commons.cwrc.ca/orlando:e12b672d-9905-436f-889a-e79e405fb653>
+        a       <http://id.loc.gov/ontologies/bibframe/Text> , <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "A Taste of Honey" .
+
+<https://commons.cwrc.ca/orlando:e742a795-19ac-4adb-b7d0-7e5c865616fd>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Bunnett, Frances" .
+
+<https://commons.cwrc.ca/orlando:c0f623b5-cc07-4b3b-9b71-e0db9c6d6749>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "MacKinnon, Catharine" .
+
+<https://commons.cwrc.ca/orlando:e655e632-fc5b-45de-88e5-163cdb5fef5c>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Murillo, Bartolomé Esteban" .
+
+<https://commons.cwrc.ca/orlando:5e7db920-59da-45b3-b20f-b1a9eb9cf3d8>
+        a       <http://id.loc.gov/ontologies/bibframe/Text> , <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Women Novelists of Queen Victoria's Reign" .
+
+<https://commons.cwrc.ca/orlando:06913863-e9fe-4da2-8a86-11397a0898f4>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Oman, Carola" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesByEducationTo>
+                <https://commons.cwrc.ca/orlando:cf31f8e7-ff5a-463a-adb8-20d1e1c5d8a3> , <https://commons.cwrc.ca/orlando:1937ad07-d53c-44eb-88a1-d9b4fc830606> , <https://commons.cwrc.ca/orlando:a0b85dc2-675c-495b-b625-fb126b35661b> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:7e052ca5-1ccc-4cf9-b747-70639d54e0f7> , <https://commons.cwrc.ca/orlando:3d4d62f9-f4c6-4279-9809-8c2d0377f12f> , <http://sparql.cwrc.ca/ontologies/cwrc#Times_TITLE> , <https://commons.cwrc.ca/orlando:673f93b8-fb57-40ae-b9d5-dcbe4513168c> , <https://commons.cwrc.ca/orlando:0b4d0352-5b4e-4b0b-9acf-735d87a304a4> , <https://commons.cwrc.ca/orlando:b53a2475-654b-4027-a8b5-cfdf020246af> , <https://commons.cwrc.ca/orlando:1ecbd1cb-3b27-4a1c-adb1-9777f1c49a04> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesByLeisureTo>
+                <https://commons.cwrc.ca/orlando:c30b4595-64b0-49a1-8c4a-265a4e848409> , <https://commons.cwrc.ca/orlando:cb5fe29c-1681-4d19-898f-530d0b06c056> , <https://commons.cwrc.ca/orlando:1d69a5a6-de8e-4063-a6c6-0f9cb7150bde> , <http://sparql.cwrc.ca/ontologies/cwrc#Amabel_and_Mary_Verena_TITLE> , <https://commons.cwrc.ca/orlando:20dea6bf-9f7d-4124-b4c8-44aca84447c5> , <https://commons.cwrc.ca/orlando:772c02be-78f8-4c43-bf10-2be3ee77ce92> , <https://commons.cwrc.ca/orlando:de6380c7-b4ab-451d-b0e0-efb6e4da730a> , <http://sparql.cwrc.ca/ontologies/cwrc#Times_TITLE> , <https://commons.cwrc.ca/orlando:2399b4bd-8fa3-42f5-af23-46b20e034ed1> , <https://commons.cwrc.ca/orlando:b7918a50-aec9-44ab-84c4-d71e9c478d67> , <https://commons.cwrc.ca/orlando:e12b672d-9905-436f-889a-e79e405fb653> , <https://commons.cwrc.ca/orlando:6d01a2b8-0f2e-4bea-8cf3-516f29689fc2> , <http://sparql.cwrc.ca/ontologies/cwrc#Pemberley_Shades_TITLE> , <http://sparql.cwrc.ca/ontologies/cwrc#Trilby_TITLE> , <https://commons.cwrc.ca/orlando:477c86ae-d21d-46cf-b4d9-20768362953a> , <https://commons.cwrc.ca/orlando:d69e2375-b3f0-4d7f-b7dd-acda186fb05c> , <https://commons.cwrc.ca/orlando:e8d87f71-ee24-4d2d-b6e7-94805ffd610a> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:9f3d0944-2c01-44d5-9a58-2e8d49885992> , <https://commons.cwrc.ca/orlando:ba0454f8-ca46-4128-9a1e-dfbe621c8508> , <https://commons.cwrc.ca/orlando:6577e067-ccad-4761-aa20-82668a79e847> , <http://sparql.cwrc.ca/ontologies/cwrc#The_Heir_of_Redclyffe_TITLE> .
+
+<https://commons.cwrc.ca/orlando:24c33b7c-d8c7-42ba-9f87-6b068020769b>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Colbourne, Jane" .
+
+<https://commons.cwrc.ca/orlando:42b57f00-a7a7-41bc-892d-3510f7d26b3a>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Cobb, James F." .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Hearts-ease_in_the_Family_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Hearts-ease in the Family" .
+
+<https://commons.cwrc.ca/orlando:814d12db-8145-4ab6-b0b5-030479e83534>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Manning, Henry Edward" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#missionaryWork>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#Occupation> , <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "missionary work"@en , ""@fr .
+
+<https://commons.cwrc.ca/orlando:45bcfe0f-c8f2-474f-9af0-cbfe0d0e262f>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Moberly, Mary Anne" .
+
+<http://cwrc.ca/cwrcdata/Sutherland_John>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Sutherland, John" .
+
+<https://commons.cwrc.ca/orlando:6d9d37bd-f0a5-41b6-b126-fff4f04dcf0f>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "The Making of a Bigot" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#parodies>
+                <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#The_Clever_Woman_of_the_Family_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "The Clever Woman of the Family" .
+
+<https://commons.cwrc.ca/orlando:e08c4962-2346-4f89-9640-f6988c6475ed>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Moberly, Charles Edward" .
+
+<https://commons.cwrc.ca/orlando:68a54f3e-225f-4c04-a8c4-357132d5c0aa>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Wilberforce, Henry" .
+
+<https://commons.cwrc.ca/orlando:487a11cd-8e38-45ff-bbcc-e7ea366b4f50>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Compton-Burnett, Ivy" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasLiteraryInfluence>
+                <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:50ebb38b-92ab-4fa8-b23a-16d918902fd3> , <https://commons.cwrc.ca/orlando:dca30947-feee-44db-820e-bbcc21038396> .
+
+<https://commons.cwrc.ca/orlando:9308c943-ac98-4296-bd0d-03e4149578fa>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Oliphant, Margaret" .
+
+<https://commons.cwrc.ca/orlando:bc0b4602-079d-4493-a008-038bc1b9da8a>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Craik, Dinah Mulock" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#alludesExplicitlyTo>
+                <http://sparql.cwrc.ca/ontologies/cwrc#Tom_Thumb_TITLE> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> .
+
+<https://commons.cwrc.ca/orlando:73d8a268-27b6-4329-b952-5969fc7c61ad>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Harvey, Jane" .
+
+<https://commons.cwrc.ca/orlando:36cb5b49-b7c8-40ed-86fb-32432bb74956>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Molesworth, Mary Louisa" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesByEducationTo>
+                <https://commons.cwrc.ca/orlando:3eced347-57de-4e2a-8dc4-0639383850db> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:fbcb297f-02b5-4180-8af9-1c620e35a2dd> , <https://commons.cwrc.ca/orlando:92563421-a5a7-4052-8465-63d5b4c0a339> , <https://commons.cwrc.ca/orlando:673f93b8-fb57-40ae-b9d5-dcbe4513168c> , <https://commons.cwrc.ca/orlando:43505af0-5a9b-4d80-ae71-c09ca4d84579> .
+
+<https://commons.cwrc.ca/orlando:722a10cd-caf4-4bbd-b9cc-d02c4967228b>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Ridler, Anne" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesByEducationTo>
+                <https://commons.cwrc.ca/orlando:545d6853-fb63-4b81-9c78-77976b23cabb> , <https://commons.cwrc.ca/orlando:df864c75-7c0b-4694-a0f6-51477fe67657> , <https://commons.cwrc.ca/orlando:e7f858ec-1f0d-4b17-9eda-cc52dc54f359> , <https://commons.cwrc.ca/orlando:e9d2ef7b-63cd-45cc-9bcb-331a856b4484> , <http://sparql.cwrc.ca/ontologies/cwrc#The_Happy_Families_TITLE> , <https://commons.cwrc.ca/orlando:36cb5b49-b7c8-40ed-86fb-32432bb74956> , <https://commons.cwrc.ca/orlando:75a9da28-5ba3-4a61-a184-5d4cd18750ca> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:eedf7193-d84c-4ecb-a8d1-d5cd46cf78af> , <https://commons.cwrc.ca/orlando:197ae5a9-21c7-485c-aac8-3da8195103d2> .
+
+<https://commons.cwrc.ca/orlando:9683fb4e-bb44-4925-bd0b-ac1176b8026f>
+        a       <http://www.w3.org/ns/org#Organization> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Community of St Mary the Virgin" .
+
+<https://commons.cwrc.ca/orlando:d4e52623-ce12-4bda-85aa-95a730ef46e6>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Stevenson, Robert Louis" .
+
+<https://commons.cwrc.ca/orlando:b53a2475-654b-4027-a8b5-cfdf020246af>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Tucker, Charlotte Maria" .
+
+<https://commons.cwrc.ca/orlando:1242eb70-a862-4bdb-94a0-e13fd6fdfdca>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Winter, John Strange" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasInterpersonalRelationshipWith>
+                <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:da73a7d6-dfb4-4bbb-afb1-d608fe6d3da0> , <https://commons.cwrc.ca/orlando:d101f344-d1a5-4fb7-8c98-d23127112d8f> , <https://commons.cwrc.ca/orlando:c8855e0f-6852-4da4-afb5-f0374ec1adde> , <https://commons.cwrc.ca/orlando:8fc428d8-5576-41a2-b164-8f52ad4678e9> , <https://commons.cwrc.ca/orlando:7476dd1d-451b-421b-8e7d-7f85cd2f1f57> , <https://commons.cwrc.ca/orlando:29405e03-b9e6-4e4e-a7ae-990d3c1371d5> , <https://commons.cwrc.ca/orlando:db087a07-add4-4cba-b923-31df0f8648b7> , <https://commons.cwrc.ca/orlando:ee8e39a1-5690-438f-b572-42bde3d38c73> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesByCulturalFormTo>
+                <https://commons.cwrc.ca/orlando:ebf48ef7-e91e-4aed-bd6e-8419847c061a> , <http://sparql.cwrc.ca/ontologies/cwrc#Daily_Chronicle_TITLE> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:37bfdd52-e355-4dfa-aa91-bf3d6ff74dc3> , <http://sparql.cwrc.ca/ontologies/cwrc#Winters_Weekly_TITLE> , <https://commons.cwrc.ca/orlando:7a4b3ab7-2d6e-4492-aa36-c010e384fc61> .
+
+<https://commons.cwrc.ca/orlando:dee00314-32f1-4f76-9ca0-d8bf8b0c4dd7>
+        a       <http://id.loc.gov/ontologies/bibframe/Text> , <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Letters on the Improvement of the Mind" .
+
+<https://commons.cwrc.ca/orlando:8efa7b58-ef11-453f-878d-e7ac9a870062>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Broughton, Rhoda" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#alludesExplicitlyTo>
+                <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:d318bcd4-57d6-41c1-9323-06aaeb031edb> .
+
+<https://commons.cwrc.ca/orlando:5393fb9d-c435-403c-9080-d8bd975c4f12>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Trevelyan, Sir Charles Edward" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#highToryism>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#PoliticalAffiliation> , <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "High Toryism"@en .
+
+<https://commons.cwrc.ca/orlando:8920c37f-89e4-456b-8ab1-6d90572504f8>
+        a       <http://www.w3.org/ns/org#Organization> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Charlotte M. Yonge Society" .
+
+<https://commons.cwrc.ca/orlando:b38f77de-79d8-463a-b61f-187851c47c9c>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Malet, Lucas" .
+
+<https://commons.cwrc.ca/orlando:e7f858ec-1f0d-4b17-9eda-cc52dc54f359>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Nesbit, E." .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Little_Duke_The_TITLE>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#EducationalText> , <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Little Duke, The" .
+
+<https://commons.cwrc.ca/orlando:dd1a597d-6a64-4577-a524-fdbe8900ab45>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Roberts, Margaret" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasInterpersonalRelationshipWith>
+                <https://commons.cwrc.ca/orlando:bba69296-f13b-4b1b-9e90-275829e4b092> , <https://commons.cwrc.ca/orlando:0e4edd96-2a8c-4eef-a4f7-3e8d174f7cf5> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:ad3e5121-3e32-4936-9e10-355141209661> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#historian>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#Occupation> , <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "historian"@en , ""@fr .
+
+<https://commons.cwrc.ca/orlando:c0258362-e59e-4de7-8880-b80d9f632c3b>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Alexander, Cecil Frances" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesByCulturalFormTo>
+                <https://commons.cwrc.ca/orlando:5c3752f0-740f-484e-88f9-ceeb08e7062e> , <https://commons.cwrc.ca/orlando:814d12db-8145-4ab6-b0b5-030479e83534> , <https://commons.cwrc.ca/orlando:df094880-c4d3-4cd5-ad3a-36c2b75c81e7> , <https://commons.cwrc.ca/orlando:c1af0339-8f4d-44c7-a929-2e272e3d3f58> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:d2a3f2b4-dc86-4b79-95cc-ff30a657bdec> , <https://commons.cwrc.ca/orlando:cf97cb73-31a4-425b-a871-cf6858c449dd> .
+
+<https://commons.cwrc.ca/orlando:7fa078f1-e346-4d74-a9c4-4e3e57e80cad>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Browning, Elizabeth Barrett" .
+
+<https://commons.cwrc.ca/orlando:7c87b38d-c29c-410e-b7b7-179b93021667>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Caine, Hall" .
+
+<https://commons.cwrc.ca/orlando:99dc9f6f-8dd5-4ee6-bf29-546c51e617db>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Mead, Margaret" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesSociallyTo>
+                <https://commons.cwrc.ca/orlando:e9d2ef7b-63cd-45cc-9bcb-331a856b4484> , <https://commons.cwrc.ca/orlando:1dcfa1ee-ad7d-477f-81c6-d73aaa28a73c> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> .
+
+<https://commons.cwrc.ca/orlando:dd2ee276-b334-4afc-9c20-96cedf25efd3>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Green, John Richard" .
+
+<https://commons.cwrc.ca/orlando:f3339ff6-f270-4bb5-8bed-98beed729299>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Aldyth" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#answers>
+                <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> .
+
+<https://commons.cwrc.ca/orlando:2480842a-60ad-4ec1-a003-29f67872c532>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Battiscombe, Georgina" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Pemberley_Shades_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Pemberley Shades" .
+
+<https://commons.cwrc.ca/orlando:3adde618-a08c-40d3-8bb4-4bd672986c58>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Gibbs, Ronald Gordon Vicary" .
+
+<https://commons.cwrc.ca/orlando:9bac177d-e828-4063-9e9b-4442745e85e6>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Chapone, Hester Mulso" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Mr_Smith_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Mr. Smith" .
+
+<https://commons.cwrc.ca/orlando:545d6853-fb63-4b81-9c78-77976b23cabb>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Mortimer, Favell Lee" .
+
+<https://commons.cwrc.ca/orlando:f14873d1-25fe-4c9a-800c-f74b5c8d16cb>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Bargus, Frances Mary" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasChild>
+                <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> .
+
+<https://commons.cwrc.ca/orlando:c81c2fc3-a335-4b43-9ee8-8c7cdc2248b5>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Parkes, Bessie Rayner" .
+
+<https://commons.cwrc.ca/orlando:9d3af7bd-5e2c-4f17-bdf1-23f74dc8407a>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Where the Indus Is Young" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#alludesExplicitlyTo>
+                <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#The_History_of_the_Robins_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "The History of the Robins" .
+
+<https://commons.cwrc.ca/orlando:0b846837-e868-418e-b38b-aa9b89929193>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Finley, Martha" .
+
+<https://commons.cwrc.ca/orlando:0b4d0352-5b4e-4b0b-9acf-735d87a304a4>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Aytoun, William Edmonstoune" .
+
+<https://commons.cwrc.ca/orlando:3bbb4134-7791-4adc-a33d-b33f3a6053b8>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Wordsworth, Elizabeth" .
+
+<https://commons.cwrc.ca/orlando:26ac3d92-1dfc-455c-be85-9b06106feca2>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#PostSecondarySchool> , <http://sparql.cwrc.ca/ontologies/cwrc#SingleSexSchool> , <http://sparql.cwrc.ca/ontologies/cwrc#EducationalOrganization> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "St Hugh's College, Oxford University" , "St Hugh's College,, Oxford" , "St Hugh's College,, Oxford University" , "St Hugh's College, Oxford" .
+
+<https://commons.cwrc.ca/orlando:adcb66f2-08d5-4193-a45c-e518a50186cf>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Moxon, Elizabeth" .
+
+<https://commons.cwrc.ca/orlando:f8a4a08c-a07e-426f-90ea-28ac40a2e281>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Herbert, George" .
+
+<https://commons.cwrc.ca/orlando:3562b376-3ba2-42b3-92c1-abdbcc58a9f2>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Austin, Sarah" .
+
+<https://commons.cwrc.ca/orlando:477c86ae-d21d-46cf-b4d9-20768362953a>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Hutchinson, Lucy" .
+
+<https://commons.cwrc.ca/orlando:20d50f7f-ae0a-4084-91d3-178680bc566d>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Worboise, Emma Jane" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#adapts>
+                <http://sparql.cwrc.ca/ontologies/cwrc#Heartsease_or_The_Brothers_Wife_TITLE> , <http://sparql.cwrc.ca/ontologies/cwrc#Hearts-ease_in_the_Family_TITLE> , <http://sparql.cwrc.ca/ontologies/cwrc#Amy_Wilton_TITLE> , <https://commons.cwrc.ca/orlando:5f51c6e0-520a-4316-9e8d-13146d1d3227> , <https://commons.cwrc.ca/orlando:f8a4a08c-a07e-426f-90ea-28ac40a2e281> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:92563421-a5a7-4052-8465-63d5b4c0a339> , <https://commons.cwrc.ca/orlando:d4753efa-0c2e-4a53-ad6a-a18cd6201496> .
+
+<https://commons.cwrc.ca/orlando:43505af0-5a9b-4d80-ae71-c09ca4d84579>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Barbauld, Anna Letitia" .
+
+<https://commons.cwrc.ca/orlando:da0e0740-f107-4034-989b-dc0a298e4dfa>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Freeman, E. A." .
+
+<https://commons.cwrc.ca/orlando:d83f9007-052f-4aaa-b2a8-6ed641721f3d>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Saintsbury, George" .
+
+<https://commons.cwrc.ca/orlando:d318bcd4-57d6-41c1-9323-06aaeb031edb>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Zola, Émile" .
+
+<https://commons.cwrc.ca/orlando:cc074635-6861-4e7f-ab1c-86b4379104d8>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Bunyan, John" .
+
+<https://commons.cwrc.ca/orlando:2fe95931-82c4-449d-8ad1-69f0f5b3af21>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Whittier, John Greenleaf" .
+
+<https://commons.cwrc.ca/orlando:717544ad-e2ce-4621-8ce8-9750df4636ba>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Gibbs, Blanche" .
+
+<https://commons.cwrc.ca/orlando:ad3e5121-3e32-4936-9e10-355141209661>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Peard, Frances Mary" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasInterpersonalRelationshipWith>
+                <https://commons.cwrc.ca/orlando:bba69296-f13b-4b1b-9e90-275829e4b092> , <https://commons.cwrc.ca/orlando:42b57f00-a7a7-41bc-892d-3510f7d26b3a> , <https://commons.cwrc.ca/orlando:0e4edd96-2a8c-4eef-a4f7-3e8d174f7cf5> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:dd1a597d-6a64-4577-a524-fdbe8900ab45> .
+
+<https://commons.cwrc.ca/orlando:3d7f95d6-55b6-4556-9224-1b110676f09f>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Aguilar, Grace" .
+
+<https://commons.cwrc.ca/orlando:5480130c-7742-4167-a755-c048daab6a02>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Gibbs, Maurice Anthony Crutchley" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesSociallyTo>
+                <https://commons.cwrc.ca/orlando:5480130c-7742-4167-a755-c048daab6a02> , <https://commons.cwrc.ca/orlando:8e02e83c-cf2d-4eb0-ba30-2670b841d145> , <https://commons.cwrc.ca/orlando:6a591d7f-4f72-49c6-adfd-bb6c718ac050> , <https://commons.cwrc.ca/orlando:3adde618-a08c-40d3-8bb4-4bd672986c58> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <http://sparql.cwrc.ca/ontologies/cwrc#Sketch_TITLE> , <http://sparql.cwrc.ca/ontologies/cwrc#The_Tatler_TITLE> .
+
+<https://commons.cwrc.ca/orlando:8724243f-58a0-4005-b602-85efc462a6c7>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Lyall, Edna" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#alludesExplicitlyTo>
+                <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesByEducationTo>
+                <https://commons.cwrc.ca/orlando:1a64679d-c346-4cd5-a436-887a12d79710> , <https://commons.cwrc.ca/orlando:772c02be-78f8-4c43-bf10-2be3ee77ce92> , <https://commons.cwrc.ca/orlando:c11a5d9c-bfd7-4c72-8e1d-2c5311892c65> , <https://commons.cwrc.ca/orlando:2fe95931-82c4-449d-8ad1-69f0f5b3af21> , <https://commons.cwrc.ca/orlando:628c4a64-3982-470e-b7c6-7d99438992f3> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:ce9dd632-a24f-4deb-ba9c-3c1e9f0c3d05> , <https://commons.cwrc.ca/orlando:673f93b8-fb57-40ae-b9d5-dcbe4513168c> , <https://commons.cwrc.ca/orlando:eedd1543-30e5-4845-aa11-47ecfe0c3ea5> .
+
+<https://commons.cwrc.ca/orlando:d029c9d4-feac-4eb9-86ba-53abd9f4b6f2>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Howard, John Eldred" .
+
+<https://commons.cwrc.ca/orlando:a99b5c98-f7b0-4dcc-971e-774c9cdf5c21>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Moberly, George" .
+
+<https://commons.cwrc.ca/orlando:3d700972-9f5e-43da-a7ef-5a6e4299b0e1>
+        a       <http://id.loc.gov/ontologies/bibframe/Text> , <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Kenilworth" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Flower_Girl_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Flower Girl" .
+
+<https://commons.cwrc.ca/orlando:628c4a64-3982-470e-b7c6-7d99438992f3>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Blair, Hugh" .
+
+<https://commons.cwrc.ca/orlando:fbcb297f-02b5-4180-8af9-1c620e35a2dd>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Wakefield, Priscilla" .
+
+<https://commons.cwrc.ca/orlando:ebf48ef7-e91e-4aed-bd6e-8419847c061a>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Alexandra of Denmark,, Queen of England" .
+
+<https://commons.cwrc.ca/orlando:b3cd4643-37c2-4ee6-90c0-6bb4d2128d9d>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Yonge, Julian" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasSibling>
+                <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> .
+
+<https://commons.cwrc.ca/orlando:ea70b1d7-1827-42f6-93fb-d15121ea1678>
+        a       <http://www.w3.org/ns/org#Organization> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Melanesian Mission to the Pacific" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#eldestChild>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#BirthPosition> , <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "aîné·e"@fr , "eldest"@en .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Times_Literary_Supplement_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Times Literary Supplement" .
+
+<https://commons.cwrc.ca/orlando:bba69296-f13b-4b1b-9e90-275829e4b092>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Drury, Anna" .
+
+<https://commons.cwrc.ca/orlando:6e925d01-7af3-4c00-9f50-fb64f171555c>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Arnold, William Thomas" .
+
+<https://commons.cwrc.ca/orlando:7e803cd6-88ec-4165-ade5-8c682afd8c24>
+        a       <http://id.loc.gov/ontologies/bibframe/Text> , <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "The Christian Year" .
+
+<https://commons.cwrc.ca/orlando:b914de1f-c588-4946-9b24-1ab026afbaff>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Charlesworth, Maria Louisa" .
+
+<https://commons.cwrc.ca/orlando:0f5f0feb-8326-4a49-94be-fff51e38fbb8>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Stern, G. B." ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesByEducationTo>
+                <https://commons.cwrc.ca/orlando:0b846837-e868-418e-b38b-aa9b89929193> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:36cb5b49-b7c8-40ed-86fb-32432bb74956> , <https://commons.cwrc.ca/orlando:3d7f95d6-55b6-4556-9224-1b110676f09f> , <http://sparql.cwrc.ca/ontologies/cwrc#Carrots_Just_a_Little_Boy_TITLE> .
+
+<https://commons.cwrc.ca/orlando:c30b4595-64b0-49a1-8c4a-265a4e848409>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Mansfield, Katherine" .
+
+<https://commons.cwrc.ca/orlando:3d736add-e0e0-4601-aaa6-a36b44634cd1>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Cornford, Frances" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesByCulturalFormTo>
+                <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:fdd7af05-6958-4e6d-afe2-8b65d1bac8da> , <http://sparql.cwrc.ca/ontologies/cwrc#The_Daisy_Chain_or_Aspirations_A_Family_Chronicle_TITLE> .
+
+<https://commons.cwrc.ca/orlando:3eced347-57de-4e2a-8dc4-0639383850db>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Edgeworth, Anna Maria" .
+
+<https://commons.cwrc.ca/orlando:b429d131-5b11-4639-b765-bbf6fb3d3681>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Burne-Jones, Sir Edward Coley" .
+
+<https://commons.cwrc.ca/orlando:5f51c6e0-520a-4316-9e8d-13146d1d3227>
+        a       <http://id.loc.gov/ontologies/bibframe/Text> , <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Amy Herbert" .
+
+<https://commons.cwrc.ca/orlando:e6bf00c1-d5a6-4eeb-bb82-9097374df68f>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Wesley, Mary" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesByEducationTo>
+                <https://commons.cwrc.ca/orlando:d4e52623-ce12-4bda-85aa-95a730ef46e6> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:673f93b8-fb57-40ae-b9d5-dcbe4513168c> .
+
+<https://commons.cwrc.ca/orlando:dcfaed05-25c5-424d-8d1b-e368ad78f797_Oeuvre>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#Oeuvre> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Trimmer's Oeuvre" .
+
+<https://commons.cwrc.ca/orlando:9b9f5595-8f99-43d6-9567-37bb53bdf7fb>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Glyn, Elinor" .
+
+<https://commons.cwrc.ca/orlando:1d69a5a6-de8e-4063-a6c6-0f9cb7150bde>
+        a       <http://id.loc.gov/ontologies/bibframe/Text> , <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Bliss and Other Stories" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Sketch_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Sketch" .
+
+<https://commons.cwrc.ca/orlando:edd3ee08-ffd5-4b51-8550-f875127ddb64>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Daly, Mary" .
+
+<https://commons.cwrc.ca/orlando:20dea6bf-9f7d-4124-b4c8-44aca84447c5>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Heyer, Georgette" .
+
+<https://commons.cwrc.ca/orlando:98e3f429-aaa4-4010-b51b-e390bab56a09>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Grand, Sarah" .
+
+<https://commons.cwrc.ca/orlando:62d71ec4-df8d-4b75-a274-d1aec5e17595_Oeuvre>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Laski's Oeuvre" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasWritingRelationTo>
+                <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Practical_Work_in_Sunday_Schools_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Practical Work in Sunday Schools" .
+
+<https://commons.cwrc.ca/orlando:0d30c098-ba1d-4402-a0d1-c067ef3ef188>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Bramston, Mary" .
+
+<https://commons.cwrc.ca/orlando:1f9bd454-9132-4733-b63d-3f5e8edd1ed4>
+        a       <http://id.loc.gov/ontologies/bibframe/Text> , <http://sparql.cwrc.ca/ontologies/cwrc#EducationalText> , <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Book of Common Prayer" .
+
+<https://commons.cwrc.ca/orlando:059530ac-5be8-4cab-8626-c0bf1d5565c8>
+        a       <http://www.w3.org/ns/org#Organization> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "United Society for the Propagation of the Gospel" .
+
+<https://commons.cwrc.ca/orlando:6fef404f-b4c8-4eae-b27b-7798e0248f09>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Sheridan, Richard Brinsley" .
+
+<https://commons.cwrc.ca/orlando:daeb189c-6470-4cb8-ac0a-82979b81faf8>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Kemble, Fanny" .
+
+<https://commons.cwrc.ca/orlando:197ae5a9-21c7-485c-aac8-3da8195103d2>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Ewing, Juliana Horatia" .
+
+<https://commons.cwrc.ca/orlando:75a9da28-5ba3-4a61-a184-5d4cd18750ca>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Bradby, Violet" .
+
+<https://commons.cwrc.ca/orlando:dfabe169-b912-48c6-a01c-c4d075837591>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Duke, George" .
+
+<https://commons.cwrc.ca/orlando:93a1c093-f555-4f81-be43-79d7802b5470>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Walter, Gertrude" .
+
+<https://commons.cwrc.ca/orlando:27329ccf-2a19-4879-8d24-a3bd76791b27>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Morris, William" .
+
+<https://commons.cwrc.ca/orlando:eedf7193-d84c-4ecb-a8d1-d5cd46cf78af>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Sinclair, Catherine" .
+
+<https://commons.cwrc.ca/orlando:d042a35b-32fa-46e6-9a4e-33bff67ae070>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Hoffmann, Heinrich" .
+
+<https://commons.cwrc.ca/orlando:226dfa8a-bc35-4c87-b14c-5f07d1c5d0d6>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Newman, John Henry" .
+
+<https://commons.cwrc.ca/orlando:3ce4164b-885d-47dc-bd9b-59e865acf9f0>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#PostSecondarySchool> , <http://sparql.cwrc.ca/ontologies/cwrc#ReligiousSchool> , <http://sparql.cwrc.ca/ontologies/cwrc#SingleSexSchool> , <http://sparql.cwrc.ca/ontologies/cwrc#EducationalOrganization> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Lady Margaret Hall, Oxford University" , "Lady Margaret Hall,, Oxford University" .
+
+<https://commons.cwrc.ca/orlando:c1af0339-8f4d-44c7-a929-2e272e3d3f58>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Reed, Thomas" .
+
+<https://commons.cwrc.ca/orlando:377f7921-1573-41a4-ba5c-294717588533>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Bentley, Phyllis" .
+
+<https://commons.cwrc.ca/orlando:076a1f51-433f-420c-a676-b5ee9c22de5f>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Miles, Jenny" .
+
+<https://commons.cwrc.ca/orlando:96592df0-77bf-47ca-98be-e0d11fd3515f>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Coleridge, Mary Simpson" .
+
+<https://commons.cwrc.ca/orlando:2399b4bd-8fa3-42f5-af23-46b20e034ed1>
+        a       <http://id.loc.gov/ontologies/bibframe/Text> , <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Pride and Prejudice" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Amy_Wilton_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Amy Wilton" .
+
+<https://commons.cwrc.ca/orlando:7b277800-9bca-4025-84fd-1e429bf9244a>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Mozley, Henry" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesSociallyTo>
+                <https://commons.cwrc.ca/orlando:adcb66f2-08d5-4193-a45c-e518a50186cf> , <https://commons.cwrc.ca/orlando:fccfc554-bee2-4aa3-bd07-c1f12915e86a> , <http://sparql.cwrc.ca/ontologies/cwrc#English_Housewifery_TITLE> , <https://commons.cwrc.ca/orlando:73d8a268-27b6-4329-b952-5969fc7c61ad> , <https://commons.cwrc.ca/orlando:9bac177d-e828-4063-9e9b-4442745e85e6> , <https://commons.cwrc.ca/orlando:7b277800-9bca-4025-84fd-1e429bf9244a> , <https://commons.cwrc.ca/orlando:dee00314-32f1-4f76-9ca0-d8bf8b0c4dd7> , <https://commons.cwrc.ca/orlando:cc074635-6861-4e7f-ab1c-86b4379104d8> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Trilby_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Trilby" .
+
+<https://commons.cwrc.ca/orlando:5f030fe3-b3a4-4c19-87a0-366ff940d352>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Delafield, E. M." .
+
+<https://commons.cwrc.ca/orlando:6a591d7f-4f72-49c6-adfd-bb6c718ac050>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Gibbs, Daphne Marian" .
+
+<https://commons.cwrc.ca/orlando:ec7ae5ac-8fb2-4a08-b5fb-3cd485a339dd>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Wordsworth, William" .
+
+<https://commons.cwrc.ca/orlando:f5ce77dc-172a-4275-811b-0045e133dcc7>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Gibbs, William" .
+
+<https://commons.cwrc.ca/orlando:f436551e-2222-4f49-98e8-08766d3adfd7>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Nichol, John,  1833 - 1894" , "Nichol, John,, 1833 - 1894" .
+
+<https://commons.cwrc.ca/orlando:082725fb-ee29-4cc9-8cc7-cc957aa95142>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Curtain, Jeremiah" .
+
+<https://commons.cwrc.ca/orlando:c8855e0f-6852-4da4-afb5-f0374ec1adde>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Ruskin, John" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Winters_Weekly_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Winter's Weekly" .
+
+<https://commons.cwrc.ca/orlando:b7dbbe7e-c0ac-43a7-9b71-8536eb050564>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Pahl, Jan" .
+
+<https://commons.cwrc.ca/orlando:da73a7d6-dfb4-4bbb-afb1-d608fe6d3da0>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Bainbridge, Oliver" .
+
+<https://commons.cwrc.ca/orlando:1937ad07-d53c-44eb-88a1-d9b4fc830606>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Lamb, Mary,  1764 - 1847" , "Lamb, Mary,, 1764 - 1847" .
+
+<https://commons.cwrc.ca/orlando:673f93b8-fb57-40ae-b9d5-dcbe4513168c>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Scott, Sir Walter" .
+
+<https://commons.cwrc.ca/orlando:b01f2427-b3fd-4a55-b909-861f7508f47e>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Batty, Beatrice Braithwaite" .
+
+<https://commons.cwrc.ca/orlando:92563421-a5a7-4052-8465-63d5b4c0a339>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> , <http://id.loc.gov/ontologies/bibframe/Person> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Sewell, Elizabeth" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasInfluenceOn>
+                <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <http://cwrc.ca/cwrcdata/Sutherland_John> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasInterpersonalRelationshipWith>
+                <https://commons.cwrc.ca/orlando:5393fb9d-c435-403c-9080-d8bd975c4f12> , <https://commons.cwrc.ca/orlando:3562b376-3ba2-42b3-92c1-abdbcc58a9f2> , <https://commons.cwrc.ca/orlando:18977bb7-8c01-47df-946f-819cf4837870> , <https://commons.cwrc.ca/orlando:ec7ae5ac-8fb2-4a08-b5fb-3cd485a339dd> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:68a54f3e-225f-4c04-a8c4-357132d5c0aa> , <https://commons.cwrc.ca/orlando:5c3752f0-740f-484e-88f9-ceeb08e7062e> , <https://commons.cwrc.ca/orlando:226dfa8a-bc35-4c87-b14c-5f07d1c5d0d6> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#The_Daisy_Chain_or_Aspirations_A_Family_Chronicle_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "The Daisy Chain; or, Aspirations. A Family Chronicle." .
+
+<https://commons.cwrc.ca/orlando:772c02be-78f8-4c43-bf10-2be3ee77ce92>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Austen, Jane" .
+
+<https://commons.cwrc.ca/orlando:bac5e7d9-0b07-43ff-82c5-e4670975a1f7>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Napier, Elma" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesByEducationTo>
+                <https://commons.cwrc.ca/orlando:294ea13f-024b-461c-a598-011e649b35fa> , <https://commons.cwrc.ca/orlando:8fc428d8-5576-41a2-b164-8f52ad4678e9> , <https://commons.cwrc.ca/orlando:cc399544-250a-44fa-b6d9-076b1f2b8613> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:7c87b38d-c29c-410e-b7b7-179b93021667> , <https://commons.cwrc.ca/orlando:ec52ae9b-0607-48f3-88c3-39840cef60e2> , <https://commons.cwrc.ca/orlando:98e3f429-aaa4-4010-b51b-e390bab56a09> , <https://commons.cwrc.ca/orlando:082725fb-ee29-4cc9-8cc7-cc957aa95142> , <https://commons.cwrc.ca/orlando:9b9f5595-8f99-43d6-9567-37bb53bdf7fb> , <https://commons.cwrc.ca/orlando:14c64d7b-4f21-45ca-b98d-50975357e2ac> , <http://sparql.cwrc.ca/ontologies/cwrc#His_Hour_TITLE> , <https://commons.cwrc.ca/orlando:e5f4f4db-711f-4204-90cd-18454cff6b67> , <https://commons.cwrc.ca/orlando:3d700972-9f5e-43da-a7ef-5a6e4299b0e1> , <http://sparql.cwrc.ca/ontologies/cwrc#Dombey_and_Son_TITLE> , <https://commons.cwrc.ca/orlando:673f93b8-fb57-40ae-b9d5-dcbe4513168c> , <https://commons.cwrc.ca/orlando:f5b5c522-4ae2-4810-92b5-f55918152b20> ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#relatesSociallyTo>
+                <https://commons.cwrc.ca/orlando:6a591d7f-4f72-49c6-adfd-bb6c718ac050> , <https://commons.cwrc.ca/orlando:8e02e83c-cf2d-4eb0-ba30-2670b841d145> , <https://commons.cwrc.ca/orlando:3adde618-a08c-40d3-8bb4-4bd672986c58> , <http://sparql.cwrc.ca/ontologies/cwrc#The_Tatler_TITLE> , <http://sparql.cwrc.ca/ontologies/cwrc#Sketch_TITLE> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Sarah_Fielding_The_Governess_1749_TITLE>
+        a       <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Sarah Fielding, The Governess, 1749" .
+
+<https://commons.cwrc.ca/orlando:ec52ae9b-0607-48f3-88c3-39840cef60e2>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Haggard, Sir H. Rider" .
+
+<https://commons.cwrc.ca/orlando:c0f3d723-7b28-4d44-8d7f-dda09d7ae691>
+        a       <http://id.loc.gov/ontologies/bibframe/Agent> , <http://sparql.cwrc.ca/ontologies/cwrc#PostSecondarySchool> , <http://sparql.cwrc.ca/ontologies/cwrc#PrivateSchool> , <http://sparql.cwrc.ca/ontologies/cwrc#EducationalOrganization> , <http://sparql.cwrc.ca/ontologies/cwrc#CoEducationalSchool> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Cambridge University" , "Cambridge" .
+
+<https://commons.cwrc.ca/orlando:6315e747-c757-448c-be99-8f4a8ca854ad>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Browning, Robert" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#professional>
+        a       <http://sparql.cwrc.ca/ontologies/cwrc#SocialClass> , <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "professionelle"@fr , "professional"@en .
+
+<https://commons.cwrc.ca/orlando:6577e067-ccad-4761-aa20-82668a79e847>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Bell, Gertrude" .
+
+<https://commons.cwrc.ca/orlando:d69e2375-b3f0-4d7f-b7dd-acda186fb05c>
+        a       <http://id.loc.gov/ontologies/bibframe/Person> , <http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Du Maurier, George" .
+
+<https://commons.cwrc.ca/orlando:aaf5a6c3-91e7-4097-b076-830cd0f4d6fb>
+        a       <http://id.loc.gov/ontologies/bibframe/Text> , <http://id.loc.gov/ontologies/bibframe/Work> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Recollections of a Scottish Novelist" .
+
+<https://commons.cwrc.ca/orlando:1383fa3f-1165-4ff4-b2dd-c95c75fc2c13>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "The Catholic World: A Monthly Magazine of General Literature and Science" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Chronicles_of_the_Schönberg-Cotta_Family_TITLE>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Chronicles of the Schönberg-Cotta Family" .
+
+<https://commons.cwrc.ca/orlando:4a2e29e8-3ba8-493f-b8ed-1e3e45d6f92a>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Swan, Annie S." .
+
+<https://commons.cwrc.ca/orlando:c5c39aa5-8f5d-4822-9844-80ff1a97a374>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "The Daisy Chain" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#ReEvaluationResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to The Daisy Chain" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:2480842a-60ad-4ec1-a003-29f67872c532> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a>
+                ] ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#ReEvaluationResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to The Daisy Chain" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:2480842a-60ad-4ec1-a003-29f67872c532> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a>
+                ] .
+
+<https://commons.cwrc.ca/orlando:bb1a762a-55aa-4db8-b085-27361de8abb6>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "The Fairy Bower" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#Gendered> , <http://sparql.cwrc.ca/ontologies/cwrc#InitialResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to The Fairy Bower" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <http://sparql.cwrc.ca/ontologies/cwrc#Childrens_Literature_of_the_Last_Century_TITLE> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:8e18fa98-ebdc-4e2e-9eb2-97b2f4b22a15> , <https://commons.cwrc.ca/orlando:772c02be-78f8-4c43-bf10-2be3ee77ce92>
+                ] ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#Gendered> , <http://sparql.cwrc.ca/ontologies/cwrc#InitialResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to The Fairy Bower" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <http://sparql.cwrc.ca/ontologies/cwrc#Childrens_Literature_of_the_Last_Century_TITLE> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:8e18fa98-ebdc-4e2e-9eb2-97b2f4b22a15> , <https://commons.cwrc.ca/orlando:772c02be-78f8-4c43-bf10-2be3ee77ce92>
+                ] .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Athenæum_TITLE>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Athenæum" .
+
+<https://commons.cwrc.ca/orlando:7458edaa-ca8f-4926-b683-ac0254645c07>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Trollope, Anthony" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#The_Monthly_Packet_TITLE>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "The Monthly Packet" .
+
+<https://commons.cwrc.ca/orlando:25a45555-9f78-435e-ba4e-9feaf1d2857a>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "The Young Step-Mother" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#InitialResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to The Young Step-Mother" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:25a45555-9f78-435e-ba4e-9feaf1d2857a> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:c376f65a-8e81-4972-89fe-438417fb5f99> , <http://sparql.cwrc.ca/ontologies/cwrc#The_Daisy_Chain_TITLE>
+                ] ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#InitialResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to The Young Step-Mother" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:25a45555-9f78-435e-ba4e-9feaf1d2857a> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:c376f65a-8e81-4972-89fe-438417fb5f99> , <http://sparql.cwrc.ca/ontologies/cwrc#The_Daisy_Chain_TITLE>
+                ] .
+
+<https://commons.cwrc.ca/orlando:92563421-a5a7-4052-8465-63d5b4c0a339>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Sewell, Elizabeth" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#ReEvaluationResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Elizabeth Sewell" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <http://cwrc.ca/cwrcdata/Sutherland_John>
+                ] ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#ReEvaluationResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Elizabeth Sewell" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <http://cwrc.ca/cwrcdata/Sutherland_John>
+                ] .
+
+<https://commons.cwrc.ca/orlando:5e7db920-59da-45b3-b20f-b1a9eb9cf3d8>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Women Novelists of Queen Victoria's Reign" .
+
+<https://commons.cwrc.ca/orlando:d318bcd4-57d6-41c1-9323-06aaeb031edb>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Zola, Émile" .
+
+<https://commons.cwrc.ca/orlando:8f435e24-bb62-4648-93ce-177049257d53>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Lewis, C. S." .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Times_TITLE>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Times" .
+
+<https://commons.cwrc.ca/orlando:cbd28f58-43bf-4e91-a1a0-df2052c1c309>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "London Library" .
+
+<https://commons.cwrc.ca/orlando:9bb1cf65-c9a3-45d8-b140-a1174e46094e>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Ingelow, Jean" .
+
+<https://commons.cwrc.ca/orlando:9308c943-ac98-4296-bd0d-03e4149578fa>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Oliphant, Margaret" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#Gendered> , <http://sparql.cwrc.ca/ontologies/cwrc#LaterResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Margaret Oliphant" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:3abaa60d-6e1b-4a18-b770-c8e1d002ac92>
+                ] ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#Gendered> , <http://sparql.cwrc.ca/ontologies/cwrc#LaterResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Margaret Oliphant" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:3abaa60d-6e1b-4a18-b770-c8e1d002ac92>
+                ] .
+
+<https://commons.cwrc.ca/orlando:516bab29-e625-4350-92cd-36d1f0ae66e1>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Helen's Diary" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#InitialResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#InformalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Helen's Diary" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:516bab29-e625-4350-92cd-36d1f0ae66e1> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:92563421-a5a7-4052-8465-63d5b4c0a339> , <https://commons.cwrc.ca/orlando:c45069b3-c965-438f-903f-65ce2d1f1934>
+                ] ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#InitialResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#InformalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Helen's Diary" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:516bab29-e625-4350-92cd-36d1f0ae66e1> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:92563421-a5a7-4052-8465-63d5b4c0a339> , <https://commons.cwrc.ca/orlando:c45069b3-c965-438f-903f-65ce2d1f1934>
+                ] .
+
+<https://commons.cwrc.ca/orlando:1769cb6d-3e98-4e7b-a841-058cc9dd23de>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "The Governess" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#ReEvaluationResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to The Governess" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:7e052ca5-1ccc-4cf9-b747-70639d54e0f7>
+                ] ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#ReEvaluationResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to The Governess" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:7e052ca5-1ccc-4cf9-b747-70639d54e0f7>
+                ] .
+
+<https://commons.cwrc.ca/orlando:c45069b3-c965-438f-903f-65ce2d1f1934>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Marshall, Emma" .
+
+<https://commons.cwrc.ca/orlando:9b075323-0efe-4765-8443-f171033c821b>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Collins, Wilkie" .
+
+<https://commons.cwrc.ca/orlando:2c8ab1a1-74ab-4892-a1ad-6e5fa3c80c85>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "A Noble Life" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#InitialResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to A Noble Life" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a>
+                ] .
+
+<https://commons.cwrc.ca/orlando:a20e9eea-1c7b-4baa-bf6e-b729beabd9a2>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Carey, Rosa Nouchette" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#LaterResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Rosa Nouchette Carey" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:ae8fb045-b249-47bb-9c5f-75e746ef9df9>
+                ] ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#InitialResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#InformalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Rosa Nouchette Carey" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:14c64d7b-4f21-45ca-b98d-50975357e2ac> , <https://commons.cwrc.ca/orlando:4a2e29e8-3ba8-493f-b8ed-1e3e45d6f92a> , <https://commons.cwrc.ca/orlando:a4ab647b-fb15-4a90-88dd-cf60a38ac152> , <http://sparql.cwrc.ca/ontologies/cwrc#Girls_Own_Paper_TITLE>
+                ] .
+
+<https://commons.cwrc.ca/orlando:8e18fa98-ebdc-4e2e-9eb2-97b2f4b22a15>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Mozley, Harriett" .
+
+<https://commons.cwrc.ca/orlando:5b82a214-9e3c-4d33-a844-ebdeb109fb47>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Mia and Charlie" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#ReEvaluationResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Mia and Charlie" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:bc8c2660-dc5b-4d41-b434-c6a4d3467765> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a>
+                ] ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#LaterResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Mia and Charlie" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:bc8c2660-dc5b-4d41-b434-c6a4d3467765> , <https://commons.cwrc.ca/orlando:5b82a214-9e3c-4d33-a844-ebdeb109fb47> , <https://commons.cwrc.ca/orlando:50e959ea-a0d4-4be4-b670-6a235b10a43a> , <https://commons.cwrc.ca/orlando:49c94bc4-5d4a-4737-a681-a0143a7eaa14> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:d5eb2892-79a9-4a26-94f7-82000322b877>
+                ] ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#ReEvaluationResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Mia and Charlie" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:bc8c2660-dc5b-4d41-b434-c6a4d3467765> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a>
+                ] ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#LaterResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Mia and Charlie" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:bc8c2660-dc5b-4d41-b434-c6a4d3467765> , <https://commons.cwrc.ca/orlando:5b82a214-9e3c-4d33-a844-ebdeb109fb47> , <https://commons.cwrc.ca/orlando:50e959ea-a0d4-4be4-b670-6a235b10a43a> , <https://commons.cwrc.ca/orlando:49c94bc4-5d4a-4737-a681-a0143a7eaa14> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:d5eb2892-79a9-4a26-94f7-82000322b877>
+                ] .
+
+<https://commons.cwrc.ca/orlando:5f030fe3-b3a4-4c19-87a0-366ff940d352>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Delafield, E. M." .
+
+<https://commons.cwrc.ca/orlando:736a913b-1f20-4a74-a9cd-39d238dd7437>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Charles, Elizabeth" .
+
+<https://commons.cwrc.ca/orlando:d4236f05-a060-4964-918b-2149be668b09>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Cross Purposes" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#InitialResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#InformalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Beatrice Marshall and Evelyn E. Green Cross Purposes" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:b674d759-a368-41e1-88c4-f7fd70b447b6> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:c45069b3-c965-438f-903f-65ce2d1f1934> , <https://commons.cwrc.ca/orlando:772c02be-78f8-4c43-bf10-2be3ee77ce92>
+                ] ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#InitialResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#InformalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Beatrice Marshall and Evelyn E. Green Cross Purposes" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:b674d759-a368-41e1-88c4-f7fd70b447b6> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:c45069b3-c965-438f-903f-65ce2d1f1934> , <https://commons.cwrc.ca/orlando:772c02be-78f8-4c43-bf10-2be3ee77ce92>
+                ] .
+
+<https://commons.cwrc.ca/orlando:e9373aec-58e2-4234-beb7-eb60d497e6e7>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Lawrence, C. E." .
+
+<https://commons.cwrc.ca/orlando:5b26aa77-7cfa-4573-84b6-0f3f5d53e43b>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Meredith, George" .
+
+<https://commons.cwrc.ca/orlando:d5eb2892-79a9-4a26-94f7-82000322b877>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Keary, Annie" .
+
+<https://commons.cwrc.ca/orlando:e9d2ef7b-63cd-45cc-9bcb-331a856b4484>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Alcott, Louisa May" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#The_Bookman_TITLE>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "The Bookman" .
+
+<https://commons.cwrc.ca/orlando:747d3511-c2a6-467d-93c4-e9d520268710>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "A Will and A Way" .
+
+<http://cwrc.ca/cwrcdata/Sutherland_John>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Sutherland, John" .
+
+<https://commons.cwrc.ca/orlando:2438f874-e010-486e-90dc-abfd4d27d750>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Gladstone, William Ewart" .
+
+<https://commons.cwrc.ca/orlando:b8ddcf9a-fca3-4eaf-a848-ad115d8697dc>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Chapman, John" .
+
+<https://commons.cwrc.ca/orlando:abf4677f-5af3-4024-9fcc-2c639bfd49da>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Cross-in-Hand Farm" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#InitialResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Cross-in-Hand Farm" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:e9373aec-58e2-4234-beb7-eb60d497e6e7> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:5b26aa77-7cfa-4573-84b6-0f3f5d53e43b> , <https://commons.cwrc.ca/orlando:dca30947-feee-44db-820e-bbcc21038396> , <http://sparql.cwrc.ca/ontologies/cwrc#The_Bookman_TITLE>
+                ] ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#InitialResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Cross-in-Hand Farm" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:e9373aec-58e2-4234-beb7-eb60d497e6e7> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:5b26aa77-7cfa-4573-84b6-0f3f5d53e43b> , <https://commons.cwrc.ca/orlando:dca30947-feee-44db-820e-bbcc21038396> , <http://sparql.cwrc.ca/ontologies/cwrc#The_Bookman_TITLE>
+                ] .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Monthly_Packet_TITLE>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Monthly Packet" .
+
+<https://commons.cwrc.ca/orlando:e409452f-4c49-44ff-b35b-b85f55cd356a>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "The Governess" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#ReEvaluationResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to The Governess" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <http://sparql.cwrc.ca/ontologies/cwrc#Sarah_Fielding_The_Governess_1749_TITLE> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:7e052ca5-1ccc-4cf9-b747-70639d54e0f7>
+                ] .
+
+<https://commons.cwrc.ca/orlando:85a8d3ed-0b82-406b-8ee6-6e32a151d6b4>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Constance Sherwood" .
+
+<https://commons.cwrc.ca/orlando:8e3a75f2-ad9a-4624-b28f-09c88ac6886a>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Don John" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#Gendered> , <http://sparql.cwrc.ca/ontologies/cwrc#InitialResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Don John" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:8e3a75f2-ad9a-4624-b28f-09c88ac6886a> , <http://sparql.cwrc.ca/ontologies/cwrc#Athenæum_TITLE> , <https://commons.cwrc.ca/orlando:9bb1cf65-c9a3-45d8-b140-a1174e46094e> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:197ae5a9-21c7-485c-aac8-3da8195103d2>
+                ] ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#Gendered> , <http://sparql.cwrc.ca/ontologies/cwrc#InitialResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Don John" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:8e3a75f2-ad9a-4624-b28f-09c88ac6886a> , <http://sparql.cwrc.ca/ontologies/cwrc#Athenæum_TITLE> , <https://commons.cwrc.ca/orlando:9bb1cf65-c9a3-45d8-b140-a1174e46094e> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:197ae5a9-21c7-485c-aac8-3da8195103d2>
+                ] .
+
+<https://commons.cwrc.ca/orlando:3abaa60d-6e1b-4a18-b770-c8e1d002ac92>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Leavis, Q. D." .
+
+<https://commons.cwrc.ca/orlando:c376f65a-8e81-4972-89fe-438417fb5f99>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Tennyson, Alfred" .
+
+<https://commons.cwrc.ca/orlando:772c02be-78f8-4c43-bf10-2be3ee77ce92>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Austen, Jane" .
+
+<https://commons.cwrc.ca/orlando:bc8c2660-dc5b-4d41-b434-c6a4d3467765>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "What Books to Lend and What to Give" .
+
+<https://commons.cwrc.ca/orlando:ee91a772-a339-4579-91d7-af7d05f0193f>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Too Strange Not to Be True" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#InitialResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Too Strange Not to Be True" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:d94d2e99-af32-451a-a445-a9a7990822bb>
+                ] .
+
+<https://commons.cwrc.ca/orlando:2d62c97e-c153-4314-bc41-994dab8c9cf2>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Balzac, Honoré de" .
+
+<https://commons.cwrc.ca/orlando:d94d2e99-af32-451a-a445-a9a7990822bb>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Society of Jesus" .
+
+<https://commons.cwrc.ca/orlando:b674d759-a368-41e1-88c4-f7fd70b447b6>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Heartsease" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Childrens_Literature_of_the_Last_Century_TITLE>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Children's Literature of the Last Century" .
+
+<https://commons.cwrc.ca/orlando:197ae5a9-21c7-485c-aac8-3da8195103d2>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Ewing, Juliana Horatia" .
+
+<https://commons.cwrc.ca/orlando:49c94bc4-5d4a-4737-a681-a0143a7eaa14>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Avery, Gillian" .
+
+<https://commons.cwrc.ca/orlando:e0c99839-701f-4667-ad9f-16e1af624d4f>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Stretton, Julia" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#Gendered> , <http://sparql.cwrc.ca/ontologies/cwrc#InitialResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Julia Stretton" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:5e7db920-59da-45b3-b20f-b1a9eb9cf3d8> , <https://commons.cwrc.ca/orlando:00a4f41b-b07d-405f-a2ef-0aeddde98e1d> , <https://commons.cwrc.ca/orlando:eb008f9a-8597-4374-8fa3-b09c58770980> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:9308c943-ac98-4296-bd0d-03e4149578fa>
+                ] ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#Gendered> , <http://sparql.cwrc.ca/ontologies/cwrc#InitialResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Julia Stretton" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:5e7db920-59da-45b3-b20f-b1a9eb9cf3d8> , <https://commons.cwrc.ca/orlando:00a4f41b-b07d-405f-a2ef-0aeddde98e1d> , <https://commons.cwrc.ca/orlando:eb008f9a-8597-4374-8fa3-b09c58770980> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:9308c943-ac98-4296-bd0d-03e4149578fa>
+                ] .
+
+<https://commons.cwrc.ca/orlando:5f0e0bb4-08a8-4b92-8ba5-36784ccab318>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Ellen Middleton" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#Gendered> , <http://sparql.cwrc.ca/ontologies/cwrc#ReEvaluationResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Ellen Middleton" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:5f0e0bb4-08a8-4b92-8ba5-36784ccab318> , <https://commons.cwrc.ca/orlando:5e7db920-59da-45b3-b20f-b1a9eb9cf3d8> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a>
+                ] .
+
+<https://commons.cwrc.ca/orlando:14c64d7b-4f21-45ca-b98d-50975357e2ac>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Wood, Ellen" .
+
+<https://commons.cwrc.ca/orlando:2480842a-60ad-4ec1-a003-29f67872c532>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Battiscombe, Georgina" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Girls_Own_Paper_TITLE>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Girl's Own Paper" .
+
+<https://commons.cwrc.ca/orlando:8681eaf8-ed6d-4594-aaac-0ab62487a596>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Chronicles of the Schönberg-Cotta Family" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#Gendered> , <http://sparql.cwrc.ca/ontologies/cwrc#InitialResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Chronicles of the Schönberg-Cotta Family" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <http://sparql.cwrc.ca/ontologies/cwrc#Chronicles_of_the_Schönberg-Cotta_Family_TITLE> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:736a913b-1f20-4a74-a9cd-39d238dd7437> , <http://sparql.cwrc.ca/ontologies/cwrc#The_Monthly_Packet_TITLE>
+                ] .
+
+<https://commons.cwrc.ca/orlando:50e959ea-a0d4-4be4-b670-6a235b10a43a>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Sidney Grey" .
+
+<https://commons.cwrc.ca/orlando:5519c9ff-d46f-4879-a292-73c81fd1a86d>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Lewes, George Henry" .
+
+<https://commons.cwrc.ca/orlando:26a4b4d7-dc57-44bc-aeec-bf096dad74c1>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "FitzGerald, Edward" .
+
+<https://commons.cwrc.ca/orlando:a4ab647b-fb15-4a90-88dd-cf60a38ac152>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Religious Tract Society" .
+
+<https://commons.cwrc.ca/orlando:e72eea54-a01c-4c6e-9a26-fce088e7157c>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Sayers, Dorothy L." .
+
+<https://commons.cwrc.ca/orlando:21075066-0fa4-4dc7-9450-719abb2c9e53>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "The Pillars of the House" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#InitialResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to The Pillars of the House" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <http://sparql.cwrc.ca/ontologies/cwrc#Athenæum_TITLE> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a>
+                ] ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#InitialResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to The Pillars of the House" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <http://sparql.cwrc.ca/ontologies/cwrc#Athenæum_TITLE> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a>
+                ] .
+
+<https://commons.cwrc.ca/orlando:eb008f9a-8597-4374-8fa3-b09c58770980>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Fullerton, Georgiana" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#Gendered> , <http://sparql.cwrc.ca/ontologies/cwrc#InitialResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Georgiana Fullerton" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:1383fa3f-1165-4ff4-b2dd-c95c75fc2c13> , <https://commons.cwrc.ca/orlando:5e7db920-59da-45b3-b20f-b1a9eb9cf3d8> , <https://commons.cwrc.ca/orlando:5f0e0bb4-08a8-4b92-8ba5-36784ccab318> , <https://commons.cwrc.ca/orlando:85a8d3ed-0b82-406b-8ee6-6e32a151d6b4> , <https://commons.cwrc.ca/orlando:eb008f9a-8597-4374-8fa3-b09c58770980> , <https://commons.cwrc.ca/orlando:747d3511-c2a6-467d-93c4-e9d520268710> , <https://commons.cwrc.ca/orlando:772c02be-78f8-4c43-bf10-2be3ee77ce92>
+                ] .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Sarah_Fielding_The_Governess_1749_TITLE>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Sarah Fielding, The Governess, 1749" .
+
+<https://commons.cwrc.ca/orlando:00a4f41b-b07d-405f-a2ef-0aeddde98e1d>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Manning, Anne" .
+
+<https://commons.cwrc.ca/orlando:8efa7b58-ef11-453f-878d-e7ac9a870062>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Broughton, Rhoda" .
+
+<https://commons.cwrc.ca/orlando:4fe3ab0c-acad-4c57-a94b-1d6db9198a52>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Cross, John Walter" .
+
+<https://commons.cwrc.ca/orlando:7e052ca5-1ccc-4cf9-b747-70639d54e0f7>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Sherwood, Mary Martha" .
+
+<https://commons.cwrc.ca/orlando:67e57772-1269-43a6-9980-5e4345f27d10>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Elements of Morality" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#ReEvaluationResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Elements of Morality" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a>
+                ] ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#ReEvaluationResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Elements of Morality" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a>
+                ] .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#Edinburgh_Review_TITLE>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Edinburgh Review" .
+
+<http://sparql.cwrc.ca/ontologies/cwrc#The_Daisy_Chain_TITLE>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "The Daisy Chain" .
+
+<https://commons.cwrc.ca/orlando:dca30947-feee-44db-820e-bbcc21038396>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Eliot, George" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#Gendered> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#ReEvaluationResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to George Eliot" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:2438f874-e010-486e-90dc-abfd4d27d750> , <https://commons.cwrc.ca/orlando:9308c943-ac98-4296-bd0d-03e4149578fa> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <http://sparql.cwrc.ca/ontologies/cwrc#Monthly_Packet_TITLE> , <https://commons.cwrc.ca/orlando:5519c9ff-d46f-4879-a292-73c81fd1a86d> , <https://commons.cwrc.ca/orlando:4fe3ab0c-acad-4c57-a94b-1d6db9198a52> , <https://commons.cwrc.ca/orlando:b8ddcf9a-fca3-4eaf-a848-ad115d8697dc> , <http://sparql.cwrc.ca/ontologies/cwrc#Edinburgh_Review_TITLE>
+                ] .
+
+<https://commons.cwrc.ca/orlando:bff97a70-cbf4-4316-9183-c44605529baf>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Stephen, Sir James Fitzjames" .
+
+<https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Yonge, Charlotte" ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#ReEvaluationResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#InformalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Charlotte Yonge" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:cbd28f58-43bf-4e91-a1a0-df2052c1c309> , <http://sparql.cwrc.ca/ontologies/cwrc#Times_TITLE>
+                ] ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#ReEvaluationResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#InformalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Charlotte Yonge" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:cbd28f58-43bf-4e91-a1a0-df2052c1c309> , <http://sparql.cwrc.ca/ontologies/cwrc#Times_TITLE>
+                ] ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#InformalResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#InitialResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Charlotte Yonge" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:bff97a70-cbf4-4316-9183-c44605529baf> , <https://commons.cwrc.ca/orlando:d318bcd4-57d6-41c1-9323-06aaeb031edb> , <https://commons.cwrc.ca/orlando:14c64d7b-4f21-45ca-b98d-50975357e2ac> , <https://commons.cwrc.ca/orlando:9b075323-0efe-4765-8443-f171033c821b> , <https://commons.cwrc.ca/orlando:9308c943-ac98-4296-bd0d-03e4149578fa> , <https://commons.cwrc.ca/orlando:26a4b4d7-dc57-44bc-aeec-bf096dad74c1> , <https://commons.cwrc.ca/orlando:772c02be-78f8-4c43-bf10-2be3ee77ce92> , <https://commons.cwrc.ca/orlando:8efa7b58-ef11-453f-878d-e7ac9a870062> , <https://commons.cwrc.ca/orlando:7458edaa-ca8f-4926-b683-ac0254645c07> , <https://commons.cwrc.ca/orlando:dca30947-feee-44db-820e-bbcc21038396> , <https://commons.cwrc.ca/orlando:2d62c97e-c153-4314-bc41-994dab8c9cf2> , <https://commons.cwrc.ca/orlando:e9d2ef7b-63cd-45cc-9bcb-331a856b4484>
+                ] ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#InformalResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#InitialResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Charlotte Yonge" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:772c02be-78f8-4c43-bf10-2be3ee77ce92> , <https://commons.cwrc.ca/orlando:26a4b4d7-dc57-44bc-aeec-bf096dad74c1> , <https://commons.cwrc.ca/orlando:14c64d7b-4f21-45ca-b98d-50975357e2ac> , <https://commons.cwrc.ca/orlando:9b075323-0efe-4765-8443-f171033c821b> , <https://commons.cwrc.ca/orlando:d318bcd4-57d6-41c1-9323-06aaeb031edb> , <https://commons.cwrc.ca/orlando:bff97a70-cbf4-4316-9183-c44605529baf> , <https://commons.cwrc.ca/orlando:8efa7b58-ef11-453f-878d-e7ac9a870062> , <https://commons.cwrc.ca/orlando:2d62c97e-c153-4314-bc41-994dab8c9cf2> , <https://commons.cwrc.ca/orlando:dca30947-feee-44db-820e-bbcc21038396> , <https://commons.cwrc.ca/orlando:e9d2ef7b-63cd-45cc-9bcb-331a856b4484> , <https://commons.cwrc.ca/orlando:9308c943-ac98-4296-bd0d-03e4149578fa> , <https://commons.cwrc.ca/orlando:7458edaa-ca8f-4926-b683-ac0254645c07>
+                ] ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#ReEvaluationResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Charlotte Yonge" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:5f030fe3-b3a4-4c19-87a0-366ff940d352> , <https://commons.cwrc.ca/orlando:cbd28f58-43bf-4e91-a1a0-df2052c1c309> , <http://sparql.cwrc.ca/ontologies/cwrc#Times_TITLE> , <https://commons.cwrc.ca/orlando:8f435e24-bb62-4648-93ce-177049257d53> , <https://commons.cwrc.ca/orlando:3abaa60d-6e1b-4a18-b770-c8e1d002ac92> , <https://commons.cwrc.ca/orlando:e72eea54-a01c-4c6e-9a26-fce088e7157c>
+                ] ;
+        <http://sparql.cwrc.ca/ontologies/cwrc#hasResponse>
+                [ a       <http://sparql.cwrc.ca/ontologies/cwrc#FormalResponse> , <http://sparql.cwrc.ca/ontologies/cwrc#ReEvaluationResponse> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Response to Charlotte Yonge" ;
+                  <http://sparql.cwrc.ca/ontologies/cwrc#hasResponseRelationTo>
+                          <https://commons.cwrc.ca/orlando:8f435e24-bb62-4648-93ce-177049257d53> , <https://commons.cwrc.ca/orlando:74cc42ea-182a-40ac-904d-de8d6bc53d4a> , <https://commons.cwrc.ca/orlando:e72eea54-a01c-4c6e-9a26-fce088e7157c> , <https://commons.cwrc.ca/orlando:3abaa60d-6e1b-4a18-b770-c8e1d002ac92> , <https://commons.cwrc.ca/orlando:5f030fe3-b3a4-4c19-87a0-366ff940d352> , <https://commons.cwrc.ca/orlando:cbd28f58-43bf-4e91-a1a0-df2052c1c309> , <http://sparql.cwrc.ca/ontologies/cwrc#Times_TITLE>
+                ] .
+
+<https://commons.cwrc.ca/orlando:ae8fb045-b249-47bb-9c5f-75e746ef9df9>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Mitchell, Charlotte" .
+
